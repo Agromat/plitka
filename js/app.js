@@ -41,6 +41,14 @@
           resizeModal();
       });
 
+  // open any modal window
+      $(".js-modal-toggle").click(function () {
+          var modal = $(this).attr("data-modal");
+          $('.'+modal).foundation('reveal', 'open');
+          resizeModal();
+          return false;
+      });
+
       // тк. слайдер геренирует свой темплейт при нажатии 
       // кнопки вне его контейнера скриптом создаю ивент по нажати на мою кнопку
       $('.orbit-next.icon').click(function() {

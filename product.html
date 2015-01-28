@@ -75,7 +75,7 @@
               </div>
               
               <div class="callback column medium-4">
-                <a href="#callback" class="link"><span>Заказать обратный звонок</span></a>
+                <a href="#" class="js-modal-toggle" data-modal="js-modal-callback"><span>Заказать обратный звонок</span></a>
               </div>
               
               <div class="schedule column medium-3">
@@ -1689,7 +1689,33 @@
         </div>
       </div>
     </div>
-    
+    <div class="reveal-modal modal js-modal-callback" data-reveal>
+      <div class="modal__header">
+        <div class="modal__title">Заказ обратного звонка</div>
+      </div>
+      <div class="modal__body">
+        <div class="row">
+          <div class="column medium-6">
+            <p>Закажите обратный звонок и наш менеджер обязательно свяжется с вами в ближайшее время!</p>
+            <img src="img/tel.png" alt="img">
+          </div>
+          <div class="column medium-6">
+            <label class="field">
+              <span class="label__title">Номер вашего телефона</span>
+              <span class="label__body">
+                <input type="tel" placeholder="+38(__) ___-__-__" required>
+              </span>
+            </label>
+            <label class="field">
+              <span class="label__title">Ваше имя (опционально)</span>
+              <span class="label__body">
+                <input type="text">
+              </span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="js/lib/jquery.min.js"></script>
     <script src="js/lib/foundation.min.js"></script>
     <script src="js/lib/foundation.dropdown.js"></script>
