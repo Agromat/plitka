@@ -1,0 +1,104 @@
+.basket-table{
+	background: $pblue;
+	padding: 0 11px;
+	-webkit-border-radius: rem-calc(8);
+	border-radius: rem-calc(8);
+	table{
+		margin: 0;
+		font-weight: 400;
+		font-size: 13px;
+		background: $pblue;
+		width: 100%;
+		border-bottom:1px solid $border;
+		&:last-child{
+			border-bottom:none;
+		}
+		tr{
+			vertical-align: top;
+			th{
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 18px;
+				color: $blue;
+				padding: 17px 0 15px;
+				a:hover{
+					color:#333;
+					span{
+						border-bottom-color:#333;
+					}
+				}
+				span{
+					border-bottom: 1px solid $blue;
+				}
+			}
+			td{
+				padding:0 0 20px;
+				&.img{
+					width: 100px;
+				}
+				p{
+					font-weight: 400;
+					font-size: 13px;
+					color: $llgray;
+					text-align: left;
+					padding-left: 8px;
+					padding-top: 5px;
+				}
+				.price{
+					font-weight: 700;
+					font-size: 21px;
+					padding: 0;
+					line-height: 25px;
+					color: $ddgray;
+					margin: 0;
+					text-align: right;
+					sup{
+						top: -5px;
+					}
+				}
+
+			}
+		}
+	}
+
+}
+.basket-footer{
+	padding: 20px;
+	.content{
+		p{
+			color: $llgray;
+			font-size: 13px;
+			font-weight: 400;
+			margin-top: 0;
+			margin-bottom: 5px;
+		}
+		.pr{
+			font-size: 31px;
+			font-weight: 700;
+			color: $ddgray;
+			margin-bottom: 0;
+			sup{
+				top: -10px;
+				font-size: 16px;
+				font-weight: 400;
+			}
+		}
+	}
+	.action{
+		margin-top: 15px;
+		a{
+			font-size: 14px;
+			font-weight:400;
+			color: $blue;
+			&:hover{
+				color:#333;
+				span{
+					border-bottom-color:#333;
+				}
+			}
+			span{
+				border-bottom: 1px solid $blue;
+			}
+		}
+	}
+}

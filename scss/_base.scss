@@ -1,0 +1,33 @@
+sup{
+	top: -1rem;
+}
+a:hover span {
+	border-bottom: 1px dotted;
+}
+.row .dashedtext{
+
+	.link{
+		border-bottom: 1px dotted #a1a1a1;
+	}
+	.icon{border:none;}
+}
+.table tr.even, 
+.table tr.alt, 
+.table tr:nth-of-type(even) {
+	background: #f7f7f7;
+}
+ul.inline{
+	@include clearfix();
+	margin:0;
+	&.three-type li{
+		width:33%;
+	}
+	&.four-type li{
+		width:25%;
+	}
+	li{
+		list-style:none;
+		float:left;
+		position:relative;
+	}
+}

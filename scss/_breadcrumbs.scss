@@ -1,0 +1,53 @@
+.bcrumbs-container{
+	padding:rem-calc(32) 0 rem-calc(30) 0; 
+	overflow: hidden;
+	position: relative;
+	.bcrumbs{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		li{
+			display: inline-block;
+			list-style: none;
+			a{
+				font-size:rem-calc(14);
+				line-height: rem-calc(16);
+				color:$blue;
+				display: inline;
+				border: 0;
+				padding: 0;
+				span{
+					border-bottom: rem-calc(1) solid $blue;
+				}				
+				&:hover{
+					color:#333;
+					border-bottom: rem-calc(1) solid #333;
+					span{
+						border-bottom: rem-calc(1) solid #333;
+					}
+				}
+			}
+			&::after{
+				content: ' / ';
+				color: $ddgray;
+				padding: 0 rem-calc(3);
+			}
+			&:last-child{
+				&::after{
+					content: none;
+				}
+				a{
+					border-bottom:none;
+					&{
+						&:hover{
+							color:#333;
+							span{
+								border-bottom: rem-calc(1) solid #333;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

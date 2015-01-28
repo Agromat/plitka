@@ -1,0 +1,122 @@
+/*  grid */
+body{
+	min-width: 1220px;
+}
+$white       		: #ffffff;
+$black       		: #000000;
+//---------------------
+
+$dgray    	 		: #646464;
+$gray		 		: #747474;
+$lgray   	 		: #f4f4f4;
+$ddgray		 		: #333333;
+$llgray		 		: #999999;
+$border		 		: #dddddd;
+$border-under		: #cecece;
+$border-img	 		: #eaff00;
+$border-drk	 		: #afb1b7;
+
+$in-color    		: #abadb3;
+$btn-color 	 		: #aec800;
+$blue		 		: #0053a0;
+$lblue		 		: #5b6a84;
+$pblue		 		: #eef6f9;
+
+$comment-color  	: #666666;
+$title 		 	   	: #4a5b70;
+$red		 	   	: #ed1c24;
+$geern		 	   	: #009900;
+$lgeern   	 	   	: #cddf01;
+$new		 	   	: #22bee8;
+$controls    	   	: #f3f3f3;
+$buy-bnt	 	   	: #bbd100;
+$border-btn-default	: #99bad9;
+$icon : url("../img/icons.png");
+
+$font-family-sans-serif: "Open Sans", Helvetica, Arial, sans-serif;
+$font-family-arial: Arial, Helvetica, sans-serif;
+
+$bold : 700;
+$norm : 400;
+$rem-base : 16;
+
+@function rem-calc($values, $base-value: $rem-base) {
+  $max: length($values);
+
+  @if $max == 1 { @return convert-to-rem(nth($values, 1), $base-value); }
+
+  $remValues: ();
+  @for $i from 1 through $max {
+    $remValues: append($remValues, convert-to-rem(nth($values, $i), $base-value));
+  }
+  @return $remValues;
+}
+
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}
+
+// CONVERT TO REM
+@function convert-to-rem($value, $base-value: $rem-base)  {
+  $value: strip-unit($value) / strip-unit($base-value) * 1rem;
+  @if ($value == 0rem) { $value: 0; } // Turn 0rem into 0
+  @return $value;
+}
+
+@function data($attr) {
+  @if $namespace {
+    @return '[data-' + $namespace + '-' + $attr + ']';
+  }
+
+  @return '[data-' + $attr + ']';
+}
+
+@mixin clearfix {
+    zoom:1;
+    &:before, &:after {
+        content: ""; 
+        display: block; 
+        height: 0; 
+        overflow: hidden; 
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+
+/*
+*	FONT LOAD
+*/
+@import "font";
+/*
+*	BASE
+*/
+@import "base";
+/*
+*	TOP MENU BLOCK
+*/
+@import "menu";
+/*
+*	MENU TREE FILTER BLOCK
+*/
+@import "menu_tree";
+/*
+*	NAVIGATION BREADCRUMBS
+*/
+@import "breadcrumbs";
+/*
+*	ICONS
+*/
+@import "icon";
+/*
+*	BUTTONS
+*/
+@import "btn";
+/*
+*	BUTTONS
+*/
+@import "main-container";
+
+@import "filters";
+@import "range-slider";
