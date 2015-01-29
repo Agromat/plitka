@@ -1664,7 +1664,7 @@
       </div>
     </div>
 
-    <div id="enlarged-photo" class="reveal-modal enlarged-photo" data-reveal>
+    <div id="enlarged-photo" class="reveal-modal is-fixed enlarged-photo" data-reveal>
       <div class="photo-header">
         <p class="title">Керамическая плитка двойного назначения Devit Giran 16190128P</p>
         <a class="close-reveal-modal  ">&#215;</a>
@@ -1689,7 +1689,7 @@
         </div>
       </div>
     </div>
-    <div class="reveal-modal modal js-modal-callback" data-reveal>
+    <div class="reveal-modal modal modal_w520 is-fixed js-modal-callback" data-reveal>
       <div class="modal__header">
         <div class="modal__title">Заказ обратного звонка</div>
       </div>
@@ -1701,25 +1701,28 @@
           </div>
           <div class="column medium-6">
             <label class="field">
-              <span class="label__title">Номер вашего телефона</span>
-              <span class="label__body">
-                <input type="tel" placeholder="+38(__) ___-__-__" required>
+              <span class="field__title">Номер вашего телефона</span>
+              <span class="field__body">
+                <input class="input js-input-tel" type="tel" placeholder="+380(__)-___-__-__" required>
               </span>
             </label>
             <label class="field">
-              <span class="label__title">Ваше имя (опционально)</span>
-              <span class="label__body">
-                <input type="text">
+              <span class="field__title">Ваше имя <span>(опционально)</span></span>
+              <span class="field__body">
+                <input class="input" type="text">
               </span>
             </label>
-          </div>
+            <div class="btn-wrap"><button type="submit" class="btn btn_medium gradient">Отправить</button></div>
+          </div>  
         </div>
       </div>
+      <a class="close-reveal-modal  ">&#215;</a>
     </div>
     <script src="js/lib/jquery.min.js"></script>
     <script src="js/lib/foundation.min.js"></script>
     <script src="js/lib/foundation.dropdown.js"></script>
     <script src="js/lib/slick.min.js"></script>
+    <script src="js/lib/jquery.maskedinput.min.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>

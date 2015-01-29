@@ -85,6 +85,7 @@
 	&:hover,
 	&:focus{
 		color: $lgray;
+		outline: none;
 	}
 	&.gradient{
 		background: #bed300; /* Old browsers */
@@ -104,6 +105,13 @@
 			background:$white;
 			color:$btn-color;
 		}
+	}
+	&.btn_medium {
+		padding: 13px 20px 16px;
+		height: auto;
+		line-height: 1;
+		font-size: 18px;
+		font-weight: bold;
 	}
 }
 .btn.credit-calc {

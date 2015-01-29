@@ -212,6 +212,8 @@
         return false;
       });
 
+      $(".js-input-tel").mask("+380(99)-999-99-99");
+
   });
 
   $(document).on('opened.fndtn.reveal', '[data-reveal]', function () {
