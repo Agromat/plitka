@@ -46,7 +46,7 @@
           </ul><!-- /menu bar left side-->
 
           <ul class="right">
-            <li><a class="icon icon-padlock" href="#login">Войти в личный кабинет</a></li>
+            <li><a class="icon icon-padlock js-modal-toggle" data-modal="js-modal-recovery" href="#">Войти в личный кабинет</a></li>
           </ul><!-- /menu bar right side-->
         
         </div><!-- /row collapse -->
@@ -1703,7 +1703,7 @@
             <label class="field">
               <span class="field__title">Номер вашего телефона</span>
               <span class="field__body">
-                <input class="input js-input-tel" type="tel" placeholder="+380(__)-___-__-__" required>
+                <input class="input js-input-tel" type="tel" placeholder="+38(___)-___-__-__" required>
               </span>
             </label>
             <label class="field">
@@ -1714,6 +1714,25 @@
             </label>
             <div class="btn-wrap"><button type="submit" class="btn btn_medium gradient">Отправить</button></div>
           </div>  
+        </div>
+      </div>
+      <a class="close-reveal-modal  ">&#215;</a>
+    </div>
+    <div class="reveal-modal modal modal_w330 is-fixed js-modal-recovery" data-reveal>
+      <div class="modal__header">
+        <div class="modal__title">Восстановление пароля</div>
+      </div>
+      <div class="modal__body">
+        <div class="row">
+          <div class="column medium-12">
+            <label class="field">
+              <span class="field__title">Номер телефона или Email</span>
+              <span class="field__body">
+                <input class="input" type="text" required>
+              </span>
+            </label>
+             <div class="btn-wrap"><button type="submit" class="btn btn_small gradient">Отправить</button></div>
+          </div>
         </div>
       </div>
       <a class="close-reveal-modal  ">&#215;</a>

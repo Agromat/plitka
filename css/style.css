@@ -1038,6 +1038,64 @@ ul.inline li {
 }
 
 /* line 8, ../scss/_btn.scss */
+.btn-wrap {
+  overflow: hidden;
+}
+/* line 10, ../scss/_btn.scss */
+.btn-wrap .btn {
+  vertical-align: middle;
+}
+
+/* line 14, ../scss/_btn.scss */
+.btn-wrap__link {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+  font-size: 13px;
+  border-bottom: 1px solid;
+}
+
+/* line 21, ../scss/_btn.scss */
+.soc-enter {
+  margin: 15px 0;
+  width: 207px;
+}
+/* line 24, ../scss/_btn.scss */
+.soc-enter a {
+  display: block;
+  margin-bottom: 10px;
+  padding: 0 15px;
+  height: 41px;
+  line-height: 41px;
+  border-radius: 7px;
+  font-family: Arial,sans-serif;
+  font-size: 18px;
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 -3px 0 rgba(8, 34, 60, 0.1);
+}
+/* line 36, ../scss/_btn.scss */
+.soc-enter a:hover {
+  text-shadow: none;
+}
+/* line 39, ../scss/_btn.scss */
+.soc-enter a:active {
+  box-shadow: inset 0 3px 0 rgba(8, 34, 60, 0.1);
+}
+/* line 43, ../scss/_btn.scss */
+.soc-enter__fb {
+  background: #45619d;
+}
+/* line 46, ../scss/_btn.scss */
+.soc-enter__vk {
+  background: #597da3;
+}
+/* line 49, ../scss/_btn.scss */
+.soc-enter__gp {
+  background: #da5033;
+}
+
+/* line 53, ../scss/_btn.scss */
 .btn {
   display: inline-block;
   border: 0;
@@ -1055,7 +1113,7 @@ ul.inline li {
   transition: background-color 200ms ease-out;
   margin-top: 0.75rem;
 }
-/* line 24, ../scss/_btn.scss */
+/* line 69, ../scss/_btn.scss */
 .btn.default {
   height: 2.9375rem;
   padding: 0.875rem 1.125rem;
@@ -1065,12 +1123,12 @@ ul.inline li {
   color: #0053a0;
   border: 1px solid #99bad9;
 }
-/* line 32, ../scss/_btn.scss */
+/* line 77, ../scss/_btn.scss */
 .btn.default:hover {
   border-color: #0053a0;
   color: #0053a0;
 }
-/* line 37, ../scss/_btn.scss */
+/* line 82, ../scss/_btn.scss */
 .btn.gradient {
   margin: 0;
   height: 55px;
@@ -1088,7 +1146,7 @@ ul.inline li {
   transition: all .3s;
   overflow: hidden;
 }
-/* line 53, ../scss/_btn.scss */
+/* line 98, ../scss/_btn.scss */
 .btn.gradient::before {
   background: #9eb706;
   -webkit-border-radius: 5px;
@@ -1101,7 +1159,7 @@ ul.inline li {
   height: 3px;
   transition: all 1s;
 }
-/* line 65, ../scss/_btn.scss */
+/* line 110, ../scss/_btn.scss */
 .btn.gradient:hover {
   webkit-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
@@ -1109,26 +1167,26 @@ ul.inline li {
   outline: none;
   transition: all 1s;
 }
-/* line 71, ../scss/_btn.scss */
+/* line 116, ../scss/_btn.scss */
 .btn.gradient:hover::before {
   content: '';
 }
-/* line 76, ../scss/_btn.scss */
+/* line 121, ../scss/_btn.scss */
 .btn.gradient:active {
   -webkit-box-shadow: inset 0px 3px 0px 0px #9db706;
   -moz-box-shadow: inset 0px 3px 0px 0px #9db706;
   box-shadow: inset 0px 3px 0px 0px #9db706;
 }
-/* line 80, ../scss/_btn.scss */
+/* line 125, ../scss/_btn.scss */
 .btn.gradient:active::before {
   content: none;
 }
-/* line 85, ../scss/_btn.scss */
+/* line 130, ../scss/_btn.scss */
 .btn:hover, .btn:focus {
   color: #f4f4f4;
   outline: none;
 }
-/* line 90, ../scss/_btn.scss */
+/* line 135, ../scss/_btn.scss */
 .btn.gradient {
   background: #bed300;
   /* Old browsers */
@@ -1149,16 +1207,16 @@ ul.inline li {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bed300', endColorstr='#afc800',GradientType=0 );
   /* IE6-8 */
 }
-/* line 102, ../scss/_btn.scss */
+/* line 147, ../scss/_btn.scss */
 .btn.btn-green {
   border: 1px solid #aec800;
 }
-/* line 104, ../scss/_btn.scss */
+/* line 149, ../scss/_btn.scss */
 .btn.btn-green:hover {
   background: #ffffff;
   color: #aec800;
 }
-/* line 109, ../scss/_btn.scss */
+/* line 154, ../scss/_btn.scss */
 .btn.btn_medium {
   padding: 13px 20px 16px;
   height: auto;
@@ -1166,8 +1224,16 @@ ul.inline li {
   font-size: 18px;
   font-weight: bold;
 }
+/* line 161, ../scss/_btn.scss */
+.btn.btn_small {
+  padding: 8px 14px 11px;
+  height: auto;
+  line-height: 1;
+  font-size: 18px;
+  font-weight: bold;
+}
 
-/* line 117, ../scss/_btn.scss */
+/* line 169, ../scss/_btn.scss */
 .btn.credit-calc {
   text-decoration: none;
   color: #0053a0;
@@ -1179,26 +1245,26 @@ ul.inline li {
   text-align: left;
   margin: 0;
 }
-/* line 127, ../scss/_btn.scss */
+/* line 179, ../scss/_btn.scss */
 .btn.credit-calc .icon {
   display: block;
   float: left;
 }
-/* line 130, ../scss/_btn.scss */
+/* line 182, ../scss/_btn.scss */
 .btn.credit-calc .icon::before {
   width: 26px;
   height: 37px;
   margin-right: 7px;
 }
-/* line 136, ../scss/_btn.scss */
+/* line 188, ../scss/_btn.scss */
 .btn.credit-calc:hover {
   color: #333;
 }
-/* line 138, ../scss/_btn.scss */
+/* line 190, ../scss/_btn.scss */
 .btn.credit-calc:hover span.link {
   color: #333;
 }
-/* line 142, ../scss/_btn.scss */
+/* line 194, ../scss/_btn.scss */
 .btn.credit-calc .link {
   border-bottom: 1px dotted #a1a1a1;
 }
@@ -4000,6 +4066,12 @@ footer .row.link-footer .column:last-child {
   color: #646464;
 }
 
+/* line 223, ../scss/_form-group.scss */
+.checkbox_small label {
+  font-size: 13px;
+  padding-right: 0;
+}
+
 /* line 1, ../scss/_basket-table.scss */
 .basket-table {
   background: #eef6f9;
@@ -4157,57 +4229,71 @@ footer .row.link-footer .column:last-child {
 }
 
 /* line 1110, ../scss/_main-container.scss */
+.modal_w640 {
+  width: 640px;
+}
+
+/* line 1113, ../scss/_main-container.scss */
 .modal_w520 {
   width: 520px;
 }
 
-/* line 1113, ../scss/_main-container.scss */
+/* line 1116, ../scss/_main-container.scss */
+.modal_w330 {
+  width: 330px;
+}
+
+/* line 1119, ../scss/_main-container.scss */
 .modal__header {
   padding: 22px 30px;
   border-radius: 10px 10px 0 0;
   background: #eef6f9;
 }
 
-/* line 1118, ../scss/_main-container.scss */
+/* line 1124, ../scss/_main-container.scss */
 .modal__title {
   font-size: 18px;
   color: #4a5b70;
   font-weight: bold;
 }
 
-/* line 1123, ../scss/_main-container.scss */
+/* line 1129, ../scss/_main-container.scss */
 .modal__body {
   padding: 35px 30px 70px;
 }
 
-/* line 1126, ../scss/_main-container.scss */
+/* line 1132, ../scss/_main-container.scss */
 .field {
   display: block;
   margin-bottom: 30px;
 }
-/* line 1129, ../scss/_main-container.scss */
+/* line 1135, ../scss/_main-container.scss */
 .field + .btn-wrap {
   margin-top: -5px;
 }
+/* line 1138, ../scss/_main-container.scss */
+.field + .checkbox {
+  margin: -20px 0 20px;
+}
 
-/* line 1133, ../scss/_main-container.scss */
+/* line 1142, ../scss/_main-container.scss */
 .field__title {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
   font-size: 14px;
 }
-/* line 1138, ../scss/_main-container.scss */
+/* line 1147, ../scss/_main-container.scss */
 .field__title span {
   font-weight: normal;
 }
 
-/* line 1142, ../scss/_main-container.scss */
+/* line 1151, ../scss/_main-container.scss */
 .field__body {
   display: block;
 }
 
-/* line 1145, ../scss/_main-container.scss */
+/* line 1154, ../scss/_main-container.scss */
 .input {
   display: block;
   padding: 0 10px;
@@ -4219,19 +4305,19 @@ footer .row.link-footer .column:last-child {
   box-shadow: inset 1.4px 1.4px 3px rgba(4, 4, 5, 0.3);
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
-/* line 1155, ../scss/_main-container.scss */
+/* line 1164, ../scss/_main-container.scss */
 .input:focus {
   box-shadow: none;
 }
 
-/* line 1159, ../scss/_main-container.scss */
+/* line 1168, ../scss/_main-container.scss */
 .close-reveal-modal, .modal__close {
   top: -25px;
   right: -40px;
   content: url("../img/close-btn.png");
 }
 
-/* line 1166, ../scss/_main-container.scss */
+/* line 1175, ../scss/_main-container.scss */
 .basket .sm-desk {
   font-size: 13px;
   font-weight: 400;
@@ -4239,24 +4325,24 @@ footer .row.link-footer .column:last-child {
   line-height: 13px;
   margin: 3px 0 8px;
 }
-/* line 1172, ../scss/_main-container.scss */
+/* line 1181, ../scss/_main-container.scss */
 .basket .sm-desk span {
   display: block;
   margin-top: 2px;
 }
-/* line 1177, ../scss/_main-container.scss */
+/* line 1186, ../scss/_main-container.scss */
 .basket .price {
   font-size: 31px;
   font-weight: 700;
   margin: 0;
   color: #333;
 }
-/* line 1182, ../scss/_main-container.scss */
+/* line 1191, ../scss/_main-container.scss */
 .basket .price sup {
   top: -10px;
   font-size: 65%;
 }
-/* line 1187, ../scss/_main-container.scss */
+/* line 1196, ../scss/_main-container.scss */
 .basket .basket-header {
   border-radius: 15px;
   -webkit-border-radius: 15px;
@@ -4264,29 +4350,29 @@ footer .row.link-footer .column:last-child {
   background: #eef6f9;
   padding: 23px 29px 17px;
 }
-/* line 1193, ../scss/_main-container.scss */
+/* line 1202, ../scss/_main-container.scss */
 .basket .basket-header .modal-title {
   font-weight: 700;
   font-size: 18px;
   color: #4a5b70;
   margin: 0;
 }
-/* line 1199, ../scss/_main-container.scss */
+/* line 1208, ../scss/_main-container.scss */
 .basket .basket-header .close-reveal-modal, .basket .basket-header .modal__close {
   top: -25px;
   right: -40px;
   content: url("../img/close-btn.png");
 }
-/* line 1205, ../scss/_main-container.scss */
+/* line 1214, ../scss/_main-container.scss */
 .basket .basket-view {
   padding: 29px 34px;
 }
-/* line 1207, ../scss/_main-container.scss */
+/* line 1216, ../scss/_main-container.scss */
 .basket .basket-view .del {
   width: 24px;
   padding: 5px 0px 0px;
 }
-/* line 1210, ../scss/_main-container.scss */
+/* line 1219, ../scss/_main-container.scss */
 .basket .basket-view .del .btn-del {
   padding: 0;
   border: 0;
@@ -4295,19 +4381,19 @@ footer .row.link-footer .column:last-child {
   width: 20px;
   height: 20px;
 }
-/* line 1219, ../scss/_main-container.scss */
+/* line 1228, ../scss/_main-container.scss */
 .basket .basket-view .img {
   padding: 0;
   width: 150px;
   height: 130px;
 }
-/* line 1224, ../scss/_main-container.scss */
+/* line 1233, ../scss/_main-container.scss */
 .basket .basket-view .name-product {
   width: 265px;
   padding-left: 28px;
   padding-top: 6px;
 }
-/* line 1228, ../scss/_main-container.scss */
+/* line 1237, ../scss/_main-container.scss */
 .basket .basket-view .name-product .prod-desk {
   font-size: 14px;
   font-weight: 400;
@@ -4316,30 +4402,30 @@ footer .row.link-footer .column:last-child {
   margin-top: 0;
   line-height: 16px;
 }
-/* line 1237, ../scss/_main-container.scss */
+/* line 1246, ../scss/_main-container.scss */
 .basket .basket-view .sum,
 .basket .basket-view .amount {
   width: 145px;
   padding-top: 6px;
 }
-/* line 1241, ../scss/_main-container.scss */
+/* line 1250, ../scss/_main-container.scss */
 .basket .basket-view .sum .area,
 .basket .basket-view .amount .area {
   color: #22bee8;
   font-size: 12px;
   margin: 3px 0 8px;
 }
-/* line 1245, ../scss/_main-container.scss */
+/* line 1254, ../scss/_main-container.scss */
 .basket .basket-view .sum .area span,
 .basket .basket-view .amount .area span {
   font-weight: 700;
 }
-/* line 1247, ../scss/_main-container.scss */
+/* line 1256, ../scss/_main-container.scss */
 .basket .basket-view .sum .area span sup,
 .basket .basket-view .amount .area span sup {
   top: -2px;
 }
-/* line 1255, ../scss/_main-container.scss */
+/* line 1264, ../scss/_main-container.scss */
 .basket .basket-actions .total {
   text-align: right;
   margin: 0 40px;
@@ -4347,16 +4433,16 @@ footer .row.link-footer .column:last-child {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* line 1262, ../scss/_main-container.scss */
+/* line 1271, ../scss/_main-container.scss */
 .basket .basket-actions .btn-group {
   margin: 0 40px;
   padding-bottom: 35px;
 }
-/* line 1265, ../scss/_main-container.scss */
+/* line 1274, ../scss/_main-container.scss */
 .basket .basket-actions .btn-group .btn {
   position: relative;
 }
-/* line 1270, ../scss/_main-container.scss */
+/* line 1279, ../scss/_main-container.scss */
 .basket .basket-footer {
   border-radius: 15px;
   -webkit-border-radius: 15px;
@@ -4366,7 +4452,7 @@ footer .row.link-footer .column:last-child {
   background: #efeeee;
   position: relative;
 }
-/* line 1278, ../scss/_main-container.scss */
+/* line 1287, ../scss/_main-container.scss */
 .basket .basket-footer::before {
   content: '';
   background-image: url(../img/shadow_footer.png);
@@ -4377,7 +4463,7 @@ footer .row.link-footer .column:last-child {
   top: 0;
   left: 0;
 }
-/* line 1288, ../scss/_main-container.scss */
+/* line 1297, ../scss/_main-container.scss */
 .basket .basket-footer .title {
   font-size: 18px;
   color: #4a5b70;
@@ -4385,32 +4471,32 @@ footer .row.link-footer .column:last-child {
   margin-top: 0;
   margin-bottom: 20px;
 }
-/* line 1295, ../scss/_main-container.scss */
+/* line 1304, ../scss/_main-container.scss */
 .basket .basket-footer .multiple-items-4 {
   margin: 0 auto;
   height: 100%;
 }
-/* line 1298, ../scss/_main-container.scss */
+/* line 1307, ../scss/_main-container.scss */
 .basket .basket-footer .multiple-items-4.slick-slider::before {
   top: -48px;
   right: 10px;
   background: #ffffff;
 }
-/* line 1303, ../scss/_main-container.scss */
+/* line 1312, ../scss/_main-container.scss */
 .basket .basket-footer .multiple-items-4 .slick-next,
 .basket .basket-footer .multiple-items-4 .slick-prev {
   top: -48px;
 }
-/* line 1307, ../scss/_main-container.scss */
+/* line 1316, ../scss/_main-container.scss */
 .basket .basket-footer .multiple-items-4 .slick-next {
   right: 12px;
 }
-/* line 1310, ../scss/_main-container.scss */
+/* line 1319, ../scss/_main-container.scss */
 .basket .basket-footer .multiple-items-4 .slick-prev {
   right: 47px;
 }
 
-/* line 1318, ../scss/_main-container.scss */
+/* line 1327, ../scss/_main-container.scss */
 .enlarged-photo .photo-header .title {
   font-size: 31px;
   padding: 30px 40px 0;
@@ -4421,29 +4507,29 @@ footer .row.link-footer .column:last-child {
   text-align: center;
   font-family: Arial;
 }
-/* line 1329, ../scss/_main-container.scss */
+/* line 1338, ../scss/_main-container.scss */
 .enlarged-photo .photo {
   overflow: hidden;
   padding: 43px 40px 12px;
   position: relative;
   border-bottom: 1px solid #dddddd;
 }
-/* line 1334, ../scss/_main-container.scss */
+/* line 1343, ../scss/_main-container.scss */
 .enlarged-photo .photo .orbit-container {
   overflow: visible;
   max-height: 600px;
 }
-/* line 1337, ../scss/_main-container.scss */
+/* line 1346, ../scss/_main-container.scss */
 .enlarged-photo .photo .orbit-container ul li img {
   margin: 0 auto;
 }
-/* line 1340, ../scss/_main-container.scss */
+/* line 1349, ../scss/_main-container.scss */
 .enlarged-photo .photo .orbit-container .orbit-next, .enlarged-photo .photo .orbit-container .orbit-prev {
   height: 100%;
   width: 45%;
   top: 24px;
 }
-/* line 1344, ../scss/_main-container.scss */
+/* line 1353, ../scss/_main-container.scss */
 .enlarged-photo .photo .orbit-container .orbit-next::before, .enlarged-photo .photo .orbit-container .orbit-prev::before {
   content: '';
   background-image: url("../img/icons.png");
@@ -4453,24 +4539,24 @@ footer .row.link-footer .column:last-child {
   top: 45%;
   position: relative;
 }
-/* line 1353, ../scss/_main-container.scss */
+/* line 1362, ../scss/_main-container.scss */
 .enlarged-photo .photo .orbit-container .orbit-next:hover, .enlarged-photo .photo .orbit-container .orbit-prev:hover {
   background: none;
 }
-/* line 1356, ../scss/_main-container.scss */
+/* line 1365, ../scss/_main-container.scss */
 .enlarged-photo .photo .orbit-container .orbit-next span, .enlarged-photo .photo .orbit-container .orbit-prev span {
   display: none;
 }
-/* line 1360, ../scss/_main-container.scss */
+/* line 1369, ../scss/_main-container.scss */
 .enlarged-photo .photo .orbit-container .orbit-next::before {
   float: right;
   background-position: -330px -9px;
 }
-/* line 1364, ../scss/_main-container.scss */
+/* line 1373, ../scss/_main-container.scss */
 .enlarged-photo .photo .orbit-container .orbit-prev::before {
   background-position: -289px -9px;
 }
-/* line 1367, ../scss/_main-container.scss */
+/* line 1376, ../scss/_main-container.scss */
 .enlarged-photo .photo .orbit-container .orbit-slide-number {
   top: -30px;
   left: 0;
@@ -4480,16 +4566,16 @@ footer .row.link-footer .column:last-child {
   font-size: 13px;
   color: #999999;
 }
-/* line 1375, ../scss/_main-container.scss */
+/* line 1384, ../scss/_main-container.scss */
 .enlarged-photo .photo .orbit-container .orbit-slide-number span {
   font-weight: 400;
   padding: 5px 0px;
 }
-/* line 1379, ../scss/_main-container.scss */
+/* line 1388, ../scss/_main-container.scss */
 .enlarged-photo .photo .orbit-container .orbit-slide-number::before {
   content: 'Изображение ';
 }
-/* line 1385, ../scss/_main-container.scss */
+/* line 1394, ../scss/_main-container.scss */
 .enlarged-photo .photo-footer {
   background: #eef6f9;
   padding-bottom: 10px;
@@ -4510,18 +4596,18 @@ footer .row.link-footer .column:last-child {
 .enlarged-photo .photo-footer:after {
   clear: both;
 }
-/* line 1394, ../scss/_main-container.scss */
+/* line 1403, ../scss/_main-container.scss */
 .enlarged-photo .photo-footer .row .left {
   text-align: right;
   padding-right: 12px;
 }
-/* line 1397, ../scss/_main-container.scss */
+/* line 1406, ../scss/_main-container.scss */
 .enlarged-photo .photo-footer .row .left .sm-desk {
   color: #999999;
   font-size: 0.75rem;
   margin: 0;
 }
-/* line 1402, ../scss/_main-container.scss */
+/* line 1411, ../scss/_main-container.scss */
 .enlarged-photo .photo-footer .row .left .price {
   font-size: 51px;
   font-weight: 700;
@@ -4529,30 +4615,30 @@ footer .row.link-footer .column:last-child {
   color: #333;
   line-height: normal;
 }
-/* line 1408, ../scss/_main-container.scss */
+/* line 1417, ../scss/_main-container.scss */
 .enlarged-photo .photo-footer .row .left .price sup {
   top: -16px;
   font-size: 59%;
 }
-/* line 1414, ../scss/_main-container.scss */
+/* line 1423, ../scss/_main-container.scss */
 .enlarged-photo .photo-footer .row .right {
   text-align: left;
   padding-left: 12px;
 }
-/* line 1417, ../scss/_main-container.scss */
+/* line 1426, ../scss/_main-container.scss */
 .enlarged-photo .photo-footer .row .right p {
   color: #009900;
   font-size: 0.75rem;
   margin-top: 0;
   margin-bottom: 10px;
 }
-/* line 1424, ../scss/_main-container.scss */
+/* line 1433, ../scss/_main-container.scss */
 .enlarged-photo .photo-footer .row .right .btn .icon {
   float: left;
   width: 36px;
   height: 55px;
 }
-/* line 1428, ../scss/_main-container.scss */
+/* line 1437, ../scss/_main-container.scss */
 .enlarged-photo .photo-footer .row .right .btn .icon::before {
   width: 36px;
   height: 36px;

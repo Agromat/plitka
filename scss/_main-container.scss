@@ -1107,8 +1107,14 @@ footer{
 	}
 	
 }
+.modal_w640 {
+	width: 640px;
+}
 .modal_w520 {
 	width: 520px;
+}
+.modal_w330 {
+	width: 330px;
 }
 .modal__header {
 	padding: 22px 30px;
@@ -1128,6 +1134,9 @@ footer{
 	margin-bottom: 30px;
 	+ .btn-wrap {
 		margin-top: -5px;
+	}
+	+ .checkbox {
+		margin: -20px 0 20px;
 	}
 }
 .field__title {

@@ -212,7 +212,7 @@
         return false;
       });
 
-      $(".js-input-tel").mask("+380(99)-999-99-99");
+      $(".js-input-tel").mask("+38(999)-999-99-99");
 
   });
 
