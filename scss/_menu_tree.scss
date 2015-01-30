@@ -1,16 +1,15 @@
 .sidebar{
 	padding-top:rem-calc(20);
 	> .row{
-		margin-top: rem-calc(75) !important;
+		margin-top: rem-calc(30) !important;
 		.title{
-			font-size: rem-calc(15);
+			font-size: 18px;
 			font-weight: 700;
-			line-height: rem-calc(16);
-			margin: rem-calc(8) 0 rem-calc(25);
+			line-height: 1.2;
+			margin: rem-calc(8) 0 rem-calc(25) rem-calc(10);
 			color: $ddgray;
 			text-decoration: none;
 			display: table;
-			margin-left: rem-calc(10);
 			letter-spacing: 0px;
 			word-spacing: 0px;
 		}

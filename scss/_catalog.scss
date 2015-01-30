@@ -1,5 +1,5 @@
 .main-section.catalog{
-	width: 950px;
+	//width: 950px;
 	padding: 0 !important;
 	.main-container{
 		padding-left: 10px;
@@ -16,7 +16,7 @@
 }
 .sidebar.catalog{
 	margin: 0;
-	margin-left: 50px;
+	//margin-left: 50px;
 	padding-top: 80px;
 }
 .sidebar.sidebar_no-padding {
@@ -71,6 +71,11 @@
 				}
 			}
 		}
+}
+.product-item-wrap {
+	+ .other-products {
+		margin-top: 40px;
+	}
 }
 .product-item {
 	overflow: hidden;
