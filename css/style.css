@@ -892,71 +892,72 @@ ul.inline li {
 .bcrumbs-container .bcrumbs li {
   display: inline-block;
   list-style: none;
+  color: #0053a0;
   position: relative;
-}
-/* line 13, ../scss/_breadcrumbs.scss */
-.bcrumbs-container .bcrumbs li a {
   font-size: 0.875rem;
   line-height: 1rem;
+}
+/* line 16, ../scss/_breadcrumbs.scss */
+.bcrumbs-container .bcrumbs li a {
   color: #0053a0;
   display: inline;
   border: 0;
   padding: 0;
 }
-/* line 20, ../scss/_breadcrumbs.scss */
+/* line 21, ../scss/_breadcrumbs.scss */
 .bcrumbs-container .bcrumbs li a span {
   border-bottom: 0.0625rem solid #0053a0;
 }
-/* line 23, ../scss/_breadcrumbs.scss */
+/* line 24, ../scss/_breadcrumbs.scss */
 .bcrumbs-container .bcrumbs li a:hover {
   color: #333;
   border-bottom: 0.0625rem solid #333;
 }
-/* line 26, ../scss/_breadcrumbs.scss */
+/* line 27, ../scss/_breadcrumbs.scss */
 .bcrumbs-container .bcrumbs li a:hover span {
   border-bottom: 0.0625rem solid #333;
 }
-/* line 31, ../scss/_breadcrumbs.scss */
+/* line 32, ../scss/_breadcrumbs.scss */
 .bcrumbs-container .bcrumbs li::after {
   content: ' / ';
   color: #333333;
   padding: 0 0.1875rem;
 }
-/* line 37, ../scss/_breadcrumbs.scss */
+/* line 38, ../scss/_breadcrumbs.scss */
 .bcrumbs-container .bcrumbs li:last-child::after {
   content: none;
 }
-/* line 40, ../scss/_breadcrumbs.scss */
+/* line 41, ../scss/_breadcrumbs.scss */
 .bcrumbs-container .bcrumbs li:last-child a {
   border-bottom: none;
 }
-/* line 43, ../scss/_breadcrumbs.scss */
+/* line 44, ../scss/_breadcrumbs.scss */
 .bcrumbs-container .bcrumbs li:last-child a:hover {
   color: #333;
 }
-/* line 45, ../scss/_breadcrumbs.scss */
+/* line 46, ../scss/_breadcrumbs.scss */
 .bcrumbs-container .bcrumbs li:last-child a:hover span {
   border-bottom: 0.0625rem solid #333;
 }
 
-/* line 59, ../scss/_breadcrumbs.scss */
+/* line 60, ../scss/_breadcrumbs.scss */
 .bcrumbs li.has-drop:hover .bcrumbs__drop {
   display: block;
 }
-/* line 63, ../scss/_breadcrumbs.scss */
+/* line 64, ../scss/_breadcrumbs.scss */
 .bcrumbs li.has-drop:hover > a:before, .bcrumbs li.has-drop:hover > a:after {
   display: block;
 }
-/* line 69, ../scss/_breadcrumbs.scss */
+/* line 70, ../scss/_breadcrumbs.scss */
 .bcrumbs li.has-drop > a {
   position: relative;
   z-index: 2;
 }
-/* line 72, ../scss/_breadcrumbs.scss */
+/* line 73, ../scss/_breadcrumbs.scss */
 .bcrumbs li.has-drop > a:before, .bcrumbs li.has-drop > a:after {
   display: none;
 }
-/* line 76, ../scss/_breadcrumbs.scss */
+/* line 77, ../scss/_breadcrumbs.scss */
 .bcrumbs li.has-drop > a:before {
   content: "";
   position: absolute;
@@ -970,23 +971,23 @@ ul.inline li {
   border-bottom: 0;
   border-radius: 5px;
 }
-/* line 89, ../scss/_breadcrumbs.scss */
+/* line 90, ../scss/_breadcrumbs.scss */
 .bcrumbs li.has-drop > a:after {
   content: "";
   position: absolute;
-  bottom: -20px;
+  bottom: -16px;
   left: -12px;
   right: -14px;
   height: 10px;
   background: #fff;
   z-index: 3;
 }
-/* line 100, ../scss/_breadcrumbs.scss */
+/* line 101, ../scss/_breadcrumbs.scss */
 .bcrumbs li.has-drop span {
   position: relative;
   z-index: 2;
 }
-/* line 107, ../scss/_breadcrumbs.scss */
+/* line 108, ../scss/_breadcrumbs.scss */
 .bcrumbs .bcrumbs__drop {
   display: none;
   position: absolute;
@@ -1000,30 +1001,33 @@ ul.inline li {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
   background: #fff;
   font-size: 12px;
-  line-height: 1.3;
+  line-height: 1;
 }
-/* line 121, ../scss/_breadcrumbs.scss */
+/* line 122, ../scss/_breadcrumbs.scss */
 .bcrumbs .bcrumbs__drop .medium-12 {
   margin: 20px 0 15px;
 }
-/* line 125, ../scss/_breadcrumbs.scss */
+/* line 126, ../scss/_breadcrumbs.scss */
 .bcrumbs .bcrumbs__list {
   margin: 0;
-}
-/* line 127, ../scss/_breadcrumbs.scss */
-.bcrumbs .bcrumbs__list li {
-  display: block;
+  line-height: 1;
 }
 /* line 129, ../scss/_breadcrumbs.scss */
-.bcrumbs .bcrumbs__list li:after {
-  display: none;
-}
-/* line 132, ../scss/_breadcrumbs.scss */
-.bcrumbs .bcrumbs__list li a {
+.bcrumbs .bcrumbs__list li {
+  display: block;
+  margin-bottom: 5px;
   font-weight: bold;
   font-size: 12px;
 }
+/* line 134, ../scss/_breadcrumbs.scss */
+.bcrumbs .bcrumbs__list li:after {
+  display: none;
+}
 /* line 139, ../scss/_breadcrumbs.scss */
+.bcrumbs .bcrumbs__list li:last-child a:hover {
+  border-bottom: 1px solid;
+}
+/* line 147, ../scss/_breadcrumbs.scss */
 .bcrumbs .bcrumbs__list.is-normal li a {
   font-weight: normal;
 }
