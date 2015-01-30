@@ -997,32 +997,61 @@ footer{
 	margin-left: 60px !important;
 	width: 505px;
 }
-.about .row.price-info .delivery {
-	width: 190px;
-	padding: 15px;
-	margin-top: 25px;
+.medium-4 {
+	.delivery {
+		width: 190px;
+		padding: 15px;
+		margin-top: 25px;
+		.title {
+			margin-bottom: 13px;
+			margin-top: 0;
+			.icon {
+				display: block;
+				float: none;
+			}
+			.icon::before {
+				width: 45px;
+				height: 30px;
+				margin-right: 7px;
+			}
+		}
+		.provided {
+			width: auto !important;
+			margin-bottom: 15px;
+			p {
+				font-size: 0.8125rem;
+				color: #999999;
+				font-weight: 400;
+				margin-top: 0;
+			}
+		}
+		.cost {
+			float: none !important;
+			padding: 0 !important;
+		}
+	}
 }
-.about .row.price-info .delivery .title {
-	margin-bottom: 13px;
-	margin-top: 0;
-}
-.about .row.price-info .delivery .icon {
-	display: block;
-	float: none;
-}
+// .about .row.price-info .delivery .title {
+// 	margin-bottom: 13px;
+// 	margin-top: 0;
+// }
+// .about .row.price-info .delivery .icon {
+// 	display: block;
+// 	float: none;
+// }
 .about .delivery .title .icon::before {
 	width: 45px;
 	height: 30px;
 	margin-right: 7px;
 }
-.about .row.price-info .delivery .provided {
-	width: auto;
-}
-.about .row.price-info .delivery .provided p {
-	word-break: normal;
-	word-wrap: break-word;
-	margin-bottom: 15px;
-}
+// .about .row.price-info .delivery .provided {
+// 	width: auto;
+// }
+// .about .row.price-info .delivery .provided p {
+// 	word-break: normal;
+// 	word-wrap: break-word;
+// 	margin-bottom: 15px;
+// }
 .about .delivery .row .provided p {
 	font-size: 0.8125rem;
 	color: #999999;
