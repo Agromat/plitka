@@ -1,5 +1,8 @@
 .sidebar{
 	padding-top:rem-calc(20);
+	&.is-width {
+		width: rem-calc(210);
+	}
 	> .row{
 		margin-top: rem-calc(30) !important;
 		.title{
