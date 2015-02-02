@@ -13,6 +13,8 @@
       navigation_arrows: true,
       bullets: false,
       timer: false,
+      next_on_click: false,
+      timer_speed: 5000,
       slide_number: false
     },
 

@@ -1616,6 +1616,12 @@ ul.inline li {
   border-bottom: 1px solid #333;
 }
 
+/* line 119, ../scss/_slider.scss */
+.orbit-prev,
+.orbit-next {
+  display: none !important;
+}
+
 /* line 1, ../scss/_about.scss */
 .main-container .about.side {
   padding-left: 3.25rem;
