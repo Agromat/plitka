@@ -5745,18 +5745,19 @@ footer .row.link-footer .column:last-child {
 }
 
 /* line 68, ../scss/_contacts.scss */
-.map__in img {
+.map__in iframe {
+  display: block;
   width: 100%;
 }
 
-/* line 72, ../scss/_contacts.scss */
+/* line 73, ../scss/_contacts.scss */
 .title {
   font-size: 18px;
   font-weight: bold;
   color: #333;
 }
 
-/* line 77, ../scss/_contacts.scss */
+/* line 78, ../scss/_contacts.scss */
 .title_border {
   margin: 35px 0 27px;
   padding-bottom: 12px;
