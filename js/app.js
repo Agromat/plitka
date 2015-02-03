@@ -66,7 +66,8 @@
       $('.multiple-items').slick({
         infinite: true,
         slidesToShow: 5,
-        slidesToScroll: 5
+        slidesToScroll: 5,
+        draggable: false
       });
     
       $(document).on({
@@ -92,7 +93,8 @@
         $('.multiple-items-4').slick({
           infinite: true,
           slidesToShow: 4,
-          slidesToScroll: 4
+          slidesToScroll: 4,
+          draggable: false
         });
     }
 
@@ -100,14 +102,16 @@
         $('.multiple-items-2').slick({
           infinite: true,
           slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToScroll: 2,
+          draggable: false
         });
     }
     if ($('.multiple-items-1').exists()) {
         $('.multiple-items-1').slick({
           infinite: true,
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          draggable: false
         });
     }
 
