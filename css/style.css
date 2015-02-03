@@ -794,15 +794,16 @@ ul.inline li {
   float: left;
   height: 17px;
   margin-right: 1px;
+  margin-top: 2px;
 }
-/* line 46, ../scss/_menu_tree.scss */
+/* line 47, ../scss/_menu_tree.scss */
 .sidebar > .row.menu-tree .accordion .accordion-navigation > .icon::before {
   display: block;
   width: 18px;
   height: 11px;
   margin: 0;
 }
-/* line 53, ../scss/_menu_tree.scss */
+/* line 54, ../scss/_menu_tree.scss */
 .sidebar > .row.menu-tree .accordion .accordion-navigation > a {
   color: #0053a0;
   font-size: 0.875rem;
@@ -810,81 +811,81 @@ ul.inline li {
   font-weight: 400;
   padding: 0 0.3125rem 0 1.1875rem;
 }
-/* line 59, ../scss/_menu_tree.scss */
+/* line 60, ../scss/_menu_tree.scss */
 .sidebar > .row.menu-tree .accordion .accordion-navigation > a > span {
   border-bottom: 1px solid #0053a0;
 }
-/* line 62, ../scss/_menu_tree.scss */
+/* line 63, ../scss/_menu_tree.scss */
 .sidebar > .row.menu-tree .accordion .accordion-navigation > a:hover {
   color: #333;
 }
-/* line 65, ../scss/_menu_tree.scss */
+/* line 66, ../scss/_menu_tree.scss */
 .sidebar > .row.menu-tree .accordion .accordion-navigation > a:last-child {
   margin-bottom: 0;
 }
-/* line 70, ../scss/_menu_tree.scss */
+/* line 71, ../scss/_menu_tree.scss */
 .sidebar > .row.menu-tree .accordion .accordion-navigation.active > .icon::before {
   background-position: 2px -27px;
   height: 18px;
 }
-/* line 74, ../scss/_menu_tree.scss */
+/* line 75, ../scss/_menu_tree.scss */
 .sidebar > .row.menu-tree .accordion .accordion-navigation.active > a {
   font-weight: 700;
   color: #000000;
 }
-/* line 79, ../scss/_menu_tree.scss */
+/* line 80, ../scss/_menu_tree.scss */
 .sidebar > .row.menu-tree .accordion .accordion-navigation .content {
   padding: 0.8125rem 0.9375rem 0.3125rem 0.8125rem;
 }
-/* line 81, ../scss/_menu_tree.scss */
+/* line 82, ../scss/_menu_tree.scss */
 .sidebar > .row.menu-tree .accordion .accordion-navigation .content ul {
   margin-bottom: 0;
   margin-top: 0;
 }
-/* line 84, ../scss/_menu_tree.scss */
+/* line 85, ../scss/_menu_tree.scss */
 .sidebar > .row.menu-tree .accordion .accordion-navigation .content ul li {
   list-style: none;
   margin-bottom: 0.3125rem;
 }
-/* line 87, ../scss/_menu_tree.scss */
+/* line 88, ../scss/_menu_tree.scss */
 .sidebar > .row.menu-tree .accordion .accordion-navigation .content ul li a {
   font-size: 0.875rem;
   line-height: 1.0625rem;
 }
-/* line 90, ../scss/_menu_tree.scss */
+/* line 91, ../scss/_menu_tree.scss */
 .sidebar > .row.menu-tree .accordion .accordion-navigation .content ul li a > span {
   border-bottom: 1px solid #0053a0;
 }
-/* line 93, ../scss/_menu_tree.scss */
+/* line 94, ../scss/_menu_tree.scss */
 .sidebar > .row.menu-tree .accordion .accordion-navigation .content ul li a:hover {
   color: #333;
 }
-/* line 95, ../scss/_menu_tree.scss */
+/* line 96, ../scss/_menu_tree.scss */
 .sidebar > .row.menu-tree .accordion .accordion-navigation .content ul li a:hover > span {
   border-bottom: 1px solid #333;
 }
-/* line 110, ../scss/_menu_tree.scss */
+/* line 111, ../scss/_menu_tree.scss */
 .sidebar > .row.brand .content {
   border: 1px solid #dddddd;
 }
-/* line 113, ../scss/_menu_tree.scss */
+/* line 114, ../scss/_menu_tree.scss */
 .sidebar > .row.brand .content .brand-img {
   border-bottom: 1px solid #dddddd;
   width: 100%;
   height: 6.875rem;
 }
-/* line 117, ../scss/_menu_tree.scss */
+/* line 118, ../scss/_menu_tree.scss */
 .sidebar > .row.brand .content .brand-img > div {
   display: table;
   width: 100%;
   height: 100%;
 }
-/* line 121, ../scss/_menu_tree.scss */
+/* line 122, ../scss/_menu_tree.scss */
 .sidebar > .row.brand .content .brand-img > div > div {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 124, ../scss/_menu_tree.scss */
+/* line 125, ../scss/_menu_tree.scss */
 .sidebar > .row.brand .content .brand-img > div > div img {
   margin: 0 auto;
   display: block;
@@ -1070,7 +1071,7 @@ ul.inline li {
 }
 /* line 16, ../scss/_icon.scss */
 .icon.triablg::before {
-  background-position: 4px -15px;
+  background-position: 4px -17px;
 }
 /* line 19, ../scss/_icon.scss */
 .icon.orbit-next::before, .icon.orbit-prev::before {
@@ -5805,18 +5806,22 @@ footer .row.link-footer .column:last-child {
   color: #333;
 }
 /* line 6, ../scss/_typography.scss */
+.article .table-wrap {
+  overflow: hidden;
+}
+/* line 9, ../scss/_typography.scss */
 .article table {
   margin-bottom: 40px;
-  width: 23.4375rem;
   float: left;
+  width: 23.4375rem;
   font-size: 14px;
   line-height: 1.4;
 }
-/* line 12, ../scss/_typography.scss */
+/* line 15, ../scss/_typography.scss */
 .article table:nth-child(2n+1) {
   float: right;
 }
-/* line 15, ../scss/_typography.scss */
+/* line 18, ../scss/_typography.scss */
 .article table caption {
   font-size: 16px;
   padding: 15px 0;
@@ -5825,36 +5830,36 @@ footer .row.link-footer .column:last-child {
   color: #4a5b70;
   text-align: left;
 }
-/* line 23, ../scss/_typography.scss */
+/* line 26, ../scss/_typography.scss */
 .article table thead {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   background: none;
 }
-/* line 28, ../scss/_typography.scss */
+/* line 31, ../scss/_typography.scss */
 .article table thead tr th {
   text-align: left;
   color: #999;
   font-weight: normal;
   line-height: 1.3;
 }
-/* line 33, ../scss/_typography.scss */
+/* line 36, ../scss/_typography.scss */
 .article table thead tr th:last-child {
   text-align: right;
 }
-/* line 41, ../scss/_typography.scss */
+/* line 44, ../scss/_typography.scss */
 .article table tbody tr:nth-child(2n) {
   background: #f7f7f7;
 }
-/* line 44, ../scss/_typography.scss */
+/* line 47, ../scss/_typography.scss */
 .article table tbody tr td {
   text-align: left;
 }
-/* line 46, ../scss/_typography.scss */
+/* line 49, ../scss/_typography.scss */
 .article table tbody tr td:last-child {
   text-align: right;
 }
-/* line 53, ../scss/_typography.scss */
+/* line 56, ../scss/_typography.scss */
 .article h6 {
   margin: 20px 0 15px;
   font-size: 16px;
