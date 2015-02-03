@@ -16,12 +16,14 @@
 			float: right;
 		}
 		caption {
-			font-size: 16px;
 			padding: 15px 0;
 			min-height: 52px;
+			text-align: left;
+		}
+		caption h3 {
+			font-size: 16px;
 			font-weight: bold;
 			color: #4a5b70;
-			text-align: left;
 		}
 		thead {
 			border-top: 1px solid #ddd;
