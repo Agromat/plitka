@@ -526,11 +526,16 @@ ul.inline li {
 }
 
 /* line 267, ../scss/_menu.scss */
+.navigation {
+  position: relative;
+}
+
+/* line 270, ../scss/_menu.scss */
 .menu-catalog {
   color: #000000;
   background: #5b6a84;
 }
-/* line 270, ../scss/_menu.scss */
+/* line 273, ../scss/_menu.scss */
 .menu-catalog > nav > ul > li {
   margin-bottom: 0;
   margin-left: 0;
@@ -538,7 +543,7 @@ ul.inline li {
   position: relative;
   float: left;
 }
-/* line 276, ../scss/_menu.scss */
+/* line 279, ../scss/_menu.scss */
 .menu-catalog > nav > ul > li:before {
   content: "";
   position: absolute;
@@ -548,25 +553,25 @@ ul.inline li {
   width: 1px;
   background: #6C7A93;
 }
-/* line 286, ../scss/_menu.scss */
+/* line 289, ../scss/_menu.scss */
 .menu-catalog > nav > ul > li:first-child:before {
   display: none;
 }
-/* line 291, ../scss/_menu.scss */
+/* line 294, ../scss/_menu.scss */
 .menu-catalog > nav > ul > li.active:before {
   display: none;
 }
-/* line 295, ../scss/_menu.scss */
+/* line 298, ../scss/_menu.scss */
 .menu-catalog > nav > ul > li.active + li:before {
   display: none;
 }
-/* line 300, ../scss/_menu.scss */
+/* line 303, ../scss/_menu.scss */
 .menu-catalog > nav > ul > li.active > a,
 .menu-catalog > nav > ul > li > a.dropdown:hover {
   border: 4px solid #4d5a70;
   border-bottom: 0;
 }
-/* line 305, ../scss/_menu.scss */
+/* line 308, ../scss/_menu.scss */
 .menu-catalog > nav > ul > li.active > a span,
 .menu-catalog > nav > ul > li > a.dropdown:hover span {
   color: #000000;
@@ -574,7 +579,7 @@ ul.inline li {
   position: relative;
   z-index: 1;
 }
-/* line 311, ../scss/_menu.scss */
+/* line 314, ../scss/_menu.scss */
 .menu-catalog > nav > ul > li.active > a::before,
 .menu-catalog > nav > ul > li > a.dropdown:hover::before {
   content: '';
@@ -586,7 +591,7 @@ ul.inline li {
   background: #fff;
   z-index: 1000;
 }
-/* line 321, ../scss/_menu.scss */
+/* line 324, ../scss/_menu.scss */
 .menu-catalog > nav > ul > li.active > a:after,
 .menu-catalog > nav > ul > li > a.dropdown:hover:after {
   content: "";
@@ -598,7 +603,7 @@ ul.inline li {
   background: #fff;
   border-radius: 3px 3px 0 0;
 }
-/* line 332, ../scss/_menu.scss */
+/* line 335, ../scss/_menu.scss */
 .menu-catalog > nav > ul > li > a {
   font-size: 1rem;
   color: #ffffff;
@@ -609,79 +614,80 @@ ul.inline li {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 341, ../scss/_menu.scss */
+/* line 344, ../scss/_menu.scss */
 .menu-catalog > nav > ul > li > a span {
   color: #ffffff;
 }
-/* line 344, ../scss/_menu.scss */
+/* line 347, ../scss/_menu.scss */
 .menu-catalog > nav > ul > li > a:hover span {
   border-bottom: 1px solid #ffffff;
 }
-/* line 350, ../scss/_menu.scss */
+/* line 353, ../scss/_menu.scss */
 .menu-catalog > nav > .row {
   padding-top: 7px;
   padding-left: 0;
 }
 
-/* line 356, ../scss/_menu.scss */
+/* line 359, ../scss/_menu.scss */
 .f-dropdown.content {
   border-radius: 5px;
+  display: none;
 }
-/* line 359, ../scss/_menu.scss */
+/* line 363, ../scss/_menu.scss */
 .f-dropdown.content a span {
   border-bottom-color: #0053a0;
 }
-/* line 362, ../scss/_menu.scss */
+/* line 366, ../scss/_menu.scss */
 .f-dropdown.content a:hover {
   color: #333;
 }
-/* line 364, ../scss/_menu.scss */
+/* line 368, ../scss/_menu.scss */
 .f-dropdown.content a:hover span {
   border-bottom-color: #333;
 }
-/* line 369, ../scss/_menu.scss */
+/* line 373, ../scss/_menu.scss */
 .f-dropdown.content .menu-item {
   border-right: 0.0625rem solid #dddddd;
 }
-/* line 371, ../scss/_menu.scss */
+/* line 375, ../scss/_menu.scss */
 .f-dropdown.content .menu-item li {
   display: table;
   border-collapse: collapse;
 }
-/* line 374, ../scss/_menu.scss */
+/* line 378, ../scss/_menu.scss */
 .f-dropdown.content .menu-item li a {
   font-weight: 700;
   padding-left: 0;
 }
-/* line 377, ../scss/_menu.scss */
+/* line 381, ../scss/_menu.scss */
 .f-dropdown.content .menu-item li a:hover span {
   border-bottom: 1px solid #333;
 }
-/* line 382, ../scss/_menu.scss */
+/* line 386, ../scss/_menu.scss */
 .f-dropdown.content .menu-item .row {
   margin-bottom: 2.8125rem;
 }
-/* line 384, ../scss/_menu.scss */
+/* line 388, ../scss/_menu.scss */
 .f-dropdown.content .menu-item .row:last-child {
   margin-bottom: 0;
 }
-/* line 389, ../scss/_menu.scss */
+/* line 393, ../scss/_menu.scss */
 .f-dropdown.content .menu-item .brand .brand-title {
   font-size: 0.875rem;
   margin-top: 0;
   margin-bottom: 1rem;
 }
-/* line 393, ../scss/_menu.scss */
+/* line 397, ../scss/_menu.scss */
 .f-dropdown.content .menu-item .brand .brand-title span {
   font-weight: 700;
 }
-/* line 397, ../scss/_menu.scss */
+/* line 401, ../scss/_menu.scss */
 .f-dropdown.content .menu-item .brand li a {
   font-weight: 400;
   font-size: 0.8125rem;
   padding-left: 0;
 }
-/* line 406, ../scss/_menu.scss */
+/* line 410, ../scss/_menu.scss */
 .f-dropdown.content .new-in .new-in-title {
   color: #4a5b70;
   font-size: 1.125rem;
@@ -690,35 +696,46 @@ ul.inline li {
   margin-top: 0.625rem;
   margin-bottom: 1.5625rem;
 }
-/* line 416, ../scss/_menu.scss */
+/* line 420, ../scss/_menu.scss */
 .f-dropdown.content .new-in .new-in-about {
   margin-top: 0.625rem;
 }
-/* line 418, ../scss/_menu.scss */
+/* line 422, ../scss/_menu.scss */
 .f-dropdown.content .new-in .new-in-about a {
   color: #0053a0;
   font-size: 0.875rem;
   line-height: 1rem;
 }
-/* line 422, ../scss/_menu.scss */
+/* line 426, ../scss/_menu.scss */
 .f-dropdown.content .new-in .new-in-about a:hover {
   color: #333;
 }
-/* line 424, ../scss/_menu.scss */
+/* line 428, ../scss/_menu.scss */
 .f-dropdown.content .new-in .new-in-about a:hover span {
   border-bottom-color: #333;
 }
-/* line 429, ../scss/_menu.scss */
+/* line 433, ../scss/_menu.scss */
 .f-dropdown.content .new-in .new-in-about .price {
   color: #333333;
   font-size: 1.3125rem;
   font-weight: 700;
   line-height: 1rem;
 }
-/* line 434, ../scss/_menu.scss */
+/* line 438, ../scss/_menu.scss */
 .f-dropdown.content .new-in .new-in-about .price sup {
   top: -7px;
   font-size: 70%;
+}
+
+/* line 446, ../scss/_menu.scss */
+.f-dropdown.is-right-position.content {
+  left: auto !important;
+  right: 0;
+}
+
+/* line 450, ../scss/_menu.scss */
+.f-dropdown.open {
+  display: block;
 }
 
 /*

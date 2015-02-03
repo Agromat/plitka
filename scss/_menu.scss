@@ -264,6 +264,9 @@
 		}
 	}
 }
+.navigation {
+	position: relative;
+}
 .menu-catalog{
 	color:$black;
 	background:$lblue;
@@ -355,6 +358,7 @@
 
 .f-dropdown.content{
 	border-radius: 5px;
+	display: none;
 	a{
 		span{
 			border-bottom-color:$blue 
@@ -438,4 +442,11 @@
 			}
 		}
 	}
+}
+.f-dropdown.is-right-position.content {
+	left: auto !important;
+	right: 0;
+}
+.f-dropdown.open {
+	display: block;
 }
