@@ -216,6 +216,12 @@
 
       $(".js-input-tel").mask("+38(999)-999-99-99");
 
+      $(".js-show-all").on("click", function(){
+        $(this).parent().find(".js-hidden-all").slideDown(300);
+        $(this).hide();
+        return false;
+      });
+
   });
 
   $(document).on('opened.fndtn.reveal', '[data-reveal]', function () {

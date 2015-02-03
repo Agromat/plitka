@@ -30,6 +30,11 @@
 		margin-bottom: 30px !important;
 		width:190px;
 		border:1px solid $border;
+		&:hover {
+			.title {
+				color: $blue !important;
+			}
+		}
 		a{
 			margin: 0 !important;
 			&:hover .title{
@@ -79,10 +84,16 @@
 }
 .product-item {
 	overflow: hidden;
+	display: block;
 	padding: 8px; 
 	border: 2px solid #ddd; 
 	&.is-marked {
 		border-color: #ffba00
+	}
+	&:hover {
+		.product-item__title {
+			color: #333;
+		}
 	}
 }
 .product-item__img {
@@ -98,11 +109,13 @@
 }
 .product-item__main {
 	overflow: hidden;
-	a {
-		text-decoration: underline;
-		font-size: 18px;
-		font-weight: bold;
-	}
+	
+}
+.product-item__title {
+	text-decoration: underline;
+	font-size: 18px;
+	font-weight: bold;
+	color: #0053a0;
 }
 .row.not-collapse {
 	.row {
