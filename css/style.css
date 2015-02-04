@@ -5839,48 +5839,51 @@ footer .row.link-footer .column:last-child {
 }
 /* line 15, ../scss/_typography.scss */
 .article h2 {
+  margin: 20px 0 10px;
   font-size: 21px;
 }
-/* line 18, ../scss/_typography.scss */
+/* line 19, ../scss/_typography.scss */
 .article h3, .article h4 {
+  margin: 20px 0 10px;
   font-size: 18px;
 }
-/* line 21, ../scss/_typography.scss */
+/* line 23, ../scss/_typography.scss */
 .article h4, .article h5, .article h6 {
+  margin: 20px 0 10px;
   color: #333;
 }
-/* line 24, ../scss/_typography.scss */
+/* line 27, ../scss/_typography.scss */
 .article h5 {
   font-size: 16px;
 }
-/* line 27, ../scss/_typography.scss */
+/* line 30, ../scss/_typography.scss */
 .article h6 {
   font-style: italic;
   font-size: 16px;
 }
-/* line 32, ../scss/_typography.scss */
+/* line 35, ../scss/_typography.scss */
 .article figure[align="right"] {
   float: right;
 }
-/* line 35, ../scss/_typography.scss */
+/* line 38, ../scss/_typography.scss */
 .article figure[align="left"] {
   float: left;
 }
-/* line 39, ../scss/_typography.scss */
+/* line 42, ../scss/_typography.scss */
 .article ul, .article ol {
   margin-bottom: 38px;
 }
-/* line 42, ../scss/_typography.scss */
+/* line 45, ../scss/_typography.scss */
 .article ul {
   margin-left: 0;
   list-style-type: none;
 }
-/* line 45, ../scss/_typography.scss */
+/* line 48, ../scss/_typography.scss */
 .article ul li {
   position: relative;
   padding-left: 22px;
 }
-/* line 48, ../scss/_typography.scss */
+/* line 51, ../scss/_typography.scss */
 .article ul li:before {
   content: "";
   position: absolute;
@@ -5892,102 +5895,102 @@ footer .row.link-footer .column:last-child {
   border-radius: 50%;
   background: #000;
 }
-/* line 61, ../scss/_typography.scss */
+/* line 65, ../scss/_typography.scss */
+.article .table-wrap-group + .note {
+  margin-top: -30px;
+}
+/* line 69, ../scss/_typography.scss */
 .article .table-wrap {
   display: inline-block;
   vertical-align: top;
   width: 375px;
   margin-bottom: 40px;
 }
-/* line 66, ../scss/_typography.scss */
-.article .table-wrap:nth-child(2n+1) {
+/* line 74, ../scss/_typography.scss */
+.article .table-wrap:nth-child(2n) {
   margin-left: 20px;
 }
-/* line 69, ../scss/_typography.scss */
-.article .table-wrap + .note {
-  margin-top: -30px;
-}
-/* line 73, ../scss/_typography.scss */
+/* line 78, ../scss/_typography.scss */
 .article table {
   margin: 0;
   width: 100%;
   font-size: 14px;
   line-height: 1.4;
 }
-/* line 78, ../scss/_typography.scss */
+/* line 83, ../scss/_typography.scss */
 .article table caption {
   padding: 15px 0;
   min-height: 52px;
   text-align: left;
 }
-/* line 84, ../scss/_typography.scss */
+/* line 89, ../scss/_typography.scss */
 .article table caption h3, .article table caption h5, .article table caption h6 {
   margin: 0;
   font-size: 16px;
   font-weight: bold;
   color: #4a5b70;
 }
-/* line 90, ../scss/_typography.scss */
+/* line 95, ../scss/_typography.scss */
 .article table caption h6 {
   font-style: italic;
   color: #333;
 }
-/* line 96, ../scss/_typography.scss */
+/* line 101, ../scss/_typography.scss */
 .article table thead {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   background: none;
 }
-/* line 101, ../scss/_typography.scss */
+/* line 106, ../scss/_typography.scss */
 .article table thead tr th {
   text-align: left;
   color: #999;
   font-weight: normal;
   line-height: 1.3;
 }
-/* line 106, ../scss/_typography.scss */
+/* line 111, ../scss/_typography.scss */
 .article table thead tr th:last-child {
   text-align: right;
 }
-/* line 114, ../scss/_typography.scss */
+/* line 119, ../scss/_typography.scss */
 .article table tbody tr:nth-child(2n) {
   background: #f7f7f7;
 }
-/* line 116, ../scss/_typography.scss */
+/* line 121, ../scss/_typography.scss */
 .article table tbody tr:nth-child(2n) table {
   background: #F7F7F7;
 }
-/* line 120, ../scss/_typography.scss */
+/* line 125, ../scss/_typography.scss */
 .article table tbody tr td {
   text-align: left;
 }
-/* line 122, ../scss/_typography.scss */
+/* line 127, ../scss/_typography.scss */
 .article table tbody tr td:last-child {
   text-align: right;
 }
-/* line 129, ../scss/_typography.scss */
+/* line 134, ../scss/_typography.scss */
 .article table tbody table tr td {
   padding: 3px 0;
 }
-/* line 131, ../scss/_typography.scss */
+/* line 136, ../scss/_typography.scss */
 .article table tbody table tr td:last-child {
   text-align: left;
 }
-/* line 135, ../scss/_typography.scss */
+/* line 140, ../scss/_typography.scss */
 .article table tbody table tr:nth-child(2n) {
   background: none;
 }
-/* line 141, ../scss/_typography.scss */
+/* line 146, ../scss/_typography.scss */
 .article table sup {
   font-size: 14px;
   color: #ed1c24;
 }
-/* line 146, ../scss/_typography.scss */
+/* line 151, ../scss/_typography.scss */
 .article .medium-7 {
   padding-right: 30px !important;
 }
 
-/* line 150, ../scss/_typography.scss */
+/* line 155, ../scss/_typography.scss */
 .panel {
   padding: 20px 55px;
   border: 1px solid #DDD;
@@ -6001,32 +6004,32 @@ footer .row.link-footer .column:last-child {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* line 162, ../scss/_typography.scss */
+/* line 167, ../scss/_typography.scss */
 .panel_small {
   text-align: left;
   padding: 20px;
 }
-/* line 165, ../scss/_typography.scss */
+/* line 170, ../scss/_typography.scss */
 .panel_small p {
   margin-top: 0;
 }
-/* line 167, ../scss/_typography.scss */
+/* line 172, ../scss/_typography.scss */
 .panel_small p:last-child {
   margin-bottom: 0;
 }
-/* line 171, ../scss/_typography.scss */
+/* line 176, ../scss/_typography.scss */
 .panel_small a {
   text-decoration: underline;
 }
 
-/* line 175, ../scss/_typography.scss */
+/* line 180, ../scss/_typography.scss */
 .note {
   margin: 0 0 50px;
   padding: 0 10px;
   font-size: 14px;
   color: #999;
 }
-/* line 180, ../scss/_typography.scss */
+/* line 185, ../scss/_typography.scss */
 .note sup {
   color: #ed1c24;
 }
