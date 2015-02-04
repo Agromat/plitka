@@ -299,28 +299,29 @@
 				}
 }
 .stock{
-					padding: rem-calc(10) rem-calc(15) rem-calc(17) rem-calc(18);
-					border: 2px solid $red;
-					-webkit-box-shadow: 0px 2px 6px 0px rgba(237, 28, 36, 0.2);
-					-moz-box-shadow:    0px 2px 6px 0px rgba(237, 28, 36, 0.2);
-					box-shadow:         0px 2px 6px 0px rgba(237, 28, 36, 0.2);
-					-webkit-border-radius: 8px;
-					-moz-border-radius: 8px;
-					border-radius: 8px;
-					.stock-title{
-						font-weight: 700;
-						font-size: rem-calc(18);
-						line-height: normal;
-						color: $red;
-						word-spacing: 0px;
-						margin: 0 0 12px;
-						letter-spacing: rem-calc(-1px);
-					}
-					a{
-						span{
-							border-bottom-color: $blue;
-						}
-					}
+	display: block;
+	padding: rem-calc(10) rem-calc(15) rem-calc(17) rem-calc(18);
+	border: 2px solid $red;
+	-webkit-box-shadow: 0px 2px 6px 0px rgba(237, 28, 36, 0.2);
+	-moz-box-shadow:    0px 2px 6px 0px rgba(237, 28, 36, 0.2);
+	box-shadow:         0px 2px 6px 0px rgba(237, 28, 36, 0.2);
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	.stock-title{
+		font-weight: 700;
+		font-size: rem-calc(18);
+		line-height: normal;
+		color: $red;
+		word-spacing: 0px;
+		margin: 0 0 12px;
+		letter-spacing: rem-calc(-1px);
+	}
+	a {
+		span {
+			border-bottom-color: $blue;
+		}
+	}
 }
 .bulk-select{
 	width: 117px;

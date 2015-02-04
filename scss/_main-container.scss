@@ -426,6 +426,10 @@ ul.pagination{
 			-webkit-box-shadow: inset 0px -3px 0px 0px #e6e8eb;
 			-moz-box-shadow: inset 0px -3px 0px 0px #e6e8eb;
 			box-shadow: inset 0px -3px 0px 0px #e6e8eb;
+			border-radius: 5px;
+			span {
+				border: 0 !important
+			}
 		}
 	}
 }
@@ -1180,6 +1184,9 @@ footer{
 	}
 	+ .checkbox {
 		margin: -20px 0 20px;
+		span {
+			line-height: 1;
+		}
 	}
 }
 .field_inline {

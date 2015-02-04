@@ -126,6 +126,10 @@
 .blog-article{
 		margin-top: 40px !important;
 		width: 190px;
+		a {
+			display: block;
+			padding: 20px 20px 23px 20px !important;
+		}
 		.title{
 			color: $title;
 			font-weight: 700;
@@ -139,7 +143,7 @@
 		}
 		.column{
 			background: #eef6f9;
-			padding: 20px 20px 23px 20px !important;
+			
 			margin-bottom: 25px;
 			.img{
 				padding: 12px 0;

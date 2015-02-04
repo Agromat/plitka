@@ -50,7 +50,7 @@
 		    clear: none;
 		    padding: 0 30px 0 24px;
 		    cursor: pointer;
-		    background: url(../img/uncheck.png) left center no-repeat;
+		    background: url(../img/uncheck.png) left 3px no-repeat;
 		    -webkit-touch-callout: none;
 		    -webkit-user-select: none;
 		    -khtml-user-select: none;
@@ -59,7 +59,7 @@
 			    user-select: none;
 			}
 			input[type='checkbox']:checked + label {
-				background: url(../img/check.png) left center no-repeat;
+				background: url(../img/check.png) left 3px no-repeat;
 			}
 		}
 	&.radio:not(#foo){
@@ -95,7 +95,7 @@
 			clear: none;
 			display: block;
 			width: 100%;
-			line-height: normal;
+			line-height: 1.2;
 		}
 		input[type='radio'] + label {
 		    margin: 0;

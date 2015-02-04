@@ -221,8 +221,10 @@
       $(".js-input-tel").mask("+38(999)-999-99-99");
 
       $(".js-show-all").on("click", function(){
-        $(this).parent().find(".js-hidden-all").slideDown(300);
-        $(this).hide();
+        var attr = $(this).attr("data-text");
+        var text = $(this).text();
+        $(this).parent().find(".js-hidden-all").slideToggle(300);
+        $(this).attr("data-text", text).children().text(attr);
         return false;
       });
 
