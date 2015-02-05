@@ -103,6 +103,23 @@
 					}
 				}
 			}
+			.accordion_simple {
+				.accordion-navigation {
+					&.active{
+						> .icon::before{
+							background-position: 2px -27px;
+							height: 18px;
+							-webkit-transform: rotate(-90deg);
+							-moz-transform: rotate(-90deg);
+							transform: rotate(-90deg);
+						}
+						> a{
+							font-weight: 700;
+							color:$black;
+						}
+					}
+				}
+			}
 		}
 		&.brand{
 			.title.brand{

@@ -869,28 +869,41 @@ ul.inline li {
 .sidebar > .row.menu-tree .accordion .accordion-navigation .content ul li a:hover > span {
   border-bottom: 1px solid #333;
 }
-/* line 111, ../scss/_menu_tree.scss */
+/* line 109, ../scss/_menu_tree.scss */
+.sidebar > .row.menu-tree .accordion_simple .accordion-navigation.active > .icon::before {
+  background-position: 2px -27px;
+  height: 18px;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+/* line 116, ../scss/_menu_tree.scss */
+.sidebar > .row.menu-tree .accordion_simple .accordion-navigation.active > a {
+  font-weight: 700;
+  color: #000000;
+}
+/* line 128, ../scss/_menu_tree.scss */
 .sidebar > .row.brand .content {
   border: 1px solid #dddddd;
 }
-/* line 114, ../scss/_menu_tree.scss */
+/* line 131, ../scss/_menu_tree.scss */
 .sidebar > .row.brand .content .brand-img {
   border-bottom: 1px solid #dddddd;
   width: 100%;
   height: 6.875rem;
 }
-/* line 118, ../scss/_menu_tree.scss */
+/* line 135, ../scss/_menu_tree.scss */
 .sidebar > .row.brand .content .brand-img > div {
   display: table;
   width: 100%;
   height: 100%;
 }
-/* line 122, ../scss/_menu_tree.scss */
+/* line 139, ../scss/_menu_tree.scss */
 .sidebar > .row.brand .content .brand-img > div > div {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 125, ../scss/_menu_tree.scss */
+/* line 142, ../scss/_menu_tree.scss */
 .sidebar > .row.brand .content .brand-img > div > div img {
   margin: 0 auto;
   display: block;
