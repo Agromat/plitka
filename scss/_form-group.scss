@@ -102,9 +102,9 @@
 		    clear: none;
 		    position: relative;
 		    z-index: 10;
-		    padding: 0 30px;
+		    padding: 5px 30px;
 		    cursor: pointer;
-		    background: url(../img/radioff.png) left top no-repeat;
+		    background: url(../img/radioff.png) left 3px no-repeat;
 		    -webkit-touch-callout: none;
 		    -webkit-user-select: none;
 		    -khtml-user-select: none;
@@ -114,7 +114,7 @@
 		}
 		label:hover,
 		input[type='radio']:checked + label {
-			background: url(../img/radion.png) left top no-repeat !important;
+			background: url(../img/radion.png) left 3px no-repeat !important;
 		}
 		input[type='radio']:checked + label + span {
 			position: absolute;
@@ -218,7 +218,9 @@
 		}
 	}
 }
-
+.form-group_mb {
+	margin-bottom: 30px !important;
+}
 .checkbox_small {
 	label {
 		font-size: 13px;

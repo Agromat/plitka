@@ -299,14 +299,24 @@
                 <a href="#">Y</a>
                 <a href="#">Z</a>
                 <a href="#" class="sort-abc__all">Все</a>
-                <select>
-                  <option value="Страна">Страна</option>
-                  <option value="Страна">Страна</option>
-                  <option value="Страна">Страна</option>
-                  <option value="Страна">Страна</option>
-                  <option value="Страна">Страна</option>
-                  <option value="Страна">Страна</option>
-                </select>
+                <div class="form-group dropdown">
+                  <div class="dropdown-content">
+                    <button data-dropdown="city" data-options="is_hover:false" tabindex="3">Страна </button>
+                    <ul id="city" data-dropdown-content class="f-dropdown">
+                      <li><a href="#">Страна</a></li>
+                      <li><a href="#">Страна</a></li>
+                      <li><a href="#">Страна</a></li>
+                      <li><a href="#">Страна</a></li>
+                      <li><a href="#">Страна</a></li>
+                      <li><a href="#">Страна</a></li>
+                      <li><a href="#">Страна</a></li>
+                      <li><a href="#">Страна</a></li>
+                      <li><a href="#">Страна</a></li>
+                      <li><a href="#">Страна</a></li>
+                      <li><a href="#">Страна</a></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -722,7 +732,7 @@
       </div>
       <div class="row collapse basket-footer">
         <p class="title">Аксессуары, которые подойдут этому товару</p>
-        <div class="multiple-items-4">
+        <div class="multiple-items js-multiple-items-4">
 
               <div class="item-crop">
                 <div class="overflow">

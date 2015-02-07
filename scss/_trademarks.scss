@@ -4,7 +4,7 @@
 	padding: 12px 5px 2px 12px;
 	background: #eef6f9;
 	font-size: 0;
-	a {
+	> a {
 		display: inline-block;
 		margin: 0 5px 10px 0;
 		vertical-align: middle;
@@ -30,14 +30,16 @@
 			text-transform: capitalize;
 		}
 	}
-	select {
+	.form-group {
 		position: absolute;
-		padding: 0 5px;
+		margin: 0;
 		right: 15px;
 		bottom: 10px;
 		font-size: 16px;
-		height: 37px;
 		width: 190px;
+		button {
+			width: 100% !important;
+		}
 	}
 }
 .trademarks-wrap {
@@ -79,4 +81,46 @@
 	border-bottom: 1px solid;
 	font-size: 16px;
 	font-weight: bold;
+}
+.row_mb {
+	margin-bottom: 30px !important;
+}
+.button-group_right {
+	float: right;
+}
+.button-group {
+	list-style-type: none;
+	margin: 0;
+	li {
+		float: left;
+		margin-left: -1px;
+		border: 1px solid #ddd;
+		height: 45px;
+		line-height: 45px;
+		background: #fff;
+		box-shadow: inset 0 -3px 0 rgba(8, 34, 60, 0.1);
+		font-size: 16px;
+		font-weight: bold;
+		&:hover {
+			background: #fafafa;
+		}
+		&:active,
+		&.is-active {
+			background: #ddd;
+			box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.3);
+			color: #000;
+		}
+		&:first-child {
+			border-radius: 5px 0 0 5px;
+		}
+		&:last-child {
+			border-radius: 0 5px 5px 0;
+		}
+		a {
+			display: block;
+			padding: 0 20px;
+			height: 45px;
+			color: #4a5b70;
+		}
+	}
 }

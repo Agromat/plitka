@@ -27,16 +27,18 @@
 		font-size: 14px;
 		color: $dgray;
 		label{
+			max-width: 190px;
+			padding: 4px 10px 0 0;
 			font-size: 14px;
 			font-weight: 700;
 			color: $dgray;
 			float: left;
-			line-height: 38px;
 		}
 		.form-group{
 			margin-bottom: 12px;
 			font-size: 14px;
 			color: $dgray;
+			@include clearfix;
 			.imput{
 				margin-left: 190px;
 			}

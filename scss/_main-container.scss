@@ -453,6 +453,12 @@ ul.pagination{
 	}
 	.multiple-items {
 		margin: 0 -20px !important;
+		.slick-prev {
+			right: 55px;
+		}
+		.slick-next {
+			right: 21px;
+		}
 	}
 	&:hover{
 		z-index: 100;
@@ -1579,4 +1585,27 @@ footer{
 			}
 		}
 	}
+}
+
+.message {
+	width: 790px;
+	height: 205px;
+	display: table;
+	width: 100%;
+	background: #FFF;
+	border: 5px solid;
+}
+.message_info {
+	border-color:  #22BEE8;;
+}
+.message__img,
+.message__text {
+	display: table-cell;
+	padding: 20px 33px;
+	vertical-align: middle;
+	text-align: center;
+}
+.message__text {
+	font-size: 21px;
+	font-weight: bold;
 }
