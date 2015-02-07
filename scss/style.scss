@@ -83,7 +83,17 @@ $rem-base : 16;
         clear: both;
     }
 }
-
+@mixin vertical {
+  text-align: center;
+  font-size: 0;
+  &:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 100%;
+  }
+}
 .title_border { 
   margin: 35px 0 27px;
   padding-bottom: 12px;
@@ -92,7 +102,10 @@ $rem-base : 16;
   color: #333;
   border-bottom: 1px solid #ddd;
 }
-
+.title_small {
+  font-size: 16px !important;
+  font-weight: bold;
+}
 /*
 *	FONT LOAD
 */

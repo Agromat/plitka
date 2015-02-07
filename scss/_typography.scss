@@ -34,9 +34,20 @@
 	figure {
 		&[align="right"] {
 			float: right;
+			margin: 0 0 20px 20px;
 		}
 		&[align="left"] {
+			margin: 0 20px 20px 0;
 			float: left;
+		}
+	}
+	figcaption {
+		padding: 10px 0;
+		font-size: 12px;
+		text-align: right;
+		color: #999;
+		a {
+			font-size: 13px;
 		}
 	}
 	ul, ol {
@@ -150,6 +161,18 @@
 	}
 	.medium-7 {
 		padding-right: 30px !important;
+	}
+}
+.article__img {
+	border: 1px solid #ddd;
+	width: 300px;
+	height: 220px;
+	line-height: 220px;
+	text-align: center;
+	img {
+		display: inline-block;
+		vertical-align: middle;
+		max-width: 100%;
 	}
 }
 .panel {

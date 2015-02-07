@@ -21,6 +21,10 @@
 			margin-bottom: rem-calc(19);
 			color: $llgray;
 			text-align: left;
+			a {
+				border-bottom: 1px solid;
+				font-style: italic;
+			}
 		}
 		a{
 			span{
@@ -444,6 +448,12 @@ ul.pagination{
 	padding-top: 25px;
 	position: relative;
 	z-index: 1;
+	&.no-border {
+		border-top: 0 !important;
+	}
+	.multiple-items {
+		margin: 0 -25px !important;
+	}
 	&:hover{
 		z-index: 100;
 	}
@@ -989,10 +999,40 @@ footer{
 			margin: 0;
 			color: #333;
 			color: #4a5b70;
-			border-bottom: 1px solid #dddddd;
 			&:hover span{
 				color: $blue;
 				border-bottom-color: $blue;
+			}
+		}
+	}
+}
+.promo-box_height {
+	margin-bottom: 50px !important;
+	.stock {
+		min-height: 155px;
+	}
+	.promo-tile {
+		a {
+			height: 155px;
+			line-height: 130px;
+			padding: 13px 10px !important;
+			span {
+				vertical-align: middle;
+				display: inline-block;
+				font-size: 31px;
+				font-weight: bold;
+				line-height: 40px;
+				border: 0 !important;
+				strong {
+					border-bottom: 1px solid transparent;
+				}
+			}
+			&:hover {
+				span {
+					strong {
+						border-bottom-color: $blue;
+					}
+				}
 			}
 		}
 	}
@@ -1074,6 +1114,11 @@ footer{
 	border-top: 1px solid $border;
 	padding-top: 30px;
 	margin-top: 40px !important;
+	&.no-border {
+		border: 0;
+		padding-top: 0;
+		margin-bottom: 40px !important;
+	}
 	.title{
 		font-size: 21px;
 		margin-bottom: 20px;
