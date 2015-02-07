@@ -452,7 +452,7 @@ ul.pagination{
 		border-top: 0 !important;
 	}
 	.multiple-items {
-		margin: 0 -25px !important;
+		margin: 0 -20px !important;
 	}
 	&:hover{
 		z-index: 100;
@@ -482,7 +482,7 @@ ul.pagination{
 	}
 }
 .row.other-products-link {
-	margin: 25px 0 40px; 
+	margin: 25px 0 40px !important; 
 	position: relative;
 	z-index: 2;
 	a {

@@ -5,7 +5,7 @@ body {
   min-width: 1220px;
 }
 
-/* line 97, ../scss/style.scss */
+/* line 119, ../scss/style.scss */
 .title_border {
   margin: 35px 0 27px;
   padding-bottom: 12px;
@@ -15,7 +15,7 @@ body {
   border-bottom: 1px solid #ddd;
 }
 
-/* line 105, ../scss/style.scss */
+/* line 127, ../scss/style.scss */
 .title_small {
   font-size: 16px !important;
   font-weight: bold;
@@ -2912,7 +2912,7 @@ ul.pagination li a span {
 }
 /* line 454, ../scss/_main-container.scss */
 .other-products .multiple-items {
-  margin: 0 -25px !important;
+  margin: 0 -20px !important;
 }
 /* line 457, ../scss/_main-container.scss */
 .other-products:hover {
@@ -2951,7 +2951,7 @@ ul.pagination li a span {
 
 /* line 484, ../scss/_main-container.scss */
 .row.other-products-link {
-  margin: 25px 0 40px;
+  margin: 25px 0 40px !important;
   position: relative;
   z-index: 2;
 }
@@ -5900,6 +5900,111 @@ footer .row.link-footer .column:last-child {
 .map__in iframe {
   display: block;
   width: 100%;
+}
+
+/* line 1, ../scss/_trademarks.scss */
+.sort-abc {
+  position: relative;
+  margin: 0 0 40px;
+  padding: 12px 5px 2px 12px;
+  background: #eef6f9;
+  font-size: 0;
+}
+/* line 7, ../scss/_trademarks.scss */
+.sort-abc a {
+  display: inline-block;
+  margin: 0 5px 10px 0;
+  vertical-align: middle;
+  width: 37px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 34px;
+  text-transform: uppercase;
+  height: 37px;
+  background: #fff;
+  border: 1px solid #DDD;
+  color: #000;
+  border-radius: 3px;
+  box-shadow: inset 0 -3px 0 rgba(8, 34, 60, 0.1);
+}
+/* line 22, ../scss/_trademarks.scss */
+.sort-abc a:hover {
+  background: #fafafa;
+}
+/* line 25, ../scss/_trademarks.scss */
+.sort-abc a:active {
+  box-shadow: none;
+}
+/* line 28, ../scss/_trademarks.scss */
+.sort-abc a.sort-abc__all {
+  width: 54px;
+  text-transform: capitalize;
+}
+/* line 33, ../scss/_trademarks.scss */
+.sort-abc select {
+  position: absolute;
+  padding: 0 5px;
+  right: 15px;
+  bottom: 10px;
+  font-size: 16px;
+  height: 37px;
+  width: 190px;
+}
+
+/* line 43, ../scss/_trademarks.scss */
+.trademarks-wrap {
+  margin: 0 -0.9375rem;
+}
+
+/* line 46, ../scss/_trademarks.scss */
+.trademark {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+/* line 50, ../scss/_trademarks.scss */
+.trademark__img {
+  display: block;
+  margin-bottom: 4px;
+  border: 1px solid #ddd;
+  height: 120px;
+  line-height: 120px;
+  text-align: center;
+  overflow: hidden;
+  -webkit-transition: box-shadow .2s linear;
+  -moz-transition: box-shadow .2s linear;
+  transition: box-shadow .2s linear;
+}
+/* line 61, ../scss/_trademarks.scss */
+.trademark__img img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  max-height: 100%;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  filter: gray;
+  -webkit-filter: grayscale(100%);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=1);
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(grayScale=1)";
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+}
+/* line 71, ../scss/_trademarks.scss */
+.trademark__img:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* line 73, ../scss/_trademarks.scss */
+.trademark__img:hover img {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale");
+  -webkit-filter: grayscale(0%);
+}
+
+/* line 78, ../scss/_trademarks.scss */
+.trademark__name {
+  border-bottom: 1px solid;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 /* line 1, ../scss/_typography.scss */
