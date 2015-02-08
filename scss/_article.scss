@@ -63,3 +63,14 @@
 		}
 	}
 }
+
+.price-block {
+	font-size: 21px;
+	color: #333;
+	font-weight: bold;
+	sup {
+		position: relative;
+		top: -7px;
+		font-size: 12px;
+	}
+}
