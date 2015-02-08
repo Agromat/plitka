@@ -66,6 +66,12 @@
 						&:last-child{
 							margin-bottom: 0;
 						}
+						em {
+							color: #999;
+							border: 0;
+							font-size: 13px;
+							font-style: normal;
+						}
 					}
 					&.active{
 						> .icon::before{
@@ -75,6 +81,9 @@
 						> a{
 							font-weight: 700;
 							color:$black;
+							em {
+								font-weight: normal !important;
+							}
 						}
 					}
 					.content{

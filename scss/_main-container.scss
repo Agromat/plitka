@@ -448,6 +448,15 @@ ul.pagination{
 	padding-top: 25px;
 	position: relative;
 	z-index: 1;
+	&.no-hover {
+		.blog-article {
+			&.desk-visible {
+				-webkit-box-shadow: none !important;
+				box-shadow: none !important;
+			    border: 0 !important;
+			}
+		}
+	}
 	&.no-border {
 		border-top: 0 !important;
 	}
@@ -506,6 +515,9 @@ ul.pagination{
 	li {
 		float: left;
 		margin-left: 12px;
+		&:first-child {
+			margin-left: 0;
+		}
 	}
 	a {
 		color: #333;
@@ -519,6 +531,7 @@ ul.pagination{
 		a {
 			border-color: transparent;
 			font-weight: bold;
+			pointer-events: none;
 		}
 	}
 }
@@ -988,11 +1001,39 @@ footer{
 	> .column{
 		width: 48.47%;
 	}
+	> .title {
+		margin-left: 0 !important;
+		color: #4a5b70 !important;
+	}
 	.stock{
 		padding: 13px 23px 12px !important;
 		border-radius: 0 !important;
 		-webkit-border-radius: 0 !important;
 		-moz-border-radius:0 !important;
+		span {
+			font-size: 14px;
+			border-color: #0053a0 !important;
+		}
+		&:hover {
+			span {
+				border-color: #333 !important;
+			}
+		}
+	}
+	.stock_sidebar {
+		margin: 0 0 30px;
+		.stock-title {
+			font-size: 18px;
+		}
+		span {
+			font-size: 14px;
+			border-color: #0053a0 !important;
+		}
+		&:hover {
+			span {
+				border-color: #333 !important;
+			}
+		}
 	}
 	.promo-tile{
 		background: url("../img/flor.jpg");
@@ -1008,6 +1049,25 @@ footer{
 			&:hover span{
 				color: $blue;
 				border-bottom-color: $blue;
+				border-bottom-style: solid;
+			}
+		}
+	}
+	.promo-tile_sidebar {
+		span {
+			padding: 13px !important;
+			font-size: 21px;
+			line-height: 2;
+			border: 0 !important;
+		}
+		strong {
+			border-bottom: 1px solid;
+			font-style: normal;
+			color: #4a5b70;
+		}
+		&:hover {
+			strong {
+				color: #333;
 			}
 		}
 	}
