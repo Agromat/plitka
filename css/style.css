@@ -6,6 +6,11 @@ body {
 }
 
 /* line 119, ../scss/style.scss */
+.row {
+  max-width: 1220px;
+}
+
+/* line 122, ../scss/style.scss */
 .title_border {
   margin: 35px 0 27px;
   padding-bottom: 12px;
@@ -15,7 +20,7 @@ body {
   border-bottom: 1px solid #ddd;
 }
 
-/* line 127, ../scss/style.scss */
+/* line 130, ../scss/style.scss */
 .title_small {
   font-size: 16px !important;
   font-weight: bold;
