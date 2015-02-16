@@ -87,14 +87,13 @@
 	.menuinfo{
 		background:$lgray;
 		> .row {
-			padding: rem-calc(25) 0 rem-calc(22);
+			padding: rem-calc(24) 0 rem-calc(15);
 		}
 		.logo {
 			padding-left: rem-calc(18);
 			.about-text{
 				width:auto;
 				float: none;
-				padding: 0 0 0 10px;
 				p{
 					font-size: rem-calc(13);
 					line-height: rem-calc(14);
@@ -119,7 +118,7 @@
 					color: $ddgray;
 					font-size: rem-calc(18);
 					font-weight: 700;
-					margin-bottom: rem-calc(5);
+					margin-bottom: rem-calc(7);
 				}
 				p{
 					color: $llgray;
@@ -131,10 +130,12 @@
 			}
 			.callback {
 				font-size: rem-calc(13);
-				padding-left: rem-calc(25);
+				margin-top: rem-calc(-4);
+				padding-left: rem-calc(20);
 			}
 			.schedule {
 				padding-left: rem-calc(9);
+				margin-top: rem-calc(-4);
 				width: 135px;
 				p{
 					color: $ddgray;
@@ -155,7 +156,7 @@
 					}
 				}
 				div{
-					margin-bottom: rem-calc(7);
+					margin-bottom: rem-calc(4);
 					display: block;
 					@include clearfix();
 					span{
@@ -269,6 +270,7 @@
 }
 .menu-catalog{
 	color:$black;
+	margin-bottom: 20px;
 	background:$lblue;
 	position: relative;
 	.menu-catalog-drop {
