@@ -4031,27 +4031,35 @@ footer .row.link-footer .column:last-child {
 .product-item__title {
   text-decoration: underline;
   font-size: 18px;
+  line-height: 1.3;
   font-weight: bold;
   color: #0053a0;
 }
 
 /* line 147, ../scss/_catalog.scss */
+.product-item__meta {
+  font-size: 14px;
+  border: 0 !important;
+  color: #a4a4a4;
+}
+
+/* line 153, ../scss/_catalog.scss */
 .row.not-collapse .row {
   margin-left: -0.9375rem;
   margin-right: -0.9375rem;
 }
 
-/* line 152, ../scss/_catalog.scss */
+/* line 158, ../scss/_catalog.scss */
 .blog-article {
   margin-top: 40px !important;
   width: 190px;
 }
-/* line 155, ../scss/_catalog.scss */
+/* line 161, ../scss/_catalog.scss */
 .blog-article a {
   display: block;
   padding: 20px 20px 23px 20px !important;
 }
-/* line 159, ../scss/_catalog.scss */
+/* line 165, ../scss/_catalog.scss */
 .blog-article .title {
   color: #4a5b70;
   font-weight: 700;
@@ -4063,31 +4071,31 @@ footer .row.link-footer .column:last-child {
   padding-left: 0;
   padding-right: 10px;
 }
-/* line 170, ../scss/_catalog.scss */
+/* line 176, ../scss/_catalog.scss */
 .blog-article .column {
   background: #eef6f9;
   margin-bottom: 25px;
 }
-/* line 174, ../scss/_catalog.scss */
+/* line 180, ../scss/_catalog.scss */
 .blog-article .column .img {
   padding: 12px 0;
   background: #ffffff;
   margin-bottom: 21px;
 }
-/* line 178, ../scss/_catalog.scss */
+/* line 184, ../scss/_catalog.scss */
 .blog-article .column .img img {
   display: block;
   margin: 0 auto;
 }
-/* line 183, ../scss/_catalog.scss */
+/* line 189, ../scss/_catalog.scss */
 .blog-article .column a:hover .subtitle {
   color: #333;
 }
-/* line 186, ../scss/_catalog.scss */
+/* line 192, ../scss/_catalog.scss */
 .blog-article .column .text {
   margin-top: 17px;
 }
-/* line 188, ../scss/_catalog.scss */
+/* line 194, ../scss/_catalog.scss */
 .blog-article .column .text .subtitle {
   color: #0053a0;
   font-size: 14px;
@@ -4096,7 +4104,7 @@ footer .row.link-footer .column:last-child {
   margin-top: 0;
   margin-bottom: 10px;
 }
-/* line 196, ../scss/_catalog.scss */
+/* line 202, ../scss/_catalog.scss */
 .blog-article .column .text .content {
   color: #333333;
   margin-top: 0;
@@ -4104,24 +4112,24 @@ footer .row.link-footer .column:last-child {
   font-size: 14px;
   line-height: 19px;
 }
-/* line 205, ../scss/_catalog.scss */
+/* line 211, ../scss/_catalog.scss */
 .blog-article.vertical {
   padding-top: 25px !important;
   margin-top: 45px !important;
   border-top: 1px solid #dddddd;
 }
-/* line 209, ../scss/_catalog.scss */
+/* line 215, ../scss/_catalog.scss */
 .blog-article.vertical .column {
   width: 48.47%;
 }
-/* line 212, ../scss/_catalog.scss */
+/* line 218, ../scss/_catalog.scss */
 .blog-article.vertical .img {
   width: 33%;
   position: relative;
   float: left;
   margin: 0;
 }
-/* line 218, ../scss/_catalog.scss */
+/* line 224, ../scss/_catalog.scss */
 .blog-article.vertical .text {
   margin-left: 33%;
   margin-top: 0;
@@ -6266,48 +6274,61 @@ footer .row.link-footer .column:last-child {
 /* line 34, ../scss/_typography.scss */
 .article figure {
   margin: 40px 0;
+  overflow: hidden;
 }
-/* line 36, ../scss/_typography.scss */
+/* line 37, ../scss/_typography.scss */
 .article figure[align="right"] {
   float: right;
   margin: 0 0 20px 20px;
 }
 /* line 40, ../scss/_typography.scss */
+.article figure[align="right"] img {
+  width: auto;
+  max-width: 100%;
+  display: inline-block;
+}
+/* line 46, ../scss/_typography.scss */
 .article figure[align="left"] {
   margin: 0 20px 20px 0;
   float: left;
 }
-/* line 44, ../scss/_typography.scss */
+/* line 49, ../scss/_typography.scss */
+.article figure[align="left"] img {
+  width: auto;
+  max-width: 100%;
+  display: inline-block;
+}
+/* line 55, ../scss/_typography.scss */
 .article figure img {
   width: 100%;
   display: block;
 }
-/* line 49, ../scss/_typography.scss */
+/* line 60, ../scss/_typography.scss */
 .article figcaption {
   padding: 10px 0;
   font-size: 12px;
   text-align: right;
   color: #999;
 }
-/* line 54, ../scss/_typography.scss */
+/* line 65, ../scss/_typography.scss */
 .article figcaption a {
   font-size: 13px;
 }
-/* line 58, ../scss/_typography.scss */
+/* line 69, ../scss/_typography.scss */
 .article ul, .article ol {
   margin-bottom: 38px;
 }
-/* line 61, ../scss/_typography.scss */
+/* line 72, ../scss/_typography.scss */
 .article ul {
   margin-left: 0;
   list-style-type: none;
 }
-/* line 64, ../scss/_typography.scss */
+/* line 75, ../scss/_typography.scss */
 .article ul li {
   position: relative;
   padding-left: 22px;
 }
-/* line 67, ../scss/_typography.scss */
+/* line 78, ../scss/_typography.scss */
 .article ul li:before {
   content: "";
   position: absolute;
@@ -6319,7 +6340,7 @@ footer .row.link-footer .column:last-child {
   border-radius: 50%;
   background: #000;
 }
-/* line 80, ../scss/_typography.scss */
+/* line 91, ../scss/_typography.scss */
 .article blockquote {
   margin: 40px 0;
   padding: 20px 0;
@@ -6332,102 +6353,102 @@ footer .row.link-footer .column:last-child {
   font-weight: bold;
   color: #333;
 }
-/* line 93, ../scss/_typography.scss */
+/* line 104, ../scss/_typography.scss */
 .article .table-wrap-group + .note {
   margin-top: -30px;
 }
-/* line 97, ../scss/_typography.scss */
+/* line 108, ../scss/_typography.scss */
 .article .table-wrap {
   display: inline-block;
   vertical-align: top;
   width: 375px;
   margin-bottom: 40px;
 }
-/* line 102, ../scss/_typography.scss */
+/* line 113, ../scss/_typography.scss */
 .article .table-wrap:nth-child(2n) {
   margin-left: 20px;
 }
-/* line 106, ../scss/_typography.scss */
+/* line 117, ../scss/_typography.scss */
 .article table {
   margin: 0;
   width: 100%;
   font-size: 14px;
   line-height: 1.4;
 }
-/* line 111, ../scss/_typography.scss */
+/* line 122, ../scss/_typography.scss */
 .article table caption {
   padding: 15px 0;
   min-height: 52px;
   text-align: left;
 }
-/* line 117, ../scss/_typography.scss */
+/* line 128, ../scss/_typography.scss */
 .article table caption h3, .article table caption h5, .article table caption h6 {
   margin: 0;
   font-size: 16px;
   font-weight: bold;
   color: #4a5b70;
 }
-/* line 123, ../scss/_typography.scss */
+/* line 134, ../scss/_typography.scss */
 .article table caption h6 {
   font-style: italic;
   color: #333;
 }
-/* line 129, ../scss/_typography.scss */
+/* line 140, ../scss/_typography.scss */
 .article table thead {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   background: none;
 }
-/* line 134, ../scss/_typography.scss */
+/* line 145, ../scss/_typography.scss */
 .article table thead tr th {
   text-align: left;
   color: #999;
   font-weight: normal;
   line-height: 1.3;
 }
-/* line 139, ../scss/_typography.scss */
+/* line 150, ../scss/_typography.scss */
 .article table thead tr th:last-child {
   text-align: right;
 }
-/* line 147, ../scss/_typography.scss */
+/* line 158, ../scss/_typography.scss */
 .article table tbody tr:nth-child(2n) {
   background: #f7f7f7;
 }
-/* line 149, ../scss/_typography.scss */
+/* line 160, ../scss/_typography.scss */
 .article table tbody tr:nth-child(2n) table {
   background: #F7F7F7;
 }
-/* line 153, ../scss/_typography.scss */
+/* line 164, ../scss/_typography.scss */
 .article table tbody tr td {
   text-align: left;
 }
-/* line 155, ../scss/_typography.scss */
+/* line 166, ../scss/_typography.scss */
 .article table tbody tr td:last-child {
   text-align: right;
 }
-/* line 162, ../scss/_typography.scss */
+/* line 173, ../scss/_typography.scss */
 .article table tbody table tr td {
   padding: 3px 0;
 }
-/* line 164, ../scss/_typography.scss */
+/* line 175, ../scss/_typography.scss */
 .article table tbody table tr td:last-child {
   text-align: left;
 }
-/* line 168, ../scss/_typography.scss */
+/* line 179, ../scss/_typography.scss */
 .article table tbody table tr:nth-child(2n) {
   background: none;
 }
-/* line 174, ../scss/_typography.scss */
+/* line 185, ../scss/_typography.scss */
 .article table sup {
   font-size: 14px;
   color: #ed1c24;
 }
-/* line 179, ../scss/_typography.scss */
+/* line 190, ../scss/_typography.scss */
 .article .medium-7 {
   padding-right: 30px !important;
 }
 
-/* line 183, ../scss/_typography.scss */
+/* line 194, ../scss/_typography.scss */
 .article__img {
   border: 1px solid #ddd;
   width: 300px;
@@ -6435,14 +6456,14 @@ footer .row.link-footer .column:last-child {
   line-height: 220px;
   text-align: center;
 }
-/* line 189, ../scss/_typography.scss */
+/* line 200, ../scss/_typography.scss */
 .article__img img {
   display: inline-block;
   vertical-align: middle;
   max-width: 100%;
 }
 
-/* line 195, ../scss/_typography.scss */
+/* line 206, ../scss/_typography.scss */
 .panel {
   padding: 20px 55px;
   border: 1px solid #DDD;
@@ -6456,32 +6477,32 @@ footer .row.link-footer .column:last-child {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* line 207, ../scss/_typography.scss */
+/* line 218, ../scss/_typography.scss */
 .panel_small {
   text-align: left;
   padding: 20px;
 }
-/* line 210, ../scss/_typography.scss */
+/* line 221, ../scss/_typography.scss */
 .panel_small p {
   margin-top: 0;
 }
-/* line 212, ../scss/_typography.scss */
+/* line 223, ../scss/_typography.scss */
 .panel_small p:last-child {
   margin-bottom: 0;
 }
-/* line 216, ../scss/_typography.scss */
+/* line 227, ../scss/_typography.scss */
 .panel_small a {
   text-decoration: underline;
 }
 
-/* line 220, ../scss/_typography.scss */
+/* line 231, ../scss/_typography.scss */
 .note {
   margin: 0 0 50px;
   padding: 0 10px;
   font-size: 14px;
   color: #999;
 }
-/* line 225, ../scss/_typography.scss */
+/* line 236, ../scss/_typography.scss */
 .note sup {
   color: #ed1c24;
 }
