@@ -233,6 +233,40 @@
         return false;
       });
 
+      $(".js-dropdown-toggle").hover(
+        function() {
+          var menu = $("div[data-drop='"+$(this).attr("data-drop")+"']");
+          var left = $(this).offset().left;
+          var right = $(window).width() - left - $(this).outerWidth();
+          if ($(this).hasClass("js-dropdown-right")) {
+            menu.css({
+              right: right,
+              left: 'auto'
+            }).show();
+          }
+          else {
+            menu.css({
+              left: left
+            }).show();
+          }
+            
+        }, function() {
+          var menu = $("div[data-drop='"+$(this).attr("data-drop")+"']");
+          menu.hide();
+        }
+      );
+      $(".js-dropdown").hover(
+        function() {
+          $(this).show();
+          var menuLink = $("a[data-drop='"+$(this).attr("data-drop")+"']");
+          menuLink.addClass("is-hovered");
+        }, function() {
+          $(this).hide();
+          var menuLink = $("a[data-drop='"+$(this).attr("data-drop")+"']");
+          menuLink.removeClass("is-hovered");
+        }
+      );
+
   });
 
   $(document).on('opened.fndtn.reveal', '[data-reveal]', function () {

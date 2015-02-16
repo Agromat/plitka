@@ -1013,12 +1013,12 @@ footer{
 		-moz-border-radius:0 !important;
 		span {
 			font-size: 14px;
-			border-color: #0053a0 !important;
+			border-bottom: 1px solid #0053a0 !important;
 		}
 		&:hover {
 			span {
 				border-color: #333 !important;
-				border-bottom-style: solid;
+				
 			}
 		}
 	}
@@ -1048,6 +1048,9 @@ footer{
 			margin: 0;
 			color: #333;
 			color: #4a5b70;
+			span {
+				border-bottom: 1px solid;
+			}
 			&:hover span{
 				color: $blue;
 				border-bottom-color: $blue;

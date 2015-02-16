@@ -270,6 +270,10 @@
 .menu-catalog{
 	color:$black;
 	background:$lblue;
+	position: relative;
+	.menu-catalog-drop {
+		top: 100%;
+	}
 	> nav > ul > li{
 		margin-bottom:0;
 		margin-left:0;
@@ -301,7 +305,8 @@
 			}
 		}
 		&.active > a,
-		> a.dropdown:hover {
+		> a.dropdown:hover,
+		a.is-hovered {
 			///background-color:$white;
 			border: 4px solid #4d5a70;
 			border-bottom: 0;
