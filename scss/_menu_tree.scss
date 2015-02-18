@@ -36,7 +36,8 @@
 			// }
 			.accordion{
 				.accordion-navigation{
-					margin-bottom: rem-calc(14);
+					margin-bottom: rem-calc(14) !important;
+					overflow: hidden;
 					> .icon{
 						display: block;
 						position:relative;

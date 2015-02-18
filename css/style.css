@@ -812,9 +812,10 @@ ul.inline li {
 }
 /* line 38, ../scss/_menu_tree.scss */
 .sidebar > .row.menu-tree .accordion .accordion-navigation {
-  margin-bottom: 0.875rem;
+  margin-bottom: 0.875rem !important;
+  overflow: hidden;
 }
-/* line 40, ../scss/_menu_tree.scss */
+/* line 41, ../scss/_menu_tree.scss */
 .sidebar > .row.menu-tree .accordion .accordion-navigation > .icon {
   display: block;
   position: relative;
@@ -823,14 +824,14 @@ ul.inline li {
   margin-right: 1px;
   margin-top: 2px;
 }
-/* line 47, ../scss/_menu_tree.scss */
+/* line 48, ../scss/_menu_tree.scss */
 .sidebar > .row.menu-tree .accordion .accordion-navigation > .icon::before {
   display: block;
   width: 18px;
   height: 11px;
   margin: 0;
 }
-/* line 54, ../scss/_menu_tree.scss */
+/* line 55, ../scss/_menu_tree.scss */
 .sidebar > .row.menu-tree .accordion .accordion-navigation > a {
   color: #0053a0;
   font-size: 0.875rem;
@@ -838,71 +839,71 @@ ul.inline li {
   font-weight: 400;
   padding: 0 0.3125rem 0 1.1875rem;
 }
-/* line 60, ../scss/_menu_tree.scss */
+/* line 61, ../scss/_menu_tree.scss */
 .sidebar > .row.menu-tree .accordion .accordion-navigation > a > span {
   border-bottom: 1px solid #0053a0;
 }
-/* line 63, ../scss/_menu_tree.scss */
+/* line 64, ../scss/_menu_tree.scss */
 .sidebar > .row.menu-tree .accordion .accordion-navigation > a:hover {
   color: #333;
 }
-/* line 66, ../scss/_menu_tree.scss */
+/* line 67, ../scss/_menu_tree.scss */
 .sidebar > .row.menu-tree .accordion .accordion-navigation > a:last-child {
   margin-bottom: 0;
 }
-/* line 69, ../scss/_menu_tree.scss */
+/* line 70, ../scss/_menu_tree.scss */
 .sidebar > .row.menu-tree .accordion .accordion-navigation > a em {
   color: #999;
   border: 0;
   font-size: 13px;
   font-style: normal;
 }
-/* line 77, ../scss/_menu_tree.scss */
+/* line 78, ../scss/_menu_tree.scss */
 .sidebar > .row.menu-tree .accordion .accordion-navigation.active > .icon::before {
   background-position: 2px -27px;
   height: 18px;
 }
-/* line 81, ../scss/_menu_tree.scss */
+/* line 82, ../scss/_menu_tree.scss */
 .sidebar > .row.menu-tree .accordion .accordion-navigation.active > a {
   font-weight: 700;
   color: #000000;
 }
-/* line 84, ../scss/_menu_tree.scss */
+/* line 85, ../scss/_menu_tree.scss */
 .sidebar > .row.menu-tree .accordion .accordion-navigation.active > a em {
   font-weight: normal !important;
 }
-/* line 89, ../scss/_menu_tree.scss */
+/* line 90, ../scss/_menu_tree.scss */
 .sidebar > .row.menu-tree .accordion .accordion-navigation .content {
   padding: 0.8125rem 0.9375rem 0.3125rem 0.8125rem;
 }
-/* line 91, ../scss/_menu_tree.scss */
+/* line 92, ../scss/_menu_tree.scss */
 .sidebar > .row.menu-tree .accordion .accordion-navigation .content ul {
   margin-bottom: 0;
   margin-top: 0;
 }
-/* line 94, ../scss/_menu_tree.scss */
+/* line 95, ../scss/_menu_tree.scss */
 .sidebar > .row.menu-tree .accordion .accordion-navigation .content ul li {
   list-style: none;
   margin-bottom: 0.3125rem;
 }
-/* line 97, ../scss/_menu_tree.scss */
+/* line 98, ../scss/_menu_tree.scss */
 .sidebar > .row.menu-tree .accordion .accordion-navigation .content ul li a {
   font-size: 0.875rem;
   line-height: 1.0625rem;
 }
-/* line 100, ../scss/_menu_tree.scss */
+/* line 101, ../scss/_menu_tree.scss */
 .sidebar > .row.menu-tree .accordion .accordion-navigation .content ul li a > span {
   border-bottom: 1px solid #0053a0;
 }
-/* line 103, ../scss/_menu_tree.scss */
+/* line 104, ../scss/_menu_tree.scss */
 .sidebar > .row.menu-tree .accordion .accordion-navigation .content ul li a:hover {
   color: #333;
 }
-/* line 105, ../scss/_menu_tree.scss */
+/* line 106, ../scss/_menu_tree.scss */
 .sidebar > .row.menu-tree .accordion .accordion-navigation .content ul li a:hover > span {
   border-bottom: 1px solid #333;
 }
-/* line 118, ../scss/_menu_tree.scss */
+/* line 119, ../scss/_menu_tree.scss */
 .sidebar > .row.menu-tree .accordion_simple .accordion-navigation.active > .icon::before {
   background-position: 2px -27px;
   height: 18px;
@@ -910,33 +911,33 @@ ul.inline li {
   -moz-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
-/* line 125, ../scss/_menu_tree.scss */
+/* line 126, ../scss/_menu_tree.scss */
 .sidebar > .row.menu-tree .accordion_simple .accordion-navigation.active > a {
   font-weight: 700;
   color: #000000;
 }
-/* line 137, ../scss/_menu_tree.scss */
+/* line 138, ../scss/_menu_tree.scss */
 .sidebar > .row.brand .content {
   border: 1px solid #dddddd;
 }
-/* line 140, ../scss/_menu_tree.scss */
+/* line 141, ../scss/_menu_tree.scss */
 .sidebar > .row.brand .content .brand-img {
   border-bottom: 1px solid #dddddd;
   width: 100%;
   height: 6.875rem;
 }
-/* line 144, ../scss/_menu_tree.scss */
+/* line 145, ../scss/_menu_tree.scss */
 .sidebar > .row.brand .content .brand-img > div {
   display: table;
   width: 100%;
   height: 100%;
 }
-/* line 148, ../scss/_menu_tree.scss */
+/* line 149, ../scss/_menu_tree.scss */
 .sidebar > .row.brand .content .brand-img > div > div {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 151, ../scss/_menu_tree.scss */
+/* line 152, ../scss/_menu_tree.scss */
 .sidebar > .row.brand .content .brand-img > div > div img {
   margin: 0 auto;
   display: block;
@@ -6474,6 +6475,7 @@ footer .row.link-footer .column:last-child {
 
 /* line 206, ../scss/_typography.scss */
 .panel {
+  margin: 20px 0;
   padding: 20px 55px;
   border: 1px solid #DDD;
   height: auto;
@@ -6486,32 +6488,32 @@ footer .row.link-footer .column:last-child {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* line 218, ../scss/_typography.scss */
+/* line 219, ../scss/_typography.scss */
 .panel_small {
   text-align: left;
   padding: 20px;
 }
-/* line 221, ../scss/_typography.scss */
+/* line 222, ../scss/_typography.scss */
 .panel_small p {
   margin-top: 0;
 }
-/* line 223, ../scss/_typography.scss */
+/* line 224, ../scss/_typography.scss */
 .panel_small p:last-child {
   margin-bottom: 0;
 }
-/* line 227, ../scss/_typography.scss */
+/* line 228, ../scss/_typography.scss */
 .panel_small a {
   text-decoration: underline;
 }
 
-/* line 231, ../scss/_typography.scss */
+/* line 232, ../scss/_typography.scss */
 .note {
   margin: 0 0 50px;
   padding: 0 10px;
   font-size: 14px;
   color: #999;
 }
-/* line 236, ../scss/_typography.scss */
+/* line 237, ../scss/_typography.scss */
 .note sup {
   color: #ed1c24;
 }
