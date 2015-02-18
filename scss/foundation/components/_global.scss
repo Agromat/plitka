@@ -383,11 +383,7 @@ $cursor-text-value: text !default;
     html, body { height: 100%; }
 
     // Set box-sizing globally to handle padding and border widths
-    *,
-    *:before,
-    *:after {
-      @include box-sizing(border-box);
-    }
+    
 
     html,
     body { font-size: $base-font-size; }

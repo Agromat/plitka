@@ -40,3 +40,8 @@
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
 
+*,
+*:before,
+*:after {
+  @include box-sizing(border-box);
+}

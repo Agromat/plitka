@@ -43,22 +43,13 @@ html, body {
   height: 100%;
 }
 
-/* line 386, ../../../scss/foundation/components/_global.scss */
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/* line 392, ../../../scss/foundation/components/_global.scss */
+/* line 388, ../../../scss/foundation/components/_global.scss */
 html,
 body {
   font-size: 100%;
 }
 
-/* line 396, ../../../scss/foundation/components/_global.scss */
+/* line 392, ../../../scss/foundation/components/_global.scss */
 body {
   background: #fff;
   color: #222;
@@ -72,23 +63,23 @@ body {
   cursor: auto;
 }
 
-/* line 409, ../../../scss/foundation/components/_global.scss */
+/* line 405, ../../../scss/foundation/components/_global.scss */
 a:hover {
   cursor: pointer;
 }
 
-/* line 412, ../../../scss/foundation/components/_global.scss */
+/* line 408, ../../../scss/foundation/components/_global.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 414, ../../../scss/foundation/components/_global.scss */
+/* line 410, ../../../scss/foundation/components/_global.scss */
 img {
   -ms-interpolation-mode: bicubic;
 }
 
-/* line 418, ../../../scss/foundation/components/_global.scss */
+/* line 414, ../../../scss/foundation/components/_global.scss */
 #map_canvas img,
 #map_canvas embed,
 #map_canvas object,
@@ -98,12 +89,12 @@ img {
   max-width: none !important;
 }
 
-/* line 425, ../../../scss/foundation/components/_global.scss */
+/* line 421, ../../../scss/foundation/components/_global.scss */
 .left {
   float: left !important;
 }
 
-/* line 426, ../../../scss/foundation/components/_global.scss */
+/* line 422, ../../../scss/foundation/components/_global.scss */
 .right {
   float: right !important;
 }
@@ -118,36 +109,36 @@ img {
   clear: both;
 }
 
-/* line 430, ../../../scss/foundation/components/_global.scss */
+/* line 426, ../../../scss/foundation/components/_global.scss */
 .hide {
   display: none !important;
   visibility: hidden;
 }
 
-/* line 436, ../../../scss/foundation/components/_global.scss */
+/* line 432, ../../../scss/foundation/components/_global.scss */
 .invisible {
   visibility: hidden;
 }
 
-/* line 442, ../../../scss/foundation/components/_global.scss */
+/* line 438, ../../../scss/foundation/components/_global.scss */
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 445, ../../../scss/foundation/components/_global.scss */
+/* line 441, ../../../scss/foundation/components/_global.scss */
 img {
   display: inline-block;
   vertical-align: middle;
 }
 
-/* line 455, ../../../scss/foundation/components/_global.scss */
+/* line 451, ../../../scss/foundation/components/_global.scss */
 textarea {
   height: auto;
   min-height: 50px;
 }
 
-/* line 458, ../../../scss/foundation/components/_global.scss */
+/* line 454, ../../../scss/foundation/components/_global.scss */
 select {
   width: 100%;
 }
