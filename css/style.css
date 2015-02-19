@@ -5173,6 +5173,19 @@ footer .row.link-footer .column:last-child {
   font-weight: bold;
 }
 
+/* line 1677, ../scss/_main-container.scss */
+.js-grid-text-0 {
+  left: 0 !important;
+  margin-left: 0 !important;
+}
+
+/* line 1681, ../scss/_main-container.scss */
+.js-grid-text-2 {
+  left: auto !important;
+  right: 0 !important;
+  margin-left: 0 !important;
+}
+
 /* line 2, ../scss/_filters.scss */
 .sidebar.filters {
   padding-top: 60px;
