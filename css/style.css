@@ -659,62 +659,65 @@ ul.inline li {
 .f-dropdown.content {
   border-radius: 5px;
   display: none;
+  box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.15);
+  border: solid 4px rgba(0, 0, 0, 0.15);
+  border-top: 0;
 }
-/* line 370, ../scss/_menu.scss */
+/* line 373, ../scss/_menu.scss */
 .f-dropdown.content a span {
   border-bottom-color: #0053a0;
 }
-/* line 373, ../scss/_menu.scss */
+/* line 376, ../scss/_menu.scss */
 .f-dropdown.content a:hover {
   color: #333;
 }
-/* line 375, ../scss/_menu.scss */
+/* line 378, ../scss/_menu.scss */
 .f-dropdown.content a:hover span {
   border-bottom-color: #333;
 }
-/* line 380, ../scss/_menu.scss */
+/* line 383, ../scss/_menu.scss */
 .f-dropdown.content .menu-item {
   border-right: 0.0625rem solid #dddddd;
 }
-/* line 382, ../scss/_menu.scss */
+/* line 385, ../scss/_menu.scss */
 .f-dropdown.content .menu-item li {
   display: table;
   border-collapse: collapse;
 }
-/* line 385, ../scss/_menu.scss */
+/* line 388, ../scss/_menu.scss */
 .f-dropdown.content .menu-item li a {
   font-weight: 700;
   padding-left: 0;
 }
-/* line 388, ../scss/_menu.scss */
+/* line 391, ../scss/_menu.scss */
 .f-dropdown.content .menu-item li a:hover span {
   border-bottom: 1px solid #333;
 }
-/* line 393, ../scss/_menu.scss */
+/* line 396, ../scss/_menu.scss */
 .f-dropdown.content .menu-item .row {
   margin-bottom: 2.8125rem;
 }
-/* line 395, ../scss/_menu.scss */
+/* line 398, ../scss/_menu.scss */
 .f-dropdown.content .menu-item .row:last-child {
   margin-bottom: 0;
 }
-/* line 400, ../scss/_menu.scss */
+/* line 403, ../scss/_menu.scss */
 .f-dropdown.content .menu-item .brand .brand-title {
   font-size: 0.875rem;
   margin-top: 0;
   margin-bottom: 1rem;
 }
-/* line 404, ../scss/_menu.scss */
+/* line 407, ../scss/_menu.scss */
 .f-dropdown.content .menu-item .brand .brand-title span {
   font-weight: 700;
 }
-/* line 408, ../scss/_menu.scss */
+/* line 411, ../scss/_menu.scss */
 .f-dropdown.content .menu-item .brand li a {
   font-weight: 400;
   font-size: 0.8125rem;
   padding-left: 0;
 }
-/* line 417, ../scss/_menu.scss */
+/* line 420, ../scss/_menu.scss */
 .f-dropdown.content .new-in .new-in-title {
   color: #4a5b70;
   font-size: 1.125rem;
@@ -723,44 +726,44 @@ ul.inline li {
   margin-top: 0.625rem;
   margin-bottom: 1.5625rem;
 }
-/* line 427, ../scss/_menu.scss */
+/* line 430, ../scss/_menu.scss */
 .f-dropdown.content .new-in .new-in-about {
   margin-top: 0.625rem;
 }
-/* line 429, ../scss/_menu.scss */
+/* line 432, ../scss/_menu.scss */
 .f-dropdown.content .new-in .new-in-about a {
   color: #0053a0;
   font-size: 0.875rem;
   line-height: 1rem;
 }
-/* line 433, ../scss/_menu.scss */
+/* line 436, ../scss/_menu.scss */
 .f-dropdown.content .new-in .new-in-about a:hover {
   color: #333;
 }
-/* line 435, ../scss/_menu.scss */
+/* line 438, ../scss/_menu.scss */
 .f-dropdown.content .new-in .new-in-about a:hover span {
   border-bottom-color: #333;
 }
-/* line 440, ../scss/_menu.scss */
+/* line 443, ../scss/_menu.scss */
 .f-dropdown.content .new-in .new-in-about .price {
   color: #333333;
   font-size: 1.3125rem;
   font-weight: 700;
   line-height: 1rem;
 }
-/* line 445, ../scss/_menu.scss */
+/* line 448, ../scss/_menu.scss */
 .f-dropdown.content .new-in .new-in-about .price sup {
   top: -7px;
   font-size: 70%;
 }
 
-/* line 453, ../scss/_menu.scss */
+/* line 456, ../scss/_menu.scss */
 .f-dropdown.is-right-position.content {
   left: auto !important;
   right: 0;
 }
 
-/* line 457, ../scss/_menu.scss */
+/* line 460, ../scss/_menu.scss */
 .f-dropdown.open {
   display: block;
 }
