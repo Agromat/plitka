@@ -5223,12 +5223,13 @@ footer .row.link-footer .column:last-child {
   display: block;
   height: auto;
   float: none;
+  position: relative;
 }
-/* line 1711, ../scss/_main-container.scss */
+/* line 1712, ../scss/_main-container.scss */
 .multiple-items.item-crop-wrap .slick-slide:hover {
   z-index: 10;
 }
-/* line 1715, ../scss/_main-container.scss */
+/* line 1716, ../scss/_main-container.scss */
 .multiple-items.item-crop-wrap .item-crop-parent {
   height: 300px;
   float: left;

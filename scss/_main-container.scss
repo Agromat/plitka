@@ -1708,6 +1708,7 @@ footer{
 		display: block;
 		height: auto;
 		float: none;
+		position: relative;
 		&:hover {
 			z-index: 10;
 		}
