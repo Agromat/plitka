@@ -6542,8 +6542,12 @@ footer .row.link-footer .column:last-child {
 .article .medium-7 {
   padding-right: 30px !important;
 }
+/* line 193, ../scss/_typography.scss */
+.article .promo-box {
+  margin: 30px 0 !important;
+}
 
-/* line 194, ../scss/_typography.scss */
+/* line 197, ../scss/_typography.scss */
 .article__img {
   border: 1px solid #ddd;
   width: 300px;
@@ -6551,14 +6555,14 @@ footer .row.link-footer .column:last-child {
   line-height: 220px;
   text-align: center;
 }
-/* line 200, ../scss/_typography.scss */
+/* line 203, ../scss/_typography.scss */
 .article__img img {
   display: inline-block;
   vertical-align: middle;
   max-width: 100%;
 }
 
-/* line 206, ../scss/_typography.scss */
+/* line 209, ../scss/_typography.scss */
 .panel {
   margin: 20px 0;
   padding: 20px 55px;
@@ -6573,32 +6577,32 @@ footer .row.link-footer .column:last-child {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* line 219, ../scss/_typography.scss */
+/* line 222, ../scss/_typography.scss */
 .panel_small {
   text-align: left;
   padding: 20px;
 }
-/* line 222, ../scss/_typography.scss */
+/* line 225, ../scss/_typography.scss */
 .panel_small p {
   margin-top: 0;
 }
-/* line 224, ../scss/_typography.scss */
+/* line 227, ../scss/_typography.scss */
 .panel_small p:last-child {
   margin-bottom: 0;
 }
-/* line 228, ../scss/_typography.scss */
+/* line 231, ../scss/_typography.scss */
 .panel_small a {
   text-decoration: underline;
 }
 
-/* line 232, ../scss/_typography.scss */
+/* line 235, ../scss/_typography.scss */
 .note {
   margin: 0 0 50px;
   padding: 0 10px;
   font-size: 14px;
   color: #999;
 }
-/* line 237, ../scss/_typography.scss */
+/* line 240, ../scss/_typography.scss */
 .note sup {
   color: #ed1c24;
 }
