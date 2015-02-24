@@ -33,6 +33,9 @@
 			font-weight: 700;
 			color: $dgray;
 			float: left;
+			&.is-width {
+				max-width: 100%;
+			}
 		}
 		.form-group{
 			margin-bottom: 12px;

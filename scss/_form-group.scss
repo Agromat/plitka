@@ -116,6 +116,9 @@
 		input[type='radio']:checked + label {
 			background: url(../img/radion.png) left 3px no-repeat !important;
 		}
+		input[disabled] + label {
+			pointer-events: none;
+		}
 		input[type='radio']:checked + label + span {
 			position: absolute;
 			top: 0;
@@ -123,6 +126,12 @@
 			width: 100%;
 			height: 100%;
 			border: 2px solid #0090ff;
+		}
+		input[disabled] + label + span {
+			display: none;
+		}
+		input[disabled] + label:hover + span {
+			display: none;
 		}
 	}
 	&.textarea{
