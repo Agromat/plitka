@@ -339,6 +339,9 @@
 					height: 485px;
 					z-index: 1;
 					position: relative;
+					&:last-child {
+						float: left !important;
+					} 
 					.hidden{
 						@include clearfix();
 						overflow: hidden;
