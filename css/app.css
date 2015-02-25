@@ -335,7 +335,7 @@ select {
 }
 
 /* Foundation Dropdowns */
-/* line 225, ../scss/foundation/components/_dropdown.scss */
+/* line 224, ../scss/foundation/components/_dropdown.scss */
 .f-dropdown {
   position: absolute;
   left: -9999px;
@@ -398,7 +398,7 @@ select {
   left: auto;
   right: 9px;
 }
-/* line 228, ../scss/foundation/components/_dropdown.scss */
+/* line 227, ../scss/foundation/components/_dropdown.scss */
 .f-dropdown.drop-right {
   position: absolute;
   left: -9999px;
@@ -452,7 +452,7 @@ select {
   left: -2px;
   z-index: 88;
 }
-/* line 232, ../scss/foundation/components/_dropdown.scss */
+/* line 231, ../scss/foundation/components/_dropdown.scss */
 .f-dropdown.drop-left {
   position: absolute;
   left: -9999px;
@@ -508,7 +508,7 @@ select {
   left: auto;
   z-index: 88;
 }
-/* line 236, ../scss/foundation/components/_dropdown.scss */
+/* line 235, ../scss/foundation/components/_dropdown.scss */
 .f-dropdown.drop-top {
   position: absolute;
   left: -9999px;
@@ -566,7 +566,7 @@ select {
   right: auto;
   z-index: 88;
 }
-/* line 241, ../scss/foundation/components/_dropdown.scss */
+/* line 240, ../scss/foundation/components/_dropdown.scss */
 .f-dropdown li {
   font-size: 0.8125rem;
   cursor: pointer;
@@ -584,10 +584,9 @@ select {
 /* line 214, ../scss/foundation/components/_dropdown.scss */
 .f-dropdown li a {
   display: block;
-  padding: 0.5rem;
   color: #0053a0;
 }
-/* line 244, ../scss/foundation/components/_dropdown.scss */
+/* line 243, ../scss/foundation/components/_dropdown.scss */
 .f-dropdown.content {
   position: absolute;
   left: -9999px;
@@ -612,28 +611,28 @@ select {
 .f-dropdown.content > *:last-child {
   margin-bottom: 0;
 }
-/* line 247, ../scss/foundation/components/_dropdown.scss */
+/* line 246, ../scss/foundation/components/_dropdown.scss */
 .f-dropdown.tiny {
   max-width: 200px;
 }
-/* line 248, ../scss/foundation/components/_dropdown.scss */
+/* line 247, ../scss/foundation/components/_dropdown.scss */
 .f-dropdown.small {
   max-width: 300px;
 }
-/* line 249, ../scss/foundation/components/_dropdown.scss */
+/* line 248, ../scss/foundation/components/_dropdown.scss */
 .f-dropdown.medium {
   max-width: 500px;
 }
-/* line 250, ../scss/foundation/components/_dropdown.scss */
+/* line 249, ../scss/foundation/components/_dropdown.scss */
 .f-dropdown.large {
   max-width: 800px;
 }
-/* line 251, ../scss/foundation/components/_dropdown.scss */
+/* line 250, ../scss/foundation/components/_dropdown.scss */
 .f-dropdown.mega {
   width: 100% !important;
   max-width: 100% !important;
 }
-/* line 255, ../scss/foundation/components/_dropdown.scss */
+/* line 254, ../scss/foundation/components/_dropdown.scss */
 .f-dropdown.mega.open {
   left: 0 !important;
 }

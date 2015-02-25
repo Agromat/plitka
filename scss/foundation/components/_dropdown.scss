@@ -43,7 +43,7 @@ $f-dropdown-triangle-side-offset: 10px !default;
 $f-dropdown-list-style: none !default;
 $f-dropdown-font-color: $charcoal !default;
 $f-dropdown-font-size: rem-calc(14) !default;
-$f-dropdown-list-padding: rem-calc(5, 10) !default;
+//$f-dropdown-list-padding: rem-calc(3, 10) !default;
 $f-dropdown-line-height: rem-calc(18) !default;
 $f-dropdown-list-hover-bg: $smoke !default;
 $dropdown-mobile-default-float: 0 !default;
@@ -213,7 +213,6 @@ $f-dropdown-radius: $global-radius !default;
 
   a {
     display: block;
-    padding: $f-dropdown-list-padding;
     color: $f-dropdown-font-color;
   }
 }
