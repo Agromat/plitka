@@ -395,21 +395,11 @@
 			}
 		}
 		.row{
-			margin-bottom:50px;
 			&:last-child{
 				margin-bottom:0;
 			}
 		}
 		.inline {
-			-webkit-column-width: 33%;
-		    -moz-column-width: 33%;
-		    column-width: 33%;
-		    -webkit-column-count: 3;
-		    -moz-column-count: 3;
-		    column-count: 3;
-		    //-webkit-column-gap: 15px;
-		    //-moz-column-gap: 15px;
-		    //column-gap: 15px;
 		    li {
 		    	float: none;
 		    	width: auto;
@@ -417,11 +407,17 @@
 
 		}
 		.product {
+			margin-top: rem-calc(10);
+			margin-bottom: rem-calc(30);
 			li {
 				font-weight: 700;
+				font-size: rem-calc(14);
+				line-height: rem-calc(18);
+				margin-bottom: rem-calc(10);
 			}
 		}
 		.brand {
+			margin-bottom: rem-calc(30);
 			.brand-title {
 				font-size: rem-calc(14);
 				margin-top: 0;
