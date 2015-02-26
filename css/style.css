@@ -4383,7 +4383,7 @@ footer .row.link-footer .column:last-child {
 .form-group.checkbox:not(#foo) input[type='checkbox'] + label {
   margin: 0;
   clear: none;
-  padding: 0 30px 0 24px;
+  padding: 0 4px 0 24px;
   cursor: pointer;
   background: url(../img/uncheck.png) left 3px no-repeat;
   -webkit-touch-callout: none;
