@@ -17,9 +17,9 @@ ul.inline{
 	@include clearfix();
 	margin:0;
 	&.three-type {
-		-webkit-column-width: 210px;
-	    -moz-column-width: 210px;
-	    column-width: 210px;
+		-webkit-column-width: 200px;
+	    -moz-column-width: 200px;
+	    column-width: 200px;
 	    -webkit-column-count: 3;
 	    -moz-column-count: 3;
 	    column-count: 3;
