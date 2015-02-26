@@ -207,18 +207,18 @@ ul.inline:after {
 }
 /* line 19, ../scss/_base.scss */
 ul.inline.three-type {
-  -webkit-column-width: 33%;
-  -moz-column-width: 33%;
-  column-width: 33%;
+  -webkit-column-width: 210px;
+  -moz-column-width: 210px;
+  column-width: 210px;
   -webkit-column-count: 3;
   -moz-column-count: 3;
   column-count: 3;
 }
 /* line 30, ../scss/_base.scss */
 ul.inline.four-type {
-  -webkit-column-width: 25%;
-  -moz-column-width: 25%;
-  column-width: 25%;
+  -webkit-column-width: 140px;
+  -moz-column-width: 140px;
+  column-width: 140px;
   -webkit-column-count: 4;
   -moz-column-count: 4;
   column-count: 4;
