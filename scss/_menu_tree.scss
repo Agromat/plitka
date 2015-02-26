@@ -6,7 +6,7 @@
 	> .row{
 		margin-top: rem-calc(30) !important;
 		.title{
-			font-size: 18px;
+			font-size: rem-calc(15);
 			font-weight: 700;
 			line-height: 1.2;
 			margin: rem-calc(8) 0 rem-calc(25) rem-calc(10);
@@ -62,7 +62,7 @@
 							border-bottom:1px solid $blue;
 						}*/
 						&:hover{
-							color: #333;
+							color: $ddgray;
 							text-decoration: underline;
 						}
 						&:last-child{
@@ -103,9 +103,9 @@
 										border-bottom:1px solid $blue;
 									}
 									&:hover{
-										color:#333;
+										color:$ddgray;
 										> span{
-											border-bottom:1px solid #333;
+											border-bottom:1px solid $ddgray;
 										}
 									}
 								}

@@ -43,9 +43,9 @@
 				border-bottom-width:1px;
 			}
 			&:hover{
-				color: #333;
+				color: $ddgray;
 				span{
-					border-bottom-color: #333;
+					border-bottom-color: $ddgray;
 				}
 			}
 		}
@@ -156,12 +156,12 @@
 				font-weight: 700;
 				border-left: 1px solid #bcc6d3;
 				h4 {
-					color: #333333;
+					color: $ddgray;
 					font-size: 16px;
 					font-weight: 700;
 					font-family: "Open sans", sans-serif;
 					margin: 0;
-					border-bottom: 1px dotted #333;
+					border-bottom: 1px dotted $ddgray;
 				}
 			}
 		}
@@ -244,7 +244,7 @@
 						margin-right: 0;
 					}
 					a {
-						color: #333;
+						color: $ddgray;
 						&:hover {
 							color: #0053a0;
 							border-bottom: 1px solid #0053a0;
@@ -380,9 +380,9 @@
 												border-bottom: 1px solid $blue;
 											}
 											&:hover{
-												color: #333;
+												color: $ddgray;
 												span{
-													border-bottom: 1px solid #333;
+													border-bottom: 1px solid $ddgray;
 												}
 											}
 										}
@@ -522,7 +522,7 @@ ul.pagination{
 		font-size: 14px;
 		border-bottom: 1px solid;
 		&:hover {
-			color: #333;
+			color: $ddgray;
 		}
 	}
 }
@@ -538,7 +538,7 @@ ul.pagination{
 		}
 	}
 	a {
-		color: #333;
+		color: $ddgray;
 		display: inline-block;
 		border-bottom: 1px solid;
 		&:hover {
@@ -563,7 +563,7 @@ ul.pagination{
 		margin-bottom: 4px;
 	}
 	a {
-		color: #333;
+		color: $ddgray;
 		display: inline-block;
 		line-height: 1;
 		border-bottom: 1px solid; 	
@@ -660,9 +660,9 @@ ul.pagination{
 						border-bottom: 1px solid $blue;
 					}
 					&:hover{
-						color: #333;
+						color: $ddgray;
 						span{
-							border-bottom: 1px solid #333;
+							border-bottom: 1px solid $ddgray;
 						}
 					}
 					+ span {
@@ -722,7 +722,7 @@ ul.pagination{
 					display: none;
 					margin-bottom: 17px;
 					span{
-						border-bottom: 1px dotted #333;
+						border-bottom: 1px dotted $ddgray;
 					}
 					&:hover{
 						color: $blue;
@@ -807,8 +807,8 @@ footer{
 				padding-left: 7px;
 			}
 			a:hover span{
-				color: #333;
-				border-bottom-color: #333;
+				color: $ddgray;
+				border-bottom-color: $ddgray;
 			}
 			li{
 				@include clearfix();
@@ -892,7 +892,7 @@ footer{
 					border-bottom: 1px solid #8e8e8e;
 				}
 				&:hover{
-					color: #333;
+					color: $ddgray;
 				}
 			}
 		}
@@ -956,9 +956,9 @@ footer{
 					border-bottom-color:#0053a0;
 				}
 				&:hover{
-					color:#333;
+					color:$ddgray;
 					span{
-						border-bottom-color:#333;
+						border-bottom-color:$ddgray;
 					}
 				}
 			}
@@ -1006,7 +1006,7 @@ footer{
 		 	.link{
 				font-size: 13px;
 				line-height: 20px;
-				color: #333333;
+				color: $ddgray;
 				display: table;
 				span{
 					border-bottom: 1px solid #878787;
@@ -1040,7 +1040,7 @@ footer{
 		}
 		&:hover {
 			span {
-				border-color: #333 !important;
+				border-color: $ddgray !important;
 				
 			}
 		}
@@ -1056,7 +1056,7 @@ footer{
 		}
 		&:hover {
 			span {
-				border-color: #333 !important;
+				border-color: $ddgray !important;
 			}
 		}
 	}
@@ -1069,7 +1069,7 @@ footer{
 			font-size: 27px;
 			line-height: 40px;
 			margin: 0;
-			color: #333;
+			color: $ddgray;
 			color: #4a5b70;
 			span {
 				border-bottom: 1px solid;
@@ -1095,7 +1095,7 @@ footer{
 		}
 		&:hover {
 			strong {
-				color: #333;
+				color: $ddgray;
 			}
 		}
 	}
@@ -1201,7 +1201,7 @@ footer{
 }
 .about .delivery .row .cost p {
 	font-size: 0.8125rem;
-	color: #333333;
+	color: $ddgray;
 	margin: 0 0 10px;
 }
 .row.about-block{
@@ -1416,7 +1416,7 @@ footer{
 		font-size: 31px;
 		font-weight: 700;
 		margin: 0;
-		color: #333;
+		color: $ddgray;
 		sup{
 			top: -10px;
 			font-size: 65%;
@@ -1466,7 +1466,7 @@ footer{
 			.prod-desk{
 				font-size: 14px;
 				font-weight: 400;
-				color: #333;
+				color: $ddgray;
 				margin-bottom: 15px;
 				margin-top: 0;
 				line-height: 16px;
@@ -1641,7 +1641,7 @@ footer{
 					font-size: 51px;
 					font-weight: 700;
 					margin: 0;
-					color: #333;
+					color: $ddgray;
 					line-height: normal;
 					sup{
 						top: -16px;

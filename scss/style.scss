@@ -2,16 +2,16 @@
 body{
 	min-width: 1220px;
 }
-$white       		: #ffffff;
-$black       		: #000000;
+$white       		: #fff;
+$black       		: #000;
 //---------------------
 
 $dgray    	 		: #646464;
 $gray		 		: #747474;
 $lgray   	 		: #f4f4f4;
-$ddgray		 		: #333333;
-$llgray		 		: #999999;
-$border		 		: #dddddd;
+$ddgray		 		: #333;
+$llgray		 		: #999;
+$border		 		: #ddd;
 $border-under		: #cecece;
 $border-img	 		: #eaff00;
 $border-drk	 		: #afb1b7;
@@ -22,7 +22,7 @@ $blue		 		: #0053a0;
 $lblue		 		: #5b6a84;
 $pblue		 		: #eef6f9;
 
-$comment-color  	: #666666;
+$comment-color  	: #777;
 $title 		 	   	: #4a5b70;
 $red		 	   	: #ed1c24;
 $geern		 	   	: #009900;
@@ -124,7 +124,7 @@ $rem-base : 16;
   padding-bottom: 12px;
   font-size: 18px;
   font-weight: bold;
-  color: #333;
+  color: $ddgray;
   border-bottom: 1px solid #ddd;
 }
 .title_small {

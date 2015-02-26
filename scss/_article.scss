@@ -28,7 +28,7 @@
 	}
 }
 .post__text {
-	color: #333;
+	color: $ddgray;
 	margin-bottom: 18px;
 	font-size: 16px;
 }
@@ -59,14 +59,14 @@
 		&.is-marked {
 			background: #eaff00;
 			opacity: 1;
-			color: #333;
+			color: $ddgray;
 		}
 	}
 }
 
 .price-block {
 	font-size: 21px;
-	color: #333;
+	color: $ddgray;
 	font-weight: bold;
 	sup {
 		position: relative;

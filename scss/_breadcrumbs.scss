@@ -22,10 +22,10 @@
 					border-bottom: rem-calc(1) solid $blue;
 				}				
 				&:hover{
-					color:#333;
-					border-bottom: rem-calc(1) solid #333;
+					color:$ddgray;
+					border-bottom: rem-calc(1) solid $ddgray;
 					span{
-						border-bottom: rem-calc(1) solid #333;
+						border-bottom: rem-calc(1) solid $ddgray;
 					}
 				}
 			}
@@ -42,9 +42,9 @@
 					border-bottom:none;
 					&{
 						&:hover{
-							color:#333;
+							color:$ddgray;
 							span{
-								border-bottom: rem-calc(1) solid #333;
+								border-bottom: rem-calc(1) solid $ddgray;
 							}
 						}
 					}

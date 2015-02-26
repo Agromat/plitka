@@ -104,9 +104,9 @@
 										border-bottom:1px solid $blue;
 									}
 									&:hover{
-										color: #333;
+										color: $ddgray;
 										span{
-											border-bottom:1px solid #333;
+											border-bottom:1px solid $ddgray;
 										}
 									}
 								}

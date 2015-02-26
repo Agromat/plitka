@@ -110,8 +110,8 @@
 			.footer-filters {
 				line-height: 1;
 				.del-all:hover span{
-					color: #333;
-					border-bottom-color: #333;
+					color: $ddgray;
+					border-bottom-color: $ddgray;
 				}
 			}
 		}
@@ -173,7 +173,7 @@
 						padding-left: 5px;
 					}
 					&:hover{
-						color: #333;
+						color: $ddgray;
 					}
 				}
 				.postfix{
@@ -233,7 +233,7 @@
 			}
 			a, p, h6{
 				display: block;
-				color: #333333;
+				color: $ddgray;
 				font-size: 13px;
 			}
 			.toogle-tab{
@@ -299,7 +299,7 @@
 					}
 					a{
 						span{
-							border-bottom: 1px solid #333;
+							border-bottom: 1px solid $ddgray;
 						}
 						&:hover{
 							color: $blue;
@@ -324,9 +324,9 @@
 			border-top: 1px solid #dddddd;
 			.items{
 				a:hover{
-					color: #333;
+					color: $ddgray;
 					span{
-						border-bottom-color:#333;
+						border-bottom-color:$ddgray;
 					}
 				}
 				.item-filtered{
@@ -363,7 +363,7 @@
 							font-size: 14px;
 							line-height: 1.3;
 							&:hover h4{
-								color: #333;
+								color: $ddgray;
 							}
 							h4{
 								color: $blue;
@@ -441,7 +441,7 @@
 							.price{
 								font-weight: 700;
 								font-size: 21px;
-								color: #333;
+								color: $ddgray;
 								margin: 0;
 								sup{
 									font-size: 13px;
@@ -475,7 +475,7 @@
 						}
 						.link{
 							font-size: 13px;
-							color: #333;
+							color: $ddgray;
 							font-weight: 400;
 						}
 						a:hover{
@@ -491,7 +491,7 @@
 						.all,.readmore{
 							font-size: 13px;
 							font-weight: 400;
-							color: #333;
+							color: $ddgray;
 							line-height: 16px;
 							display: inline-block;
 							transition:opacity .1s;

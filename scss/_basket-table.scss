@@ -22,9 +22,9 @@
 				color: $blue;
 				padding: 17px 0 15px;
 				a:hover{
-					color:#333;
+					color:$ddgray;
 					span{
-						border-bottom-color:#333;
+						border-bottom-color:$ddgray;
 					}
 				}
 				span{
@@ -91,9 +91,9 @@
 			font-weight:400;
 			color: $blue;
 			&:hover{
-				color:#333;
+				color:$ddgray;
 				span{
-					border-bottom-color:#333;
+					border-bottom-color:$ddgray;
 				}
 			}
 			span{

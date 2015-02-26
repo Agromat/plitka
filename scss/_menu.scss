@@ -5,9 +5,9 @@
 			border-bottom: 1px solid $blue;
 		}
 		&:hover{
-			color:#333;
+			color:$ddgray;
 			span{
-				border-bottom: 1px solid #333;
+				border-bottom: 1px solid $ddgray;
 			}
 		}
 	}
@@ -110,7 +110,7 @@
 				display: block;
 				line-height: rem-calc(16);
 				&:hover{
-					color:#333;
+					color:$ddgray;
 				}
 			}
 			.phone{
@@ -221,7 +221,7 @@
 					&:hover,
 					&:focus{
 						color: $ddgray;
-						outline: 1px solid #333333;
+						outline: 1px solid $ddgray;
 						outline-offset: -1px;
 					}
 				}
@@ -246,7 +246,7 @@
 					margin-bottom: rem-calc(7);
 				}
 				.money {
-					color: #333;
+					color: $ddgray;
 					font-size: rem-calc(31);
 					line-height: rem-calc(35);
 					padding-left: rem-calc(13);
@@ -374,9 +374,9 @@
 			border-bottom-color:$blue 
 		}
 		&:hover{
-			color:#333;
+			color:$ddgray;
 			span{
-				border-bottom-color: #333;
+				border-bottom-color: $ddgray;
 			}
 		}
 	}
@@ -390,7 +390,7 @@
 				//font-weight: 700;
 				padding-left: 0;
 				&:hover span{
-					border-bottom:1px solid #333;
+					border-bottom:1px solid $ddgray;
 				}
 			}
 		}
@@ -454,9 +454,9 @@
 				font-size: rem-calc(14);
 				line-height: rem-calc(16);
 				&:hover{
-					color:#333;
+					color:$ddgray;
 					span{
-						border-bottom-color: #333;
+						border-bottom-color: $ddgray;
 					}
 				}
 			}
