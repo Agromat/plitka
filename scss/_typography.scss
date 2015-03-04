@@ -172,9 +172,9 @@
 				tr {
 					td {
 						padding: 3px 0;
-						&:last-child {
-							text-align: left;
-						}
+						// &:last-child {
+						// 	text-align: left;
+						// }
 					}
 					&:nth-child(2n) {
 						background: none;
