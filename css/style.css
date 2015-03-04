@@ -852,14 +852,15 @@ ul.inline li {
 .sidebar > .row > a {
   margin-top: 15px;
   display: block;
+  /*span{
+  	border-bottom: 1px solid $blue;
+  }*/
 }
-/* line 22, ../scss/_menu_tree.scss */
-.sidebar > .row > a span {
-  border-bottom: 1px solid #0053a0;
-}
-/* line 27, ../scss/_menu_tree.scss */
-.sidebar > .row a > span {
-  border-bottom: 1px solid #333;
+/* line 26, ../scss/_menu_tree.scss */
+.sidebar > .row a {
+  /*> span{
+  	border-bottom: 1px solid $ddgray;
+  }*/
 }
 /* line 31, ../scss/_menu_tree.scss */
 .sidebar > .row.menu-tree {
@@ -2198,6 +2199,7 @@ ul.inline li {
   width: 100%;
   height: 50%;
   position: relative;
+  cursor: pointer;
   float: left;
   display: block;
   line-height: 1.4375rem;
@@ -2208,12 +2210,12 @@ ul.inline li {
   -ms-user-select: none;
   user-select: none;
 }
-/* line 370, ../scss/_about.scss */
+/* line 371, ../scss/_about.scss */
 .bulk-select .controlls .plus:hover, .bulk-select .controlls .minus:hover {
   outline: 1px solid #3f3f3f;
   outline-offset: 0px;
 }
-/* line 374, ../scss/_about.scss */
+/* line 375, ../scss/_about.scss */
 .bulk-select .controlls .plus::before, .bulk-select .controlls .minus::before {
   font-size: 1.125rem;
   line-height: 1.375rem;
@@ -2223,11 +2225,11 @@ ul.inline li {
   text-align: center;
   line-height: 23px;
 }
-/* line 384, ../scss/_about.scss */
+/* line 385, ../scss/_about.scss */
 .bulk-select .controlls .plus::before {
   content: "+";
 }
-/* line 387, ../scss/_about.scss */
+/* line 388, ../scss/_about.scss */
 .bulk-select .controlls .minus::before {
   content: "-";
 }
@@ -3841,7 +3843,7 @@ footer .row.link-footer .column:last-child {
 /* line 1146, ../scss/_main-container.scss */
 .medium-4 .delivery .title .icon {
   display: block;
-  float: none;
+  float: left;
 }
 /* line 1150, ../scss/_main-container.scss */
 .medium-4 .delivery .title .icon::before {
