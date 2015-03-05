@@ -1836,6 +1836,12 @@ footer{
 		color: #0053a0;
 		line-height: 1.1;
 		text-decoration: underline;
+		-webkit-transition: color .2s linear;
+		-moz-transition: color .2s linear;
+		transition: color .2s linear;
+		&:hover {
+			color: #000;
+		}
 	}
 	&__meta {
 		font-size: 12px;

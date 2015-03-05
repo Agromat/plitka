@@ -5442,26 +5442,33 @@ footer .row.link-footer .column:last-child {
   color: #0053a0;
   line-height: 1.1;
   text-decoration: underline;
+  -webkit-transition: color .2s linear;
+  -moz-transition: color .2s linear;
+  transition: color .2s linear;
 }
-/* line 1840, ../scss/_main-container.scss */
+/* line 1842, ../scss/_main-container.scss */
+.prod__title:hover {
+  color: #000;
+}
+/* line 1846, ../scss/_main-container.scss */
 .prod__meta {
   font-size: 12px;
   color: #868686;
 }
 
-/* line 1846, ../scss/_main-container.scss */
+/* line 1852, ../scss/_main-container.scss */
 .collect {
   border: 5px solid #f4f4f4;
   padding: 23px 20px 35px;
 }
-/* line 1849, ../scss/_main-container.scss */
+/* line 1855, ../scss/_main-container.scss */
 .collect__title {
   margin: 0 0 20px;
   font-size: 18px;
   color: #4a5b70;
   font-weight: bold;
 }
-/* line 1855, ../scss/_main-container.scss */
+/* line 1861, ../scss/_main-container.scss */
 .collect__list {
   -webkit-column-count: 5;
   -moz-column-count: 5;
@@ -5472,40 +5479,40 @@ footer .row.link-footer .column:last-child {
   font-weight: bold;
   color: #737373;
 }
-/* line 1864, ../scss/_main-container.scss */
+/* line 1870, ../scss/_main-container.scss */
 .collect__list li {
   margin-bottom: 8px;
 }
-/* line 1867, ../scss/_main-container.scss */
+/* line 1873, ../scss/_main-container.scss */
 .collect__list a {
   text-decoration: underline;
 }
 
-/* line 1873, ../scss/_main-container.scss */
+/* line 1879, ../scss/_main-container.scss */
 .error-page {
   position: relative;
   margin: 120px 0 140px;
   width: 720px;
 }
-/* line 1877, ../scss/_main-container.scss */
+/* line 1883, ../scss/_main-container.scss */
 .error-page img {
   position: absolute;
   top: -40px;
   right: 0;
 }
-/* line 1882, ../scss/_main-container.scss */
+/* line 1888, ../scss/_main-container.scss */
 .error-page__title {
   font: normal 130px Arial, sans-serif;
   line-height: .8;
   color: #22bee8;
 }
-/* line 1887, ../scss/_main-container.scss */
+/* line 1893, ../scss/_main-container.scss */
 .error-page__sub {
   margin-bottom: 25px;
   font-size: 31px;
   color: #22bee8;
 }
-/* line 1892, ../scss/_main-container.scss */
+/* line 1898, ../scss/_main-container.scss */
 .error-page__text {
   width: 410px;
   font-size: 21px;
@@ -5513,7 +5520,7 @@ footer .row.link-footer .column:last-child {
   line-height: 1.2;
 }
 
-/* line 1899, ../scss/_main-container.scss */
+/* line 1905, ../scss/_main-container.scss */
 .find-more {
   position: relative;
   border: 8px solid #22bee8;
@@ -5522,7 +5529,7 @@ footer .row.link-footer .column:last-child {
   width: 990px;
   font-size: 0;
 }
-/* line 1906, ../scss/_main-container.scss */
+/* line 1912, ../scss/_main-container.scss */
 .find-more__title {
   position: absolute;
   left: 24px;
@@ -5533,7 +5540,7 @@ footer .row.link-footer .column:last-child {
   font-size: 21px;
   font-weight: bold;
 }
-/* line 1916, ../scss/_main-container.scss */
+/* line 1922, ../scss/_main-container.scss */
 .find-more .prod {
   vertical-align: top;
   margin-bottom: 25px;
