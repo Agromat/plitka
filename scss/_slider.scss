@@ -3,7 +3,6 @@
 				.orbit-container{
 					background: #f7f7f7;
 					.zoom{
-						content:url("../img/zoom.png");
 						position: absolute;
 						right: 10px;
 						bottom: 10px;
@@ -12,6 +11,7 @@
 						display: block;
 						z-index: 11;
 						cursor: pointer;
+						background: url("../img/zoom.png") 0 0 no-repeat
 					}
 				}
 				.thumbnail{
