@@ -5484,23 +5484,63 @@ footer .row.link-footer .column:last-child {
 
 /* line 1874, ../scss/_main-container.scss */
 .error-page {
-  margin: 120px 0 0;
+  position: relative;
+  margin: 120px 0 140px;
+  width: 720px;
 }
-/* line 1876, ../scss/_main-container.scss */
+/* line 1878, ../scss/_main-container.scss */
+.error-page img {
+  position: absolute;
+  top: -40px;
+  right: 0;
+}
+/* line 1883, ../scss/_main-container.scss */
 .error-page__title {
   font: normal 130px Arial, sans-serif;
-  line-height: 1;
+  line-height: .8;
   color: #22bee8;
 }
-/* line 1881, ../scss/_main-container.scss */
+/* line 1888, ../scss/_main-container.scss */
 .error-page__sub {
+  margin-bottom: 25px;
   font-size: 31px;
   color: #22bee8;
 }
-/* line 1885, ../scss/_main-container.scss */
+/* line 1893, ../scss/_main-container.scss */
 .error-page__text {
+  width: 410px;
   font-size: 21px;
   color: #888;
+  line-height: 1.2;
+}
+
+/* line 1900, ../scss/_main-container.scss */
+.find-more {
+  position: relative;
+  border: 8px solid #22bee8;
+  padding: 30px 10px 10px 30px;
+  margin-bottom: 114px;
+  width: 990px;
+  font-size: 0;
+}
+/* line 1907, ../scss/_main-container.scss */
+.find-more__title {
+  position: absolute;
+  left: 24px;
+  top: -32px;
+  padding: 10px 18px;
+  background: #fff;
+  color: #22bee8;
+  font-size: 21px;
+  font-weight: bold;
+}
+/* line 1917, ../scss/_main-container.scss */
+.find-more .prod {
+  vertical-align: top;
+  margin-bottom: 25px;
+  width: 20%;
+  margin-right: 0;
+  padding-right: 3%;
 }
 
 /* line 2, ../scss/_filters.scss */

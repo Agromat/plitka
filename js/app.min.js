@@ -62,13 +62,13 @@
       });
     }
 
-    if ($('.multiple-items').exists()) {
-      $('.js-multiple-items').slick({
-        infinite: true,
-        slidesToShow: 5,
-        slidesToScroll: 5,
-        draggable: false
-      });
+    if ($('.js-multiple-items').exists()) {
+        $('.js-multiple-items').slick({
+          infinite: true,
+          slidesToShow: 5,
+          slidesToScroll: 5,
+          draggable: false
+        });
         $('.js-multiple-items-6').slick({
           infinite: true,
           slidesToShow: 6,
