@@ -584,6 +584,12 @@ ul.pagination{
 	margin-top: 33px;
 }
 
+.catalog-item .orbit-container {
+	a.orbit-prev, a.orbit-next{
+		display: none;
+	}
+	
+}
 .item-filtered,
 .multiple-items-4,
 .multiple-items{
@@ -1145,7 +1151,7 @@ footer{
 			margin-top: 0;
 			.icon {
 				display: block;
-				float: none;
+				float: left;
 			}
 			.icon::before {
 				width: 45px;

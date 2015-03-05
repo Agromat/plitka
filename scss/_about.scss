@@ -17,7 +17,7 @@
 			-webkit-border-radius: 8px;
 			-moz-border-radius: 8px;
 			border-radius: 8px;
-			padding: rem-calc(22) rem-calc(20) rem-calc(28) rem-calc(21);
+			padding: rem-calc(22) rem-calc(20) rem-calc(22) rem-calc(20);
 			.data{
 				color: $llgray;
 				font-size: rem-calc(12);
@@ -358,6 +358,7 @@
 				width: 100%;
 				height: 50%;
 				position: relative;
+				cursor: pointer;
 				float: left;
 				display: block;
 				line-height: rem-calc(23);
