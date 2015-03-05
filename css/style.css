@@ -5482,6 +5482,27 @@ footer .row.link-footer .column:last-child {
   text-decoration: underline;
 }
 
+/* line 1874, ../scss/_main-container.scss */
+.error-page {
+  margin: 120px 0 0;
+}
+/* line 1876, ../scss/_main-container.scss */
+.error-page__title {
+  font: normal 130px Arial, sans-serif;
+  line-height: 1;
+  color: #22bee8;
+}
+/* line 1881, ../scss/_main-container.scss */
+.error-page__sub {
+  font-size: 31px;
+  color: #22bee8;
+}
+/* line 1885, ../scss/_main-container.scss */
+.error-page__text {
+  font-size: 21px;
+  color: #888;
+}
+
 /* line 2, ../scss/_filters.scss */
 .sidebar.filters {
   padding-top: 60px;
