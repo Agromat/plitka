@@ -1819,17 +1819,15 @@ footer{
 .prod {
 	display: inline-block;
 	vertical-align: bottom;
-	margin: 0 20px 100px 0;
+	margin: 0 20px 35px 0;
 	position: relative;
-	min-width: 130px;
 	&__img {
 		margin-bottom: 7px;
 	}
 	&__text {
-		position: absolute;
-		left: 0;
-		top: 100%;
-		width: 130px;
+		height: 85px;
+		overflow: hidden;
+		max-width: 130px;
 	}
 	&__title {
 		display: inline-block;
@@ -1847,7 +1845,7 @@ footer{
 
 .collect {
 	border: 5px solid #f4f4f4;
-	padding: 20px;
+	padding: 23px 20px 35px;
 	&__title {
 		margin: 0 0 20px; 
 		font-size: 18px;
@@ -1862,8 +1860,9 @@ footer{
 	    margin: 0;
 	    font-size: 16px;
 	    font-weight: bold;
+	    color: #737373;
 	    li {
-	    	margin-bottom: 6px;
+	    	margin-bottom: 8px;
 	    }
 	    a {
 	    	text-decoration: underline;
