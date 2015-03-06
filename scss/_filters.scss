@@ -497,6 +497,8 @@
 							transition:opacity .1s;
 						}
 						.all{
+							height: 32px;
+							overflow: hidden;
 							&::after{
 								content:' ...';
 							}
