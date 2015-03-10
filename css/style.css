@@ -4674,7 +4674,11 @@ footer .row.link-footer .column:last-child {
 .basket-table table tr td.img {
   width: 100px;
 }
-/* line 39, ../scss/_basket-table.scss */
+/* line 38, ../scss/_basket-table.scss */
+.basket-table table tr td.img img {
+  max-width: 100px;
+}
+/* line 42, ../scss/_basket-table.scss */
 .basket-table table tr td p {
   font-weight: 400;
   font-size: 13px;
@@ -4683,7 +4687,7 @@ footer .row.link-footer .column:last-child {
   padding-left: 8px;
   padding-top: 5px;
 }
-/* line 47, ../scss/_basket-table.scss */
+/* line 50, ../scss/_basket-table.scss */
 .basket-table table tr td .price {
   font-weight: 700;
   font-size: 21px;
@@ -4693,16 +4697,16 @@ footer .row.link-footer .column:last-child {
   margin: 0;
   text-align: right;
 }
-/* line 55, ../scss/_basket-table.scss */
+/* line 58, ../scss/_basket-table.scss */
 .basket-table table tr td .price sup {
   top: -5px;
 }
 
-/* line 65, ../scss/_basket-table.scss */
+/* line 68, ../scss/_basket-table.scss */
 .basket-footer {
   padding: 20px;
 }
-/* line 68, ../scss/_basket-table.scss */
+/* line 71, ../scss/_basket-table.scss */
 .basket-footer .content p {
   color: #999;
   font-size: 13px;
@@ -4710,38 +4714,38 @@ footer .row.link-footer .column:last-child {
   margin-top: 0;
   margin-bottom: 5px;
 }
-/* line 75, ../scss/_basket-table.scss */
+/* line 78, ../scss/_basket-table.scss */
 .basket-footer .content .pr {
   font-size: 31px;
   font-weight: 700;
   color: #333;
   margin-bottom: 0;
 }
-/* line 80, ../scss/_basket-table.scss */
+/* line 83, ../scss/_basket-table.scss */
 .basket-footer .content .pr sup {
   top: -10px;
   font-size: 16px;
   font-weight: 400;
 }
-/* line 87, ../scss/_basket-table.scss */
+/* line 90, ../scss/_basket-table.scss */
 .basket-footer .action {
   margin-top: 15px;
 }
-/* line 89, ../scss/_basket-table.scss */
+/* line 92, ../scss/_basket-table.scss */
 .basket-footer .action a {
   font-size: 14px;
   font-weight: 400;
   color: #0053a0;
 }
-/* line 93, ../scss/_basket-table.scss */
+/* line 96, ../scss/_basket-table.scss */
 .basket-footer .action a:hover {
   color: #333;
 }
-/* line 95, ../scss/_basket-table.scss */
+/* line 98, ../scss/_basket-table.scss */
 .basket-footer .action a:hover span {
   border-bottom-color: #333;
 }
-/* line 99, ../scss/_basket-table.scss */
+/* line 102, ../scss/_basket-table.scss */
 .basket-footer .action a span {
   border-bottom: 1px solid #0053a0;
 }

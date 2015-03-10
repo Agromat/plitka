@@ -35,6 +35,9 @@
 				padding:0 0 20px;
 				&.img{
 					width: 100px;
+					img {
+						max-width: 100px;
+					}
 				}
 				p{
 					font-weight: 400;
