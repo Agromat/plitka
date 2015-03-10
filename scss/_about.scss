@@ -67,8 +67,12 @@
 						}
 					}
 					.has-tip{
-						content:url("../img/tooltip.png");
-						padding-left: 5px;
+						background:url("../img/tooltip.png");
+						display: inline-block;
+						height: 14px;
+						width: 14px;
+						margin-bottom: -2px;
+						margin-left: 5px;
 						border: 0;
 					}
 				}
