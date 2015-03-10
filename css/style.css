@@ -5674,36 +5674,40 @@ footer .row.link-footer .column:last-child {
   display: inline-block;
   font-weight: bold;
   font-size: 14px;
-  color: #0053a0;
+  color: #000;
   line-height: 1.1;
-  text-decoration: underline;
   -webkit-transition: color .2s linear;
   -moz-transition: color .2s linear;
   transition: color .2s linear;
 }
-/* line 2038, ../scss/_main-container.scss */
+/* line 2037, ../scss/_main-container.scss */
 .prod__title:hover {
   color: #000;
 }
-/* line 2042, ../scss/_main-container.scss */
+/* line 2040, ../scss/_main-container.scss */
+.prod__title a {
+  color: #0053a0;
+  text-decoration: underline;
+}
+/* line 2045, ../scss/_main-container.scss */
 .prod__meta {
   font-size: 12px;
   color: #868686;
 }
 
-/* line 2048, ../scss/_main-container.scss */
+/* line 2051, ../scss/_main-container.scss */
 .collect {
   border: 5px solid #f4f4f4;
   padding: 23px 20px 35px;
 }
-/* line 2051, ../scss/_main-container.scss */
+/* line 2054, ../scss/_main-container.scss */
 .collect__title {
   margin: 0 0 20px;
   font-size: 18px;
   color: #4a5b70;
   font-weight: bold;
 }
-/* line 2057, ../scss/_main-container.scss */
+/* line 2060, ../scss/_main-container.scss */
 .collect__list {
   -webkit-column-count: 5;
   -moz-column-count: 5;
@@ -5714,40 +5718,40 @@ footer .row.link-footer .column:last-child {
   font-weight: bold;
   color: #737373;
 }
-/* line 2066, ../scss/_main-container.scss */
+/* line 2069, ../scss/_main-container.scss */
 .collect__list li {
   margin-bottom: 8px;
 }
-/* line 2069, ../scss/_main-container.scss */
+/* line 2072, ../scss/_main-container.scss */
 .collect__list a {
   text-decoration: underline;
 }
 
-/* line 2075, ../scss/_main-container.scss */
+/* line 2078, ../scss/_main-container.scss */
 .error-page {
   position: relative;
   margin: 120px 0 140px;
   width: 720px;
 }
-/* line 2079, ../scss/_main-container.scss */
+/* line 2082, ../scss/_main-container.scss */
 .error-page img {
   position: absolute;
   top: -40px;
   right: 0;
 }
-/* line 2084, ../scss/_main-container.scss */
+/* line 2087, ../scss/_main-container.scss */
 .error-page__title {
   font: normal 130px Arial, sans-serif;
   line-height: .8;
   color: #22bee8;
 }
-/* line 2089, ../scss/_main-container.scss */
+/* line 2092, ../scss/_main-container.scss */
 .error-page__sub {
   margin-bottom: 25px;
   font-size: 31px;
   color: #22bee8;
 }
-/* line 2094, ../scss/_main-container.scss */
+/* line 2097, ../scss/_main-container.scss */
 .error-page__text {
   width: 410px;
   font-size: 21px;
@@ -5755,7 +5759,7 @@ footer .row.link-footer .column:last-child {
   line-height: 1.2;
 }
 
-/* line 2101, ../scss/_main-container.scss */
+/* line 2104, ../scss/_main-container.scss */
 .find-more {
   position: relative;
   border: 8px solid #22bee8;
@@ -5764,7 +5768,7 @@ footer .row.link-footer .column:last-child {
   width: 990px;
   font-size: 0;
 }
-/* line 2108, ../scss/_main-container.scss */
+/* line 2111, ../scss/_main-container.scss */
 .find-more__title {
   position: absolute;
   left: 24px;
@@ -5775,7 +5779,7 @@ footer .row.link-footer .column:last-child {
   font-size: 21px;
   font-weight: bold;
 }
-/* line 2118, ../scss/_main-container.scss */
+/* line 2121, ../scss/_main-container.scss */
 .find-more .prod {
   vertical-align: top;
   margin-bottom: 25px;
