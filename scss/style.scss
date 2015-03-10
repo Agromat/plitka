@@ -48,7 +48,13 @@ $font-family-arial: Arial, Helvetica, sans-serif;
 $bold : 700;
 $norm : 400;
 $rem-base : 16;
+@mixin g($color1, $color2) {
+  background-image: linear-gradient($color1, $color2);
+}
 
+// @mixin gh($color1, $color2) {
+//   @mixin background-image(linear-gradient(left, $color1, $color2));
+// }
 @function rem-calc($values, $base-value: $rem-base) {
   $max: length($values);
 

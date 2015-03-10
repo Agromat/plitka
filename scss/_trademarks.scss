@@ -4,7 +4,7 @@
 	padding: 12px 5px 2px 12px;
 	background: #eef6f9;
 	font-size: 0;
-	> a {
+	> a,span {
 		display: inline-block;
 		margin: 0 5px 10px 0;
 		vertical-align: middle;
@@ -29,6 +29,10 @@
 			width: 54px;
 			text-transform: capitalize;
 		}
+	}
+	> span {
+		pointer-events: none;
+		opacity: 0.5;
 	}
 	.form-group {
 		position: absolute;
