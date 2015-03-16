@@ -389,8 +389,11 @@
 			a{
 				//font-weight: 700;
 				padding-left: 0;
+				span {
+					border-bottom: 1px solid transparent;
+				}
 				&:hover span{
-					border-bottom:1px solid $ddgray;
+					border-bottom-color: $ddgray;
 				}
 			}
 		}
