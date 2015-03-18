@@ -69,12 +69,6 @@
           slidesToScroll: 5,
           draggable: false
         });
-        $('.js-multiple-items-6').slick({
-          infinite: true,
-          slidesToShow: 6,
-          slidesToScroll: 6,
-          draggable: false
-        });
     
       $(document).on({
           mouseenter: function(){
@@ -93,6 +87,14 @@
           $(this).removeClass('is_hover');
         }
       );
+    }
+    if ($('.js-multiple-items-6').exists()) {
+      $('.js-multiple-items-6').slick({
+        infinite: true,
+        slidesToShow: 6,
+        slidesToScroll: 6,
+        draggable: false
+      });
     }
     if ($('.js-multiple-items-4').exists()) {
         $('.js-multiple-items-4').slick({
