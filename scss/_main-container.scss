@@ -238,6 +238,9 @@
 					margin-bottom: 0;
 					padding: 0;
 					width: 48%;
+					tr td {
+						vertical-align: top;
+					}
 					tr td:nth-of-type(even){
 						font-weight: 700;
 					}
