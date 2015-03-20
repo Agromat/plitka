@@ -4282,7 +4282,6 @@ footer .row.link-footer .column:last-child {
 }
 /* line 29, ../scss/_form.scss */
 .form .form-order label {
-  max-width: 190px;
   padding: 4px 10px 0 0;
   font-size: 14px;
   font-weight: 700;
@@ -4524,12 +4523,20 @@ footer .row.link-footer .column:last-child {
 .form-group.radio:not(#foo) input[disabled] + label:hover + span {
   display: none;
 }
-/* line 138, ../scss/_form-group.scss */
+/* line 139, ../scss/_form-group.scss */
+.form-group.delivery-type.radio:not(#foo) > span {
+  width: 33%;
+}
+/* line 141, ../scss/_form-group.scss */
+.form-group.delivery-type.radio:not(#foo) > span label {
+  min-height: 150px;
+}
+/* line 148, ../scss/_form-group.scss */
 .form-group.textarea label {
   font-weight: 400;
   line-height: normal;
 }
-/* line 143, ../scss/_form-group.scss */
+/* line 153, ../scss/_form-group.scss */
 .form-group.textarea .textarea textarea {
   resize: vertical;
   border: 1px solid #abadb3;
@@ -4540,11 +4547,11 @@ footer .row.link-footer .column:last-child {
   color: #646464;
   font-size: 16px;
 }
-/* line 155, ../scss/_form-group.scss */
+/* line 165, ../scss/_form-group.scss */
 .form-group.dropdown {
   margin-bottom: 12px;
 }
-/* line 158, ../scss/_form-group.scss */
+/* line 168, ../scss/_form-group.scss */
 .form-group.dropdown .dropdown-content a, .form-group.dropdown .dropdown-content button {
   padding: 6px 12px;
   line-height: 24px;
@@ -4553,7 +4560,7 @@ footer .row.link-footer .column:last-child {
   font-size: 16px;
   text-align: left;
 }
-/* line 166, ../scss/_form-group.scss */
+/* line 176, ../scss/_form-group.scss */
 .form-group.dropdown .dropdown-content button {
   border: 1px solid #abadb3;
   background: #fdfdfd;
@@ -4569,19 +4576,19 @@ footer .row.link-footer .column:last-child {
   outline: none;
   transition: all .3s;
 }
-/* line 180, ../scss/_form-group.scss */
+/* line 190, ../scss/_form-group.scss */
 .form-group.dropdown .dropdown-content button:hover {
   -webkit-box-shadow: 0px 0px 6px 1px rgba(94, 185, 255, 0.5);
   -moz-box-shadow: 0px 0px 6px 1px rgba(94, 185, 255, 0.5);
   box-shadow: 0px 0px 6px 1px rgba(94, 185, 255, 0.5);
 }
-/* line 185, ../scss/_form-group.scss */
+/* line 195, ../scss/_form-group.scss */
 .form-group.dropdown .dropdown-content button.open::after {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-/* line 190, ../scss/_form-group.scss */
+/* line 200, ../scss/_form-group.scss */
 .form-group.dropdown .dropdown-content button::after {
   content: '';
   float: right;
@@ -4591,26 +4598,26 @@ footer .row.link-footer .column:last-child {
   line-height: 38px;
   display: block;
 }
-/* line 200, ../scss/_form-group.scss */
+/* line 210, ../scss/_form-group.scss */
 .form-group.dropdown .dropdown-content .f-dropdown {
   max-width: 400px;
   background: #fff;
   border: 1px solid #a0a0a0;
 }
-/* line 204, ../scss/_form-group.scss */
+/* line 214, ../scss/_form-group.scss */
 .form-group.dropdown .dropdown-content .f-dropdown a {
   color: #000;
 }
-/* line 210, ../scss/_form-group.scss */
+/* line 220, ../scss/_form-group.scss */
 .form-group.dropdown .dropdown-content ul li a:hover {
   background: #ededed;
 }
-/* line 217, ../scss/_form-group.scss */
+/* line 227, ../scss/_form-group.scss */
 .form-group.submit .btn {
   float: left;
   margin-right: 35px;
 }
-/* line 221, ../scss/_form-group.scss */
+/* line 231, ../scss/_form-group.scss */
 .form-group.submit p {
   margin: 0;
   padding: 10px 0;
@@ -4619,12 +4626,12 @@ footer .row.link-footer .column:last-child {
   color: #646464;
 }
 
-/* line 230, ../scss/_form-group.scss */
+/* line 240, ../scss/_form-group.scss */
 .form-group_mb {
   margin-bottom: 30px !important;
 }
 
-/* line 234, ../scss/_form-group.scss */
+/* line 244, ../scss/_form-group.scss */
 .checkbox_small label {
   font-size: 13px;
   padding-right: 0;

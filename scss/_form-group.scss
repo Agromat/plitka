@@ -134,6 +134,16 @@
 			display: none;
 		}
 	}
+	&.delivery-type {
+		&.radio:not(#foo){
+			> span {
+				width: 33%;
+				label {
+					min-height: 150px;
+				}
+			}
+		}
+	}
 	&.textarea{
 		label{
 			font-weight: 400;
