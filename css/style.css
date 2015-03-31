@@ -1602,9 +1602,10 @@ ul.inline li {
 }
 /* line 3, ../scss/_slider.scss */
 .slider .orbit-container {
-  background: #f7f7f7;
+  padding: 10px;
+  border: 1px solid #c7c7c7;
 }
-/* line 5, ../scss/_slider.scss */
+/* line 7, ../scss/_slider.scss */
 .slider .orbit-container .zoom {
   position: absolute;
   right: 10px;
@@ -1616,7 +1617,7 @@ ul.inline li {
   cursor: pointer;
   background: url("../img/zoom.png") 0 0 no-repeat;
 }
-/* line 17, ../scss/_slider.scss */
+/* line 19, ../scss/_slider.scss */
 .slider .thumbnail {
   zoom: 1;
   margin: 0;
@@ -1633,27 +1634,27 @@ ul.inline li {
 .slider .thumbnail:after {
   clear: both;
 }
-/* line 21, ../scss/_slider.scss */
+/* line 23, ../scss/_slider.scss */
 .slider .thumbnail a {
   position: relative;
   float: left;
   margin-right: 0.625rem;
 }
-/* line 25, ../scss/_slider.scss */
+/* line 27, ../scss/_slider.scss */
 .slider .thumbnail a:last-child {
   margin-right: 0;
 }
-/* line 28, ../scss/_slider.scss */
+/* line 30, ../scss/_slider.scss */
 .slider .thumbnail a img {
   width: 5rem;
   height: 5rem;
   border: 0.3125rem solid #fff;
 }
-/* line 33, ../scss/_slider.scss */
+/* line 35, ../scss/_slider.scss */
 .slider .thumbnail a.active img {
   border: 0.3125rem solid #eaff00;
 }
-/* line 37, ../scss/_slider.scss */
+/* line 39, ../scss/_slider.scss */
 .slider .thumbnail .navigation {
   float: right;
   position: relative;
@@ -1664,7 +1665,7 @@ ul.inline li {
   -moz-box-shadow: inset 0px -3px 0px 0px #e6e8eb;
   box-shadow: inset 0px -3px 0px 0px #e6e8eb;
 }
-/* line 46, ../scss/_slider.scss */
+/* line 48, ../scss/_slider.scss */
 .slider .thumbnail .navigation .icon {
   background: none;
   border: none;
@@ -1673,17 +1674,17 @@ ul.inline li {
   width: 2.1875rem;
   height: 2.1875rem;
 }
-/* line 50, ../scss/_slider.scss */
+/* line 52, ../scss/_slider.scss */
 .slider .thumbnail .navigation .icon.orbit-prev {
   border-right: 0.0625rem solid #ddd;
 }
-/* line 56, ../scss/_slider.scss */
+/* line 58, ../scss/_slider.scss */
 .slider .thumbnail .navigation .icon::before {
   width: 15px;
   height: 25px;
   margin: 4px auto 4px;
 }
-/* line 65, ../scss/_slider.scss */
+/* line 67, ../scss/_slider.scss */
 .slider .scheme {
   zoom: 1;
 }
@@ -1698,7 +1699,7 @@ ul.inline li {
 .slider .scheme:after {
   clear: both;
 }
-/* line 67, ../scss/_slider.scss */
+/* line 69, ../scss/_slider.scss */
 .slider .scheme ul {
   zoom: 1;
   padding-top: 1.0625rem;
@@ -1715,25 +1716,25 @@ ul.inline li {
 .slider .scheme ul:after {
   clear: both;
 }
-/* line 71, ../scss/_slider.scss */
+/* line 73, ../scss/_slider.scss */
 .slider .scheme ul li {
   list-style: none;
   width: 170px;
   border: 1px solid #ddd;
   padding: 0.3125rem;
 }
-/* line 76, ../scss/_slider.scss */
+/* line 78, ../scss/_slider.scss */
 .slider .scheme ul li .prewiev {
   width: 70px;
   overflow: hidden;
   float: left;
   position: relative;
 }
-/* line 81, ../scss/_slider.scss */
+/* line 83, ../scss/_slider.scss */
 .slider .scheme ul li .prewiev img {
   max-width: 70px;
 }
-/* line 85, ../scss/_slider.scss */
+/* line 87, ../scss/_slider.scss */
 .slider .scheme ul li .text {
   position: relative;
   margin-left: 70px;
@@ -1745,26 +1746,26 @@ ul.inline li {
   height: 70px;
   text-align: center;
 }
-/* line 95, ../scss/_slider.scss */
+/* line 97, ../scss/_slider.scss */
 .slider .scheme ul li .text > * {
   font-size: 0.8125rem;
   color: #0053a0;
   display: table-cell;
   vertical-align: middle;
 }
-/* line 101, ../scss/_slider.scss */
+/* line 103, ../scss/_slider.scss */
 .slider .scheme ul li .text a {
   color: #0053a0;
 }
-/* line 103, ../scss/_slider.scss */
+/* line 105, ../scss/_slider.scss */
 .slider .scheme ul li .text a span {
   border-bottom: 1px solid #0053a0;
 }
-/* line 106, ../scss/_slider.scss */
+/* line 108, ../scss/_slider.scss */
 .slider .scheme ul li .text a:hover {
   color: #333;
 }
-/* line 108, ../scss/_slider.scss */
+/* line 110, ../scss/_slider.scss */
 .slider .scheme ul li .text a:hover span {
   border-bottom: 1px solid #333;
 }
