@@ -1600,17 +1600,17 @@ ul.inline li {
 .slider {
   padding-top: 0.625rem;
 }
-/* line 3, ../scss/_slider.scss */
+/* line 4, ../scss/_slider.scss */
+.slider.slider_no_border .orbit-container {
+  padding: 0;
+  border: 0;
+}
+/* line 9, ../scss/_slider.scss */
 .slider .orbit-container {
   padding: 10px;
   border: 1px solid #c7c7c7;
 }
-/* line 7, ../scss/_slider.scss */
-.slider .orbit-container.no__border {
-  padding: none;
-  border: none;
-}
-/* line 11, ../scss/_slider.scss */
+/* line 13, ../scss/_slider.scss */
 .slider .orbit-container .zoom {
   position: absolute;
   right: 10px;
@@ -1622,7 +1622,7 @@ ul.inline li {
   cursor: pointer;
   background: url("../img/zoom.png") 0 0 no-repeat;
 }
-/* line 23, ../scss/_slider.scss */
+/* line 25, ../scss/_slider.scss */
 .slider .thumbnail {
   zoom: 1;
   margin: 0;
@@ -1639,27 +1639,27 @@ ul.inline li {
 .slider .thumbnail:after {
   clear: both;
 }
-/* line 27, ../scss/_slider.scss */
+/* line 29, ../scss/_slider.scss */
 .slider .thumbnail a {
   position: relative;
   float: left;
   margin-right: 0.625rem;
 }
-/* line 31, ../scss/_slider.scss */
+/* line 33, ../scss/_slider.scss */
 .slider .thumbnail a:last-child {
   margin-right: 0;
 }
-/* line 34, ../scss/_slider.scss */
+/* line 36, ../scss/_slider.scss */
 .slider .thumbnail a img {
   width: 5rem;
   height: 5rem;
   border: 0.3125rem solid #fff;
 }
-/* line 39, ../scss/_slider.scss */
+/* line 41, ../scss/_slider.scss */
 .slider .thumbnail a.active img {
   border: 0.3125rem solid #eaff00;
 }
-/* line 43, ../scss/_slider.scss */
+/* line 45, ../scss/_slider.scss */
 .slider .thumbnail .navigation {
   float: right;
   position: relative;
@@ -1670,7 +1670,7 @@ ul.inline li {
   -moz-box-shadow: inset 0px -3px 0px 0px #e6e8eb;
   box-shadow: inset 0px -3px 0px 0px #e6e8eb;
 }
-/* line 52, ../scss/_slider.scss */
+/* line 54, ../scss/_slider.scss */
 .slider .thumbnail .navigation .icon {
   background: none;
   border: none;
@@ -1679,17 +1679,17 @@ ul.inline li {
   width: 2.1875rem;
   height: 2.1875rem;
 }
-/* line 56, ../scss/_slider.scss */
+/* line 58, ../scss/_slider.scss */
 .slider .thumbnail .navigation .icon.orbit-prev {
   border-right: 0.0625rem solid #ddd;
 }
-/* line 62, ../scss/_slider.scss */
+/* line 64, ../scss/_slider.scss */
 .slider .thumbnail .navigation .icon::before {
   width: 15px;
   height: 25px;
   margin: 4px auto 4px;
 }
-/* line 71, ../scss/_slider.scss */
+/* line 73, ../scss/_slider.scss */
 .slider .scheme {
   zoom: 1;
 }
@@ -1704,7 +1704,7 @@ ul.inline li {
 .slider .scheme:after {
   clear: both;
 }
-/* line 73, ../scss/_slider.scss */
+/* line 75, ../scss/_slider.scss */
 .slider .scheme ul {
   zoom: 1;
   padding-top: 1.0625rem;
@@ -1721,25 +1721,25 @@ ul.inline li {
 .slider .scheme ul:after {
   clear: both;
 }
-/* line 77, ../scss/_slider.scss */
+/* line 79, ../scss/_slider.scss */
 .slider .scheme ul li {
   list-style: none;
   width: 170px;
   border: 1px solid #ddd;
   padding: 0.3125rem;
 }
-/* line 82, ../scss/_slider.scss */
+/* line 84, ../scss/_slider.scss */
 .slider .scheme ul li .prewiev {
   width: 70px;
   overflow: hidden;
   float: left;
   position: relative;
 }
-/* line 87, ../scss/_slider.scss */
+/* line 89, ../scss/_slider.scss */
 .slider .scheme ul li .prewiev img {
   max-width: 70px;
 }
-/* line 91, ../scss/_slider.scss */
+/* line 93, ../scss/_slider.scss */
 .slider .scheme ul li .text {
   position: relative;
   margin-left: 70px;
@@ -1751,26 +1751,26 @@ ul.inline li {
   height: 70px;
   text-align: center;
 }
-/* line 101, ../scss/_slider.scss */
+/* line 103, ../scss/_slider.scss */
 .slider .scheme ul li .text > * {
   font-size: 0.8125rem;
   color: #0053a0;
   display: table-cell;
   vertical-align: middle;
 }
-/* line 107, ../scss/_slider.scss */
+/* line 109, ../scss/_slider.scss */
 .slider .scheme ul li .text a {
   color: #0053a0;
 }
-/* line 109, ../scss/_slider.scss */
+/* line 111, ../scss/_slider.scss */
 .slider .scheme ul li .text a span {
   border-bottom: 1px solid #0053a0;
 }
-/* line 112, ../scss/_slider.scss */
+/* line 114, ../scss/_slider.scss */
 .slider .scheme ul li .text a:hover {
   color: #333;
 }
-/* line 114, ../scss/_slider.scss */
+/* line 116, ../scss/_slider.scss */
 .slider .scheme ul li .text a:hover span {
   border-bottom: 1px solid #333;
 }
