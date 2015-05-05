@@ -142,7 +142,7 @@ $orbit-timer-hide-for-small: true !default;
             margin-right: 100%;
           }
           @else {
-            margin-left: 100%;
+            margin-left: 103%;
           }
 
           &:first-child {
@@ -339,7 +339,6 @@ $orbit-timer-hide-for-small: true !default;
       }
 
     }
-
     @media #{$small-only} {
       .orbit-stack-on-small {
         .orbit-slides-container {height: auto !important;}

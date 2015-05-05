@@ -94,10 +94,11 @@
 	}
 }
 .row.product-item-wrap {
+	margin-top: 40px;
 	margin-left: -10px !important;
 	margin-bottom: 30px;
 	+ .other-products {
-		margin-top: 40px;
+		margin-top: 20px;
 	}
 	.title {
 		margin-bottom: 15px;
@@ -211,7 +212,7 @@
 			}
 		}
 		&.vertical{
-			padding-top:25px !important;
+			//padding-top:25px !important;
 			margin-top: 45px !important;
 			border-top:1px solid $border;
 			.column{

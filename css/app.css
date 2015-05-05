@@ -1899,7 +1899,7 @@
   position: absolute;
   top: 0;
   width: 100%;
-  margin-left: 100%;
+  margin-left: 103%;
 }
 /* line 148, ../scss/foundation/components/_orbit.scss */
 .orbit-container .orbit-slides-container > *:first-child {
@@ -2098,32 +2098,32 @@
   }
 }
 @media only screen and (max-width: 40em) {
-  /* line 345, ../scss/foundation/components/_orbit.scss */
+  /* line 344, ../scss/foundation/components/_orbit.scss */
   .orbit-stack-on-small .orbit-slides-container {
     height: auto !important;
   }
-  /* line 346, ../scss/foundation/components/_orbit.scss */
+  /* line 345, ../scss/foundation/components/_orbit.scss */
   .orbit-stack-on-small .orbit-slides-container > * {
     position: relative;
     margin: 0% !important;
     opacity: 1 !important;
   }
-  /* line 352, ../scss/foundation/components/_orbit.scss */
+  /* line 351, ../scss/foundation/components/_orbit.scss */
   .orbit-stack-on-small .orbit-slide-number {
     display: none;
   }
 
-  /* line 358, ../scss/foundation/components/_orbit.scss */
+  /* line 357, ../scss/foundation/components/_orbit.scss */
   .orbit-timer {
     display: none;
   }
 
-  /* line 361, ../scss/foundation/components/_orbit.scss */
+  /* line 360, ../scss/foundation/components/_orbit.scss */
   .orbit-next, .orbit-prev {
     display: none;
   }
 
-  /* line 364, ../scss/foundation/components/_orbit.scss */
+  /* line 363, ../scss/foundation/components/_orbit.scss */
   .orbit-bullets {
     display: none;
   }
