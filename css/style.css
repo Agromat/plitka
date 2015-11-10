@@ -4037,80 +4037,84 @@ footer .row.link-footer .column:last-child {
   margin: 0 !important;
 }
 /* line 47, ../scss/_catalog.scss */
-.product-side a:hover .title {
-  color: #0053a0;
+.product-side a:hover {
+  color: #000;
 }
-/* line 51, ../scss/_catalog.scss */
+/* line 53, ../scss/_catalog.scss */
 .product-side .img {
-  height: 126px;
-  width: 100%;
   display: table;
 }
-/* line 56, ../scss/_catalog.scss */
+/* line 58, ../scss/_catalog.scss */
 .product-side .img > div {
-  text-align: center;
+  text-align: top;
   display: table-cell;
-  vertical-align: middle;
+  vertical-align: top;
 }
-/* line 61, ../scss/_catalog.scss */
+/* line 63, ../scss/_catalog.scss */
 .product-side .img img {
   display: block;
   margin: 0 auto;
+  max-width: 80px;
+  max-height: 80px;
 }
-/* line 66, ../scss/_catalog.scss */
+/* line 70, ../scss/_catalog.scss */
 .product-side .text {
   padding: 14px 18px 7px 18px;
   background: #ffffff;
 }
-/* line 69, ../scss/_catalog.scss */
+/* line 73, ../scss/_catalog.scss */
 .product-side .text a, .product-side .text .title {
   font-size: 14px;
   color: #333;
   font-weight: 700;
   display: block;
-  line-height: 15px;
+  line-height: 1.4;
   margin: 3px 0 8px;
 }
-/* line 81, ../scss/_catalog.scss */
+/* line 85, ../scss/_catalog.scss */
 .product-side.sale .text h6 {
   color: #ed1c24;
 }
-/* line 86, ../scss/_catalog.scss */
+/* line 90, ../scss/_catalog.scss */
 .product-side.no-border {
   border: 0;
 }
-/* line 88, ../scss/_catalog.scss */
+/* line 92, ../scss/_catalog.scss */
 .product-side.no-border a {
   font-size: 14px;
 }
-/* line 91, ../scss/_catalog.scss */
+/* line 95, ../scss/_catalog.scss */
 .product-side.no-border .img {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
-/* line 96, ../scss/_catalog.scss */
+/* line 100, ../scss/_catalog.scss */
 .row.product-item-wrap {
   margin-top: 40px;
   margin-left: -10px !important;
   margin-bottom: 30px;
 }
-/* line 100, ../scss/_catalog.scss */
+/* line 104, ../scss/_catalog.scss */
 .row.product-item-wrap + .other-products {
   margin-top: 20px;
 }
-/* line 103, ../scss/_catalog.scss */
+/* line 107, ../scss/_catalog.scss */
 .row.product-item-wrap .title {
   margin-bottom: 15px;
   font-size: 16px;
   font-weight: bold;
   color: #333;
 }
-/* line 109, ../scss/_catalog.scss */
+/* line 113, ../scss/_catalog.scss */
 .row.product-item-wrap .column, .row.product-item-wrap .columns {
   padding: 0 10px !important;
 }
+/* line 115, ../scss/_catalog.scss */
+.row.product-item-wrap .column:last-child, .row.product-item-wrap .columns:last-child {
+  float: left;
+}
 
-/* line 113, ../scss/_catalog.scss */
+/* line 121, ../scss/_catalog.scss */
 .product-item {
   overflow: hidden;
   display: block;
@@ -4118,35 +4122,35 @@ footer .row.link-footer .column:last-child {
   padding: 8px;
   border: 2px solid #ddd;
 }
-/* line 119, ../scss/_catalog.scss */
+/* line 127, ../scss/_catalog.scss */
 .product-item.is-marked {
   border-color: #ffba00;
 }
-/* line 123, ../scss/_catalog.scss */
+/* line 131, ../scss/_catalog.scss */
 .product-item:hover .product-item__title {
   color: #333;
 }
 
-/* line 128, ../scss/_catalog.scss */
+/* line 136, ../scss/_catalog.scss */
 .product-item__img {
   float: left;
   margin-right: 20px;
   width: 120px;
   height: 115px;
 }
-/* line 133, ../scss/_catalog.scss */
+/* line 141, ../scss/_catalog.scss */
 .product-item__img img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-/* line 139, ../scss/_catalog.scss */
+/* line 147, ../scss/_catalog.scss */
 .product-item__main {
   overflow: hidden;
 }
 
-/* line 143, ../scss/_catalog.scss */
+/* line 151, ../scss/_catalog.scss */
 .product-item__title {
   text-decoration: underline;
   font-size: 18px;
@@ -4155,30 +4159,30 @@ footer .row.link-footer .column:last-child {
   color: #0053a0;
 }
 
-/* line 150, ../scss/_catalog.scss */
+/* line 158, ../scss/_catalog.scss */
 .product-item__meta {
   font-size: 14px;
   border: 0 !important;
   color: #a4a4a4;
 }
 
-/* line 156, ../scss/_catalog.scss */
+/* line 164, ../scss/_catalog.scss */
 .row.not-collapse .row {
   margin-left: -0.9375rem;
   margin-right: -0.9375rem;
 }
 
-/* line 161, ../scss/_catalog.scss */
+/* line 169, ../scss/_catalog.scss */
 .blog-article {
   margin-top: 40px !important;
   width: 190px;
 }
-/* line 164, ../scss/_catalog.scss */
+/* line 172, ../scss/_catalog.scss */
 .blog-article a {
   display: block;
   padding: 20px 20px 23px 20px !important;
 }
-/* line 168, ../scss/_catalog.scss */
+/* line 176, ../scss/_catalog.scss */
 .blog-article .title {
   color: #4a5b70;
   font-weight: 700;
@@ -4190,31 +4194,31 @@ footer .row.link-footer .column:last-child {
   padding-left: 0;
   padding-right: 10px;
 }
-/* line 179, ../scss/_catalog.scss */
+/* line 187, ../scss/_catalog.scss */
 .blog-article .column {
   background: #eef6f9;
   margin-bottom: 25px;
 }
-/* line 183, ../scss/_catalog.scss */
+/* line 191, ../scss/_catalog.scss */
 .blog-article .column .img {
   padding: 12px 0;
   background: #fff;
   margin-bottom: 21px;
 }
-/* line 187, ../scss/_catalog.scss */
+/* line 195, ../scss/_catalog.scss */
 .blog-article .column .img img {
   display: block;
   margin: 0 auto;
 }
-/* line 192, ../scss/_catalog.scss */
+/* line 200, ../scss/_catalog.scss */
 .blog-article .column a:hover .subtitle {
   color: #333;
 }
-/* line 195, ../scss/_catalog.scss */
+/* line 203, ../scss/_catalog.scss */
 .blog-article .column .text {
   margin-top: 17px;
 }
-/* line 197, ../scss/_catalog.scss */
+/* line 205, ../scss/_catalog.scss */
 .blog-article .column .text .subtitle {
   color: #0053a0;
   font-size: 14px;
@@ -4223,7 +4227,7 @@ footer .row.link-footer .column:last-child {
   margin-top: 0;
   margin-bottom: 10px;
 }
-/* line 205, ../scss/_catalog.scss */
+/* line 213, ../scss/_catalog.scss */
 .blog-article .column .text .content {
   color: #333;
   margin-top: 0;
@@ -4231,23 +4235,23 @@ footer .row.link-footer .column:last-child {
   font-size: 14px;
   line-height: 19px;
 }
-/* line 214, ../scss/_catalog.scss */
+/* line 222, ../scss/_catalog.scss */
 .blog-article.vertical {
   margin-top: 45px !important;
   border-top: 1px solid #ddd;
 }
-/* line 218, ../scss/_catalog.scss */
+/* line 226, ../scss/_catalog.scss */
 .blog-article.vertical .column {
   width: 48.47%;
 }
-/* line 221, ../scss/_catalog.scss */
+/* line 229, ../scss/_catalog.scss */
 .blog-article.vertical .img {
   width: 33%;
   position: relative;
   float: left;
   margin: 0;
 }
-/* line 227, ../scss/_catalog.scss */
+/* line 235, ../scss/_catalog.scss */
 .blog-article.vertical .text {
   margin-left: 33%;
   margin-top: 0;
@@ -5686,7 +5690,7 @@ footer .row.link-footer .column:last-child {
 }
 /* line 2025, ../scss/_main-container.scss */
 .prod__text {
-  height: 85px;
+  height: 100px;
   overflow: hidden;
   max-width: 130px;
 }
@@ -5710,25 +5714,44 @@ footer .row.link-footer .column:last-child {
   color: #0053a0;
   text-decoration: underline;
 }
-/* line 2047, ../scss/_main-container.scss */
+/* line 2049, ../scss/_main-container.scss */
+.prod .btn.gradient {
+  width: 30px;
+  height: 27px;
+  line-height: normal;
+  padding: 0;
+}
+/* line 2054, ../scss/_main-container.scss */
+.prod .btn.gradient .icon {
+  border: 0;
+  width: 30px;
+  height: 27px;
+}
+/* line 2059, ../scss/_main-container.scss */
+.prod .btn.gradient .icon::before {
+  width: 30px;
+  height: 27px;
+  background-position: 1px -187px;
+}
+/* line 2068, ../scss/_main-container.scss */
 .prod__meta {
   font-size: 12px;
   color: #868686;
 }
 
-/* line 2053, ../scss/_main-container.scss */
+/* line 2074, ../scss/_main-container.scss */
 .collect {
   border: 5px solid #f4f4f4;
   padding: 23px 20px 35px;
 }
-/* line 2056, ../scss/_main-container.scss */
+/* line 2077, ../scss/_main-container.scss */
 .collect__title {
   margin: 0 0 20px;
   font-size: 18px;
   color: #4a5b70;
   font-weight: bold;
 }
-/* line 2062, ../scss/_main-container.scss */
+/* line 2083, ../scss/_main-container.scss */
 .collect__list {
   -webkit-column-count: 5;
   -moz-column-count: 5;
@@ -5739,40 +5762,40 @@ footer .row.link-footer .column:last-child {
   font-weight: bold;
   color: #737373;
 }
-/* line 2071, ../scss/_main-container.scss */
+/* line 2092, ../scss/_main-container.scss */
 .collect__list li {
   margin-bottom: 8px;
 }
-/* line 2074, ../scss/_main-container.scss */
+/* line 2095, ../scss/_main-container.scss */
 .collect__list a {
   text-decoration: underline;
 }
 
-/* line 2080, ../scss/_main-container.scss */
+/* line 2101, ../scss/_main-container.scss */
 .error-page {
   position: relative;
   margin: 120px 0 140px;
   width: 720px;
 }
-/* line 2084, ../scss/_main-container.scss */
+/* line 2105, ../scss/_main-container.scss */
 .error-page img {
   position: absolute;
   top: -40px;
   right: 0;
 }
-/* line 2089, ../scss/_main-container.scss */
+/* line 2110, ../scss/_main-container.scss */
 .error-page__title {
   font: normal 130px Arial, sans-serif;
   line-height: .8;
   color: #22bee8;
 }
-/* line 2094, ../scss/_main-container.scss */
+/* line 2115, ../scss/_main-container.scss */
 .error-page__sub {
   margin-bottom: 25px;
   font-size: 31px;
   color: #22bee8;
 }
-/* line 2099, ../scss/_main-container.scss */
+/* line 2120, ../scss/_main-container.scss */
 .error-page__text {
   width: 410px;
   font-size: 21px;
@@ -5780,7 +5803,7 @@ footer .row.link-footer .column:last-child {
   line-height: 1.2;
 }
 
-/* line 2106, ../scss/_main-container.scss */
+/* line 2127, ../scss/_main-container.scss */
 .find-more {
   position: relative;
   border: 8px solid #22bee8;
@@ -5789,7 +5812,7 @@ footer .row.link-footer .column:last-child {
   width: 990px;
   font-size: 0;
 }
-/* line 2113, ../scss/_main-container.scss */
+/* line 2134, ../scss/_main-container.scss */
 .find-more__title {
   position: absolute;
   left: 24px;
@@ -5800,7 +5823,7 @@ footer .row.link-footer .column:last-child {
   font-size: 21px;
   font-weight: bold;
 }
-/* line 2123, ../scss/_main-container.scss */
+/* line 2144, ../scss/_main-container.scss */
 .find-more .prod {
   vertical-align: top;
   margin-bottom: 25px;
@@ -7114,7 +7137,7 @@ footer .row.link-footer .column:last-child {
 .article__img {
   border: 1px solid #ddd;
   width: 300px;
-  height: 220px;
+  height: 221px;
   text-align: center;
   text-align: center;
   font-size: 0;

@@ -2023,7 +2023,7 @@ footer{
 		margin-bottom: 7px;
 	}
 	&__text {
-		height: 85px;
+		height: 100px;
 		overflow: hidden;
 		max-width: 130px;
 	}
@@ -2042,6 +2042,27 @@ footer{
 		a {
 			color: #0053a0;
 			text-decoration: underline;
+		}
+	}
+
+	.btn{
+		&.gradient {
+			width: 30px;
+			height: 27px;
+			line-height: normal;
+			padding: 0;
+			.icon{
+				border: 0;
+				//float: left;
+				width: 30px;
+				height: 27px;
+				&::before{
+					width: 30px;
+					height: 27px;
+					background-position: 1px -187px;
+					//margin-top: 10px;
+				}
+			}
 		}
 	}
 	&__meta {
