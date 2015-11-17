@@ -151,7 +151,8 @@
 					span{
 						&.wek{
 							color: $red;
-							float: right;
+							//float: right;
+							margin-left:  16px;
 						}
 					}
 				}
@@ -165,18 +166,22 @@
 						-webkit-border-radius: 1px;
 						-moz-border-radius: 1px;
 						border-radius: 1px;
-						width: rem-calc(11);
-						height: rem-calc(14);
+						width: rem-calc(12);
+						height: rem-calc(15);
 						border: rem-calc(1) solid $ddgray;
 						margin-left: rem-calc(3);
 						-webkit-border-radius: 2px;
 						-moz-border-raius: 2px;
 						border-radius: 2px;
+						padding: 1px;
+						font-size: 11px;
+						line-height: 11px;
 						&:first-child{
 							margin-left:0;
 						}
 						&.wek{
 							border: rem-calc(1) solid $red;
+							color: $red;
 						}
 					}
 				} 

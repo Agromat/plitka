@@ -2036,6 +2036,8 @@ footer{
 		-webkit-transition: color .2s linear;
 		-moz-transition: color .2s linear;
 		transition: color .2s linear;
+		max-height: 3.4em;
+		overflow:hidden;
 		&:hover {
 			color: #000;
 		}
@@ -2063,6 +2065,14 @@ footer{
 					//margin-top: 10px;
 				}
 			}
+		}
+	}
+	.price {
+		font-size: 14px;
+		overflow:hidden;
+		sup {
+			font-size: 10px;
+			top: -4px;
 		}
 	}
 	&__meta {
