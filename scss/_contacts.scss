@@ -70,3 +70,30 @@
 		width: 100%;
 	}
 }
+
+.branch-item {
+  display: inline-block;
+  width: 49%;
+  vertical-align: top;
+  padding-bottom: 60px;
+  padding-top: 10px;
+  a {
+    text-decoration: underline;
+  }
+  h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  h4 {
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 0;
+  }
+  p {
+    margin-bottom: .8rem;
+  }
+  .contacts__tel {
+    margin: 12px 0 15px;
+  }
+}
