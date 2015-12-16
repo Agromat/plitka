@@ -63,6 +63,10 @@
 		img{
 			display: block;
 			margin: 0 auto;
+			}
+	}
+	&.review-product_side {
+		.img img {
 			max-width: 80px;
 			max-height: 80px;
 		}
