@@ -419,11 +419,6 @@
   float: left;
 }
 
-/* line 236, ../scss/foundation/components/_grid.scss */
-[class*="column"] + [class*="column"]:last-child {
-  float: right;
-}
-
 /* line 237, ../scss/foundation/components/_grid.scss */
 [class*="column"] + [class*="column"].end {
   float: left;
@@ -2200,11 +2195,6 @@
   float: left;
 }
 
-/* line 236, ../scss/foundation/components/_grid.scss */
-[class*="column"] + [class*="column"]:last-child {
-  float: right;
-}
-
 /* line 237, ../scss/foundation/components/_grid.scss */
 [class*="column"] + [class*="column"].end {
   float: left;
@@ -3887,11 +3877,6 @@ table tr td {
   padding-right: 0.9375rem;
   width: 100%;
   float: left;
-}
-
-/* line 236, ../scss/foundation/components/_grid.scss */
-[class*="column"] + [class*="column"]:last-child {
-  float: right;
 }
 
 /* line 237, ../scss/foundation/components/_grid.scss */
