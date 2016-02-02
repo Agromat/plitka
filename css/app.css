@@ -6256,7 +6256,7 @@ a:hover {
 /* line 110, ../scss/app.scss */
 img {
   max-width: 100%;
-  height: auto;
+  max-height: 100%;
 }
 
 /* line 112, ../scss/app.scss */
