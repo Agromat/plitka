@@ -48,6 +48,11 @@
 }
 .trademarks-wrap {
 	margin: 0 -0.9375rem;
+	.column {
+		&:last-child { 
+		float: left; 
+		}
+	}
 }
 .trademark {
 	position: relative;

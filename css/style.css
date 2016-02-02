@@ -6860,14 +6860,18 @@ footer .row.link-footer .column:last-child {
 .trademarks-wrap {
   margin: 0 -0.9375rem;
 }
-
 /* line 52, ../scss/_trademarks.scss */
+.trademarks-wrap .column:last-child {
+  float: left;
+}
+
+/* line 57, ../scss/_trademarks.scss */
 .trademark {
   position: relative;
   margin-bottom: 40px;
 }
 
-/* line 56, ../scss/_trademarks.scss */
+/* line 61, ../scss/_trademarks.scss */
 .trademark__img {
   display: block;
   margin-bottom: 4px;
@@ -6880,7 +6884,7 @@ footer .row.link-footer .column:last-child {
   -moz-transition: box-shadow .2s linear;
   transition: box-shadow .2s linear;
 }
-/* line 67, ../scss/_trademarks.scss */
+/* line 72, ../scss/_trademarks.scss */
 .trademark__img img {
   display: inline-block;
   vertical-align: middle;
@@ -6895,39 +6899,39 @@ footer .row.link-footer .column:last-child {
   -moz-transition: all .2s linear;
   transition: all .2s linear;
 }
-/* line 77, ../scss/_trademarks.scss */
+/* line 82, ../scss/_trademarks.scss */
 .trademark__img:hover {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-/* line 79, ../scss/_trademarks.scss */
+/* line 84, ../scss/_trademarks.scss */
 .trademark__img:hover img {
   filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale");
   -webkit-filter: grayscale(0%);
 }
 
-/* line 84, ../scss/_trademarks.scss */
+/* line 89, ../scss/_trademarks.scss */
 .trademark__name {
   border-bottom: 1px solid;
   font-size: 16px;
   font-weight: bold;
 }
 
-/* line 89, ../scss/_trademarks.scss */
+/* line 94, ../scss/_trademarks.scss */
 .row_mb {
   margin-bottom: 30px !important;
 }
 
-/* line 92, ../scss/_trademarks.scss */
+/* line 97, ../scss/_trademarks.scss */
 .button-group_right {
   float: right;
 }
 
-/* line 95, ../scss/_trademarks.scss */
+/* line 100, ../scss/_trademarks.scss */
 .button-group {
   list-style-type: none;
   margin: 0;
 }
-/* line 98, ../scss/_trademarks.scss */
+/* line 103, ../scss/_trademarks.scss */
 .button-group li {
   float: left;
   margin-left: -1px;
@@ -6939,25 +6943,25 @@ footer .row.link-footer .column:last-child {
   font-size: 16px;
   font-weight: bold;
 }
-/* line 108, ../scss/_trademarks.scss */
+/* line 113, ../scss/_trademarks.scss */
 .button-group li:hover {
   background: #fafafa;
 }
-/* line 111, ../scss/_trademarks.scss */
+/* line 116, ../scss/_trademarks.scss */
 .button-group li:active, .button-group li.is-active {
   background: #ddd;
   box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.3);
   color: #000;
 }
-/* line 117, ../scss/_trademarks.scss */
+/* line 122, ../scss/_trademarks.scss */
 .button-group li:first-child {
   border-radius: 5px 0 0 5px;
 }
-/* line 120, ../scss/_trademarks.scss */
+/* line 125, ../scss/_trademarks.scss */
 .button-group li:last-child {
   border-radius: 0 5px 5px 0;
 }
-/* line 123, ../scss/_trademarks.scss */
+/* line 128, ../scss/_trademarks.scss */
 .button-group li a {
   display: block;
   padding: 0 20px;
