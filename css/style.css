@@ -2942,21 +2942,29 @@ ul.pagination li a span {
   height: 25px;
   margin: 4px auto 4px;
 }
+/* line 108, ../scss/_stick_slider.scss */
+.slick-prev.slick-disabled {
+  display: none;
+}
 
-/* line 109, ../scss/_stick_slider.scss */
+/* line 112, ../scss/_stick_slider.scss */
 .slick-next {
   right: 1px;
   border-radius: 0 4px 4px 0;
 }
-/* line 112, ../scss/_stick_slider.scss */
+/* line 115, ../scss/_stick_slider.scss */
 .slick-next::before {
   background-position: -19px -24px;
   width: 15px;
   height: 25px;
   margin: 4px auto 4px;
 }
+/* line 121, ../scss/_stick_slider.scss */
+.slick-next.slick-disabled {
+  display: none;
+}
 
-/* line 119, ../scss/_stick_slider.scss */
+/* line 125, ../scss/_stick_slider.scss */
 .slick-next, .slick-prev {
   background: none;
   outline: none;
@@ -2968,23 +2976,23 @@ ul.pagination li a span {
   border: 1px solid #dddddd;
   box-shadow: inset 0px -3px 0px 0px #e6e8eb;
 }
-/* line 129, ../scss/_stick_slider.scss */
+/* line 135, ../scss/_stick_slider.scss */
 .slick-next::before, .slick-prev::before {
   content: '';
   background-image: url("../img/icons.png");
   background-repeat: no-repeat;
   display: block;
 }
-/* line 135, ../scss/_stick_slider.scss */
+/* line 141, ../scss/_stick_slider.scss */
 .slick-next:hover, .slick-prev:hover {
   background: #fafafa;
 }
-/* line 138, ../scss/_stick_slider.scss */
+/* line 144, ../scss/_stick_slider.scss */
 .slick-next:active, .slick-prev:active {
   box-shadow: none;
 }
 
-/* line 142, ../scss/_stick_slider.scss */
+/* line 148, ../scss/_stick_slider.scss */
 .orbit-bullets-container {
   overflow: hidden;
   margin: 0;
@@ -2998,19 +3006,19 @@ ul.pagination li a span {
   text-align: center;
   display: block;
 }
-/* line 154, ../scss/_stick_slider.scss */
+/* line 160, ../scss/_stick_slider.scss */
 .orbit-bullets-container .orbit-bullets {
   margin: 0;
   top: 0;
 }
-/* line 157, ../scss/_stick_slider.scss */
+/* line 163, ../scss/_stick_slider.scss */
 .orbit-bullets-container .orbit-bullets li {
   background: #fff;
   border: 1px solid #dedcda;
   width: 13px;
   height: 13px;
 }
-/* line 162, ../scss/_stick_slider.scss */
+/* line 168, ../scss/_stick_slider.scss */
 .orbit-bullets-container .orbit-bullets li.active {
   border: 1px solid #999999;
   background: #999999;
