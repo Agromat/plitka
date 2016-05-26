@@ -2334,8 +2334,11 @@ ul.inline li {
 .sticker .stock-stick {
   height: 7.5625rem;
   background-image: url(../img/slider/stock.png);
+  background-size: 60px;
+  top: -20px;
+  right: 1px;
 }
-/* line 70, ../scss/_sticker.scss */
+/* line 73, ../scss/_sticker.scss */
 .sticker .recommended {
   background-image: url(../img/slider/recommended.png);
 }

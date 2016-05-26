@@ -66,6 +66,9 @@
 	.stock-stick{
 		height: rem-calc(121);
 		background-image: url(../img/slider/stock.png);
+		background-size: 60px;
+		top:-20px;
+		right: 1px;
 	}
 	.recommended{
 		background-image: url(../img/slider/recommended.png);
