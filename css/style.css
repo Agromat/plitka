@@ -1473,15 +1473,41 @@ ul.inline li {
   /* IE6-8 */
 }
 /* line 148, ../scss/_btn.scss */
+.btn.btn-orange {
+  background-color: #e8930c;
+  background: -moz-linear-gradient(top, #eda90e 0%, #e8940c 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eda90e), color-stop(100%, #e8940c));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #eda90e 0%, #e8940c 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #eda90e 0%, #e8940c 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #eda90e 0%, #e8940c 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #eda90e 0%, #e8940c 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eda90e', endColorstr='#e8940c',GradientType=0 );
+  /* IE6-8 */
+  text-shadow: 1px 2px 1px #d18711;
+  -webkit-box-shadow: inset 0px -3px 0px 0px #d18711;
+  -moz-box-shadow: inset 0px -3px 0px 0px #d18711;
+  box-shadow: inset 0px -3px 0px 0px #d18711;
+}
+/* line 161, ../scss/_btn.scss */
+.btn.btn-orange::before {
+  background: #d18711;
+}
+/* line 165, ../scss/_btn.scss */
 .btn.btn-green {
   border: 1px solid #aec800;
 }
-/* line 150, ../scss/_btn.scss */
+/* line 167, ../scss/_btn.scss */
 .btn.btn-green:hover {
   background: #fff;
   color: #aec800;
 }
-/* line 155, ../scss/_btn.scss */
+/* line 172, ../scss/_btn.scss */
 .btn.btn_medium {
   padding: 13px 20px 16px;
   height: auto;
@@ -1489,7 +1515,7 @@ ul.inline li {
   font-size: 18px;
   font-weight: bold;
 }
-/* line 162, ../scss/_btn.scss */
+/* line 179, ../scss/_btn.scss */
 .btn.btn_small {
   padding: 8px 14px 11px;
   height: auto;
@@ -1498,7 +1524,7 @@ ul.inline li {
   font-weight: bold;
 }
 
-/* line 170, ../scss/_btn.scss */
+/* line 189, ../scss/_btn.scss */
 .btn.credit-calc {
   text-decoration: none;
   color: #0053a0;
@@ -1510,26 +1536,26 @@ ul.inline li {
   text-align: left;
   margin: 0;
 }
-/* line 180, ../scss/_btn.scss */
+/* line 199, ../scss/_btn.scss */
 .btn.credit-calc .icon {
   display: block;
   float: left;
 }
-/* line 183, ../scss/_btn.scss */
+/* line 202, ../scss/_btn.scss */
 .btn.credit-calc .icon::before {
   width: 26px;
   height: 37px;
   margin-right: 7px;
 }
-/* line 189, ../scss/_btn.scss */
+/* line 208, ../scss/_btn.scss */
 .btn.credit-calc:hover {
   color: #333;
 }
-/* line 191, ../scss/_btn.scss */
+/* line 210, ../scss/_btn.scss */
 .btn.credit-calc:hover span.link {
   color: #333;
 }
-/* line 195, ../scss/_btn.scss */
+/* line 214, ../scss/_btn.scss */
 .btn.credit-calc .link {
   border-bottom: 1px dotted #a1a1a1;
 }
@@ -7469,15 +7495,41 @@ footer .row.link-footer .column:last-child {
   /* IE6-8 */
 }
 /* line 148, ../scss/_btn.scss */
+.btn.btn-orange {
+  background-color: #e8930c;
+  background: -moz-linear-gradient(top, #eda90e 0%, #e8940c 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eda90e), color-stop(100%, #e8940c));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #eda90e 0%, #e8940c 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #eda90e 0%, #e8940c 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #eda90e 0%, #e8940c 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #eda90e 0%, #e8940c 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eda90e', endColorstr='#e8940c',GradientType=0 );
+  /* IE6-8 */
+  text-shadow: 1px 2px 1px #d18711;
+  -webkit-box-shadow: inset 0px -3px 0px 0px #d18711;
+  -moz-box-shadow: inset 0px -3px 0px 0px #d18711;
+  box-shadow: inset 0px -3px 0px 0px #d18711;
+}
+/* line 161, ../scss/_btn.scss */
+.btn.btn-orange::before {
+  background: #d18711;
+}
+/* line 165, ../scss/_btn.scss */
 .btn.btn-green {
   border: 1px solid #aec800;
 }
-/* line 150, ../scss/_btn.scss */
+/* line 167, ../scss/_btn.scss */
 .btn.btn-green:hover {
   background: #fff;
   color: #aec800;
 }
-/* line 155, ../scss/_btn.scss */
+/* line 172, ../scss/_btn.scss */
 .btn.btn_medium {
   padding: 13px 20px 16px;
   height: auto;
@@ -7485,7 +7537,7 @@ footer .row.link-footer .column:last-child {
   font-size: 18px;
   font-weight: bold;
 }
-/* line 162, ../scss/_btn.scss */
+/* line 179, ../scss/_btn.scss */
 .btn.btn_small {
   padding: 8px 14px 11px;
   height: auto;
@@ -7494,7 +7546,7 @@ footer .row.link-footer .column:last-child {
   font-weight: bold;
 }
 
-/* line 170, ../scss/_btn.scss */
+/* line 189, ../scss/_btn.scss */
 .btn.credit-calc {
   text-decoration: none;
   color: #0053a0;
@@ -7506,26 +7558,26 @@ footer .row.link-footer .column:last-child {
   text-align: left;
   margin: 0;
 }
-/* line 180, ../scss/_btn.scss */
+/* line 199, ../scss/_btn.scss */
 .btn.credit-calc .icon {
   display: block;
   float: left;
 }
-/* line 183, ../scss/_btn.scss */
+/* line 202, ../scss/_btn.scss */
 .btn.credit-calc .icon::before {
   width: 26px;
   height: 37px;
   margin-right: 7px;
 }
-/* line 189, ../scss/_btn.scss */
+/* line 208, ../scss/_btn.scss */
 .btn.credit-calc:hover {
   color: #333;
 }
-/* line 191, ../scss/_btn.scss */
+/* line 210, ../scss/_btn.scss */
 .btn.credit-calc:hover span.link {
   color: #333;
 }
-/* line 195, ../scss/_btn.scss */
+/* line 214, ../scss/_btn.scss */
 .btn.credit-calc .link {
   border-bottom: 1px dotted #a1a1a1;
 }

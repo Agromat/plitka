@@ -145,6 +145,23 @@
 		background: linear-gradient(to bottom, #bed300 0%,#afc800 100%); /* W3C */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bed300', endColorstr='#afc800',GradientType=0 ); /* IE6-8 */
 	}
+	&.btn-orange{
+		background-color: #e8930c;
+		background: -moz-linear-gradient(top, #eda90e 0%, #e8940c 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eda90e), color-stop(100%,#e8940c)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #eda90e 0%,#e8940c 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #eda90e 0%,#e8940c 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #eda90e 0%,#e8940c 100%); /* IE10+ */
+		background: linear-gradient(to bottom, #eda90e 0%,#e8940c 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eda90e', endColorstr='#e8940c',GradientType=0 ); /* IE6-8 */
+		text-shadow: 1px 2px 1px #d18711;
+		-webkit-box-shadow: inset 0px -3px 0px 0px #d18711;
+		-moz-box-shadow: inset 0px -3px 0px 0px #d18711;
+		box-shadow: inset 0px -3px 0px 0px #d18711;
+		&::before{
+			background: #d18711;
+		}
+	}
 	&.btn-green{
 		border: 1px solid $btn-color;
 		&:hover{
@@ -167,6 +184,8 @@
 		font-weight: bold;
 	}
 }
+
+
 .btn.credit-calc {
 	text-decoration: none;
 	color: #0053a0;
