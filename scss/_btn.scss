@@ -161,6 +161,11 @@
 		&::before{
 			background: #d18711;
 		}
+		&:active{
+			-webkit-box-shadow: inset 0px 3px 0px 0px #d18711;
+			-moz-box-shadow: inset 0px 3px 0px 0px #d18711;
+			box-shadow: inset 0px 3px 0px 0px #d18711;
+		}
 	}
 	&.btn-green{
 		border: 1px solid $btn-color;
