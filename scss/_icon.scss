@@ -29,6 +29,9 @@
 	&.buy::before{
 		background-position: 1px -52px;
 	}
+	&.order::before{
+		background-position: -62px -52px;
+	}
 	&.calc::before{
 		background-position: -42px -4px;
 	}	
