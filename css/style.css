@@ -5234,7 +5234,7 @@ footer .row.link-footer .column:last-child {
 }
 /* line 1561, ../scss/_main-container.scss */
 .basket .basket-actions .btn-group .btn.close-reveal-modal.left.default {
-  content: "";
+  content: none;
 }
 /* line 1567, ../scss/_main-container.scss */
 .basket .basket-footer {
