@@ -5767,26 +5767,42 @@ footer .row.link-footer .column:last-child {
   background-image: linear-gradient(rgba(238, 246, 249, 0.2), #eef6f9);
 }
 
-/* line 2006, ../scss/_main-container.scss */
+/* line 2007, ../scss/_main-container.scss */
+.withdrawn-from-sale:after {
+  background-color: #186073;
+  display: block;
+  width: 220px;
+  height: 30px;
+  content: "Коллекция снята с продажи";
+  color: #fff;
+  border-radius: 5px;
+  font-size: 11px;
+  padding: 7px 14px;
+  margin: 15px 0 30px 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* line 2022, ../scss/_main-container.scss */
 .link-dotted {
   border-bottom: 1px dotted;
 }
 
-/* line 2009, ../scss/_main-container.scss */
+/* line 2025, ../scss/_main-container.scss */
 .products-row {
   border-bottom: 1px solid #bfbfbf;
   padding-top: 38px;
 }
-/* line 2012, ../scss/_main-container.scss */
+/* line 2028, ../scss/_main-container.scss */
 .products-row:last-child {
   border-bottom: 0;
 }
-/* line 2015, ../scss/_main-container.scss */
+/* line 2031, ../scss/_main-container.scss */
 .products-row .small-title {
   margin: 20px 0 30px;
 }
 
-/* line 2019, ../scss/_main-container.scss */
+/* line 2035, ../scss/_main-container.scss */
 .small-title {
   font-size: 21px;
   margin-bottom: 20px;
@@ -5795,24 +5811,24 @@ footer .row.link-footer .column:last-child {
   color: #4a5b70;
 }
 
-/* line 2026, ../scss/_main-container.scss */
+/* line 2042, ../scss/_main-container.scss */
 .prod {
   display: inline-block;
   vertical-align: bottom;
   margin: 0 20px 35px 0;
   position: relative;
 }
-/* line 2031, ../scss/_main-container.scss */
+/* line 2047, ../scss/_main-container.scss */
 .prod__img {
   margin-bottom: 7px;
 }
-/* line 2034, ../scss/_main-container.scss */
+/* line 2050, ../scss/_main-container.scss */
 .prod__text {
   height: 100px;
   overflow: hidden;
   max-width: 130px;
 }
-/* line 2039, ../scss/_main-container.scss */
+/* line 2055, ../scss/_main-container.scss */
 .prod__title {
   display: inline-block;
   font-weight: bold;
@@ -5825,63 +5841,63 @@ footer .row.link-footer .column:last-child {
   max-height: 3.4em;
   overflow: hidden;
 }
-/* line 2050, ../scss/_main-container.scss */
+/* line 2066, ../scss/_main-container.scss */
 .prod__title:hover {
   color: #000;
 }
-/* line 2053, ../scss/_main-container.scss */
+/* line 2069, ../scss/_main-container.scss */
 .prod__title a {
   color: #0053a0;
   text-decoration: underline;
 }
-/* line 2060, ../scss/_main-container.scss */
+/* line 2076, ../scss/_main-container.scss */
 .prod .btn.gradient {
   width: 30px;
   height: 27px;
   line-height: normal;
   padding: 0;
 }
-/* line 2065, ../scss/_main-container.scss */
+/* line 2081, ../scss/_main-container.scss */
 .prod .btn.gradient .icon {
   border: 0;
   width: 30px;
   height: 27px;
 }
-/* line 2070, ../scss/_main-container.scss */
+/* line 2086, ../scss/_main-container.scss */
 .prod .btn.gradient .icon::before {
   width: 30px;
   height: 27px;
   background-position: 1px -187px;
 }
-/* line 2079, ../scss/_main-container.scss */
+/* line 2095, ../scss/_main-container.scss */
 .prod .price {
   font-size: 14px;
   overflow: hidden;
 }
-/* line 2082, ../scss/_main-container.scss */
+/* line 2098, ../scss/_main-container.scss */
 .prod .price sup {
   font-size: 10px;
   top: -4px;
 }
-/* line 2087, ../scss/_main-container.scss */
+/* line 2103, ../scss/_main-container.scss */
 .prod__meta {
   font-size: 12px;
   color: #868686;
 }
 
-/* line 2093, ../scss/_main-container.scss */
+/* line 2109, ../scss/_main-container.scss */
 .collect {
   border: 5px solid #f4f4f4;
   padding: 23px 20px 35px;
 }
-/* line 2096, ../scss/_main-container.scss */
+/* line 2112, ../scss/_main-container.scss */
 .collect__title {
   margin: 0 0 20px;
   font-size: 18px;
   color: #4a5b70;
   font-weight: bold;
 }
-/* line 2102, ../scss/_main-container.scss */
+/* line 2118, ../scss/_main-container.scss */
 .collect__list {
   -webkit-column-count: 5;
   -moz-column-count: 5;
@@ -5892,40 +5908,40 @@ footer .row.link-footer .column:last-child {
   font-weight: bold;
   color: #737373;
 }
-/* line 2111, ../scss/_main-container.scss */
+/* line 2127, ../scss/_main-container.scss */
 .collect__list li {
   margin-bottom: 8px;
 }
-/* line 2114, ../scss/_main-container.scss */
+/* line 2130, ../scss/_main-container.scss */
 .collect__list a {
   text-decoration: underline;
 }
 
-/* line 2120, ../scss/_main-container.scss */
+/* line 2136, ../scss/_main-container.scss */
 .error-page {
   position: relative;
   margin: 120px 0 140px;
   width: 720px;
 }
-/* line 2124, ../scss/_main-container.scss */
+/* line 2140, ../scss/_main-container.scss */
 .error-page img {
   position: absolute;
   top: -40px;
   right: 0;
 }
-/* line 2129, ../scss/_main-container.scss */
+/* line 2145, ../scss/_main-container.scss */
 .error-page__title {
   font: normal 130px Arial, sans-serif;
   line-height: .8;
   color: #22bee8;
 }
-/* line 2134, ../scss/_main-container.scss */
+/* line 2150, ../scss/_main-container.scss */
 .error-page__sub {
   margin-bottom: 25px;
   font-size: 31px;
   color: #22bee8;
 }
-/* line 2139, ../scss/_main-container.scss */
+/* line 2155, ../scss/_main-container.scss */
 .error-page__text {
   width: 410px;
   font-size: 21px;
@@ -5933,7 +5949,7 @@ footer .row.link-footer .column:last-child {
   line-height: 1.2;
 }
 
-/* line 2146, ../scss/_main-container.scss */
+/* line 2162, ../scss/_main-container.scss */
 .find-more {
   position: relative;
   border: 8px solid #22bee8;
@@ -5942,7 +5958,7 @@ footer .row.link-footer .column:last-child {
   width: 990px;
   font-size: 0;
 }
-/* line 2153, ../scss/_main-container.scss */
+/* line 2169, ../scss/_main-container.scss */
 .find-more__title {
   position: absolute;
   left: 24px;
@@ -5953,7 +5969,7 @@ footer .row.link-footer .column:last-child {
   font-size: 21px;
   font-weight: bold;
 }
-/* line 2163, ../scss/_main-container.scss */
+/* line 2179, ../scss/_main-container.scss */
 .find-more .prod {
   vertical-align: top;
   margin-bottom: 25px;

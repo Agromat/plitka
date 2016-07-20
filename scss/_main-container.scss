@@ -2003,6 +2003,22 @@ footer{
 		}
 	}
 }
+
+.withdrawn-from-sale:after {
+    background-color: #186073;
+    display: block;
+    width: 220px;
+    height: 30px;
+    content: "Коллекция снята с продажи";
+    color: #fff;
+    border-radius: 5px;
+    font-size: 11px;
+    padding: 7px 14px;
+    margin: 15px 0 30px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+	}
+
 .link-dotted {
 	border-bottom: 1px dotted;
 }
