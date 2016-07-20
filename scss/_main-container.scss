@@ -1558,6 +1558,9 @@ footer{
 			padding-bottom: 35px;
 			.btn{
 				position: relative;
+				&.close-reveal-modal.left.default{
+					content: "";
+				}
 			}
 		}
 	}
