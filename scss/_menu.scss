@@ -39,6 +39,10 @@
 			position:relative;
 			float: left;
 			color:$white;
+			@include respond-to(pda){
+				font-size: rem-calc(12);
+				line-height:rem-calc(30) !important;
+			}
 			a {
 				display: block;
 				span {
@@ -52,7 +56,8 @@
 			margin:0;
 			li{
 				&:first-child{
-					border-left:rem-calc(1) solid $gray;
+					// border-left:rem-calc(1) solid $gray;
+					padding-left: 0;
 				}
 				line-height:rem-calc(40);
 				border-right:rem-calc(1) solid $gray;
@@ -65,7 +70,10 @@
 					span{
 					    border:0;
 				    	display: block;
-				        padding: 0 1.125rem;
+				      padding: 0 1.125rem;
+				      @include respond-to(pda){
+								padding: 0 rem-calc(7);
+							}
 			    	}
 				}
 			}
@@ -90,7 +98,7 @@
 			padding: rem-calc(24) 0 rem-calc(15);
 		}
 		.logo {
-			padding-left: rem-calc(18);
+			padding: 0 rem-calc(18);
 			.about-text{
 				width:auto;
 				float: none;
@@ -100,11 +108,14 @@
 					color: #6b6b6b;
 					margin-top: rem-calc(14);
 					margin-bottom: rem-calc(8);
+					@include respond-to(pda){
+						display: none;
+					}
 				}
 			}
 		}
 		.info {
-			width: rem-calc(519);
+			/*width: rem-calc(519);*/
 			a{
 				color: $blue;
 				display: block;
@@ -113,13 +124,27 @@
 					color:$ddgray;
 				}
 			}
+			div.row.collapse:last-child{
+				@include respond-to(pda){
+					display: none;
+				}
+			}
 			.phone{
 				.tel{
 					color: $ddgray;
 					font-size: rem-calc(18);
 					font-weight: 700;
 					margin-bottom: rem-calc(7);
+					&+p{
+							@include respond-to(pda){
+								display: none;
+						}
+					}
 				}
+				@include respond-to(pda) {
+					width: 100% !important;
+					text-align: center;
+				}					
 				p{
 					color: $llgray;
 					margin-top: 0;
@@ -127,16 +152,32 @@
 					font-size: rem-calc(13);
 					line-height: rem-calc(16);
 				}
+				a{
+					@include respond-to(pda){
+						display: none;
+					}
+				}
 			}
 			.callback {
 				font-size: rem-calc(13);
 				margin-top: rem-calc(-4);
 				padding-left: rem-calc(20);
+				@include respond-to(pda){
+					text-align: center;
+					width: 100% !important;
+					margin-top: 2px;
+				}
 			}
 			.schedule {
 				padding-left: rem-calc(9);
 				margin-top: rem-calc(-4);
-				width: 135px;
+				// width: 135px;
+				@include respond-to(930px){
+					padding-left: 0;
+				}
+				@include respond-to(pda) {
+					display: none;
+				}
 				p{
 					color: $ddgray;
 					margin-top: 0;
@@ -152,7 +193,16 @@
 						&.wek{
 							color: $red;
 							//float: right;
-							margin-left:  16px;
+							margin-left:  11%;
+							@include respond-to(930px){
+								margin-left: 0;
+							}
+						}
+					}
+					&.workingTime{
+						width:145px;
+						@include respond-to(930px){
+						 		width:70px;
 						}
 					}
 				}
@@ -176,6 +226,9 @@
 						padding: 1px;
 						font-size: 11px;
 						line-height: 11px;
+						@include respond-to(930px){
+						 	margin-left: rem-calc(0.8);
+						}
 						&:first-child{
 							margin-left:0;
 						}
@@ -184,57 +237,16 @@
 							color: $red;
 						}
 					}
-				} 
-
-			}
-			.search{
-				margin: 0;
-				@include clearfix();
-				input[type="search"] {
-					width: rem-calc(393);
-					color: $llgray;
-					font-size: rem-calc(14);
-					line-height: rem-calc(16);
-					padding: rem-calc(8) rem-calc(10);
-					border: 0;
-					line-height: 19px;
-					border: rem-calc(1) solid $in-color;
-					border-right: 0;
-					transition:all .2s;
-					&:active,
-					&:hover,
-					&:focus{
-						color: $ddgray;
-						outline: none;
-						z-index: 1;
-						-webkit-box-shadow: 0px 0px 6px 1px rgba(94, 185, 255, 0.5);
-						   -moz-box-shadow: 0px 0px 6px 1px rgba(94, 185, 255, 0.5);
-						        box-shadow: 0px 0px 6px 1px rgba(94, 185, 255, 0.5);
-					}
-				}
-				button[type="submit"]{
-					width: rem-calc(126);
-					background: $lgray;
-					color: $ddgray;
-					font-size: rem-calc(14);
-					font-weight: 700;
-					line-height: rem-calc(19);
-					padding: rem-calc(8) rem-calc(5);
-					border: 0;
-					border: rem-calc(1) solid $in-color;
-					&:active,
-					&:hover,
-					&:focus{
-						color: $ddgray;
-						outline: 1px solid $ddgray;
-						outline-offset: -1px;
-					}
 				}
 			}
 		}
 		.basket-sm {
-			width: rem-calc(380);
-			padding-left: rem-calc(60);
+			//width: rem-calc(380);
+			//padding-left: rem-calc(60);
+			padding-left: rem-calc(18);
+			@include respond-to(930px){
+				padding-left: 0;
+			}
 			> div{
 				display: table;
 				min-width: rem-calc(280);
@@ -243,12 +255,14 @@
 				border: rem-calc(1) solid $border;
 				text-align: center;
 				padding-bottom: 10px;
+				@include respond-to(930px){
+					min-width: rem-calc(200);
+				}
 				p{
 					color: $llgray;
 					font-size: rem-calc(13);
 					line-height: rem-calc(16);
-					margin-top: 0;
-					margin-bottom: rem-calc(7);
+					margin: 0 0 rem-calc(7) ;
 				}
 				.money {
 					color: $ddgray;
@@ -261,12 +275,81 @@
 						top: rem-calc(-10);
 						font-size: rem-calc(19);
 					}
+					@include respond-to(pda){
+						font-size: rem-calc(18);
+						line-height: 1;
+						sup{
+							font-size: rem-calc(12);
+						}
+					}
 				}
 				.btn{
 					margin-top: rem-calc(12);
 					font-weight: 700;
 				}
 			}
+			#widgetEmptyCart{
+				height:117px;
+				padding-top:45px;
+				display:none;
+				@include respond-to(pda){
+					height: 50px;
+					padding-top: 15px; 
+				}
+			}
+		}
+	}
+}
+.search{
+	margin: 0;
+	@include clearfix();
+	input[type="search"] {
+		// width: rem-calc(393);
+		width: 75%;
+		color: $llgray;
+		font-size: rem-calc(14);
+		line-height: rem-calc(16);
+		padding: rem-calc(8) rem-calc(10);
+		border: 0;
+		line-height: 19px;
+		border: rem-calc(1) solid $in-color;
+		border-right: 0;
+		transition:all .2s;
+		&:active,
+		&:hover,
+		&:focus{
+			color: $ddgray;
+			outline: none;
+			z-index: 1;
+			-webkit-box-shadow: 0px 0px 6px 1px rgba(94, 185, 255, 0.5);
+			   -moz-box-shadow: 0px 0px 6px 1px rgba(94, 185, 255, 0.5);
+			        box-shadow: 0px 0px 6px 1px rgba(94, 185, 255, 0.5);
+		}
+	}
+	button[type="submit"]{
+		// width: rem-calc(126);
+		width: 25%;
+		background: $lgray;
+		color: $ddgray;
+		font-size: rem-calc(14);
+		font-weight: 700;
+		line-height: rem-calc(19);
+		padding: rem-calc(8) rem-calc(5);
+		border: 0;
+		border: rem-calc(1) solid $in-color;
+		&:active,
+		&:hover,
+		&:focus{
+			color: $ddgray;
+			outline: 1px solid $ddgray;
+			outline-offset: -1px;
+		}
+	}
+	&.pda{
+		margin-top: 15px;
+		display: none;
+		@include respond-to (pda){
+			display: block;
 		}
 	}
 }
@@ -287,6 +370,10 @@
 		list-style:none;
 		position:relative;
 		float: left;
+		// @include respond-to (pda){
+		// 	display: inline-block;
+		// 	float:none;
+		// }
 		&:before {
 			content: "";
 			position: absolute;
@@ -295,6 +382,9 @@
 			bottom: 0;
 			width: 1px;
 			background: #6C7A93;
+			// @include respond-to (pda){
+			// 	width: 0px;
+			// }
 		}
 		&:first-child {
 			&:before {
@@ -322,6 +412,10 @@
 				border: 0;
 				position: relative;
 				z-index: 1;
+				@include respond-to (pda){
+					font-weight: bold;
+
+				}
 			}
 			&::before{
 				content: '';
@@ -345,7 +439,7 @@
 			}
 		}
 		> a{
-			font-size:1rem;
+			font-size:rem-calc(14);
 			color:$white;
 			padding:rem-calc(14) rem-calc(17) rem-calc(20) rem-calc(17);
 			display:block;
@@ -353,6 +447,9 @@
 			border-bottom: 0;
 			-webkit-border-radius: 5px;
 			border-radius: 5px;
+			@include respond-to (pda){
+				padding:rem-calc(4) rem-calc(7) rem-calc(6) rem-calc(7);
+			}
 			span{
 				color:$white;
 			}
@@ -360,14 +457,16 @@
 				border-bottom: 1px solid $white;
 			}
 		}
-
 	}
 	> nav > .row{
 		padding-top: 7px;
 		padding-left: 0;
+		@include respond-to (pda){
+			text-align: center;
+			padding-left: 25px;
+		}
 	}
 }
-
 .f-dropdown.content{
 	border-radius: 5px;
 	display: none;
@@ -386,7 +485,8 @@
 		}
 	}
 	.menu-item{
-		border-right: rem-calc(1) solid $border;
+		// border-right: rem-calc(1) solid $border;
+		border-right: 0;
 		li {
 			display: table;
 			border-collapse: collapse;
@@ -412,7 +512,6 @@
 		    	float: none;
 		    	width: auto;
 		    }
-
 		}
 		.product {
 			margin-top: rem-calc(10);
@@ -443,8 +542,12 @@
 			}
 		}
 	}
-	
 	.new-in{
+		border-left: rem-calc(1) solid $border;
+		ul {
+			list-style-type: none;
+			margin-left: 0;
+		}
 		.new-in-title{
 			color:$title;
 			font-size:rem-calc(18);
@@ -473,6 +576,7 @@
 				font-size: rem-calc(21);
 				font-weight: 700;
 				line-height: rem-calc(16);
+				margin-top: rem-calc(2);
 				sup{
 					top: -7px;
 					font-size: 70%;
