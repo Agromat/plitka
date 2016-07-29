@@ -1,6 +1,6 @@
 .main-section.catalog{
 	//width: 950px;
-	padding: 0 !important;
+	// padding: 0 !important;
 	.main-container{
 		padding-left: 10px;
 		.main-title{
@@ -32,7 +32,6 @@
 		margin-top: 26px !important
 	}
 }
-
 .product-side{
 	margin-bottom: 30px !important;
 	width:190px;
@@ -51,9 +50,9 @@
 		} 
 	}
 	.img{
-		//height: 126px;
-		//width: 100%;
-		//background: #f1f1f1;
+		height: 126px;
+		width: 100%;
+		background: #f1f1f1;
 		display: table;
 		> div{	
 			text-align: top;
@@ -124,9 +123,16 @@
 		padding: 0 10px !important;
 		&:last-child {
 			float: left;
+			@include respond-to (pda){
+				display: none;
+			}
+		}
+		&:first-child, &:nth-child(2){
+			@include respond-to (pda){
+				width: 50%;
+			}
 		}
 	}
-	
 }
 .product-item {
 	overflow: hidden;
@@ -156,7 +162,14 @@
 }
 .product-item__main {
 	overflow: hidden;
-	
+	.withdrawn-from-sale{
+		width: 150px;
+		position: absolute;
+		text-align: center;
+		font-size: 10px;
+    height: 26px;
+    padding: 6px 14px;
+	}
 }
 .product-item__title {
 	text-decoration: underline;
@@ -196,10 +209,9 @@
 		}
 		.column{
 			background: #eef6f9;
-			
 			margin-bottom: 25px;
 			.img{
-				padding: 12px 0;
+				padding: 0;
 				background: $white;
 				margin-bottom: 21px;
 				img{
@@ -235,6 +247,7 @@
 			border-top:1px solid $border;
 			.column{
 				width: 48.47%;
+				overflow: hidden;
 			}
 			.img{
 				width: 33%;

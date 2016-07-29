@@ -1,3 +1,4 @@
+@import "media";
 /*  grid */
 *,
 *:before,
@@ -7,7 +8,7 @@
   box-sizing: border-box;
 }
 body{
-	min-width: 1220px;
+	// min-width: 1220px;
 }
 html,
 body { font-size: 100%; }
@@ -69,7 +70,6 @@ $rem-base : 16;
   }
   @return $remValues;
 }
-
 @function strip-unit($num) {
   @return $num / ($num * 0 + 1);
 }
@@ -80,7 +80,6 @@ $rem-base : 16;
   @if ($value == 0rem) { $value: 0; } // Turn 0rem into 0
   @return $value;
 }
-
 @function data($attr) {
   @if $namespace {
     @return '[data-' + $namespace + '-' + $attr + ']';
@@ -88,7 +87,6 @@ $rem-base : 16;
 
   @return '[data-' + $attr + ']';
 }
-
 @mixin clearfix {
     zoom:1;
     &:before, &:after {
@@ -137,6 +135,12 @@ $rem-base : 16;
 .row {
   max-width: 1220px;
 }
+.sidePadding{
+	padding: 0 10px;
+  @include respond-to(pda) {
+    padding: 0 25px;
+  }
+}
 .title_border { 
   margin: 35px 0 27px;
   padding-bottom: 12px;
@@ -181,7 +185,6 @@ $rem-base : 16;
 *	BUTTONS
 */
 @import "main-container";
-
 @import "filters";
 @import "range-slider";
 @import "contacts";

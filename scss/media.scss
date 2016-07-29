@@ -1,0 +1,39 @@
+/*responsive*/
+$break-1: 320px;
+$break-2: 480px;
+$break-3: 768px;
+$break-4: 1024px;
+$break-5: 1100px;
+$break-6: 700px;
+$break-7: 568px;
+$break-8: 1150px;
+
+@mixin respond-to($media) {
+  @if $media == mob {
+    @media only screen and (max-width: $break-1) { @content; }
+  }
+  @else if $media == mob-lan {
+    @media only screen and (max-width: $break-2) { @content; }
+  }
+  @else if $media == iphone5 {
+    @media only screen and (max-width: $break-7) { @content; }
+  }
+  @else if $media == pda {
+    @media only screen and (max-width: $break-3) { @content; }
+  }
+  @else if $media == med {
+    @media only screen and (max-width: $break-4) { @content; }
+  }
+  @else if $media == med1100 {
+    @media only screen and (max-width: $break-5) { @content; }
+  }
+  @else if $media == med1150 {
+    @media only screen and (max-width: $break-8) { @content; }
+  }
+  @else if $media == height {
+    @media only screen and (max-height: $break-6) { @content; }
+  }
+  @else {
+  	@media only screen and (max-width: $media) { @content; }
+  }
+}
