@@ -18,6 +18,15 @@ body {
   max-width: 1220px;
 }
 
+.sidePadding {
+  padding: 0 10px;
+}
+@media only screen and (max-width: 768px) {
+  .sidePadding {
+    padding: 0 25px;
+  }
+}
+
 .title_border {
   margin: 35px 0 27px;
   padding-bottom: 12px;
@@ -305,6 +314,16 @@ ul.inline li {
 .menu-nav .menubar .left li:first-child {
   padding-left: 0;
 }
+.menu-nav .menubar .left li a {
+  border: 0;
+  display: block;
+  padding: 0 1.125rem;
+}
+@media only screen and (max-width: 768px) {
+  .menu-nav .menubar .left li a {
+    padding: 0 0.4375rem;
+  }
+}
 .menu-nav .menubar .left li a.active, .menu-nav .menubar .left li a:hover {
   color: #ffffff;
   background: #7e7e7e;
@@ -314,25 +333,25 @@ ul.inline li {
     padding: 0 0.4375rem;
   }
 }
-.menu-nav .menubar .right {
+.menu-nav .right {
   margin: 0;
 }
 @media only screen and (max-width: 480px) {
-  .menu-nav .menubar .right {
+  .menu-nav .right {
     display: none;
   }
 }
-.menu-nav .menubar .right li {
+.menu-nav .right li {
   color: #cddf01;
   padding-right: 1.25rem;
 }
-.menu-nav .menubar .right li a {
+.menu-nav .right li a {
   color: #cddf01;
 }
-.menu-nav .menubar .right li a:hover {
+.menu-nav .right li a:hover {
   color: #ebfe15;
 }
-.menu-nav .menubar.mobile {
+.menu-nav.mobile {
   display: none;
   position: absolute;
   z-index: 10;
@@ -343,17 +362,17 @@ ul.inline li {
   padding: 0;
 }
 @media only screen and (max-width: 480px) {
-  .menu-nav .menubar.mobile {
+  .menu-nav.mobile {
     display: block;
   }
 }
-.menu-nav .menubar.mobile .mobile-menu {
+.menu-nav.mobile .mobile-menu {
   display: none;
 }
-.menu-nav .menubar.mobile ul {
+.menu-nav.mobile ul {
   margin-left: 0;
 }
-.menu-nav .menubar.mobile li {
+.menu-nav.mobile li {
   color: #333;
   float: none;
   padding-left: 10px !important;
@@ -361,13 +380,13 @@ ul.inline li {
   border-bottom: 1px solid #dddddd;
   box-sizing: border-box;
 }
-.menu-nav .menubar.mobile li a {
+.menu-nav.mobile li a {
   color: #333;
 }
-.menu-nav .menubar.mobile li#show-mobile-menu {
+.menu-nav.mobile li#show-mobile-menu {
   cursor: pointer;
 }
-.menu-nav .menubar.mobile .menuinfo #show-mobile-menu {
+.menu-nav.mobile .menuinfo #show-mobile-menu {
   width: 30px;
   padding: 30px;
   background-color: black;
@@ -376,36 +395,37 @@ ul.inline li {
   left: -35px;
   display: inline-block;
 }
-.menu-nav .menuinfo {
+
+.menuinfo {
   background: #f4f4f4;
 }
 @media only screen and (max-width: 480px) {
-  .menu-nav .menuinfo {
+  .menuinfo {
     padding-left: 40px;
   }
 }
-.menu-nav .menuinfo > .row {
+.menuinfo > .row {
   padding: 1.5rem 0 0.9375rem;
 }
 @media only screen and (max-width: 480px) {
-  .menu-nav .menuinfo > .row {
+  .menuinfo > .row {
     padding: 0.3125rem 0;
   }
 }
-.menu-nav .menuinfo .logo {
+.menuinfo .logo {
   padding: 0 1.125rem;
 }
 @media only screen and (max-width: 480px) {
-  .menu-nav .menuinfo .logo {
+  .menuinfo .logo {
     padding: 0 1.125rem 0 0;
     margin-top: 5px;
   }
 }
-.menu-nav .menuinfo .logo .about-text {
+.menuinfo .logo .about-text {
   width: auto;
   float: none;
 }
-.menu-nav .menuinfo .logo .about-text p {
+.menuinfo .logo .about-text p {
   font-size: 0.8125rem;
   line-height: 0.875rem;
   color: #6b6b6b;
@@ -413,50 +433,50 @@ ul.inline li {
   margin-bottom: 0.5rem;
 }
 @media only screen and (max-width: 768px) {
-  .menu-nav .menuinfo .logo .about-text p {
+  .menuinfo .logo .about-text p {
     display: none;
   }
 }
-.menu-nav .menuinfo .info {
+.menuinfo .info {
   /*width: rem-calc(519);*/
 }
 @media only screen and (max-width: 480px) {
-  .menu-nav .menuinfo .info {
+  .menuinfo .info {
     width: 50%;
     padding-top: 5px;
   }
 }
-.menu-nav .menuinfo .info a {
+.menuinfo .info a {
   color: #0053a0;
   display: block;
   line-height: 1rem;
 }
-.menu-nav .menuinfo .info a:hover {
+.menuinfo .info a:hover {
   color: #333;
 }
 @media only screen and (max-width: 768px) {
-  .menu-nav .menuinfo .info div.row.collapse:last-child {
+  .menuinfo .info div.row.collapse:last-child {
     display: none;
   }
 }
-.menu-nav .menuinfo .info .phone .tel {
+.menuinfo .info .phone .tel {
   color: #333;
   font-size: 1.125rem;
   font-weight: 700;
   margin-bottom: 0.4375rem;
 }
 @media only screen and (max-width: 768px) {
-  .menu-nav .menuinfo .info .phone .tel + p {
+  .menuinfo .info .phone .tel + p {
     display: none;
   }
 }
 @media only screen and (max-width: 768px) {
-  .menu-nav .menuinfo .info .phone {
+  .menuinfo .info .phone {
     width: 100% !important;
     text-align: center;
   }
 }
-.menu-nav .menuinfo .info .phone p {
+.menuinfo .info .phone p {
   color: #999;
   margin-top: 0;
   margin-bottom: 0;
@@ -464,85 +484,85 @@ ul.inline li {
   line-height: 1rem;
 }
 @media only screen and (max-width: 768px) {
-  .menu-nav .menuinfo .info .phone a {
+  .menuinfo .info .phone a {
     display: none;
   }
 }
-.menu-nav .menuinfo .info .callback {
+.menuinfo .info .callback {
   font-size: 0.8125rem;
   margin-top: -0.25rem;
   padding-left: 1.25rem;
 }
 @media only screen and (max-width: 768px) {
-  .menu-nav .menuinfo .info .callback {
+  .menuinfo .info .callback {
     text-align: center;
     width: 100% !important;
     margin-top: 2px;
   }
 }
 @media only screen and (max-width: 480px) {
-  .menu-nav .menuinfo .info .callback {
+  .menuinfo .info .callback {
     display: none;
   }
 }
-.menu-nav .menuinfo .info .schedule {
+.menuinfo .info .schedule {
   padding-left: 0.5625rem;
   margin-top: -0.25rem;
 }
 @media only screen and (max-width: 930px) {
-  .menu-nav .menuinfo .info .schedule {
+  .menuinfo .info .schedule {
     padding-left: 0;
   }
 }
 @media only screen and (max-width: 768px) {
-  .menu-nav .menuinfo .info .schedule {
+  .menuinfo .info .schedule {
     display: none;
   }
 }
-.menu-nav .menuinfo .info .schedule p {
+.menuinfo .info .schedule p {
   color: #333;
   margin-top: 0;
   margin-bottom: 0.8125rem;
   font-size: 0.8125rem;
 }
-.menu-nav .menuinfo .info .schedule p:first-child {
+.menuinfo .info .schedule p:first-child {
   margin-bottom: 0.125rem;
 }
-.menu-nav .menuinfo .info .schedule p sup {
+.menuinfo .info .schedule p sup {
   top: -2px;
 }
-.menu-nav .menuinfo .info .schedule p span.wek {
+.menuinfo .info .schedule p span.wek {
   color: #ed1c24;
   margin-left: 11%;
 }
 @media only screen and (max-width: 930px) {
-  .menu-nav .menuinfo .info .schedule p span.wek {
+  .menuinfo .info .schedule p span.wek {
     margin-left: 0;
   }
 }
-.menu-nav .menuinfo .info .schedule p.workingTime {
+.menuinfo .info .schedule p.workingTime {
   width: 145px;
 }
 @media only screen and (max-width: 930px) {
-  .menu-nav .menuinfo .info .schedule p.workingTime {
+  .menuinfo .info .schedule p.workingTime {
     width: 70px;
   }
 }
-.menu-nav .menuinfo .info .schedule div {
+.menuinfo .info .schedule div {
   margin-bottom: 0.25rem;
   display: block;
   zoom: 1;
 }
-.menu-nav .menuinfo .info .schedule div:before, .menu-nav .menuinfo .info .schedule div:after {
+.menuinfo .info .schedule div:before, .menuinfo .info .schedule div:after {
   content: "";
   display: block;
   height: 0;
   overflow: hidden;
 }
-.menu-nav .menuinfo .info .schedule div:after {
+.menuinfo .info .schedule div:after {
   clear: both;
 }
-.menu-nav .menuinfo .info .schedule div span {
+.menuinfo .info .schedule div span {
   display: block;
   float: left;
   -webkit-border-radius: 1px;
@@ -560,37 +580,37 @@ ul.inline li {
   line-height: 11px;
 }
 @media only screen and (max-width: 930px) {
-  .menu-nav .menuinfo .info .schedule div span {
+  .menuinfo .info .schedule div span {
     margin-left: 0.05rem;
   }
 }
-.menu-nav .menuinfo .info .schedule div span:first-child {
+.menuinfo .info .schedule div span:first-child {
   margin-left: 0;
 }
-.menu-nav .menuinfo .info .schedule div span.wek {
+.menuinfo .info .schedule div span.wek {
   border: 0.0625rem solid #ed1c24;
   color: #ed1c24;
 }
-.menu-nav .menuinfo .basket-sm {
+.menuinfo .basket-sm {
   padding-left: 1.125rem;
 }
 @media only screen and (max-width: 930px) {
-  .menu-nav .menuinfo .basket-sm {
+  .menuinfo .basket-sm {
     padding-left: 0;
   }
 }
 @media only screen and (max-width: 320px) {
-  .menu-nav .menuinfo .basket-sm {
+  .menuinfo .basket-sm {
     width: 2.8125rem;
     height: 1.875rem;
   }
 }
 @media only screen and (max-width: 480px) {
-  .menu-nav .menuinfo .basket-sm {
+  .menuinfo .basket-sm {
     width: 25%;
   }
 }
-.menu-nav .menuinfo .basket-sm > div {
+.menuinfo .basket-sm > div {
   display: table;
   min-width: 17.5rem;
   margin-left: auto;
@@ -600,32 +620,32 @@ ul.inline li {
   padding-bottom: 10px;
 }
 @media only screen and (max-width: 930px) {
-  .menu-nav .menuinfo .basket-sm > div {
+  .menuinfo .basket-sm > div {
     min-width: 12.5rem;
   }
 }
 @media only screen and (max-width: 480px) {
-  .menu-nav .menuinfo .basket-sm > div {
+  .menuinfo .basket-sm > div {
     padding: 0;
     min-width: 2.8125rem;
     min-height: 1.875rem;
   }
-  .menu-nav .menuinfo .basket-sm > div p, .menu-nav .menuinfo .basket-sm > div a {
+  .menuinfo .basket-sm > div p, .menuinfo .basket-sm > div a {
     display: none;
   }
 }
 @media only screen and (max-width: 320px) {
-  .menu-nav .menuinfo .basket-sm > div {
+  .menuinfo .basket-sm > div {
     margin: 0;
   }
 }
-.menu-nav .menuinfo .basket-sm > div p {
+.menuinfo .basket-sm > div p {
   color: #999;
   font-size: 0.8125rem;
   line-height: 1rem;
   margin: 0 0 0.4375rem;
 }
-.menu-nav .menuinfo .basket-sm > div .money {
+.menuinfo .basket-sm > div .money {
   color: #333;
   font-size: 1.9375rem;
   line-height: 2.1875rem;
@@ -633,25 +653,25 @@ ul.inline li {
   font-weight: 700;
   margin-bottom: 0;
 }
-.menu-nav .menuinfo .basket-sm > div .money sup {
-  top: -0.625rem;
-  font-size: 1.1875rem;
-}
 @media only screen and (max-width: 768px) {
-  .menu-nav .menuinfo .basket-sm > div .money {
+  .menuinfo .basket-sm > div .money {
     font-size: 1.125rem;
     line-height: 1;
   }
-  .menu-nav .menuinfo .basket-sm > div .money sup {
+  .menuinfo .basket-sm > div .money sup {
     font-size: 0.75rem;
   }
 }
-.menu-nav .menuinfo .basket-sm > div .btn {
+.menuinfo .basket-sm > div .money sup {
+  top: -0.625rem;
+  font-size: 1.1875rem;
+}
+.menuinfo .basket-sm > div .btn {
   margin-top: 0.75rem;
   font-weight: 700;
 }
 @media only screen and (max-width: 480px) {
-  .menu-nav .menuinfo .basket-sm #widgetFullCart:after, .menu-nav .menuinfo .basket-sm #widgetEmptyCart:after {
+  .menuinfo .basket-sm #widgetFullCart:after, .menuinfo .basket-sm #widgetEmptyCart:after {
     content: '';
     display: block;
     width: 20px;
@@ -660,27 +680,27 @@ ul.inline li {
   }
 }
 @media only screen and (max-width: 480px) {
-  .menu-nav .menuinfo .basket-sm #widgetFullCart:after {
+  .menuinfo .basket-sm #widgetFullCart:after {
     background: url("../img/mobile-backet.png") no-repeat 0 0;
   }
 }
-.menu-nav .menuinfo .basket-sm #widgetEmptyCart {
+.menuinfo .basket-sm #widgetEmptyCart {
   height: 117px;
   padding-top: 45px;
   display: none;
 }
 @media only screen and (max-width: 768px) {
-  .menu-nav .menuinfo .basket-sm #widgetEmptyCart {
+  .menuinfo .basket-sm #widgetEmptyCart {
     height: 50px;
     padding-top: 15px;
   }
 }
 @media only screen and (max-width: 480px) {
-  .menu-nav .menuinfo .basket-sm #widgetEmptyCart {
+  .menuinfo .basket-sm #widgetEmptyCart {
     height: 0px;
     padding: 0px;
   }
-  .menu-nav .menuinfo .basket-sm #widgetEmptyCart:after {
+  .menuinfo .basket-sm #widgetEmptyCart:after {
     background: url("../img/mobile-backet.png") no-repeat 0 -16px;
   }
 }
@@ -1696,6 +1716,9 @@ ul.inline li {
   color: #4a5b70 !important;
 }
 
+.main-section {
+  padding-right: 1.5625rem !important;
+}
 .main-section.is-small {
   width: 50rem;
 }
@@ -3671,6 +3694,11 @@ footer .copyright-wrap .full-version {
 footer .copyright-wrap .full-version a {
   color: #e9ebef;
   border-bottom: 1px solid #e9ebef;
+}
+@media only screen and (max-width: 768px) {
+  footer .copyright-wrap .copyright, footer .copyright-wrap .full-version {
+    display: block;
+  }
 }
 @media only screen and (max-width: 480px) {
   footer .copyright-wrap .copyright, footer .copyright-wrap .full-version {

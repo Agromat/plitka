@@ -135,6 +135,12 @@ $rem-base : 16;
 .row {
 	max-width: 1220px;
 }
+.sidePadding{
+	padding: 0 10px;
+  @include respond-to(pda) {
+    padding: 0 25px;
+  }
+}
 .title_border { 
 	margin: 35px 0 27px;
 	padding-bottom: 12px;

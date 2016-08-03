@@ -9,6 +9,8 @@
 }
 .main-section{
 	// width: rem-calc(990);
+	// padding-left: rem-calc(8) !important;
+	padding-right: rem-calc(25) !important;
 	&.is-small {
 		width: rem-calc(800);
 	}
@@ -1091,11 +1093,14 @@ footer{
 			}
 		}
 		.copyright, .full-version{
+			@include respond-to(pda){
+				display: block;
+			}
 			@include respond-to(mob-lan){
 				float: none;
 				text-align: center;
 				width: 100%;
-			}
+			}	
 		}
 	}
 }

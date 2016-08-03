@@ -65,113 +65,120 @@
 				line-height:rem-calc(40);
 				border-right:rem-calc(1) solid $gray;
 				a{
+					border:0;
+					display: block;
+					padding: 0 1.125rem;
+					@include respond-to(pda){
+						padding: 0 rem-calc(7);
+					}
 					&.active,
 					&:hover {
 						color: #ffffff;
 						background: #7e7e7e;
 					}
 					span{
-				    @include respond-to(pda){
+						@include respond-to(pda){
 							padding: 0 rem-calc(7);
 						}
-			    }
-				}
-			}	
-		}
-		.right{
-			margin:0;
-			@include respond-to(mob-lan){
-				display: none;
-			}
-			li{
-				color:$lgeern;
-				padding-right: rem-calc(20);
-				a{
-					&:hover {
-						color: #ebfe15;
 					}
-					color:$lgeern;
-				}
-			}
-		}
-		&.mobile{
-			display: none;
-			position: absolute;
-			z-index: 10;
-			top:40px;
-			background:$lgray;
-			color:$ddgray;
-			width: 100%;
-			padding: 0;
-			@include respond-to(mob-lan) {
-				display: block;
-			}
-			.mobile-menu{
-				display: none;
-			}
-			ul{
-				margin-left: 0;
-			}
-			li{
-				color:$ddgray;
-				float: none;
-				padding-left: 10px !important;
-				border-right: 0;
-				border-bottom: 1px solid #dddddd;
-				box-sizing:border-box;
-				a{
-					color:$ddgray;
-				}
-				&#show-mobile-menu{
-					cursor: pointer;
-				}
-			}
-			.menuinfo{
-				#show-mobile-menu{	
-					width: 30px;
-					padding: 30px;
-					background-color: black;
-					position: absolute;
-					z-index: 27;
-					left: -35px;
-					display: inline-block;
 				}
 			}
 		}	
 	}
-	.menuinfo{
+	.right{
+		margin:0;
+		@include respond-to(mob-lan){
+			display: none;
+		}
+		li{
+			color:$lgeern;
+			padding-right: rem-calc(20);
+			a{
+				&:hover {
+					color: #ebfe15;
+				}
+				color:$lgeern;
+			}
+		}
+	}
+	&.mobile{
+		display: none;
+		position: absolute;
+		z-index: 10;
+		top:40px;
 		background:$lgray;
+		color:$ddgray;
+		width: 100%;
+		padding: 0;
 		@include respond-to(mob-lan) {
-			padding-left: 40px;
+			display: block;
 		}
-		> .row {
-			padding: rem-calc(24) 0 rem-calc(15);
-			@include respond-to(mob-lan){
-				padding: rem-calc(5) 0;
+		.mobile-menu{
+			display: none;
+		}
+		ul{
+			margin-left: 0;
+		}
+		li{
+			color:$ddgray;
+			float: none;
+			padding-left: 10px !important;
+			border-right: 0;
+			border-bottom: 1px solid #dddddd;
+			box-sizing:border-box;
+			a{
+				color:$ddgray;
+			}
+			&#show-mobile-menu{
+				cursor: pointer;
 			}
 		}
-		.logo {
-			padding: 0 rem-calc(18);
-			@include respond-to(mob-lan){
-				padding: 0 1.125rem 0 0;
-				margin-top: 5px;
+		.menuinfo{
+			#show-mobile-menu{	
+				width: 30px;
+				padding: 30px;
+				background-color: black;
+				position: absolute;
+				z-index: 27;
+				left: -35px;
+				display: inline-block;
 			}
-			.about-text{
-				width:auto;
-				float: none;
-				p{
-					font-size: rem-calc(13);
-					line-height: rem-calc(14);
-					color: #6b6b6b;
-					margin-top: rem-calc(14);
-					margin-bottom: rem-calc(8);
-					@include respond-to(pda){
-						display: none;
-					}
+		}
+	}	
+}
+.menuinfo{
+	background:$lgray;
+	@include respond-to(mob-lan) {
+		padding-left: 40px;
+	}
+	> .row {
+		padding: rem-calc(24) 0 rem-calc(15);
+		@include respond-to(mob-lan){
+			padding: rem-calc(5) 0;
+		}
+	}
+	.logo {
+		padding: 0 rem-calc(18);
+		@include respond-to(mob-lan){
+			padding: 0 1.125rem 0 0;
+			margin-top: 5px;
+		}
+		.about-text{
+			width:auto;
+			float: none;
+			p{
+				font-size: rem-calc(13);
+				line-height: rem-calc(14);
+				color: #6b6b6b;
+				margin-top: rem-calc(14);
+				margin-bottom: rem-calc(8);
+				@include respond-to(pda){
+					display: none;
 				}
 			}
 		}
-		.info {
+	}
+	.info {
 			/*width: rem-calc(519);*/
 			@include respond-to(mob-lan){
 				width: 50%;
@@ -197,15 +204,15 @@
 					font-weight: 700;
 					margin-bottom: rem-calc(7);
 					&+p{
-							@include respond-to(pda){
-								display: none;
+						@include respond-to(pda){
+							display: none;
 						}
 					}
 				}
 				@include respond-to(pda) {
 					width: 100% !important;
 					text-align: center;
-				}					
+				}
 				p{
 					color: $llgray;
 					margin-top: 0;
@@ -228,7 +235,7 @@
 					width: 100% !important;
 					margin-top: 2px;
 				}
-				@include respond-to(mob-lan){
+				@include respond-to(mob-lan) {
 					display: none;
 				}
 			}
@@ -266,7 +273,7 @@
 					&.workingTime{
 						width:145px;
 						@include respond-to(930px){
-						 		width:70px;
+							width:70px;
 						}
 					}
 				}
@@ -291,7 +298,7 @@
 						font-size: 11px;
 						line-height: 11px;
 						@include respond-to(930px){
-						 	margin-left: rem-calc(0.8);
+							margin-left: rem-calc(0.8);
 						}
 						&:first-child{
 							margin-left:0;
@@ -304,102 +311,103 @@
 				}
 			}
 		}
-		.basket-sm {
-			//width: rem-calc(380);
-			//padding-left: rem-calc(60);
-			padding-left: rem-calc(18);
+	.basket-sm {
+		//width: rem-calc(380);
+		//padding-left: rem-calc(60);
+		padding-left: rem-calc(18);
+		@include respond-to(930px){
+			padding-left: 0;
+		}
+		@include respond-to(mob) {
+			width: rem-calc(45);
+			height: rem-calc(30);
+		}
+		@include respond-to(mob-lan) {
+			width: 25%;
+		}
+		> div{
+			display: table;
+			min-width: rem-calc(280);
+			margin-left: auto;
+			margin-right: auto;
+			border: rem-calc(1) solid $border;
+			text-align: center;
+			padding-bottom: 10px;
 			@include respond-to(930px){
-				padding-left: 0;
-			}
-			@include respond-to(mob) {
-				width: rem-calc(45);
-				height: rem-calc(30);
+				min-width: rem-calc(200);
 			}
 			@include respond-to(mob-lan) {
-				width: 25%;
+				padding: 0;
+				min-width: rem-calc(45);
+				min-height: rem-calc(30);
+				p, a {
+					display: none;
+				}
 			}
-			> div{
-				display: table;
-				min-width: rem-calc(280);
-				margin-left: auto;
-				margin-right: auto;
-				border: rem-calc(1) solid $border;
-				text-align: center;
-				padding-bottom: 10px;
-				@include respond-to(930px){
-					min-width: rem-calc(200);
-				}
-				@include respond-to(mob-lan) {
-					padding: 0;
-					min-width: rem-calc(45);
-					min-height: rem-calc(30);
-					p, a {
-						display: none;
-					}
-				}
-				@include respond-to(mob) {
-					margin: 0;
-				}
-				p{
-					color: $llgray;
-					font-size: rem-calc(13);
-					line-height: rem-calc(16);
-					margin: 0 0 rem-calc(7) ;
-				}
-				.money {
-					color: $ddgray;
-					font-size: rem-calc(31);
-					line-height: rem-calc(35);
-					padding-left: rem-calc(13);
-					font-weight: 700;					
-					margin-bottom: 0;
+			@include respond-to(mob) {
+				margin: 0;
+			}
+			p{
+				color: $llgray;
+				font-size: rem-calc(13);
+				line-height: rem-calc(16);
+				margin: 0 0 rem-calc(7) ;
+			}
+			.money {
+				color: $ddgray;
+				font-size: rem-calc(31);
+				line-height: rem-calc(35);
+				padding-left: rem-calc(13);
+				font-weight: 700;					
+				margin-bottom: 0;
+				@include respond-to(pda){
+					font-size: rem-calc(18);
+					line-height: 1;
 					sup{
-						top: rem-calc(-10);
-						font-size: rem-calc(19);
-					}
-					@include respond-to(pda){
-						font-size: rem-calc(18);
-						line-height: 1;
-						sup{
-							font-size: rem-calc(12);
-						}
+						font-size: rem-calc(12);
 					}
 				}
-				.btn{
-					margin-top: rem-calc(12);
-					font-weight: 700;
+				sup{
+					top: rem-calc(-10);
+					font-size: rem-calc(19);
 				}
 			}
-			#widgetFullCart, #widgetEmptyCart{
+			.btn{
+				margin-top: rem-calc(12);
+				font-weight: 700;
+			}
+		}
+		#widgetFullCart, #widgetEmptyCart{
+			&:after{
+				@include respond-to(mob-lan) {
+					content: '';
+					display: block;
+					width: 20px;
+					height: 16px;
+					margin: 7px auto 6px;
+				}
+			}
+		}
+		#widgetFullCart:after{
+			@include respond-to(mob-lan){
+				background: url('../img/mobile-backet.png') no-repeat 0 0;
+			}
+		}
+		#widgetEmptyCart{
+			height:117px;
+			padding-top:45px;
+			display:none;
+			@include respond-to(pda) {
+				height: 50px;
+				padding-top: 15px; 
+			}
+			@include respond-to(mob-lan){
+				height: 0px;
+				padding: 0px;
+				// height: 50px;
+				// padding-top: 15px; 
 				&:after{
-					@include respond-to(mob-lan) {
-						content: '';
-						display: block;
-						width: 20px;
-						height: 16px;
-						margin: 7px auto 6px;
-					}
-				}
-			}
-			#widgetFullCart:after{
-				@include respond-to(mob-lan){
-					background: url('../img/mobile-backet.png') no-repeat 0 0;
-				}
-			}
-			#widgetEmptyCart{
-				height:117px;
-				padding-top:45px;
-				display:none;
-				@include respond-to(pda) {
-					height: 50px;
-					padding-top: 15px; 
-				}
-				@include respond-to(mob-lan){
-					height: 0px;
-					padding: 0px;
-					&:after{
-						background: url('../img/mobile-backet.png') no-repeat 0 -16px;
-					}
+					background: url('../img/mobile-backet.png') no-repeat 0 -16px;
 				}
 			}
 		}
@@ -436,8 +444,8 @@
 			outline: none;
 			z-index: 1;
 			-webkit-box-shadow: 0px 0px 6px 1px rgba(94, 185, 255, 0.5);
-			   -moz-box-shadow: 0px 0px 6px 1px rgba(94, 185, 255, 0.5);
-			        box-shadow: 0px 0px 6px 1px rgba(94, 185, 255, 0.5);
+			-moz-box-shadow: 0px 0px 6px 1px rgba(94, 185, 255, 0.5);
+			box-shadow: 0px 0px 6px 1px rgba(94, 185, 255, 0.5);
 		}
 	}
 	button[type="submit"]{
@@ -504,6 +512,9 @@
 			bottom: 0;
 			width: 1px;
 			background: #6C7A93;
+			// @include respond-to (pda){
+			// 	width: 0px;
+			// }
 			@include respond-to (mob-lan){
 				width: 0px;
 			}
@@ -658,10 +669,10 @@
 			}
 		}
 		.inline {
-		    li {
-		    	float: none;
-		    	width: auto;
-		    }
+			li {
+				float: none;
+				width: auto;
+			}
 		}
 		.product {
 			margin-top: rem-calc(10);
