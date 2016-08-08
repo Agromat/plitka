@@ -10,7 +10,7 @@
 .main-section{
 	// width: rem-calc(990);
 	// padding-left: rem-calc(8) !important;
-	padding-right: rem-calc(25);
+	padding-right: rem-calc(25) !important;
 	&.is-small {
 		width: rem-calc(800);
 	}

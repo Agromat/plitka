@@ -73,7 +73,7 @@
 				border-right:rem-calc(1) solid $gray;
 				a{
 					border:0;
-					display: block; 
+					display: block;
 					@include respond-to(pda){
 						padding: 0 rem-calc(7);
 					}
@@ -435,7 +435,6 @@
 		padding: 0;
 	}
 }
-
 .search{
 	margin: 0;
 	@include clearfix();
@@ -499,6 +498,11 @@
 	position: relative;
 	@include respond-to(mob-lan) {
 		display: none;
+		margin: 20px 10px 0;
+		background:$pblue;
+	}
+	.menu-catalog-drop {
+		top: 100%;
 	}
 	> nav > ul > li{
 		margin-bottom:0;
