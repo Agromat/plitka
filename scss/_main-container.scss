@@ -9,8 +9,8 @@
 }
 .main-section{
 	// width: rem-calc(990);
-	padding-right: rem-calc(25) !important;
 	// padding-left: rem-calc(8) !important;
+	padding-right: rem-calc(25);
 	&.is-small {
 		width: rem-calc(800);
 	}
@@ -18,6 +18,14 @@
 		width: 100%;
 	}
 	.main-container{
+		padding-right: rem-calc(25);
+		//padding-left: rem-calc(8);
+		@include respond-to(pda) {
+			padding: 0;
+		}
+		@include respond-to(mob-lan) {
+			padding: 0;
+		}
 		.main-title{
 			font-family: $font-family-arial;
 			font-size: rem-calc(31);
@@ -57,6 +65,17 @@
 				/*span{
 					border-bottom-color: $ddgray;
 				}*/
+			}
+		}
+		&>div{
+			padding: 0 10px;
+		}
+		&>div:nth-child(2) {
+			padding: 0;
+		}
+		&>.other-products.header-box.is-no-margin, .famous-brands{
+			@include respond-to(mob-lan) {
+				display: none;
 			}
 		}
 	}
@@ -484,6 +503,11 @@ ul.pagination{
 		.slick-next {
 			right: 21px;
 		}
+		.slick-prev,.slick-next{
+			@include respond-to(pda){
+				top:-23px;
+			}
+		}
 	}
 	&:hover{
 		z-index: 100;
@@ -717,8 +741,8 @@ aside.sidebar.sidebar_no-padding{
 				display: none;
 				color: #fff;
 				-webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
-				-moz-box-shadow:		0 2px 2px 0 rgba(0, 0, 0, 0.3);
-				box-shadow:				 0 2px 2px 0 rgba(0, 0, 0, 0.3);
+				-moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
+				box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
 				.icon{
 					display: block;
 					float: left;
@@ -797,6 +821,10 @@ footer{
 		padding-bottom: 0;
 		background-color:#fff; 
 		margin-top: 0;
+	}
+	@include respond-to(mob-lan) {
+		padding-top: 0;
+		border-top: 1px solid #ddd;
 	}
 	.title{
 		font-size: 13px;
@@ -915,6 +943,9 @@ footer{
 	}
 	.row{
 		margin-top: 32px;
+		@include respond-to(mob-lan) {
+			margin-top: 0;
+		}
 		> *{
 			font-size: 13px;
 			color: $ddgray;
@@ -939,19 +970,34 @@ footer{
 						float: right;
 						width: 70%;
 					}
+					@include respond-to(mob-lan){
+						width: 62.5%;
+					}
 					.list{
 						li{
 							@include respond-to(pda){
 								float: left;
 								margin-right: 10px;
 							}
+							@include respond-to(mob-lan){
+								float: none;
+								margin-left: 40px;
+							}
 							a{
 								@include respond-to(pda){
 									color:#0053a0;
 								}
+								@include respond-to(mob-lan){
+									color:#000;
+									font-weight: bold;
+									font-size: 13px;
+								}
 								span{
 									@include respond-to(pda){
 										border-bottom: 1px solid #0053a0;
+									}
+									@include respond-to(mob-lan){
+										border-bottom: 1px solid #000;
 									}
 								}
 							}
@@ -972,6 +1018,9 @@ footer{
 						float: left;
 						width: 20%;
 					}
+					@include respond-to(mob-lan) {
+						width: 37.5%;
+					}
 					.contact{
 						li:nth-child(-n+3), li:nth-child(4)>p:first-child{
 							@include respond-to(pda){
@@ -982,6 +1031,9 @@ footer{
 							@include respond-to(pda){
 								margin-left: 0;
 								width: 130px;
+							}
+							@include respond-to(mob-lan) {
+								padding-left: 0;
 							}
 							& .wek{
 								@include respond-to(pda){
@@ -1017,6 +1069,10 @@ footer{
 				text-align: left;
 				padding-left: 25px;
 			}
+			@include respond-to(mob-lan) {
+				padding: 20px 10px 0;
+				margin: 0;
+			}
 		}
 		.full-version{
 			display: none;
@@ -1025,13 +1081,26 @@ footer{
 			padding-right: 25px;
 			padding-top: 20px;
 			width: 25%;
+			@include respond-to(pda){
+				display: block;
+			}
+			@include respond-to(mob-lan) {
+				padding: 20px 10px;
+			}
 			a{
 				color: #e9ebef;
 				border-bottom: 1px solid #e9ebef;
 			}
+		}
+		.copyright, .full-version{
 			@include respond-to(pda){
 				display: block;
 			}
+			@include respond-to(mob-lan){
+				float: none;
+				text-align: center;
+				width: 100%;
+			}	
 		}
 	}
 }
