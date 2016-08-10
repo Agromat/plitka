@@ -10,12 +10,13 @@
 .main-section{
 	// width: rem-calc(990);
 	// padding-left: rem-calc(8) !important;
-	padding-right: rem-calc(25) !important;
+	padding-right: rem-calc(25);
 	&.is-small {
 		width: rem-calc(800);
 	}
 	@include respond-to(pda) {
 		width: 100%;
+		padding-right:0;
 	}
 	.main-container{
 		padding-right: rem-calc(25);
@@ -69,6 +70,12 @@
 		}
 		&>div{
 			padding: 0 10px;
+			@include respond-to(pda) {
+				padding: 0;
+			}
+			@include respond-to(mob-lan) {
+				padding: 0 10px;
+			}
 		}
 		&>div:nth-child(2) {
 			padding: 0;
@@ -496,7 +503,7 @@ ul.pagination{
 		border-top: 0 !important;
 	}
 	.multiple-items {
-		margin: 0 -20px !important;
+		margin-left: -20px !important;
 		.slick-prev {
 			right: 55px;
 		}
@@ -1455,6 +1462,12 @@ footer{
 	border-radius: 15px;
 	-webkit-border-radius:15px;
 	-moz-border-radius:15px;
+	@include respond-to(mob-lan){
+		width: 100% !important;
+		border-radius: 0;
+		border:0;
+		height: 100%;
+	}
 	&.is-fixed {
 		position: fixed;
 		top: 50% !important;
@@ -1467,11 +1480,20 @@ footer{
 	.close-reveal-modal {
 		right: -35px;
 		top: -35px;
+		@include respond-to(641px){
+			right: 15px;
+			top: 19px;
+		}
 	}
 	p {
 		font-size: 14px;
 		margin: 0 0 20px;
 		line-height: 1.2;
+		@include respond-to(mob-lan){
+			width: 63%;
+    	float: right;
+    	display: inline-block;
+		}
 	}
 }
 .modal_w680 {
@@ -1486,6 +1508,9 @@ footer{
 .modal_w330 {
 	width: 330px;
 }
+.modal_w90 {
+	width: 90%;
+}
 .modal__header {
 	padding: 22px 30px;
 	border-radius: 10px 10px 0 0;
@@ -1498,6 +1523,10 @@ footer{
 }
 .modal__body {
 	padding: 35px 30px 40px;
+	@include respond-to(mob-lan){
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 	.row {
 		> .column_group {
 			padding: 10px 30px;
@@ -1518,6 +1547,37 @@ footer{
 				&:before {
 					left: 0
 				}
+			}
+		}
+		>div{
+			&:first-child{
+				@include respond-to(mob-lan){
+					margin-bottom: 30px;
+				}
+			}
+			&:last-child{
+				@include respond-to(mob-lan){
+					width: 70%;
+					margin: 0 auto;
+					float: none;
+					padding: 0;
+				}
+				.btn-wrap{
+					@include respond-to(mob-lan){
+						margin-right: -35px;
+						margin-left: -35px;
+					}
+				}
+				.btn_medium{
+					@include respond-to(mob-lan){
+						width: 100%;
+					}
+				}
+			}
+		}
+		img{
+			@include respond-to(mob-lan){
+				width: 30%;
 			}
 		}
 	}
@@ -1613,9 +1673,17 @@ footer{
 	resize: none;
 }
 .close-reveal-modal, .modal__close{
-			top: -25px;
-			right: -40px;
-			content: url("../img/close-btn.png");
+	top: -25px;
+	right: -40px;
+	background: url("../img/close-btn.png") 0 0px no-repeat;
+  content: "";
+  width: 21px;
+  height: 22px;
+  @include respond-to(641px){
+  	background-position: 0 -24px;
+  	top: 1.5rem;
+    right: 0.6875rem;
+  }
 }
 .basket {
 	.sm-desk{
@@ -1986,7 +2054,7 @@ footer{
 			display: inline-block;
 			vertical-align: middle;
 			max-width: 100%;
-			max-height: 100%
+			max-height: 100%;
 		}
 		&:after {
 			display: none;

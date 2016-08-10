@@ -171,7 +171,30 @@
 		padding: 0 rem-calc(18);
 		@include respond-to(mob-lan){
 			padding: 0 1.125rem 0 0;
-			margin-top: 5px;
+			margin-left: 4%;
+			margin-right: 0;
+			width: 33%;
+			&:before{
+				display: inline-block;
+				position: absolute;
+				content:'';
+				width: 15px;
+				height: 15px;
+				background-image: url(../img/hamburger-menu.png);
+				left: -10%;
+				top:7px;
+			}
+		}
+		.img{
+			@include respond-to(mob-lan){
+				text-align: center;
+			  margin-top: 3px;	
+			}
+			img{
+				@include respond-to(mob-lan){
+					max-width: 70%;
+				}
+			}
 		}
 		.about-text{
 			width:auto;
@@ -191,8 +214,8 @@
 	.info {
 			/*width: rem-calc(519);*/
 			@include respond-to(mob-lan){
-				width: 50%;
-				padding-top: 5px;
+				width: 45%;
+				padding: 5px 4% 0;
 			}
 			a{
 				color: $blue;
@@ -213,6 +236,12 @@
 					font-size: rem-calc(18);
 					font-weight: 700;
 					margin-bottom: rem-calc(7);
+					@include respond-to(mob-lan){
+							font-size: rem-calc(16);
+						}
+					@include respond-to(mob){
+							font-size: rem-calc(14);
+						}
 					&+p{
 						@include respond-to(pda){
 							display: none;
@@ -333,11 +362,11 @@
 			height: rem-calc(30);
 		}
 		@include respond-to(mob-lan) {
-			width: 25%;
+			width: 14%;
 		}
 		> div{
 			display: table;
-			min-width: rem-calc(280);
+			width: 75%;
 			margin-left: auto;
 			margin-right: auto;
 			border: rem-calc(1) solid $border;
@@ -350,6 +379,9 @@
 				padding: 0;
 				min-width: rem-calc(45);
 				min-height: rem-calc(30);
+				margin-left: 0;
+				margin-right: 0;
+				float: right;
 				p, a {
 					display: none;
 				}
@@ -673,6 +705,9 @@
 	.menu-item{
 		// border-right: rem-calc(1) solid $border;
 		border-right: 0;
+		@include respond-to(pda){
+			float:none;
+		}
 		li {
 			display: table;
 			border-collapse: collapse;
@@ -730,9 +765,23 @@
 	}
 	.new-in{
 		border-left: rem-calc(1) solid $border;
+		@include respond-to(pda){
+			float: none;
+			border-top: rem-calc(1) solid $border;
+			border-left:0;
+			width: 100%;
+			margin-top: 40px;
+		}
 		ul {
 			list-style-type: none;
 			margin-left: 0;
+		}
+		.new-item{
+			@include respond-to(pda){
+				float: left;
+				width: 21%;
+				margin-right: 20px;
+			}
 		}
 		.new-in-title{
 			color:$title;
