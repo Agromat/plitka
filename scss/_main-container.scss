@@ -507,6 +507,25 @@ ul.pagination{
 		border: 0;
 	}
 }
+.display-buy-btn{
+	.slick-slider{
+		height: 370px;
+		.slick-slide{
+			height: 350px;
+			.overflow{
+				.img>img{	
+					max-height: 170px;
+				}
+				.btn{
+					display: block;
+					position: absolute;
+				 	bottom: 0;
+				}
+			}
+		}
+	}
+
+}
 .other-products__head {
 	overflow: hidden;
 	.title {
