@@ -509,17 +509,12 @@ ul.pagination{
 }
 .display-buy-btn{
 	.slick-slider{
-		height: 370px;
+		height: auto;
 		.slick-slide{
-			height: 350px;
+			height: auto;
 			.overflow{
-				.img>img{	
-					max-height: 170px;
-				}
 				.btn{
 					display: block;
-					position: absolute;
-				 	bottom: 0;
 				}
 			}
 		}

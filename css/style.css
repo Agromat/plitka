@@ -2690,18 +2690,13 @@ ul.pagination li a span {
 }
 
 .display-buy-btn .slick-slider {
-  height: 370px;
+  height: auto;
 }
 .display-buy-btn .slick-slider .slick-slide {
-  height: 350px;
-}
-.display-buy-btn .slick-slider .slick-slide .overflow .img > img {
-  max-height: 170px;
+  height: auto;
 }
 .display-buy-btn .slick-slider .slick-slide .overflow .btn {
   display: block;
-  position: absolute;
-  bottom: 0;
 }
 
 .other-products__head {
