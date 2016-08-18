@@ -18,7 +18,7 @@
 			-moz-border-radius: 8px;
 			border-radius: 8px;
 			padding: rem-calc(22) rem-calc(20) rem-calc(22) rem-calc(20);
-			&.orderItem{
+			&.orderItem, &.archiveItem{
 				background: $beige;
 				.data {
 					color: $orange;
@@ -39,7 +39,12 @@
 						margin-left: 5px;
 					}
 				}
-				
+			}
+			&.archiveItem{ 
+				background: $pblue;
+				.data>span{
+					padding-left: 0 !important;
+				}	
 			}
 			.data{
 				color: $llgray;
