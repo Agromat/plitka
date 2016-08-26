@@ -1988,6 +1988,14 @@ ul.inline li {
   content: "-";
 }
 
+.suitable-for-collections {
+  color: #a0a0a0;
+  font: 16px "Open Sans Semibold", sans-serif;
+}
+.suitable-for-collections a {
+  border-bottom: 1px solid #00478a;
+}
+
 .sticker {
   position: absolute;
   top: 0;
