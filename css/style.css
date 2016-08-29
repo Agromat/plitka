@@ -1033,7 +1033,7 @@ ul.inline li {
   background-position: 1px -52px;
 }
 .icon.order::before {
-  background-position: -62px -52px;
+  background-position: -28px -186px;
 }
 .icon.calc::before {
   background-position: -42px -4px;
@@ -1994,7 +1994,13 @@ ul.inline li {
 .bulk-select .controlls .minus::before {
   content: "-";
 }
-
+.suitable-for-collections {
+  color: #a0a0a0;
+  font: 16px "Open Sans Semibold", sans-serif;
+}
+.suitable-for-collections a {
+  border-bottom: 1px solid #00478a;
+}
 .sticker {
   position: absolute;
   top: 0;
@@ -2695,7 +2701,15 @@ ul.pagination li a span {
   margin: 0 !important;
   border: 0;
 }
-
+.display-buy-btn .slick-slider {
+  height: auto;
+}
+.display-buy-btn .slick-slider .slick-slide {
+  height: auto;
+}
+.display-buy-btn .slick-slider .slick-slide .overflow .btn {
+  display: block;
+}
 .other-products__head {
   overflow: hidden;
 }
