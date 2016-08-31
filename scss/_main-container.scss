@@ -2007,10 +2007,12 @@ footer{
 	}
 }
 
-.withdrawn-from-sale {
+.withdrawn-from-sale:after {
     background-color: #186073;
+    display: block;
     width: 220px;
     height: 30px;
+    content: "Коллекция снята с продажи";
     color: #fff;
     border-radius: 5px;
     font-size: 11px;
