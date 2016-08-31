@@ -507,6 +507,20 @@ ul.pagination{
 		border: 0;
 	}
 }
+.display-buy-btn{
+	.slick-slider{
+		height: auto;
+		.slick-slide{
+			height: auto;
+			.overflow{
+				.btn{
+					display: block;
+				}
+			}
+		}
+	}
+
+}
 .other-products__head {
 	overflow: hidden;
 	.title {
@@ -2006,8 +2020,7 @@ footer{
 		}
 	}
 }
-
-.withdrawn-from-sale:after {
+.withdrawn-from-sale {
     background-color: #186073;
     display: block;
     width: 220px;
@@ -2021,7 +2034,6 @@ footer{
     font-weight: bold;
     text-transform: uppercase;
 	}
-
 .link-dotted {
 	border-bottom: 1px dotted;
 }

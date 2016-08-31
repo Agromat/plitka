@@ -32,7 +32,6 @@
 		margin-top: 26px !important
 	}
 }
-
 .product-side{
 	margin-bottom: 30px !important;
 	width:190px;
@@ -126,7 +125,6 @@
 			float: left;
 		}
 	}
-	
 }
 .product-item {
 	overflow: hidden;
@@ -156,7 +154,14 @@
 }
 .product-item__main {
 	overflow: hidden;
-	
+	.withdrawn-from-sale{
+		width: 150px;
+		position: absolute;
+		text-align: center;
+		font-size: 10px;
+    height: 26px;
+    padding: 6px 14px;
+	}
 }
 .product-item__title {
 	text-decoration: underline;
