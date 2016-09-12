@@ -15,16 +15,16 @@
 		border-bottom:6px solid #5b6a84;
 		.menuinfo{
 			.logo{
-				padding-left: 8px;
+				padding-left: rem-calc(8);
 				.about {
-					padding-left: 12px;
+					padding-left: rem-calc(12);
 					width: auto;
 				}
 			}
 			.info{
-				width:540px;
+				width:rem-calc(540);
 				.schedule {
-					width: 135px;
+					width: rem-calc(135);
 				}
 			}
 		}
@@ -32,6 +32,13 @@
 	.menubar {
 		color:$white;
 		background:$dgray;
+		padding: 0 10px;
+		@include respond-to(pda) {
+			padding: 0 25px;
+		}
+		@include respond-to(mob-lan){
+			display: none;
+		}
 		li{
 			list-style:none;
 			line-height:rem-calc(40);
@@ -39,12 +46,19 @@
 			position:relative;
 			float: left;
 			color:$white;
+			@include respond-to(pda){
+				font-size: rem-calc(12);
+				line-height:rem-calc(30) !important;
+			}
 			a {
 				display: block;
 				span {
 					border: 0;
 					display: block;
 					padding: 0 1.125rem;
+					@include respond-to (med){
+						padding: 0 0.5rem;
+					}
 				}
 			}
 		}
@@ -53,58 +67,156 @@
 			li{
 				&:first-child{
 					border-left:rem-calc(1) solid $gray;
+					padding-left: 0;
 				}
 				line-height:rem-calc(40);
 				border-right:rem-calc(1) solid $gray;
 				a{
+					border:0;
+					display: block;
+					@include respond-to(pda){
+						padding: 0 rem-calc(7);
+					}
 					&.active,
 					&:hover {
 						color: #ffffff;
 						background: #7e7e7e;
 					}
 					span{
-					    border:0;
-				    	display: block;
-				        padding: 0 1.125rem;
-			    	}
+						@include respond-to(pda){
+							padding: 0 rem-calc(7);
+						}
+					}
+				}
+			}
+		}	
+	}
+	.right{
+		margin:0;
+		@include respond-to(mob-lan){
+			display: none;
+		}
+		li{
+			color:$lgeern;
+			padding-right: rem-calc(20);
+			a{
+				&:hover {
+					color: #ebfe15;
+				}
+				color:$lgeern;
+			}
+		}
+	}
+	&.mobile{
+		display: none;
+		position: absolute;
+		z-index: 10;
+		top:40px;
+		background:$lgray;
+		color:$ddgray;
+		width: 100%;
+		padding: 0;
+		@include respond-to(mob-lan) {
+			display: block;
+		}
+		.mobile-menu{
+			display: none;
+		}
+		ul{
+			margin-left: 0;
+		}
+		li{
+			color:$ddgray;
+			float: none;
+			padding-left: 10px !important;
+			border-right: 0;
+			border-bottom: 1px solid #dddddd;
+			box-sizing:border-box;
+			a{
+				color:$ddgray;
+			}
+			&#show-mobile-menu{
+				cursor: pointer;
+			}
+		}
+		.menuinfo{
+			#show-mobile-menu{	
+				width: 30px;
+				padding: 30px;
+				background-color: black;
+				position: absolute;
+				z-index: 27;
+				left: -35px;
+				display: inline-block;
+			}
+		}
+	}	
+}
+.menuinfo{
+	background:$lgray;
+	padding: 0 10px;
+	@include respond-to(pda) {
+		padding: 0 25px;
+	}
+	@include respond-to(mob-lan) {
+		padding: 0 10px;
+	}
+	> .row {
+		padding: rem-calc(24) 0 rem-calc(15);
+		@include respond-to(mob-lan){
+			padding: rem-calc(5) 0;
+		}
+	}
+	.logo {
+		padding: 0 rem-calc(18);
+		@include respond-to(mob-lan){
+			padding: 0 1.125rem 0 0;
+			margin-left: 4%;
+			margin-right: 0;
+			width: 33%;
+			&:before{
+				display: inline-block;
+				position: absolute;
+				content:'';
+				width: 15px;
+				height: 15px;
+				background-image: url(../img/hamburger-menu.png);
+				left: -10%;
+				top:7px;
+			}
+		}
+		.img{
+			@include respond-to(mob-lan){
+				text-align: center;
+			  margin-top: 3px;	
+			}
+			img{
+				@include respond-to(mob-lan){
+					max-width: 70%;
 				}
 			}
 		}
-		.right{
-			margin:0;
-			li{
-				color:$lgeern;
-				padding-right: rem-calc(20);
-				a{
-					&:hover {
-						color: #ebfe15;
-					}
-					color:$lgeern;
+		.about-text{
+			width:auto;
+			float: none;
+			p{
+				font-size: rem-calc(13);
+				line-height: rem-calc(14);
+				color: #6b6b6b;
+				margin-top: rem-calc(14);
+				margin-bottom: rem-calc(8);
+				@include respond-to(pda){
+					display: none;
 				}
 			}
 		}
 	}
-	.menuinfo{
-		background:$lgray;
-		> .row {
-			padding: rem-calc(24) 0 rem-calc(15);
-		}
-		.logo {
-			padding-left: rem-calc(18);
-			.about-text{
-				width:auto;
-				float: none;
-				p{
-					font-size: rem-calc(13);
-					line-height: rem-calc(14);
-					color: #6b6b6b;
-					margin-top: rem-calc(14);
-					margin-bottom: rem-calc(8);
-				}
+	.info {
+			/*width: rem-calc(519);*/
+			@include respond-to(mob-lan){
+				width: 45%;
+				padding: 5px 4% 0;
 			}
-		}
-		.info {
-			width: rem-calc(519);
 			a{
 				color: $blue;
 				display: block;
@@ -113,12 +225,32 @@
 					color:$ddgray;
 				}
 			}
+			div.row.collapse:last-child{
+				@include respond-to(pda){
+					display: none;
+				}
+			}
 			.phone{
 				.tel{
 					color: $ddgray;
 					font-size: rem-calc(18);
 					font-weight: 700;
 					margin-bottom: rem-calc(7);
+					@include respond-to(mob-lan){
+							font-size: rem-calc(16);
+						}
+					@include respond-to(mob){
+							font-size: rem-calc(14);
+						}
+					&+p{
+						@include respond-to(pda){
+							display: none;
+						}
+					}
+				}
+				@include respond-to(pda) {
+					width: 100% !important;
+					text-align: center;
 				}
 				p{
 					color: $llgray;
@@ -127,16 +259,35 @@
 					font-size: rem-calc(13);
 					line-height: rem-calc(16);
 				}
+				a{
+					@include respond-to(pda){
+						display: none;
+					}
+				}
 			}
 			.callback {
 				font-size: rem-calc(13);
 				margin-top: rem-calc(-4);
 				padding-left: rem-calc(20);
+				@include respond-to(pda){
+					text-align: center;
+					width: 100% !important;
+					margin-top: 2px;
+				}
+				@include respond-to(mob-lan) {
+					display: none;
+				}
 			}
 			.schedule {
 				padding-left: rem-calc(9);
 				margin-top: rem-calc(-4);
-				width: 135px;
+				// width: 135px;
+				@include respond-to(930px){
+					padding-left: 0;
+				}
+				@include respond-to(pda) {
+					display: none;
+				}
 				p{
 					color: $ddgray;
 					margin-top: 0;
@@ -152,7 +303,16 @@
 						&.wek{
 							color: $red;
 							//float: right;
-							margin-left:  16px;
+							margin-left:  2%;
+							@include respond-to(930px){
+								margin-left: 0;
+							}
+						}
+					}
+					&.workingTime{
+						width:145px;
+						@include respond-to(930px){
+							width:70px;
 						}
 					}
 				}
@@ -176,6 +336,9 @@
 						padding: 1px;
 						font-size: 11px;
 						line-height: 11px;
+						@include respond-to(930px){
+							margin-left: rem-calc(0.8);
+						}
 						&:first-child{
 							margin-left:0;
 						}
@@ -184,88 +347,176 @@
 							color: $red;
 						}
 					}
-				} 
-			}
-			.search{
-				margin: 0;
-				@include clearfix();
-				input[type="search"] {
-					width: rem-calc(393);
-					color: $llgray;
-					font-size: rem-calc(14);
-					line-height: rem-calc(16);
-					padding: rem-calc(8) rem-calc(10);
-					border: 0;
-					line-height: 19px;
-					border: rem-calc(1) solid $in-color;
-					border-right: 0;
-					transition:all .2s;
-					&:active,
-					&:hover,
-					&:focus{
-						color: $ddgray;
-						outline: none;
-						z-index: 1;
-						-webkit-box-shadow: 0px 0px 6px 1px rgba(94, 185, 255, 0.5);
-						   -moz-box-shadow: 0px 0px 6px 1px rgba(94, 185, 255, 0.5);
-						        box-shadow: 0px 0px 6px 1px rgba(94, 185, 255, 0.5);
-					}
-				}
-				button[type="submit"]{
-					width: rem-calc(126);
-					background: $lgray;
-					color: $ddgray;
-					font-size: rem-calc(14);
-					font-weight: 700;
-					line-height: rem-calc(19);
-					padding: rem-calc(8) rem-calc(5);
-					border: 0;
-					border: rem-calc(1) solid $in-color;
-					&:active,
-					&:hover,
-					&:focus{
-						color: $ddgray;
-						outline: 1px solid $ddgray;
-						outline-offset: -1px;
-					}
 				}
 			}
 		}
-		.basket-sm {
-			width: rem-calc(380);
-			padding-left: rem-calc(60);
-			> div{
-				display: table;
-				min-width: rem-calc(280);
-				margin-left: auto;
-				margin-right: auto;
-				border: rem-calc(1) solid $border;
-				text-align: center;
-				padding-bottom: 10px;
-				p{
-					color: $llgray;
-					font-size: rem-calc(13);
-					line-height: rem-calc(16);
-					margin-top: 0;
-					margin-bottom: rem-calc(7);
-				}
-				.money {
-					color: $ddgray;
-					font-size: rem-calc(31);
-					line-height: rem-calc(35);
-					padding-left: rem-calc(13);
-					font-weight: 700;					
-					margin-bottom: 0;
-					sup{
-						top: rem-calc(-10);
-						font-size: rem-calc(19);
-					}
-				}
-				.btn{
-					margin-top: rem-calc(12);
-					font-weight: 700;
+	.basket-sm {
+		//width: rem-calc(380);
+		//padding-left: rem-calc(60);
+		padding-left: rem-calc(18);
+		@include respond-to(930px){
+			padding-left: 0;
+		}
+		@include respond-to(mob) {
+			width: rem-calc(45);
+			height: rem-calc(30);
+		}
+		@include respond-to(mob-lan) {
+			width: 14%;
+		}
+		> div{
+			display: table;
+			width: 75%;
+			margin-left: auto;
+			margin-right: auto;
+			border: rem-calc(1) solid $border;
+			text-align: center;
+			padding-bottom: 10px;
+			@include respond-to(930px){
+				min-width: rem-calc(200);
+			}
+			@include respond-to(mob-lan) {
+				padding: 0;
+				min-width: rem-calc(45);
+				min-height: rem-calc(30);
+				margin-left: 0;
+				margin-right: 0;
+				float: right;
+				p, a {
+					display: none;
 				}
 			}
+			@include respond-to(mob) {
+				margin: 0;
+			}
+			p{
+				color: $llgray;
+				font-size: rem-calc(13);
+				line-height: rem-calc(16);
+				margin: 0 0 rem-calc(7) ;
+			}
+			.money {
+				color: $ddgray;
+				font-size: rem-calc(31);
+				line-height: rem-calc(35);
+				padding-left: rem-calc(13);
+				font-weight: 700;					
+				margin-bottom: 0;
+				@include respond-to(pda){
+					font-size: rem-calc(18);
+					line-height: 1;
+					sup{
+						font-size: rem-calc(12);
+					}
+				}
+				sup{
+					top: rem-calc(-10);
+					font-size: rem-calc(19);
+					@include respond-to(pda){
+						top: rem-calc(-5);
+					} 
+				}
+			}
+			.btn{
+				margin-top: rem-calc(12);
+				font-weight: 700;
+			}
+		}
+		#widgetFullCart, #widgetEmptyCart{
+			&:after{
+				@include respond-to(mob-lan) {
+					content: '';
+					display: block;
+					width: 20px;
+					height: 16px;
+					margin: 7px auto 6px;
+				}
+			}
+		}
+		#widgetFullCart:after{
+			@include respond-to(mob-lan){
+				background: url('../img/mobile-backet.png') no-repeat 0 0;
+			}
+		}
+		#widgetEmptyCart{
+			height:117px;
+			padding-top:45px;
+			display:none;
+			@include respond-to(pda) {
+				height: 50px;
+				padding-top: 15px; 
+			}
+			@include respond-to(mob-lan){
+				height: 0px;
+				padding: 0px;
+				// height: 50px;
+				// padding-top: 15px; 
+				&:after{
+					background: url('../img/mobile-backet.png') no-repeat 0 -16px;
+				}
+			}
+		}
+	}
+}
+.content-section{
+	padding: 0 10px;
+	@include respond-to(pda) {
+		padding: 0 25px;
+	}
+	@include respond-to(mob-lan) {
+		padding: 0;
+	}
+}
+.search{
+	margin: 0;
+	@include clearfix();
+	input[type="search"] {
+		// width: rem-calc(393);
+		width: 75%;
+		color: $llgray;
+		font-size: rem-calc(14);
+		line-height: rem-calc(16);
+		padding: rem-calc(8) rem-calc(10);
+		border: 0;
+		line-height: 19px;
+		border: rem-calc(1) solid $in-color;
+		border-right: 0;
+		transition:all .2s;
+		&:active,
+		&:hover,
+		&:focus{
+			color: $ddgray;
+			outline: none;
+			z-index: 1;
+			-webkit-box-shadow: 0px 0px 6px 1px rgba(94, 185, 255, 0.5);
+			-moz-box-shadow: 0px 0px 6px 1px rgba(94, 185, 255, 0.5);
+			box-shadow: 0px 0px 6px 1px rgba(94, 185, 255, 0.5);
+		}
+	}
+	button[type="submit"]{
+		// width: rem-calc(126);
+		width: 25%;
+		background: $lgray;
+		color: $ddgray;
+		font-size: rem-calc(14);
+		font-weight: 700;
+		line-height: rem-calc(19);
+		padding: rem-calc(8) rem-calc(5);
+		border: 0;
+		border: rem-calc(1) solid $in-color;
+		&:active,
+		&:hover,
+		&:focus{
+			color: $ddgray;
+			outline: 1px solid $ddgray;
+			outline-offset: -1px;
+		}
+	}
+	&.pda{
+		margin-top: 15px;
+		display: none;
+		@include respond-to (pda){
+			display: block;
 		}
 	}
 }
@@ -273,10 +524,15 @@
 	position: relative;
 }
 .menu-catalog{
+	background:$lblue;
 	color:$black;
 	//margin-bottom: 20px;
-	background:$lblue;
 	position: relative;
+	@include respond-to(mob-lan) {
+		display: none;
+		margin: 20px 10px 0;
+		background:$pblue;
+	}
 	.menu-catalog-drop {
 		top: 100%;
 	}
@@ -286,6 +542,14 @@
 		list-style:none;
 		position:relative;
 		float: left;
+		// @include respond-to (pda){
+		// 	display: inline-block;
+		// 	float:none;
+		// }
+		@include respond-to (mob-lan) {
+			float:none;
+			border: 1px solid #ddd;
+		}
 		&:before {
 			content: "";
 			position: absolute;
@@ -294,6 +558,12 @@
 			bottom: 0;
 			width: 1px;
 			background: #6C7A93;
+			// @include respond-to (pda){
+			// 	width: 0px;
+			// }
+			@include respond-to (mob-lan){
+				width: 0px;
+			}
 		}
 		&:first-child {
 			&:before {
@@ -316,11 +586,21 @@
 			///background-color:$white;
 			border: 4px solid #4d5a70;
 			border-bottom: 0;
+			@include respond-to (mob-lan){
+				border: 0;
+				background-color:$blue;
+			}
 			span{
 				color:$black;
 				border: 0;
 				position: relative;
 				z-index: 1;
+				@include respond-to (pda){
+					font-weight: bold;
+				}
+				@include respond-to (mob-lan){
+					color:white;
+				}
 			}
 			&::before{
 				content: '';
@@ -342,9 +622,14 @@
 				background: #fff;
 				border-radius: 3px 3px 0 0;
 			}
+			&:after, &::before {
+				@include respond-to (mob-lan) {
+					height: 0px;
+				}
+			}
 		}
 		> a{
-			font-size:1rem;
+			font-size:rem-calc(14);
 			color:$white;
 			padding:rem-calc(14) rem-calc(17) rem-calc(20) rem-calc(17);
 			display:block;
@@ -352,18 +637,52 @@
 			border-bottom: 0;
 			-webkit-border-radius: 5px;
 			border-radius: 5px;
+			@include respond-to (pda){
+				padding:rem-calc(4) rem-calc(7) rem-calc(6) rem-calc(7);
+			}
+			@include respond-to (mob-lan) {
+				border: 0;
+				-webkit-border-radius: 0px;
+				border-radius: 0px;
+			}
 			span{
 				color:$white;
+				@include respond-to (mob-lan) {
+					color: $blue;
+					font-weight: bold;
+					font-size: rem-calc(14);
+				}
 			}
 			&:hover span{
 				border-bottom: 1px solid $white;
+				@include respond-to (mob-lan){
+					border-bottom: 0;
+				}
 			}
 		}
-
 	}
 	> nav > .row{
 		padding-top: 7px;
 		padding-left: 0;
+		@include respond-to (pda){
+			text-align: center;
+			padding-left: 25px;
+		}
+		@include respond-to (mob-lan) {
+			text-align: left;
+			padding:0;
+		}
+	}
+	.menu-catalog-drop {
+		top: 100%;
+	}
+	&.mobile{
+		display: none;
+		@include respond-to(mob-lan) {
+			display: block;
+			margin: 20px 10px 0;
+			background:$pblue;
+		}
 	}
 }
 .f-dropdown.content{
@@ -384,7 +703,11 @@
 		}
 	}
 	.menu-item{
-		border-right: rem-calc(1) solid $border;
+		// border-right: rem-calc(1) solid $border;
+		border-right: 0;
+		@include respond-to(pda){
+			float:none;
+		}
 		li {
 			display: table;
 			border-collapse: collapse;
@@ -406,10 +729,10 @@
 			}
 		}
 		.inline {
-		    li {
-		    	float: none;
-		    	width: auto;
-		    }
+			li {
+				float: none;
+				width: auto;
+			}
 		}
 		.product {
 			margin-top: rem-calc(10);
@@ -441,6 +764,25 @@
 		}
 	}
 	.new-in{
+		border-left: rem-calc(1) solid $border;
+		@include respond-to(pda){
+			float: none;
+			border-top: rem-calc(1) solid $border;
+			border-left:0;
+			width: 100%;
+			margin-top: 40px;
+		}
+		ul {
+			list-style-type: none;
+			margin-left: 0;
+		}
+		.new-item{
+			@include respond-to(pda){
+				float: left;
+				width: 21%;
+				margin-right: 20px;
+			}
+		}
 		.new-in-title{
 			color:$title;
 			font-size:rem-calc(18);
@@ -469,6 +811,7 @@
 				font-size: rem-calc(21);
 				font-weight: 700;
 				line-height: rem-calc(16);
+				margin-top: rem-calc(2);
 				sup{
 					top: -7px;
 					font-size: 70%;

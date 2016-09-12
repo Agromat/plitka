@@ -1,14 +1,14 @@
 .main-section.catalog{
 	//width: 950px;
-	padding: 0 !important;
+	// padding: 0 !important;
 	.main-container{
-		padding-left: 10px;
+		// padding-left: 10px; //bruslik.d
 		.main-title{
 			margin-top: 0;
 		}
 		.slider {
 			padding-top: 25px;
-			height: 275px;
+			// height: 275px;
 			overflow: hidden;
 			img{
 				width: 100%;
@@ -50,9 +50,9 @@
 		} 
 	}
 	.img{
-		//height: 126px;
-		//width: 100%;
-		//background: #f1f1f1;
+		height: 126px;
+		width: 100%;
+		background: #f1f1f1;
 		display: table;
 		> div{	
 			text-align: top;
@@ -123,6 +123,21 @@
 		padding: 0 10px !important;
 		&:last-child {
 			float: left;
+			@include respond-to (pda){
+				display: none;
+			}
+			@include respond-to (mob-lan) {
+				display: block;
+				width: 100%;
+			}
+		}
+		&:first-child, &:nth-child(2){
+			@include respond-to (pda){
+				width: 50%;
+			}
+			@include respond-to (mob-lan) {
+				width: 100%;
+			}
 		}
 	}
 }
@@ -133,12 +148,15 @@
 	padding: 8px; 
 	border: 2px solid #ddd; 
 	&.is-marked {
-		border-color: #ffba00
+		border-color: #ffba00;
 	}
 	&:hover {
 		.product-item__title {
 			color: $ddgray;
 		}
+	}
+	&:active{
+		border-color: #ffba00;
 	}
 }
 .product-item__img {
@@ -201,10 +219,9 @@
 		}
 		.column{
 			background: #eef6f9;
-			
 			margin-bottom: 25px;
 			.img{
-				padding: 12px 0;
+				padding: 0;
 				background: $white;
 				margin-bottom: 21px;
 				img{
@@ -240,6 +257,10 @@
 			border-top:1px solid $border;
 			.column{
 				width: 48.47%;
+				overflow: hidden;
+				@include respond-to(mob-lan){
+					width: 100%;
+				}
 			}
 			.img{
 				width: 33%;
