@@ -530,8 +530,6 @@
 	position: relative;
 	@include respond-to(mob-lan) {
 		display: none;
-		margin: 20px 10px 0;
-		background:$pblue;
 	}
 	.menu-catalog-drop {
 		top: 100%;
@@ -539,17 +537,8 @@
 	> nav > ul > li{
 		margin-bottom:0;
 		margin-left:0;
-		list-style:none;
 		position:relative;
 		float: left;
-		// @include respond-to (pda){
-		// 	display: inline-block;
-		// 	float:none;
-		// }
-		@include respond-to (mob-lan) {
-			float:none;
-			border: 1px solid #ddd;
-		}
 		&:before {
 			content: "";
 			position: absolute;
@@ -558,12 +547,6 @@
 			bottom: 0;
 			width: 1px;
 			background: #6C7A93;
-			// @include respond-to (pda){
-			// 	width: 0px;
-			// }
-			@include respond-to (mob-lan){
-				width: 0px;
-			}
 		}
 		&:first-child {
 			&:before {
@@ -661,28 +644,67 @@
 			}
 		}
 	}
+	ul {
+		list-style: none;
+	}
 	> nav > .row{
 		padding-top: 7px;
 		padding-left: 0;
-		@include respond-to (pda){
-			text-align: center;
-			padding-left: 25px;
-		}
-		@include respond-to (mob-lan) {
-			text-align: left;
-			padding:0;
-		}
 	}
 	.menu-catalog-drop {
 		top: 100%;
 	}
 	&.mobile{
 		display: none;
+		nav > ul{
+			padding: 10px 0;
+			& > li {
+				font: bold 14px 'Open Sans', sans-serif;
+			} 
+		}
+		.inline.three-type {
+			-webkit-column-width: 100%;
+			-moz-column-width: 100%;
+			column-width: 100%;
+			-webkit-column-count: 1;
+			-moz-column-count: 1;
+			column-count: 1;
+		}
+	li {
+			width: 100%;
+			padding: 0 20px;
+			&:before{
+				width: 0px;
+			}
+	}
 		@include respond-to(mob-lan) {
 			display: block;
 			margin: 20px 10px 0;
 			background:$pblue;
 		}
+
+		// // @include respond-to (pda){
+		// // 	width: 0px;
+		// // }
+		// @include respond-to (mob-lan){
+		// width: 0px;
+		// }
+		// // @include respond-to (pda){
+		// // 	display: inline-block;
+		// // 	float:none;
+		// // }
+		// @include respond-to (mob-lan) {
+		// float:none;
+		// border: 1px solid #ddd;
+		// }
+		// @include respond-to (pda){
+		// 	text-align: center;
+		// 	padding-left: 25px;
+		// }
+		// @include respond-to (mob-lan) {
+		// 	text-align: left;
+		// 	padding:0;
+		// }
 	}
 }
 .f-dropdown.content{
