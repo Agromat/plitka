@@ -1577,15 +1577,15 @@ ul.inline li {
   border-radius: 8px;
   padding: 1.375rem 1.25rem 1.375rem 1.25rem;
 }
-.about .buy-block .price.orderItem, .about .buy-block .price.archiveItem {
+.about .buy-block .price.orderItem, .about .buy-block .price .archiveItem {
   background: #f9f8ee;
 }
-.about .buy-block .price.orderItem .data, .about .buy-block .price.archiveItem .data {
+.about .buy-block .price.orderItem .data, .about .buy-block .price .archiveItem .data {
   color: #ee9900;
   font-size: 12px;
   font-weight: 700;
 }
-.about .buy-block .price.orderItem .cost, .about .buy-block .price.archiveItem .cost {
+.about .buy-block .price.orderItem .cost, .about .buy-block .price .archiveItem .cost {
   font-size: 17px;
   font-family: 'Open Sans Semibold', sans-serif;
   line-height: 1.2;
@@ -1593,16 +1593,16 @@ ul.inline li {
   margin-bottom: 10px;
   margin-top: 10px;
 }
-.about .buy-block .price.orderItem .cost a, .about .buy-block .price.archiveItem .cost a {
+.about .buy-block .price.orderItem .cost a, .about .buy-block .price .archiveItem .cost a {
   border-bottom: 1px dotted #0053a0;
   font-size: 13px;
   font-weight: normal;
   margin-left: 5px;
 }
-.about .buy-block .price.archiveItem {
+.about .buy-block .price .archiveItem {
   background: #eef6f9;
 }
-.about .buy-block .price.archiveItem .data > span {
+.about .buy-block .price .archiveItem .data > span {
   padding-left: 0 !important;
 }
 .about .buy-block .price .data {
@@ -1994,6 +1994,7 @@ ul.inline li {
 .bulk-select .controlls .minus::before {
   content: "-";
 }
+
 .suitable-for-collections {
   color: #a0a0a0;
   font: 16px "Open Sans Semibold", sans-serif;
@@ -2001,6 +2002,7 @@ ul.inline li {
 .suitable-for-collections a {
   border-bottom: 1px solid #00478a;
 }
+
 .sticker {
   position: absolute;
   top: 0;
@@ -2701,6 +2703,7 @@ ul.pagination li a span {
   margin: 0 !important;
   border: 0;
 }
+
 .display-buy-btn .slick-slider {
   height: auto;
 }
@@ -2710,6 +2713,7 @@ ul.pagination li a span {
 .display-buy-btn .slick-slider .slick-slide .overflow .btn {
   display: block;
 }
+
 .other-products__head {
   overflow: hidden;
 }
@@ -3561,7 +3565,7 @@ footer .row.link-footer .column:last-child {
   margin-bottom: 5px;
 }
 .product-side.no-border .btn {
-  width: 90px;
+  width: 110px;
   height: 40px;
   line-height: 40px;
   font-weight: 700;

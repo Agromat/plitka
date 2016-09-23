@@ -37,6 +37,15 @@
   <script src="js/lib/modernizr.js"></script>
   </head>
   <body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+  	var js, fjs = d.getElementsByTagName(s)[0];
+  	if (d.getElementById(id)) return;
+  	js = d.createElement(s); js.id = id;
+  	js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.7";
+  	fjs.parentNode.insertBefore(js, fjs);
+	  }(document, 'script', 'facebook-jssdk'));
+	</script>
   <header class="menu-nav">
     <div class="menubar">
     <div class="row collapse">
@@ -1141,13 +1150,14 @@
               </div>
           </a>
         </div>
+	<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPlitkakievua-933041076800799%2F%3Ffref%3Dts&tabs&width=200&height=180&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="200" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
   </aside><!--/ sifdebar-->
   </div>
 
   <footer>
   <div class="row collapse link-footer">
     <div class="column medium-2">
-    <p class="title">О компании</p>
+    <p class="title">О компании</p>a
     <ul class="list">
       <li><a href="#" class="link"><span>История</span></a></li>
       <li><a href="#" class="link"><span>Отчетность компании</span></a></li>
