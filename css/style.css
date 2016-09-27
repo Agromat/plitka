@@ -719,6 +719,18 @@ ul.inline li {
   display: block;
 }
 
+.social {
+  display: inline-block;
+  margin-bottom: 0;
+  margin-left: 5px;
+}
+.social li {
+  margin-left: 5px !important;
+}
+.social li a {
+  padding: 0 !important;
+}
+
 /*
 *	MENU TREE FILTER BLOCK
 */

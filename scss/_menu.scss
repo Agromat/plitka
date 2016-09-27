@@ -484,3 +484,14 @@
 .f-dropdown.open {
 	display: block;
 }
+.social{
+	display: inline-block;
+	margin-bottom: 0;
+	margin-left: 5px;
+	li{
+			margin-left: 5px !important;
+		a{
+			padding:0 !important;
+		}
+	}
+}
