@@ -484,3 +484,37 @@
 .f-dropdown.open {
 	display: block;
 }
+.social{
+	display: inline-block;
+	margin: 10px 0 0 5px;
+	li{
+			margin-left: 5px !important;
+		a{
+			padding:0 !important;
+			i{
+				display: block;
+				width: 18px;
+				height: 20px;
+			}
+			.fb, .pinterest{
+				background-image: url('../img/social-btns.png');
+			}
+			.fb{
+				background-position: 20px 0;
+				transition: 0.1s;
+				&:hover{
+					background-position: 20px 20px;
+					transition: 0.1s;
+				}
+			}
+			.pinterest{
+				background-position: 0 0;
+				transition: 0.1s;
+				&:hover{
+					background-position: 0 20px;
+					transition: 0.1s;
+				}
+			}
+		}
+	}
+}
