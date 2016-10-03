@@ -721,14 +721,37 @@ ul.inline li {
 
 .social {
   display: inline-block;
-  margin-bottom: 0;
-  margin-left: 5px;
+  margin: 10px 0 0 5px;
 }
 .social li {
   margin-left: 5px !important;
 }
 .social li a {
   padding: 0 !important;
+}
+.social li a i {
+  display: block;
+  width: 18px;
+  height: 20px;
+}
+.social li a .fb, .social li a .pinterest {
+  background-image: url("../img/social-btns.png");
+}
+.social li a .fb {
+  background-position: 20px 0;
+  transition: 0.1s;
+}
+.social li a .fb:hover {
+  background-position: 20px 20px;
+  transition: 0.1s;
+}
+.social li a .pinterest {
+  background-position: 0 0;
+  transition: 0.1s;
+}
+.social li a .pinterest:hover {
+  background-position: 0 20px;
+  transition: 0.1s;
 }
 
 /*
