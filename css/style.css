@@ -304,7 +304,7 @@ ul.inline li {
 .menu-nav .menubar .left li a span {
   border: 0;
   display: block;
-  padding: 0 1.125rem;
+  padding: 0 0.8rem;
 }
 .menu-nav .menubar .right {
   margin: 0;
