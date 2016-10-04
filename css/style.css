@@ -6701,3 +6701,7 @@ footer .row.link-footer .column:last-child {
 .search__all a:hover {
   color: #333;
 }
+
+#widgetFullCart {
+  cursor: pointer;
+}
