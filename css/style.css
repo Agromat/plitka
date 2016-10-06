@@ -2114,6 +2114,22 @@ ul.inline li {
   background-image: url(../img/slider/recommended.png);
 }
 
+.promo__stick {
+  position: relative;
+  z-index: 100;
+}
+.promo__stick:before {
+  position: absolute;
+  content: "";
+  top: -15px;
+  right: 1px;
+  display: block;
+  width: 60px;
+  height: 22px;
+  background-image: url(../img/actions-label.png);
+  background-size: 60px;
+}
+
 .benefits {
   margin-top: 1.25rem;
   padding: 0.9375rem;
@@ -6514,40 +6530,36 @@ footer .row.link-footer .column:last-child {
   border-bottom: 1px dotted #a1a1a1;
 }
 
-.post {
+.post, .promo {
   overflow: hidden;
   margin: 25px 0;
   padding: 20px 20px 15px;
   background: #eef6f9;
 }
-
-.post__media {
+.post__media, .promo__media {
   position: relative;
   float: left;
   margin-right: 25px;
   width: 130px;
 }
-.post__media img {
+.post__media img, .promo__media img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-
-.post__main {
+.post__main, .promo__main {
   overflow: hidden;
 }
-
-.post__title {
+.post__title, .promo__title {
   margin-bottom: 7px;
   color: #0053a0;
   font-size: 16px;
   font-weight: bold;
 }
-.post__title a {
+.post__title a, .promo__title a {
   color: #0053a0;
 }
-
-.post__text {
+.post__text, .promo__text {
   color: #333;
   margin-bottom: 18px;
   font-size: 16px;
