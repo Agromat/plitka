@@ -2116,7 +2116,7 @@ ul.inline li {
 
 .promo__stick {
   position: relative;
-  z-index: 100;
+  z-index: 88;
 }
 .promo__stick:before {
   position: absolute;
