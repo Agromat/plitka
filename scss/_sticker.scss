@@ -74,3 +74,17 @@
 		background-image: url(../img/slider/recommended.png);
 	}
 }
+.promo__stick{
+	z-index: 6;
+	position: absolute;
+	top:-20px;
+	left: 0px;
+	display: block;
+	width: 100%;
+	max-width: 120px;
+	max-height: 120px;
+	height: 100%;
+	background-image: url(../img/actions-label.png);
+	background-size: 60px;
+	background-repeat: no-repeat;	
+}

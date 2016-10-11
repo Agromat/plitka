@@ -1,37 +1,41 @@
 @import "btn";
-.post {
+.post, .promo {
 	overflow: hidden;
 	margin: 25px 0;
-	padding: 20px 20px 15px;
-	background: #eef6f9;
-}
-.post__media {
+	padding: 20px 20px 15px;	
 	position: relative;
-	float: left;
-	margin-right: 25px;
-	width: 130px;
-	img {
-		display: block;
-		max-width: 100%;
-		height: auto;
+	background: #eef6f9;
+	&__media {
+		position: relative;
+		float: left;
+		margin-right: 25px;
+		width: 130px;
+		img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
 	}
-}
-.post__main {
-	overflow: hidden;
-}
-.post__title {
-	margin-bottom: 7px;
-	color: #0053a0;
-	font-size: 16px;
-	font-weight: bold;
-	a {
+	&__main {
+		overflow: hidden;
+	}
+	&__title {
+		margin-bottom: 7px;
 		color: #0053a0;
+		font-size: 16px;
+		font-weight: bold;
+		a {
+			color: #0053a0;
+		}
+	}
+	&__text {
+		color: $ddgray;
+		margin-bottom: 18px;
+		font-size: 16px;
 	}
 }
-.post__text {
-	color: $ddgray;
-	margin-bottom: 18px;
-	font-size: 16px;
+.promo{
+	padding:25px 20px 15px;
 }
 .tags {
 	font-size: 0;
