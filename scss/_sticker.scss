@@ -75,17 +75,16 @@
 	}
 }
 .promo__stick{
-	position: relative;
-	z-index: 88;
-	&:before{
-		position: absolute;
-		content:"";
-		top:-15px;
-		right: 1px;
-		display: block;
-		width: 60px;
-		height: 22px;
-		background-image: url(../img/actions-label.png);
-		background-size: 60px;
-	}
+	z-index: 6;
+	position: absolute;
+	top:-20px;
+	left: 0px;
+	display: block;
+	width: 100%;
+	max-width: 120px;
+	max-height: 120px;
+	height: 100%;
+	background-image: url(../img/actions-label.png);
+	background-size: 60px;
+	background-repeat: no-repeat;	
 }

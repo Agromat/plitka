@@ -2,7 +2,8 @@
 .post, .promo {
 	overflow: hidden;
 	margin: 25px 0;
-	padding: 20px 20px 15px;
+	padding: 20px 20px 15px;	
+	position: relative;
 	background: #eef6f9;
 	&__media {
 		position: relative;
@@ -32,6 +33,9 @@
 		margin-bottom: 18px;
 		font-size: 16px;
 	}
+}
+.promo{
+	padding:25px 20px 15px;
 }
 .tags {
 	font-size: 0;
