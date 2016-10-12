@@ -2122,6 +2122,7 @@ ul.inline li {
   display: block;
   width: 120px;
   height: 120px;
+  max-height: 120px;
   background-image: url(../img/actions-label.png);
   background-repeat: no-repeat;
   background-position: top right;
