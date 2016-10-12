@@ -9,7 +9,7 @@
 		position: relative;
 		float: left;
 		margin-right: 25px;
-		width: 130px;
+		width: 260px;
 		img {
 			display: block;
 			max-width: 100%;
@@ -32,6 +32,15 @@
 		color: $ddgray;
 		margin-bottom: 18px;
 		font-size: 16px;
+	}
+	&__inner-image{
+		position: relative;
+		margin: 20px 0;
+		position: relative;
+		max-width: 900px;
+		height: 260px;
+		padding: 10px;
+		border: 1px solid #c7c7c7;
 	}
 }
 .promo{

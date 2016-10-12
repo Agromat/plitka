@@ -2117,16 +2117,14 @@ ul.inline li {
 .promo__stick {
   z-index: 6;
   position: absolute;
-  top: -20px;
-  left: 0px;
+  top: -15px;
+  right: -10px;
   display: block;
-  width: 100%;
-  max-width: 120px;
-  max-height: 120px;
-  height: 100%;
+  width: 120px;
+  height: 120px;
   background-image: url(../img/actions-label.png);
-  background-size: 60px;
   background-repeat: no-repeat;
+  background-position: top right;
 }
 
 .benefits {
@@ -6540,7 +6538,7 @@ footer .row.link-footer .column:last-child {
   position: relative;
   float: left;
   margin-right: 25px;
-  width: 130px;
+  width: 260px;
 }
 .post__media img, .promo__media img {
   display: block;
@@ -6563,6 +6561,15 @@ footer .row.link-footer .column:last-child {
   color: #333;
   margin-bottom: 18px;
   font-size: 16px;
+}
+.post__inner-image, .promo__inner-image {
+  position: relative;
+  margin: 20px 0;
+  position: relative;
+  max-width: 900px;
+  height: 260px;
+  padding: 10px;
+  border: 1px solid #c7c7c7;
 }
 
 .promo {
