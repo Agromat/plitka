@@ -54,10 +54,14 @@
 		//width: 100%;
 		//background: #f1f1f1;
 		display: table;
+		position: relative;
 		> div{	
 			text-align: top;
 			display: table-cell;
 			vertical-align: top;
+		}
+		.sticker {
+			top:-7px;
 		}
 		img{
 			display: block;

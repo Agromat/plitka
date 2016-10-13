@@ -3580,11 +3580,15 @@ footer .row.link-footer .column:last-child {
 }
 .product-side .img {
   display: table;
+  position: relative;
 }
 .product-side .img > div {
   text-align: top;
   display: table-cell;
   vertical-align: top;
+}
+.product-side .img .sticker {
+  top: -7px;
 }
 .product-side .img img {
   display: block;
