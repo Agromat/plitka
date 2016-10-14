@@ -36,6 +36,21 @@
 }
 .promo{
 	padding:25px 20px 15px;
+	&__media{
+		width: 260px;
+		a{
+			display: block;
+		}
+	}
+	&__inner-image{
+		margin-left: -15px;
+	}
+	&__period{
+		margin-bottom: 10px;
+	}
+	&__arhive-link{
+		margin: 15px 0;
+	}
 }
 .tags {
 	font-size: 0;

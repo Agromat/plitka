@@ -2121,16 +2121,14 @@ ul.inline li {
 .promo__stick {
   z-index: 6;
   position: absolute;
-  top: -20px;
-  left: 0px;
-  display: block;
-  width: 100%;
-  max-width: 120px;
+  top: -15px;
+  right: -10px;
+  width: 120px;
+  height: 120px;
   max-height: 120px;
-  height: 100%;
   background-image: url(../img/actions-label.png);
-  background-size: 60px;
   background-repeat: no-repeat;
+  background-position: top right;
 }
 
 .benefits {
@@ -6575,6 +6573,21 @@ footer .row.link-footer .column:last-child {
 
 .promo {
   padding: 25px 20px 15px;
+}
+.promo__media {
+  width: 260px;
+}
+.promo__media a {
+  display: block;
+}
+.promo__inner-image {
+  margin-left: -15px;
+}
+.promo__period {
+  margin-bottom: 10px;
+}
+.promo__arhive-link {
+  margin: 15px 0;
 }
 
 .tags {
