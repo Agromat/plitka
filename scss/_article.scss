@@ -9,7 +9,6 @@
 		position: relative;
 		float: left;
 		margin-right: 25px;
-		width: 260px;
 		img {
 			display: block;
 			max-width: 100%;
@@ -33,18 +32,24 @@
 		margin-bottom: 18px;
 		font-size: 16px;
 	}
-	&__inner-image{
-		position: relative;
-		margin: 20px 0;
-		position: relative;
-		max-width: 900px;
-		height: 260px;
-		padding: 10px;
-		border: 1px solid #c7c7c7;
-	}
 }
 .promo{
 	padding:25px 20px 15px;
+	&__media{
+		width: 260px;
+		a{
+			display: block;
+		}
+	}
+	&__inner-image{
+		margin-left: -15px;
+	}
+	&__period{
+		margin-bottom: 10px;
+	}
+	&__arhive-link{
+		margin: 15px 0;
+	}
 }
 .tags {
 	font-size: 0;

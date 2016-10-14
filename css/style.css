@@ -2119,7 +2119,6 @@ ul.inline li {
   position: absolute;
   top: -15px;
   right: -10px;
-  display: block;
   width: 120px;
   height: 120px;
   max-height: 120px;
@@ -6539,7 +6538,6 @@ footer .row.link-footer .column:last-child {
   position: relative;
   float: left;
   margin-right: 25px;
-  width: 260px;
 }
 .post__media img, .promo__media img {
   display: block;
@@ -6563,18 +6561,24 @@ footer .row.link-footer .column:last-child {
   margin-bottom: 18px;
   font-size: 16px;
 }
-.post__inner-image, .promo__inner-image {
-  position: relative;
-  margin: 20px 0;
-  position: relative;
-  max-width: 900px;
-  height: 260px;
-  padding: 10px;
-  border: 1px solid #c7c7c7;
-}
 
 .promo {
   padding: 25px 20px 15px;
+}
+.promo__media {
+  width: 260px;
+}
+.promo__media a {
+  display: block;
+}
+.promo__inner-image {
+  margin-left: -15px;
+}
+.promo__period {
+  margin-bottom: 10px;
+}
+.promo__arhive-link {
+  margin: 15px 0;
 }
 
 .tags {
