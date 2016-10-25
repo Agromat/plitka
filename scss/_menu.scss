@@ -450,6 +450,10 @@
 			margin-bottom: rem-calc(25);
 		}
 		.new-in-img{
+			position: relative;
+			.sticker {
+				top: -7px;
+			}
 		}
 		.new-in-about{
 			margin-top: rem-calc(10);

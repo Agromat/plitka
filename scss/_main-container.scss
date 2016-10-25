@@ -1514,20 +1514,24 @@ footer{
 		padding: 29px 34px;
 		.del{
 			width: 24px;
-			padding: 5px 0px 0px;
+			padding: 0px 0px 0px;
 			.btn-del{
 				padding: 0;
 				border: 0;
 				outline: none;
 				background: url(../img/del-btn.png);
-				width: 20px;
-				height: 20px;
+				background-size: 16px;
+				width: 16px;
+				height: 16px;
 			}
 		}
 		.img{
 			padding: 0;
 			width: 150px;
 			height: 130px;
+			.sticker {
+				left: 95px;
+			}
 		}
 		.name-product{
 			width: 265px;

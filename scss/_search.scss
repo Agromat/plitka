@@ -41,6 +41,10 @@
 	display: block;
 	padding: 5px 15px;
 	overflow: hidden;
+	position: relative;
+	.sticker{
+		left: 15px;
+	}
 	&:hover {
 		background: #eef6f9;
 	}

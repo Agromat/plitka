@@ -35,6 +35,10 @@
 				padding:0 0 20px;
 				&.img{
 					width: 100px;
+					position: relative;
+					.sticker {
+						top:-6px;
+					}
 					img {
 						max-width: 100px;
 					}
@@ -57,6 +61,7 @@
 					text-align: right;
 					sup{
 						top: -5px;
+						font-size: 13px;
 					}
 				}
 
@@ -83,7 +88,6 @@
 			sup{
 				top: -10px;
 				font-size: 16px;
-				font-weight: 400;
 			}
 		}
 	}

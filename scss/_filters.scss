@@ -382,9 +382,11 @@
 						border: 5px solid #f4f4f4;
 						height: 200px;
 						display: table;
-						.sticker .new{
-							left: -3px;
+						.sticker {
+							.new, .markdown, .sale{
+							left: -2px;
 							top: -7px;
+							}
 						}
 						.orbit-container{
 							display: table-cell;

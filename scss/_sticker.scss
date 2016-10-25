@@ -33,6 +33,41 @@
 		  	-o-transform: skew(20deg);
 		}
 	}
+	&.sticker2nd {
+		top:35px;
+	}
+	&.sticker3rd {
+		top:70px;
+	}
+	&.sticker4th {
+		top:105px;
+	}
+	&.small {
+	.new, .markdown, .sale{
+		width: rem-calc(70);
+		height: rem-calc(23);
+		line-height: rem-calc(23);
+		font-weight: 700;
+		font-size: rem-calc(12);
+		border-top-left-radius:rem-calc(10);
+		border-top-right-radius:rem-calc(8);
+		border-bottom-left-radius:rem-calc(8);
+		border-bottom-right-radius:rem-calc(10);
+		}
+	}
+	&.smallest {
+	.new, .markdown, .sale{
+		width: rem-calc(60);
+		height: rem-calc(20);
+		line-height: rem-calc(20);
+		font-weight: 700;
+		font-size: rem-calc(11);
+		border-top-left-radius:rem-calc(8);
+		border-top-right-radius:rem-calc(6);
+		border-bottom-left-radius:rem-calc(6);
+		border-bottom-right-radius:rem-calc(8);
+		}
+	}
 	.new{
 		background-color: $new;
 		&::before{
