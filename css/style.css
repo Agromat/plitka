@@ -1668,12 +1668,54 @@ ul.inline li {
   font-size: 3.1875rem;
   font-weight: 700;
   line-height: 4.0625rem;
-  margin-bottom: 0.3125rem;
   margin-top: 0.1875rem;
+  margin-bottom: 0.3125rem;
 }
 .about .buy-block .price .cost sup {
   font-size: 1.875rem;
   top: -1.25rem;
+}
+.about .buy-block .price.insale .cost {
+  font-size: 2.875rem;
+  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+.about .buy-block .price.insale .cost sup {
+  font-size: 1.375rem;
+  top: -1.0625rem;
+}
+.about .buy-block .price.insale .cost.old {
+  font-size: 1.625rem;
+  line-height: 1.625rem;
+  margin-top: 0.75rem;
+  margin-bottom: -0.5625rem;
+  margin-left: 0.3125rem;
+}
+.about .buy-block .price.insale .cost.old span {
+  line-height: 1;
+  font-weight: 300;
+  position: relative;
+  color: #9fa7a9;
+}
+.about .buy-block .price.insale .cost.old span sup {
+  font-size: 0.875rem;
+  top: -0.5rem;
+}
+.about .buy-block .price.insale .cost.old span::after {
+  position: absolute;
+  content: "";
+  left: -3px;
+  top: 50%;
+  right: 0;
+  border-top: 2px solid;
+  border-color: #ed1c24;
+  z-index: 200;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  transform: rotate(-5deg);
 }
 .about .buy-block .price .bulk .bulk-info {
   padding-left: 0.6875rem;
@@ -1712,6 +1754,7 @@ ul.inline li {
 }
 .about .buy-block .price .buy-btn, .about .buy-block .price .order-btn {
   padding-top: 1.0625rem;
+  line-height: 0;
 }
 .about .buy-block .price .buy-btn .btn, .about .buy-block .price .order-btn .btn {
   width: 160px;
