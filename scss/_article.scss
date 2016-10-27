@@ -52,6 +52,30 @@
 		margin: 15px 0;
 	}
 }
+.promo_items-list_link{
+	text-align: center;
+	>*, p{
+		border: 3px solid #4a5b70;
+		padding: 13px 50px 21px;
+		display: block;
+		font-size: 27px;
+		line-height: 40px;
+		margin: 0;
+		color: $ddgray;
+		color: #4a5b70;
+		span {
+			border-bottom: 1px solid;
+		}
+		&:hover {
+			border-color: $blue;
+			span{
+				color: $blue;
+				border-bottom-color: $blue;
+				border-bottom-style: solid;
+			}
+		}		
+	}
+}
 .tags {
 	font-size: 0;
 	color: #999;

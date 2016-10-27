@@ -2191,8 +2191,8 @@ ul.inline li {
   height: 7.5625rem;
   background-image: url(../img/slider/stock.png);
   background-size: 60px;
-  top: -20px;
-  right: 1px;
+  top: -5px;
+  right: 0;
 }
 .sticker .recommended {
   background-image: url(../img/slider/recommended.png);
@@ -6676,6 +6676,31 @@ footer .row.link-footer .column:last-child {
 }
 .promo__arhive-link {
   margin: 15px 0;
+}
+
+.promo_items-list_link {
+  text-align: center;
+}
+.promo_items-list_link > *, .promo_items-list_link p {
+  border: 3px solid #4a5b70;
+  padding: 13px 50px 21px;
+  display: block;
+  font-size: 27px;
+  line-height: 40px;
+  margin: 0;
+  color: #333;
+  color: #4a5b70;
+}
+.promo_items-list_link > * span, .promo_items-list_link p span {
+  border-bottom: 1px solid;
+}
+.promo_items-list_link > *:hover, .promo_items-list_link p:hover {
+  border-color: #0053a0;
+}
+.promo_items-list_link > *:hover span, .promo_items-list_link p:hover span {
+  color: #0053a0;
+  border-bottom-color: #0053a0;
+  border-bottom-style: solid;
 }
 
 .tags {
