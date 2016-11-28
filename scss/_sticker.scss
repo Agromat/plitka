@@ -121,3 +121,10 @@
 	background-repeat: no-repeat;
 	background-position: top right;
 }
+
+.stickers_set {
+	position: absolute;
+	.sticker {
+		position: relative;
+	}
+}

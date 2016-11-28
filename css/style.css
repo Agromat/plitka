@@ -2211,6 +2211,13 @@ ul.inline li {
   background-position: top right;
 }
 
+.stickers_set {
+  position: absolute;
+}
+.stickers_set .sticker {
+  position: relative;
+}
+
 .benefits {
   margin-top: 1.25rem;
   padding: 0.9375rem;
@@ -2935,6 +2942,9 @@ ul.pagination li a span {
 
 .catalog-item .orbit-container a.orbit-prev, .catalog-item .orbit-container a.orbit-next {
   display: none;
+}
+.catalog-item .orbit-container .sticker {
+  z-index: 100;
 }
 
 .item-filtered.insale .price,

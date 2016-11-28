@@ -611,7 +611,9 @@ ul.pagination{
 	a.orbit-prev, a.orbit-next{
 		display: none;
 	}
-	
+	.sticker {
+		z-index: 100;
+	}
 }
 .item-filtered,
 .multiple-items-4,
