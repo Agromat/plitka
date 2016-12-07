@@ -4529,7 +4529,7 @@ footer .row.link-footer .column:last-child {
   content: url("../img/close-btn.png");
 }
 .basket .basket-view {
-  padding: 29px 34px;
+  padding: 29px 34px 0;
 }
 .basket .basket-view .del {
   width: 24px;
