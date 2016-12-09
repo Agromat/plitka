@@ -1519,7 +1519,7 @@ footer{
 		}
 	}
 	.basket-view{
-		padding: 29px 34px;
+		padding: 29px 34px 0;
 		.del{
 			width: 24px;
 			
@@ -1546,7 +1546,7 @@ footer{
 		.name-product{
 			width: 330px;
 			padding-left: 28px;
-			padding-top: 6px;
+			//padding-top: 6px;
 			.prod-desk{
 				font-size: 14px;
 				font-weight: 400;
