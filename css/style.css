@@ -2761,8 +2761,10 @@ ul.pagination li a span {
 .catalog-item .orbit-container a.orbit-prev, .catalog-item .orbit-container a.orbit-next {
   display: none;
 }
-.catalog-item .orbit-container .sticker {
-  z-index: 100;
+.catalog-item .sticker {
+  top: 4px;
+  left: -12px;
+  z-index: 2;
 }
 
 .item-filtered.insale .price,
@@ -4302,6 +4304,9 @@ footer .row.link-footer .column:last-child {
   content: url("../img/close-btn.png");
 }
 
+.basket {
+  max-width: 910px;
+}
 .basket .sm-desk {
   font-size: 13px;
   font-weight: 400;
@@ -4321,12 +4326,12 @@ footer .row.link-footer .column:last-child {
 }
 .basket .price sup {
   top: -10px;
-  font-size: 65%;
+  font-size: 50%;
 }
 .basket .basket-header {
-  border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
+  border-radius: 15px 15px 0 0;
+  -webkit-border-radius: 15px 15px 0 0;
+  -moz-border-radius: 15px 15px 0 0;
   background: #eef6f9;
   padding: 23px 29px 17px;
 }
@@ -4342,7 +4347,7 @@ footer .row.link-footer .column:last-child {
   content: url("../img/close-btn.png");
 }
 .basket .basket-view {
-  padding: 29px 34px;
+  padding: 29px 34px 0;
 }
 .basket .basket-view .del {
   width: 24px;
@@ -4364,9 +4369,10 @@ footer .row.link-footer .column:last-child {
 }
 .basket .basket-view .img .sticker {
   left: 95px;
+  top: -5px;
 }
 .basket .basket-view .name-product {
-  width: 265px;
+  width: 330px;
   padding-left: 28px;
   padding-top: 6px;
 }
@@ -4380,7 +4386,7 @@ footer .row.link-footer .column:last-child {
 }
 .basket .basket-view .sum,
 .basket .basket-view .amount {
-  width: 145px;
+  width: 143px;
   padding-top: 6px;
 }
 .basket .basket-view .sum .area,
@@ -4397,12 +4403,63 @@ footer .row.link-footer .column:last-child {
 .basket .basket-view .amount .area span sup {
   top: -2px;
 }
+.basket .basket-view .sum {
+  text-align: right;
+  width: 183px;
+  padding-right: 17px;
+}
 .basket .basket-actions .total {
   text-align: right;
   margin: 0 40px;
   border-top: 1px solid #dddddd;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 10px 17px 20px 0;
+}
+.basket .basket-actions .total.striked {
+  padding-bottom: 10px;
+}
+.basket .basket-actions .total.striked .price {
+  position: relative;
+  display: inline-block;
+  color: #878787;
+}
+.basket .basket-actions .total.striked .price:after {
+  position: absolute;
+  content: "";
+  left: -3px;
+  top: 50%;
+  right: 0;
+  border-top: 2px solid;
+  border-color: #000;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+.basket .basket-actions .total .price {
+  line-height: 1;
+}
+.basket .basket-actions .total-discount {
+  margin: 0 40px;
+  border: 3px solid #ed1c24;
+  padding: 14px 17px;
+  background-color: #fcf2e9;
+}
+.basket .basket-actions .total-discount .sm-desk {
+  float: left;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ed1c24;
+  line-height: 25px;
+  margin: 0;
+}
+.basket .basket-actions .total-discount .price {
+  float: right;
+  font-size: 25px;
+  font-weight: 700;
+  color: #ed1c24;
+  margin: 0;
+  line-height: 1;
 }
 .basket .basket-actions .btn-group {
   margin: 0 40px;
@@ -4438,25 +4495,25 @@ footer .row.link-footer .column:last-child {
   color: #4a5b70;
   font-weight: 700;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
-.basket .basket-footer .multiple-items-4 {
+.basket .basket-footer .multiple-items {
   margin: 0 auto;
-  height: 100%;
+  height: auto;
 }
-.basket .basket-footer .multiple-items-4.slick-slider::before {
+.basket .basket-footer .multiple-items.slick-slider::before {
   top: -48px;
   right: 10px;
   background: #ffffff;
 }
-.basket .basket-footer .multiple-items-4 .slick-next,
-.basket .basket-footer .multiple-items-4 .slick-prev {
-  top: -48px;
+.basket .basket-footer .multiple-items .slick-next,
+.basket .basket-footer .multiple-items .slick-prev {
+  background-color: #fff;
 }
-.basket .basket-footer .multiple-items-4 .slick-next {
+.basket .basket-footer .multiple-items .slick-next {
   right: 12px;
 }
-.basket .basket-footer .multiple-items-4 .slick-prev {
+.basket .basket-footer .multiple-items .slick-prev {
   right: 47px;
 }
 
