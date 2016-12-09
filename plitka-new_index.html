@@ -53,9 +53,9 @@
       <ul class="left">
       <li><a href="#about"><span>О магазине</span></a></li>
       <li><a href="#delivery"><span>Доставка и оплата</span></a></li>
-      <li><a href="#brands"><span>Производители</span></a></li>
-      <li><a href="#reviews"><span>Обзор</span></a></li>
-      <li><a href="#articles"><span>Статьи</span></a></li>
+      <li class="hidden-sm"><a href="#brands"><span>Производители</span></a></li>
+      <li class="hidden-sm"><a href="#reviews"><span>Обзор</span></a></li>
+      <li class="hidden-sm"><a href="#articles"><span>Статьи</span></a></li>
       <li><a href="#contacts"><span>Контакты</span></a></li>
       <li><a href="#safeguards"><span>Гарантия</span></a></li>
       <li><a href="#feedback"><span>Обратная связь</span></a></li>
@@ -66,7 +66,8 @@
       </ul>
 
       <ul class="right">
-      <li><a class="icon icon-padlock" href="#login">Войти в личный кабинет</a></li>
+      <!-- !! add wrap "span" for some text in login block for mobile hidden  -->
+      <li><a class="icon icon-padlock" href="#login">Войти <span>в личный кабинет</span></a></li>
       </ul><!-- /menu bar right side-->
     
     </div><!-- /row collapse -->
@@ -96,7 +97,7 @@
             <!-- !! CHANGE ORDER OF BLOCKS CALLBACK AND SCHEDULE  -->
 
             <div class="phone info__items">
-              <div class="tel">8 (800) 700-00-10</div>
+              <a href="tel:+388007000010" class="tel">8 (800) 700-00-10</a>
               <p>Круглосуточный заказ звонок бесплатный</p>
               </div>
               
@@ -130,13 +131,13 @@
         <!-- !! CREATE NEW WRAPPER FOR BASKET AND SEARCH BAR -->
         <!-- !! DELETED CLASSES: Medium-4 -->
         <div class="menuinfo__bl common-bl">
-          <div class="common-bl__inner">
 
             <!-- !! DELETE CLASSES: .medium-4, .column  FROM BASKET BLOCK -->
-            <div class="basket-sm">
+            <div class="basket-sm is-added-goods">
               <div>
-                <p>В корзине <span>2</span> товара на сумму</p>
-                <p class="money">4 209,<sup>78 грн.</sup></p>
+                <!-- !! add className "title" to next block-->
+                <p class="title">В корзине <span>2</span> товара на сумму </p>
+                <p class="money"><i class="icon-basket "></i>4 209,<sup>78 грн</sup></p>
                 <a class="btn btn-green" href="#">Заказать</a>
               </div>
             </div><!-- /basket-->
@@ -149,20 +150,12 @@
                 <button class="search__btn js-search-btn" type="submit">Искать</button>
               </form>
             </div>
-          </div>
         </div>
 
-<<<<<<< HEAD
-        
-=======
-      <div class="basket-sm column medium-4">
-      <div>
-        <p>В корзине <span>2</span> товара на сумму</p>
-        <p class="money">4 209,<sup>78 грн</sup></p>
-        <a class="btn btn-green" href="#">Заказать</a>
->>>>>>> 42a69e1357adbb17069024f47f8b0799ed272529
       </div>
-    </div><!-- /menuinfo -->
+    </div>
+
+
   </header><!-- /menu-nav-->
 
   <section class="menu-catalog">
@@ -181,7 +174,7 @@
       <a class="button"><span>Обои</span></a>
       </li>
       <li>
-      <a class="button dropdown js-dropdown-toggle js-dropdown-right" data-drop="js-dropdown-3"><span>Отоплениеы</span></a>
+      <a class="button dropdown js-dropdown-toggle js-dropdown-right" data-drop="js-dropdown-3"><span>Отопление</span></a>
       </li>
       <li>
       <a class="button"><span>Освещение</span></a>

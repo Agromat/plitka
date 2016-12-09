@@ -63,10 +63,10 @@
 						background: #7e7e7e;
 					}
 					span{
-					    border:0;
-				    	display: block;
-				        padding: 0 0.8rem;
-			    	}
+						border:0;
+						display: block;
+						padding: 0 0.8rem;
+					}
 				}
 			}
 		}
@@ -80,6 +80,13 @@
 						color: #ebfe15;
 					}
 					color:$lgeern;
+					span{
+						display: inline-block;
+						padding: 0;
+						@include r($desktop-m) {
+							display: none;
+						}
+					}
 				}
 			}
 		}
@@ -286,6 +293,9 @@
 		list-style:none;
 		position:relative;
 		float: left;
+		@include r($tablet) {
+			margin-bottom: 15px;
+		}
 		&:before {
 			content: "";
 			position: absolute;
@@ -294,6 +304,10 @@
 			bottom: 0;
 			width: 1px;
 			background: #6C7A93;
+			@include r($tablet) {
+				top: 2px;
+				bottom: -2px;
+			}
 		}
 		&:first-child {
 			&:before {
@@ -358,12 +372,20 @@
 			&:hover span{
 				border-bottom: 1px solid $white;
 			}
+			@include r($tablet) {
+				padding: 0 15px;
+				line-height: normal;
+				font-size: 14px;
+			}
 		}
 
 	}
 	> nav > .row{
 		padding-top: 7px;
 		padding-left: 0;
+		@include r($tablet) {
+			padding: 10px 0 0
+		}
 	}
 }
 .f-dropdown.content{
@@ -406,10 +428,10 @@
 			}
 		}
 		.inline {
-		    li {
-		    	float: none;
-		    	width: auto;
-		    }
+			li {
+				float: none;
+				width: auto;
+			}
 		}
 		.product {
 			margin-top: rem-calc(10);
@@ -491,6 +513,9 @@
 .social{
 	display: inline-block;
 	margin: 10px 0 0 5px;
+	@include r($tablet) {
+		display: none;
+	}
 	li{
 			margin-left: 5px !important;
 		a{

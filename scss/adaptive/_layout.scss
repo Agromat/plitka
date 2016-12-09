@@ -2,6 +2,18 @@ body{
     min-width: 0; 
 }
 
+.hidden-sm{
+    @include r($tablet) {
+        display: none !important;
+    }
+}
+
+.hidden-xs{
+    @include r($mob) {
+        display: none !important;
+    }
+}
+
 
 .row {
     @include r($desktop-m){
@@ -56,7 +68,10 @@ body{
         position: relative;
         padding: rem-calc(24) 0 rem-calc(15);
         @include r($tablet) {
-            padding: rem-calc(24) 0 rem-calc(45);
+            padding: rem-calc(24) rem-calc(25) rem-calc(50);
+        }
+        @include r($mob) {
+            padding: rem-calc(25) rem-calc(10);
         }
     }
     &__bl{
@@ -91,35 +106,46 @@ body{
             display: none;
         }
     }
+    @include r($mob) {
+        display: none;
+    }
 }
 
 // wrap for search and basket
 .common-bl{
     @include clearfix;
     float: right;
-    &__inner{
-        @include r($desktop-m) {
-            padding: 0 10px;
-        }
+    @include r($desktop-m) {
+        padding: 0 10px;
+    }
+    @include r($tablet) {
+        padding: 0;
     }
 }
 
 // main search field
 .search {
     height: 38px;
-    margin-bottom: 10px;
+    margin-bottom: rem-calc(10);
     // overflow: hidden;
     font-size: 0;
     @include r($tablet) {
         position: absolute;
-        bottom: 0;
+        left: rem-calc(25);
+        right: rem-calc(25);
+        bottom: rem-calc(10);
+        // width: 100%;
         height: 30px;
         margin-bottom: 0;
+    }
+    @include r($mob) {
+        left: rem-calc(10);
+        right: rem-calc(10);
     }
     &__input{ 
         position: absolute;
         top: 0;
-        right: 7.3rem;
+        right: rem-calc(112);
         // transform: translate3d(50%,0,0);
         width: 200px;
         color: #999;
@@ -140,8 +166,16 @@ body{
                     box-shadow: 0px 0px 6px 1px rgba(94, 185, 255, 0.5);
         }
         &:focus{
-            // transform: translate3d(0,0,0);
             width: 400px;
+        }
+        @include r($tablet) {
+            padding: rem-calc(5) rem-calc(10);
+            right: 0;
+            left: 0;
+            width: 100%;
+            &:focus{
+                width: 100%
+            }
         }
     }
 
@@ -168,6 +202,9 @@ body{
             outline: 1px solid $ddgray;
             outline-offset: -1px;
         }
+        @include r($tablet) {
+            padding: rem-calc(5) rem-calc(10);
+        }
     }
 }
 
@@ -175,11 +212,32 @@ body{
 .basket-sm {
 
     float: right;
-    padding: 0;
+    padding: rem-calc(50) 0 0;
     width: auto;
     // width: rem-calc(380);
     // padding-left: rem-calc(60);
+    @include r($tablet) {
+        padding: 0;
+    }
+    @include r($mob) {
+        display: none;
+    }
+    &.is-added-goods {
+        @include r($tablet) {
+            .icon-basket{
+                background-position: -91px -5px;
+            }
+            // for mob
+            // .icon-basket{
+            //     background-position: -65px -5px;
+            // }
+        }
+        @include r($mob) {
+            display: none;
+        }
+    }
     > div{
+        position: relative;
         display: table;
         // min-width: rem-calc(280);
         margin-left: auto;
@@ -187,14 +245,48 @@ body{
         border: rem-calc(1) solid $border;
         text-align: center;
         // padding-bottom: 10px;
-        padding: 10px 20px;
-        p{
+        padding: rem-calc(10) rem-calc(20);
+        @include r($tablet){
+            padding: rem-calc(15);
+            background: $white;
+        }
+        .title{
             color: $llgray;
             font-size: rem-calc(13);
             line-height: rem-calc(16);
             margin-top: 0;
             // margin-bottom: rem-calc(7);
             margin-bottom: 0.6rem;
+            @include r($tablet) {
+                font-size: 0;
+                margin: 0;
+                line-height: 0;
+                span{
+                    position: absolute;
+                    top: 50%;
+                    left: -4px;
+                    transform: translateY(-50%);
+                    font-size: rem-calc(12);
+                    font-weight: 700;
+                    color: $white;
+                    z-index: 1;
+                    &:before{
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        width: rem-calc(22);
+                        height:rem-calc(22);
+                        transform: translate(-50%, -50%);
+                        // margin-top: rem-calc(-11);
+                        // margin-left: rem-calc(-11);
+                        -webkit-border-radius: 50%;
+                                border-radius: 50%;
+                        background-color: rgb(250, 94, 0);
+                        z-index: -1;
+                    }
+                }
+            }
         }
         .money {
             display: inline-block;
@@ -209,9 +301,18 @@ body{
             /* padding-left: rem-calc(13); */
             font-weight: 700;                   
             margin-bottom: 0;
+            @include r($tablet) {
+                font-size: rem-calc(18);
+                line-height: rem-calc(16);
+                padding: 0;
+            }
             sup{
                 top: rem-calc(-10);
                 font-size: rem-calc(19);
+                @include r($tablet) {
+                    font-size: rem-calc(11);
+                    top: rem-calc(-4);
+                }
             }
         }
         .btn{
@@ -219,6 +320,27 @@ body{
             vertical-align: middle;
             // margin-top: rem-calc(12);
             font-weight: 700;
+            @include r($tablet) {
+                display: none;
+            }
+        }
+    }
+    .icon-basket {
+        display: none;
+        @include r($tablet) {
+            display: inline-block;
+            width: 24px;
+            height: 22px;
+            padding-right: rem-calc(35);
+            vertical-align: sub;
+            background-image:  url("../img/basket.png");
+            background-repeat: no-repeat;
+            background-position: -31px -5px;
+        }
+        @include r($mob) {
+            background-position: -5px -5px;
+            width: 16px;
+            height: 14px;
         }
     }
 }
@@ -228,6 +350,9 @@ body{
 // width: rem-calc(519);
     font-size: 0;
     @include clearfix;
+    @include r($mob) {
+        display: none;
+    }
     &__inner{
         padding-top: 15px;
         @include r($desktop-m){

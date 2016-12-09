@@ -242,7 +242,7 @@
           var right = $(window).width() - left - $(this).outerWidth();
           if ($(this).hasClass("js-dropdown-right")) {
             menu.css({
-              right: right,
+              right: 'auto',
               left: 'auto'
             }).show();
           }
