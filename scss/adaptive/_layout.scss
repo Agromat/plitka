@@ -1,0 +1,363 @@
+body{
+    min-width: 0; 
+}
+
+
+.row {
+    @include r($desktop-m){
+        padding: 0 10px;
+    }
+    @include r($tablet) {
+        padding: 0 25px;
+    }
+    .row{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .not-collapse {
+        .row{
+            @include r($tablet){
+                margin: 0;
+            }
+        }
+    }
+}
+
+
+.main-section{
+    max-width: 990px;
+    width: 100%;
+    @include r($desktop-m) {
+        width: calc(100% - 230px);
+    }
+    @include r($tablet) {
+        width: 100%;
+        float: none;
+        max-width: none;
+    }
+}
+
+.sidebar{
+    max-width: 200px;
+    width: 100%;
+
+    @include r($tablet) {
+        display: none;
+        // max-width: none;
+    }
+}
+
+
+.menuinfo{
+    background:$lgray;
+    font-size: 0;
+    > .row {
+        position: relative;
+        padding: rem-calc(24) 0 rem-calc(15);
+        @include r($tablet) {
+            padding: rem-calc(24) 0 rem-calc(45);
+        }
+    }
+    &__bl{
+        display: inline-block;
+        vertical-align: top;
+        padding: 0;
+        &.logo{
+            width: 25%;
+        }
+        &.info{
+            width: 42%;
+        }
+        &.common-bl{
+            width: 33%;
+        }
+    }
+}
+
+.logo {
+    padding-left: rem-calc(18);
+    .about-text{
+        width:auto;
+        float: none;
+        p{
+            font-size: rem-calc(13);
+            line-height: rem-calc(14);
+            color: #6b6b6b;
+            margin-top: rem-calc(14);
+            margin-bottom: rem-calc(8);
+        }
+        @include r($tablet) {
+            display: none;
+        }
+    }
+}
+
+// wrap for search and basket
+.common-bl{
+    @include clearfix;
+    float: right;
+    &__inner{
+        @include r($desktop-m) {
+            padding: 0 10px;
+        }
+    }
+}
+
+// main search field
+.search {
+    height: 38px;
+    margin-bottom: 10px;
+    // overflow: hidden;
+    font-size: 0;
+    @include r($tablet) {
+        position: absolute;
+        bottom: 0;
+        height: 30px;
+        margin-bottom: 0;
+    }
+    &__input{ 
+        position: absolute;
+        top: 0;
+        right: 7.3rem;
+        // transform: translate3d(50%,0,0);
+        width: 200px;
+        color: #999;
+        font-size: 0.875rem;
+        padding: 0.5rem 0.625rem;
+        line-height: 19px;
+        border: 0.0625rem solid #abadb3;
+        border-right: 0;
+        transition: all .2s;
+        &:active,
+        &:hover,
+        &:focus{
+            color: $ddgray;
+            outline: none;
+            z-index: 1;
+            -webkit-box-shadow: 0px 0px 6px 1px rgba(94, 185, 255, 0.5);
+               -moz-box-shadow: 0px 0px 6px 1px rgba(94, 185, 255, 0.5);
+                    box-shadow: 0px 0px 6px 1px rgba(94, 185, 255, 0.5);
+        }
+        &:focus{
+            // transform: translate3d(0,0,0);
+            width: 400px;
+        }
+    }
+
+    &__btn{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        width: 7.875rem;
+        background: #f4f4f4;
+        color: #333;
+        font-size: 0.875rem;
+        font-weight: 700;
+        line-height: 1.1875rem;
+        padding: 0.5rem 0.3125rem;
+        border: 0.0625rem solid #abadb3;
+        -webkit-box-shadow: 4px 0px 6px 1px #f4f4f4;
+               -moz-box-shadow: 4px 0px 6px 1px #f4f4f4;
+                    box-shadow: 4px 0px 6px 1px #f4f4f4;
+        &:active,
+        &:hover,
+        &:focus{
+            color: $ddgray;
+            outline: 1px solid $ddgray;
+            outline-offset: -1px;
+        }
+    }
+}
+
+// basket block from header
+.basket-sm {
+
+    float: right;
+    padding: 0;
+    width: auto;
+    // width: rem-calc(380);
+    // padding-left: rem-calc(60);
+    > div{
+        display: table;
+        // min-width: rem-calc(280);
+        margin-left: auto;
+        margin-right: auto;
+        border: rem-calc(1) solid $border;
+        text-align: center;
+        // padding-bottom: 10px;
+        padding: 10px 20px;
+        p{
+            color: $llgray;
+            font-size: rem-calc(13);
+            line-height: rem-calc(16);
+            margin-top: 0;
+            // margin-bottom: rem-calc(7);
+            margin-bottom: 0.6rem;
+        }
+        .money {
+            display: inline-block;
+            padding-left: 0;
+            padding-right: 1.55rem;
+            margin: 0;
+            vertical-align: middle;
+            color: $ddgray;
+            font-size: rem-calc(31);
+            line-height: rem-calc(35);
+            padding-right: rem-calc(25);
+            /* padding-left: rem-calc(13); */
+            font-weight: 700;                   
+            margin-bottom: 0;
+            sup{
+                top: rem-calc(-10);
+                font-size: rem-calc(19);
+            }
+        }
+        .btn{
+            margin: 0;
+            vertical-align: middle;
+            // margin-top: rem-calc(12);
+            font-weight: 700;
+        }
+    }
+}
+
+// contact info between logo and search
+.info {
+// width: rem-calc(519);
+    font-size: 0;
+    @include clearfix;
+    &__inner{
+        padding-top: 15px;
+        @include r($desktop-m){
+            padding: 15px 0 30px;
+        }
+        @include r($tablet) {
+            padding-top: 0;
+            width: rem-calc(200);
+            margin: 0 auto;
+        }
+    }
+    &__items{
+        display: inline-block;
+        vertical-align: top;
+        width: 33%;
+        margin-bottom: 10px;
+        @include r($desktop-m) {
+            padding: 0 10px;
+            &.callback{
+                width: 50%;
+            }
+            &.phone{
+                width: 50%;
+            }
+            &.schedule{
+                width: 50%;
+            }
+        }
+        @include r($tablet) {
+            &.callback, &.phone{
+                width: 100%;
+            }
+            &.schedule{
+                display: none;
+            }
+        }
+    }
+    a{
+        color: $blue;
+        display: block;
+        line-height: rem-calc(16);
+        &:hover{
+            color:$ddgray;
+        }
+    }
+    .phone{
+        float: left;
+        .tel{
+            color: $ddgray;
+            font-size: rem-calc(18);
+            font-weight: 700;
+            margin-bottom: rem-calc(7);
+            line-height: rem-calc(16);
+        }
+        p{
+            color: $llgray;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: rem-calc(13);
+            line-height: rem-calc(16);
+            @include r($tablet) {
+                display: none;
+            }
+        }
+    }
+    .callback {
+        float: left;
+        font-size: rem-calc(13);
+        margin-top: rem-calc(-4);
+        // padding-left: rem-calc(20);
+        @include r($desktop-m){
+            float: none;
+            display: block;
+        }
+        @include r(tablet) {
+            display: none;
+        }
+    }
+    .schedule {
+        float: right;
+        margin-top: rem-calc(-4);
+        // padding-left: rem-calc(9);
+        // width: 135px;
+        p{
+            color: $ddgray;
+            margin-top: 0;
+            margin-bottom: rem-calc(13);
+            font-size: rem-calc(13);
+            &:first-child{
+                margin-bottom: rem-calc(2);
+            }
+            sup{
+                top: -2px;
+            }
+            span{
+                &.wek{
+                    color: $red;
+                    //float: right;
+                    margin-left:  16px;
+                }
+            }
+        }
+        div{
+            margin-bottom: rem-calc(4);
+            display: block;
+            @include clearfix();
+            span{
+                display: block;
+                float: left;
+                -webkit-border-radius: 1px;
+                -moz-border-radius: 1px;
+                border-radius: 1px;
+                width: rem-calc(12);
+                height: rem-calc(15);
+                border: rem-calc(1) solid $ddgray;
+                margin-left: rem-calc(3);
+                -webkit-border-radius: 2px;
+                -moz-border-raius: 2px;
+                border-radius: 2px;
+                padding: 1px;
+                font-size: 11px;
+                line-height: 11px;
+                &:first-child{
+                    margin-left:0;
+                }
+                &.wek{
+                    border: rem-calc(1) solid $red;
+                    color: $red;
+                }
+            }
+        } 
+    }
+}

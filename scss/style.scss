@@ -149,6 +149,49 @@ $rem-base : 16;
   font-size: 16px !important;
   font-weight: bold;
 }
+
+
+/* 
+*  BEGIN ADAPTIVE MIXINS AND VARIABLES
+ */
+
+// BLOCK MIXINS
+@mixin r($width) {
+  @media only screen and (max-width: $width+ "px") {
+    @content;
+  }
+}
+
+@mixin rmin($width) {
+  @media only screen and (min-width: $width+ "px") {
+    @content;
+   }
+}
+
+// height
+@mixin rh($height) {
+  @media only screen and (max-height: $height + "px") {
+    @content;
+   }
+}
+
+@mixin rhmin($height) {
+  @media only screen and (min-height: $height + "px") {
+    @content;
+   }
+}
+
+//BLOCK VARIABLES
+$desktop: 1220;
+$desktop-m: 1219;
+$tablet: 1024;
+// $tablet-m: 800;
+$mob: 767;
+
+/* 
+*  END ADAPTIVE MIXINS AND VARIABLES
+ */
+
 /*
 *	FONT LOAD
 */
@@ -189,3 +232,5 @@ $rem-base : 16;
 @import "typography";
 @import "article";
 @import "search";
+
+@import "adaptive/layout";

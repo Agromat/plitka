@@ -482,7 +482,10 @@ ul.pagination{
 		border-top: 0 !important;
 	}
 	.multiple-items {
-		margin: 0 -20px !important;
+		margin: 0 -20px;
+		@include r($tablet){
+			margin: 0 -10px;
+		}
 		.slick-prev {
 			right: 55px;
 		}
