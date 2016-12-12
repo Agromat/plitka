@@ -32,6 +32,9 @@
 	.menubar {
 		color:$white;
 		background:$dgray;
+		@include r($mob) {
+			display: none;
+		}
 		li{
 			list-style:none;
 			line-height:rem-calc(40);

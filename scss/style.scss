@@ -181,6 +181,21 @@ $rem-base : 16;
    }
 }
 
+@mixin hcenter() {
+  position: absolute;
+  // top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin hover() { 
+  body.no-touch & {
+    &:hover{
+      @content;
+    }
+  }
+}
+
 //BLOCK VARIABLES
 $desktop: 1220;
 $desktop-m: 1219;
@@ -217,7 +232,7 @@ $mob: 767;
 */
 @import "icon";
 /*
-*	BUTTONS
+*	BUTTONS 
 */
 @import "btn";
 /*
@@ -234,3 +249,4 @@ $mob: 767;
 @import "search";
 
 @import "adaptive/layout";
+@import "adaptive/mobMenu";

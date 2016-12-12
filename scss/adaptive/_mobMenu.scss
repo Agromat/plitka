@@ -1,0 +1,219 @@
+.mob-menu{
+	margin-bottom: 10px;
+	background-color: #f4f4f4;
+	box-shadow: 0.5px 0.9px 5px rgba(34, 31, 31, 0.25);
+	&__inner{
+		position: relative;
+		height: 40px;
+		padding: 15px 10px 10px;
+	}
+	&__btn{
+		position: relative;
+		display: none;
+		float: left;
+		width: 22px;
+		height: 12px;
+		margin-right: 20px;
+		font-size: 20px;
+		line-height: 1;
+		&.is-active{
+			&:before{
+				transform: rotate(-45deg);
+			}
+			&:after{
+				transform: rotate(45deg);
+			}
+			span{
+				transform: scale(0);
+			}
+		}
+		&:before,
+		&:after,
+		span{
+			position: absolute;
+			left: 0;
+			right: 0;
+			height: 2px;
+			background: $lblue;
+		}
+		&:before{
+			content: "";
+			top: 0;
+			transform-origin: 84% 100%;
+			transition: transform 0.2s ease;
+		}
+		&:after{
+			content: "";
+			bottom: 0;
+			transform-origin: 77% 30%;
+			transition: transform 0.2s ease;
+		}
+		span{
+			top: 50%;
+			margin-top: -1px;
+			transition: transform 0.3s ease;
+		}
+		@include r($mob) {
+			display: block;
+		}
+	}
+	&__logo{
+		display: inline-block;
+		vertical-align: top;
+		width: 70px;
+		margin-top: -5px;
+	}
+	&__basket{
+		float: right;
+		width: auto;
+		margin-top: -10px;
+		margin-right: 8px;
+		&.is-added-goods{
+			.amount{
+				display: inline-block;
+			}
+			.icon-basket{
+				background-position: -65px -5px;
+			}
+		}
+	}
+	&__basket-inner{
+		position: relative;
+		padding: rem-calc(7) rem-calc(13) rem-calc(5);
+		border: 1px solid $in-color;
+		background: $white;
+		.amount{
+			display: none;
+			position: absolute;
+			top: 50%;
+			left: -4px;
+			transform: translateY(-50%);
+			font-size: rem-calc(10);
+			font-weight: 700;
+			color: #fff;
+			z-index: 1;
+			&:before{
+				content: "";
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				width: rem-calc(18);
+				height: rem-calc(18);
+				transform: translate(-50%, -50%);
+				-webkit-border-radius: 50%;
+				border-radius: 50%;
+				background-color: #fa5e00;
+				z-index: -1;
+			}
+		}
+		div{
+			line-height: 1;
+		}
+	}
+	&__phone{
+		display: inline-block;
+		margin-right: 20px;
+		margin-top: -3px;
+		float: right;
+		font-size: 12px;
+		line-height: 16px;
+		font-weight: 700;
+	}
+}
+
+// переопределяю стили для мобильного меню
+.menu-nav {
+	.mob-menu {
+		span {
+			border-bottom: none
+		}
+		&__phone{
+			color: $ddgray;
+		}
+	}
+}
+
+.mob-nav {
+	float: left;
+	@include clearfix();
+	@include r($tablet) {
+		width: 312px;
+		position: fixed;
+		float: none;
+		top: 60px;
+		left: 0;
+		bottom: 0;
+		padding: 0 0 20px;
+		background: #f4f4f4;
+		box-shadow: 0 2px 5px rgba(51, 51, 51, 0.4);
+		transform: translate3d(-315px,0,0);
+		overflow: auto;
+		z-index: 200;
+		transition: transform 0.3s ease;
+		&.is-visible {
+			transform: translate3d(0,0,0); 
+		} 
+	}
+	@include r($mob) {
+		width: 100%;
+		opacity: 0;
+		visibility: hidden;
+		transform: translate3d(0,0,0);
+		transition: opacity 0.2s ease, visibility 0.2s ease;
+		&.is-visible {
+			opacity: 1;
+			visibility: visible; 
+		} 
+	}
+	&__option {
+		float: left;
+		@include r($tablet) {
+			float: none; 
+		}
+		&:first-child {
+			.nav__link {
+				padding-left: 0;
+				@include r($tablet) {
+					padding-left: 20px; 
+				} 
+			} 
+		} 
+	}
+	&__link {
+		display: block;
+		padding: 20px 10px;
+		text-decoration: none;
+		color: red;
+		line-height: 1.7;
+		// @include hover {
+		// 	text-decoration: underline; 
+		// }
+		@include r($tablet) {
+			padding: 5px 20px;
+			line-height: 1.67; 
+		}
+	}
+	&__desktop {
+		@include r($tablet) {
+			display: none; 
+			}
+		}
+	&__mobile {
+		display: none;
+		@include r($tablet) {
+			display: block; 
+		}
+	}
+	&__categories {
+		background: $white;
+		padding: 20px 20px 35px; 
+	}
+	&__refs {
+		padding: 30px 20px 20px; 
+	}
+	.title-h2 {
+		text-align: left;
+		color: $black;
+		line-height: 1.25; 
+	} 
+}

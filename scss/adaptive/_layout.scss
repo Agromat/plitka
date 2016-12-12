@@ -1,5 +1,8 @@
 body{
     min-width: 0; 
+    &.is-overflow{
+        overflow: hidden;
+    }
 }
 
 .hidden-sm{
@@ -83,9 +86,18 @@ body{
         }
         &.info{
             width: 42%;
+            @include r($tablet) {
+                max-width: 350px;
+                width: 100%;
+                @include hcenter();
+            }
         }
         &.common-bl{
             width: 33%;
+            @include r($tablet) {
+                width: auto;
+                padding-left: 30px;
+            }
         }
     }
 }
@@ -106,6 +118,9 @@ body{
             display: none;
         }
     }
+    @include r($tablet) {
+        padding-left: 0;
+    }
     @include r($mob) {
         display: none;
     }
@@ -123,101 +138,16 @@ body{
     }
 }
 
-// main search field
-.search {
-    height: 38px;
-    margin-bottom: rem-calc(10);
-    // overflow: hidden;
-    font-size: 0;
-    @include r($tablet) {
-        position: absolute;
-        left: rem-calc(25);
-        right: rem-calc(25);
-        bottom: rem-calc(10);
-        // width: 100%;
-        height: 30px;
-        margin-bottom: 0;
-    }
-    @include r($mob) {
-        left: rem-calc(10);
-        right: rem-calc(10);
-    }
-    &__input{ 
-        position: absolute;
-        top: 0;
-        right: rem-calc(112);
-        // transform: translate3d(50%,0,0);
-        width: 200px;
-        color: #999;
-        font-size: 0.875rem;
-        padding: 0.5rem 0.625rem;
-        line-height: 19px;
-        border: 0.0625rem solid #abadb3;
-        border-right: 0;
-        transition: all .2s;
-        &:active,
-        &:hover,
-        &:focus{
-            color: $ddgray;
-            outline: none;
-            z-index: 1;
-            -webkit-box-shadow: 0px 0px 6px 1px rgba(94, 185, 255, 0.5);
-               -moz-box-shadow: 0px 0px 6px 1px rgba(94, 185, 255, 0.5);
-                    box-shadow: 0px 0px 6px 1px rgba(94, 185, 255, 0.5);
-        }
-        &:focus{
-            width: 400px;
-        }
-        @include r($tablet) {
-            padding: rem-calc(5) rem-calc(10);
-            right: 0;
-            left: 0;
-            width: 100%;
-            &:focus{
-                width: 100%
-            }
-        }
-    }
-
-    &__btn{
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 2;
-        width: 7.875rem;
-        background: #f4f4f4;
-        color: #333;
-        font-size: 0.875rem;
-        font-weight: 700;
-        line-height: 1.1875rem;
-        padding: 0.5rem 0.3125rem;
-        border: 0.0625rem solid #abadb3;
-        -webkit-box-shadow: 4px 0px 6px 1px #f4f4f4;
-               -moz-box-shadow: 4px 0px 6px 1px #f4f4f4;
-                    box-shadow: 4px 0px 6px 1px #f4f4f4;
-        &:active,
-        &:hover,
-        &:focus{
-            color: $ddgray;
-            outline: 1px solid $ddgray;
-            outline-offset: -1px;
-        }
-        @include r($tablet) {
-            padding: rem-calc(5) rem-calc(10);
-        }
-    }
-}
 
 // basket block from header
 .basket-sm {
 
     float: right;
-    padding: rem-calc(50) 0 0;
-    width: auto;
-    // width: rem-calc(380);
+    max-width: rem-calc(280);
+    width: 100%;
     // padding-left: rem-calc(60);
     @include r($tablet) {
-        padding: 0;
+        width: auto;
     }
     @include r($mob) {
         display: none;
@@ -239,9 +169,9 @@ body{
     > div{
         position: relative;
         display: table;
-        // min-width: rem-calc(280);
+        width: 100%;
         margin-left: auto;
-        margin-right: auto;
+        // margin-right: auto;
         border: rem-calc(1) solid $border;
         text-align: center;
         // padding-bottom: 10px;
@@ -289,17 +219,13 @@ body{
             }
         }
         .money {
-            display: inline-block;
-            padding-left: 0;
-            padding-right: 1.55rem;
             margin: 0;
+            padding-bottom: rem-calc(10);
             vertical-align: middle;
             color: $ddgray;
             font-size: rem-calc(31);
             line-height: rem-calc(35);
-            padding-right: rem-calc(25);
-            /* padding-left: rem-calc(13); */
-            font-weight: 700;                   
+            font-weight: 700;
             margin-bottom: 0;
             @include r($tablet) {
                 font-size: rem-calc(18);
@@ -325,43 +251,47 @@ body{
             }
         }
     }
-    .icon-basket {
-        display: none;
-        @include r($tablet) {
-            display: inline-block;
-            width: 24px;
-            height: 22px;
-            padding-right: rem-calc(35);
-            vertical-align: sub;
-            background-image:  url("../img/basket.png");
-            background-repeat: no-repeat;
-            background-position: -31px -5px;
-        }
-        @include r($mob) {
-            background-position: -5px -5px;
-            width: 16px;
-            height: 14px;
-        }
+}
+
+.icon-basket {
+    display: none;
+    @include r($tablet) {
+        display: inline-block;
+        width: 24px;
+        height: 22px;
+        padding-right: rem-calc(30);
+        vertical-align: sub;
+        background-image:  url("../img/addicons.png");
+        background-repeat: no-repeat;
+        background-position: -31px -5px;
+    }
+    @include r($mob) {
+        background-position: -5px -5px;
+        width: 17px;
+        height: 14px;
+        vertical-align: baseline;
+        padding-right: 0;
     }
 }
+
 
 // contact info between logo and search
 .info {
 // width: rem-calc(519);
     font-size: 0;
-    @include clearfix;
     @include r($mob) {
         display: none;
     }
     &__inner{
-        padding-top: 15px;
+        position: relative;
+        @include clearfix;
         @include r($desktop-m){
-            padding: 15px 0 30px;
+            padding: 0 0 30px;
         }
         @include r($tablet) {
-            padding-top: 0;
-            width: rem-calc(200);
-            margin: 0 auto;
+            padding: 0 10px;
+            // width: rem-calc(200);
+            // margin: 0 auto;
         }
     }
     &__items{
@@ -369,24 +299,32 @@ body{
         vertical-align: top;
         width: 33%;
         margin-bottom: 10px;
+        &.search{
+            width: 100%;
+        }
         @include r($desktop-m) {
             padding: 0 10px;
             &.callback{
-                width: 50%;
+                width: 58%;
             }
             &.phone{
                 width: 50%;
             }
             &.schedule{
-                width: 50%;
+                width: 42%;
             }
         }
         @include r($tablet) {
+            padding: 0;
             &.callback, &.phone{
                 width: 100%;
+                float: left;
             }
             &.schedule{
                 display: none;
+            }
+            &.search{
+                width: auto;
             }
         }
     }
@@ -400,6 +338,9 @@ body{
     }
     .phone{
         float: left;
+        @include r($tablet) {
+            margin: 7px 5px 5px 0;
+        }
         .tel{
             color: $ddgray;
             font-size: rem-calc(18);
@@ -420,20 +361,23 @@ body{
     }
     .callback {
         float: left;
+        padding-left: rem-calc(30);
         font-size: rem-calc(13);
         margin-top: rem-calc(-4);
-        // padding-left: rem-calc(20);
         @include r($desktop-m){
             float: none;
-            display: block;
+            // display: block;
+            margin-bottom: rem-calc(20);
+            padding-left: 10px;
         }
-        @include r(tablet) {
-            display: none;
+        @include r($tablet) {
+            padding-left: 0;
         }
-    }
+    } 
     .schedule {
         float: right;
         margin-top: rem-calc(-4);
+        padding-left: 30px;
         // padding-left: rem-calc(9);
         // width: 135px;
         p{
@@ -485,4 +429,104 @@ body{
             }
         } 
     }
+    .search {
+        height: 38px;
+        margin-bottom: rem-calc(10);
+        // overflow: hidden;
+        font-size: 0;
+        @include r($tablet) {
+            position: absolute;
+            top: 7px;
+            right: 0;
+            padding: 0;
+            width: 340px;
+        }
+        @include r($mob) {
+            left: rem-calc(10);
+            right: rem-calc(10);
+        }
+        &__input{ 
+            // position: absolute;
+            // top: 0;
+            // right: rem-calc(112);
+            // transform: translate3d(50%,0,0);
+            width: calc(100% - 125px);
+            color: #999;
+            font-size: 0.875rem;
+            padding: 0.5rem 0.625rem;
+            line-height: 19px;
+            border: 0.0625rem solid #abadb3;
+            border-right: 0;
+            transition: all .2s;
+            &:active,
+            &:hover,
+            &:focus{
+                color: $ddgray;
+                outline: none;
+                z-index: 1;
+                -webkit-box-shadow: 0px 0px 6px 1px rgba(94, 185, 255, 0.5);
+                   -moz-box-shadow: 0px 0px 6px 1px rgba(94, 185, 255, 0.5);
+                        box-shadow: 0px 0px 6px 1px rgba(94, 185, 255, 0.5);
+            }
+            // &:focus{
+            //     width: 400px;
+            // }
+            @include r($tablet) {
+                position: absolute;
+                top: 0;
+                width: 115px;
+                padding: rem-calc(10) rem-calc(10) rem-calc(11);
+                right: 40px;
+                &:focus{
+                    width: 300px;
+                }
+            }
+        }
+
+        &__btn{
+            z-index: 2;
+            width: rem-calc(125);
+            background: #f4f4f4;
+            color: #333;
+            font-size: 0.875rem;
+            font-weight: 700;
+            line-height: 1.1875rem;
+            padding: 0.5rem 0.3125rem;
+            border: 0.0625rem solid #abadb3;
+            -webkit-box-shadow: 4px 0px 6px 1px #f4f4f4;
+                   -moz-box-shadow: 4px 0px 6px 1px #f4f4f4;
+                        box-shadow: 4px 0px 6px 1px #f4f4f4;
+            &:active,
+            &:hover,
+            &:focus{
+                color: $ddgray;
+                outline: 1px solid $ddgray;
+                outline-offset: -1px;
+            }
+            @include r($tablet) {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: rem-calc(42);
+                height: rem-calc(42);
+                vertical-align: top;
+                font-size: 0;
+                line-height: 0;
+                padding: rem-calc(5) rem-calc(10);
+            }
+            .icon-search {
+                display: none;
+                width: 20px;
+                height: 20px;
+                margin-left: rem-calc(-2);
+                background-image:  url("../img/addicons.png");
+                background-repeat: no-repeat;
+                background-position: -125px -5px;
+                @include r($tablet) {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
 }

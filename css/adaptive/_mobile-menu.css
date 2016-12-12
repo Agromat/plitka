@@ -1,0 +1,8 @@
+.mob-menu {
+  background-color: #f4f4f4;
+  box-shadow: 0.5px 0.9px 5px rgba(34, 31, 31, 0.25);
+}
+.mob-menu__inner {
+  height: 40px;
+  padding: 0 10pxvv;
+}

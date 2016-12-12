@@ -31,6 +31,93 @@
 
     jQuery.fn.exists = function(){return this.length>0;}
 
+    // open/close mobile menu
+    class Navigation {
+      constructor(el) {
+        this.el = $(el);
+        this.btn = this.el.find('.js-nav-btn');
+        this.nav = this.el.find('.js-mob-nav');
+
+        $(window).resize(() => {
+          this._hideNavOnResize();
+        });
+      }
+
+      _showNav() {
+        this.btn.click((e) => {
+          e.preventDefault();
+
+          this.btn.toggleClass('is-active');
+          this.el.toggleClass('is-active');
+          this.nav.toggleClass('is-visible');
+          var scrollWidth = detectScrollWidth();
+
+          if ( this.nav.hasClass('is-visible') ) {
+            $('body')
+              .addClass('is-overflow')
+              .css('padding-right', scrollWidth + 'px');
+          } else {
+            $('body')
+              .removeClass('is-overflow')
+              .removeAttr('style');
+          }
+        });
+      }
+
+      _hideNavOnClick() {
+        $('body').click((e) => {
+          if ( !$(e.target).closest(this.btn).length && !$(e.target).is(this.nav) ) {
+            this._hideNav();
+          }
+        });
+      }
+
+      _hideNavOnResize() {
+        if ( $(window).width() > 1280 && this.nav.hasClass('is-visible') ) {
+          this._hideNav();
+        }
+      }
+
+      _hideNav() {
+        this.btn.removeClass('is-active');
+        this.el.removeClass('is-active');
+        this.nav.removeClass('is-visible');
+        $('body')
+          .removeClass('is-overflow')
+          .removeAttr('style');
+      }
+
+      init() {
+        this._showNav();
+        this._hideNavOnClick();
+      }
+    }
+
+    new Navigation('.js-top-nav').init();
+
+    // detect scrollWidth
+    function detectScrollWidth() {
+      let outer = $('<div class="outer">')
+                .css({ visibility: 'hidden', width: 100, overflow: 'scroll' })
+                .appendTo('body'),
+         inner = $('<div>')
+                .css({width: '100%'})
+                .appendTo(outer)
+                .outerWidth();
+
+      outer.remove();
+      return 100 - inner;
+    }
+
+    // detect touch
+    let isTouchDevice = () => { 'ontouchstart' in window };
+    if ( !isTouchDevice() ) { $('body').addClass('no-touch') };
+
+
+
+
+
+
     if ($('.orbit-container').exists()) {
 
       // добавляем в контейнер к слайдеру иконку с зумом
