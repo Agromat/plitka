@@ -1,0 +1,120 @@
+.tab-menu{
+    display: none;
+    @include r($mob){
+        display: block;
+    }
+}
+
+.tab{
+    border: 1px solid $border;
+    &__list{
+        margin: 0;
+        font-size: 0;
+        list-style-type: none;
+    }
+    &__option{
+        position: relative;
+        border-bottom: 1px solid $border;
+        list-style-type: none;
+        background-color: $pblue;
+        &.has-navdrop {
+           .nav__link {
+              padding: rem-calc(8) rem-calc(18);
+           }
+        }
+    }
+    &__link{
+        position: relative;
+        display: block;
+        padding: rem-calc(12) rem-calc(18) rem-calc(12) rem-calc(20);
+        font-size: rem-calc(14);
+        color: $blue;
+        line-height: rem-calc(16);
+        font-weight: 700;
+        text-decoration: none;
+        z-index: 1;
+        &:after {
+          content: "";
+          display: none;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: $blue;
+          z-index: -1;
+        }
+        &.is-active {
+            color: $white;
+            &:after {
+              display: block;
+            }
+            .icon-arr-down {
+                background-position: -146px -5px;
+            }
+        }
+        &:hover{
+            span{
+                border-bottom: none;
+            }
+        }
+    }
+    .icon-arr-down {
+        position: absolute;
+        top: 50%;
+        right: rem-calc(15);
+        margin-top: -3px;
+        width: 11px;
+        height: 6px;
+        background-image: url("../img/addicons.png");
+        background-position: -125px -5px;
+        
+        // background-position: -146px -5px;
+    }
+}
+
+.tabdrop{
+    display: none;
+    margin-left: 0;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: none;
+    border-radius: 0;
+    background: #FFF;
+    font-size: 18px;
+    -webkit-transition: opacity 0.2s ease, visibility 0.2s ease;
+       -moz-transition: opacity 0.2s ease, visibility 0.2s ease;
+        -ms-transition: opacity 0.2s ease, visibility 0.2s ease;
+         -o-transition: opacity 0.2s ease, visibility 0.2s ease;
+            transition: opacity 0.2s ease, visibility 0.2s ease;
+    &.is-active {
+      display: block;
+      opacity: 1;
+      visibility: visible;
+    }
+    &__option{
+        position: relative;
+        border-bottom: 1px solid #e5e5e5;
+        list-style-type: none;
+        &:last-child {
+          border-bottom: none;
+        }
+    }
+    &__link{
+        position: relative;
+        display: block;
+        padding: rem-calc(12) rem-calc(18) rem-calc(11) rem-calc(25);
+        color: $ddgray;
+        font-weight: 400;
+        line-height: rem-calc(17);
+        font-size: rem-calc(13);
+        text-decoration: underline;
+        &:hover,
+        &:focus{
+            color: $ddgray;
+            span{
+                border-bottom: none;
+            }
+        }
+    }
+}

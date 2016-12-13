@@ -1,6 +1,9 @@
 .menu-nav{
 	a{
 		color:$white;
+		@include r($mob){
+			color: $ddgray;
+		}
 		span{
 			border-bottom: 1px solid $blue;
 		}
@@ -287,6 +290,9 @@
 	//margin-bottom: 20px;
 	background:$lblue;
 	position: relative;
+	@include r($mob){
+		display: none;
+	}
 	.menu-catalog-drop {
 		top: 100%;
 	}

@@ -54,7 +54,11 @@
 					border-bottom-color: $ddgray;
 				}*/
 			}
-
+		}
+		.tab__link {
+			&.is-active{
+				color: $white;
+			}
 		}
 
 	}
