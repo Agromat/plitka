@@ -1,4 +1,14 @@
 @charset "UTF-8";
+.main-container{
+	.row{
+		&.product-item-wrap{
+			margin: 0 -10px;
+			@include r($mob){
+				margin: 0;
+			}
+		}
+	}
+}
 .menu-nav {
 	position: relative;
 	z-index: 200;
@@ -473,6 +483,14 @@ ul.pagination{
 	position: relative;
 	z-index: 1;
 	clear: both;
+	@include r($mob){
+		margin-top: 50px;
+	}
+	&.all-products{
+		@include r($mob){
+			display: none;
+		}
+	}
 	&.no-hover {
 		.blog-article {
 			&.desk-visible {
@@ -489,6 +507,9 @@ ul.pagination{
 		margin: 0 -20px;
 		@include r($tablet){
 			margin: 0 -10px;
+		}
+		@include r($mob){
+			margin: 0;
 		}
 		.slick-prev {
 			right: 55px;
@@ -536,6 +557,12 @@ ul.pagination{
 	.sort {
 		float: right;
 		margin-right: 95px;
+		@include r($desktop-m){
+			float: left;
+		}
+		@include r($mob){
+			display: none;
+		}
 	}
 	.sort_left {
 		float: none;
@@ -670,6 +697,10 @@ ul.pagination{
 			padding: 10px 20px 15px 20px;
 			border: 1px solid transparent;
 			margin-right: 7px;
+			@include r($mob){
+				max-width: 120px;
+				padding: 10px 10px 15px 10px;
+			}
 			&.desk-visible{
 				.btn, .link, .deskript{
 					display: block !important;
@@ -683,6 +714,7 @@ ul.pagination{
 				margin-bottom: 10px;
 				text-align: center;
 				img{
+					border: 1px solid #000;
 					margin: 0 auto;
 				}
 				.sticker span{
@@ -690,6 +722,9 @@ ul.pagination{
 				}
 			}
 			.desckription{
+				@include r($mob){
+					max-width: 120px;
+				}
 				.title{
 					font-size: 13px;
 					font-weight: 700;
@@ -813,6 +848,12 @@ footer{
 	font-size: 13px;
 	color: $ddgray;
 	text-align: center;
+	@include r($tablet){
+		margin-top: 0;
+		padding-top: 30px;
+		padding-bottom: 0;
+		background: $white;
+	}
 	&.footer-copyright{
 		padding-top:57px;
 		padding-bottom:100px;
@@ -885,39 +926,39 @@ footer{
 					}
 					color: $blue;
 				}
-				.wrk{
-					color: $ddgray;
-					font-size: 13px;
-					line-height: 13px;
-					margin-right: 8px;
-					sup{
-						top:-4px;
-					}
-					.day{
-						text-transform: uppercase;
-						padding: 2px 6px;
-						border: 1px solid #3e3e3e;
-						-webkit-border-radius: 2px;
-						-moz-border-raius: 2px;
-						border-radius: 2px;
-					}
-				}
-				.wek{
-					color: $red;
-					font-size: 13px;
-					line-height: 13px;
-					sup{
-						top:-4px;
-					}
-					.end{
-						text-transform: uppercase;
-						padding: 2px 6px;
-						border: 1px solid $red;
-						-webkit-border-radius: 2px;
-						-moz-border-raius: 2px;
-						border-radius: 2px;
-					}
-				}
+				// .wrk{
+				// 	color: $ddgray;
+				// 	font-size: 13px;
+				// 	line-height: 13px;
+				// 	margin-right: 8px;
+				// 	sup{
+				// 		top:-4px;
+				// 	}
+				// 	.day{
+				// 		text-transform: uppercase;
+				// 		padding: 2px 6px;
+				// 		border: 1px solid #3e3e3e;
+				// 		-webkit-border-radius: 2px;
+				// 		-moz-border-raius: 2px;
+				// 		border-radius: 2px;
+				// 	}
+				// }
+				// .wek{
+				// 	color: $red;
+				// 	font-size: 13px;
+				// 	line-height: 13px;
+				// 	sup{
+				// 		top:-4px;
+				// 	}
+				// 	.end{
+				// 		text-transform: uppercase;
+				// 		padding: 2px 6px;
+				// 		border: 1px solid $red;
+				// 		-webkit-border-radius: 2px;
+				// 		-moz-border-raius: 2px;
+				// 		border-radius: 2px;
+				// 	}
+				// }
 			}
 		}
 		li{

@@ -487,24 +487,35 @@
     
       <section class="main-container">
       <!-- BEGIN MAIN SLIDER  -->
-      <div class="row collapse">
+      <!-- !! change some inner blocks in main slider -->
+      <!-- !! add className: row_slider in wrap for main slider -->
+      <div class="row row_slider collapse">
         <div class="column medium-12 slider slider_no_border" >
 
         <ul data-orbit data-options="bullets:true;timer:true;pause_on_hover:false; timer_speed:5000;">
-          <li data-orbit-slide="slide-1">
-          <a href="#">
-            <img src="img/slider/slide.jpg" alt="slide 1" />
-          </a>
+          <!-- !! add class for slide -->
+          <li class="orbit-slide" data-orbit-slide="slide-1">
+            <a href="#">
+              <!-- !! add class for img -->
+              <div class="orbit-img" style="background-image: url(img/slider/slide.jpg); alt="slide 1"></div>
+              <!-- <img src="img/slider/slide.jpg" alt="slide 1" /> -->
+            </a>
           </li>
-          <li data-orbit-slide="slide-2" class="active">
-          <a href="#">
-            <img src="img/slider/slide.jpg" alt="slide 2" />
-          </a>
+          <!-- !! add class for slide -->
+          <li class="orbit-slide" data-orbit-slide="slide-2" class="active">
+            <a href="#">
+              <!-- !! add class for img -->
+              <div class="orbit-img" style="background-image: url(img/slider/slide.jpg); alt="slide 2"></div>
+              <!-- <img src="img/slider/slide.jpg" alt="slide 2" /> -->
+            </a>
           </li>
-          <li data-orbit-slide="slide-3">
-          <a href="#">
-            <img src="img/slider/slide.jpg" alt="slide 3" />
-          </a>
+          <!-- !! add class for slide -->
+          <li class="orbit-slide" data-orbit-slide="slide-3">
+            <a href="#">
+              <!-- !! add class for img -->
+              <div class="orbit-img" style="background-image: url(img/slider/slide.jpg); alt="slide 3"></div>
+              <!-- <img src="img/slider/slide.jpg" alt="slide 3" /> -->
+            </a>
           </li>
         </ul>
 
@@ -1036,7 +1047,8 @@
         </div>
       </div>
 
-       <div class="other-products header-box is-no-margin">
+        <!-- !! add new className: all-products -->
+       <div class="other-products all-products header-box is-no-margin">
         <div class="row not-collapse">
         <h6 class="title title_bold">Все товары нашего каталога</h6>
         <div class="catalog-list-group">
@@ -1243,96 +1255,150 @@
   </div>
 
   <footer>
-  <div class="row collapse link-footer">
-    <div class="column medium-2">
-    <p class="title">О компании</p>a
-    <ul class="list">
-      <li><a href="#" class="link"><span>История</span></a></li>
-      <li><a href="#" class="link"><span>Отчетность компании</span></a></li>
-      <li><a href="#" class="link"><span>Вакансии</span></a></li>
-      <li><a href="#" class="link"><span>Видео</span></a></li>
-    </ul>
-    </div>
-    <div class="column medium-2">
-    <p class="title">Каталог товаров</p>
-    <ul class="list">
-      <li><a href="#" class="link"><span>Плитка</span></a></li>
-      <li><a href="#" class="link"><span>Сантехника</span></a></li>
-      <li><a href="#" class="link"><span>Напольное покрытие</span></a></li>
-      <li><a href="#" class="link"><span>Обои</span></a></li>
-      <li><a href="#" class="link"><span>Отопление</span></a></li>
-      <li><a href="#" class="link"><span>Освещение</span></a></li>
-      <li><a href="#" class="link"><span>Бассейны</span></a></li>
-      <li><a href="#" class="link"><span>Инструменты</span></a></li>
-      <li><a href="#" class="link"><span>Аксессуары</span></a></li>
-    </ul>
-    </div>
-    <div class="column medium-2">
-    <p class="title">Торговые марки</p>
-    <ul class="list">
-      <li><a href="#" class="link"><span>Сантехника</span></a></li>
-      <li><a href="#" class="link"><span>Плитка</span></a></li>
-      <li><a href="#" class="link"><span>Освещение и мебель</span></a></li>
-      <li><a href="#" class="link"><span>Строительная химия</span></a></li>
-      <li><a href="#" class="link"><span>Кухни</span></a></li>
-      <li><a href="#" class="link"><span>Паркет</span></a></li>
-    </ul>
-    </div>
-    <div class="column medium-2">
-    <p class="title">Интернет-магазин</p>
-    <ul class="list">
-      <li><a href="#" class="link"><span>Доставка и оплата</span></a></li>
-      <li><a href="#" class="link"><span>Контакты</span></a></li>
-      <li><a href="#" class="link"><span>Гарантия</span></a></li>
-      <li><a href="#" class="link"><span>Обратная связь</span></a></li>
-      <li><a href="#" class="link"><span>Личный кабинет</span></a></li>
-    </ul>
-    </div>
-    <div class="column medium-4 contact">
-    <p class="title">Наши контакты</p>
-    <ul class="contact">
-      <li>
-      <p>Телефон:</p>
-      <p><b>8 (044) 392-29-41</b></p>
-      </li>
-      <li>
-      <p>Адрес магазина:</p>
-      <p>Киев, просп. Победы, 89а <br><a href=""><span>карта проезда</span></a></p>
-      </li>
-      <li>
-      <p>Email: </p>
-      <p><a href="mailto:shop@agromat.ua"><span>shop@agromat.ua</span></a></p>
-      </li>
-      <li>
-      <p>Время работы: </p>
-      <p>
-        <span class="wrk">
-        <span class="day">пн-пт</span>
-        09<sup>00</sup>..21<sup>00</sup>
-        </span>
+    <!-- !! add className: footer with modificator - footer-desktop for desktop version footer -->
+    <div class="footer footer_desktop">
+      <div class="row collapse link-footer">
+        <div class="column medium-2">
+        <p class="title">О компании</p>
+        <ul class="list">
+          <li><a href="#" class="link"><span>История</span></a></li>
+          <li><a href="#" class="link"><span>Отчетность компании</span></a></li>
+          <li><a href="#" class="link"><span>Вакансии</span></a></li>
+          <li><a href="#" class="link"><span>Видео</span></a></li>
+        </ul>
+        </div>
+        <div class="column medium-2">
+        <p class="title">Каталог товаров</p>
+        <ul class="list">
+          <li><a href="#" class="link"><span>Плитка</span></a></li>
+          <li><a href="#" class="link"><span>Сантехника</span></a></li>
+          <li><a href="#" class="link"><span>Напольное покрытие</span></a></li>
+          <li><a href="#" class="link"><span>Обои</span></a></li>
+          <li><a href="#" class="link"><span>Отопление</span></a></li>
+          <li><a href="#" class="link"><span>Освещение</span></a></li>
+          <li><a href="#" class="link"><span>Бассейны</span></a></li>
+          <li><a href="#" class="link"><span>Инструменты</span></a></li>
+          <li><a href="#" class="link"><span>Аксессуары</span></a></li>
+        </ul>
+        </div>
+        <div class="column medium-2">
+        <p class="title">Торговые марки</p>
+        <ul class="list">
+          <li><a href="#" class="link"><span>Сантехника</span></a></li>
+          <li><a href="#" class="link"><span>Плитка</span></a></li>
+          <li><a href="#" class="link"><span>Освещение и мебель</span></a></li>
+          <li><a href="#" class="link"><span>Строительная химия</span></a></li>
+          <li><a href="#" class="link"><span>Кухни</span></a></li>
+          <li><a href="#" class="link"><span>Паркет</span></a></li>
+        </ul>
+        </div>
+        <div class="column medium-2">
+        <p class="title">Интернет-магазин</p>
+        <ul class="list">
+          <li><a href="#" class="link"><span>Доставка и оплата</span></a></li>
+          <li><a href="#" class="link"><span>Контакты</span></a></li>
+          <li><a href="#" class="link"><span>Гарантия</span></a></li>
+          <li><a href="#" class="link"><span>Обратная связь</span></a></li>
+          <li><a href="#" class="link"><span>Личный кабинет</span></a></li>
+        </ul>
+        </div>
+        <div class="column medium-4 contact">
+        <p class="title">Наши контакты</p>
+        <ul class="contact">
+          <li>
+          <p>Телефон:</p>
+          <p><b>8 (044) 392-29-41</b></p>
+          </li>
+          <li>
+          <p>Адрес магазина:</p>
+          <p>Киев, просп. Победы, 89а <br><a href=""><span>карта проезда</span></a></p>
+          </li>
+          <li>
+          <p>Email: </p>
+          <p><a href="mailto:shop@agromat.ua"><span>shop@agromat.ua</span></a></p>
+          </li>
+          <li>
+          <p>Время работы: </p>
+          <!-- !! change tag "p"->"div" with className: work-schedule -->
+          <!-- !! change change inner structure this block -->
+          <div class="work-schedule">
+            <span class="wrk">
+              <span class="day">пн-пт</span>
+              09<sup>00</sup>-21<sup>00
+            </sup>
+            </span>
 
-        <span class="wek">
-        <span class="end">сб-вс</span>
-        10<sup>00</sup>-18<sup>00</sup>
-        </span>
-      </p>
-      </li>
-    </ul>
-    </div>
-  </div>
+            <span class="wrk wrk_wek">
+              <span class="day day_end">сб-вс</span>
+              10<sup>00</sup>-18<sup>00</sup>
+            </span>
+          </div>
+          </li>
+        </ul>
+        </div>
+      </div>
 
-  <div class="row collapse">
-    <div class="column medium-6">
-    <img src="img/fb.png" alt="alt img">
-    </div>
-    <div class="column medium-6">
-    <img src="img/fb.png" alt="alt img">
-    </div>
-  </div>
+      <div class="row collapse">
+        <div class="column medium-6">
+        <img src="img/fb.png" alt="alt img">
+        </div>
+        <div class="column medium-6">
+        <img src="img/fb.png" alt="alt img">
+        </div>
+      </div>
 
-  <div class="row collapse">
-    <p class="copyright">© Агромат, 2007–2014. Керамическая плитка и сантехника. При копировании материалов ссылка на сайт обязательна. Мобильная версия сайта</p>
-  </div>
+      <div class="row collapse">
+        <p class="copyright">© Агромат, 2007–2014. Керамическая плитка и сантехника. При копировании материалов ссылка на сайт обязательна. Мобильная версия сайта</p>
+      </div>
+    </div>
+
+    <!-- !! new block footer with modificator footer_mobile for tab & mobile -->
+    <div class="footer footer_mobile">
+      <div class="row collapse">
+        <div class="footer-top">
+          <div class="work-schedule">
+            <span class="wrk">
+              <span class="day">пн-пт</span>
+              09<sup>00</sup>-21<sup>00
+            </sup>
+            </span>
+
+            <span class="wrk wrk_wek">
+              <span class="day day_end">сб-вс</span>
+              10<sup>00</sup>-18<sup>00</sup>
+            </span>
+          </div>
+            
+          <div class="footer-nav">
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item">
+                <a href="" class="footer-nav__link">О магазине</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="" class="footer-nav__link">Доставка и оплата</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="" class="footer-nav__link">Контакты</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="" class="footer-nav__link">Гарантия</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="" class="footer-nav__link">Обратная связь</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-copy">
+            <p class="copyright">© Plitka.kiev.ua, 2007–2016. <span class="copyright_text">Керамическая плитка и сантехника.</span></p>
+          </div>
+          <div class="footer-link-site">
+            <a href="">Полная версия сайта</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
 
 
@@ -1373,7 +1439,7 @@
 <!-- btn_color=blue/light_blue/violet/red/pink/grass_green/turquoise -->
 <!-- force_open=1 - окно откроется сразу при появлении кнопки -->
 
-<!-- <script type="text/javascript" charset="utf-8" src="https://callmenow.com.ua/client_site.js?btn_color=red&u_id=383&x_gr=right&y_gr=bottom"></script><!-- конец кода, который вставляется перед закрывающим тегом </BODY> --> -->
+<!-- <script type="text/javascript" charset="utf-8" src="https://callmenow.com.ua/client_site.js?btn_color=red&u_id=383&x_gr=right&y_gr=bottom"></script><!-- конец кода, который вставляется перед закрывающим тегом </BODY> -->
 
   </body>
 </html>

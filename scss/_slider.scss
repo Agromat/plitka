@@ -1,127 +1,174 @@
-			.slider{
-				padding-top: rem-calc(10);
-				&.slider_no_border {
-					//margin-bottom: 50px;
-					.orbit-container{
-						padding: 0;
-						border:0;
-					}
-				}
-				.orbit-container{
-					//background: #f7f7f7;
-					padding: 10px;
-					border:1px solid #c7c7c7;
-					.zoom{
-						position: absolute;
-						right: 10px;
-						bottom: 10px;
-						width: 32px;
-						height: 33px;
-						display: block;
-						z-index: 11;
-						cursor: pointer;
-						background: url("../img/zoom.png") 0 0 no-repeat
-					}
-				}
-				.thumbnail{
-					@include clearfix();
-					margin: 0;
-					padding-top: rem-calc(15);
-					a{
-						position: relative;
-						float: left;
-						margin-right: rem-calc(10);
-						&:last-child{
-							margin-right:0;
-						}
-						img{
-							width: rem-calc(80);
-							height: rem-calc(80);
-							border: rem-calc(5) solid $white;
-						}
-						&.active img{
-							border: rem-calc(5) solid $border-img;
-						}
-					}
-					.navigation{
-						float: right;
-						position: relative;
-						border: rem-calc(1) solid $border;
-						border-radius: rem-calc(4);
-						height: rem-calc(35);
-						-webkit-box-shadow: inset 0px -3px 0px 0px rgba(230, 232, 235, 1);
-						-moz-box-shadow:    inset 0px -3px 0px 0px rgba(230, 232, 235, 1);
-						box-shadow:         inset 0px -3px 0px 0px rgba(230, 232, 235, 1);
-						.icon{
-							background: none;
-							border: none;
-							outline:none;
-							&.orbit-prev{
-								border-right: rem-calc(1) solid $border;
-							}
-							margin: 0 auto;
-							width: rem-calc(35);
-							height: rem-calc(35);
-							&::before{
-								width: 15px;
-								height: 25px;
-								margin: 4px auto 4px;
-								
-							}
-						}
-					}
-				}
-				.scheme{
-					@include clearfix();
-					ul{
-						@include clearfix();
-						padding-top: rem-calc(17);
-						margin: 0;
-						li{
-							list-style: none;
-							width: 170px;
-							border: 1px solid $border;
-							padding: rem-calc(5);
-							.prewiev{
-								width: 70px;
-								overflow: hidden;
-								float: left;
-								position: relative;
-								img{
-									max-width: 70px;
-								}
-							}
-							.text{
-								position: relative;
-								margin-left: 70px;
-								font-size: rem-calc(13);
-								line-height: normal;
-								color: $blue;
-								padding-left: 10px;
-								display: table;
-								height: 70px;
-								text-align: center;
-								> *{
-									font-size: rem-calc(13);
-									color: $blue;
-									display: table-cell;
-									vertical-align: middle;
-								}
-								a{
-									color: $blue;
-									span{
-										border-bottom:1px solid $blue;
-									}
-									&:hover{
-										color: $ddgray;
-										span{
-											border-bottom:1px solid $ddgray;
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-
+.slider{
+	padding-top: rem-calc(10);
+	&.slider_no_border {
+		//margin-bottom: 50px;
+		.orbit-container{
+			padding: 0;
+			border:0;
+		}
+	}
+	.orbit-container{
+		padding: 10px;
+		border:1px solid #c7c7c7;
+		.zoom{
+			position: absolute;
+			right: 10px;
+			bottom: 10px;
+			width: 32px;
+			height: 33px;
+			display: block;
+			z-index: 11;
+			cursor: pointer;
+			background: url("../img/zoom.png") 0 0 no-repeat
+		}
+	}
+	.thumbnail{
+		@include clearfix();
+		margin: 0;
+		padding-top: rem-calc(15);
+		a{
+			position: relative;
+			float: left;
+			margin-right: rem-calc(10);
+			&:last-child{
+				margin-right:0;
 			}
+			img{
+				width: rem-calc(80);
+				height: rem-calc(80);
+				border: rem-calc(5) solid $white;
+			}
+			&.active img{
+				border: rem-calc(5) solid $border-img;
+			}
+		}
+		.navigation{
+			float: right;
+			position: relative;
+			border: rem-calc(1) solid $border;
+			border-radius: rem-calc(4);
+			height: rem-calc(35);
+			-webkit-box-shadow: inset 0px -3px 0px 0px rgba(230, 232, 235, 1);
+			-moz-box-shadow:    inset 0px -3px 0px 0px rgba(230, 232, 235, 1);
+			box-shadow:         inset 0px -3px 0px 0px rgba(230, 232, 235, 1);
+			.icon{
+				background: none;
+				border: none;
+				outline:none;
+				&.orbit-prev{
+					border-right: rem-calc(1) solid $border;
+				}
+				margin: 0 auto;
+				width: rem-calc(35);
+				height: rem-calc(35);
+				&::before{
+					width: 15px;
+					height: 25px;
+					margin: 4px auto 4px;
+					
+				}
+			}
+		}
+	}
+	.scheme{
+		@include clearfix();
+		ul{
+			@include clearfix();
+			padding-top: rem-calc(17);
+			margin: 0;
+			li{
+				list-style: none;
+				width: 170px;
+				border: 1px solid $border;
+				padding: rem-calc(5);
+				.prewiev{
+					width: 70px;
+					overflow: hidden;
+					float: left;
+					position: relative;
+					img{
+						max-width: 70px;
+					}
+				}
+				.text{
+					position: relative;
+					margin-left: 70px;
+					font-size: rem-calc(13);
+					line-height: normal;
+					color: $blue;
+					padding-left: 10px;
+					display: table;
+					height: 70px;
+					text-align: center;
+					> *{
+						font-size: rem-calc(13);
+						color: $blue;
+						display: table-cell;
+						vertical-align: middle;
+					}
+					a{
+						color: $blue;
+						span{
+							border-bottom:1px solid $blue;
+						}
+						&:hover{
+							color: $ddgray;
+							span{
+								border-bottom:1px solid $ddgray;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
+
+.main-section.catalog {
+	.main-container {
+		.row_slider{
+			@include r($mob) {
+				margin: 0 -10px;
+			}
+		}
+		.slider{
+			@include r($desktop-m) {
+				height: auto !important;
+			}
+			@include r($mob) {
+				margin-bottom: 20px;
+				padding-top: 0 !important;
+			}
+		}
+	}
+}
+
+// .column.medium-12.slider.slider_no_border{
+// }
+
+.orbit-slide{
+	position: relative;
+	height: 260px;
+	@include r($tablet) {
+		height: 192px;
+	}
+	@include r($mob) {
+		height: 178px;
+	}
+}
+.orbit-img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	@include r($mob) {
+		// background-image: url(img/slider/slide.jpg);
+		// background-size: cover;
+		// background-position: left center;
+	}
+}

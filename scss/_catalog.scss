@@ -112,8 +112,11 @@
 }
 .row.product-item-wrap {
 	margin-top: 40px;
-	margin-left: -10px !important;
+	// margin-left: -10px !important;
 	margin-bottom: 30px;
+	@include r($mob){
+		margin: 0 !important;
+	}
 	+ .other-products {
 		margin-top: 20px;
 	}
@@ -127,6 +130,9 @@
 		padding: 0 10px !important;
 		&:last-child {
 			float: left;
+		}
+		@include r($mob){
+			padding: 0 !important;
 		}
 	}
 }
