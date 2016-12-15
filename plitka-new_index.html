@@ -497,31 +497,66 @@
           <li class="orbit-slide" data-orbit-slide="slide-1">
             <a href="#">
               <!-- !! add class for img -->
-              <div class="orbit-img" style="background-image: url(img/slider/slide1.jpg); alt="slide 1"></div>
-              <!-- <img src="img/slider/slide.jpg" alt="slide 1" /> -->
+              <!-- <div class="orbit-img" style="background-image: url(img/slider/slide1.jpg); alt="slide 1"></div> -->
+              <figure>
+                 <picture>
+                   <source srcset="img/slider/slide1.jpg" media="(min-width: 768px)">                        
+                   <source srcset="img/slider/slide1-mob.jpg" media="(min-width: 320px)">                                                          
+                   <img src="img/slider/slide1.jpg" 
+                           alt="slide 1" 
+                           title="Заголовок изображения" />
+                  </picture>
+              </figure>
             </a>
           </li>
           <!-- !! add class for slide -->
           <li class="orbit-slide" data-orbit-slide="slide-2" class="active">
             <a href="#">
               <!-- !! add class for img -->
-              <div class="orbit-img" style="background-image: url(img/slider/slide2.jpg); alt="slide 2"></div>
+              <!-- <div class="orbit-img" style="background-image: url(img/slider/slide2.jpg); alt="slide 2"></div> -->
               <!-- <img src="img/slider/slide.jpg" alt="slide 2" /> -->
+              <figure>
+                 <picture>
+                   <source srcset="img/slider/slide2.jpg" media="(min-width: 768px)">                        
+                   <source srcset="img/slider/slide2-mob.jpg" media="(min-width: 320px)">                                                          
+                   <img src="img/slider/slide2.jpg" 
+                           alt="slide 2" 
+                           title="Заголовок изображения" />
+                  </picture>
+              </figure>
             </a>
           </li>
           <!-- !! add class for slide -->
           <li class="orbit-slide" data-orbit-slide="slide-3">
             <a href="#">
               <!-- !! add class for img -->
-              <div class="orbit-img" style="background-image: url(img/slider/slide3.jpg); alt="slide 3"></div>
+              <!-- <div class="orbit-img" style="background-image: url(img/slider/slide3.jpg); alt="slide 3"></div> -->
               <!-- <img src="img/slider/slide.jpg" alt="slide 3" /> -->
+              <figure>
+                 <picture>
+                   <source srcset="img/slider/slide3.jpg" media="(min-width: 768px)">                        
+                   <source srcset="img/slider/slide3-mob.jpg" media="(min-width: 320px)">                                                          
+                   <img src="img/slider/slide3.jpg" 
+                           alt="slide 3" 
+                           title="Заголовок изображения" />
+                  </picture>
+              </figure>
             </a>
           </li>
           <li class="orbit-slide" data-orbit-slide="slide-4">
             <a href="#">
               <!-- !! add class for img -->
-              <div class="orbit-img" style="background-image: url(img/slider/slide3.jpg); alt="slide 4"></div>
+              <!-- <div class="orbit-img" style="background-image: url(img/slider/slide3.jpg); alt="slide 4"></div> -->
               <!-- <img src="img/slider/slide.jpg" alt="slide 4" /> -->
+              <figure>
+                 <picture>
+                   <source srcset="img/slider/slide4.jpg" media="(min-width: 768px)">                        
+                   <!-- <source srcset="img/slider/slide4-mob.jpg" media="(min-width: 320px)">                                                           -->
+                   <img src="img/slider/slide4.jpg" 
+                           alt="slide 4" 
+                           title="Заголовок изображения" />
+                  </picture>
+              </figure>
             </a>
           </li>
         </ul>
@@ -961,7 +996,8 @@
         <h6 class="title title_bold">Популярные обзоры</h6>
         <div class="multiple-items js-multiple-items-1 insale">
           <div class="blog-article vertical">
-            <div class="column medium-6">
+          <!-- !! was deleted class: medium-6 -->
+            <div class="column column_blog-article">
               <a href="#">
                 <div class="img">
                   <div>
@@ -975,37 +1011,8 @@
                 </div>
               </a>
             </div>
-            <div class="column medium-6">
-              <a href="#">
-                <div class="img">
-                  <div>
-                  <img src="img/slider/tovar2.png">
-                  </div>
-                </div>
-
-                <div class="text">
-                  <div class="subtitle">Как покупка через корзину с помощью платежной карты!</div>
-                <p class="content">Прием платежей полностью реализован на нашем сайте и в сотрудничестве с ведущими банками.</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="blog-article vertical">
-            <div class="column medium-6">
-              <a href="#">
-                <div class="img">
-                  <div>
-                  <img src="img/slider/tovar2.png">
-                  </div>
-                </div>
-
-                <div class="text">
-                  <div class="subtitle">Как покупка через корзину с помощью платежной карты!</div>
-                <p class="content">Прием платежей полностью реализован на нашем сайте и в сотрудничестве с ведущими банками.</p>
-                </div>
-              </a>
-            </div>
-            <div class="column medium-6">
+            <!-- !! was deleted class: medium-6 -->
+            <div class="column column_blog-article">
               <a href="#">
                 <div class="img">
                   <div>
@@ -1021,7 +1028,8 @@
             </div>
           </div>
           <div class="blog-article vertical">
-            <div class="column medium-6">
+          <!-- !! was deleted class: medium-6 -->
+            <div class="column column_blog-article">
               <a href="#">
                 <div class="img">
                   <div>
@@ -1035,7 +1043,40 @@
                 </div>
               </a>
             </div>
-            <div class="column medium-6">
+            <!-- !! was deleted class: medium-6 -->
+            <div class="column column_blog-article">
+              <a href="#">
+                <div class="img">
+                  <div>
+                  <img src="img/slider/tovar2.png">
+                  </div>
+                </div>
+
+                <div class="text">
+                  <div class="subtitle">Как покупка через корзину с помощью платежной карты!</div>
+                <p class="content">Прием платежей полностью реализован на нашем сайте и в сотрудничестве с ведущими банками.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="blog-article vertical">
+          <!-- !! was deleted class: medium-6 -->
+            <div class="column column_blog-article">
+              <a href="#">
+                <div class="img">
+                  <div>
+                  <img src="img/slider/tovar2.png">
+                  </div>
+                </div>
+
+                <div class="text">
+                  <div class="subtitle">Как покупка через корзину с помощью платежной карты!</div>
+                <p class="content">Прием платежей полностью реализован на нашем сайте и в сотрудничестве с ведущими банками.</p>
+                </div>
+              </a>
+            </div>
+            <!-- !! was deleted class: medium-6 -->
+            <div class="column column_blog-article">
               <a href="#">
                 <div class="img">
                   <div>

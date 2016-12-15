@@ -1497,6 +1497,10 @@ ul.inline li {
   }
 }
 
+.slider figure {
+  margin: 1rem 0;
+}
+
 .orbit-slide {
   position: relative;
   height: 260px;
@@ -3773,7 +3777,22 @@ footer .row.link-footer .column:last-child {
 }
 .blog-article a {
   display: block;
-  padding: 20px 20px 23px 20px !important;
+  padding: 20px 20px 23px 20px;
+}
+@media only screen and (max-width: 767px) {
+  .blog-article a {
+    padding: 10px;
+    zoom: 1;
+  }
+  .blog-article a:before, .blog-article a:after {
+    content: "";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+  .blog-article a:after {
+    clear: both;
+  }
 }
 .blog-article .title {
   color: #4a5b70;
@@ -3820,23 +3839,53 @@ footer .row.link-footer .column:last-child {
   font-size: 14px;
   line-height: 19px;
 }
-.blog-article.vertical {
-  margin-top: 45px !important;
-  border-top: 1px solid #ddd;
-}
-.blog-article.vertical .column {
+.blog-article .column.column_blog-article {
   width: 48.47%;
 }
-.blog-article.vertical .img {
+@media only screen and (max-width: 767px) {
+  .blog-article .column.column_blog-article {
+    zoom: 1;
+    float: none;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 15px;
+    padding: 0;
+  }
+  .blog-article .column.column_blog-article:before, .blog-article .column.column_blog-article:after {
+    content: "";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+  .blog-article .column.column_blog-article:after {
+    clear: both;
+  }
+}
+.blog-article .column.column_blog-article .img {
   width: 33%;
   position: relative;
   float: left;
   margin: 0;
 }
-.blog-article.vertical .text {
+.blog-article .column.column_blog-article .text {
   margin-left: 33%;
   margin-top: 0;
   padding-left: 20px;
+}
+@media only screen and (max-width: 767px) {
+  .blog-article .column.column_blog-article .text .content {
+    display: none;
+  }
+}
+.blog-article.vertical {
+  margin-top: 45px !important;
+  border-top: 1px solid #ddd;
+}
+@media only screen and (max-width: 767px) {
+  .blog-article.vertical {
+    display: block;
+    width: 100%;
+  }
 }
 
 .order {
