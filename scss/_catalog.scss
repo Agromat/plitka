@@ -13,6 +13,11 @@
 			img{
 				width: 100%;
 			}
+			@include r($desktop-m){
+				padding-top: 10px;
+				height: auto;
+				max-height: 295px;
+			}
 		}
 	}
 }

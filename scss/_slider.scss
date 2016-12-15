@@ -155,12 +155,16 @@
 
 .orbit-slide{
 	position: relative;
-	height: 260px;
+	max-height: 260px;
 	@include r($tablet) {
 		height: 192px;
 	}
 	@include r($mob) {
-		height: 178px;
+		max-width: 720px;
+		height: 180px;
+	}
+	@include r(320) {
+		height: 180px;
 	}
 }
 .orbit-img{

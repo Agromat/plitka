@@ -483,7 +483,13 @@ ul.pagination{
 	position: relative;
 	z-index: 1;
 	clear: both;
-	@include r($mob){
+	@include r($desktop-m){
+		margin-top: 15px;
+	}
+	@include r($tablet) {
+		margin-top: 30px;
+	}
+	@include r($mob) {
 		margin-top: 50px;
 	}
 	&.all-products{
