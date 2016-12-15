@@ -2895,6 +2895,24 @@ ul.pagination li a span {
   margin-top: 33px;
 }
 
+.catalog-list-container {
+  margin-top: 33px;
+  font-size: 0;
+}
+
+.catalog-list-holder {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+  padding: 0 15px;
+}
+@media only screen and (max-width: 1024px) {
+  .catalog-list-holder {
+    width: 33.3%;
+    padding: 0;
+  }
+}
+
 .catalog-item .orbit-container a.orbit-prev, .catalog-item .orbit-container a.orbit-next {
   display: none;
 }
@@ -2975,7 +2993,6 @@ ul.pagination li a span {
 }
 .multiple-items-4 .slick-slide .img img,
 .multiple-items .slick-slide .img img {
-  border: 1px solid #000;
   margin: 0 auto;
 }
 .multiple-items-4 .slick-slide .img .sticker span,
@@ -7287,7 +7304,7 @@ body.is-overflow {
 }
 @media only screen and (max-width: 1024px) {
   .info .phone {
-    margin: 7px 5px 5px 0;
+    margin: 7px 5px 5px 10px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -7329,7 +7346,7 @@ body.is-overflow {
 }
 @media only screen and (max-width: 1024px) {
   .info .callback {
-    padding-left: 0;
+    padding-left: 10px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -7517,7 +7534,7 @@ body.is-overflow {
   margin-left: -0.125rem;
   background-image: url("../img/addicons.png");
   background-repeat: no-repeat;
-  background-position: -125px -5px;
+  background-position: -167px -5px;
 }
 @media only screen and (max-width: 1024px) {
   .info .search__btn .icon-search {
@@ -7939,8 +7956,14 @@ body.is-overflow {
 }
 .footer .work-schedule {
   float: left;
-  width: 110px;
-  margin-left: 0;
+  width: 120px;
+  margin-left: 20px;
+  text-align: left;
+}
+@media only screen and (max-width: 1024px) {
+  .footer .work-schedule {
+    margin-left: 0;
+  }
 }
 .footer .work-schedule .wrk:first-child {
   margin-right: 0;
@@ -8020,7 +8043,6 @@ body.is-overflow {
 @media only screen and (max-width: 767px) {
   .footer-bottom {
     height: auto;
-    margin: 0 -10px;
     padding: 20px 0;
   }
 }

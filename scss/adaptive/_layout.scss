@@ -352,7 +352,7 @@ body{
     .phone{
         float: left;
         @include r($tablet) {
-            margin: 7px 5px 5px 0;
+            margin: 7px 5px 5px 10px;
         }
         @include r($mob) {
             display: none;
@@ -387,7 +387,7 @@ body{
             padding-left: 10px;
         }
         @include r($tablet) {
-            padding-left: 0;
+            padding-left: 10px;
         }
         @include r($mob) {
             display: none;
@@ -563,7 +563,7 @@ body{
                 margin-left: rem-calc(-2);
                 background-image:  url("../img/addicons.png");
                 background-repeat: no-repeat;
-                background-position: -125px -5px;
+                background-position: -167px -5px;
                 @include r($tablet) {
                     display: inline-block;
                 }

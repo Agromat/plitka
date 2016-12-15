@@ -641,6 +641,22 @@ ul.pagination{
 	margin-top: 33px;
 }
 
+.catalog-list-container{
+	margin-top: 33px;
+	font-size: 0; 
+}
+
+.catalog-list-holder{
+	display: inline-block;
+	vertical-align: top;
+	width: 25%;
+	padding: 0 15px;
+	@include r($tablet){
+		width: 33.3%;
+		padding: 0;
+	}
+}
+
 .catalog-item {
 	.orbit-container {
 		a.orbit-prev, a.orbit-next{
@@ -714,7 +730,7 @@ ul.pagination{
 				margin-bottom: 10px;
 				text-align: center;
 				img{
-					border: 1px solid #000;
+					// border: 1px solid #000;
 					margin: 0 auto;
 				}
 				.sticker span{

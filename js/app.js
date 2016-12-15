@@ -182,6 +182,17 @@
 
     initSubmenuToggle();
 
+    // masonry for catalog-list
+     $(window).load(function() {
+        // my skills block
+      $('.js-grid').isotope({
+        itemSelector: '.js-grid-item',
+        layoutMode: 'masonry',
+        masonry: { 
+          isFitWidth: true 
+        }
+      })
+    });
 
 
     if ($('.orbit-container').exists()) {
@@ -220,7 +231,7 @@
           infinite: true,
           slidesToShow: 5,
           slidesToScroll: 5,
-          draggable: false,
+          draggable: true,
           responsive: [{
             breakpoint: 1024,
             settings: {
@@ -231,7 +242,7 @@
             breakpoint: 767,
             settings: {
               slidesToShow: 3,
-              slidesToScroll: 1,
+              slidesToScroll: 2,
               arrows: false,
               variableWidth: true
             }
