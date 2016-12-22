@@ -1889,7 +1889,7 @@ footer{
 	}
 	.basket-view{
 		position: relative;
-		padding: 29px 34px;
+		padding: 29px 34px 0;
 		&:after {
 			content: "";
 			width: 100%;
@@ -1941,7 +1941,7 @@ footer{
 		.name-product{
 			width: 330px;
 			padding-left: 28px;
-			padding-top: 6px;
+			//padding-top: 6px;
 			@include r($tablet) {
 				padding-left: 20px;
 				max-width: 268px;
