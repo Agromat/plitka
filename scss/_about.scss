@@ -1,6 +1,15 @@
 .main-container .about.side{
 	padding-left: rem-calc(52);
-	width: rem-calc(562);
+	max-width: rem-calc(562);
+	@include clearfix();
+	@include r($desktop-m){
+		padding-left: rem-calc(30);
+	}
+	@include r($mob) {
+		padding: 0;
+		float: none;
+		width: 100%;
+	}
 }
 .about{
 	a{
@@ -9,8 +18,13 @@
 		}
 	}
 	.buy-block{
+		float: left;
 		width: 310px;
-		padding-top: rem-calc(25);
+		// padding-top: rem-calc(25);
+		@include r($mob) {
+			max-width: 300px;
+			width: 100%;
+		}
 		.price{
 			background: $pblue;
 			-webkit-border-radius: 8px;
@@ -52,6 +66,10 @@
 				span{
 					color: $geern;
 					padding-left: rem-calc(10);
+					@include r($mob) {
+						display: block;
+						padding: 10px 0 0;
+					}
 					&.not-available {
 						font-size: rem-calc(14);
 						color:$red;
@@ -157,6 +175,9 @@
 				.btn{
 					width: 160px;
 					color: white;
+					@include r($mob) {
+						width: 100%;
+					}
 					&:hover{
 						color: white;
 					}
@@ -165,6 +186,12 @@
 						float: left;
 						width: 36px;
 						height: 55px;
+						@include r($mob) {
+							float: none;
+							display: inline-block;
+							vertical-align: top;
+							margin-right: 10px;
+						}
 						&::before{
 							width: 36px;
 							height: 36px;
@@ -187,6 +214,12 @@
 
 		.credit{
 			padding:rem-calc(16) rem-calc(0) rem-calc(20) rem-calc(20);
+			@include r($mob) {
+				display: block;
+				width: 265px;
+				margin: 0 auto 20px;
+				padding: rem-calc(16) 0;
+			}
 			.links-credit{
 				.btn {
 					margin:0;
@@ -194,6 +227,10 @@
 					padding: 0.875rem 1.125rem;
 					color:$blue;
 					background:none;
+					@include r($mob) {
+						width: 100%;
+						margin-bottom: 20px;
+					}
 					&.default{
 						&:hover{
 							color:$blue;
@@ -206,6 +243,16 @@
 						float: right;
 						text-align: left;
 						margin-left: rem-calc(9);
+						@include r($mob) {
+							width: 100%;
+							float: none;
+							margin: 0;
+							height: auto;
+							padding: 0;
+							.icon{
+								display: none;
+							}
+						}
 						.icon{
 							display: block;
 							float: left;
@@ -226,6 +273,16 @@
 					color:$ddgray;
 					font-size:rem-calc(13);
 					text-align:left;
+					@include r($mob) {
+						display: inline-block;
+						vertical-align: top;
+						&:first-child {
+							margin-right: 10px;
+							.icon {
+								display: none;
+							}
+						}
+					}
 					&:hover{
 						span.link{
 							color: $blue;
@@ -237,10 +294,21 @@
 		}
 	}
 	.modifications{
+		float: right;
 		width: 195px;
-		padding-top: 45px !important;
+		padding-top: 45px;
 		padding-left: 11px !important;
 		padding-right: 5px !important;
+		@include r($desktop-m) {
+			float: none;
+			display: inline-block;
+			width: 100%;
+			max-width: 300px;
+		}
+		@include r($tablet) {
+			margin-bottom: 20px;
+			padding-top: 10px;
+		}
 		.modifications-title{
 			color: $llgray;
 			font-size: rem-calc(12);
@@ -255,6 +323,11 @@
 				list-style:none;
 				display: block;
 				width: 100%;
+				@include r($desktop-m) {
+					display: inline-block;
+					max-width: 90px;
+					vertical-align: top;
+				}
 				a:hover .img > img{
 					border: rem-calc(5) solid $border-img;
 				}
@@ -262,6 +335,9 @@
 					width: 55px;
 					float: left;
 					position: relative;
+					@include r($desktop-m) {
+						float: none;
+					}
 					> img{
 						width: rem-calc(55);
 						height: rem-calc(55);
@@ -276,6 +352,10 @@
 					position: relative;
 					float: none;
 					width: auto;
+					@include r($desktop-m) {
+						margin-left: 0;
+						padding-left: 5px;
+					}
 					.title{
 						color: $blue;
 						line-height: rem-calc(24);
@@ -291,8 +371,80 @@
 			}
 		}
 	}
+}
+
+.description{
+	margin-top: rem-calc(8);
+	padding: rem-calc(20) 0 rem-calc(20) rem-calc(20);
+	&.collapse {
+		&.row{
+			@include r($mob) {
+				margin-bottom: 20px;
+			}
+		}
+	}
+	.desk{
+		font-size: rem-calc(16);
+		line-height: rem-calc(21);
+		margin: 0;
+		color: $ddgray;
+		position: relative;
+		margin-bottom: rem-calc(25);
+		&.desk_short {
+			overflow: hidden;
+			height: 110px;
+			&::after{
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				height: rem-calc(21);
+				background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 1%,rgba(255,255,255,1) 70%);
+				line-height: 21px;
+				width: 100%;
+			}
+		}
+	}
+	.desc-nav{
+		a{
+			padding: 0;
+			margin: 0;
+			line-height: 26px;
+			letter-spacing: -1px;
+			@include r($mob) {
+				float: none !important;
+			}
+			&.left span{
+				border-bottom: 1px dotted $blue;
+			}
+			&.btn{
+				line-height: 47px;
+				padding: 0 19px;
+				text-decoration: none;
+				@include r($mob) {
+					display: block;
+					width: 255px;
+					margin: 20px auto;
+					padding: 0;
+				}
+				&.default:hover{
+					color:$blue;
+				}
+			}
+		}
+	}
+}
+
+.delivery-wrap {
+	@include clearfix();
+	margin-bottom: 20px;
+	}
 	.delivery{
-		margin-top: rem-calc(15);
+		float: right;
+		max-width: 510px;
+		width: 100%;
+		margin-bottom: 20px;
+		// margin-top: rem-calc(15);
 		border: 1px solid $border;
 		-webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
 		-moz-box-shadow:    0px 2px 4px 0px rgba(0, 0, 0, 0.1);
@@ -300,6 +452,15 @@
 		-webkit-border-radius: rem-calc(7);
 		border-radius: rem-calc(7);
 		padding: rem-calc(12) rem-calc(16) rem-calc(18) rem-calc(20);
+		@include r($tablet) {
+			float: none;
+		}
+		&.delivery_small {
+			max-width: 190px;
+			@include r($desktop-m) {
+				max-width: 510px;
+			}
+		}
 		.title{
 			font-size: 1.125rem;
 			font-weight: 700;
@@ -318,9 +479,14 @@
 		}
 		.row{
 			.provided{
-				width: rem-calc(275);
+				// width: rem-calc(275);
 				position: relative;
 				float: left;
+				@include r($mob) {
+					float: none;
+					width: 100%;
+					margin-bottom: 10px;
+				}
 				p{
 					font-size: rem-calc(13);
 					color: $llgray;
@@ -333,65 +499,130 @@
 				float: right;
 				padding-left: 2.1875rem;
 				padding-right: 0;
+				@include r($mob) {
+					float: none;
+					padding-left: 0;
+					width: 100%;
+				}
 				p{
 					font-size: 0.8125rem;
 					color: $ddgray;
 					margin: 0 0 10px;
-				}
-			}
-		}
-	}
-	.description{
-		margin-top: rem-calc(8);
-		padding: rem-calc(20) 0 rem-calc(20) rem-calc(20);
-		.desk{
-			font-size: rem-calc(16);
-			line-height: rem-calc(21);
-			margin: 0;
-			color: $ddgray;
-			position: relative;
-			margin-bottom: rem-calc(25);
-			&::after{
-				content: '';
-				position: absolute;
-				bottom: 0;
-				left: 0;
-				height: rem-calc(21);
-				background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 1%, rgba(255,255,255,0.5) 100%);
-				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(1%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,0.5)));
-				background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 1%,rgba(255,255,255,0.5) 100%);
-				background: -o-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 1%,rgba(255,255,255,0.5) 100%);
-				background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 1%,rgba(255,255,255,0.5) 100%);
-				background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 1%,rgba(255,255,255,0.5) 100%);
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#80ffffff',GradientType=0 );
-				line-height: 21px;
-				width: 100%;
-			}
-		}
-		.row{
-			a{
-				padding: 0;
-				margin: 0;
-				line-height: 26px;
-				letter-spacing: -1px;
-				&.left span{
-					border-bottom: 1px dotted $blue;
-				}
-				&.btn{
-					line-height: 47px;
-					padding: 0 19px;
-					text-decoration: none;
-					&.default:hover{
-						color:$blue;
+					@include r($mob) {
+						display: inline-block;
+						vertical-align: bottom;
 					}
 				}
 			}
 		}
 	}
+
+
+.about {
+	.price-info {
+		@include clearfix();
+		.buy-block{
+			@include r($desktop-m) {
+				float: none;
+			}
+		}
+	}
 }
+
+.price-info {
+	margin-top: 10px;
+	@include clearfix();
+	@include r($mob) {
+		&.collapse{
+			&.row {
+				padding: 0 10px;
+			}
+		}
+	}
+}
+
+.return-list {
+	display: none;
+	border: 1px solid $black;
+	margin-bottom: 25px;
+	padding: 5px 10px 5px 20px;
+	color: $black;
+	font-size: 13px;
+	line-height: 17px;
+	@include r($tablet) {
+		display: block;
+	}
+	@include r($mob) {
+		margin-bottom: 10px;
+		padding-left: 0;
+		border: none;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+	&__header {
+		position: relative;
+		margin-bottom: 3px;
+		&:before {
+			content: "";
+			position: absolute;
+			top: 4px;
+			left: -10px;
+			width: 8px;
+			height: 8px;
+			border: 1px solid transparent;
+			border-left-color: $black;
+			border-bottom-color: $black;
+			transform: rotate(45deg);
+		}
+		@include r($mob) {
+			display: none;
+		}
+	}
+	&__title {
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	&__product {
+		color: $black;
+		text-decoration: none;
+	}
+	&__descr {
+		@include r($mob) {
+			display: none;
+		}
+		a {
+			color: $llgray;
+		}
+		color: $llgray;
+	}
+	&__mob {
+		display: none;
+		a {
+			font-size: 13px;
+			line-height: 16px;
+			color: $black;
+			text-decoration: underline;
+		}
+		@include r($mob) {
+			display: block;
+		}
+	}
+	.icon-arrow-left {
+		display: inline-block;
+		width: 16px;
+		height: 14px;
+		margin-bottom: -3px;
+		margin-right: 10px;
+		background-image:  url("../img/addicons.png");
+		background-repeat: no-repeat;
+		background-position: -146px -5px;
+	}
+}
+
 .stock{
 	display: block;
-	padding: rem-calc(10) rem-calc(15) rem-calc(17) rem-calc(18);
+	// padding: rem-calc(10) rem-calc(15) rem-calc(17) rem-calc(18);
 	border: 2px solid $red;
 	-webkit-box-shadow: 0px 2px 6px 0px rgba(237, 28, 36, 0.2);
 	-moz-box-shadow:    0px 2px 6px 0px rgba(237, 28, 36, 0.2);
@@ -399,6 +630,18 @@
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
 	border-radius: 8px;
+	@include r($mob) {
+		display: none;
+	}
+	&.collapse{
+		&.row{
+			padding: rem-calc(10) rem-calc(15) rem-calc(17) rem-calc(18);
+			margin-bottom: 25px;
+			@include r($tablet){
+				margin-top: rem-calc(10);
+			}
+		}
+	}
 	.stock-title{
 		font-weight: 700;
 		font-size: rem-calc(18);
@@ -421,6 +664,12 @@
 	font-size: rem-calc(31);
 	line-height: rem-calc(50);
 	color: $ddgray;
+	@include r($tablet) {
+		width: 114px;
+	}
+	@include r($mob) {
+		width: 109px;
+	}
 	.number{
 		width: 93px;
 		font-size: rem-calc(31);
@@ -430,6 +679,12 @@
 		padding: rem-calc(2) rem-calc(5) rem-calc(2) rem-calc(5);
 		color: $ddgray;
 		border: 1px solid $border-drk;
+		@include r($tablet) {
+			width: 90px;
+		}
+		@include r($mob) {
+			width: 85px;
+		}
 	}
 	.controlls{
 		width: 1.5rem;
@@ -484,5 +739,8 @@
 	font: 16px "Open Sans Semibold", sans-serif;
 	a{
 		border-bottom: 1px solid #00478a;
+	}
+	@include r($mob) {
+		display: none;
 	}
 }

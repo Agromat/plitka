@@ -46,6 +46,10 @@ body{
 .main-section{
     max-width: 990px;
     width: 100%;
+    &_right {
+        float: right;
+        margin-left: 30px;
+    }
     @include r($desktop-m) {
         width: calc(100% - 230px);
     }
@@ -53,12 +57,18 @@ body{
         width: 100%;
         float: none;
         max-width: none;
+        float: none;
+        margin-left: 0;
+        padding-left: 0;
     }
 }
 
 .sidebar{
     max-width: 200px;
     width: 100%;
+    &_left {
+        float: left;
+    }
 
     @include r($tablet) {
         display: none;
@@ -563,7 +573,7 @@ body{
                 margin-left: rem-calc(-2);
                 background-image:  url("../img/addicons.png");
                 background-repeat: no-repeat;
-                background-position: -167px -5px;
+                background-position: -193px -5px;
                 @include r($tablet) {
                     display: inline-block;
                 }

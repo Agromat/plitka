@@ -50,7 +50,7 @@
               display: block;
             }
             .icon-arr-down {
-                background-position: -146px -5px;
+                background-position: -172px -5px;
             }
         }
         &:hover{
@@ -115,6 +115,53 @@
             span{
                 border-bottom: none;
             }
+        }
+        &.is-active {
+            .icon-arr-down {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+// mobile tabs product characteristics
+.tabs-mob {
+    display: none;
+    margin-bottom: 40px;
+    @include r($mob) {
+        display: block;
+    }
+    &__title {
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 1;
+        font-weight: 700;
+        color: $ddgray;
+    }
+    &__descr {
+        display: table;
+        width: 100%;
+        max-width: 360px;
+    }
+    &__row {
+        display: table-row;
+        margin-bottom: 10px;
+    }
+    &__cell {
+        display: table-cell;
+        padding-bottom: 10px;
+        font-size: 14px;
+        line-height: 19px;
+        color: $ddgray;
+        &:first-child {
+            width: 60%;
+        }
+        &:last-child {
+            width: 40%;
+            font-weight: 700;
+        }
+        a {
+            text-decoration: underline;
+            color: $blue;
         }
     }
 }

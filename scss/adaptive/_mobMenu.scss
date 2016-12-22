@@ -257,18 +257,12 @@
   min-width: 170px;
   background: #fff;
   font-size: 18px;
-  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   -webkit-border-radius: 0 0 3px 3px;
   border-radius: 0 0 3px 3px;
   -webkit-transition: opacity 0.2s ease, visibility 0.2s ease;
   transition: opacity 0.2s ease, visibility 0.2s ease;
   &.is-active{
     display: block;
-    background: #E8EDED;
-    .navdrop__link{
-      padding-left: 30px;
-    }
   }
 }
 
@@ -281,11 +275,7 @@
     border-radius: 0;
     background: #FFF;
     font-size: 18px;
-    -webkit-transition: opacity 0.2s ease, visibility 0.2s ease;
-       -moz-transition: opacity 0.2s ease, visibility 0.2s ease;
-        -ms-transition: opacity 0.2s ease, visibility 0.2s ease;
-         -o-transition: opacity 0.2s ease, visibility 0.2s ease;
-            transition: opacity 0.2s ease, visibility 0.2s ease;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
     &.is-active {
       display: block;
       opacity: 1;

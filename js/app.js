@@ -31,6 +31,33 @@
 
     jQuery.fn.exists = function(){return this.length>0;}
 
+    function productTabs() {
+      $('.js-item-tab').click(function() {
+        var _this = $(this),
+          p = _this.closest('.js-item-parent'),
+          siblings = p.siblings();
+
+        siblings.find($('.js-item-content')).slideUp();
+        // siblings.find($('.js-item-content')).removeClass('is-active');
+        p.find($('.js-item-content')).slideToggle();
+        siblings.removeClass('is-active');
+        p.toggleClass('is-active');
+      });
+    };
+    productTabs();
+
+
+    // text truncate inside the blocks
+      // $(".js-truncate").dotdotdot({
+      //   ellipsis  : '... ',
+      //   height: 30
+      // });
+
+    // mini function 
+    function desktop() {
+      return window.matchMedia("(min-width: 768px)").matches;
+    }
+
     // open/close mobile menu
     class Navigation {
       constructor(el) {
@@ -63,14 +90,6 @@
           }
         });
       }
-
-      // _hideNavOnClick() {
-      //   $('body').click((e) => {
-      //     if ( !$(e.target).closest(this.btn).length && !$(e.target).is(this.nav) ) {
-      //       this._hideNav();
-      //     }
-      //   });
-      // }
 
       _hideNavOnResize() {
         if ( $(window).width() > 1280 && this.nav.hasClass('is-visible') ) {
@@ -183,16 +202,24 @@
     initSubmenuToggle();
 
     // masonry for catalog-list
-     $(window).load(function() {
-        // my skills block
-      $('.js-grid').isotope({
-        itemSelector: '.js-grid-item',
-        layoutMode: 'masonry',
-        masonry: { 
-          isFitWidth: true 
-        }
-      })
-    });
+    if ($('.catalog-list-container').exists()) {
+     $('.js-grid').isotope({
+       itemSelector: '.js-grid-item',
+       layoutMode: 'masonry',
+       masonry: { 
+         isFitWidth: true 
+       }
+     })
+    };
+
+
+
+    if ($('.js-modifications').exists()) {
+      $('.js-delivery').removeClass('delivery_small');
+    }
+    else{
+       $('.js-delivery').addClass('delivery_small');
+    }
 
 
     if ($('.orbit-container').exists()) {
@@ -283,7 +310,23 @@
           infinite: true,
           slidesToShow: 4,
           slidesToScroll: 4,
-          draggable: true
+          draggable: true,
+          responsive: [{
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 2
+            }
+          }, {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 2,
+              arrows: false,
+              variableWidth: true
+            }
+          }]
+
         });
     }
 
@@ -306,7 +349,6 @@
 
     // destroy slick for mobile 
     if( $(window).width() < 768 ){
-      console.log('1');
       $('.js-multiple-items-1').unslick();
     }
 
@@ -317,6 +359,7 @@
 
   $(document).on('open.fndtn.reveal.basket', '[data-reveal]', function () {
     $('.js-multiple-items-4').slickNext();
+
   });
     
 
@@ -400,15 +443,25 @@
       });
       }
 
+      function hideText(){
+        var desk = $(".js-desk"),
+            deskNativeHeight = desk.outerHeight(),
+            heightFlag = 150;
+        if(deskNativeHeight > heightFlag){
+          desk.addClass('desk_short');
+        }
+      }
+
+      hideText();
+
       $('a.auick-for').click(function(){
-        var desk = $(this).parents('.description').children('p.desk'),
-            height = 200;
+        var desk = $(".js-desk");
         
-        if(desk.height() < height){
-            desk.animate({ height: "210px" }, 1000 );
+        if(desk.hasClass('desk_short')){
+            desk.removeClass('desk_short');
 
         } else {
-            desk.animate({ height: "100px" }, 1000 );
+            desk.addClass('desk_short');
         };
         return false;
       });
