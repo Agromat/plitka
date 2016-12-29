@@ -162,6 +162,15 @@ $rem-base : 16;
   }
 }
 
+@mixin rland($widthMax, $widthMin) {
+  @media only screen 
+  and (max-width: $widthMax+ "px")
+  and (min-width: $widthMin+ "px")
+  and (orientation: landscape) {
+    @content;
+  }
+}
+
 @mixin rmin($width) {
   @media only screen and (min-width: $width+ "px") {
     @content;
@@ -200,7 +209,7 @@ $rem-base : 16;
 $desktop: 1220;
 $desktop-m: 1219;
 $tablet: 1024;
-// $tablet-m: 800;
+$tablet-p: 800;
 $mob: 767;
 $mob-sm: 550;
 $mob320: 320;
@@ -249,6 +258,10 @@ $mob320: 320;
 @import "typography";
 @import "article";
 @import "search";
+@import "range-slider";
+
+@import "lib/ion.RangeSlider";
+@import "lib/perfect-scrollbar";
 
 @import "adaptive/layout";
 @import "adaptive/mobMenu";

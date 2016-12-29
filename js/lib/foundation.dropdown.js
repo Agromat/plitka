@@ -7,7 +7,7 @@
     version : '5.4.7',
 
     settings : {
-      active_class: 'open',
+      active_class: 'bbbopen',
       disabled_class: 'disabled',
       mega_class: 'mega',
       align: 'bottom',

@@ -134,6 +134,9 @@
 			margin-bottom: 5px;
 			font-weight: bold;
 			font-size: 12px;
+			@include r($tablet) {
+				margin-bottom: 15px;
+			}
 			&:after {
 				display: none;
 			}

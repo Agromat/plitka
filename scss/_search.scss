@@ -1,11 +1,3 @@
-.menu-nav .menuinfo .info_search {
-	padding: 10px;
-	width: 100%;
-	background: #eef6f9;
-	.search input[type="search"] {
-		width: rem-calc(844);
-	}
-}
 .menu-nav_content {
 	z-index: 1;
 }
@@ -20,6 +12,7 @@
 .search__drop {
 	display: none;
 	position: absolute;
+	width: calc(100% - 125px);
 	top: 100%;
 	right: 0;
 	left: 0;
@@ -27,6 +20,19 @@
 	background: #fff;
 	border: 1px solid #abadb3;
 	border-top: 0;
+	@include r($desktop-m) {
+		width: calc(100% - 145px);
+		left: 10px;
+	}
+	@include r($tablet) {
+		width: calc(100% - 41px);
+		top: 41px;
+		left: 0;
+	}
+	@include r($mob) {
+		width: calc(100% - 82px);
+		top: 30px;
+	}
 }
 .search__head {
 	margin-bottom: 5px;
@@ -95,6 +101,37 @@
 		color: #0053a0;
 		&:hover {
 			color: $ddgray;
+		}
+	}
+}
+
+.main-container {
+	.info {
+		&_search {
+			padding: 10px;
+			width: 100%;
+			background: #eef6f9;
+		}
+		.search {
+			margin-bottom: 0;
+			@include r($mob) {
+				height: auto;
+			}
+			&__input {
+				@include r($mob) {
+					width: calc(100% - 83px);
+					padding: 4px 15px 5px;
+				}
+			}
+			&__btn {
+				@include r($mob) {
+					width: auto;
+					height: auto;
+					font-size: 0.75rem;
+					padding: 4px 18px 5px;
+					vertical-align: top;
+				}
+			}
 		}
 	}
 }

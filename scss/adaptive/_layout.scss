@@ -5,8 +5,20 @@ body{
     }
 }
 
+.hidden-dsm{
+    @include r($desktop-m) {
+        display: none !important;
+    }
+}
+
 .hidden-sm{
     @include r($tablet) {
+        display: none !important;
+    }
+}
+
+.hidden-smp {
+    @include r($tablet-p) {
         display: none !important;
     }
 }
@@ -43,25 +55,25 @@ body{
 }
 
 
-.main-section{
-    max-width: 990px;
-    width: 100%;
-    &_right {
-        float: right;
-        margin-left: 30px;
-    }
-    @include r($desktop-m) {
-        width: calc(100% - 230px);
-    }
-    @include r($tablet) {
-        width: 100%;
-        float: none;
-        max-width: none;
-        float: none;
-        margin-left: 0;
-        padding-left: 0;
-    }
-}
+// .main-section{
+//     max-width: 990px;
+//     width: 100%;
+//     &_right {
+//         float: right;
+//         margin-left: 30px;
+//     }
+//     @include r($desktop-m) {
+//         width: calc(100% - 230px);
+//     }
+//     @include r($tablet) {
+//         width: 100%;
+//         float: none;
+//         max-width: none;
+//         float: none;
+//         margin-left: 0;
+//         padding-left: 0;
+//     }
+// }
 
 .sidebar{
     max-width: 200px;
@@ -70,10 +82,10 @@ body{
         float: left;
     }
 
-    @include r($tablet) {
-        display: none;
-        // max-width: none;
-    }
+    // @include r($tablet) {
+    //     display: none;
+    //     // max-width: none;
+    // }
 }
 
 
@@ -461,22 +473,71 @@ body{
         margin-bottom: rem-calc(10);
         // overflow: hidden;
         font-size: 0;
-        @include r($tablet) {
-            position: absolute;
-            top: 7px;
-            right: 0;
-            padding: 0;
-            width: 340px;
-        }
-        @include r($mob) {
-            position: relative;
-            display: block;
-            top: 0;
-            left: 0;
-            right: 0;
-            width: 100%;
-            height: auto;
-            margin: 0;
+        &_mob {
+            @include r($tablet) {
+                position: absolute;
+                top: 7px;
+                right: 0;
+                padding: 0;
+                width: 340px;
+            }
+            @include r($mob) {
+                position: relative;
+                display: block;
+                top: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: auto;
+                margin: 0;
+            }
+            .search__input {
+                @include r($tablet) {
+                    position: absolute;
+                    top: 0;
+                    width: 115px;
+                    padding: rem-calc(10) rem-calc(10) rem-calc(11);
+                    right: 40px;
+                    &:focus{
+                        width: 300px;
+                    }
+                }
+                @include r($mob) {
+                    position: relative;
+                    width: 100%;
+                    right: 0;
+                    padding: rem-calc(6) rem-calc(15);
+                    padding-right: rem-calc(95);
+                    line-height: 1rem;
+                    display: block;
+                    &:focus{
+                        width: 100%;
+                    }
+                }
+            }
+            .search__btn {
+                @include r($tablet) {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: rem-calc(42);
+                    height: rem-calc(42);
+                    vertical-align: top;
+                    font-size: 0;
+                    line-height: 0;
+                    padding: rem-calc(5) rem-calc(10);
+                }
+                @include r($mob) {
+                    width: auto;
+                    height: auto;
+                    padding: rem-calc(6) rem-calc(18) rem-calc(6);
+                    -webkit-box-shadow: none;
+                            box-shadow: none;
+                    font-size: rem-calc(12);
+                    line-height: rem-calc(16);;
+                    font-weight: 700;
+                }
+            }
         }
         &__input{ 
             // position: absolute;
@@ -501,28 +562,6 @@ body{
                    -moz-box-shadow: 0px 0px 6px 1px rgba(94, 185, 255, 0.5);
                         box-shadow: 0px 0px 6px 1px rgba(94, 185, 255, 0.5);
             }
-            @include r($tablet) {
-                position: absolute;
-                top: 0;
-                width: 115px;
-                padding: rem-calc(10) rem-calc(10) rem-calc(11);
-                right: 40px;
-                &:focus{
-                    width: 300px;
-                }
-            }
-            @include r($mob) {
-                position: relative;
-                width: 100%;
-                right: 0;
-                padding: rem-calc(6) rem-calc(15);
-                padding-right: rem-calc(95);
-                line-height: 1rem;
-                display: block;
-                &:focus{
-                    width: 100%;
-                }
-            }
         }
 
         &__btn{
@@ -544,27 +583,6 @@ body{
                 color: $ddgray;
                 outline: 1px solid $ddgray;
                 outline-offset: -1px;
-            }
-            @include r($tablet) {
-                position: absolute;
-                top: 0;
-                right: 0;
-                width: rem-calc(42);
-                height: rem-calc(42);
-                vertical-align: top;
-                font-size: 0;
-                line-height: 0;
-                padding: rem-calc(5) rem-calc(10);
-            }
-            @include r($mob) {
-                width: auto;
-                height: auto;
-                padding: rem-calc(6) rem-calc(18) rem-calc(6);
-                -webkit-box-shadow: none;
-                        box-shadow: none;
-                font-size: rem-calc(12);
-                line-height: rem-calc(16);;
-                font-weight: 700;
             }
             .icon-search {
                 display: none;

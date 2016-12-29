@@ -13,9 +13,9 @@
 	    -ms-touch-action: pan-y;
 	    touch-action: pan-y;
 	    -webkit-tap-highlight-color: transparent;
-	    @include r($mob){
-	    	height: 200px;
-	    }
+	    // @include r($mob){
+	    // 	height: 200px;
+	    // }
 }
 .slick-list.draggable{
 	cursor: -moz-grab;

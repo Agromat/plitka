@@ -48,12 +48,19 @@
 
 
     // text truncate inside the blocks
-      // $(".js-truncate").dotdotdot({
-      //   ellipsis  : '... ',
-      //   height: 30
-      // });
+    if ($('.js-truncate').exists()) {
+      $(".js-truncate").dotdotdot({
+        ellipsis  : '... ',
+        height: 36
+      });
+    };
 
     // mini function 
+   
+    if ($('.js-scroll-filter').exists()) {
+      $('.js-scroll-filter').perfectScrollbar();
+    };
+
     function desktop() {
       return window.matchMedia("(min-width: 768px)").matches;
     }
@@ -221,6 +228,28 @@
        $('.js-delivery').addClass('delivery_small');
     }
 
+    if ($('.js-filters-btn').exists()) {
+      $('.js-filters-btn').click(function(){
+        if( $(window).width() >= 768 ){
+          var btn      = $(this),
+              parent  = btn.closest($('.js-filters-container')),
+              mobCont = parent.find('.js-filters-mob');
+
+          if (parent.hasClass('is-active') && mobCont.hasClass('is-active')) {
+            parent.removeClass('is-active');
+            mobCont.removeClass('is-active');
+          }
+          else{
+            parent.addClass('is-active');
+            mobCont.addClass('is-active');
+          }
+        }
+      });
+      
+    };
+    if( $(window).width() < 768 ){
+      $('.js-filters-btn').attr("data-reveal-id", "filtersPop");
+    }
 
     if ($('.orbit-container').exists()) {
 
@@ -395,6 +424,41 @@
 
     }
 
+    if ($('.js-range-slider-mob').exists()) {
+      // slider для цены
+      var $rangeMob = $('.js-range-slider-mob');
+      if( $(window).width() < 768 ){
+        $rangeMob.ionRangeSlider({
+          type: "double",
+          min: 300,
+          max: 12000,
+          grid: true,
+          grid_num: 2,
+          hide_min_max: true,
+          hide_from_to: true
+        });
+      }
+      else{
+        $rangeMob.ionRangeSlider({
+          type: "double",
+          min: 300,
+          max: 12000,
+          grid: true,
+          grid_num: 6,
+          hide_min_max: true,
+          hide_from_to: true
+        });
+      }
+
+      $rangeMob.on("change", function () {
+          var $this = $(this);
+          value = $this.prop("value").split(";");
+          $("#mobBefore").val(value[0]);
+          $("#mobAfter").val(value[1]);
+      });
+
+    }
+
     if ($('.bulk-select').exists()) {
       var bulk =  $(".bulk-select");
           this_imp = bulk.find('.number');
@@ -418,7 +482,9 @@
 
     $(document).on({
         mouseenter: function(){
-          $(this).addClass("desk-visible");
+          if( $(window).width() >= 1024 ){
+            $(this).addClass("desk-visible");
+          }
         },
         mouseleave: function(){
           $(this).removeClass("desk-visible");
@@ -471,7 +537,7 @@
       $(".js-show-all").on("click", function(){
         var attr = $(this).attr("data-text");
         var text = $(this).text();
-        $(this).parent().find(".js-hidden-all").slideToggle(300);
+        $(this).parent().find(".js-hidden-all").slideToggle(10);
         $(this).attr("data-text", text).children().text(attr);
         return false;
       });
