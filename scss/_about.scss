@@ -548,7 +548,6 @@
 
 .return-list {
 	display: none;
-	border: 1px solid $black;
 	margin-bottom: 25px;
 	padding: 5px 10px 5px 20px;
 	color: $black;
@@ -561,6 +560,9 @@
 		margin-bottom: 10px;
 		padding-left: 0;
 		border: none;
+	}
+	&_border {
+		border: 1px solid $black;
 	}
 	a:hover {
 		text-decoration: underline;
@@ -601,8 +603,14 @@
 		}
 		color: $llgray;
 	}
-	&__mob {
+	.return-link {
+		margin-bottom: 0;
+	}
+}
+
+	.return-link {
 		display: none;
+		margin-bottom: 15px;
 		a {
 			font-size: 13px;
 			line-height: 16px;
@@ -612,18 +620,17 @@
 		@include r($mob) {
 			display: block;
 		}
+		.icon-arrow-left {
+			display: inline-block;
+			width: 16px;
+			height: 14px;
+			margin-bottom: -3px;
+			margin-right: 10px;
+			background-image:  url("../img/addicons.png");
+			background-repeat: no-repeat;
+			background-position: -166px -5px;
+		}
 	}
-	.icon-arrow-left {
-		display: inline-block;
-		width: 16px;
-		height: 14px;
-		margin-bottom: -3px;
-		margin-right: 10px;
-		background-image:  url("../img/addicons.png");
-		background-repeat: no-repeat;
-		background-position: -146px -5px;
-	}
-}
 
 .stock{
 	display: block;

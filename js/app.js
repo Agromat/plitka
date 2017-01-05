@@ -46,7 +46,6 @@
     };
     productTabs();
 
-
     // text truncate inside the blocks
     if ($('.js-truncate').exists()) {
       $(".js-truncate").dotdotdot({
@@ -162,7 +161,7 @@
       navLink.click(function(evt) {
 
 
-        if ( $(window).width() < 768 ) {
+        if ( $(window).width() <= 1024 ) {
           if ( $(this).siblings(navDrop).length ) {
             evt.preventDefault();
             var isActive = $(this).hasClass(active);
@@ -331,7 +330,23 @@
         infinite: true,
         slidesToShow: 6,
         slidesToScroll: 6,
-        draggable: true
+        draggable: true,
+        responsive: [{
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 2
+          }
+        }, {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 2,
+            arrows: false,
+            variableWidth: true
+          }
+        }]
+
       });
     }
     if ($('.js-multiple-items-4').exists()) {
@@ -372,14 +387,24 @@
           infinite: true,
           slidesToShow: 1,
           slidesToScroll: 1,
-          draggable: true
+          draggable: true,
+          adaptiveHeight: true
         });
     }
 
     // destroy slick for mobile 
-    if( $(window).width() < 768 ){
-      $('.js-multiple-items-1').unslick();
-    }
+    if ($('.js-multiple-items-1').exists()) {
+      if( $(window).width() < 768 ){
+        $('.js-multiple-items-1').unslick();
+      }    
+    };
+    
+    if ($('.js-multiple-items-1').exists()) {
+      // destroy slick for tab 
+      if( $(window).width() < 1024 ){
+        $('.js-unslick-tab').unslick();
+      }
+    };
 
     $("#modal-basket").click(function(){
       $('.js-multiple-items-4').slickNext();
@@ -532,7 +557,7 @@
         return false;
       });
 
-      $(".js-input-tel").mask("+38(999)-999-99-99");
+      // $(".js-input-tel").mask("+38(999)-999-99-99");
 
       $(".js-show-all").on("click", function(){
         var attr = $(this).attr("data-text");
@@ -547,18 +572,34 @@
           var menu = $("div[data-drop='"+$(this).attr("data-drop")+"']");
           var left = $(this).offset().left;
           var right = $(window).width() - left - $(this).outerWidth();
+          var top = $(this).parent().position().top + $(this).parent().outerHeight(true);
+          var reset = menu.width() + right;
           if ($(this).hasClass("js-dropdown-right")) {
-            menu.css({
-              right: 'auto',
-              left: 'auto'
-            }).show();
+            if (reset > $(window).width()) {
+                menu.css({
+                right: 'auto',
+                left: 'auto',
+                top: top
+              }).show();
+              // console.log("!!!!");
+            }
+            else{
+              menu.css({
+                right: right,
+                left: 'auto',
+                top: top
+              }).show();
+            }
+            console.log(top);
           }
           else {
             menu.css({
-              left: left
+              left: left,
+              top: top
             }).show();
+             
           }
-            
+
         }, function() {
           var menu = $("div[data-drop='"+$(this).attr("data-drop")+"']");
           menu.hide();
@@ -576,11 +617,11 @@
         }
       );
 
-      $(".js-toggle-description").on("click", function(){
-        $(this).prev().toggleClass("is-visible");
-        return false;
-      });
+  });
 
+  $(".js-toggle-description").on("click", function(){
+    $(this).prev().toggleClass("is-visible");
+    return false;
   });
 
   $(document).on('opened.fndtn.reveal', '[data-reveal]', function () {

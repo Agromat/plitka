@@ -5,6 +5,15 @@
 	padding: 20px 20px 15px;	
 	position: relative;
 	background: #eef6f9;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	@include r($mob) {
+		padding: 10px;
+		&:first-child {
+			margin-top: 0;
+		}
+	}
 	&__media {
 		position: relative;
 		float: left;
@@ -14,6 +23,14 @@
 			display: block;
 			max-width: 100%;
 			height: auto;
+		}
+		@include r($tablet) {
+			width: 105px;
+			margin-right: 20px;
+		}
+		@include r($mob) {
+			width: 70px;
+			margin-right: 15px;
 		}
 	}
 	&__main {
@@ -27,11 +44,18 @@
 		a {
 			color: #0053a0;
 		}
+		@include r($mob) {
+			font-size: 14px;
+			line-height: 18px;
+		}
 	}
 	&__text {
 		color: $ddgray;
 		margin-bottom: 18px;
 		font-size: 16px;
+		@include r($mob) {
+			display: none;
+		}
 	}
 }
 .promo{
@@ -105,6 +129,9 @@
 			opacity: 1;
 			color: $ddgray;
 		}
+	}
+	@include r($tablet) {
+		display: none;
 	}
 }
 

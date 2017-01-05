@@ -37,35 +37,161 @@
     <script src="js/lib/modernizr.js"></script>
   </head>
   <body>
+  <!-- !! added new class js-top-nav-->
+  <header class="menu-nav order-nav js-top-nav">
 
-  <header class="menu-nav order-nav">
-     <div class="menuinfo">
-        <div class="row collapse">
+    <!-- !! create mobile nav -->
+    <!-- BEGIN MOBILE MENU -->
+    <div class="mob-menu">
+      <div class="mob-menu__inner">
+          <a href="" class="mob-menu__btn js-nav-btn"><span></span></a>
+          <a href="" class="mob-menu__logo"><img src="img/logo.png" alt=""></a>
+          <a href="tel:+388007000010" class="mob-menu__phone">8 (800) 700-00-10</a>
 
-          <div class="logo column medium-5">
+          <!-- BEGIN MOBILE NAV -->
+          <div class="mob-nav js-mob-nav">
+            <div class="nav" role="navigation">
+              <div class="nav__body">
+                <!-- catalog menu -->
+                <div class="mob-catalog">
+                  <ul class="nav__list">
+                    <li class="nav__option js-nav-option">
+                      <a href="#" class="nav__link js-nav-link"><span>Плитка</span></a>
+                    </li>
+                    <li class="nav__option js-nav-option has-navdrop">
+                      <a href="#" class="nav__link js-nav-link"><span>Сантехника</span></a>
+                      <ul class="navdrop js-navdrop">
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Ванны</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Гидромассажные боксы</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Гидромассажные ванны</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Душевые кабины</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Мозаика</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Аксессуары</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Зеркала</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Мебель</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Освещение</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Фурнитура</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Сауны</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Сифоны</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Душевые наборы и панели</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Смесители</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Средства за уходом</span></a></li>
+                      </ul>
+                    </li>
+                    <li class="nav__option js-nav-option">
+                      <a href="#" class="nav__link js-nav-link"><span>Напольное покрытие</span></a>
+                    </li>
+                    <li class="nav__option js-nav-option">
+                      <a href="#" class="nav__link js-nav-link"><span>Обои</span></a>
+                    </li>
+                    <li class="nav__option js-nav-option">
+                      <a href="#" class="nav__link js-nav-link""><span>Отопление</span></a>
+                    </li>
+                    <li class="nav__option js-nav-option">
+                      <a href="#" class="nav__link js-nav-link"><span>Освещение</span></a>
+                    </li>
+                    <li class="nav__option js-nav-option has-navdrop">
+                      <a href="#" class="nav__link js-nav-link""><span>Бассейны</span></a>
+                      <ul class="navdrop js-navdrop">
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Ванны</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Гидромассажные боксы</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Гидромассажные ванны</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Душевые кабины</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Мозаика</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Аксессуары</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Зеркала</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Мебель</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Освещение</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Фурнитура</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Сауны</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Сифоны</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Душевые наборы и панели</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Смесители</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Средства за уходом</span></a></li>
+                      </ul>
 
-            <div class="img left">
-              <a href="/"><img src="img/logo.png" alt="alt img"></a>
-            </div><!-- /img block -->
+                    </li>
+                    <li class="nav__option js-nav-option">
+                      <a href="#" class="nav__link js-nav-link"><span>Инструменты</span></a>
+                    </li>
+                    <li class="nav__option js-nav-option has-navdrop">
+                      <a href="#" class="nav__link js-nav-link""><span>Аксессуары</span></a>
+                      <ul class="navdrop js-navdrop">
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Ванны</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Гидромассажные боксы</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Гидромассажные ванны</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Душевые кабины</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Мозаика</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Аксессуары</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Зеркала</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Мебель</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Освещение</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Фурнитура</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Сауны</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Сифоны</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Душевые наборы и панели</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Смесители</span></a></li>
+                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Средства за уходом</span></a></li>
+                      </ul>
 
-            <div class="about-text left">
-              <p>интернет-магазин плитки<br> и сантехники</p>
-            </div><!-- /about block -->
+                    </li>
+                  </ul><!-- /list items menu -->
+                </div> 
+
+                <!-- main menu -->
+                <div class="mob-menubar">
+                    
+                  <ul class="nav__list">
+                    <li class="nav__option"><a href="#about" class="nav__link"><span>О магазине</span></a></li>
+                    <li class="nav__option"><a href="#delivery" class="nav__link"><span>Доставка и оплата</span></a></li>
+                    <li class="nav__option"><a href="#brands" class="nav__link"><span>Производители</span></a></li>
+                    <li class="nav__option"><a href="#reviews" class="nav__link"><span>Обзор</span></a></li>
+                    <li class="nav__option"><a href="#articles" class="nav__link"><span>Статьи</span></a></li>
+                    <li class="nav__option"><a href="#contacts" class="nav__link"><span>Контакты</span></a></li>
+                    <li class="nav__option"><a href="#safeguards" class="nav__link"><span>Гарантия</span></a></li>
+                    <li class="nav__option"><a href="#feedback" class="nav__link"><span>Обратная связь</span></a></li>
+                  </ul><!-- /menu bar-->
+                </div><!-- /menubar-->
+              </div>
+
+            </div>
+          </div>
+          <!-- END MOBILE NAV -->
+      </div>
+    </div>
+    <!-- END MOBILE MENU -->
+
+    <!-- !! added class menuinfo_order-nav -->
+    <!-- !! structure menuinfo was changed -->
+    <div class="menuinfo menuinfo_order-nav">
+      <div class="row collapse">
+
+        <!-- !! DELETED CLASS: Medium-3 -->
+        <div class="menuinfo__bl logo">
+
+          <div class="img">
+            <img src="img/logo.png">
+          </div><!-- /img block -->
+
+          <div class="about-text">
+            <p>интернет-магазин плитки<br> и сантехники</p>
+          </div><!-- /about block -->
           </div><!-- /logo block -->
+        
+        <!-- !! DELETED CLASS: Medium-5 -->
+        <div class="menuinfo__bl info">
+          <div class="info__inner">
 
-          <div class="info column medium-5 left">
-            <div class="row collapse">
+            <!-- !! CHANGE BLOCK WITH CLASSES .row.collapse TO .info__inner -->
+            <!-- !! DELETED CLASSES: Medium-4,3, COLUMNN AND ADD NEW  -->
+            <!-- !! CHANGE ORDER OF BLOCKS CALLBACK AND SCHEDULE  -->
 
-              <div class="phone column medium-5">
-                <p class="tel">8 (800) 700-00-10</p>
-                <p>Круглосуточный заказ звонок бесплатный</p>
+            <div class="phone info__items">
+              <a href="tel:+388007000010" class="tel">8 (800) 700-00-10</a>
+              <p>Круглосуточный заказ звонок бесплатный</p>
               </div>
               
-              <div class="callback column medium-4">
-                <a href="#callback" class="link"><span>Заказать обратный звонок</span></a>
-              </div>
-              
-              <div class="schedule column medium-3">
+              <div class="schedule info__items">
                 <p>Время работы</p>
                 <div>
                   <span></span><span></span>
@@ -79,100 +205,198 @@
                   <span>09<sup>00</sup>..21<sup>00</sup></span>
                   <span class="wek">10<sup>00</sup>-18<sup>00</sup></span>
                 </p>
-              </div>
-
             </div>
 
-          </div><!-- /info-->
-          
-        </div>
-      </div><!-- /menuinfo -->
+            <div class="callback info__items">
+            <a href="#callback"><span>Заказать обратный звонок</span></a>
+            </div>
+
+          </div>
+        </div><!-- /info-->
+      </div>
+    </div><!-- /menu-info-->
   </header><!-- /menu-nav-->
   <div class="row collapse">
     <main class="order" role="main">
       <section class="bcrumbs-container">
-        <ul class="bcrumbs">
+        <!-- !! added class hidden-xs -->
+        <ul class="bcrumbs hidden-xs">
           <li><a href="#"><span>Главная </span></a></li>
           <li><a href="#"><span>Сантехника</span></a></li>
         </ul>
       </section><!-- /bcrumbs-->
 
-      
-      <section class="row collapse form">
-        <div class="column medium-8">
-        <div class="row collapse row_mb">
-          <div class="column medium-6">
-            <h1 class="main-title">Оформление заказа</h1>
-          </div>
-          <div class="column medium-6">
-            <ul class="button-group button-group_right">
-              <li><a href="#" class="button">Обычный заказ</a></li>
-              <li class="is-active"><a href="#" class="button">Быстрый заказ</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="title">Контактные данные</div>
-        <form action="#" class="form-order form-check">
-          <div class="form-group form-group_mb">
-            <label for="phone" >Мы вам перезвоним <br> для оформления <br> вашего заказа</label>
-            <div class="imput">
-              <input type="text" class="rfield phonefield">
+      <!-- !! added class modificator form_side-padding -->
+      <section class="row collapse form form_side-padding">
+        <!-- !! deleted class column, medium-8, and added class order-desk -->
+        <div class="order-desk">
+          <!-- !!  deleted classes: row collapse row_mb, and added new form-header-->
+          <div class="form-header">
+            <!-- !!  deleted class medium-6 -->
+            <div class="column">
+              <!-- !! added class modificator main-title_small -->
+              <h1 class="main-title main-title_small">Оформление заказа</h1>
+            </div>
+            <!-- !!  deleted class medium-6 -->
+            <div class="column">
+              <ul class="button-group button-group_right">
+                <li><a href="#" class="button">Обычный заказ</a></li>
+                <li class="is-active"><a href="#" class="button">Быстрый заказ</a></li>
+              </ul>
             </div>
           </div>
-          
-          <div class="form-group submit">
-            <button type="submit" class="btn gradient">Отправить заказ</button>
-            <p>Пожалуйста, обратите внимание: поля формы, выделенные жирным текстом обязательны для заполнения.</p>
+          <div class="title">Контактные данные</div>
+          <form action="#" class="form-order form-check">
+            <div class="form-group form-group_mb">
+              <label class="short-label" for="phone" >Мы вам перезвоним для оформления вашего заказа</label>
+              <div class="imput">
+                <!-- !! added placeholder -->
+                <input type="text" class="rfield phonefield" placeholder="8 (__) ___-__-__">
+              </div>
+            </div>
+            
+            <div class="form-group submit">
+              <button type="submit" class="btn gradient">Отправить заказ</button>
+              <p class="hidden-xs">Пожалуйста, обратите внимание: поля формы, выделенные жирным текстом обязательны для заполнения.</p>
+            </div>
+
+          </form>
+        </div>
+        <!-- end order-desk -->
+        <!-- !! deleted class column, medium-4, and added class order-preview -->
+        <!-- !! change tag name from "aside" -> "div" -->
+        <div class=" order-preview">
+          <!-- !! create new wrap: aside-basket for table-basket -->
+          <div class="aside-basket">
+            <div class="title">Что вы заказываете</div>
+            <div class="basket-table">
+              <table>
+                <tbody>
+                  <tr>
+                    <th colspan="3"><a href="#"><span>Керамическая плитка двойного назначения Devit Giran 16190128P</span></a></th>
+                  </tr>
+                  <tr>
+                    <td class="img"><img src="img/img.png" alt="alt img"></td>
+                    <td><p>x 1</p></td>
+                    <td><p class="price">1 600 <sup>грн</sup></p></td>
+                  </tr>
+                </tbody>
+              </table>            
+              <table>
+                <tbody>
+                  <tr>
+                    <th colspan="3"><a href="#"><span>Devit Giran 16190128P</span></a></th>
+                  </tr>
+                  <tr>
+                    <td class="img">
+                    <div class="sticker small"><span class="sale"></span></div>
+                    <img src="img/img.png" alt="alt img">
+                    </td>
+                    <td><p>x 2</p></td>
+                    <td><p class="price">12 600,<sup>70 грн</sup></p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="basket-footer">
+              <div class="content">
+                <p>3 товара на общую сумму</p>
+                <p class="pr">13 200,<sup>78 грн</sup></p>
+              </div>
+              <div class="action">
+                <a href="#"><span>Редактировать список товаров</span></a>
+              </div>
+            </div>
           </div>
 
-        </form>
+          <div class="basket basket_preview">
+            <div class="basket-header">
+              <p class="modal-title">Что вы заказываете</p>
+            </div>
+            <div class="row collaspse basket-view">
+              <div class="column img">
+                <img src="img/img.png" alt="image">
+              </div>
+              <div class="column number">
+                <span>x1</span>
+              </div>
+              <div class="column name-product">
+                <!-- !! added new js class for truncate text when adaptive -->
+                <p class="prod-desk">Керамическая плитка двойного назначения Devit GiranКерамическая плитка двойного назначения Devit Giran</p>
+                <!-- !! added block with the vendor code -->
+                <p class="main-deskrip item-code" role="definition">Артикул: <span itemprop="productID">122843</span></p>
+              </div>
+              <div class="column sum">
+                <p class="price">3 200<sup>грн.</sup></p>
+              </div> 
+            </div>
+            <div class="row collaspse basket-view">
+              <div class="column img">
+                <img src="img/img.png" alt="image">
+              </div>
+              <div class="column number">
+                <span>x1</span>
+              </div>
+              <div class="column name-product">
+                <!-- !! added new js class for truncate text when adaptive -->
+                <p class="prod-desk">Керамическая плитка двойного назначения Devit GiranКерамическая плитка двойного назначения Devit Giran</p>
+                <!-- !! added block with the vendor code -->
+                <p class="main-deskrip item-code" role="definition">Артикул: <span itemprop="productID">122843</span></p>
+              </div>
+              <div class="column sum">
+                <p class="price">3 200<sup>грн.</sup></p>
+              </div> 
+            </div>
+            <div class="row collapse basket-actions">
+              <div class="row collapse total">
+                <p class="sm-desk"><span>3</span> товара на общую сумму</p>
+                <p class="price">13 200<sup>грн.</sup></p>
+              </div>
+              <div class="row collapse btn-group">
+                <a href="order.html" class="btn-link btn-link_right">Редактировать список товаров</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <aside class="column medium-4">
-          <div class="title">Что вы заказываете</div>
-          <div class="basket-table">
-            <table>
-              <tbody>
-                <tr>
-                  <th colspan="3"><a href="#"><span>Керамическая плитка двойного назначения Devit Giran 16190128P</span></a></th>
-                </tr>
-                <tr>
-                  <td class="img"><img src="img/img.png" alt="alt img"></td>
-                  <td><p>x 1</p></td>
-                  <td><p class="price">1 600 <sup>грн</sup></p></td>
-                </tr>
-              </tbody>
-            </table>            
-            <table>
-              <tbody>
-                <tr>
-                  <th colspan="3"><a href="#"><span>Devit Giran 16190128P</span></a></th>
-                </tr>
-                <tr>
-                  <td class="img"><img src="img/img.png" alt="alt img"></td>
-                  <td><p>x 2</p></td>
-                  <td><p class="price">12 600,<sup>70 грн</sup></p></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="basket-footer">
-            <div class="content">
-              <p>3 товара на общую сумму</p>
-              <p class="pr">13 200,<sup>78 грн</sup></p>
-            </div>
-            <div class="action">
-              <a href="#"><span>Редактировать список товаров</span></a>
-            </div>
-          </div>
-        </aside>
+        <!-- end order-preview -->
       </section>
     </main>
   </div>
 
   <footer class="footer-copyright">
-  	<div class="row collapse">
-    	<p>© Агромат, 2007–2014. Керамическая плитка и сантехника. При копировании материалов ссылка на сайт обязательна. Мобильная версия сайта</p>
-  	</div>
+    <!-- !! added class hidden-sm -->
+    <div class="row collapse hidden-sm">
+      <p>© Агромат, 2007–2016. Керамическая плитка и сантехника. При копировании материалов ссылка на сайт обязательна.</p>
+    </div>
+    <!-- !! added mobile footer -->
+    <div class="footer_mobile">
+        <div class="footer-top">
+          <div class="row collapse">
+            <div class="work-schedule work-schedule_row">
+              <span class="wrk">
+                <span class="day">пн-пт</span>
+                09<sup>00</sup>-21<sup>00
+              </sup>
+              </span>
+
+              <span class="wrk wrk_wek">
+                <span class="day day_end">сб-вс</span>
+                10<sup>00</sup>-18<sup>00</sup>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+         <div class="row collapse">
+            <div class="footer-copy">
+              <p class="copyright">© Plitka.kiev.ua, 2007–2016. <span class="copyright_text">Керамическая плитка и сантехника.</span></p>
+            </div>
+            <div class="footer-link-site">
+              <a href="">Полная версия сайта</a>
+            </div>
+          </div>
+        </div>
+    </div>
   </footer>
 
   <script src="js/lib/jquery.min.js"></script>

@@ -54,34 +54,15 @@ body{
     }
 }
 
-
-// .main-section{
-//     max-width: 990px;
-//     width: 100%;
-//     &_right {
-//         float: right;
-//         margin-left: 30px;
-//     }
-//     @include r($desktop-m) {
-//         width: calc(100% - 230px);
-//     }
-//     @include r($tablet) {
-//         width: 100%;
-//         float: none;
-//         max-width: none;
-//         float: none;
-//         margin-left: 0;
-//         padding-left: 0;
-//     }
-// }
-
 .sidebar{
     max-width: 200px;
     width: 100%;
     &_left {
         float: left;
     }
-
+    .promo-box {
+        flex-direction: column;
+    }
     // @include r($tablet) {
     //     display: none;
     //     // max-width: none;
@@ -135,6 +116,51 @@ body{
                 width: auto;
                 padding-left: 30px;
             }
+        }
+    }
+}
+.menuinfo_order-nav {
+    @include r($mob) {
+        display: none;
+    }
+    >.row {
+        @include r($tablet) {
+            padding: 20px 25px 15px;
+        }
+    }
+    .menuinfo__bl {
+        &.logo {
+            width: 39%;
+            min-width: 300px;
+            padding-left: 10px;
+            @include r($tablet) {
+                padding-left: 0;
+            }
+        }
+        &.info {
+            @include r($tablet) {
+                position: relative;
+                transform: none;
+                left: 0;
+            }
+            .phone {
+                margin-top: 0;
+            }
+            .callback {
+                margin-bottom: 0;
+            }
+        }
+        .img {
+            display: inline-block;
+            float: left;
+            @include r($tablet) {
+                img {
+                    height: 45px;
+                }
+            }
+        }
+        .schedule {
+            width: auto !important;
         }
     }
 }
@@ -591,7 +617,7 @@ body{
                 margin-left: rem-calc(-2);
                 background-image:  url("../img/addicons.png");
                 background-repeat: no-repeat;
-                background-position: -193px -5px;
+                background-position: -214px -5px;
                 @include r($tablet) {
                     display: inline-block;
                 }

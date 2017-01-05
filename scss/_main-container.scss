@@ -1,4 +1,12 @@
 @charset "UTF-8";
+.body-flex {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.box-flex {
+	flex: 1;
+}
 .main-container{
 	.row{
 		&.product-item-wrap{
@@ -16,13 +24,23 @@
 	}
 }
 
+.column {
+	&.column_mod {
+		@include r($tablet) {
+			padding: 0;
+		}
+	} 
+}
 .menu-nav {
 	position: relative;
 	z-index: 200;
 }
 .main-title_small {
-	font-size: 31px !important;
-	color: #4a5b70 !important;
+	font-size: 31px;
+	color: #4a5b70;
+	@include r($mob) {
+		font-size: 20px;
+	}
 }
 .main-section{
 	max-width: 990px;
@@ -48,13 +66,9 @@
 	&.main-section_wider {
 		@include r($desktop-m) {
 			max-width: none;
-			padding-right: 0;
 		}
 		@include r($tablet) {
-			width: calc(100% - 230px);
-		}
-		@include r($tablet-p) {
-			width: 100%;
+			padding-right: 0;
 		}
 	}
 	.main-container{
@@ -66,7 +80,13 @@
 			margin-bottom: rem-calc(12);
 			color:$title;
 			text-align:left;
+			&_margin-l {
+				@include r($tablet) {
+					margin-bottom: 35px;
+				}
+			}
 			@include r($mob) {
+				margin-bottom: 15px;
 				font-size: 20px;
 				line-height: 1;
 			}
@@ -105,6 +125,9 @@
 	margin-bottom: rem-calc(19);
 	color: $llgray;
 	text-align: left;
+	@include r($mob) {
+		margin-bottom: rem-calc(10);
+	}
 	a {
 		border-bottom: 1px solid;
 		font-style: italic;
@@ -301,6 +324,11 @@
 					}
 				}
 			}
+		}
+	}
+	.multiple-items {
+		&.multiple-items_blocks {
+			margin-bottom: -30px;
 		}
 	}
 }
@@ -809,6 +837,9 @@ ul.pagination{
 	}
 	.multiple-items {
 		margin: 0 -20px;
+		&.multiple-items_tiles {
+			height: auto;
+		}
 		@include r($tablet){
 			margin: 0 -10px;
 		}
@@ -842,6 +873,14 @@ ul.pagination{
 		@include r($mob) {
 			margin-bottom: 20px;
 		}
+		.title_small {
+			@include r($mob) {
+				font-size: 18px;
+			}
+		}
+		&.title_sm-mb {
+			margin-bottom: 0;
+		}
 	}
 	.blog-article.vertical {
 		margin: 0 !important;
@@ -849,9 +888,20 @@ ul.pagination{
 	}
 }
 
+.other-products{
+	&.no-border {
+		&.header-box {
+			@include r($mob) {
+				padding-top: 0;
+			}
+		}
+	}
+}
+
 .item-crop {
 	.overflow {
 		max-width: 150px;
+		margin: 0 auto;
 	}
 }
 
@@ -888,6 +938,11 @@ ul.pagination{
 		&:hover {
 			color: $ddgray;
 		}
+	}
+}
+.sort-container {
+	@include r($tablet) {
+		display: none;
 	}
 }
 .sort {
@@ -1062,26 +1117,75 @@ ul.pagination{
 		}
 		.item-crop {
 			display: inline-block;
+			vertical-align: top;
 			// width: 45%;
 			max-width: 150px;
-			margin: 0 19px;
+			margin: 0 19px 30px;
 			@include r($mob) {
 				max-width: 120px;
-				margin: 0 10px;
+				margin: 0 10px 30px;
+			}
+			.img {
+				margin-bottom: 5px;
 			}
 			.title {
+				display: block;
+				margin-bottom: 5px;
 				font-size: 14px;
+				font-weight: 700;
 				color: $blue;
 				text-decoration: underline;
+				span {
+					border: none;
+				}
 			}
 			.price {
+				margin-bottom: 0;
 				font-size: 21px;
+				line-height: 1.2;
 				sup {
 					font-size: 14px;
+				}
+				&_visible-xs {
+					display: none;
+					@include r($mob) {
+						display: block;
+					}
+				}
+			}
+			.availability {
+				display: block;
+				font-size: 12px;
+				color: #868686;
+				line-height: 1;
+				&_hidden {
+					@include r($mob) {
+						display: none;
+					}
+				}
+			}
+			.desckription {
+				.title {
+					span {
+						border: none;
+					}
+				}
+			} 
+			.deskript {
+				@include r($tablet) {
+					display: none;
 				}
 			}
 		}
 		@include r($mob) {
+		}
+	}
+	&.multiple-items_sm {
+		&.slick-slider {
+			height: auto;
+			.slick-list {
+				padding: 0;
+			}
 		}
 	}
 }
@@ -1158,9 +1262,9 @@ ul.pagination{
 					font-size: 14px;
 					margin-bottom: 10px;
 					margin-top: 0;
-					padding-bottom: 0;
-					padding-top: 0;
-					width: 150px;
+					// padding-bottom: 0;
+					// padding-top: 0;
+					// width: 150px;
 					height: 33px;
 					line-height: 33px;
 					display: none;
@@ -1168,9 +1272,13 @@ ul.pagination{
 					-webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3);
 					-moz-box-shadow:    0px 2px 2px 0px rgba(0, 0, 0, 0.3);
 					box-shadow:         0px 2px 2px 0px rgba(0, 0, 0, 0.3);
+					padding: 0;
+					width: 100%;
 					.icon{
-						display: block;
-						float: left;
+						display: inline-block;
+						vertical-align: top;
+						margin-right: 10px;
+						margin-left: -10px;
 						height: 33px;
 						width: 34px;
 						border: 0;
@@ -1252,11 +1360,27 @@ footer{
 	&.footer-copyright{
 		padding-top:57px;
 		padding-bottom:100px;
+		background: #f4f4f4;
 		p{
 			margin:0;
 			padding: 0;
 			text-align: left;
 			font-size:13px;
+		}
+		@include r($tablet) {
+			padding: 0;
+			background: none;
+		}
+		.footer-top{
+			margin: 0 10px;
+			padding: 15px 0;
+			border-top: 1px solid $border;
+			span {
+				text-align: left;
+			}
+		}
+		.row {
+			padding: 0;
 		}
 	}
 	.title{
@@ -1402,11 +1526,16 @@ footer{
 		}
 	}
 }
- 
+
 .promo-box{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
+	&.collapse {
+		&.row {
+			width: 100%;
+		}
+	}
 	.medium-6 {
 		&:first-child {
 			width: calc(50% - 15px);
@@ -1422,7 +1551,7 @@ footer{
 			&.row {
 				margin-bottom: 50px;
 			}
-		} 
+		}
 	}
 	@include r($mob) {
 		display: none;
@@ -1622,10 +1751,23 @@ footer{
 	border-top: 1px solid $border;
 	padding-top: 30px;
 	margin-top: 40px !important;
+	@include r($mob) {
+		margin-top: 15px !important;
+		padding-top: 10px;
+	}
 	&.no-border {
 		border: 0;
 		padding-top: 0;
-		margin-bottom: 40px !important;
+		margin-bottom: 40px;
+		@include r($tablet) {
+			margin-top: 0 !important;
+			.title{
+				margin-bottom: 0;
+			}
+		}
+		@include r($mob) {
+			margin-bottom: 15px;
+		}
 	}
 	.title{
 		font-size: 21px;
@@ -1633,6 +1775,9 @@ footer{
 		line-height: 19px;
 		font-weight: 700;
 		color: $title;
+		@include r($mob) {
+			font-size: 18px;
+		}
 	}
 	.table{
 		display: table;
@@ -1645,6 +1790,25 @@ footer{
 			display: table-row;
 			ul {
 				display: table-cell;
+			}
+		}
+		&.manufactures {
+			@include r($mob) {
+				display: block;
+				font-size: 0;
+				.row {
+					display: block;
+				}
+				ul {
+					display: inline-block;
+					width: 33%;
+					margin-bottom: 20px;
+				}
+			}
+			@include r($mob-sm) {
+				ul {
+					width: 48%;
+				}
 			}
 		}
 	}
@@ -1698,6 +1862,49 @@ footer{
 		top: 50% !important;
 		transform: translateY(-50%);
 	}
+	&.modal_callback {
+		@include r($mob) {
+			max-width: 320px;
+			width: 100%;
+			border: none;
+			border-radius: 0;
+			.modal__header {
+				padding: 20px 10px;
+				border-radius: 0;
+			}
+			.modal__body {
+				padding: 30px 10px;
+			}
+			.medium-6 {
+				&:first-child {
+					padding-right: 0;
+					margin-bottom: 40px;
+					p {
+						float: right;
+						display: inline-block;
+						width: 165px;
+					}
+					img {
+						float: left;
+						width: 80px;
+						height: 80px;
+					}
+				}
+				&:last-child {
+					padding: 0;
+				}
+				label {
+					margin-bottom: 15px;
+					max-width: 200px;
+					width: 70%;
+					margin: 0 auto 30px;
+				}
+			}
+			.btn {
+				width: 100%;
+			}
+		}
+	}
 }
 .modal {
 	font-size: 14px;
@@ -1713,6 +1920,7 @@ footer{
 	}
 	
 }
+
 .modal_w680 {
 	width: 680px;
 }
@@ -1776,6 +1984,9 @@ footer{
 .field {
 	display: block;
 	margin-bottom: 30px;
+	@include r($mob) {
+		margin-bottom: 15px;
+	}
 	+ .btn-wrap {
 		margin-top: -5px;
 	}
@@ -1787,21 +1998,36 @@ footer{
 	}
 }
 .field_inline {
-	width: rem-calc(590);
+	max-width: rem-calc(590);
+	width: 100%;
 	font-size: 0;
+	@include r($mob) {
+		&:last-child {
+			margin-bottom: 40px;
+		}
+	}
 	> .field__title,
 	> .field__body {
 		display: inline-block;
 		vertical-align: top;
+		@include r($mob) {
+			display: block;
+			width: 100%;
+		}
 	}
 	> .field__title {
 		width: rem-calc(190);
 		margin-bottom: 0;
 		min-height: 1px;
 		padding: 8px 10px 0 0;
+		@include r($mob) {
+			margin-bottom: 5px;
+			padding: 0;
+		}
 	}
 	> .field__body {
-		width: rem-calc(400);
+		max-width: rem-calc(400);
+		width: 100%;
 	}
 }
 .captcha {
@@ -1834,6 +2060,23 @@ footer{
 }
 .field__body {
 	display: block;
+	.btn.gradient {
+		@include r($mob) {
+			display: block;
+			width: 100%;
+			font-size: 21px;
+		}
+	}
+	input {
+		&::placeholder {
+			color: $ddgray;
+		}
+	}
+	input[type=tel] {
+		@include r($mob) {
+			max-width: 200px;
+		}
+	}
 }
 .input {
 	display: block;
@@ -1852,6 +2095,9 @@ footer{
 .input_textarea {
 	height: 128px;
 	resize: none;
+	@include r($mob) {
+		height: 88px;
+	}
 }
 
 .close-reveal-modal, .modal__close{
@@ -1904,201 +2150,6 @@ footer{
 			font-size: 18px;
 			color: #4a5b70;
 			margin: 0;
-		}
-	}
-	.basket-view{
-		position: relative;
-		padding: 29px 34px 0;
-		&:after {
-			content: "";
-			width: 100%;
-			height: 1px;
-			border-bottom: 1px solid #ddd;
-			padding: 0 34px;
-			padding-bottom: 29px;
-			clear: both;
-		}
-		@include r($tablet) {
-			padding: 20px 34px 0;
-			&:after {
-				padding-bottom: 20px;
-			}
-		}
-		@include r ($mob) {
-			padding: 20px 10px 0;
-		}
-		.del{
-			width: 24px;
-			
-			padding: 0px 0px 0px;
-			.btn-del{
-				padding: 0;
-				border: 0;
-				outline: none;
-				background: url(../img/del-btn.png);
-				background-size: 16px;
-				width: 16px;
-				height: 16px;
-			}
-		}
-		.img{
-			padding: 0;
-			width: 150px;
-			height: 130px;
-			@include r($tablet) {
-				width: 75px;
-				height: 65px;
-			}
-			.sticker {
-				left: 95px;
-				top:-5px;
-				@include r($tablet) {
-					top: -20px;
-				}
-			}
-		}
-		.name-product{
-			width: 330px;
-			padding-left: 28px;
-			//padding-top: 6px;
-			@include r($tablet) {
-				padding-left: 20px;
-				max-width: 268px;
-			}
-			@include r($tablet) {
-				padding-left: 15px;
-				max-width: 190px;
-			}
-			.prod-desk{
-				font-size: 14px;
-				font-weight: 400;
-				color: $ddgray;
-				margin-bottom: 15px;
-				margin-top: 0;
-				line-height: 16px;
-			}
-		}
-		.sum,
-		.amount{
-			width:143px;
-			padding-top: 6px;
-			@include r($tablet) {
-				width: 114px;
-				padding: 6px 0 0;
-			}
-			.area{
-				color: #22bee8;
-				font-size: 12px;
-				margin: 3px 0 8px;
-				span{
-					font-weight: 700;
-					sup{
-						top: -2px;
-					}
-				}
-			}
-		}
-		.sum {
-			text-align: right;
-			width: 183px;
-			padding-right: 17px;
-			.price {
-				@include r($tablet) {
-					padding-top: 23px;
-				}
-			}
-		}
-	}
-	.basket-actions{
-		@include r($tablet) {
-			padding: 0 34px;
-		}
-		@include r($mob) {
-			padding: 0 10px;
-		}
-		.total{
-			text-align: right;
-			margin: 0 40px;
-			// border-top: 1px solid #dddddd;
-			padding: 10px 17px 20px 0;
-			@include r($tablet) {
-				margin: 0;
-				padding: 10px 0 20px;
-			}
-			@include r($mob) {
-				// border-top: none;
-			}
-			&.striked {
-				padding-bottom: 10px;
-				.price{
-					position: relative;
-					display: inline-block;
-					color: #878787;
-					&:after {
-						position: absolute;
-						content: "";
-						left: -3px;
-						top: 50%;
-						right: 0; 
-						border-top: 2px solid;
-						border-color: #000;
-						-webkit-transform:rotate(-5deg);
-						-moz-transform:rotate(-5deg);
-						-ms-transform:rotate(-5deg);
-						-o-transform:rotate(-5deg);
-						transform:rotate(-5deg);
-					}
-				}
-			}
-			.price{
-				line-height: 1;
-				@include r($tablet) {
-					display: inline-block;
-					font-size: 31px;
-				}
-			}
-			.sm-desk {
-				@include r($tablet) {
-					display: inline-block;
-					margin-right: 40px;
-				}
-			}
-		}
-		.total-discount{
-			margin: 0 40px;
-			border: 3px solid #ed1c24;
-			padding: 14px 17px;
-			background-color: #fcf2e9;
-			.sm-desk{
-				float: left;
-				font-size: 18px;
-				font-weight: 700;
-				color: #ed1c24;
-				line-height: 25px;
-				margin: 0;
-				}
-			.price{
-				float: right;
-				font-size: 25px;
-				font-weight: 700;
-				color: #ed1c24;
-				margin: 0;
-				line-height: 1;
-			}
-		}
-
-		.btn-group{
-			margin: 0 40px;
-			padding-bottom: 35px;
-			@include r($tablet) {
-				margin: 0;
-			}
-			.btn{
-				position: relative;
-				&.close-reveal-modal.left.default{
-					content: none;
-				}
-			}
 		}
 	}
 	.basket-footer{
@@ -2160,6 +2211,202 @@ footer{
 	.close-reveal-modal {
 		@include r($tablet) {
 			right: 0;
+		}
+	}
+}
+
+.basket-view{
+	position: relative;
+	padding: 29px 34px 0;
+	&:after {
+		content: "";
+		width: 100%;
+		height: 1px;
+		border-bottom: 1px solid #ddd;
+		padding: 0 34px;
+		padding-bottom: 29px;
+		clear: both;
+	}
+	@include r($tablet) {
+		padding: 20px 34px 0;
+		&:after {
+			padding-bottom: 20px;
+		}
+	}
+	@include r ($mob) {
+		padding: 20px 10px 0;
+	}
+	.del{
+		width: 24px;
+		
+		padding: 0px 0px 0px;
+		.btn-del{
+			padding: 0;
+			border: 0;
+			outline: none;
+			background: url(../img/del-btn.png);
+			background-size: 16px;
+			width: 16px;
+			height: 16px;
+		}
+	}
+	.img{
+		padding: 0;
+		width: 150px;
+		height: 130px;
+		@include r($tablet) {
+			width: 75px;
+			height: 65px;
+		}
+		.sticker {
+			left: 95px;
+			top:-5px;
+			@include r($tablet) {
+				top: -20px;
+			}
+		}
+	}
+	.name-product{
+		width: 330px;
+		padding-left: 28px;
+		//padding-top: 6px;
+		@include r($tablet) {
+			padding-left: 20px;
+			max-width: 268px;
+		}
+		@include r($tablet) {
+			padding-left: 15px;
+			max-width: 190px;
+		}
+		.prod-desk{
+			font-size: 14px;
+			font-weight: 400;
+			color: $ddgray;
+			margin-bottom: 15px;
+			margin-top: 0;
+			line-height: 16px;
+		}
+	}
+	.sum,
+	.amount{
+		width:143px;
+		padding-top: 6px;
+		@include r($tablet) {
+			width: 114px;
+			padding: 6px 0 0;
+		}
+		.area{
+			color: #22bee8;
+			font-size: 12px;
+			margin: 3px 0 8px;
+			span{
+				font-weight: 700;
+				sup{
+					top: -2px;
+				}
+			}
+		}
+	}
+	.sum {
+		text-align: right;
+		width: 183px;
+		padding-right: 17px;
+		.price {
+			@include r($tablet) {
+				padding-top: 23px;
+			}
+		}
+	}
+}
+.basket-actions{
+	@include r($tablet) {
+		padding: 0 34px;
+	}
+	@include r($mob) {
+		padding: 0 10px;
+	}
+	.total{
+		text-align: right;
+		margin: 0 40px;
+		// border-top: 1px solid #dddddd;
+		padding: 10px 17px 20px 0;
+		@include r($tablet) {
+			margin: 0;
+			padding: 10px 0 20px;
+		}
+		@include r($mob) {
+			// border-top: none;
+		}
+		&.striked {
+			padding-bottom: 10px;
+			.price{
+				position: relative;
+				display: inline-block;
+				color: #878787;
+				&:after {
+					position: absolute;
+					content: "";
+					left: -3px;
+					top: 50%;
+					right: 0; 
+					border-top: 2px solid;
+					border-color: #000;
+					-webkit-transform:rotate(-5deg);
+					-moz-transform:rotate(-5deg);
+					-ms-transform:rotate(-5deg);
+					-o-transform:rotate(-5deg);
+					transform:rotate(-5deg);
+				}
+			}
+		}
+		.price{
+			line-height: 1;
+			@include r($tablet) {
+				display: inline-block;
+				font-size: 31px;
+			}
+		}
+		.sm-desk {
+			@include r($tablet) {
+				display: inline-block;
+				margin-right: 40px;
+			}
+		}
+	}
+	.total-discount{
+		margin: 0 40px;
+		border: 3px solid #ed1c24;
+		padding: 14px 17px;
+		background-color: #fcf2e9;
+		.sm-desk{
+			float: left;
+			font-size: 18px;
+			font-weight: 700;
+			color: #ed1c24;
+			line-height: 25px;
+			margin: 0;
+			}
+		.price{
+			float: right;
+			font-size: 25px;
+			font-weight: 700;
+			color: #ed1c24;
+			margin: 0;
+			line-height: 1;
+		}
+	}
+
+	.btn-group{
+		margin: 0 40px;
+		padding-bottom: 35px;
+		@include r($tablet) {
+			margin: 0;
+		}
+		.btn{
+			position: relative;
+			&.close-reveal-modal.left.default{
+				content: none;
+			}
 		}
 	}
 }
@@ -2529,10 +2776,41 @@ footer{
 .message_info {
 	border-color:  #22BEE8;;
 }
+.message_contacts {
+	margin-top: 25px;
+	@include r($tablet) {
+		height: auto;
+	}
+	@include r($mob) {
+		margin-top: 15px;
+	}
+	.message__img {
+		img {
+			min-width: 65px;
+			height: 65px;
+		}
+		@include r($mob) {
+			padding: 20px 23px 20px;
+			vertical-align: top;
+			img {
+				min-width: 44px;
+				height: 44px;
+				padding-top: 5px;
+			}
+		}
+	}
+	.message__text {
+		@include r($mob) {
+			padding: 20px 23px 20px 0;
+			text-align: left;
+			font-size: 15px;
+		}
+	}
+}
 .message__img,
 .message__text {
 	display: table-cell;
-	padding: 20px 33px;
+	padding: 60px 33px;
 	vertical-align: middle;
 	text-align: center;
 }
@@ -2746,18 +3024,40 @@ footer{
 		background: #0391FF;
 	}
 }
+.product-box-wrap {
+	@include r($mob) {
+		margin: 0 -10px;
+	}
+}
 .product-box {
 	position: relative;
 	margin-top: 20px;
 	background: #eef6f9; 
+	@include r($mob) {
+		margin-top: 0;
+	}
 	&__slider {
 		position: relative;
 		margin-bottom: 25px;
-		border-bottom: 3px solid #fff 
+		border-bottom: 3px solid #fff;
+		@include r($tablet) {
+			border-bottom: none;
+		}
+		@include r($mob) {
+			margin-bottom: 10px;
+		}
 	}
 	.orbit-container {
+		@include r($mob) {
+			height: 130px;
+			margin-bottom: 10px;
+		}
 		img {
 			width: 100%;
+			@include r($mob) {
+				min-height: 130px;
+				object-fit: cover;
+			}
 		}
 		.orbit-next,
 		.orbit-prev {
@@ -2770,8 +3070,24 @@ footer{
 		right: 0;
 		max-width: 370px;
 		font-size: 0;
+		@include r($tablet) {
+			bottom: -65px;
+		}
+		@include r($mob) {
+			position: relative;
+			bottom: 0;
+			margin-left: 10px;
+		}
 		img {
 			border: 4px solid #fff;
+			@include r($tablet) {
+				width: 40px;
+				height: 44px;
+				object-fit: cover;
+			}
+			@include r($mob) {
+				border-width: 2px;
+			}
 		}
 		a {
 			display: inline-block;
@@ -2786,11 +3102,18 @@ footer{
 	}
 	&__main {
 		padding: 0 35px 35px;
+		@include r($mob) {
+			padding: 0 10px 20px;
+		}
 	}
 	&__title {
 		max-width: 550px;
 		font-size: 51px;
 		color: #30c2e9;
+		@include r($tablet) {
+			font-size: 44px;
+			line-height: 1;
+		}
 	}
 	&__text {
 		position: relative;
@@ -2823,13 +3146,26 @@ footer{
     margin: 15px 0 30px 0;
     font-weight: bold;
     text-transform: uppercase;
+	@include r($tablet) {
+		margin: 10px 0 25px 0;
 	}
+	@include r($mob) {
+		margin: 5px 0 15px 0;
+	}
+}
 .link-dotted {
 	border-bottom: 1px dotted;
+	@include r($tablet) {
+		font-size: 14px;
+	}
 }
 .products-row {
 	border-bottom: 1px solid #bfbfbf; 
 	padding-top: 38px;
+	@include r($tablet) {
+		padding-top: 15px;
+		font-size: 0;
+	}
 	&:last-child {
 		border-bottom: 0
 	}
@@ -2849,13 +3185,17 @@ footer{
 	vertical-align: bottom;
 	margin: 0 20px 35px 0;
 	position: relative;
+	@include r($mob) {
+		width: calc(50% - 10px);
+		margin-right: 10px;
+	}
 	&__img {
 		margin-bottom: 7px;
 	}
 	&__text {
-		height: 100px;
 		overflow: hidden;
 		max-width: 130px;
+		margin-bottom: 10px;
 	}
 	&__title {
 		display: inline-block;
@@ -2875,6 +3215,10 @@ footer{
 			color: #0053a0;
 			text-decoration: underline;
 		}
+	}
+	&__price {
+		padding-top: 10px;
+		border-top: 1px solid $border;
 	}
 
 	.btn{
@@ -2904,8 +3248,15 @@ footer{
 			font-size: 10px;
 			top: -4px;
 		}
+		&_right {
+			float: right;
+			margin-left: 10px;
+			margin-bottom: 0;
+			padding-top: 3px;
+		}
 	}
 	&__meta {
+		margin-bottom: 5px;
 		font-size: 12px;
 		color: #868686; 
 	}
@@ -2914,6 +3265,10 @@ footer{
 .collect {
 	border: 5px solid #f4f4f4;
 	padding: 23px 20px 35px;
+	@include r($mob) {
+		margin-bottom: 40px;
+		padding: 10px 15px;
+	}
 	&__title {
 		margin: 0 0 20px; 
 		font-size: 18px;
@@ -2929,6 +3284,13 @@ footer{
 		font-size: 16px;
 		font-weight: bold;
 		color: #737373;
+		@include r($mob) {
+			-webkit-column-count: 2;
+			-moz-column-count: 2;
+			column-count: 2;
+			// vertical-align: top;
+			font-size: 13px;
+		}
 		li {
 			margin-bottom: 8px;
 		}
