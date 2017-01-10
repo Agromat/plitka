@@ -220,10 +220,6 @@ body{
             .icon-basket{
                 background-position: -91px -5px;
             }
-            // for mob
-            // .icon-basket{
-            //     background-position: -65px -5px;
-            // }
         }
         @include r($mob) {
             display: none;

@@ -359,6 +359,9 @@
 				top: 4px;
 				background: #fff;
 				border-radius: 3px 3px 0 0;
+				@include r($tablet) {
+					top: -2px;
+				}
 			}
 		}
 		> a{

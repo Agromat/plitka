@@ -52,6 +52,14 @@
         ellipsis  : '... ',
         height: 36
       });
+    }; 
+
+    // text truncate inside the posts
+    if ($('.js-truncate-post').exists()) {
+      $(".js-truncate-post").dotdotdot({
+        ellipsis  : '... ',
+        watch: "window"
+      });
     };
 
     // mini function 
@@ -393,18 +401,13 @@
     }
 
     // destroy slick for mobile 
-    if ($('.js-multiple-items-1').exists()) {
-      if( $(window).width() < 768 ){
-        $('.js-multiple-items-1').unslick();
-      }    
-    };
-    
-    if ($('.js-multiple-items-1').exists()) {
-      // destroy slick for tab 
-      if( $(window).width() < 1024 ){
-        $('.js-unslick-tab').unslick();
-      }
-    };
+    if( $(window).width() < 768 ){
+      $('.js-multiple-items-1').unslick();
+    }    
+    // destroy slick for tab 
+    if( $(window).width() < 1024 ){
+      $('.js-unslick-tab').unslick();
+    }
 
     $("#modal-basket").click(function(){
       $('.js-multiple-items-4').slickNext();

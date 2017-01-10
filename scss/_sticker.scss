@@ -148,12 +148,16 @@
 	position: absolute;
 	top:-15px;
 	right: -10px;
-	width: 120px;
-	height: 120px;
+	width: 80px;
+	height: 80px;
 	max-height: 120px;
 	background-image: url(../img/actions-label.png);
 	background-repeat: no-repeat;
 	background-position: top right;
+}
+.promo__stick_big{
+	width: 120px;
+	height: 120px;
 }
 
 .stickers_set {
@@ -161,5 +165,44 @@
 	width: 100%;
 	@include r($tablet){
 		top: -6px;
+	}
+}
+
+.stick-label {
+	width: 100px;
+	height: 40px;
+	background-size: contain;
+	@include r($mob){
+		width: 65px;
+		height: 25px;
+		top: -10px;
+	}
+}
+.stick-star {
+	width: 90px;
+	height: 60px;
+	background-size: contain;
+	@include r($tablet){
+		width: 85px;
+		height: 55px;
+	}
+	@include r($mob){
+		width: 50px;
+		height: 35px;
+		top: -10px;
+	}
+}
+.stick-stock {
+	// width: 80px;
+	// height: 80px;
+	background-size: contain;
+	@include r($tablet){
+		width: 55px;
+		height: 55px;
+	}
+	@include r($mob){
+		width: 45px;
+		height: 45px;
+		top: -10px;
 	}
 }

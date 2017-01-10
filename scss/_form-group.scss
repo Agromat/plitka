@@ -55,6 +55,7 @@
 		    clear: none;
 		    padding: 0 4px 0 24px;
 		    cursor: pointer;
+		    min-height: 25px;
 		    background: url(../img/uncheck.png) left 3px no-repeat;
 		    -webkit-touch-callout: none;
 		    -webkit-user-select: none;
@@ -252,8 +253,18 @@
 	margin-bottom: 30px !important;
 }
 .checkbox_small {
+	@include r($mob) {
+		&.checkbox {
+			margin-top: 0;
+		}
+	}
 	label {
 		font-size: 13px;
 		padding-right: 0;
+	}
+	+ .btn-wrap {
+		@include r($mob) {
+			margin-bottom: 20px;
+		}
 	}
 }

@@ -29,11 +29,33 @@
 		@include r($tablet) {
 			padding: 0;
 		}
-	} 
+	}  
 }
 .menu-nav {
 	position: relative;
 	z-index: 200;
+}
+.main-title{
+	font-family: $font-family-arial;
+	font-size: rem-calc(31);
+	line-height:rem-calc(31);
+	margin-top: 0;
+	margin-bottom: rem-calc(12);
+	color:$title;
+	text-align:left;
+	&_margin-l {
+		@include r($tablet) {
+			margin-bottom: 35px;
+		}
+	}
+	@include r($mob) {
+		margin-bottom: 15px;
+		font-size: 20px;
+		line-height: 1;
+	}
+	span {
+		color: #bdce00;
+	}
 }
 .main-title_small {
 	font-size: 31px;
@@ -72,28 +94,6 @@
 		}
 	}
 	.main-container{
-		.main-title{
-			font-family: $font-family-arial;
-			font-size: rem-calc(31);
-			line-height:rem-calc(31);
-			margin-top: 0;
-			margin-bottom: rem-calc(12);
-			color:$title;
-			text-align:left;
-			&_margin-l {
-				@include r($tablet) {
-					margin-bottom: 35px;
-				}
-			}
-			@include r($mob) {
-				margin-bottom: 15px;
-				font-size: 20px;
-				line-height: 1;
-			}
-			span {
-				color: #bdce00;
-			}
-		}
 		a{/*
 			span{
 				border-bottom-style:solid;
@@ -1856,6 +1856,8 @@ footer{
 	-moz-border-radius:15px;
 	@include r($mob) {
 		min-height: auto;
+		border: none;
+		border-radius: 0;
 	}
 	&.is-fixed {
 		position: fixed;
@@ -1922,21 +1924,25 @@ footer{
 }
 
 .modal_w680 {
-	width: 680px;
+	max-width: 680px;
 }
 .modal_w640 {
-	width: 640px;
+	max-width: 640px;
 }
 .modal_w520 {
-	width: 520px;
+	max-width: 520px;
 }
 .modal_w330 {
-	width: 330px;
+	max-width: 330px;
 }
 .modal__header {
 	padding: 22px 30px;
 	border-radius: 10px 10px 0 0;
 	background: #eef6f9;
+	@include r($mob) {
+		padding: 22px 30px 22px 10px;
+		border-radius: 0;
+	}
 }
 .modal__title {
 	font-size: 18px;
@@ -1945,6 +1951,9 @@ footer{
 }
 .modal__body {
 	padding: 35px 30px 40px;
+	@include r($mob) {
+		padding: 35px 10px 40px;
+	}
 	.row {
 		> .column_group {
 			padding: 10px 30px;
@@ -1973,6 +1982,7 @@ footer{
 		> .medium-5 {
 			padding-left: 10px;
 			width: 43%;
+			z-index: 1;
 		}
 		> .medium-7 {
 			padding-right: 10px;
@@ -2144,6 +2154,7 @@ footer{
 		padding: 23px 29px 17px;
 		@include r($tablet) {
 			padding: 16px 29px;
+			margin-bottom: 15px;
 		}
 		.modal-title{
 			font-weight: 700;
@@ -2271,12 +2282,19 @@ footer{
 		padding-left: 28px;
 		//padding-top: 6px;
 		@include r($tablet) {
-			padding-left: 20px;
 			max-width: 268px;
 		}
-		@include r($tablet) {
-			padding-left: 15px;
+		@include r($mob) {
 			max-width: 190px;
+		}
+		&.column{
+			padding-left: 28px;
+			@include r($tablet) {
+				padding-left: 20px;
+			}
+			@include r($mob) {
+				padding-left: 15px;
+			}
 		}
 		.prod-desk{
 			font-size: 14px;
@@ -3303,16 +3321,28 @@ footer{
 .error-page {
 	position: relative;
 	margin: 120px 0 140px;
-	width: 720px;
+	max-width: 720px;
+	@include r($tablet) {
+		margin: 120px auto 140px;
+	}
+	@include r($mob) {
+		margin: 50px auto 100px;
+	}
 	img {
 		position: absolute;
 		top: -40px;
 		right: 0;
+		@include r($mob) {
+			display: none;
+		}
 	}
 	&__title {
 		font: normal 130px Arial, sans-serif;
 		line-height: .8;
 		color: #22bee8;
+		@include r($mob) {
+			font-size: 80px;
+		}
 	}
 	&__sub {
 		margin-bottom: 25px;
@@ -3320,10 +3350,13 @@ footer{
 		color: #22bee8;
 	}
 	&__text {
-		width: 410px;
+		max-width: 410px;
 		font-size: 21px;
 		color: #888; 
 		line-height: 1.2;
+		@include r($mob) {
+			font-size: 18px;
+		}
 	}
 }
 .find-more {
@@ -3331,8 +3364,12 @@ footer{
 	border: 8px solid #22bee8;
 	padding: 30px 10px 10px 30px; 
 	margin-bottom: 114px;
-	width: 990px;
+	max-width: 990px;
 	font-size: 0;
+	@include r($mob) {
+		margin-bottom: 80px;
+		padding: 30px 10px 10px 10px; 
+	}
 	&__title {
 		position: absolute;
 		left: 24px;
@@ -3349,5 +3386,8 @@ footer{
 		width: 20%;
 		margin-right: 0;
 		padding-right: 3%;
+		@include r($mob) {
+			width: 50%;
+		}
 	}
 }

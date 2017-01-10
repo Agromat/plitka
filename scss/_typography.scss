@@ -6,14 +6,13 @@
 	@include r($tablet) {
 		margin-bottom: 30px;
 	    padding-bottom: 20px;
-	    border-bottom: 1px solid $border;
-	}	
+	}
 	@include r($mob) {
 		margin-bottom: 20px;
 	}
-	&_no-border {
+	&.article_border {
 		@include r($tablet) {
-			border-bottom: none;
+			border-bottom: 1px solid $border;
 		}
 	}
 	h1,h2,h3,h4,h5,h6 {
@@ -131,6 +130,9 @@
 				border-radius: 50%;
 				background: #000;
 			}
+			@include r($mob) {
+				font-size: 15px;
+			}
 		}
 	}
 	blockquote {
@@ -180,6 +182,7 @@
 		}
 		@include r($mob) {
 			width: 100%;
+			max-width: none;
 			margin-bottom: 20px;
 		}
 	}
@@ -244,8 +247,17 @@
 					vertical-align: top;
 					&:last-child {
 						text-align: right;
-						@include r($tablet) {
-							text-align: left;
+						@include r($mob) {
+							text-align: center;
+						}
+					}
+					table {
+						td {
+							&:last-child {
+								@include r($tablet) {
+									text-align: left;
+								}
+							}
 						}
 					}
 				}
@@ -299,7 +311,8 @@ p {
 .article__img {
 	border: 1px solid #ddd;
 	width: 300px;
-	height: 221px;
+	height: auto;
+	// height: 221px;
 	//line-height: 220px;
 	text-align: center;
 	@include vertical;
@@ -321,6 +334,10 @@ p {
 	-moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 	-webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	@include r($mob) {
+		padding: 20px;
+		line-height: 1.6;
+	}
 }
 .panel_float {
 	float: right;

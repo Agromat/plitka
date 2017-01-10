@@ -51,8 +51,9 @@
 	}
 	&__text {
 		color: $ddgray;
-		margin-bottom: 18px;
+		margin-bottom: 0;
 		font-size: 16px;
+		height: 50px;
 		@include r($mob) {
 			display: none;
 		}
@@ -60,14 +61,35 @@
 }
 .promo{
 	padding:25px 20px 15px;
+	&.promo_default {
+		margin-bottom: 0;
+		padding: 0;
+		background: none;
+		overflow: visible;
+	}
 	&__media{
-		width: 260px;
+		// width: 260px;
 		a{
 			display: block;
 		}
 	}
-	&__inner-image{
-		margin-left: -15px;
+	&__pic {
+		position: relative;
+		max-width: 580px;
+		width: calc(50% - 30px);
+		float: left;
+		@include r($mob) {
+			float: none;
+			width: 100%;
+			margin: 0 auto 20px;
+		}
+	}
+	&__content_float-right {
+		margin-left: 50%;
+		@include r($mob) {
+			width: 100%;
+			margin-left: 0;
+		}
 	}
 	&__period{
 		margin-bottom: 10px;
@@ -87,6 +109,10 @@
 		margin: 0;
 		color: $ddgray;
 		color: #4a5b70;
+		@include r($mob) {
+			padding: 13px 20px 21px;
+			font-size: 24px;
+		}
 		span {
 			border-bottom: 1px solid;
 		}
