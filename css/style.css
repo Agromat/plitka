@@ -5987,16 +5987,16 @@ footer .row.link-footer .column:last-child {
 }
 
 @media only screen and (max-width: 767px) {
-  .checkbox_small.checkbox {
+  .modal__body .checkbox_small.checkbox {
     margin-top: 0;
   }
 }
-.checkbox_small label {
+.modal__body .checkbox_small label {
   font-size: 13px;
   padding-right: 0;
 }
 @media only screen and (max-width: 767px) {
-  .checkbox_small + .btn-wrap {
+  .modal__body .checkbox_small + .btn-wrap {
     margin-bottom: 20px;
   }
 }

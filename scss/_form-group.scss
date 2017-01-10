@@ -252,19 +252,21 @@
 .form-group_mb {
 	margin-bottom: 30px !important;
 }
-.checkbox_small {
-	@include r($mob) {
-		&.checkbox {
-			margin-top: 0;
-		}
-	}
-	label {
-		font-size: 13px;
-		padding-right: 0;
-	}
-	+ .btn-wrap {
+.modal__body {
+	.checkbox_small {
 		@include r($mob) {
-			margin-bottom: 20px;
+			&.checkbox {
+				margin-top: 0;
+			}
+		}
+		label {
+			font-size: 13px;
+			padding-right: 0;
+		}
+		+ .btn-wrap {
+			@include r($mob) {
+				margin-bottom: 20px;
+			}
 		}
 	}
 }
