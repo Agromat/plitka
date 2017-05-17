@@ -1,29 +1,50 @@
-# Foundation Compass Template
+Gulp Boilerplate for generic CSS/HTML/JS development
+=============
+<a href="http://riverco.de" target="_blank">riverco.de</a> gulp boilerplate.
 
-The easiest way to get started with Foundation + Compass.
+Structure
+=============
+`/src/` - thats where you write code.
 
-## Requirements
+`/build/` - compiled code. Do not ever edit this folder.
 
-  * Ruby 1.9+
-  * [Node.js](http://nodejs.org)
-  * [compass](http://compass-style.org/): `gem install compass`
-  * [bower](http://bower.io): `npm install bower -g`
+What is happening
+=============
+We have two options for building html
+1) `/src/index.html` and `/src/partials/` - for old school HTML.
 
-## Quickstart
+2) Optionally one can use `Jade` (it's commented in gulpfile.js). Basic template is in `/src/jade/`
 
-  * [Download this starter compass project and unzip it](https://github.com/zurb/foundation-compass-template/archive/master.zip)
-  * Run `bower install` to install the latest version of Foundation
-  
-Then when you're working on your project, just run the following command:
+_Sass_ is compiled and postprocessed with Autoprefixer. We are using `gulp-ruby-sass`, so don't forget to _install Ruby and Sass_ to use this boilerplate.
 
-```bash
-bundle exec compass watch
+`src/img/icons` are joined into sprite, which could be used in Sass like this:
+```
+.icon
+    +s(png_name)
 ```
 
-## Upgrading
-
-If you'd like to upgrade to a newer version of Foundation down the road just run:
-
-```bash
-bower update
+`src/img/svg` are joined into icon font, and can be used like this:
 ```
+<i class="icon-svg_name"></i>
+```
+
+We are also using simplest include system with `gulp-rigger`, works for javascrpt and html:
+```
+//= partials/partial.html
+```
+
+Naming
+=============
+We use BEM naming, meaning `.block` for independent block. `.block__element` for elements inside that block. And `.block_modification` for modification of the block.
+
+It's noce to name layout blocks with `.l-*` prefixes. So you know it's layout.
+
+States of the blocks use prefix `.is-*`. `.is-running`, `.is-hidden`, `.is-open`.
+
+For javascript hooks we use prefix `.js-*`.
+
+You are welcome
+=============
+Have fun using it, or borrowing some parts. In case of issues or ideas just create them on github. Or write us at <a href="mailto:html@coderiver.com.ua">html@coderiver.com.ua</a>.
+
+gl & hf.

@@ -1,0 +1,1299 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="ru"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="ru"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="ru"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru"> <!--<![endif]-->
+<html class="no-js" lang="ru">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>plitka-new_modal_windows-credit</title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  
+  <link rel="icon" type="image/png" href="images/favicon/favicon.png" />
+  <link rel="icon" type="image/gif" href="images/favicon/favicon.gif" />
+  <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico" />
+
+  <!--<link rel="icon" type="image/png" href="images/favicon/speeddial-160px.png" /> Opera Speed Dial Favicon -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/favicon/apple-touch-icon-114x114-precomposed.png"> For iPhone 4 Retina display: -->
+  <!--<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/favicon/apple-touch-icon-72x72-precomposed.png"> For iPad: -->
+  <!--<link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-57x57-precomposed.png"> For iPhone: -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/app.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+     filter: none;
+    }
+  </style>
+  <![endif]-->
+  <script src="js/lib/modernizr.js"></script>
+  </head>
+  <body>
+  <header class="menu-nav">
+      <div class="menubar">
+        <div class="row collapse">
+          
+          <ul class="left">
+            <li><a href="#about"><span>О магазине</span></a></li>
+            <li><a href="#delivery"><span>Доставка и оплата</span></a></li>
+            <li><a href="#contacts"><span>Контакты</span></a></li>
+            <li><a href="#safeguards"><span>Гарантия</span></a></li>
+            <li><a href="#feedback"><span>Обратная связь</span></a></li>
+          </ul><!-- /menu bar left side-->
+
+          <ul class="right">
+            <li><a class="icon icon-padlock js-modal-toggle" data-modal="js-modal-login" href="#">Войти в личный кабинет</a></li>
+          </ul><!-- /menu bar right side-->
+        
+        </div><!-- /row collapse -->
+      </div><!-- /menubar-->
+
+      <div class="menuinfo">
+        <div class="row collapse">
+
+          <div class="logo column medium-3">
+
+            <div class="img">
+              <a href="/"><img src="img/logo.png" alt="alt img"></a>
+            </div><!-- /img block -->
+
+            <div class="about-text">
+              <p>интернет-магазин плитки<br> и сантехники</p>
+            </div><!-- /about block -->
+          </div><!-- /logo block -->
+
+          <div class="info column medium-5">
+            <div class="row collapse">
+
+              <div class="phone column medium-4">
+                <p class="tel">8 (800) 700-00-10</p>
+                <p>Круглосуточный заказ звонок бесплатный</p>
+              </div>
+              
+              <div class="callback column medium-4">
+                <a href="#" class="js-modal-toggle" data-modal="js-modal-callback"><span>Заказать обратный звонок</span></a>
+              </div>
+              
+              <div class="schedule column medium-3">
+                <p>Время работы</p>
+                <div>
+                  <span></span><span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span class="wek"></span>
+                  <span class="wek"></span>
+                </div>
+                <p>
+                  <span>09<sup>00</sup>..21<sup>00</sup></span>
+                  <span class="wek">10<sup>00</sup>-18<sup>00</sup></span>
+                </p>
+              </div>
+
+            </div>
+
+            <div class="row collapse">
+
+              <div class="search" class="search" role="search">
+          <form action="">
+            <input class="column medium-9" type="search" placeholder="поиск товара">
+            <button class="column medium-3" type="submit">Искать</button>
+          </form>
+        </div>
+
+            </div>
+          </div><!-- /info-->
+
+          <div class="basket-sm column medium-4">
+            <div>
+              <p>В корзине <span>2</span> товара на сумму</p>
+              <p class="money">4 209,<sup>78 грн</sup></p>
+              <a class="btn btn-green" href="#">Заказать</a>
+            </div>
+          </div><!-- /basket-->
+          
+        </div>
+      </div><!-- /menuinfo -->
+  </header><!-- /menu-nav-->
+
+  <section class="menu-catalog">
+  <nav role="navigation">
+    <ul class="row collapse">
+      <li>
+      <a data-dropdown="tile" aria-controls="drop" aria-expanded="false" class="button dropdown"><span>Плитка</span></a>
+      </li>
+      <li>
+      <a class="button"><span>Сантехника</span></a>
+      </li>
+      <li>
+      <a class="button"><span>Напольное покрытие</span></a>
+      </li>
+      <li>
+      <a class="button"><span>Обои</span></a>
+      </li>
+      <li>
+      <a class="button"><span>Отоплениеы</span></a>
+      </li>
+      <li>
+      <a class="button"><span>Освещение</span></a>
+      </li>
+      <li>
+      <a class="button"><span>Бассейны</span></a>
+      </li>
+      <li>
+      <a class="button"><span>Инструменты</span></a>
+      </li>
+      <li>
+      <a class="button"><span>Аксессуары</span></a>
+      </li>
+    </ul><!-- /list items menu -->
+
+    <div id="tile" data-dropdown-content class="f-dropdown content" aria-hidden="true" tabindex="-1">
+    <div class="row">
+      <div class="column medium-9 menu-item">
+      <div class="row collapse product">
+        <ul class="inline three-type">
+        <li><a href="#"><span>Ванны</span></a></li>
+        <li><a href="#"><span>Гидромассажные боксы</span></a></li>
+        <li><a href="#"><span>Гидромассажные ванны</span></a></li>
+        <li><a href="#"><span>Душевые кабины</span></a></li>
+        <li><a href="#"><span>Мозаика</span></a></li>
+        <li><a href="#"><span>Аксессуары</span></a></li>
+        <li><a href="#"><span>Зеркала</span></a></li>
+        <li><a href="#"><span>Мебель</span></a></li>
+        <li><a href="#"><span>Освещение</span></a></li>
+        <li><a href="#"><span>Фурнитура</span></a></li>
+        <li><a href="#"><span>Сауны</span></a></li>
+        <li><a href="#"><span>Сифоны</span></a></li>
+        <li><a href="#"><span>Душевые наборы и панели</span></a></li>
+        <li><a href="#"><span>Смесители</span></a></li>
+        <li><a href="#"><span>Средства за уходом</span></a></li>
+        </ul>
+      </div>
+      <div class="row collapse brand">
+         <p class="brand-title">Торговые марки раздела <span>Сантехника</span></p>
+         <ul class="inline four-type">
+        <li><a href=""><span>Collection2</span></a></li>
+        <li><a href=""><span>Free Loft</span></a></li>
+        <li><a href=""><span>Collection 2 Life</span></a></li>
+        <li><a href=""><span>Collection 3</span></a></li>
+        <li><a href=""><span>Collection 3</span></a></li>
+        <li><a href=""><span>Magic Run</span></a></li>
+        <li><a href=""><span>Carat</span></a></li>
+        <li><a href=""><span>Optima 300</span></a></li>
+        <li><a href=""><span>Duscho Free Cube</span></a></li>
+        <li><a href=""><span>Duscho FREE Caprivi</span></a></li>
+        <li><a href=""><span>Malaga</span></a></li>
+        <li><a href=""><span>Ancona</span></a></li>
+        </ul>
+      </div>
+       
+      </div>
+      <div class="column medium-3 new-in">
+      <a href="">
+        <p class="new-in-title">Новинки раздела Сантехника</p>
+  
+        <div class="new-in-img">
+        <img src="img/img.png" alt="alt img">
+        </div>
+      </a>
+      <div class="new-in-about">
+        <a href=""><span>Раковина-52</span></a>
+        <p class="price">600 <sup>грн</sup></p>
+      </div>
+
+      </div>
+    </div>
+    </div><!-- /dropdown -->
+  </nav>
+  </section><!-- /"menu-catalog section-->
+
+  <div class="row collapse">
+  <main class="column medium-10 main-section catalog" role="main">
+  
+
+    <section class="main-container">
+
+    <div class="row collapse">
+      <div class="column medium-12 slider" >
+
+      <ul data-orbit data-options="bullets:true;">
+        <li data-orbit-slide="slide-1">
+        <a href="#">
+          <img src="img/slider/niceasiat.jpg" alt="slide 1" />
+        </a>
+        </li>
+        <li data-orbit-slide="slide-2" class="active">
+        <a href="#">
+          <img src="img/slider/niceasiat.jpg" alt="slide 2" />
+        </a>
+        </li>
+        <li data-orbit-slide="slide-3">
+        <a href="#">
+          <img src="img/slider/niceasiat.jpg" alt="slide 3" />
+        </a>
+        </li>
+      </ul>
+
+      </div>
+    </div><!-- /main-container-->
+
+    <div class="other-products header-box">
+      <div class="row collapse">
+      <div class="other-products__head">
+        <h6 class="title title_bold">Новинки сантехники</h6>
+        <ul class="sort">
+        <li><span>Сортировка:</span></li>   
+        <li><a href="#">от дорогих</a></li>
+        <li class="is-active"><a href="#">от дешевых</a></li>
+        <li><a href="#">по популярности</a></li>
+        <li><a href="#">новые поступления</a></li>
+        </ul>
+      </div>
+      <div class="multiple-items js-multiple-items insale">
+
+        <div class="item-crop">
+        <div class="overflow">
+          <div class="img">
+          <div class="sticker"><span class="markdown"></span></div>
+          <img src="img/img.png">
+          </div>
+          <div class="desckription">
+          <a href="#" class="title"><span>Раковина-52</span></a>
+          <p class="price">
+            <span class="old">500 <sup>грн</sup></span>
+            <span>600 <sup>грн</sup></span>
+          </p>
+          <a href="#" class="btn gradient">
+            <span class="icon buy"></span>Купить
+          </a>
+          <a href="№" class="link"><span class="dashedtext">Добавить к сравнению</span></a>
+          <p class="deskript">Ванная комната — это место, где мы готовимся к предстоящим дневным событиям утром и настраиваем себя на сон грядущий вечером</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="item-crop">
+        <div class="overflow">
+          <div class="img"><img src="img/img.png"></div>
+          <div class="desckription">
+          <a href="#" class="title"><span>Светильник встраиваемый Mint</span></a>
+          <p class="price">
+            <span class="old">1 600 <sup>грн</sup></span>
+            <span>1 500 <sup>грн</sup></span>
+          </p>
+          <a href="#" class="btn gradient">
+            <span class="icon buy"></span>Купить
+          </a>
+          <a href="№" class="link"><span class="dashedtext">Добавить к сравнению</span></a>
+          <p class="deskript">Ванная комната — это место, где мы готовимся к предстоящим дневным событиям утром и настраиваем себя на сон грядущий вечером</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="item-crop">
+        <div class="overflow">
+          <div class="img"><img src="img/img.png"></div>
+          <div class="desckription">
+          <a href="#" class="title"><span>Совок KROFT</span></a>
+          <p class="price">
+            <span class="old">12 900 <sup>грн</sup></span>
+            <span>11 600 <sup>грн</sup></span>
+          </p>
+          <a href="#" class="btn gradient">
+            <span class="icon buy"></span>Купить
+          </a>
+          <a href="№" class="link"><span class="dashedtext">Добавить к сравнению</span></a>
+          <p class="deskript">Ванная комната — это место, где мы готовимся к предстоящим дневным событиям утром и настраиваем себя на сон грядущий вечером</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="item-crop">
+        <div class="overflow">
+          <div class="img"><img src="img/img.png"></div>
+          <div class="desckription">
+          <a href="#" class="title"><span>Совок KROFT</span></a>
+          <p class="price">600 <sup>грн</sup></p>
+          <a href="#" class="btn gradient">
+            <span class="icon buy"></span>Купить
+          </a>
+          <a href="№" class="link"><span class="dashedtext">Добавить к сравнению</span></a>
+          <p class="deskript">Ванная комната — это место, где мы готовимся к предстоящим дневным событиям утром и настраиваем себя на сон грядущий вечером</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="item-crop">
+        <div class="overflow">
+          <div class="img">
+          <div class="sticker"><span class="sale"></span></div>
+          <img src="img/img.png">
+          </div>
+          <div class="desckription">
+          <a href="#" class="title"><span>Светильник встраиваемый Mint</span></a>
+          <p class="price">1 600 <sup>грн</sup></p>
+          <a href="#" class="btn gradient">
+            <span class="icon buy"></span>Купить
+          </a>
+          <a href="№" class="link"><span class="dashedtext">Добавить к сравнению</span></a>
+          <p class="deskript">Ванная комната — это место, где мы готовимся к предстоящим дневным событиям утром и настраиваем себя на сон грядущий вечером</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="item-crop">
+        <div class="overflow">
+          <div class="img">
+          <div class="sticker"><span class="new"></span></div>
+          <img src="img/img.png">
+          </div>
+          <div class="desckription">
+          <a href="#" class="title"><span>Светильник встраиваемый Mint</span></a>
+          <p class="price">1 600 <sup>грн</sup></p>
+          <a href="#" class="btn gradient">
+            <span class="icon buy"></span>Купить
+          </a>
+          <a href="№" class="link"><span class="dashedtext">Добавить к сравнению</span></a>
+          <p class="deskript">Ванная комната — это место, где мы готовимся к предстоящим дневным событиям утром и настраиваем себя на сон грядущий вечером</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="item-crop">
+        <div class="overflow">
+          <div class="img">
+          <div class="sticker"><span class="new"></span></div>
+          <img src="img/img.png">
+          </div>
+          <div class="desckription">
+          <a href="#" class="title"><span>Светильник встраиваемый Mint</span></a>
+          <p class="price">1 600 <sup>грн</sup></p>
+          <a href="#" class="btn gradient">
+            <span class="icon buy"></span>Купить
+          </a>
+          <a href="№" class="link"><span class="dashedtext">Добавить к сравнению</span></a>
+          <p class="deskript">Ванная комната — это место, где мы готовимся к предстоящим дневным событиям утром и настраиваем себя на сон грядущий вечером</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="item-crop">
+        <div class="overflow">
+          <div class="img"><img src="img/img.png"></div>
+          <div class="desckription">
+          <a href="#" class="title"><span>Светильник встраиваемый Mint</span></a>
+          <p class="price">1 600 <sup>грн</sup></p>
+          <a href="#" class="btn gradient">
+            <span class="icon buy"></span>Купить
+          </a>
+          <a href="№" class="link"><span class="dashedtext">Добавить к сравнению</span></a>
+          <p class="deskript">Ванная комната — это место, где мы готовимся к предстоящим дневным событиям утром и настраиваем себя на сон грядущий вечером</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="item-crop">
+        <div class="overflow">
+          <div class="img"><img src="img/img.png"></div>
+          <div class="desckription">
+          <a href="#" class="title"><span>Светильник встраиваемый Mint</span></a>
+          <p class="price">1 600 <sup>грн</sup></p>
+          <a href="#" class="btn gradient">
+            <span class="icon buy"></span>Купить
+          </a>
+          <a href="№" class="link"><span class="dashedtext">Добавить к сравнению</span></a>
+          <p class="deskript">Ванная комната — это место, где мы готовимся к предстоящим дневным событиям утром и настраиваем себя на сон грядущий вечером</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="item-crop">
+        <div class="overflow">
+          <div class="img"><img src="img/img.png"></div>
+          <div class="desckription">
+          <a href="#" class="title"><span>Светильник встраиваемый Mint</span></a>
+          <p class="price">1 600 <sup>грн</sup></p>
+          <a href="#" class="btn gradient">
+            <span class="icon buy"></span>Купить
+          </a>
+          <a href="№" class="link"><span class="dashedtext">Добавить к сравнению</span></a>
+          <p class="deskript">Ванная комната — это место, где мы готовимся к предстоящим дневным событиям утром и настраиваем себя на сон грядущий вечером</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="item-crop">
+        <div class="overflow">
+          <div class="img">
+          <div class="sticker"><span class="new"></span></div>
+          <img src="img/img.png">
+          </div>
+          <div class="desckription">
+          <a href="#" class="title"><span>Светильник встраиваемый Mint</span></a>
+          <p class="price">1 600 <sup>грн</sup></p>
+          <a href="#" class="btn gradient">
+            <span class="icon buy"></span>Купить
+          </a>
+          <a href="№" class="link"><span class="dashedtext">Добавить к сравнению</span></a>
+          <p class="deskript">Ванная комната — это место, где мы готовимся к предстоящим дневным событиям утром и настраиваем себя на сон грядущий вечером</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="item-crop">
+        <div class="overflow">
+          <div class="img"><img src="img/img.png"></div>
+          <div class="desckription">
+          <a href="#" class="title"><span>Светильник встраиваемый Mint</span></a>
+          <p class="price">1 600 <sup>грн</sup></p>
+          <a href="#" class="btn gradient">
+            <span class="icon buy"></span>Купить
+          </a>
+          <a href="№" class="link"><span class="dashedtext">Добавить к сравнению</span></a>
+          <p class="deskript">Ванная комната — это место, где мы готовимся к предстоящим дневным событиям утром и настраиваем себя на сон грядущий вечером</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="item-crop">
+        <div class="overflow">
+          <div class="img"><img src="img/img.png"></div>
+          <div class="desckription">
+          <a href="#" class="title"><span>Светильник встраиваемый Mint</span></a>
+          <p class="price">1 600 <sup>грн</sup></p>
+          <a href="#" class="btn gradient">
+            <span class="icon buy"></span>Купить
+          </a>
+          <a href="№" class="link"><span class="dashedtext">Добавить к сравнению</span></a>
+          <p class="deskript">Ванная комната — это место, где мы готовимся к предстоящим дневным событиям утром и настраиваем себя на сон грядущий вечером</p>
+          </div>
+        </div>
+        </div>
+
+      </div>
+      </div>
+    </div>
+    <div class="row other-products-link">
+      <div class="column medium-12"><a href="#">Все новинки раздела «Сантехника»</a></div>
+    </div>
+    <div class="other-products header-box">
+      <div class="row collapse">
+      <h6 class="title title_bold">Новинки плитки</h6>
+      <div class="multiple-items js-multiple-items insale">
+
+        <div class="item-crop">
+        <div class="overflow">
+          <div class="img">
+          <div class="sticker"><span class="markdown"></span></div>
+          <img src="img/img.png">
+          </div>
+          <div class="desckription">
+          <a href="#" class="title"><span>Раковина-52</span></a>
+          <p class="price">
+            <span class="old">500 <sup>грн</sup></span>
+            <span>600 <sup>грн</sup></span>
+          </p>
+          <a href="#" class="btn gradient">
+            <span class="icon buy"></span>Купить
+          </a>
+          <a href="№" class="link"><span class="dashedtext">Добавить к сравнению</span></a>
+          <p class="deskript">Ванная комната — это место, где мы готовимся к предстоящим дневным событиям утром и настраиваем себя на сон грядущий вечером</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="item-crop">
+        <div class="overflow">
+          <div class="img"><img src="img/img.png"></div>
+          <div class="desckription">
+          <a href="#" class="title"><span>Светильник встраиваемый Mint</span></a>
+          <p class="price">
+            <span class="old">1 600 <sup>грн</sup></span>
+            <span>1 500 <sup>грн</sup></span>
+          </p>
+          <a href="#" class="btn gradient">
+            <span class="icon buy"></span>Купить
+          </a>
+          <a href="№" class="link"><span class="dashedtext">Добавить к сравнению</span></a>
+          <p class="deskript">Ванная комната — это место, где мы готовимся к предстоящим дневным событиям утром и настраиваем себя на сон грядущий вечером</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="item-crop">
+        <div class="overflow">
+          <div class="img"><img src="img/img.png"></div>
+          <div class="desckription">
+          <a href="#" class="title"><span>Совок KROFT</span></a>
+          <p class="price">
+            <span class="old">12 900 <sup>грн</sup></span>
+            <span>11 600 <sup>грн</sup></span>
+          </p>
+          <a href="#" class="btn gradient">
+            <span class="icon buy"></span>Купить
+          </a>
+          <a href="№" class="link"><span class="dashedtext">Добавить к сравнению</span></a>
+          <p class="deskript">Ванная комната — это место, где мы готовимся к предстоящим дневным событиям утром и настраиваем себя на сон грядущий вечером</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="item-crop">
+        <div class="overflow">
+          <div class="img"><img src="img/img.png"></div>
+          <div class="desckription">
+          <a href="#" class="title"><span>Совок KROFT</span></a>
+          <p class="price">600 <sup>грн</sup></p>
+          <a href="#" class="btn gradient">
+            <span class="icon buy"></span>Купить
+          </a>
+          <a href="№" class="link"><span class="dashedtext">Добавить к сравнению</span></a>
+          <p class="deskript">Ванная комната — это место, где мы готовимся к предстоящим дневным событиям утром и настраиваем себя на сон грядущий вечером</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="item-crop">
+        <div class="overflow">
+          <div class="img">
+          <div class="sticker"><span class="sale"></span></div>
+          <img src="img/img.png">
+          </div>
+          <div class="desckription">
+          <a href="#" class="title"><span>Светильник встраиваемый Mint</span></a>
+          <p class="price">1 600 <sup>грн</sup></p>
+          <a href="#" class="btn gradient">
+            <span class="icon buy"></span>Купить
+          </a>
+          <a href="№" class="link"><span class="dashedtext">Добавить к сравнению</span></a>
+          <p class="deskript">Ванная комната — это место, где мы готовимся к предстоящим дневным событиям утром и настраиваем себя на сон грядущий вечером</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="item-crop">
+        <div class="overflow">
+          <div class="img">
+          <div class="sticker"><span class="new"></span></div>
+          <img src="img/img.png">
+          </div>
+          <div class="desckription">
+          <a href="#" class="title"><span>Светильник встраиваемый Mint</span></a>
+          <p class="price">1 600 <sup>грн</sup></p>
+          <a href="#" class="btn gradient">
+            <span class="icon buy"></span>Купить
+          </a>
+          <a href="№" class="link"><span class="dashedtext">Добавить к сравнению</span></a>
+          <p class="deskript">Ванная комната — это место, где мы готовимся к предстоящим дневным событиям утром и настраиваем себя на сон грядущий вечером</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="item-crop">
+        <div class="overflow">
+          <div class="img">
+          <div class="sticker"><span class="new"></span></div>
+          <img src="img/img.png">
+          </div>
+          <div class="desckription">
+          <a href="#" class="title"><span>Светильник встраиваемый Mint</span></a>
+          <p class="price">1 600 <sup>грн</sup></p>
+          <a href="#" class="btn gradient">
+            <span class="icon buy"></span>Купить
+          </a>
+          <a href="№" class="link"><span class="dashedtext">Добавить к сравнению</span></a>
+          <p class="deskript">Ванная комната — это место, где мы готовимся к предстоящим дневным событиям утром и настраиваем себя на сон грядущий вечером</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="item-crop">
+        <div class="overflow">
+          <div class="img"><img src="img/img.png"></div>
+          <div class="desckription">
+          <a href="#" class="title"><span>Светильник встраиваемый Mint</span></a>
+          <p class="price">1 600 <sup>грн</sup></p>
+          <a href="#" class="btn gradient">
+            <span class="icon buy"></span>Купить
+          </a>
+          <a href="№" class="link"><span class="dashedtext">Добавить к сравнению</span></a>
+          <p class="deskript">Ванная комната — это место, где мы готовимся к предстоящим дневным событиям утром и настраиваем себя на сон грядущий вечером</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="item-crop">
+        <div class="overflow">
+          <div class="img"><img src="img/img.png"></div>
+          <div class="desckription">
+          <a href="#" class="title"><span>Светильник встраиваемый Mint</span></a>
+          <p class="price">1 600 <sup>грн</sup></p>
+          <a href="#" class="btn gradient">
+            <span class="icon buy"></span>Купить
+          </a>
+          <a href="№" class="link"><span class="dashedtext">Добавить к сравнению</span></a>
+          <p class="deskript">Ванная комната — это место, где мы готовимся к предстоящим дневным событиям утром и настраиваем себя на сон грядущий вечером</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="item-crop">
+        <div class="overflow">
+          <div class="img"><img src="img/img.png"></div>
+          <div class="desckription">
+          <a href="#" class="title"><span>Светильник встраиваемый Mint</span></a>
+          <p class="price">1 600 <sup>грн</sup></p>
+          <a href="#" class="btn gradient">
+            <span class="icon buy"></span>Купить
+          </a>
+          <a href="№" class="link"><span class="dashedtext">Добавить к сравнению</span></a>
+          <p class="deskript">Ванная комната — это место, где мы готовимся к предстоящим дневным событиям утром и настраиваем себя на сон грядущий вечером</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="item-crop">
+        <div class="overflow">
+          <div class="img">
+          <div class="sticker"><span class="new"></span></div>
+          <img src="img/img.png">
+          </div>
+          <div class="desckription">
+          <a href="#" class="title"><span>Светильник встраиваемый Mint</span></a>
+          <p class="price">1 600 <sup>грн</sup></p>
+          <a href="#" class="btn gradient">
+            <span class="icon buy"></span>Купить
+          </a>
+          <a href="№" class="link"><span class="dashedtext">Добавить к сравнению</span></a>
+          <p class="deskript">Ванная комната — это место, где мы готовимся к предстоящим дневным событиям утром и настраиваем себя на сон грядущий вечером</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="item-crop">
+        <div class="overflow">
+          <div class="img"><img src="img/img.png"></div>
+          <div class="desckription">
+          <a href="#" class="title"><span>Светильник встраиваемый Mint</span></a>
+          <p class="price">1 600 <sup>грн</sup></p>
+          <a href="#" class="btn gradient">
+            <span class="icon buy"></span>Купить
+          </a>
+          <a href="№" class="link"><span class="dashedtext">Добавить к сравнению</span></a>
+          <p class="deskript">Ванная комната — это место, где мы готовимся к предстоящим дневным событиям утром и настраиваем себя на сон грядущий вечером</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="item-crop">
+        <div class="overflow">
+          <div class="img"><img src="img/img.png"></div>
+          <div class="desckription">
+          <a href="#" class="title"><span>Светильник встраиваемый Mint</span></a>
+          <p class="price">1 600 <sup>грн</sup></p>
+          <a href="#" class="btn gradient">
+            <span class="icon buy"></span>Купить
+          </a>
+          <a href="№" class="link"><span class="dashedtext">Добавить к сравнению</span></a>
+          <p class="deskript">Ванная комната — это место, где мы готовимся к предстоящим дневным событиям утром и настраиваем себя на сон грядущий вечером</p>
+          </div>
+        </div>
+        </div>
+
+      </div>
+      </div>
+    </div>
+    <div class="row other-products-link">
+      <div class="column medium-12"><a href="#">Все новинки раздела «Сантехника»</a></div>
+    </div>
+    <div class="row">
+      <div class="column medium-4">
+      <div class="product-item is-marked">
+        <div class="product-item__img">
+        <a href="#"><img src="img/img3.png"></a>
+        </div>
+        <div class="product-item__main">
+        <a href="#">Все золотые унитазы</a>
+        </div>
+      </div>
+      </div>
+      <div class="column medium-4">
+      <div class="product-item">
+        <div class="product-item__img">
+        <a href="#"><img src="img/img2.png"></a>
+        </div>
+        <div class="product-item__main">
+        <a href="#">Голубая плитка для ванной</a>
+        </div>
+      </div>
+      </div>
+      <div class="column medium-4">
+      <div class="product-item">
+        <div class="product-item__img">
+        <a href="#"><img src="img/img2.png"></a>
+        </div>
+        <div class="product-item__main">
+        <a href="#">Зелёная плитка для ванной</a>
+        </div>
+      </div>
+      </div>
+    </div>
+    
+    <div class="other-products header-box">
+      <div class="row collapse">
+      <h6 class="title title_bold">Популярные обзоры</h6>
+      <!-- !! added class modificator multiple-items_sm -->
+      <div class="multiple-items multiple-items_sm js-multiple-items-1 insale">
+        <div class="blog-article vertical">
+        <div class="column medium-6">
+          <a href="#">
+          <div class="img">
+            <div>
+            <img src="img/slider/tovar2.png">
+            </div>
+          </div>
+          </a>
+
+          <div class="text">
+          <a href="#">
+            <div class="subtitle">Как покупка через корзину с помощью платежной карты!</div>
+          </a>
+          <p class="content">Прием платежей полностью реализован на нашем сайте и в сотрудничестве с ведущими банками.</p>
+          </div>
+        </div>
+        <div class="column medium-6">
+          <a href="#">
+          <div class="img">
+            <div>
+            <img src="img/slider/tovar2.png">
+            </div>
+          </div>
+          </a>
+
+          <div class="text">
+          <a href="#">
+            <div class="subtitle">Как покупка через корзину с помощью платежной карты!</div>
+          </a>
+          <p class="content">Прием платежей полностью реализован на нашем сайте и в сотрудничестве с ведущими банками.</p>
+          </div>
+        </div>
+        </div>
+        <div class="blog-article vertical">
+        <div class="column medium-6">
+          <a href="#">
+          <div class="img">
+            <div>
+            <img src="img/slider/tovar2.png">
+            </div>
+          </div>
+          </a>
+
+          <div class="text">
+          <a href="#">
+            <div class="subtitle">Как покупка через корзину с помощью платежной карты!</div>
+          </a>
+          <p class="content">Прием платежей полностью реализован на нашем сайте и в сотрудничестве с ведущими банками.</p>
+          </div>
+        </div>
+        <div class="column medium-6">
+          <a href="#">
+          <div class="img">
+            <div>
+            <img src="img/slider/tovar2.png">
+            </div>
+          </div>
+          </a>
+
+          <div class="text">
+          <a href="#">
+            <div class="subtitle">Как покупка через корзину с помощью платежной карты!</div>
+          </a>
+          <p class="content">Прием платежей полностью реализован на нашем сайте и в сотрудничестве с ведущими банками.</p>
+          </div>
+        </div>
+        </div>
+        <div class="blog-article vertical">
+        <div class="column medium-6">
+          <a href="#">
+          <div class="img">
+            <div>
+            <img src="img/slider/tovar2.png">
+            </div>
+          </div>
+          </a>
+
+          <div class="text">
+          <a href="#">
+            <div class="subtitle">Как покупка через корзину с помощью платежной карты!</div>
+          </a>
+          <p class="content">Прием платежей полностью реализован на нашем сайте и в сотрудничестве с ведущими банками.</p>
+          </div>
+        </div>
+        <div class="column medium-6">
+          <a href="#">
+          <div class="img">
+            <div>
+            <img src="img/slider/tovar2.png">
+            </div>
+          </div>
+          </a>
+
+          <div class="text">
+          <a href="#">
+            <div class="subtitle">Как покупка через корзину с помощью платежной карты!</div>
+          </a>
+          <p class="content">Прием платежей полностью реализован на нашем сайте и в сотрудничестве с ведущими банками.</p>
+          </div>
+        </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+     <div class="other-products header-box is-no-margin">
+      <div class="row not-collapse">
+      <h6 class="title title_bold">Все товары нашего каталога</h6>
+      <div class="catalog-list-group">
+        <div class="row">
+        <div class="column medium-3">
+          <ul class="catalog-list">
+          <li class="catalog-list__head"><a href="#">Плитка</a></li>
+          <li><a href="#">Плитка для ванной</a></li>
+          <li><a href="#">Плитка для кухни</a></li>
+          <li><a href="#">Напольная плитка</a></li>
+          <li><a href="#">Керамогранит</a></li>
+          <li><a href="#">Мозаика</a></li>
+          <li><a href="#">Клинкер</a></li>
+          </ul>
+          <ul class="catalog-list">
+          <li class="catalog-list__head"><a href="#">Мебель</a></li>
+          <li><a href="#">Ванны</a></li>
+          <li><a href="#">Мини-бассейны</a></li>
+          <li><a href="#">Водонагреватели</a></li>
+          <li><a href="#">Мебель для ванной</a></li>
+          <li><a href="#">Душевые кабины</a></li>
+          <li><a href="#">Душевые гарнитуры</a></li>
+          <li><a href="#">Ручной душ</a></li>
+          </ul>
+          <ul class="catalog-list">
+          <li class="catalog-list__head"><a href="#">Клеи, затирки, смеси</a></li>
+          <li><a href="#">Смесители для ванны</a></li>
+          <li><a href="#">Смесители для душа</a></li>
+          <li><a href="#">Смесители для раковины</a></li>
+          </ul>
+        </div>
+        <div class="column medium-3">
+          <ul class="catalog-list">
+          <li class="catalog-list__head"><a href="#">Плитка</a></li>
+          <li><a href="#">Плитка для ванной</a></li>
+          <li><a href="#">Плитка для кухни</a></li>
+          <li><a href="#">Напольная плитка</a></li>
+          <li><a href="#">Керамогранит</a></li>
+          <li><a href="#">Мозаика</a></li>
+          <li><a href="#">Клинкер</a></li>
+          </ul>
+          <ul class="catalog-list">
+          <li class="catalog-list__head"><a href="#">Мебель</a></li>
+          <li><a href="#">Ванны</a></li>
+          <li><a href="#">Мини-бассейны</a></li>
+          <li><a href="#">Водонагреватели</a></li>
+          <li><a href="#">Мебель для ванной</a></li>
+          <li><a href="#">Душевые кабины</a></li>
+          <li><a href="#">Душевые гарнитуры</a></li>
+          <li><a href="#">Ручной душ</a></li>
+          </ul>
+          <ul class="catalog-list">
+          <li class="catalog-list__head"><a href="#">Клеи, затирки, смеси</a></li>
+          <li><a href="#">Смесители для ванны</a></li>
+          <li><a href="#">Смесители для душа</a></li>
+          <li><a href="#">Смесители для раковины</a></li>
+          </ul>
+        </div>
+        <div class="column medium-3">
+          <ul class="catalog-list">
+          <li class="catalog-list__head"><a href="#">Плитка</a></li>
+          <li><a href="#">Плитка для ванной</a></li>
+          <li><a href="#">Плитка для кухни</a></li>
+          <li><a href="#">Напольная плитка</a></li>
+          <li><a href="#">Керамогранит</a></li>
+          <li><a href="#">Мозаика</a></li>
+          <li><a href="#">Клинкер</a></li>
+          </ul>
+          <ul class="catalog-list">
+          <li class="catalog-list__head"><a href="#">Мебель</a></li>
+          <li><a href="#">Ванны</a></li>
+          <li><a href="#">Мини-бассейны</a></li>
+          <li><a href="#">Водонагреватели</a></li>
+          <li><a href="#">Мебель для ванной</a></li>
+          <li><a href="#">Душевые кабины</a></li>
+          <li><a href="#">Душевые гарнитуры</a></li>
+          <li><a href="#">Ручной душ</a></li>
+          </ul>
+          <ul class="catalog-list">
+          <li class="catalog-list__head"><a href="#">Клеи, затирки, смеси</a></li>
+          <li><a href="#">Смесители для ванны</a></li>
+          <li><a href="#">Смесители для душа</a></li>
+          <li><a href="#">Смесители для раковины</a></li>
+          </ul>
+        </div>
+        <div class="column medium-3">
+          <ul class="catalog-list">
+          <li class="catalog-list__head"><a href="#">Плитка</a></li>
+          <li><a href="#">Плитка для ванной</a></li>
+          <li><a href="#">Плитка для кухни</a></li>
+          <li><a href="#">Напольная плитка</a></li>
+          <li><a href="#">Керамогранит</a></li>
+          <li><a href="#">Мозаика</a></li>
+          <li><a href="#">Клинкер</a></li>
+          </ul>
+          <ul class="catalog-list">
+          <li class="catalog-list__head"><a href="#">Мебель</a></li>
+          <li><a href="#">Ванны</a></li>
+          <li><a href="#">Мини-бассейны</a></li>
+          <li><a href="#">Водонагреватели</a></li>
+          <li><a href="#">Мебель для ванной</a></li>
+          <li><a href="#">Душевые кабины</a></li>
+          <li><a href="#">Душевые гарнитуры</a></li>
+          <li><a href="#">Ручной душ</a></li>
+          </ul>
+          <ul class="catalog-list">
+          <li class="catalog-list__head"><a href="#">Клеи, затирки, смеси</a></li>
+          <li><a href="#">Смесители для ванны</a></li>
+          <li><a href="#">Смесители для душа</a></li>
+          <li><a href="#">Смесители для раковины</a></li>
+          </ul>
+        </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="row collapse header-box about-block">
+      <h2 class="title">Заголовок SEO</h2>
+      <p>Профессионализм. Мы занимаемся сантехникой - более 10 лет, предоставим исчерпывающую информацию о любой продукции нашего магазина. </p>
+      <p>Наличие сантехники в Киеве. Большая часть товара, который попал в наш интернет магазин сантехники, имеется в наличии на наших складах, но Вы можете отправить запрос и мы привезем любой дополнительный товар в магазин в Киев, в Украину, или подберем достойную альтернативу из имеющихся на складе.</p>
+      <p>Система скидок. Цены магазина одни из лучших в Украине, а при покупке на сумму более 5000 грн - хорошие скидки. </p>
+    </div>
+
+    </section><!--/main container slider description shipping buy  -->
+  </main>
+
+  <aside class="column medium-2 sidebar sidebar_no-padding catalog">
+
+    <div class="row collapse product-side">
+    <a href="#">
+      <div class="img">
+      <div>
+      <img src="img/slider/tovar1.png">
+      </div>
+      </div>
+    </a>
+      <div class="text">
+      <a href="#"><div class="title">Наиболее популярные товары раздела Сантехника</div></a>
+      </div>
+    </div>
+    
+    <div class="row collapse product-side">
+    <a href="#">
+      <div class="img">
+      <div>
+        <img src="img/slider/tovar2.png">
+      </div>
+      </div>
+    </a>
+      <div class="text">
+      <a href="#"><div class="title">Распродажа сантехнических изделий!</div></a>
+      </div>
+    </div>
+
+    <div class="row collapse product-side sale">
+    <a href="#">
+      <div class="img">
+      <div>
+        <img src="img/slider/tovar2.png">
+      </div>
+      </div>
+    </a>
+      <div class="text">
+      <a href="#"><div class="title">Распродажа сантехнических изделий!</div></a>
+      </div>
+    </div>
+
+    <div class="row collapse blog-article">
+      <h3 class="title">Популярные статьи</h3>
+    
+      <div class="column medium-12">
+      <a href="#">
+        <div class="img">
+        <div>
+          <img src="img/slider/tovar2.png">
+        </div>
+        </div>
+      </a>
+
+      <div class="text">
+        <a href="#">
+        <div class="subtitle">Как покупка через корзину с помощью платежной карты!</div>
+        </a>
+        <p class="content">Прием платежей полностью реализован на нашем сайте и в сотрудничестве с ведущими банками. Безопасность ваших платежных карт обеспечивается</p>
+      </div>
+      </div>
+
+      <div class="column medium-12">
+      <a href="#">
+        <div class="img">
+        <div>
+          <img src="img/slider/tovar3.png">
+        </div>
+        </div>
+      </a>
+
+      <div class="text">
+        <a href="#">
+        <div class="subtitle">Керамическая плитка двойного назначения Devit Giran 16190128P</div>
+        </a>
+        <p class="content">Большая часть товара, который попал в наш интернет магазин сантехники, имеется в наличии на наших складах.</p>
+      </div>
+      </div>
+    </div>
+  </aside><!--/ sifdebar-->
+  </div>
+
+  <footer>
+  <div class="row collapse link-footer">
+    <div class="column medium-2">
+    <p class="title">О компании</p>
+    <ul class="list">
+      <li><a href="#" class="link"><span>История</span></a></li>
+      <li><a href="#" class="link"><span>Отчетность компании</span></a></li>
+      <li><a href="#" class="link"><span>Вакансии</span></a></li>
+      <li><a href="#" class="link"><span>Видео</span></a></li>
+    </ul>
+    </div>
+    <div class="column medium-2">
+    <p class="title">Каталог товаров</p>
+    <ul class="list">
+      <li><a href="#" class="link"><span>Плитка</span></a></li>
+      <li><a href="#" class="link"><span>Сантехника</span></a></li>
+      <li><a href="#" class="link"><span>Напольное покрытие</span></a></li>
+      <li><a href="#" class="link"><span>Обои</span></a></li>
+      <li><a href="#" class="link"><span>Отопление</span></a></li>
+      <li><a href="#" class="link"><span>Освещение</span></a></li>
+      <li><a href="#" class="link"><span>Бассейны</span></a></li>
+      <li><a href="#" class="link"><span>Инструменты</span></a></li>
+      <li><a href="#" class="link"><span>Аксессуары</span></a></li>
+    </ul>
+    </div>
+    <div class="column medium-2">
+    <p class="title">Торговые марки</p>
+    <ul class="list">
+      <li><a href="#" class="link"><span>Сантехника</span></a></li>
+      <li><a href="#" class="link"><span>Плитка</span></a></li>
+      <li><a href="#" class="link"><span>Освещение и мебель</span></a></li>
+      <li><a href="#" class="link"><span>Строительная химия</span></a></li>
+      <li><a href="#" class="link"><span>Кухни</span></a></li>
+      <li><a href="#" class="link"><span>Паркет</span></a></li>
+    </ul>
+    </div>
+    <div class="column medium-2">
+    <p class="title">Интернет-магазин</p>
+    <ul class="list">
+      <li><a href="#" class="link"><span>Доставка и оплата</span></a></li>
+      <li><a href="#" class="link"><span>Контакты</span></a></li>
+      <li><a href="#" class="link"><span>Гарантия</span></a></li>
+      <li><a href="#" class="link"><span>Обратная связь</span></a></li>
+      <li><a href="#" class="link"><span>Личный кабинет</span></a></li>
+    </ul>
+    </div>
+    <div class="column medium-4 contact">
+    <p class="title">Наши контакты</p>
+    <ul class="contact">
+      <li>
+      <p>Телефон:</p>
+      <p><b>8 (044) 392-29-41</b></p>
+      </li>
+      <li>
+      <p>Адрес магазина:</p>
+      <p>Киев, просп. Победы, 89а <br><a href=""><span>карта проезда</span></a></p>
+      </li>
+      <li>
+      <p>Email: </p>
+      <p><a href="mailto:shop@agromat.ua"><span>shop@agromat.ua</span></a></p>
+      </li>
+      <li>
+      <p>Время работы: </p>
+      <p>
+        <span class="wrk">
+        <span class="day">пн-пт</span>
+        09<sup>00</sup>..21<sup>00</sup>
+        </span>
+
+        <span class="wek">
+        <span class="end">сб-вс</span>
+        10<sup>00</sup>-18<sup>00</sup>
+        </span>
+      </p>
+      </li>
+    </ul>
+    </div>
+  </div>
+
+  <div class="row collapse">
+    <div class="column medium-6">
+    <img src="img/fb.png" alt="alt img">
+    </div>
+    <div class="column medium-6">
+    <img src="img/fb.png" alt="alt img">
+    </div>
+  </div>
+
+  <div class="row collapse">
+    <p class="copyright">© Агромат, 2007–2014. Керамическая плитка и сантехника. При копировании материалов ссылка на сайт обязательна. Мобильная версия сайта</p>
+  </div>
+  </footer>
+
+    <div class="reveal-modal modal modal_w680 is-fixed js-modal-credit open" data-reveal style="display: block; opacity: 1; visibility: visible; top: 50px;">
+      <div class="modal__header">
+        <div class="modal__title">Купить в кредит</div>
+      </div>
+      <div class="modal__body">
+        <div class="row row_credit">
+          <div class="column column_group medium-5">
+            <p>Выбор банка-кредитора</p>
+            <label class="radio-box">
+              <input type="radio" name="credit-radio">
+              <span><img src="img/bank1.png" alt="img"></span>
+            </label>
+            <label class="radio-box">
+              <input type="radio" name="credit-radio">
+              <span><img src="img/bank2.png" alt="img"></span>
+            </label>
+            <label class="radio-box">
+              <input type="radio" name="credit-radio">
+              <span><img src="img/bank1.png" alt="img"></span>
+            </label>
+          </div>
+          <div class="column column_group medium-7">
+            <div class="credit">
+              <div class="credit__head credit__section">
+                <div class="credit__col">
+                  <strong>Сумма кредита,</strong> грн
+                </div>
+                <div class="credit__col">
+                  <div class="price">
+                    4 209,<sup>78 </sup>
+                  </div>
+                </div>
+              </div>
+              <div class="credit__body credit__section">
+                <div class="row">
+                  <div class="column medium-7">
+                    <strong>Начальный взнос,</strong> грн 30% грн
+                  </div>
+                  <div class="column medium-5">
+                    <input class="input" id="sliderOutput3">
+                  </div>
+                  <div class="column medium-12">
+                    <div class="range-slider range-slider_single js-slider-credit" data-slider data-options="display_selector: #sliderOutput3;start: 0; end: 1000000;step: 10000">
+                      <span class="range-slider-handle" role="slider" tabindex="0"></span>
+                      <span class="range-slider-active-segment"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="column medium-9">
+                    <strong>Срок кредитования,</strong> мес
+                  </div>
+                  <div class="column medium-3">
+                    <input class="input" id="sliderOutput4">
+                  </div>
+                  <div class="column medium-12">
+                    <div class="range-slider range-slider_single js-slider-credit" data-slider data-options="display_selector: #sliderOutput4;start: 0; end: 36;step: 6">
+                      <span class="range-slider-handle" role="slider" tabindex="0"></span>
+                      <span class="range-slider-active-segment"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="credit__footer credit__section">
+                <div>
+                  <div class="credit__col">
+                    <strong>Ежемесячный платёж,</strong> грн
+                  </div>
+                  <div class="credit__col">
+                    <div class="price">
+                      4 209,<sup>78 </sup>
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-wrap"><button type="submit" class="btn btn_medium gradient">Оформить кредит</button></div>
+              </div>
+            </div>
+            
+          </div>  
+        </div>
+      </div>
+      <a class="close-reveal-modal  ">&#215;</a>
+    </div>
+    <div class="reveal-modal modal modal_w640 is-fixed js-modal-login" data-reveal>
+      <div class="modal__header">
+        <div class="modal__title">Авторизация пользователя</div>
+      </div>
+      <div class="modal__body">
+        <div class="row">
+          <div class="column medium-6">
+            <label class="field">
+              <span class="field__title">Номер телефона или Email</span>
+              <span class="field__body">
+                <input class="input" type="text" required>
+              </span>
+            </label>
+            <label class="field">
+              <span class="field__title">Пароль</span>
+              <span class="field__body">
+                <input class="input" type="password">
+              </span>
+            </label>
+            <div class="form-group checkbox checkbox_small">
+              <span>
+                <input type="checkbox" id="fllters3" tabindex="1">
+                <label for="fllters3">Авторизоваться (новый пользователь)</label>
+              </span>
+            </div>
+            <div class="btn-wrap">
+              <button type="submit" class="btn btn_small gradient">Войти</button>
+              <a href="#" class="btn-wrap__link">Забыли пароль?</a>
+            </div>
+          </div>  
+           <div class="column medium-6">
+            <div>Войти, как пользователь социальной сети:</div>
+            <div class="soc-enter">
+              <a href="#" class="soc-enter__fb">Facebook</a>
+              <a href="#" class="soc-enter__vk">Вконтакте</a>
+              <a href="#" class="soc-enter__gp">Google+</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="close-reveal-modal  ">&#215;</a>
+    </div>
+    
+    <div class="reveal-modal-bg" style="display: block;"></div>
+  <script src="js/lib/jquery.min.js"></script>
+  <script src="js/lib/foundation.min.js"></script>
+  <script src="js/lib/foundation.dropdown.js"></script>
+  <script src="js/lib/slick.min.js"></script>
+  <script src="js/lib/ion.rangeSlider.js"></script>
+  <script src="js/lib/jquery.maskedinput.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
