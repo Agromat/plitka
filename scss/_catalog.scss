@@ -20,8 +20,8 @@
 	> .row.promo-box {
 		margin-top: 40px !important;
 	}
-}
-.sidebar.catalog{
+}  
+.sidebar.catalog{ 
 	margin: 0;
 	//margin-left: 50px;
 	padding-top: 80px;
@@ -145,6 +145,26 @@
 		}
 	}
 }
+
+.product-item_notice {
+	.product-item__main{
+		position: relative; 
+		padding-bottom: 35px;
+		min-height: 115px;
+	}
+	.withdrawn-from-sale{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: auto;
+		height: 26px;
+		margin: 0;
+	    padding: 6px 14px;
+		overflow: hidden;
+		text-align: center;
+	}
+}
+
 .product-item__img {
 	float: left;
 	margin-right: 20px;
@@ -158,14 +178,6 @@
 }
 .product-item__main {
 	overflow: hidden;
-	.withdrawn-from-sale{
-		width: 150px;
-		position: absolute;
-		text-align: center;
-		font-size: 10px;
-    height: 26px;
-    padding: 6px 14px;
-	}
 }
 .product-item__title {
 	text-decoration: underline;
