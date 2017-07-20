@@ -31,37 +31,89 @@
 
     jQuery.fn.exists = function(){return this.length>0;}
 
+
+///////////////////////////
+// begin new slider code //
+///////////////////////////
+
+    $('.js-carousel-main').slick({
+        fade: true,
+        asNavFor: '.js-carousel-nav',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false
+    });
+
+    $('.js-carousel-nav').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        variableWidth: true,
+        asNavFor: '.js-carousel-main',
+        arrows: false,
+        focusOnSelect: true,
+        infinite: false
+    });
+
+    $(".js-popup-trigger").on("click", function(){
+
+        $('body').addClass('is-hidden');
+
+        $('#enlarged-photo').foundation('reveal', 'open');
+        
+        resizeModal();
+        return false;
+    });
+
+    $('[data-reveal]').on('open', function () {
+
+        setTimeout(function(){
+
+        var slides = $('.js-carousel-main').find('.slick-slide'),
+            slidesLength = slides.length,
+            currentSlideIndex = slides.filter('.slick-active')
+                                      .index() + 1;
+          $('.js-img-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+            $(".js-slide-index").text(nextSlide+1);
+          });
+
+          $(".js-img-slider").slick({
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              dots: false,
+              arrows: true,
+              initialSlide: currentSlideIndex - 1
+          });
+
+           $(".js-img-slider").resize();
+           $(".js-slide-index").text(currentSlideIndex);
+           $(".js-slides-counter").text(slidesLength);
+
+        }, 100);
+    });
+
+    $('[data-reveal]').on('closed', function () {
+        $(".js-img-slider").slick('unslick');
+    });
+
+///////////////////////////
+// end new slider code   //
+///////////////////////////
+
+
     if ($('.orbit-container').exists()) {
-
-      // добавляем в контейнер к слайдеру иконку с зумом
-      // тк. слайдер изменяет ul писок на div
-      $( "#slider1" ).parents(".orbit-container").append('<span class="zoom"></span>');
-
-      // по клику на кнопку зума открываем модальое окно с слайдером
-      $(".zoom").click(function () {
-          $('#enlarged-photo').foundation('reveal', 'open');
-          resizeModal();
-      });
 
   // open any modal window
       $(".js-modal-toggle").click(function () {
           var modal = $(this).attr("data-modal");
           $('.'+modal).foundation('reveal', 'open');
           resizeModal();
+
+          $(window).trigger('resize');
           return false;
       }); 
-
-      // тк. слайдер геренирует свой темплейт при нажатии 
-      // кнопки вне его контейнера скриптом создаю ивент по нажати на мою кнопку
-      $('.orbit-next.icon').click(function() {
-          $('#slider1').siblings('.orbit-next').click();
-      });
-
-      $('.orbit-prev.icon').click(function() {
-          $('#slider1').siblings('.orbit-prev').click();
-      });
     }
 
+    
     if ($('.js-multiple-items').exists()) {
         $('.js-multiple-items').slick({
           infinite: true,
@@ -69,7 +121,6 @@
           slidesToScroll: 5,
           draggable: false
         });
-    
       $(document).on({
           mouseenter: function(){
              $(this).addClass("desk-visible");
@@ -88,6 +139,7 @@
         }
       );
     }
+    
     if ($('.js-multiple-items-6').exists()) {
       $('.js-multiple-items-6').slick({
         infinite: true,
@@ -96,14 +148,7 @@
         draggable: false
       });
     }
-    if ($('.js-multiple-items-4').exists()) {
-        $('.js-multiple-items-4').slick({
-          infinite: true,
-          slidesToShow: 4,
-          slidesToScroll: 4,
-          draggable: false
-        });
-    }
+
 
     if ($('.js-multiple-items-2').exists()) {
         $('.js-multiple-items-2').slick({
@@ -122,17 +167,30 @@
         });
     }
 
-    $("#modal-basket").click(function(){
-      $('.js-multiple-items-4').slickNext();
-    });
 
+    //init all slider in popup
+    (function () {
 
-  $(document).on('open.fndtn.reveal.basket', '[data-reveal]', function () {
-    $('.js-multiple-items-4').slickNext();
-  });
-    
+      $('[data-reveal]').on('open', function () {
 
-    
+        var sliderItemFour = $(".js-multiple-items-4");
+
+        initSlider(sliderItemFour, {
+          infinite: true,
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          draggable: false
+        });
+
+        function initSlider(slider, option) {
+            setTimeout(function(){
+              slider.not('.slick-initialized').slick(option);
+            },200);
+        }
+      });
+
+    })();
+
     if ($('.f-dropdown').exists()) {
       // заменяет текст для дроп дауна
       $(".f-dropdown li a").click(function(){
@@ -278,7 +336,9 @@
 
   $(document).on('opened.fndtn.reveal', '[data-reveal]', function () {
       resizeModal();
+      $(window).trigger('resize');
   });
+  
   $(window).resize(function() {
       resizeModal();
   });
@@ -290,10 +350,11 @@ function resizeModal(){
       modalDopBlockHeight = modal.find('.photo-header').height() + modal.find('.photo-footer').height(),
       modalDopBlockWidth = modal.find('.photo-header').width() + modal.find('.photo-footer').width();
 
-      var heightImg = htmlHeight - modalDopBlockHeight -150
-          heightModal = htmlHeight - 150;
+      var heightImg = htmlHeight - modalDopBlockHeight - 200
+          // heightModal = htmlHeight - 150;
 
-      modal.find('.orbit-slides-container').css('height',htmlHeight+"px");
-      modal.find('.orbit-container').css('height',heightImg+"px");
+      // modal.find('.orbit-slides-container').css('height',htmlHeight+"px");
+      modal.find('.orbit-container').css('height',htmlHeight+"px");
       modal.find('.orbit-slides-container img').css('max-height',heightImg+"px");
 }
+

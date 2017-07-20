@@ -3428,7 +3428,7 @@ kbd {
     .orbit-container .orbit-slides-container img {
       display: block;
       max-width: 100%; }
-    .orbit-container .orbit-slides-container > * {
+/*    .orbit-container .orbit-slides-container > * {
       position: absolute;
       top: 0;
       width: 100%;
@@ -3443,7 +3443,7 @@ kbd {
         color: white;
         width: 100%;
         padding: 0.625rem 0.875rem;
-        font-size: 0.875rem; }
+        font-size: 0.875rem; }*/
   .orbit-container .orbit-slide-number {
     position: absolute;
     top: 10px;
