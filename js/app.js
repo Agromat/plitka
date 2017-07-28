@@ -171,7 +171,7 @@
     //init all slider in popup
     (function () {
 
-      $('[data-reveal]').on('open', function () {
+      $(document).on('open.fndtn.reveal', '[data-reveal]', function () {
 
         var sliderItemFour = $(".js-multiple-items-4");
 
@@ -351,10 +351,10 @@ function resizeModal(){
       modalDopBlockWidth = modal.find('.photo-header').width() + modal.find('.photo-footer').width();
 
       var heightImg = htmlHeight - modalDopBlockHeight - 200
-          // heightModal = htmlHeight - 150;
+          heightModal = heightImg + 80;
 
       // modal.find('.orbit-slides-container').css('height',htmlHeight+"px");
-      modal.find('.orbit-container').css('height',htmlHeight+"px");
+      modal.find('.orbit-container').css('height',heightModal+"px");
       modal.find('.orbit-slides-container img').css('max-height',heightImg+"px");
 }
 

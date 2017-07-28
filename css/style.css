@@ -2095,6 +2095,7 @@ ul.inline li {
   top: -10px;
   left: 0;
   width: 100%;
+  height: 100%;
 }
 .sticker .new, .sticker .markdown, .sticker .sale {
   position: absolute;
@@ -2174,15 +2175,22 @@ ul.inline li {
 .sticker .sale::before {
   content: 'АКЦИЯ!';
 }
-.sticker .stock-stick, .sticker .recommended {
-  display: block;
-  position: relative;
-  z-index: 6;
+.sticker_corner_top_left {
   top: 0;
-  right: -0.1875rem;
-  float: right;
-  width: 100%;
-  height: 7.4375rem;
+  left: -0.625rem;
+}
+.sticker_corner_top_right {
+  top: 0;
+  right: -0.625rem;
+}
+.sticker_corner_right_mid {
+  top: 30%;
+  transform: translateY(-50%);
+  right: -0.625rem;
+}
+.sticker .stock-stick, .sticker .recommended {
+  position: absolute;
+  z-index: 6;
   background-position: top right;
   background-repeat: no-repeat;
 }
@@ -2192,9 +2200,13 @@ ul.inline li {
   background-size: 60px;
   top: -5px;
   right: 0;
+  width: 3.75rem;
+  height: 3.75rem;
 }
 .sticker .recommended {
   background-image: url(../img/slider/recommended.png);
+  width: 7.5rem;
+  height: 7.5rem;
 }
 
 .promo__stick {
