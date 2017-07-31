@@ -2956,6 +2956,7 @@ ul.pagination li a span {
   margin: 0 auto;
   max-width: 100%;
   height: auto;
+  max-height: 580px;
 }
 .img-slider .slick-slider {
   height: 100%;
