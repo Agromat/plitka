@@ -92,17 +92,20 @@
 
         setTimeout(function(){
 
-            $('.js-multiple-items-4').slick({
-                infinite: true,
-                slidesToShow: 4,
-                slidesToScroll: 4,
-                draggable: false,
-                adaptiveHeight: true
-            });
+          var sliderItemFour = $(".js-multiple-items-4");
 
-            $('.js-multiple-items-4').resize();
+          initSlider(sliderItemFour, {
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            draggable: false
+          });
+  
+          function initSlider(slider, option) {
+            slider.not('.slick-initialized').slick(option);
+          };
 
-        }, 100);
+          }, 100);
     });
 
     $('[data-reveal]').on('closed', function () {
