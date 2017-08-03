@@ -381,7 +381,7 @@
 						width: 100%;
 						border: 5px solid #f4f4f4;
 						height: 200px;
-						display: table;
+						display: block;
 						.sticker {
 							.new, .markdown, .sale{
 							left: -2px;
@@ -389,36 +389,40 @@
 							}
 						}
 						.orbit-container{
-							display: table-cell;
+							display: inline-block;
 							vertical-align: middle;
-							 overflow: visible; 
+							overflow: visible; 
+							height: 100%;
 							 .orbit-slides-container{
 							 	overflow: hidden;
 							 }
-							 .orbit-prev {
+							 .slick-prev {
 							 	left: -19px;
-							 	span{
+							 	&:before{
 							 		float: left;
 									background-position: -270px -90px;
 								}
 							 }
-							.orbit-next {
+							.slick-next {
 								right: -19px;
-								span{
+								&:before{
 									float: right;
 									background-position: -299px -90px;
 								}
 							}
 
-							.orbit-prev,.orbit-next{
+							.slick-prev,.slick-next{
 								top: 70px;
 								margin: 0;
 								width: 40px;
 								height: 58px;
 								padding: 10px 5px;
-								display: none;
+								visibility: hidden;
+								opacity: 0;
 								background: none;
-								span{
+								border: none;
+								box-shadow: none;
+								&:before{
 									content: '';
 									background-image: url(../img/icons.png);
 									width: 17px;
@@ -569,8 +573,9 @@
 							overflow: visible;
 						}
 						.orbit-container{
-							.orbit-prev,.orbit-next{
-								display: block;
+							.slick-prev,.slick-next{
+								visibility: visible;
+								opacity: 1;
 							}
 						}
 						.comment .readmore{
