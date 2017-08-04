@@ -2831,6 +2831,7 @@ ul.pagination li a span {
 }
 .itemslider .slick-slide {
   height: 190px;
+  font-size: 0;
 }
 .itemslider .slick-slide:before {
   content: "";
@@ -6016,6 +6017,7 @@ footer .row.link-footer .column:last-child {
 .main-container.filters .filters-content .items .item-filtered .img-block img {
   display: block;
   margin: 0 auto;
+  max-height: 100%;
 }
 .main-container.filters .filters-content .items .item-filtered .price-block {
   zoom: 1;
