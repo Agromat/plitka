@@ -3077,6 +3077,14 @@ ul.pagination li a span {
   border-left-color: #FFFFFF;
 }
 
+.img-slider .img-slider__item {
+  display: none;
+}
+
+.img-slider .slick-initialized .img-slider__item {
+  display: block;
+}
+
 .row.collapse.about {
   margin-top: 8px !important;
 }

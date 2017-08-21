@@ -88,7 +88,7 @@
            $(".js-slide-index").text(currentSlideIndex);
            $(".js-slides-counter").text(slidesLength);
 
-        }, 100);
+        }, 230);
 
         setTimeout(function(){
 

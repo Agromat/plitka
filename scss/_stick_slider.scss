@@ -440,3 +440,12 @@
 .carousel-main .slick-next:hover:before {
   border-left-color: #FFFFFF;
 }
+
+
+.img-slider .img-slider__item {
+	display: none;
+	}
+
+	.img-slider .slick-initialized .img-slider__item {
+		display: block;
+	}
