@@ -266,6 +266,8 @@
 			width: rem-calc(80);
 			height: rem-calc(80);
 			border: rem-calc(5) solid $white;
+			object-fit: cover;
+			object-position: center;
 		}
 		&.slick-current img{
 			border: rem-calc(5) solid $border-img;

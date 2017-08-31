@@ -2900,6 +2900,8 @@ ul.pagination li a span {
   width: 5rem;
   height: 5rem;
   border: 0.3125rem solid #fff;
+  object-fit: cover;
+  object-position: center;
 }
 .thumbnail-nav .button.slick-current img {
   border: 0.3125rem solid #eaff00;
