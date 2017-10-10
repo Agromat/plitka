@@ -3805,6 +3805,10 @@ footer .row.link-footer .column:last-child {
   margin-right: -0.9375rem;
 }
 
+.bottom-previews .slick-slider {
+  height: auto !important;
+}
+
 .blog-article {
   margin-top: 40px !important;
   width: 190px;
@@ -3862,8 +3866,18 @@ footer .row.link-footer .column:last-child {
   margin-top: 45px !important;
   border-top: 1px solid #ddd;
 }
+.blog-article.vertical.desk-visible {
+  border-top: none;
+  border-bottom: none;
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}
+.blog-article.vertical a {
+  padding: 0 !important;
+}
 .blog-article.vertical .column {
   width: 48.47%;
+  padding: 20px;
 }
 .blog-article.vertical .img {
   position: relative;
@@ -3880,7 +3894,6 @@ footer .row.link-footer .column:last-child {
   margin-top: 0;
   padding-left: 20px;
   max-height: 245px;
-  overflow: hidden;
 }
 .blog-article.vertical .text .subtitle {
   font-size: 16px;
