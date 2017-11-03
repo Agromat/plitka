@@ -536,39 +536,45 @@
         <p class="main-deskrip item-code" role="definition">Артикул: <span itemprop="productID">122843</span></p>
         <div class="row collapse">
           <div class="column medium-5 slider">
-            <div class="sticker" itemscope itemprop="offers" itemtype="http://schema.org/Offer">
-              <span itemprop="condition" content="new" class="new"></span>
-              <span itemprop="availability" content="in_stock" class="stock-stick"></span>
-              <span class="recommended"></span>
-            </div>
           
-            <ul data-orbit id="slider1">
-              <li data-orbit-slide="slide-1">
-                <img src="img/slider/img-1.jpg" itemprop="image" alt="slide 1" />
-              </li>
-              <li data-orbit-slide="slide-2" class="active">
-                <img src="img/slider/img-2.jpg" itemprop="image" alt="slide 2" />
-              </li>
-              <li data-orbit-slide="slide-3">
-                <img src="img/slider/img-3.jpg" itemprop="image" alt="slide 3" />
-              </li>
-            </ul>
+            <div class="carousel-main-wrap js-carousel-wrap">
+                <div class="sticker" itemscope itemprop="offers" itemtype="http://schema.org/Offer">
+                  <a href="" itemprop="condition" content="new" class="new"></a>
+                  <a href="" itemprop="availability" content="in_stock" class="sticker_corner_top_right stock-stick"></a>
+                  <a href="" class="sticker_corner_right_mid recommended"></a>
+                </div>
 
-            <div class="thumbnail">
-                <a data-orbit-link="slide-1" class="small button">
-                  <img src="img/slider/img-sm-1.jpg" alt="slide 1" />
-                </a>
-                <a data-orbit-link="slide-2" class="small button">
-                   <img src="img/slider/img-sm-2.jpg" alt="slide 2" />
-                </a>
-                <a data-orbit-link="slide-3" class="small button">
-                  <img src="img/slider/img-sm-3.jpg" alt="slide 3" />
-                </a>
-      
-                <!-- <div class="orbit-slides-container navigation">
-                  <button class="orbit-prev icon"></button>
-                  <button class="orbit-next icon"></button>
-                </div> -->
+                <div id="slider1" class="carousel-main js-carousel-main"> 
+                  <div class="js-popup-trigger" data-popup="js-popup-item" data-slide-index='1'>
+                    <img src="img/slider/img-1.jpg" alt="" />
+                  </div>
+                  <div class="active js-popup-trigger" data-popup="js-popup-item" data-slide-index='2'>
+                    <img src="img/slider/img-2.jpg" alt="" />
+                  </div>
+                  <div class="js-popup-trigger" data-popup="js-popup-item" data-slide-index='3'>
+                    <img src="img/slider/img-3.jpg" alt="" />
+                  </div>
+                
+                  <div class="js-popup-trigger" data-popup="js-popup-item" data-slide-index='4'>
+                    <img src="img/slider/img-1.jpg" alt="" />
+                  </div>
+                </div>
+                <button class="zoom js-popup-trigger" data-popup="js-popup-item" type="button"></button>
+            </div>
+
+            <div class="thumbnail-nav js-carousel-nav">
+                <div class="small button">
+                  <img src="img/slider/img-sm-1.jpg" alt="" />
+                </div>
+                <div class="small button">
+                   <img src="img/slider/img-sm-2.jpg" alt="" />
+                </div>
+                <div class="small button">
+                  <img src="img/slider/img-sm-3.jpg" alt="" />
+                </div>
+                <div class="small button">
+                  <img src="img/slider/img-sm-1.jpg" alt="" />
+                </div>
             </div>
 
             <div class="scheme">
@@ -1765,17 +1771,31 @@
       </div>
     </div>
 
-    <div id="enlarged-photo" class="reveal-modal is-fixed enlarged-photo" data-reveal>
+    <div id="enlarged-photo" class="reveal-modal enlarged-photo" data-reveal>
       <div class="photo-header">
-        <p class="title">Керамическая плитка двойного назначения Devit Giran 16190128P</p>
-        <a class="close-reveal-modal  ">&#215;</a>
+        <h4 class="title">Керамическая плитка двойного назначения Devit Giran 16190128P</h4>
+        <div class="close-reveal-modal"></div>
       </div>
       <div class="photo">
-        <ul data-orbit id="slider2" data-options="slide_number: true;slide_number_text: из;">
-          <li data-ordbit-slide="slider-1"><img src="img/slider/img-1.jpg" alt="slide 1"></li>
-          <li data-ordbit-slide="slider-2"><img src="img/slider/img-2.jpg" alt="slide 2"></li>
-          <li data-ordbit-slide="slider-3"><img src="img/slider/img-3.jpg" alt="slide 3"></li>
-        </ul>
+        <div class="orbit-container img-slider">
+          <div class="img-slider__info">
+            Изображение <span class="js-slide-index"></span> из <span class="js-slides-counter"></span>
+          </div>
+          <div class="js-img-slider">
+            <div class='img-slider__item'>
+              <img src="https://placebear.com/200/300" alt="img">
+            </div>
+            <div class='img-slider__item'>
+              <img src="./img/slider/slide3.jpg" alt="img">
+            </div>
+            <div class='img-slider__item'>
+              <img src="./img/slider/slide2.jpg" height="300px" width="200px" alt="img">
+            </div>
+            <div class='img-slider__item'>
+              <img src="./img/slider/slide3.jpg" alt="img">
+            </div>
+          </div>
+        </div>
       </div>
       <div class="photo-footer">
         <div class="row collapse">
@@ -1790,6 +1810,7 @@
         </div>
       </div>
     </div>
+
     <div class="reveal-modal modal modal_w520 is-fixed js-modal-callback" data-reveal>
       <div class="modal__header">
         <div class="modal__title">Заказ обратного звонка</div>
