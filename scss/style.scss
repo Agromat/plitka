@@ -137,6 +137,18 @@ $rem-base : 16;
 .row {
   max-width: 1220px;
 }
+.page-content {
+  position: relative;
+}
+.bg-dark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 100;
+}
 .title_border { 
   margin: 35px 0 27px;
   padding-bottom: 12px;
