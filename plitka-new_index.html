@@ -142,8 +142,8 @@
 
     <nav class="row collapse" role="navigation">
 
-        <div class="menu-catalog is-inactive">
-          <div class="menu-catalog__head js-menu-catalog-head">
+        <div class="menu-catalog">
+          <div class="menu-catalog__head">
             <a>
               <span>Каталог товаров</span>
             </a>
@@ -152,11 +152,10 @@
             <li class="menu-catalog__item">
               <a>
                 <span>Плитка</span>
-                <i class="icon-arr-right"></i>
               </a>
             </li>
             <li class="menu-catalog__item">
-              <a>
+              <a class="button dropdown js-dropdown-catalog " data-drop="js-dropdown-4">
                 <span>Сантехника</span>
                 <i class="icon-arr-right"></i>
               </a>
@@ -164,29 +163,25 @@
             <li class="menu-catalog__item">
               <a>
                 <span>Мозаика</span>
-                <i class="icon-arr-right"></i>
               </a>
             </li>
             <li class="menu-catalog__item">
-              <a class="button dropdown js-dropdown-catalog" data-drop="js-dropdown-4">
+              <a">
                 <span> Смесители</span>
-                <i class="icon-arr-right"></i>
               </a>
             </li>
             <li class="menu-catalog__item">
               <a>
                 <span>Мебель</span>
-                <i class="icon-arr-right"></i>
               </a>
             </li>
             <li class="menu-catalog__item">
               <a>
                 <span>Стройхимия</span>
-                <i class="icon-arr-right"></i>
               </a>
             </li>
              <li class="menu-catalog__item">
-              <a>
+              <a class="button dropdown js-dropdown-catalog" data-drop="js-dropdown-5">
                 <i class="icon-arr-right"></i>
                 <span>Термооборудование</span>
               </a>
@@ -208,21 +203,28 @@
             <a class="button"><span>Гарантия</span></a>
           </li>
           <li>
-            <a class="button dropdown js-dropdown-toggle js-dropdown-right" data-drop="js-dropdown-3"><span>3d-визуализаця</span></a>
+            <!-- was deleted class: dropdown js-dropdown-toggle js-dropdown-right "data-drop="js-dropdown-3"-->
+            <a class="button"><span>3d-визуализаця</span></a>
           </li>
           <li>
-            <a class="button"><span>Освещение</span></a>
+            <a class="button"><span>Обзоры</span></a>
           </li>
           <li>
-            <a class="button dropdown js-dropdown-toggle js-dropdown-right" data-drop="js-dropdown-2"><span>Обзоры</span></a>
-          </li>
-          <li>
+            <!-- was deleted class: dropdown  js-dropdown-toggle js-dropdown-right data-drop="js-dropdown-2"-->
             <a class="button"><span>Статьи</span></a>
           </li>
-          <!-- <li>
-            <a class="button dropdown js-dropdown-toggle js-dropdown-right" data-drop="js-dropdown-2"><span>Производители</span></a>
-          </li> -->
+          <li>
+            <a class="button"><span>Производители</span></a>
+          </li>
         </ul><!-- /list items menu -->
+
+        <div class="menu-cart">
+          <div class="menu-cart__icon">
+            <div class="menu-cart__circle">
+              <span class="menu-cart__value">8</span>
+            </div>
+          </div>
+        </div>
 
         <!-- <div class="f-dropdown content menu-catalog-drop js-dropdown" data-drop="js-dropdown-1">
           <div class="row">
@@ -282,7 +284,7 @@
           </div>
         </div> --><!-- /dropdown -->
 
-        <div class="f-dropdown content menu-catalog-drop js-dropdown" data-drop="js-dropdown-2">
+       <!--  <div class="f-dropdown content menu-catalog-drop js-dropdown" data-drop="js-dropdown-2">
           <div class="row">
             <div class="column medium-9 menu-item">
             <div class="row collapse product">
@@ -338,8 +340,8 @@
 
             </div>
           </div>
-        </div><!-- /dropdown -->
-        <div class="f-dropdown content menu-catalog-drop js-dropdown" data-drop="js-dropdown-3" style="width:700px">
+        </div> --><!-- /dropdown -->
+       <!--  <div class="f-dropdown content menu-catalog-drop js-dropdown" data-drop="js-dropdown-3" style="width:700px">
           <div class="row">
             <div class="column medium-9 menu-item">
             <div class="row collapse brand">
@@ -376,8 +378,8 @@
 
             </div>
           </div>
-        </div><!-- /dropdown -->
-        <div class="f-dropdown content menu-catalog-drop js-dropdown" data-drop="js-dropdown-4">
+        </div> --><!-- /dropdown -->
+        <div class="f-dropdown content content-catalog menu-catalog-drop js-dropdown-catalog-dialog" data-drop="js-dropdown-4">
             <div class="row">
               <div class="column medium-9 menu-item">
                 <div class="row collapse product">
@@ -386,6 +388,7 @@
                     <li><a href="#"><span>Гидромассажные боксы</span></a></li>
                     <li><a href="#"><span>Гидромассажные ванны</span></a></li>
                     <li><a href="#"><span>Душевые кабины</span></a></li>
+                    <li><a href="#"><span>Душевые наборы и панели</span></a></li>
                     <li><a href="#"><span>Мозаика</span></a></li>
                     <li><a href="#"><span>Аксессуары</span></a></li>
                     <li><a href="#"><span>Зеркала</span></a></li>
@@ -394,7 +397,6 @@
                     <li><a href="#"><span>Фурнитура</span></a></li>
                     <li><a href="#"><span>Сауны</span></a></li>
                     <li><a href="#"><span>Сифоны</span></a></li>
-                    <li><a href="#"><span>Душевые наборы и панели</span></a></li>
                     <li><a href="#"><span>Смесители</span></a></li>
                     <li><a href="#"><span>Средства за уходом</span></a></li>
                   </ul>
@@ -431,8 +433,39 @@
                 </div>
               </div>
             </div>
-          </div><!-- /dropdown -->
-
+        </div><!-- /dropdown -->
+        <div class="f-dropdown content content-catalog menu-catalog-drop js-dropdown-catalog-dialog" data-drop="js-dropdown-5">
+            <div class="row">
+              <div class="column medium-12 menu-item menu-item_small">
+                <div class="row collapse product">
+                  <ul class="inline two-type">
+                    <li><a href="#"><span>Обогреватели</span></a></li>
+                    <li><a href="#"><span>Бойлеры</span></a></li>
+                  </ul>
+                </div>
+                <div class="row collapse brand">
+                  <p class="brand-title">Торговые марки раздела <span>Термооборудование</span></p>
+                  <ul class="inline two-type">
+                    <li><a href=""><span>Zunussi</span></a></li>
+                    <li><a href=""><span>Deweit</span></a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- <div class="column medium-3 new-in">
+                <a href="">
+                  <p class="new-in-title">Новинки раздела Сантехника</p>
+            
+                  <div class="new-in-img">
+                  <img src="img/img.png" alt="alt img">
+                  </div>
+                </a>
+                <div class="new-in-about">
+                  <a href=""><span>Раковина-52</span></a>
+                  <p class="price">600 <sup>грн</sup></p>
+                </div>
+              </div> -->
+            </div>
+        </div><!-- /dropdown -->
     </nav>
 
   </section><!-- /"menu-main section-->
@@ -442,6 +475,84 @@
 
     <div class="row collapse">
       <!-- <div class="page-content"> -->
+        
+
+        <aside class="column medium-2 sidebar sidebar_main-page catalog">
+
+          <div class="row collapse product-side">
+            <a href="#">
+              <div class="img">
+              <div>
+                <img src="img/slider/tovar1.png">
+              </div>
+              </div>
+            </a>
+              <a href="#" class="text">
+                <div class="title">Наиболее популярные товары раздела Сантехника</div>
+              </a>
+          </div>
+          
+          <div class="row collapse product-side">
+            <a href="#">
+              <div class="img">
+              <div>
+                <img src="img/slider/tovar2.png">
+              </div>
+              </div>
+            </a>
+            <a href="#" class="text">
+              <div class="title">Распродажа сантехнических изделий!</div>
+            </a>
+          </div>
+
+          <div class="row collapse product-side sale">
+            <a href="#">
+                <div class="img">
+                <div>
+                  <img src="img/slider/tovar2.png">
+                </div>
+                </div>
+            </a>
+            <a href="#" class="text">
+              <div class="title">Распродажа сантехнических изделий!</div>
+            </a>
+          </div>
+
+          <div class="row collapse blog-article">
+                <h3 class="title">Популярные статьи</h3>
+              
+                <div class="column medium-12">
+                  <a href="#">
+                    <div class="img">
+                      <div>
+                        <img src="img/slider/tovar2.png">
+                      </div>
+                    </div>
+
+                    <div class="text">
+                      <div class="subtitle">Как покупка через корзину с помощью платежной карты!</div>
+                      <p class="content">Прием платежей полностью реализован на нашем сайте и в сотрудничестве с ведущими банками. Безопасность ваших платежных карт обеспечивается</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="column medium-12">
+                  <a href="#">
+                    <div class="img">
+                      <div>
+                        <img src="img/slider/tovar3.png">
+                      </div>
+                    </div>
+
+                    <div class="text">
+                        <div class="subtitle">Керамическая плитка двойного назначения Devit Giran 16190128P</div>
+                      <p class="content">Большая часть товара, который попал в наш интернет магазин сантехники, имеется в наличии на наших складах.</p>
+                    </div>
+                </a>
+              </div>
+      	<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPlitkakievua-933041076800799%2F%3Ffref%3Dts&tabs&width=200&height=180&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="200" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        </aside><!--/ sifdebar-->
+
         <main class="column medium-10 main-section catalog" role="main">
         
 
@@ -1198,82 +1309,6 @@
 
           </section><!--/main container slider description shipping buy  -->
         </main>
-
-        <aside class="column medium-2 sidebar sidebar_no-padding catalog">
-
-          <div class="row collapse product-side">
-            <a href="#">
-              <div class="img">
-              <div>
-                <img src="img/slider/tovar1.png">
-              </div>
-              </div>
-            </a>
-              <a href="#" class="text">
-                <div class="title">Наиболее популярные товары раздела Сантехника</div>
-              </a>
-          </div>
-          
-          <div class="row collapse product-side">
-            <a href="#">
-              <div class="img">
-              <div>
-                <img src="img/slider/tovar2.png">
-              </div>
-              </div>
-            </a>
-            <a href="#" class="text">
-              <div class="title">Распродажа сантехнических изделий!</div>
-            </a>
-          </div>
-
-          <div class="row collapse product-side sale">
-            <a href="#">
-                <div class="img">
-                <div>
-                  <img src="img/slider/tovar2.png">
-                </div>
-                </div>
-            </a>
-            <a href="#" class="text">
-              <div class="title">Распродажа сантехнических изделий!</div>
-            </a>
-          </div>
-
-          <div class="row collapse blog-article">
-                <h3 class="title">Популярные статьи</h3>
-              
-                <div class="column medium-12">
-                  <a href="#">
-                    <div class="img">
-                      <div>
-                        <img src="img/slider/tovar2.png">
-                      </div>
-                    </div>
-
-                    <div class="text">
-                      <div class="subtitle">Как покупка через корзину с помощью платежной карты!</div>
-                      <p class="content">Прием платежей полностью реализован на нашем сайте и в сотрудничестве с ведущими банками. Безопасность ваших платежных карт обеспечивается</p>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="column medium-12">
-                  <a href="#">
-                    <div class="img">
-                      <div>
-                        <img src="img/slider/tovar3.png">
-                      </div>
-                    </div>
-
-                    <div class="text">
-                        <div class="subtitle">Керамическая плитка двойного назначения Devit Giran 16190128P</div>
-                      <p class="content">Большая часть товара, который попал в наш интернет магазин сантехники, имеется в наличии на наших складах.</p>
-                    </div>
-                </a>
-              </div>
-      	<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPlitkakievua-933041076800799%2F%3Ffref%3Dts&tabs&width=200&height=180&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="200" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-        </aside><!--/ sifdebar-->
       <!-- </div> -->
     </div>
 
