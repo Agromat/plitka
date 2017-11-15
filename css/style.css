@@ -4169,6 +4169,9 @@ footer .row.link-footer .column:last-child {
   display: inline-block;
   vertical-align: middle;
 }
+.blog-article .column.column_blog-article .img img {
+  width: 100%;
+}
 .blog-article .column.column_blog-article .text {
   margin-top: 0;
   padding-left: 20px;
