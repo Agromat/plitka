@@ -543,7 +543,7 @@ nav {
   display: flex;
   justify-content: flex-start;
   position: relative;
-  align-items: center;
+  align-items: stretch;
 }
 
 .menu-main {
@@ -564,6 +564,7 @@ nav {
 
 .menu-other {
   margin: 0;
+  padding-top: 7px;
 }
 .menu-other li {
   margin-bottom: 0;
@@ -571,7 +572,6 @@ nav {
   list-style: none;
   position: relative;
   float: left;
-  margin-top: 7px;
 }
 .menu-other li:before {
   content: "";
@@ -654,25 +654,16 @@ nav {
 }
 .menu-catalog.is-inactive .menu-catalog__head {
   background: #5b6a84;
-  margin-top: 0;
-  padding-top: 7px;
 }
-.menu-catalog.is-inactive .menu-catalog__head a {
-  font-size: 1rem;
-  color: #fff;
-  margin-bottom: -4px;
-  display: block;
-  border-bottom: 0;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+.menu-catalog.is-inactive .menu-catalog__head a:after {
+  background-image: url(../img/caret-sm-white.png);
 }
 .menu-catalog.is-inactive .menu-catalog__head span {
   color: #fff;
-  font-weight: normal;
 }
-.menu-catalog.is-inactive .menu-catalog__head:after {
-  top: 53%;
-  background-image: url(../img/caret-sm-white.png);
+
+.menu-catalog.index .menu-catalog__head a.no-c-pointer {
+  cursor: default;
 }
 
 .menu-catalog {
@@ -681,25 +672,26 @@ nav {
   border: 4px solid #e8e8e8;
   border-bottom: none;
   z-index: 201;
+  min-width: 205px;
   margin-top: -4px;
 }
 .menu-catalog__head {
-  position: relative;
-  margin-top: 11px;
+  padding-top: 7px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
   height: 100%;
 }
 .menu-catalog__head a {
+  font-size: 1rem;
+  position: relative;
   display: block;
-  padding: 0.875rem 2.8125rem 1.25rem 1.375rem;
+  padding: 0.875rem 2.8125rem 1.25rem 1.0625rem;
 }
 .menu-catalog__head a:hover span {
   border-bottom: 1px solid #fff;
 }
-.menu-catalog__head span {
-  color: #000;
-}
-.menu-catalog__head:after {
+.menu-catalog__head a:after {
   content: "";
   width: 8px;
   height: 6px;
@@ -707,10 +699,12 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  top: 46%;
+  top: 48%;
   right: 7%;
   transform: translate(-50%, -50%);
-  transform: rotate(180deg);
+}
+.menu-catalog__head span {
+  color: #000;
 }
 .menu-catalog__content {
   position: absolute;
@@ -767,10 +761,10 @@ nav {
 
 .menu-cart {
   position: relative;
+  padding-top: 7px;
   display: flex;
   align-items: center;
-  margin-top: 7px;
-  padding: 0.875rem 1.0625rem 1.25rem 1.875rem;
+  padding-left: 1.0625rem;
 }
 .menu-cart:before {
   content: "";
@@ -788,6 +782,9 @@ nav {
   background-image: url("../img/cart.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+.menu-cart__inner:hover span {
+  border-bottom: none;
 }
 .menu-cart__circle {
   position: absolute;

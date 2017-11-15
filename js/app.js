@@ -345,9 +345,9 @@
 
 
 
-
-
-
+///////////////////////////
+// begin new menu code   //
+///////////////////////////
 
 
   $('.menu-catalog__item, .f-dropdown.content').hover(
@@ -387,21 +387,37 @@
     );
 
 
-  $(".js-menu-catalog-head").on("click", function(){
+  $(".menu-catalog").on("click", ".js-menu-catalog-head", function(){
+    console.log("clicked");
     $(this).parent().toggleClass("is-inactive");
   });   
-
 
 
   $(window).scroll(function(){
 
       if($(window).scrollTop() > 205) {
           $(".js-menu-main").addClass("is-fixed");
+          $(".menu-catalog__head a").removeClass("no-c-pointer");
+          if(!$(".menu-catalog").hasClass("is-inactive")){
+            $(".menu-catalog").addClass("is-inactive");
+            $(".menu-catalog__head").addClass("js-menu-catalog-head");
+            $(".f-dropdown.content-catalog").hide();
+          } 
 
       } else {
           $(".js-menu-main").removeClass("is-fixed");
+          if($(".menu-catalog").hasClass("is-inactive") && $(".menu-catalog").hasClass("index")){
+            $(".menu-catalog").removeClass("is-inactive");
+            $(".menu-catalog__head a").addClass("no-c-pointer");
+            $(".menu-catalog__head").removeClass("js-menu-catalog-head");
+          } 
 
       };
 
   });
+
+
+/////////////////////////
+// end new menu code   //
+/////////////////////////
 

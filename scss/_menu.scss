@@ -277,7 +277,7 @@ nav {
 	display: flex;
 	justify-content: flex-start;
 	position: relative;
-	align-items: center;
+	align-items: stretch;
 }
 
 .menu-main{
@@ -300,6 +300,7 @@ nav {
 
 .menu-other {
 	margin: 0;
+	padding-top: 7px;
 
 	li{
 		margin-bottom:0;
@@ -307,7 +308,6 @@ nav {
 		list-style:none;
 		position:relative;
 		float: left;
-		margin-top: 7px;
 		&:before {
 			content: "";
 			position: absolute;
@@ -394,24 +394,22 @@ nav {
 	}
 	.menu-catalog__head {
 		background: #5b6a84;
-		margin-top: 0;
-		padding-top: 7px;
 		a {
-			font-size:1rem;
-			color:$white;
-			margin-bottom: -4px;
-			display:block;
-			border-bottom: 0;
-			-webkit-border-radius: 5px;
-			border-radius: 5px;
+			&:after {
+				background-image: url(../img/caret-sm-white.png);
+			}
 		}
 		span {
 			color: #fff;
-			font-weight: normal;
 		}
-		&:after {
-			top: 53%;
-			background-image: url(../img/caret-sm-white.png);
+		
+	}
+}
+
+.menu-catalog.index {
+	.menu-catalog__head {
+		a.no-c-pointer {
+			cursor: default;
 		}
 	}
 }
@@ -422,38 +420,41 @@ nav {
 	border: 4px solid #e8e8e8;
 	border-bottom: none;
 	z-index: 201;
+	min-width: 205px;
 	margin-top: -4px;
 	&__head {
-		position: relative;
-		margin-top: 11px;
+		padding-top: 7px;
 		cursor: pointer;
+		display: flex;
+		align-items: center;
 		height: 100%;
 		a {
+			font-size:1rem;
+			position: relative;
 			display: block;
-			padding: rem-calc(14) rem-calc(45) rem-calc(20) rem-calc(22);
+			padding: rem-calc(14) rem-calc(45) rem-calc(20) rem-calc(17);
 			&:hover {
 				span {
 					border-bottom: 1px solid #fff;
 				}
 			}
+			&:after {
+				content: "";
+				width: 8px;
+				height: 6px;
+				background-image: url(../img/caret-sm.png);
+				background-repeat: no-repeat;
+				background-size: cover;
+				position: absolute;
+				top: 48%;
+				right: 7%;
+				transform: translate(-50%,-50%);
+			}
 		}
 		span {
 			color: #000;
-			//font-weight: 700;
 		} 
-		&:after {
-			content: "";
-			width: 8px;
-			height: 6px;
-			background-image: url(../img/caret-sm.png);
-			background-repeat: no-repeat;
-			background-size: cover;
-			position: absolute;
-			top: 46%;
-			right: 7%;
-			transform: translate(-50%,-50%);
-			transform: rotate(180deg);
-		}
+		
 	}
 
 	&__content {
@@ -515,11 +516,10 @@ nav {
 
 .menu-cart {
 	position: relative;
+	padding-top: 7px;
 	display: flex;
 	align-items: center;
-	margin-top: 7px;
-	padding: rem-calc(14) rem-calc(17) rem-calc(20) rem-calc(30);
-	//padding: 0 rem-calc(35) 0 rem-calc(17);
+	padding-left: rem-calc(17);
 	&:before {
 		content: "";
 		position: absolute;
@@ -538,6 +538,15 @@ nav {
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
+	
+	&__inner {
+		&:hover {
+			span {
+				border-bottom: none;
+			}
+		}
+	}
+
 	&__circle {
 		position: absolute;
 		top: -8px;
