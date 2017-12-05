@@ -168,7 +168,7 @@
   border-bottom: 1px solid $ddgray;
   .nav__link{
     padding: rem-calc(8) rem-calc(18);
-    font-size: rem-calc(16);
+    font-size: rem-calc(14);
     font-weight: 700;
     &:hover{
       span{
@@ -190,6 +190,10 @@
         transform: translate(0, -50%) rotate(180deg);
       }
     }
+  }
+
+  .navdrop__link{
+    font-size: rem-calc(14);
   }
   
 }
@@ -306,6 +310,8 @@
     position: relative;
     border-bottom: 1px solid #e5e5e5;
     list-style-type: none;
+    font-size: rem-calc(14);
+
     &:last-child {
       border-bottom: none;
     }

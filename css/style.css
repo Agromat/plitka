@@ -12210,7 +12210,7 @@ body.is-overflow {
 }
 .mob-catalog .nav__link {
   padding: 0.5rem 1.125rem;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 700;
 }
 .mob-catalog .nav__link:hover span {
@@ -12228,6 +12228,9 @@ body.is-overflow {
 }
 .mob-catalog .nav__link.is-active .icon-arr-down {
   transform: translate(0, -50%) rotate(180deg);
+}
+.mob-catalog .navdrop__link {
+  font-size: 0.875rem;
 }
 
 .nav__list {
@@ -12308,6 +12311,7 @@ body.is-overflow {
   position: relative;
   border-bottom: 1px solid #e5e5e5;
   list-style-type: none;
+  font-size: 0.875rem;
 }
 .navdrop__option:last-child {
   border-bottom: none;
