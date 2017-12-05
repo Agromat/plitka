@@ -164,7 +164,7 @@
     }
 }
 
-.mob-catalog{
+.mob-catalog {
   border-bottom: 1px solid $ddgray;
   .nav__link{
     padding: rem-calc(8) rem-calc(18);
@@ -175,7 +175,23 @@
         border-bottom: 0;
       }
     }
+    .icon-arr-down {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      margin-top: -3px;
+      width: 11px;
+      height: 8px;
+      background-image: url(../img/addicons.png);
+      background-position: -146px -5px;
+    }
+    &.is-active {
+      .icon-arr-down {
+        transform: translate(0, -50%) rotate(180deg);
+      }
+    }
   }
+  
 }
 
 .nav {
@@ -211,10 +227,13 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: rgba(0, 0, 0, 0.2);
+      background: #fff;
       z-index: -1;
     }
     &.is-active {
+      span{
+        text-decoration: underline;
+      }
       &:after {
         display: block;
       }
