@@ -223,26 +223,26 @@
 
     }
 
-    if ($('.bulk-select').exists()) {
-      var bulk =  $(".bulk-select");
-          this_imp = bulk.find('.number');
-          this_val = parseFloat(this_imp.val());
+    // if ($('.bulk-select').exists()) {
+    //   var bulk =  $(".bulk-select");
+    //       this_imp = bulk.find('.number');
+    //       this_val = parseFloat(this_imp.val());
 
-      bulk.find('.plus').click(function(){
-        this_val = parseFloat(this_imp.val());
-        this_val = this_val+1;
-        this_imp.val(this_val);
-      });
-      bulk.find('.minus').click(function(){
-        this_val = parseFloat(this_imp.val());
-        if (this_val <= 0) {
-          this_val=0;
-        } else{
-          this_val = this_val-1;
-        };
-        this_imp.val(this_val);
-      });
-    }
+    //   bulk.find('.plus').click(function(){
+    //     this_val = parseFloat(this_imp.val());
+    //     this_val = this_val+1;
+    //     this_imp.val(this_val);
+    //   });
+    //   bulk.find('.minus').click(function(){
+    //     this_val = parseFloat(this_imp.val());
+    //     if (this_val <= 0) {
+    //       this_val=0;
+    //     } else{
+    //       this_val = this_val-1;
+    //     };
+    //     this_imp.val(this_val);
+    //   });
+    // }
 
     $(document).on({
         mouseenter: function(){
