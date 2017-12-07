@@ -648,3 +648,102 @@ function resizeModal(){
       modal.find('.orbit-container').css('height',heightImg+"px");
       modal.find('.orbit-slides-container img').css('max-height',heightImg+"px");
 }
+
+
+
+
+///////////////////////////
+// begin new menu code   //
+///////////////////////////
+
+
+  $('.menu-catalog__item, .f-dropdown.content').hover(
+    function () {
+      $(".page-mask").addClass("bg-dark");
+    },
+    function () {
+        $(".page-mask").removeClass("bg-dark");
+    },
+  );
+
+
+  $(".js-dropdown-catalog").hover(
+    function() {
+      var menu = $("div[data-drop='"+$(this).attr("data-drop")+"']");
+      
+
+      if($(window).width() >= 1219) {
+        menu.css({
+          //top: '70px',
+          left: '200px'
+          
+        }).show();
+        } else{
+           menu.css({
+            left: '200px'
+            
+          }).show();
+        }
+
+    }, 
+    function() {
+      var menu = $("div[data-drop='"+$(this).attr("data-drop")+"']");
+      menu.hide();
+    }
+  );
+
+  $(".js-dropdown-catalog-dialog").hover(
+      function() {
+        $(this).show();
+        var menuLink = $("a[data-drop='"+$(this).attr("data-drop")+"']");
+        menuLink.parent().addClass("is-hovered");
+      }, function() {
+        $(this).hide();
+        var menuLink = $("a[data-drop='"+$(this).attr("data-drop")+"']");
+        menuLink.parent().removeClass("is-hovered");
+      }
+    );
+
+
+  $(".menu-catalog").on("click", ".js-menu-catalog-head", function(){
+    $(this).parent().toggleClass("is-inactive");
+  });   
+
+
+  $(window).scroll(function(){
+
+      if($(window).scrollTop() > 205) {
+          $(".js-menu-main").addClass("is-fixed");
+          $(".menu-catalog__head a").removeClass("no-c-pointer");
+          if(!$(".menu-catalog").hasClass("is-inactive")){
+            $(".menu-catalog").addClass("is-inactive");
+            $(".menu-catalog__head").addClass("js-menu-catalog-head");
+            $(".f-dropdown.content-catalog").hide();
+          } 
+
+      } else {
+          $(".js-menu-main").removeClass("is-fixed");
+          if($(".menu-catalog").hasClass("is-inactive") && $(".menu-catalog").hasClass("index")){
+            $(".menu-catalog").removeClass("is-inactive");
+            $(".menu-catalog__head a").addClass("no-c-pointer");
+            $(".menu-catalog__head").removeClass("js-menu-catalog-head");
+          } 
+
+      };
+
+  });
+
+
+  if($(window).width() <= 1024) {
+    $(".menu-catalog").removeClass("index");
+    $(".menu-catalog__head a").removeClass("no-c-pointer");
+    $(".menu-catalog").addClass("is-inactive");
+    $(".menu-catalog__head").addClass("js-menu-catalog-head");
+  }
+
+  
+
+
+/////////////////////////
+// end new menu code   //
+/////////////////////////

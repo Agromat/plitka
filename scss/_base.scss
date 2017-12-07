@@ -38,6 +38,14 @@ ul.inline{
 	    //-moz-column-gap: 15px;
 	    //column-gap: 15px;
 	}
+	&.inline.two-type {
+		-webkit-column-width: 140px;
+		-moz-column-width: 140px;
+		column-width: 140px;
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+	}
 	/*
 	&.three-type li{
 		width:33%;
