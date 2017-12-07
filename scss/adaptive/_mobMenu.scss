@@ -167,7 +167,6 @@
 .mob-catalog {
   border-bottom: 1px solid $ddgray;
   .nav__link{
-    padding: rem-calc(13) rem-calc(18) rem-calc(13) rem-calc(30);
     font-size: rem-calc(14);
     font-weight: 700;
     &:hover{
@@ -178,7 +177,7 @@
     .icon-arr-down {
       position: absolute;
       top: 50%;
-      right: 15px;
+      right: 24px;
       margin-top: -3px;
       width: 11px;
       height: 8px;
@@ -194,6 +193,7 @@
 
   .navdrop__link{
     font-size: rem-calc(14);
+    padding: rem-calc(13) rem-calc(18) rem-calc(13) rem-calc(35);
   }
   
 }
@@ -218,7 +218,7 @@
   &__link {
     position: relative;
     display: block;
-    padding: rem-calc(10) rem-calc(18) rem-calc(9);
+    padding: rem-calc(13) rem-calc(18) rem-calc(13) rem-calc(30);
     font-size: rem-calc(13);
     color: $ddgray;
     line-height: 1;
