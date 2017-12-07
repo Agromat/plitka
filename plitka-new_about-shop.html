@@ -86,314 +86,510 @@ ga('send', 'pageview');
 <noscript>&lt;iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KDN4L7"
 height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
 <!-- End Google Tag Manager (noscript) -->            
-<header class="menu-nav">
-                <div class="menubar">
-                    <div class="row collapse">
+<!-- BEGIN HEADER -->
 
-                        <ul class="left">
-                            <li><a href="https://plitka.kiev.ua/about"><span>О магазине</span></a></li>
-                            <li><a href="https://plitka.kiev.ua/payment-and-delivery/kiev-ukraine"><span>Доставка и оплата</span></a></li>
-                                                        <li><a href="https://plitka.kiev.ua/brands"><span>Производители</span></a></li>
-                            <li><a href="https://plitka.kiev.ua/reviews"><span>Обзор</span></a></li>
-                            <li><a href="https://plitka.kiev.ua/articles"><span>Статьи</span></a></li>
-                            <li><a href="https://plitka.kiev.ua/contacts"><span>Контакты</span></a></li>
-                            <li><a href="https://plitka.kiev.ua/warranty"><span>Гарантия</span></a></li>
-                            <li><a href="https://plitka.kiev.ua/contacts#feedback"><span>Обратная связь</span></a></li>
-                        </ul><!-- /menu bar left side-->
-                        <ul class="social">
-                            <li><a href="https://www.facebook.com/Plitkakievua-933041076800799/?fref=ts" target="_blank" rel="nofollow"><i class="fb"></i></a></li>
-                            <li><a href="https://www.pinterest.com/plitkakievua/" target="_blank" rel="nofollow"><i class="pinterest"></i></a></li>
-                        </ul>
-                                                <!--<ul class="right">
-                          <li><a class="icon icon-padlock" href="#login">Войти в личный кабинет</a></li>
-                        </ul><!-- /menu bar right side-->
 
-                    </div><!-- /row collapse -->
-                </div><!-- /menubar-->
 
-                <div class="menuinfo">
-                    <div class="row collapse">
+<!-- !! add class "js-top-nav" -->
 
-                        <div class="logo column medium-3">
+<header class="menu-nav js-top-nav">
 
-                            <div class="img">
-                                <a href="https://plitka.kiev.ua/">                                    <img src="./Магазин плитки и сантехники plitka.kiev.ua. Наши преимущества_files/logo.png">
-                                    </a>                            </div><!-- /img block -->
 
-                            <div class="about-text">
-                                <p>интернет-магазин плитки<br> и сантехники</p>
-                            </div><!-- /about block -->
-                        </div><!-- /logo block -->
 
-                        <div class="info column medium-5">
-                            <div class="row collapse">
+    <!-- !! create mobile nav -->
 
-                                <div class="phone column medium-4">
-                                                                        <p class="tel">0 (44) 392-29-45</p>
-                                                                        <p>Заказ по телефону</p>
-                                                                        <a id="openCitySelectPopup" style="font-size: 13px;"><span>Киев и Украина</span></a>
 
-                                </div>
-                                <div class="">
 
-                                </div>
+    <!-- BEGIN MOBILE MENU -->
 
-                                <div class="callback column medium-4">
-                                    <a class="js-modal-toggle" data-modal="js-modal-callback" id="openCallbackPopup"><span>Заказать обратный звонок</span></a>
-                                </div>
+    <div class="mob-menu">
 
-                                <div class="schedule column medium-3">
-                                    <p>Время работы</p>
-                                                                        <div>
-                                        <span>П</span>
-                                        <span>В</span>
-                                        <span>С</span>
-                                        <span>Ч</span>
-                                        <span>П</span>
-                                        <span class="wek">С</span>
-                                                                            </div>
-                                    <p style="width: 145px;">
+        <div class="mob-menu__inner">
 
-                                                                                            <span>09<sup>00</sup>-19<sup>00</sup></span>                                                    <span class="wek">09<sup>00</sup>-18<sup>00</sup></span>                                    </p>
-                                </div>
+            <a href="" class="mob-menu__btn js-nav-btn"><span></span></a>
 
-                            </div>
+            <a href="" class="mob-menu__logo"><img src="img/logo.png" alt=""></a>
 
-                            <div class="row collapse">
-                                <div class="search" role="search">
-                                    <form action="https://plitka.kiev.ua/search">
-                                        <input class="column medium-9" id="product_search" name="keyword" type="search" placeholder="поиск товара" autocomplete="off">
-                                        <button class="column medium-3" type="submit">Искать</button>
-                                    </form>
-                                    <div class="search__drop" id="jquery-live-search">
+            <a href="" class="mob-menu__basket is-added-goods">
+                <div class="mob-menu__basket-inner">
+                    <!-- !! add className "title" to next block-->
+                    <div class="amount"><span>2</span></div>
+                    <div><i class="icon-basket "></i></div>
+                </div>
+            </a> <!-- /basket-->
 
-                                    </div>
-                                </div>
+            <a href="tel:+388007000010" class="mob-menu__phone">8 (800) 700-00-10</a>
 
-                                <script type="text/javascript">
-                                    $(document).ready(function () {
-                                        $('#product_search').liveSearch({url: '/search/context?query='});
-                                    });
-                                </script>
-                            </div>
+            <!-- BEGIN MOBILE NAV -->
+            <div class="mob-nav js-mob-nav">
+                <div class="nav" role="navigation">
+                    <div class="nav__body">
+                        <!-- catalog menu -->
+                        <div class="mob-catalog">
+                            <ul class="nav__list">
+                                <li class="nav__option js-nav-option">
+                                   <a href="#" class="nav__link js-nav-link"><span>Плитка</span></a>
+                                </li>
+                                <li class="nav__option js-nav-option has-navdrop">
+                                    <a href="#" class="nav__link js-nav-link">
+                                        <span>Сантехника</span>
+                                        <i class="icon-arr-down"></i>
+                                    </a>
+                                    <ul class="navdrop js-navdrop">
+                                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Ванны</span></a></li>
+                                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Гидромассажные боксы</span></a></li>
+                                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Гидромассажные ванны</span></a></li>
+                                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Душевые кабины</span></a></li>
+                                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Мозаика</span></a></li>
+                                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Аксессуары</span></a></li>
+                                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Зеркала</span></a></li>
+                                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Мебель</span></a></li>
+                                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Освещение</span></a></li>
+                                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Фурнитура</span></a></li>
+                                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Сауны</span></a></li>
+                                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Сифоны</span></a></li>
+                                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Душевые наборы и панели</span></a></li>
+                                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Смесители</span></a></li>
+                                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Средства за уходом</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav__option js-nav-option">
+                                    <a href="#" class="nav__link js-nav-link"><span>Мозаика</span></a>
+                                </li>
+                                <li class="nav__option js-nav-option">
+                                    <a href="#" class="nav__link js-nav-link"><span>Смесители</span></a>
+                                </li>
+                                <li class="nav__option js-nav-option">
+                                    <a href="#" class="nav__link js-nav-link""><span>Мебель</span></a>
+                                </li>
+                                <li class="nav__option js-nav-option ">
+                                    <a href="#" class="nav__link js-nav-link""><span>Стройхимия</span></a>
+                                </li>
+                                <li class="nav__option js-nav-option has-navdrop">
+                                    <a href="#" class="nav__link js-nav-link">
+                                        <span>Термооборудование</span>
+                                        <i class="icon-arr-down"></i>
+                                    </a>
+                                    <ul class="navdrop js-navdrop">
+                                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Обогреатели</span></a></li>
+                                        <li class="navdrop__option"><a href="#" class="navdrop__link"><span>Бойлеры</span></a></li>
+                                    </ul>
+                                </li>
+                            </ul><!-- /list items menu -->
+                        </div> <!-- /mob-catalog-->
 
-                        </div><!-- /info-->
-
-                        <div class="basket-sm column medium-4">
-    <div id="widgetFullCart">
-        <p>В корзине <span id="cartWidgetCountProductsWords">1 товар</span> на сумму</p>
-        <p class="money">
-                        <span id="cartWidgetTotalPriceDecimalPart">4 201</span>,<sup id="cartWidgetTotalPriceFractionalPart">80 грн</sup>
-                    </p>
-        <a class="btn btn-green" href="https://plitka.kiev.ua/cart/order">Заказать</a>
-    </div>
-    <div id="widgetEmptyCart" style="height:117px;padding-top:45px;  display:none;">
-        <p>Корзина пуста</p>
-    </div>
-</div><!-- /basket-->
-
-                    </div>
-                </div><!-- /menuinfo -->
-            </header><!-- /menu-nav-->
-
-            
-
-<section class="menu-catalog">
-    <nav role="navigation">
-        <ul class="row collapse">
-                            <li><a data-drop="dropdown57" class="button dropdown js-dropdown-toggle js-dropdown-left"><span>Плитка</span></a></li>
-                            <li><a class="button" href="https://plitka.kiev.ua/mozaika"><span>Мозаика</span></a></li>
-                            <li><a data-drop="dropdown84" class="button dropdown js-dropdown-toggle js-dropdown-left"><span>Сантехника</span></a></li>
-                            <li><a data-drop="dropdown68" class="button dropdown js-dropdown-toggle js-dropdown-left"><span>Смесители</span></a></li>
-                            <li><a data-drop="dropdown82" class="button dropdown js-dropdown-toggle js-dropdown-left"><span>Мебель</span></a></li>
-                            <li><a data-drop="dropdown133" class="button dropdown js-dropdown-toggle js-dropdown-right"><span>Стройхимия</span></a></li>
-                            <li><a class="button" href="https://plitka.kiev.ua/obogrevateli"><span>Обогреватели</span></a></li>
-                            <li><a class="button" href="https://plitka.kiev.ua/promo"><span>Акции</span></a></li>
-           
-        </ul><!-- /list items menu -->
-
-        
-            <div class="f-dropdown content menu-catalog-drop js-dropdown" data-drop="dropdown57" style="">
-                <div class="row">
-                    <div class="column medium-9 menu-item has_novelty">
-                        <div class="row collapse product">
-                            <ul class="inline three-type">
-                                                                    <li><a href="https://plitka.kiev.ua/plitka"><span>Вся плитка</span></a></li>
-                                                                    <li><a href="https://plitka.kiev.ua/plitka?filters=appliances_id:30"><span>Напольная плитка</span></a></li>
-                                                                    <li><a href="https://plitka.kiev.ua/plitka?filters=281:381"><span>Плитка для кухни</span></a></li>
-                                                                    <li><a href="https://plitka.kiev.ua/plitka?filters=281:382"><span>Плитка для ванной</span></a></li>
-                                                                    <li><a href="https://plitka.kiev.ua/plitka?filters=materials_id:5"><span>Керамогранит</span></a></li>
-                                                                    <li><a href="https://plitka.kiev.ua/plitka?filters=materials_id:42"><span>Клинкер</span></a></li>
-                                                            </ul>
-                        </div>
-                                                                            <div class="row collapse brand">
-                                <p class="brand-title">Торговые марки раздела <span>Плитка</span></p>
-                                <ul class="inline four-type">
-                                                                                                                                                                <li><a href="https://plitka.kiev.ua/plitka?filters=brands_id:80">APE Ceramica</a></li>
-                                                                                                                                                                                                        <li><a href="https://plitka.kiev.ua/plitka?filters=brands_id:289">Opoczno</a></li>
-                                                                                                                                                                                                        <li><a href="https://plitka.kiev.ua/plitka?filters=brands_id:1159">Cersanit</a></li>
-                                                                                                                                                                                                        <li><a href="https://plitka.kiev.ua/plitka?filters=brands_id:51">Imola</a></li>
-                                                                                                            </ul>
-                            </div>
-                        
-                    </div>
-                                            <div class="column medium-3 new-in">
-                            <a href="https://plitka.kiev.ua/novelty/f/plitka-group">
-                                <p class="new-in-title">Новинки раздела <span>Плитка</span></p>
-                            </a>    
-                            <a href="https://plitka.kiev.ua/plitka/keramogranit/opoczno-floorwood-beige-lappato">
-                                <div class="new-in-img">
-                                                                        <img src="./Магазин плитки и сантехники plitka.kiev.ua. Наши преимущества_files/315497-1.jpg" alt="Керамогранит Opoczno Floorwood FLOORWOOD BEIGE LAPPATO бежевый,бежево-серый">
-                                </div>
-                            </a>
-                            <div class="new-in-about">
-                                <a href="https://plitka.kiev.ua/plitka/keramogranit/opoczno-floorwood-beige-lappato"><span>Opoczno Floorwood FLOORWOOD BEIGE LAPPATO</span></a>
-                                <p class="price">493,<sup>92</sup> <sup>грн</sup></p>
-                            </div>
-
-                        </div>
-                    </div>
-            </div>
-
-            <div class="f-dropdown content menu-catalog-drop js-dropdown" data-drop="dropdown84" style="">
-                <div class="row">
-                    <div class="column medium-9 menu-item">
-                        <div class="row collapse product">
-                            <ul class="inline three-type">
-                                                                    <li><a href="https://plitka.kiev.ua/aksessuary"><span>Аксессуары</span></a></li>
-                                                                    <li><a href="https://plitka.kiev.ua/bide"><span>Биде</span></a></li>
-                                                                    <li><a href="https://plitka.kiev.ua/vanny"><span>Ванны</span></a></li>
-                                                                    <li><a href="https://plitka.kiev.ua/gidromassazhnye-boksy"><span>Гидромассажные боксы</span></a></li>
-                                                                    <li><a href="https://plitka.kiev.ua/gidromassazhnye-vanny"><span>Гидромассажные ванны</span></a></li>
-                                                                    <li><a href="https://plitka.kiev.ua/dushevye-kabiny"><span>Душевые кабины</span></a></li>
-                                                                    <li><a href="https://plitka.kiev.ua/dushevye-nabory-i-paneli"><span>Душевые наборы и панели</span></a></li>
-                                                                    <li><a href="https://plitka.kiev.ua/installation"><span>Инсталляции</span></a></li>
-                                                                    <li><a href="https://plitka.kiev.ua/kanaly-i-trapy"><span>Каналы и трапы</span></a></li>
-                                                                    <li><a href="https://plitka.kiev.ua/parovye-boksy"><span>Паровые боксы</span></a></li>
-                                                                    <li><a href="https://plitka.kiev.ua/poddony"><span>Поддоны</span></a></li>
-                                                                    <li><a href="https://plitka.kiev.ua/polotentsesushiteli"><span>Полотенцесушители</span></a></li>
-                                                                    <li><a href="https://plitka.kiev.ua/rakoviny-i-nozhki"><span>Раковины и ножки</span></a></li>
-                                                                    <li><a href="https://plitka.kiev.ua/sifony"><span>Сифоны</span></a></li>
-                                                                    <li><a href="https://plitka.kiev.ua/unitazy-i-kompakty"><span>Унитазы и компакты</span></a></li>
-                                                                    <li><a href="https://plitka.kiev.ua/urinaly"><span>Уриналы</span></a></li>
-                                                                    <li><a href="https://plitka.kiev.ua/shtorki-na-vannu"><span>Шторки на ванну</span></a></li>
-                                                                    <li><a href="https://plitka.kiev.ua/basseyny"><span>Бассейны</span></a></li>
-                                                                    <li><a href="https://plitka.kiev.ua/sauny"><span>Сауны</span></a></li>
-                                                            </ul>
-                        </div>
-                            <div class="row collapse brand">
-                                <p class="brand-title">Торговые марки раздела <span>Сантехника</span></p>
-                                <ul class="inline four-type">
-                                    <li><a href="https://plitka.kiev.ua/brands/hansgrohe">Hansgrohe</a></li>
-                                    <li><a href="https://plitka.kiev.ua/brands/villeroy-boch">Villeroy&amp;Boch</a></li>
-                                    <li><a href="https://plitka.kiev.ua/brands/geberit">Geberit</a></li>
-                                    <li><a href="https://plitka.kiev.ua/brands/keramag">Keramag</a></li>
-                                    <li><a href="https://plitka.kiev.ua/brands/jacuzzi">Jacuzzi</a></li>
-                                    <li><a href="https://plitka.kiev.ua/brands/kludi">Kludi</a></li>
-                                    <li><a href="https://plitka.kiev.ua/brands/kolo">Kolo</a></li>
-                                    <li><a href="https://plitka.kiev.ua/brands/cersanit">Cersanit</a></li>
-                                </ul>
-                            </div>
-                        
-                    </div>
-                                    </div>
-            </div>
-
-            <div class="f-dropdown content menu-catalog-drop js-dropdown" data-drop="dropdown68" style="">
-                <div class="row">
-                    <div class="column medium-9 menu-item">
-                        <div class="row collapse product">
-                            <ul class="inline three-type">
-                                <li><a href="https://plitka.kiev.ua/smesiteli"><span>Все смесители</span></a></li>
-                                <li><a href="https://plitka.kiev.ua/smesiteli?filters=categories_id:145"><span>Смесители для кухни</span></a></li>
-                                <li><a href="https://plitka.kiev.ua/smesiteli?filters=categories_id:142"><span>Смесители для раковины</span></a></li>
-                                <li><a href="https://plitka.kiev.ua/smesiteli?filters=categories_id:143"><span>Смесители для душа</span></a></li>
-                                <li><a href="https://plitka.kiev.ua/smesiteli?filters=categories_id:141"><span>Смесители для ванны</span></a></li>
-                                <li><a href="https://plitka.kiev.ua/smesiteli?filters=categories_id:146"><span>Смесители для биде</span></a></li>
-                                <li><a href="https://plitka.kiev.ua/smesiteli?filters=categories_id:180"><span>Наружные части</span></a></li>
-                                <li><a href="https://plitka.kiev.ua/smesiteli?filters=categories_id:173"><span>Встраиваемые части</span></a></li>
+                        <div class="mob-other">
+                            <ul class="nav__list">
+                                <li class="nav__option"><a href="#" class="nav__link"><span>Акция</span></a></li>
+                                <li class="nav__option"><a href="#" class="nav__link"><span>Доставка и оплата</span></a></li>
+                                <li class="nav__option"><a href="#" class="nav__link"><span>Гарантия</span></a></li>
+                                <li class="nav__option"><a href="#" class="nav__link"><span>3-d визуализация</span></a></li>
+                                <li class="nav__option"><a href="#" class="nav__link"><span>Обзоры</span></a></li>
+                                <li class="nav__option"><a href="#" class="nav__link"><span>Статьи</span></a></li>
+                                <li class="nav__option"><a href="#" class="nav__link"><span>Производители</span></a></li>
                             </ul>
-                        </div>
-                                                                            <div class="row collapse brand">
-                                <p class="brand-title">Торговые марки раздела <span>Смесители</span></p>
-                                <ul class="inline four-type">
-                                    <li><a href="https://plitka.kiev.ua/smesiteli?filters=brands_id:56">Hansgrohe</a></li>
-                                    <li><a href="https://plitka.kiev.ua/smesiteli?filters=brands_id:112">Kludi</a></li>
-                                    <li><a href="https://plitka.kiev.ua/smesiteli?filters=brands_id:1338">Oras</a></li>
-                                    <li><a href="https://plitka.kiev.ua/smesiteli?filters=brands_id:35">Grohe</a></li>
-                                </ul>
-                            </div>
-                        
-                    </div>
-                                    </div>
-            </div>
+                        </div><!-- /mob-other-->
 
-            <div class="f-dropdown content menu-catalog-drop js-dropdown" data-drop="dropdown82" style="width: 680px; left: 808.953px; display: none;">
-                <div class="row">
-                    <div class="column medium-9 menu-item">
-                        <div class="row collapse product">
-                            <ul class="inline three-type">
-                                <li><a href="https://plitka.kiev.ua/mebel-dlya-vannoy"><span>Вся мебель</span></a></li>
-                                <li><a href="https://plitka.kiev.ua/mebel-dlya-vannoy?filters=categories_id:162"><span>Тумбы для раковин</span></a></li>
-                                <li><a href="https://plitka.kiev.ua/mebel-dlya-vannoy?filters=categories_id:161"><span>Зеркальные шкафы</span></a></li>
-                                <li><a href="https://plitka.kiev.ua/zerkala"><span>Зеркала</span></a></li>
-                                <li><a href="https://plitka.kiev.ua/mebel-dlya-vannoy?filters=categories_id:164"><span>Пеналы</span></a></li>
-                                <li><a href="https://plitka.kiev.ua/mebel-dlya-vannoy?filters=categories_id:206"><span>Комплекты</span></a></li>
-                                <li><a href="https://plitka.kiev.ua/santeh-osveshchenie"><span>Светильники для ванной</span></a></li>
-                            </ul>
-                        </div>
-                                                                            <div class="row collapse brand">
-                                <p class="brand-title">Торговые марки раздела <span>Мебель</span></p>
-                                <ul class="inline four-type">
-                                    <li><a href="https://plitka.kiev.ua/brands/kolo">Kolo</a></li>
-                                    <li><a href="https://plitka.kiev.ua/brands/cersanit">Cersanit</a></li>
-                                    <li><a href="https://plitka.kiev.ua/brands/laufen">Laufen</a></li>
-                                    <li><a href="https://plitka.kiev.ua/brands/gorenje">Gorenje</a></li>
-                                    <li><a href="https://plitka.kiev.ua/brands/yuventa">Ювента</a></li>
-                                    <li><a href="https://plitka.kiev.ua/brands/akva-rodos">Аква Родос</a></li>
-                                </ul>
-                            </div>
-                        
-                    </div>
-                                    </div>
-            </div>
-
-            <div class="f-dropdown content menu-catalog-drop js-dropdown" data-drop="dropdown133" style="width:680px;">
-                <div class="row">
-                    <div class="column medium-9 menu-item">
-                        <div class="row collapse product">
-                            <ul class="inline three-type">
-                                <li><a href="https://plitka.kiev.ua/stroitelnaya-himiya"><span>Вся стройхимия</span></a></li>
-                                <li><a href="https://plitka.kiev.ua/germetiki"><span>Герметики</span></a></li>
-                                <li><a href="https://plitka.kiev.ua/gruntovki"><span>Грунтовки</span></a></li>
-                                <li><a href="https://plitka.kiev.ua/zatirki"><span>Затирки</span></a></li>
-                                <li><a href="https://plitka.kiev.ua/klei-dlya-plitki"><span>Клеи для плитки</span></a></li>
-                                <li><a href="https://plitka.kiev.ua/stroitelnaya-himiya/montazhnaya-pena"><span>Монтажная пена</span></a></li>
-                                <li><a href="https://plitka.kiev.ua/stroitelnaya-himiya"><span>Строительная химия</span></a></li>
-                                <li><a href="https://plitka.kiev.ua/styazhki-dlya-pola"><span>Стяжки для пола</span></a></li>
-                                <li><a href="https://plitka.kiev.ua/stroitelnaya-himiya/shpaklevki"><span>Шпаклевки</span></a></li>
-                                <li><a href="https://plitka.kiev.ua/sredstva-za-uhodom"><span>Средства по уходу</span></a></li>
-                            </ul>
-                        </div>
-                        <div class="row collapse brand">
-                            <p class="brand-title">Торговые марки раздела <span>Стройхимия</span></p>
-                            <ul class="inline four-type">
-                                <li><a href="https://plitka.kiev.ua/brands/atis">ATIS</a></li>
-                                <li><a href="https://plitka.kiev.ua/brands/ceresit">Ceresit</a></li>
-                                <li><a href="https://plitka.kiev.ua/brands/baumit">Baumit</a></li>
-                                <li><a href="https://plitka.kiev.ua/brands/knauf">Knauf</a></li>
-                                <li><a href="https://plitka.kiev.ua/brands/kale">Kale</a></li>
-                                <li><a href="https://plitka.kiev.ua/brands/wim">WIM</a></li>
-                            </ul>
-                        </div>
-                        
+                        <div class="mob-menubar">
+                            <ul class="nav__list">
+                                <li class="nav__option"><a href="#about" class="nav__link"><span>О магазине</span></a></li>
+                                <li class="nav__option"><a href="#contacts" class="nav__link"><span>Контакты</span></a></li>
+                                <li class="nav__option"><a href="#safeguards" class="nav__link"><span>Гарантия</span></a></li>
+                                <li class="nav__option"><a href="#feedback" class="nav__link"><span>Обратная связь</span></a></li>
+                            </ul><!-- /menu bar-->
+                        </div><!-- /mob-menubar-->
                     </div>
                 </div>
             </div>
+           <!-- END MOBILE NAV -->
 
+        </div>
+
+    </div>
+
+    <!-- END MOBILE MENU -->
+
+
+
+    <div class="menubar">
+
+        <div class="row collapse">
+
+            <ul class="left">
+
+                <li><a href="#about"><span>О магазине</span></a></li>
+
+                <li><a href="#delivery"><span>Доставка и оплата</span></a></li>
+
+                <li class="hidden-sm"><a href="#brands"><span>Производители</span></a></li>
+
+                <li class="hidden-sm"><a href="#reviews"><span>Обзор</span></a></li>
+
+                <li class="hidden-sm"><a href="#articles"><span>Статьи</span></a></li>
+
+                <li><a href="#contacts"><span>Контакты</span></a></li>
+
+                <li><a href="#safeguards"><span>Гарантия</span></a></li>
+
+                <li><a href="#feedback"><span>Обратная связь</span></a></li>
+
+            </ul><!-- /menu bar left side-->
+
+            <ul class="social">
+
+                <li><a href="https://www.facebook.com/Plitkakievua-933041076800799/?fref=ts" rel="nofollow"><i class="fb"></i></a></li>
+
+                <li><a href="https://www.pinterest.com/plitkakievua/" rel="nofollow"><i class="pinterest"></i></a></li>
+
+            </ul>
+
+
+
+        <ul class="right">
+
+            <!-- !! add wrap "span" for some text in login block for mobile hidden  -->
+
+            <li><a class="icon icon-padlock" href="#login">Войти <span>в личный кабинет</span></a></li>
+
+        </ul><!-- /menu bar right side-->
+
+
+
+        </div><!-- /row collapse -->
+
+    </div><!-- /menubar-->
+
+
+
+    <div class="menuinfo">
+
+      <div class="row collapse">
+
+
+
+        <!-- !! DELETED CLASS: Medium-3 -->
+
+        <div class="menuinfo__bl logo">
+
+
+
+          <div class="img">
+
+            <img src="img/logo.png">
+
+          </div><!-- /img block -->
+
+
+
+          <div class="about-text">
+
+            <p>интернет-магазин плитки<br> и сантехники</p>
+
+          </div><!-- /about block -->
+
+          </div><!-- /logo block -->
+
+        
+
+        <!-- !! DELETED CLASS: Medium-5 -->
+
+        <div class="menuinfo__bl info">
+
+          <div class="info__inner">
+
+
+
+            <!-- !! CHANGE BLOCK WITH CLASSES .row.collapse TO .info__inner -->
+
+            <!-- !! DELETED CLASSES: Medium-4,3, COLUMNN AND ADD NEW  -->
+
+            <!-- !! CHANGE ORDER OF BLOCKS CALLBACK AND SCHEDULE  -->
+
+
+
+            <div class="phone info__items">
+
+              <a href="tel:+388007000010" class="tel">8 (800) 700-00-10</a>
+
+              <p>Круглосуточный заказ звонок бесплатный</p>
+
+              </div>
+
+              
+
+              <div class="schedule info__items">
+
+                <p>Время работы</p>
+
+                <div>
+
+                  <span></span><span></span>
+
+                  <span></span>
+
+                  <span></span>
+
+                  <span></span>
+
+                  <span class="wek"></span>
+
+                  <span class="wek"></span>
+
+                </div>
+
+                <p>
+
+                  <span>09<sup>00</sup>..21<sup>00</sup></span>
+
+                  <span class="wek">10<sup>00</sup>-18<sup>00</sup></span>
+
+                </p>
+
+            </div>
+
+
+
+            <div class="callback info__items">
+
+            <a href="#callback"><span>Заказать обратный звонок</span></a>
+
+            </div>
+
+          
+
+            <div class="search search_mob info__items" role="search">
+
+              <form action="" >
+
+                <input class="search__input js-search-input" type="search" placeholder="поиск товара">
+
+                <!-- !! add icon in search-btn icon-search -->
+
+                <button class="search__btn js-search-btn" type="submit"><i class="icon-search"></i>Искать</button>
+
+              </form>
+
+            </div>
+
+          </div>
+
+        </div><!-- /info-->
+
+
+
+        <!-- !! CREATE NEW WRAPPER FOR BASKET-->
+
+        <!-- !! DELETED CLASSES: Medium-4 -->
+
+        <div class="menuinfo__bl common-bl">
+
+
+
+            <!-- !! DELETE CLASSES: .medium-4, .column  FROM BASKET BLOCK -->
+
+            <div class="basket-sm is-added-goods">
+
+              <div>
+
+                <!-- !! add className "title" to next block-->
+
+                <p class="title">В корзине <span>2</span> товара на сумму </p>
+
+                <p class="money"><i class="icon-basket "></i>4 209,<sup>78 грн</sup></p>
+
+                <a class="btn btn-green" href="#">Заказать</a>
+
+              </div>
+
+            </div><!-- /basket-->
+
+            <!-- !! changing classes inside form: input and button -->
+
+            <!-- !! delete grid's classes: medium-9 and medium-3 inside form-->
+
+            <!-- !! add wrap with className "search"-->
+
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+</header><!-- /menu-nav-->
+
+<!-- END HEADER -->
+
+
+
+
+            
+
+<section class="menu-main js-menu-main">
+
+    <nav class="hidden-xs row collapse" role="navigation">
+
+      <div class="menu-catalog is-inactive">
+        <div class="menu-catalog__head js-menu-catalog-head">
+          <a class="no-c-pointer">
+            <span>Каталог товаров</span>
+          </a>
+        </div>
+        <ul class="menu-catalog__content">
+          <li class="menu-catalog__item">
+            <a>
+              <span>Плитка</span>
+            </a>
+          </li>
+          <li class="menu-catalog__item">
+            <a class="button dropdown js-dropdown-catalog " data-drop="js-dropdown-santech">
+              <span>Сантехника</span>
+              <i class="icon-arr-right"></i>
+            </a>
+          </li>
+          <li class="menu-catalog__item">
+            <a>
+              <span>Мозаика</span>
+            </a>
+          </li>
+          <li class="menu-catalog__item">
+            <a">
+              <span> Смесители</span>
+            </a>
+          </li>
+          <li class="menu-catalog__item">
+            <a>
+              <span>Мебель</span>
+            </a>
+          </li>
+          <li class="menu-catalog__item">
+            <a>
+              <span>Стройхимия</span>
+            </a>
+          </li>
+           <li class="menu-catalog__item">
+            <a class="button dropdown js-dropdown-catalog" data-drop="js-dropdown-termo">
+              <i class="icon-arr-right"></i>
+              <span>Термооборудование</span>
+            </a>
+          </li>
+        </ul>
+      </div><!-- /menu-catalog -->
+
+      <ul class="menu-other">
+        <li>
+          <a class="button"><span>Акция</span></a>
+        </li>
+        <li>
+          <a class="button"><span>Доставка и оплата</span></a>
+        </li>
+        <li>
+          <a class="button"><span>Гарантия</span></a>
+        </li>
+        <li>
+          <a class="button"><span>3d-визуализаця</span></a>
+        </li>
+        <li>
+          <a class="button"><span>Обзоры</span></a>
+        </li>
+        <li>
+          <a class="button"><span>Статьи</span></a>
+        </li>
+        <li>
+          <a class="button"><span>Производители</span></a>
+        </li>
+      </ul><!-- /menu-other -->
+
+       <div class="menu-cart">
+          <a class="menu-cart__inner">
+            <div class="menu-cart__icon">
+              <div class="menu-cart__circle">
+                <span class="menu-cart__value">8</span>
+              </div>
+            </div>
+          </a>
+        </div><!-- /menu-cart -->
+      
+        <div class="f-dropdown content content-catalog menu-catalog-drop js-dropdown-catalog-dialog" data-drop="js-dropdown-santech">
+            <div class="row">
+              <div class="column medium-9 menu-item">
+                <div class="row collapse product">
+                  <ul class="inline three-type">
+                    <li><a href="#"><span>Ванны</span></a></li>
+                    <li><a href="#"><span>Гидромассажные боксы</span></a></li>
+                    <li><a href="#"><span>Гидромассажные ванны</span></a></li>
+                    <li><a href="#"><span>Душевые кабины</span></a></li>
+                    <li><a href="#"><span>Душевые наборы и панели</span></a></li>
+                    <li><a href="#"><span>Мозаика</span></a></li>
+                    <li><a href="#"><span>Аксессуары</span></a></li>
+                    <li><a href="#"><span>Зеркала</span></a></li>
+                    <li><a href="#"><span>Мебель</span></a></li>
+                    <li><a href="#"><span>Освещение</span></a></li>
+                    <li><a href="#"><span>Фурнитура</span></a></li>
+                    <li><a href="#"><span>Сауны</span></a></li>
+                    <li><a href="#"><span>Сифоны</span></a></li>
+                    <li><a href="#"><span>Смесители</span></a></li>
+                    <li><a href="#"><span>Средства за уходом</span></a></li>
+                  </ul>
+                </div>
+                <div class="row collapse brand">
+                  <p class="brand-title">Торговые марки раздела <span>Сантехника</span></p>
+                  <ul class="inline four-type">
+                    <li><a href=""><span>Collection2</span></a></li>
+                    <li><a href=""><span>Free Loft</span></a></li>
+                    <li><a href=""><span>Collection 2 Life</span></a></li>
+                    <li><a href=""><span>Collection 3</span></a></li>
+                    <li><a href=""><span>Collection 3</span></a></li>
+                    <li><a href=""><span>Magic Run</span></a></li>
+                    <li><a href=""><span>Carat</span></a></li>
+                    <li><a href=""><span>Optima 300</span></a></li>
+                    <li><a href=""><span>Duscho Free Cube</span></a></li>
+                    <li><a href=""><span>Duscho FREE Caprivi</span></a></li>
+                    <li><a href=""><span>Malaga</span></a></li>
+                    <li><a href=""><span>Ancona</span></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="column medium-3 new-in">
+                <a href="">
+                  <p class="new-in-title">Новинки раздела Сантехника</p>
+            
+                  <div class="new-in-img">
+                  <img src="img/img.png" alt="alt img">
+                  </div>
+                </a>
+                <div class="new-in-about">
+                  <a href=""><span>Раковина-52</span></a>
+                  <p class="price">600 <sup>грн</sup></p>
+                </div>
+              </div>
+            </div>
+        </div><!-- /dropdown -->
+
+        <div class="f-dropdown content content-catalog menu-catalog-drop js-dropdown-catalog-dialog" data-drop="js-dropdown-termo">
+            <div class="row">
+              <div class="column medium-12 menu-item menu-item_small">
+                <div class="row collapse product">
+                  <ul class="inline two-type">
+                    <li><a href="#"><span>Обогреватели</span></a></li>
+                    <li><a href="#"><span>Бойлеры</span></a></li>
+                  </ul>
+                </div>
+                <div class="row collapse brand">
+                  <p class="brand-title">Торговые марки раздела <span>Термооборудование</span></p>
+                  <ul class="inline two-type">
+                    <li><a href=""><span>Zunussi</span></a></li>
+                    <li><a href=""><span>Deweit</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </div><!-- /dropdown -->
 
     </nav>
-</section><!-- /"menu-catalog section-->
+
+</section>
 
 
 <style>
@@ -404,311 +600,316 @@ height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</
         border-right-style:solid;
     }
     
-</style><div class="row collapse">
-    <main class="column medium-10" role="main">
-        <aside class="column medium-2 sidebar is-width">
-    <div class="row collapse menu-tree">
+</style>
 
-        <dl class="accordion accordion_simple">
-                                                    <dd class="accordion-navigation active">
+<div class="page-content">
+    <div class="page-mask"></div>
+
+    <div class="row collapse">
+        <main class="column medium-10" role="main">
+            <aside class="column medium-2 sidebar is-width">
+                <div class="row collapse menu-tree">
+
+                    <dl class="accordion accordion_simple">
+                        <dd class="accordion-navigation active">
                             <i class="icon triablg"></i>
-                            <a href="https://plitka.kiev.ua/about">О магазине</a>
-                                                    </dd>
-                        
+                                <a href="https://plitka.kiev.ua/about">О магазине</a>
+                        </dd>
 
-                                                    <dd class="accordion-navigation">
+                        <dd class="accordion-navigation">
                             <i class="icon triablg"></i>
                             <a href="https://plitka.kiev.ua/payment-and-delivery/kiev-ukraine">Доставка и оплата</a>
                             <div id="panel1" class="content" style="display:block;">
-                              <ul>
-                                                                        <li><a href="https://plitka.kiev.ua/payment-and-delivery/odessa">Одесса</a></li>
-                                                                </ul>
-                              </div>
+                                <ul>
+                                    <li><a href="https://plitka.kiev.ua/payment-and-delivery/odessa">Одесса</a></li>
+                                </ul>
+                            </div>
                         </dd>
-                        
+                            
 
-                                                    <dd class="accordion-navigation ">
+                        <dd class="accordion-navigation ">
                             <i class="icon triablg"></i>
                             <a href="https://plitka.kiev.ua/contacts">Контакты</a>
                             <div id="panel1" class="content" style="display:block;">
-                              <ul>
-                                                                        <li><a href="https://plitka.kiev.ua/contacts/kiev-ukraine">Киев и Украина</a></li>
-                                                                        <li><a href="https://plitka.kiev.ua/contacts/odessa">Одесса (пункт обслуживания)</a></li>
-                                                                </ul>
-                              </div>
+                                <ul>
+                                    <li><a href="https://plitka.kiev.ua/contacts/kiev-ukraine">Киев и Украина</a></li>
+                                    <li><a href="https://plitka.kiev.ua/contacts/odessa">Одесса (пункт обслуживания)</a></li>
+                                </ul>
+                            </div>
                         </dd>
 
-
-                        
-
-                                                    <dd class="accordion-navigation ">
+                        <dd class="accordion-navigation ">
                             <i class="icon triablg"></i>
                             <a href="https://plitka.kiev.ua/warranty">Гарантия</a>
-                                                    </dd>
-                        
+                        </dd>
 
-                                                    <dd class="accordion-navigation ">
+                        <dd class="accordion-navigation ">
                             <i class="icon triablg"></i>
                             <a href="https://plitka.kiev.ua/articles">Статьи</a>
-                                                    </dd>
-                        
+                        </dd>
 
-                                                    <dd class="accordion-navigation ">
+                        <dd class="accordion-navigation ">
                             <i class="icon triablg"></i>
                             <a href="https://plitka.kiev.ua/reviews">Обзоры</a>
-                                                    </dd>
-                        
+                        </dd>
 
-                                                    <dd class="accordion-navigation ">
+                        <dd class="accordion-navigation ">
                             <i class="icon triablg"></i>
                             <a href="https://plitka.kiev.ua/loyalty">Программа лояльности</a>
-                                                    </dd>
-                        
+                        </dd>
 
                     </dl>
-    </div>
-</aside>        <div class="column medium-10 main-section is-small">
-            
-<div class="bcrumbs-container">
 
-    <ul class="bcrumbs">
-        <li><a href="https://plitka.kiev.ua/"><span>Главная </span></a></li>
-                                                                <li><a href="https://plitka.kiev.ua/about"><span>О магазине</span></a></li>
-                                        </ul>
-</div><!-- /bcrumbs-->
-            <div class="main-container" itemscope="" itemtype="https://schema.org/Organization">
-                <h1 class="main-title">О магазине</h1>
-                <div class="row collapse">
-                    <div class="column medium-12">
-                        <article class="article">
-                            <p style="font-family: &#39;Open Sans&#39;, Helvetica, Arial, sans-serif; font-size: 16px;">Сегодня&nbsp; Plitka.kiev.ua – лидер категории керамической плитки и сантехники, задающий ее стандарты и формирующий потребительские привычки.</p>
-<p style="font-family: &#39;Open Sans&#39;, Helvetica, Arial, sans-serif; font-size: 16px;">Наличие собственного автопарка позволяет осуществлять качественную, а главное быструю, доставку, приобретенных товаров прямо на дом.</p>
-<p style="font-family: &#39;Open Sans&#39;, Helvetica, Arial, sans-serif; font-size: 16px;">Мы работает над тем, что бы сделать Ваши покупки выгодными и доставляющими&nbsp; удовольствие.</p>
-<p style="font-family: &#39;Open Sans&#39;, Helvetica, Arial, sans-serif; font-size: 16px;">Plitka.kiev.ua — быстро, удобно и выгодно!</p>
-<h2 style="margin-bottom: 20px;">10 причин, по которым клиенты выбирают нас</h2>
-<div class="about-Infograpics" style="margin: 0 -15px;">
-<div class="row">
-<div class="small-12 medium-6 columns">
-<div style="background: #eef6f9; text-align: center; margin-bottom: 10px;"><img style="width: auto; display: inline-block;" src="./Магазин плитки и сантехники plitka.kiev.ua. Наши преимущества_files/about-1.png" alt=""></div>
-<h2 style="color: #0053a0;">Продаем плитку поштучно!</h2>
-<p style="margin-bottom: 30px;">Не обязательно покупать плитку упаковками – мы продадим то количество, которое Вам необходимо, даже если нужно докупить всего 1 или 2 плитки! Ведь бывают разные ситуации – от элементарной нехватки нескольких плиток до оригинального дизайнерского декорирования, где нужно расставить акценты другими оттенками или рисунками.</p>
-</div>
-<div class="small-12 medium-6 columns">
-<div style="background: #eef6f9; text-align: center; margin-bottom: 10px;"><img style="width: auto; display: inline-block;" src="./Магазин плитки и сантехники plitka.kiev.ua. Наши преимущества_files/about-2.png" alt=""></div>
-<h2 style="color: #0053a0;">Бесплатная визуализация</h2>
-<p style="margin-bottom: 30px;">При покупке нашей продукции – визуализация в подарок! Наши специалисты разработают 3D-проект ванной комнаты или кухни, и Вы сможете увидеть, как будет смотреться та или иная коллекция в интерьере, а также рассчитать количество необходимых материалов и подобрать наиболее подходящую сантехнику.</p>
-</div>
-<div class="small-12 medium-6 columns">
-<div style="background: #eef6f9; text-align: center; margin-bottom: 10px;"><img style="width: auto; display: inline-block;" src="./Магазин плитки и сантехники plitka.kiev.ua. Наши преимущества_files/about-3.png" alt=""></div>
-<h2 style="color: #0053a0;">Резервирование продукции!</h2>
-<p style="margin-bottom: 30px;">Вы можете зарезервировать понравившиеся вам товары и выкупить их позже. Мы предоставляем такую возможность, чтобы Вы смогли все хорошо обдумать перед покупкой, посоветоваться с родственниками и сделать правильный выбор.</p>
-<p><em><strong>Обратите внимание!</strong> Товар можно резервировать на 3 дня. Если за это время клиент не вышел на связь, бронь снимается.</em></p>
-</div>
-<div class="small-12 medium-6 columns">
-<div style="background: #eef6f9; text-align: center; margin-bottom: 10px;"><img style="width: auto; display: inline-block;" src="./Магазин плитки и сантехники plitka.kiev.ua. Наши преимущества_files/about-4.png" alt=""></div>
-<h2 style="color: #0053a0;">Доставка в любое время</h2>
-<p style="margin-bottom: 30px;">Доставляем продукцию собственным транспортом в любое удобное для Вас время, неважно, это первая половина дня или вторая.</p>
-<ul>
-<li>При заказе товара на сумму 1 000 грн. и больше и весом до 150 кг – доставка бесплатная! Срок доставки – в течение 3-х дней с момента подтверждения заказа.</li>
-<li>При заказе на сумму 3 000 грн. – доставка бесплатная в любое удобное Вам время. Вес заказа неограничен.</li>
-</ul>
-</div>
-<div class="small-12 medium-6 columns">
-<div style="background: #eef6f9; text-align: center; margin-bottom: 10px;"><img style="width: auto; display: inline-block;" src="./Магазин плитки и сантехники plitka.kiev.ua. Наши преимущества_files/about-5.png" alt=""></div>
-<h2 style="color: #0053a0;">Подъем товара на этаж</h2>
-<p style="margin-bottom: 30px;">По Киеву доставка осуществляется до подъезда/двора с выгрузкой и подъёмом на Ваш этаж (как дополнительная услуга). Стоимость подъема оговаривается с нашими менеджерами в индивидуальном порядке.</p>
-</div>
-<div class="small-12 medium-6 columns">
-<div style="background: #eef6f9; text-align: center; margin-bottom: 10px;"><img style="width: auto; display: inline-block;" src="./Магазин плитки и сантехники plitka.kiev.ua. Наши преимущества_files/about-6.png" alt=""></div>
-<h2 style="color: #0053a0;">Гарантия возврата</h2>
-<p style="margin-bottom: 30px;">Обмен или возврат товара возможен в течение 21 дня с момента покупки (плитка принимается кратно упаковкам). Товар должен быть надлежащего качества (без дефектов), иметь отличный товарный вид, как при первой покупке. Обмен или возврат товара производится с понедельника по пятницу с 9:00 до 18:00 по адресу: г. Киев, ул. Булаховского, 2/1.</p>
-</div>
-<div class="small-12 medium-6 columns">
-<div style="background: #eef6f9; text-align: center; margin-bottom: 10px;"><img style="width: auto; display: inline-block;" src="./Магазин плитки и сантехники plitka.kiev.ua. Наши преимущества_files/about-7.png" alt=""></div>
-<h2 style="color: #0053a0;">Хранение приобретенного товара на нашем складе</h2>
-<p style="margin-bottom: 30px;">Ремонт далеко не всегда проходит по плану, поэтому, в случае необходимости, мы можем перенести доставку товара на нужную вам дату. Ваш заказ может преспокойно храниться на нашем складе сколько понадобиться совершенно бесплатно!</p>
-</div>
-<div class="small-12 medium-6 columns">
-<div style="background: #eef6f9; text-align: center; margin-bottom: 10px;"><img style="width: auto; display: inline-block;" src="./Магазин плитки и сантехники plitka.kiev.ua. Наши преимущества_files/about-8.png" alt=""></div>
-<h2 style="color: #0053a0;">Колоссальный опыт</h2>
-<p style="margin-bottom: 30px;">Мы являемся профессионалами в своем деле и одним из старейших специализированных интернет-магазинов плитки и сантехники в Украине. Компетентные и отзывчивые менеджеры обязательно помогут вам сделать верный выбор и дадут исчерпывающие консультации по интересующему Вас вопросу.</p>
-</div>
-<div class="small-12 medium-6 columns" style="clear: left;">
-<div style="background: #eef6f9; text-align: center; margin-bottom: 10px;"><img style="width: auto; display: inline-block;" src="./Магазин плитки и сантехники plitka.kiev.ua. Наши преимущества_files/about-9.png" alt=""></div>
-<h2 style="color: #0053a0;">С нами всегда можно договориться!</h2>
-<p style="margin-bottom: 30px;">Мы можем хранить уже приобретенный товар на складе, можем пересмотреть цену, можем сделать скидку при больших объемах заказа, а можем перенести сроки доставки на удобное для Вас время – мы всегда идем навстречу клиенту!</p>
-</div>
-<div class="small-12 medium-6 columns">
-<div style="background: #eef6f9; text-align: center; margin-bottom: 10px;"><img style="width: auto; display: inline-block;" src="./Магазин плитки и сантехники plitka.kiev.ua. Наши преимущества_files/about-10.png" alt=""></div>
-<h2 style="color: #0053a0;">Мы Вас любим!</h2>
-<p style="margin-bottom: 30px;">И, наконец, с нами просто комфортно работать. Узнав все «прелести» ремонта на собственном опыте, мы стараемся прежде всего решить за Вас те проблемы, с которыми столкнулись мы.</p>
-</div>
-</div>
-</div>                        </article>
-                    </div>
                 </div>
 
-            </div>
+            </aside>        
+            <div class="column medium-10 main-section is-small">
+        
+                <div class="bcrumbs-container">
 
-        </div>
-            <div class="row collapse promo-box">
-                    <div class="column medium-6 stock">
- <h4 class="stock-title">Акция! При заказе товаров на сумму от 3000 грн, доставка бесплатна!</h4>
- <a href="https://plitka.kiev.ua/payment-and-delivery/kiev-ukraine"><span>Подробнее о доставке</span></a>
- </div>
-
-                    <div class="column medium-6 promo-tile">
- <a href="https://plitka.kiev.ua/plitka?filters=283:423;appliances_id:30"><span>Напольная плитка под дерево</span></a>
-</div>
-
-            </div>
-
-
-                <div class="row collapse">
-            <div class="column medium-12">
-                                    <div class="row collapse header-box about-block">
-        <h3 class="title">Популярные производители</h3>
-        <div class="table clearfix">
-            <div class="row">
-                    <ul>
-                        <li><a href="https://plitka.kiev.ua/brands/villeroy-boch">Villeroy&amp;Boch</a></li>
-                        <li><a href="https://plitka.kiev.ua/brands/kolo">Kolo</a></li>
-                        <li><a href="https://plitka.kiev.ua/brands/kaldewei">Kaldewei</a></li>
+                    <ul class="bcrumbs">
+                        <li><a href="https://plitka.kiev.ua/"><span>Главная </span></a></li>
+                        <li><a href="https://plitka.kiev.ua/about"><span>О магазине</span></a></li>
                     </ul>
-                    <ul>
-                        <li><a href="https://plitka.kiev.ua/brands/cersanit">Cersanit</a></li>
-                        <li><a href="https://plitka.kiev.ua/brands/vagnerplast">Vagnerplast</a></li>
-                        <li><a href="https://plitka.kiev.ua/brands/hansgrohe">Hansgrohe</a></li>
-                    </ul>
-                    <ul>
-                            </ul>
-                    <ul>
-                            </ul>
-                    <ul>
-                            </ul>
-            </div>
-        </div>
-        <a href="https://plitka.kiev.ua/brands" class="link"><span>Все торговые марки</span></a>
-    </div>
-            </div>
-        </div>
-    </main>
-    <aside class="column medium-2 sidebar sidebar_no-padding catalog">
-                            <div class="row collapse product-side">
-                <a href="https://plitka.kiev.ua/plitka?filters=brands_id:289">
-                    <div class="img">
-                        <div>
-                            <img alt="Плитка Opoczno" src="./Магазин плитки и сантехники plitka.kiev.ua. Наши преимущества_files/64.jpg">
+                </div><!-- /bcrumbs-->
+
+                <div class="main-container" itemscope="" itemtype="https://schema.org/Organization">
+                    <h1 class="main-title">О магазине</h1>
+                    <div class="row collapse">
+                        <div class="column medium-12">
+                            <article class="article">
+                                <p style="font-family: &#39;Open Sans&#39;, Helvetica, Arial, sans-serif; font-size: 16px;">Сегодня&nbsp; Plitka.kiev.ua – лидер категории керамической плитки и сантехники, задающий ее стандарты и формирующий потребительские привычки.</p>
+                                <p style="font-family: &#39;Open Sans&#39;, Helvetica, Arial, sans-serif; font-size: 16px;">Наличие собственного автопарка позволяет осуществлять качественную, а главное быструю, доставку, приобретенных товаров прямо на дом.</p>
+                                <p style="font-family: &#39;Open Sans&#39;, Helvetica, Arial, sans-serif; font-size: 16px;">Мы работает над тем, что бы сделать Ваши покупки выгодными и доставляющими&nbsp; удовольствие.</p>
+                                <p style="font-family: &#39;Open Sans&#39;, Helvetica, Arial, sans-serif; font-size: 16px;">Plitka.kiev.ua — быстро, удобно и выгодно!</p>
+                                <h2 style="margin-bottom: 20px;">10 причин, по которым клиенты выбирают нас</h2>
+                                <div class="about-Infograpics" style="margin: 0 -15px;">
+                                    <div class="row">
+                                        <div class="small-12 medium-6 columns">
+                                            <div style="background: #eef6f9; text-align: center; margin-bottom: 10px;"><img style="width: auto; display: inline-block;" src="./Магазин плитки и сантехники plitka.kiev.ua. Наши преимущества_files/about-1.png" alt="">
+                                            </div>
+                                            <h2 style="color: #0053a0;">Продаем плитку поштучно!</h2>
+                                            <p style="margin-bottom: 30px;">Не обязательно покупать плитку упаковками – мы продадим то количество, которое Вам необходимо, даже если нужно докупить всего 1 или 2 плитки! Ведь бывают разные ситуации – от элементарной нехватки нескольких плиток до оригинального дизайнерского декорирования, где нужно расставить акценты другими оттенками или рисунками.</p>
+                                        </div>
+                                        <div class="small-12 medium-6 columns">
+                                            <div style="background: #eef6f9; text-align: center; margin-bottom: 10px;"><img style="width: auto; display: inline-block;" src="./Магазин плитки и сантехники plitka.kiev.ua. Наши преимущества_files/about-2.png" alt="">
+                                            </div>
+                                            <h2 style="color: #0053a0;">Бесплатная визуализация</h2>
+                                            <p style="margin-bottom: 30px;">При покупке нашей продукции – визуализация в подарок! Наши специалисты разработают 3D-проект ванной комнаты или кухни, и Вы сможете увидеть, как будет смотреться та или иная коллекция в интерьере, а также рассчитать количество необходимых материалов и подобрать наиболее подходящую сантехнику.</p>
+                                        </div>
+                                        <div class="small-12 medium-6 columns">
+                                            <div style="background: #eef6f9; text-align: center; margin-bottom: 10px;"><img style="width: auto; display: inline-block;" src="./Магазин плитки и сантехники plitka.kiev.ua. Наши преимущества_files/about-3.png" alt="">
+                                            </div>
+                                            <h2 style="color: #0053a0;">Резервирование продукции!</h2>
+                                            <p style="margin-bottom: 30px;">Вы можете зарезервировать понравившиеся вам товары и выкупить их позже. Мы предоставляем такую возможность, чтобы Вы смогли все хорошо обдумать перед покупкой, посоветоваться с родственниками и сделать правильный выбор.</p>
+                                            <p><em><strong>Обратите внимание!</strong> Товар можно резервировать на 3 дня. Если за это время клиент не вышел на связь, бронь снимается.</em></p>
+                                        </div>
+                                        <div class="small-12 medium-6 columns">
+                                            <div style="background: #eef6f9; text-align: center; margin-bottom: 10px;"><img style="width: auto; display: inline-block;" src="./Магазин плитки и сантехники plitka.kiev.ua. Наши преимущества_files/about-4.png" alt="">
+                                            </div>
+                                            <h2 style="color: #0053a0;">Доставка в любое время</h2>
+                                            <p style="margin-bottom: 30px;">Доставляем продукцию собственным транспортом в любое удобное для Вас время, неважно, это первая половина дня или вторая.</p>
+                                            <ul>
+                                                <li>При заказе товара на сумму 1 000 грн. и больше и весом до 150 кг – доставка бесплатная! Срок доставки – в течение 3-х дней с момента подтверждения заказа.</li>
+                                                <li>При заказе на сумму 3 000 грн. – доставка бесплатная в любое удобное Вам время. Вес заказа неограничен.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="small-12 medium-6 columns">
+                                            <div style="background: #eef6f9; text-align: center; margin-bottom: 10px;"><img style="width: auto; display: inline-block;" src="./Магазин плитки и сантехники plitka.kiev.ua. Наши преимущества_files/about-5.png" alt="">
+                                            </div>
+                                            <h2 style="color: #0053a0;">Подъем товара на этаж</h2>
+                                            <p style="margin-bottom: 30px;">По Киеву доставка осуществляется до подъезда/двора с выгрузкой и подъёмом на Ваш этаж (как дополнительная услуга). Стоимость подъема оговаривается с нашими менеджерами в индивидуальном порядке.</p>
+                                        </div>
+                                        <div class="small-12 medium-6 columns">
+                                            <div style="background: #eef6f9; text-align: center; margin-bottom: 10px;"><img style="width: auto; display: inline-block;" src="./Магазин плитки и сантехники plitka.kiev.ua. Наши преимущества_files/about-6.png" alt="">
+                                            </div>
+                                            <h2 style="color: #0053a0;">Гарантия возврата</h2>
+                                            <p style="margin-bottom: 30px;">Обмен или возврат товара возможен в течение 21 дня с момента покупки (плитка принимается кратно упаковкам). Товар должен быть надлежащего качества (без дефектов), иметь отличный товарный вид, как при первой покупке. Обмен или возврат товара производится с понедельника по пятницу с 9:00 до 18:00 по адресу: г. Киев, ул. Булаховского, 2/1.</p>
+                                        </div>
+                                        <div class="small-12 medium-6 columns">
+                                            <div style="background: #eef6f9; text-align: center; margin-bottom: 10px;"><img style="width: auto; display: inline-block;" src="./Магазин плитки и сантехники plitka.kiev.ua. Наши преимущества_files/about-7.png" alt="">
+                                            </div>
+                                            <h2 style="color: #0053a0;">Хранение приобретенного товара на нашем складе</h2>
+                                            <p style="margin-bottom: 30px;">Ремонт далеко не всегда проходит по плану, поэтому, в случае необходимости, мы можем перенести доставку товара на нужную вам дату. Ваш заказ может преспокойно храниться на нашем складе сколько понадобиться совершенно бесплатно!</p>
+                                        </div>
+                                        <div class="small-12 medium-6 columns">
+                                            <div style="background: #eef6f9; text-align: center; margin-bottom: 10px;"><img style="width: auto; display: inline-block;" src="./Магазин плитки и сантехники plitka.kiev.ua. Наши преимущества_files/about-8.png" alt="">
+                                            </div>
+                                            <h2 style="color: #0053a0;">Колоссальный опыт</h2>
+                                            <p style="margin-bottom: 30px;">Мы являемся профессионалами в своем деле и одним из старейших специализированных интернет-магазинов плитки и сантехники в Украине. Компетентные и отзывчивые менеджеры обязательно помогут вам сделать верный выбор и дадут исчерпывающие консультации по интересующему Вас вопросу.</p>
+                                        </div>
+                                        <div class="small-12 medium-6 columns" style="clear: left;">
+                                            <div style="background: #eef6f9; text-align: center; margin-bottom: 10px;"><img style="width: auto; display: inline-block;" src="./Магазин плитки и сантехники plitka.kiev.ua. Наши преимущества_files/about-9.png" alt="">
+                                            </div>
+                                            <h2 style="color: #0053a0;">С нами всегда можно договориться!</h2>
+                                            <p style="margin-bottom: 30px;">Мы можем хранить уже приобретенный товар на складе, можем пересмотреть цену, можем сделать скидку при больших объемах заказа, а можем перенести сроки доставки на удобное для Вас время – мы всегда идем навстречу клиенту!</p>
+                                        </div>
+                                        <div class="small-12 medium-6 columns">
+                                            <div style="background: #eef6f9; text-align: center; margin-bottom: 10px;"><img style="width: auto; display: inline-block;" src="./Магазин плитки и сантехники plitka.kiev.ua. Наши преимущества_files/about-10.png" alt="">
+                                            </div>
+                                            <h2 style="color: #0053a0;">Мы Вас любим!</h2>
+                                            <p style="margin-bottom: 30px;">И, наконец, с нами просто комфортно работать. Узнав все «прелести» ремонта на собственном опыте, мы стараемся прежде всего решить за Вас те проблемы, с которыми столкнулись мы.</p>
+                                        </div>
+                                    </div>
+                                </div>                  
+                            </article>
                         </div>
                     </div>
-                </a>
+                </div>
+            </div>
+                <div class="row collapse promo-box">
+                    <div class="column medium-6 stock">
+                    <h4 class="stock-title">Акция! При заказе товаров на сумму от 3000 грн, доставка бесплатна!</h4>
+                    <a href="https://plitka.kiev.ua/payment-and-delivery/kiev-ukraine"><span>Подробнее о доставке</span></a>
+                </div>
+
+                <div class="column medium-6 promo-tile">
+                    <a href="https://plitka.kiev.ua/plitka?filters=283:423;appliances_id:30"><span>Напольная плитка под дерево</span></a>
+                </div>
+
+                </div>
+                    <div class="row collapse">
+                <div class="column medium-12">
+                    <div class="row collapse header-box about-block">
+                        <h3 class="title">Популярные производители</h3>
+                        <div class="table clearfix">
+                            <div class="row">
+                                <ul>
+                                    <li><a href="https://plitka.kiev.ua/brands/villeroy-boch">Villeroy&amp;Boch</a></li>
+                                    <li><a href="https://plitka.kiev.ua/brands/kolo">Kolo</a></li>
+                                    <li><a href="https://plitka.kiev.ua/brands/kaldewei">Kaldewei</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="https://plitka.kiev.ua/brands/cersanit">Cersanit</a></li>
+                                    <li><a href="https://plitka.kiev.ua/brands/vagnerplast">Vagnerplast</a></li>
+                                    <li><a href="https://plitka.kiev.ua/brands/hansgrohe">Hansgrohe</a></li>
+                                </ul>
+                                <ul>
+                                </ul>
+                                <ul>
+                                </ul>
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="https://plitka.kiev.ua/brands" class="link"><span>Все торговые марки</span></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <aside class="column medium-2 sidebar sidebar_no-padding catalog">
+            <div class="row collapse product-side">
+                <a href="https://plitka.kiev.ua/plitka?filters=brands_id:289">
+                            <div class="img">
+                                <div>
+                                    <img alt="Плитка Opoczno" src="./Магазин плитки и сантехники plitka.kiev.ua. Наши преимущества_files/64.jpg">
+                                </div>
+                            </div></a>
                 <a href="https://plitka.kiev.ua/plitka?filters=brands_id:289" class="text">
                     <div class="title">Плитка Opoczno</div>
                 </a>
             </div>
-            
-    
-    
 
-        <div class="row collapse blog-article">
-            <h3 class="title">Популярные статьи</h3>
+            <div class="row collapse blog-article">
+                <h3 class="title">Популярные статьи</h3>
 
-                            <div class="column medium-12">
-                    <a href="https://plitka.kiev.ua/articles/hansgrohe-talis">
-                        <div class="img">
-                            <div>
-                                <img src="./Магазин плитки и сантехники plitka.kiev.ua. Наши преимущества_files/247.jpg">
-                            </div>
-                        </div>
-
-                        <div class="text">
-                            <div class="subtitle">Почему покупатели выбирают смесители Hansgrohe Talis?</div>
-                            <p class="content">Упоминание словосочетания Hansgrohe Talis актуально при ...</p>
-                        </div>
-                    </a>
-                </div>
                     <div class="column medium-12">
-                    <a href="https://plitka.kiev.ua/articles/aksessuary-zerkalo">
-                        <div class="img">
-                            <div>
-                                <img src="./Магазин плитки и сантехники plitka.kiev.ua. Наши преимущества_files/280.jpg">
+                        <a href="https://plitka.kiev.ua/articles/hansgrohe-talis">
+                            <div class="img">
+                                <div>
+                                    <img src="./Магазин плитки и сантехники plitka.kiev.ua. Наши преимущества_files/247.jpg">
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="text">
-                            <div class="subtitle">Аксессуар ванной комнаты (Часть 1) Зеркало</div>
-                            <p class="content">Уютный и стильный интерьер ванной комнаты во многом ...</p>
-                        </div>
-                    </a>
-                </div>
-        
+                            <div class="text">
+                                <div class="subtitle">Почему покупатели выбирают смесители Hansgrohe Talis?</div>
+                                <p class="content">Упоминание словосочетания Hansgrohe Talis актуально при ...</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="column medium-12">
+                        <a href="https://plitka.kiev.ua/articles/aksessuary-zerkalo">
+                            <div class="img">
+                                <div>
+                                    <img src="./Магазин плитки и сантехники plitka.kiev.ua. Наши преимущества_files/280.jpg">
+                                </div>
+                            </div>
 
+                            <div class="text">
+                                <div class="subtitle">Аксессуар ванной комнаты (Часть 1) Зеркало</div>
+                                <p class="content">Уютный и стильный интерьер ванной комнаты во многом ...</p>
+                            </div>
+                        </a>
+                    </div>
 
-          <iframe src="./Магазин плитки и сантехники plitka.kiev.ua. Наши преимущества_files/page.html" width="200" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
-</div></aside><!--/ sifdebar-->
+                    <iframe src="./Магазин плитки и сантехники plitka.kiev.ua. Наши преимущества_files/page.html" width="200" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true">
+                    </iframe>
+            </div>
+        </aside><!--/ sifdebar-->
+    </div>
 </div>
 
 <footer>
     <div class="row collapse link-footer">
-      <div class="column medium-2">
-        <p class="title">Интернет-магазин</p>
-        <ul class="list">
-          <li><a href="https://plitka.kiev.ua/about" class="link"><span>О магазине</span></a></li>
-          <li><a href="https://plitka.kiev.ua/payment-and-delivery/kiev-ukraine" class="link"><span>Доставка и оплата</span></a></li>
-                    <li><a href="https://plitka.kiev.ua/brands"><span>Производители</span></a></li>
-          <li><a href="https://plitka.kiev.ua/contacts" class="link"><span>Контакты</span></a></li>
-          <li><a href="https://plitka.kiev.ua/warranty" class="link"><span>Гарантия</span></a></li>
-          <li><a href="https://plitka.kiev.ua/contacts#feedback" class="link"><span>Обратная связь</span></a></li>
-          <li><a href="https://plitka.kiev.ua/articles" class="link"><span>Статьи</span></a></li>
-          <li><a href="https://plitka.kiev.ua/reviews" class="link"><span>Обзоры</span></a></li>
-          <li><a href="https://plitka.kiev.ua/loyalty" class="link"><span>Программа лояльности</span></a></li>
-                  </ul>
-      </div>
-      <div class="column medium-2">
-        <p class="title">Каталог товаров</p>
-        <ul class="list">
-                            <li><a href="https://plitka.kiev.ua/plitka-group" class="link"><span>Плитка</span></a></li>
-                            <li><a href="https://plitka.kiev.ua/mozaika" class="link"><span>Мозаика</span></a></li>
-                            <li><a href="https://plitka.kiev.ua/santehnika" class="link"><span>Сантехника</span></a></li>
-                            <li><a href="https://plitka.kiev.ua/smesiteli-1" class="link"><span>Смесители</span></a></li>
-                            <li><a href="https://plitka.kiev.ua/mebel" class="link"><span>Мебель</span></a></li>
-                            <li><a href="https://plitka.kiev.ua/stroyhimia" class="link"><span>Стройхимия</span></a></li>
-                            <li><a href="https://plitka.kiev.ua/obogrevateli" class="link"><span>Обогреватели</span></a></li>
-                    </ul>
-      </div>
-      <div class="column medium-2">
-        <p class="title">Торговые марки</p>
-        <ul class="list">
-                                                          <li><a href="https://plitka.kiev.ua/brands/villeroy-boch" class="link"><span>Villeroy&amp;Boch</span></a></li>
-                                              <li><a href="https://plitka.kiev.ua/brands/kolo" class="link"><span>Kolo</span></a></li>
-                                              <li><a href="https://plitka.kiev.ua/brands/kaldewei" class="link"><span>Kaldewei</span></a></li>
-                                              <li><a href="https://plitka.kiev.ua/brands/cersanit" class="link"><span>Cersanit</span></a></li>
-                                              <li><a href="https://plitka.kiev.ua/brands/vagnerplast" class="link"><span>Vagnerplast</span></a></li>
-                                              <li><a href="https://plitka.kiev.ua/brands/hansgrohe" class="link"><span>Hansgrohe</span></a></li>
-                    </ul>
-      </div>
-            <div class="column medium-4 contact">
-        <p class="title">Наши контакты</p>
-        <ul class="contact">
-          <li>
-            <p>Телефон:</p>
-                        <p><b>0 (44) 392-29-45</b></p>
-                      </li>
-          <li>
-            <p>Адрес магазина:</p>
-            <p>Киев, ул. Академика Булаховского 2/1, павильон 15 (в офисе нет шоурума)</p>
-                      </li>
-          <li>
-            <p>Email: </p>
-            <p><a href="mailto:zakaz@plitka.kiev.ua"><span>zakaz@plitka.kiev.ua</span></a></p>
-          </li>
-          <li>
-            <p>Время работы: </p>
-            <p>
-                                <span class="wrk"><span class="day">пн-пт</span> 09<sup>00</sup>-19<sup>00</sup></span>                <span class="wek"><span class="end">сб</span> 09<sup>00</sup>-18<sup>00</sup></span>            </p>
-          </li>
-        </ul>
-      </div>
+        <div class="column medium-2">
+            <p class="title">Интернет-магазин</p>
+            <ul class="list">
+                <li><a href="https://plitka.kiev.ua/about" class="link"><span>О магазине</span></a></li>
+                <li><a href="https://plitka.kiev.ua/payment-and-delivery/kiev-ukraine" class="link"><span>Доставка и оплата</span></a></li>
+                <li><a href="https://plitka.kiev.ua/brands"><span>Производители</span></a></li>
+                <li><a href="https://plitka.kiev.ua/contacts" class="link"><span>Контакты</span></a></li>
+                <li><a href="https://plitka.kiev.ua/warranty" class="link"><span>Гарантия</span></a></li>
+                <li><a href="https://plitka.kiev.ua/contacts#feedback" class="link"><span>Обратная связь</span></a></li>
+                <li><a href="https://plitka.kiev.ua/articles" class="link"><span>Статьи</span></a></li>
+                <li><a href="https://plitka.kiev.ua/reviews" class="link"><span>Обзоры</span></a></li>
+                <li><a href="https://plitka.kiev.ua/loyalty" class="link"><span>Программа лояльности</span></a></li>
+            </ul>
+        </div>
+        <div class="column medium-2">
+            <p class="title">Каталог товаров</p>
+            <ul class="list">
+                <li><a href="https://plitka.kiev.ua/plitka-group" class="link"><span>Плитка</span></a></li>
+                <li><a href="https://plitka.kiev.ua/mozaika" class="link"><span>Мозаика</span></a></li>
+                <li><a href="https://plitka.kiev.ua/santehnika" class="link"><span>Сантехника</span></a></li>
+                <li><a href="https://plitka.kiev.ua/smesiteli-1" class="link"><span>Смесители</span></a></li>
+                <li><a href="https://plitka.kiev.ua/mebel" class="link"><span>Мебель</span></a></li>
+                <li><a href="https://plitka.kiev.ua/stroyhimia" class="link"><span>Стройхимия</span></a></li>
+                <li><a href="https://plitka.kiev.ua/obogrevateli" class="link"><span>Обогреватели</span></a></li>
+            </ul>
+        </div>
+        <div class="column medium-2">
+            <p class="title">Торговые марки</p>
+            <ul class="list">
+                <li><a href="https://plitka.kiev.ua/brands/villeroy-boch" class="link"><span>Villeroy&amp;Boch</span></a></li>
+                <li><a href="https://plitka.kiev.ua/brands/kolo" class="link"><span>Kolo</span></a></li>
+                <li><a href="https://plitka.kiev.ua/brands/kaldewei" class="link"><span>Kaldewei</span></a></li>
+                <li><a href="https://plitka.kiev.ua/brands/cersanit" class="link"><span>Cersanit</span></a></li>
+                <li><a href="https://plitka.kiev.ua/brands/vagnerplast" class="link"><span>Vagnerplast</span></a></li>
+                <li><a href="https://plitka.kiev.ua/brands/hansgrohe" class="link"><span>Hansgrohe</span></a></li>
+            </ul>
+        </div>
+        <div class="column medium-4 contact">
+            <p class="title">Наши контакты</p>
+            <ul class="contact">
+              <li>
+                <p>Телефон:</p>
+                <p><b>0 (44) 392-29-45</b></p>
+              </li>
+              <li>
+                <p>Адрес магазина:</p>
+                <p>Киев, ул. Академика Булаховского 2/1, павильон 15 (в офисе нет шоурума)</p>
+              </li>
+              <li>
+                <p>Email: </p>
+                <p><a href="mailto:zakaz@plitka.kiev.ua"><span>zakaz@plitka.kiev.ua</span></a></p>
+              </li>
+              <li>
+                <p>Время работы: </p>
+                <p>
+                <span class="wrk"><span class="day">пн-пт</span> 09<sup>00</sup>-19<sup>00</sup></span>                <span class="wek"><span class="end">сб</span> 09<sup>00</sup>-18<sup>00</sup></span>            </p>
+              </li>
+            </ul>
+        </div>
     </div>
 
     

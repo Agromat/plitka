@@ -8167,9 +8167,6 @@ footer .row.link-footer .column:last-child {
   border-bottom-color: #333;
 }
 
-.filters-content {
-  margin-top: 20px;
-}
 .filters-content .accordion-navigation {
   margin-bottom: 6px !important;
 }
@@ -11405,6 +11402,10 @@ body.is-overflow {
 }
 .sidebar .promo-box {
   flex-direction: column;
+}
+
+.sidebar.sidebar_main-page {
+  padding-top: 280px;
 }
 
 .menuinfo {
