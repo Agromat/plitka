@@ -105,21 +105,94 @@
 						</div>
 					</div>
 
-					<div class="row collapse">
-						<div class="search" class="search" role="search">
-							<form action="/search">
-								<input class="column medium-9" id="product_search" name="keyword" type="search" placeholder="поиск товара">
-								<button class="column medium-3" type="submit">Искать</button>
-							</form>
-							<div class="search__drop" id="jquery-live-search">
-							</div>
-						</div>
-						<script type="text/javascript">
-							$(document).ready(function () {
-								$('#product_search').liveSearch({url: '/search/context?query='});
-							});
-						</script>
-					</div>
+						<div class="row collapse">
+              <div class="search" role="search">
+                <form action="/search" class="search">
+                    <input class="column medium-9" id="header_search_input" type="search" name="keyword" placeholder="поиск товара">
+                    <input type="hidden" id="product_search">
+                    <input type="hidden" id="search-categories-id" name="filters" value="">
+                    <a id="search-categories-input">Все категории &blacktriangledown;</a>
+                    <button class="column medium-3" type="submit">Искать</button>
+                </form>
+                <div class="search__drop" id="jquery-live-search"></div>
+                <div id="search-categories-block">
+                  <ul>
+                    <li>
+                      <a class="search-group-single search-category" data-categoryId="">Все категории</a>
+                    </li>
+                    <li>
+                      <a class="search-group-single search-category" data-categoryId="57">Плитка</a>
+                    </li>
+                    <li>
+                      <a class="search-group-single search-category" data-categoryId="58">Мозаика</a>
+                    </li>
+                    <li>
+                      <a class="search-group" data-groupName="Сантехника">Сантехника &blacktriangledown;</a>
+                      <div class="search-group-block" data-groupName="Сантехника">
+                        <ul>
+                          <li><a class="search-category" data-categoryId="76">Аксессуары для ванной</a></li>
+                          <li><a class="search-category" data-categoryId="63">Бассейны</a></li>
+                          <li><a class="search-category" data-categoryId="71">Биде</a></li>
+                          <li><a class="search-category" data-categoryId="60">Ванны</a></li>
+                          <li><a class="search-category" data-categoryId="66">Гидромассажные боксы</a></li>
+                          <li><a class="search-category" data-categoryId="62">Гидромассажные ванны</a></li>
+                          <li><a class="search-category" data-categoryId="64">Душевые кабины</a></li>
+                          <li><a class="search-category" data-categoryId="69">Душевые наборы и панели</a></li>
+                          <li><a class="search-category" data-categoryId="65">Душевые поддоны</a></li>
+                          <li><a class="search-category" data-categoryId="85">Инсталляции для унитазов</a></li>
+                          <li><a class="search-category" data-categoryId="211">Каналы и трапы</a></li>
+                          <li><a class="search-category" data-categoryId="67">Паровые боксы</a></li>
+                          <li><a class="search-category" data-categoryId="197">Писсуары (уриналы)</a></li>
+                          <li><a class="search-category" data-categoryId="74">Полотенцесушители</a></li>
+                          <li><a class="search-category" data-categoryId="72">Радиаторы</a></li>
+                          <li><a class="search-category" data-categoryId="59">Разное</a></li>
+                          <li><a class="search-category" data-categoryId="73">Раковины и ножки</a></li>
+                          <li><a class="search-category" data-categoryId="79">Сантех. для инвалидов</a></li>
+                          <li><a class="search-category" data-categoryId="83">Сантех. фурнитура</a></li>
+                          <li><a class="search-category" data-categoryId="84">Сауны</a></li>
+                          <li><a class="search-category" data-categoryId="75">Сифоны</a></li>
+                          <li><a class="search-category" data-categoryId="70">Унитазы и компакты</a></li>
+                          <li><a class="search-category" data-categoryId="176">Шторки на ванну</a></li>
+                        </ul>
+                      </div>
+                      </li>
+                      <li>
+                        <a class="search-group-single search-category" data-categoryId="68">Смесители</a>
+                      </li>
+                      <li>
+                        <a class="search-group" data-groupName="Мебель">Мебель &blacktriangledown;</a>
+                          <div class="search-group-block" data-groupName="Мебель">
+                            <ul>  
+                              <li><a class="search-category" data-categoryId="78">Зеркала</a></li>
+                              <li><a class="search-category" data-categoryId="77">Мебель для ванной комнаты</a></li>
+                              <li><a class="search-category" data-categoryId="126">Мебель и кухонная техника</a></li>
+                              <li><a class="search-category" data-categoryId="82">Светильники для ванной</a></li>
+                            </ul>
+                          </div>
+                      </li>
+                      <li>
+                        <a class="search-group" data-groupName="Стройхимия">Стройхимия &blacktriangledown;</a>
+                        <div class="search-group-block" data-groupName="Стройхимия">
+                            <ul>  
+                                <li><a class="search-category" data-categoryId="131">Краски и штукатурки</a></li>
+                                <li><a class="search-category" data-categoryId="133">Средства по уходу</a></li>
+                                <li><a class="search-category" data-categoryId="129">Строительная химия</a></li>
+                            </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <a class="search-group" data-groupName="Термооборудование">Термооборудование &blacktriangledown;</a>
+                        <div class="search-group-block" data-groupName="Термооборудование">
+                            <ul>
+                                <li><a class="search-category" data-categoryId="255">Бойлеры</a></li>
+                                <li><a class="search-category" data-categoryId="249">Обогреватели</a></li>
+                            </ul>
+                        </div>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
 				</div><!-- /info-->
 
 				<div class="basket-sm column medium-4">
@@ -690,6 +763,7 @@
 	<script src="http://plitka.kiev.ua/frontend/js/lib/slick.min.js"></script>
 	<script src="http://plitka.kiev.ua/frontend/js/lib/ion.rangeSlider.js"></script>
 	<script src="http://plitka.kiev.ua/frontend/js/lib/jquery.maskedinput.min.js"></script>
+    <script src="js/header-search.js"></script>
 	<script src="http://plitka.kiev.ua/frontend/js/app.js?=1475655901"></script>
 </body>
 </html>
