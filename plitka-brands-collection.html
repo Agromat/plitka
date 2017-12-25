@@ -40,7 +40,7 @@
             <script src="http://plitka.kiev.ua/frontend/js/lib/jquery.min.js"></script>
             <script src="http://plitka.kiev.ua/frontend/js/jquery.mousewheel.min.js"></script>
             <script src="http://plitka.kiev.ua/frontend/js/jquery.mCustomScrollbar.min.js"></script>
-            <script src="http://plitka.kiev.ua/frontend/js/livesearch.js"></script>
+            <script src="https://plitka.kiev.ua/frontend/js/livesearch.js"></script>
             <!-- Скрипт optimizely для AB-тестов и натсройки альтернативных ссылок  -->
             <script src="//cdn.optimizely.com/js/3537691444.js"></script>                        <!-- Facebook Pixel Code -->
             <script>
@@ -143,22 +143,94 @@
                                         <span>09<sup>00</sup>-19<sup>00</sup></span>                                                    <span class='wek'>10<sup>00</sup>-17<sup>00</sup></span>                                    </p>
                                     </div>
                                 </div>
-                                <div class="row collapse">
-                                    <div class="search" class="search" role="search">
-                                        <form action="/search">
-                                            <input class="column medium-9" id="product_search" name="keyword" type="search" placeholder="поиск товара">
-                                            <button class="column medium-3" type="submit">Искать</button>
-                                        </form>
-                                        <div class="search__drop" id="jquery-live-search">
-
-                                        </div>
-                                    </div>
-                                    <script type="text/javascript">
-                                        $(document).ready(function () {
-                                            $('#product_search').liveSearch({url: '/search/context?query='});
-                                        });
-                                    </script>
-                                </div>
+        <div class="row collapse">
+          <div class="search" role="search">
+              <form action="/search" class="search">
+                  <input class="column medium-9" id="header_search_input" type="search" name="keyword" placeholder="поиск товара">
+                  <input type="hidden" id="product_search">
+                  <input type="hidden" id="search-categories-id" name="filters" value="">
+                  <a id="search-categories-input">Все категории &blacktriangledown;</a>
+                  <button class="column medium-3" type="submit">Искать</button>
+              </form>
+              <div class="search__drop" id="jquery-live-search"></div>
+              <div id="search-categories-block">
+                  <ul>
+                    <li>
+                      <a class="search-group-single search-category" data-categoryId="">Все категории</a>
+                    </li>
+                    <li>
+                      <a class="search-group-single search-category" data-categoryId="57">Плитка</a>
+                    </li>
+                    <li>
+                      <a class="search-group-single search-category" data-categoryId="58">Мозаика</a>
+                    </li>
+                    <li>
+                      <a class="search-group" data-groupName="Сантехника">Сантехника &blacktriangledown;</a>
+                      <div class="search-group-block" data-groupName="Сантехника">
+                        <ul>
+                          <li><a class="search-category" data-categoryId="76">Аксессуары для ванной</a></li>
+                          <li><a class="search-category" data-categoryId="63">Бассейны</a></li>
+                          <li><a class="search-category" data-categoryId="71">Биде</a></li>
+                          <li><a class="search-category" data-categoryId="60">Ванны</a></li>
+                          <li><a class="search-category" data-categoryId="66">Гидромассажные боксы</a></li>
+                          <li><a class="search-category" data-categoryId="62">Гидромассажные ванны</a></li>
+                          <li><a class="search-category" data-categoryId="64">Душевые кабины</a></li>
+                          <li><a class="search-category" data-categoryId="69">Душевые наборы и панели</a></li>
+                          <li><a class="search-category" data-categoryId="65">Душевые поддоны</a></li>
+                          <li><a class="search-category" data-categoryId="85">Инсталляции для унитазов</a></li>
+                          <li><a class="search-category" data-categoryId="211">Каналы и трапы</a></li>
+                          <li><a class="search-category" data-categoryId="67">Паровые боксы</a></li>
+                          <li><a class="search-category" data-categoryId="197">Писсуары (уриналы)</a></li>
+                          <li><a class="search-category" data-categoryId="74">Полотенцесушители</a></li>
+                          <li><a class="search-category" data-categoryId="72">Радиаторы</a></li>
+                          <li><a class="search-category" data-categoryId="59">Разное</a></li>
+                          <li><a class="search-category" data-categoryId="73">Раковины и ножки</a></li>
+                          <li><a class="search-category" data-categoryId="79">Сантех. для инвалидов</a></li>
+                          <li><a class="search-category" data-categoryId="83">Сантех. фурнитура</a></li>
+                          <li><a class="search-category" data-categoryId="84">Сауны</a></li>
+                          <li><a class="search-category" data-categoryId="75">Сифоны</a></li>
+                          <li><a class="search-category" data-categoryId="70">Унитазы и компакты</a></li>
+                          <li><a class="search-category" data-categoryId="176">Шторки на ванну</a></li>
+                        </ul>
+                      </div>
+                      </li>
+                      <li>
+                        <a class="search-group-single search-category" data-categoryId="68">Смесители</a>
+                      </li>
+                      <li>
+                        <a class="search-group" data-groupName="Мебель">Мебель &blacktriangledown;</a>
+                          <div class="search-group-block" data-groupName="Мебель">
+                            <ul>
+                              <li><a class="search-category" data-categoryId="78">Зеркала</a></li>
+                              <li><a class="search-category" data-categoryId="77">Мебель для ванной комнаты</a></li>
+                              <li><a class="search-category" data-categoryId="126">Мебель и кухонная техника</a></li>
+                              <li><a class="search-category" data-categoryId="82">Светильники для ванной</a></li>
+                            </ul>
+                          </div>
+                      </li>
+                      <li>
+                        <a class="search-group" data-groupName="Стройхимия">Стройхимия &blacktriangledown;</a>
+                        <div class="search-group-block" data-groupName="Стройхимия">
+                            <ul>
+                                <li><a class="search-category" data-categoryId="131">Краски и штукатурки</a></li>
+                                <li><a class="search-category" data-categoryId="133">Средства по уходу</a></li>
+                                <li><a class="search-category" data-categoryId="129">Строительная химия</a></li>
+                            </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <a class="search-group" data-groupName="Термооборудование">Термооборудование &blacktriangledown;</a>
+                        <div class="search-group-block" data-groupName="Термооборудование">
+                            <ul>
+                                <li><a class="search-category" data-categoryId="255">Бойлеры</a></li>
+                                <li><a class="search-category" data-categoryId="249">Обогреватели</a></li>
+                            </ul>
+                        </div>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+        </div>
                             </div><!-- /info-->
                             <div class="basket-sm column medium-4">
                                 <div id="widgetFullCart" >
@@ -1331,5 +1403,6 @@
 <script src="http://plitka.kiev.ua/frontend/js/lib/ion.rangeSlider.js"></script>
 <script src="http://plitka.kiev.ua/frontend/js/lib/jquery.maskedinput.min.js"></script>
 <script src="http://plitka.kiev.ua/frontend/js/app.js?=1469445868"></script>
+<script src="js/header-search.js"></script>
 <!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter16166464 = new Ya.Metrika({id:16166464, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/16166464" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter --></body>
 </html>
