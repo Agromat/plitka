@@ -9298,6 +9298,10 @@ footer .row.link-footer .column:last-child {
 .filtersPop.open .accordion dd.active > a {
   background: #f4f4f4;
 }
+.filtersPop.open .accordion .accordion-navigation > a h6 {
+  margin: 0;
+  display: inline-block;
+}
 
 .clear-filters {
   margin: 0 -10px;

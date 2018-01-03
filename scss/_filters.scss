@@ -1267,6 +1267,11 @@
 		.accordion dd.active > a {
 			background: #f4f4f4;
 		}
+
+		.accordion .accordion-navigation > a h6 {
+			margin: 0;
+			display: inline-block;
+		}
 	}
 }
 
