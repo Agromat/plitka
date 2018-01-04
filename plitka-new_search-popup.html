@@ -101,90 +101,87 @@
       </div>
 
       <div class="row collapse">
-        <div class="search" role="search">
-          <form action="/search" class="search">
-              <input class="column medium-9" id="header_search_input" type="search" name="keyword" placeholder="поиск товара">
-              <input type="hidden" id="product_search">
-              <input type="hidden" id="search-categories-id" name="filters" value="">
-              <a id="search-categories-input">Все категории &blacktriangledown;</a>
-              <button class="column medium-3" type="submit">Искать</button>
+        <div class="search" class="search" role="search">
+          <form action="">
+            <input class="column medium-9" type="search" placeholder="поиск товара">
+            <button class="column medium-3" type="submit">Искать</button>
           </form>
-          <div class="search__drop" id="jquery-live-search"></div>
-          <div id="search-categories-block">
-            <ul>
-              <li>
-                <a class="search-group-single search-category" data-categoryId="">Все категории</a>
-              </li>
-              <li>
-                <a class="search-group-single search-category" data-categoryId="57">Плитка</a>
-              </li>
-              <li>
-                <a class="search-group-single search-category" data-categoryId="58">Мозаика</a>
-              </li>
-              <li>
-                <a class="search-group" data-groupName="Сантехника">Сантехника &blacktriangledown;</a>
-                <div class="search-group-block" data-groupName="Сантехника">
-                  <ul>
-                    <li><a class="search-category" data-categoryId="76">Аксессуары для ванной</a></li>
-                    <li><a class="search-category" data-categoryId="63">Бассейны</a></li>
-                    <li><a class="search-category" data-categoryId="71">Биде</a></li>
-                    <li><a class="search-category" data-categoryId="60">Ванны</a></li>
-                    <li><a class="search-category" data-categoryId="66">Гидромассажные боксы</a></li>
-                    <li><a class="search-category" data-categoryId="62">Гидромассажные ванны</a></li>
-                    <li><a class="search-category" data-categoryId="64">Душевые кабины</a></li>
-                    <li><a class="search-category" data-categoryId="69">Душевые наборы и панели</a></li>
-                    <li><a class="search-category" data-categoryId="65">Душевые поддоны</a></li>
-                    <li><a class="search-category" data-categoryId="85">Инсталляции для унитазов</a></li>
-                    <li><a class="search-category" data-categoryId="211">Каналы и трапы</a></li>
-                    <li><a class="search-category" data-categoryId="67">Паровые боксы</a></li>
-                    <li><a class="search-category" data-categoryId="197">Писсуары (уриналы)</a></li>
-                    <li><a class="search-category" data-categoryId="74">Полотенцесушители</a></li>
-                    <li><a class="search-category" data-categoryId="72">Радиаторы</a></li>
-                    <li><a class="search-category" data-categoryId="59">Разное</a></li>
-                    <li><a class="search-category" data-categoryId="73">Раковины и ножки</a></li>
-                    <li><a class="search-category" data-categoryId="79">Сантех. для инвалидов</a></li>
-                    <li><a class="search-category" data-categoryId="83">Сантех. фурнитура</a></li>
-                    <li><a class="search-category" data-categoryId="84">Сауны</a></li>
-                    <li><a class="search-category" data-categoryId="75">Сифоны</a></li>
-                    <li><a class="search-category" data-categoryId="70">Унитазы и компакты</a></li>
-                    <li><a class="search-category" data-categoryId="176">Шторки на ванну</a></li>
-                  </ul>
-                </div>
-                </li>
-                <li>
-                  <a class="search-group-single search-category" data-categoryId="68">Смесители</a>
-                </li>
-                <li>
-                  <a class="search-group" data-groupName="Мебель">Мебель &blacktriangledown;</a>
-                    <div class="search-group-block" data-groupName="Мебель">
-                      <ul>  
-                        <li><a class="search-category" data-categoryId="78">Зеркала</a></li>
-                        <li><a class="search-category" data-categoryId="77">Мебель для ванной комнаты</a></li>
-                        <li><a class="search-category" data-categoryId="126">Мебель и кухонная техника</a></li>
-                        <li><a class="search-category" data-categoryId="82">Светильники для ванной</a></li>
-                      </ul>
-                    </div>
-                </li>
-                <li>
-                  <a class="search-group" data-groupName="Стройхимия">Стройхимия &blacktriangledown;</a>
-                  <div class="search-group-block" data-groupName="Стройхимия">
-                      <ul>  
-                          <li><a class="search-category" data-categoryId="131">Краски и штукатурки</a></li>
-                          <li><a class="search-category" data-categoryId="133">Средства по уходу</a></li>
-                          <li><a class="search-category" data-categoryId="129">Строительная химия</a></li>
-                      </ul>
-                  </div>
-                </li>
-                <li>
-                  <a class="search-group" data-groupName="Термооборудование">Термооборудование &blacktriangledown;</a>
-                  <div class="search-group-block" data-groupName="Термооборудование">
-                      <ul>
-                          <li><a class="search-category" data-categoryId="255">Бойлеры</a></li>
-                          <li><a class="search-category" data-categoryId="249">Обогреватели</a></li>
-                      </ul>
-                  </div>
-                </li>
-            </ul>
+          <div class="search__drop" style="display:block">
+            <div class="search__head">Плитка</div>
+            <a class="search-item" href="#">
+              <div class="search-item__img">
+                <img src="img/search.jpg" alt="img">
+              </div>
+              <div class="search-item__main">
+                <strong>Плитка двойного назначения Devit Giran 16190128P</strong>
+                <span>100 <sup>грн</sup></span>
+              </div>
+            </a>
+            <a class="search-item" href="#">
+              <div class="search-item__img">
+                <img src="img/search.jpg" alt="img">
+              </div>
+              <div class="search-item__main">
+                <strong>Плитка двойного назначения Devit Giran 16190128P</strong>
+                <span>100 <sup>грн</sup></span>
+              </div>
+            </a>
+            <a class="search-item" href="#">
+              <div class="search-item__img">
+              <div class="sticker smallest"><span class="sale"></span></div>
+                <img src="img/search.jpg" alt="img">
+              </div>
+              <div class="search-item__main">
+                <strong>Плитка двойного назначения Devit Giran 16190128P</strong>
+                <span>100 <sup>грн</sup></span>
+              </div>
+            </a>
+            <a class="search-item" href="#">
+              <div class="search-item__img">
+                <img src="img/search.jpg" alt="img">
+              </div>
+              <div class="search-item__main">
+                <strong>Плитка двойного назначения Devit Giran 16190128P</strong>
+                <span>100 <sup>грн</sup></span>
+              </div>
+            </a>
+            <a class="search-item" href="#">
+              <div class="search-item__img">
+                <img src="img/search.jpg" alt="img">
+              </div>
+              <div class="search-item__main">
+                <strong>Плитка двойного назначения Devit Giran 16190128P</strong>
+                <span>100 <sup>грн</sup></span>
+              </div>
+            </a>
+            <a class="search-item" href="#">
+              <div class="search-item__img">
+                <img src="img/search.jpg" alt="img">
+              </div>
+              <div class="search-item__main">
+                <strong>Плитка двойного назначения Devit Giran 16190128P</strong>
+                <span>100 <sup>грн</sup></span>
+              </div>
+            </a>
+            <a class="search-item" href="#">
+              <div class="search-item__img">
+                <img src="img/search.jpg" alt="img">
+              </div>
+              <div class="search-item__main">
+                <strong>Плитка двойного назначения Devit Giran 16190128P</strong>
+                <span>100 <sup>грн</sup></span>
+              </div>
+            </a>
+            <a class="search-item" href="#">
+              <div class="search-item__img">
+                <img src="img/search.jpg" alt="img">
+              </div>
+              <div class="search-item__main">
+                <strong>Плитка двойного назначения Devit Giran 16190128P</strong>
+                <span>100 <sup>грн</sup></span>
+              </div>
+            </a>
+            <div class="search__all"><a href="#">Все результаты поиска →</a></div>
           </div>
         </div>
       </div>
@@ -333,11 +330,17 @@
             
                   <div class="new-in-img">
                   <img src="img/img.png" alt="alt img">
+                  </div>
+                </a>
+                <div class="new-in-about">
+                  <a href=""><span>Раковина-52</span></a>
+                  <p class="price">600 <sup>грн</sup></p>
+                </div>
         </div>
       </div>
-    </div><!-- /dropdown -->\\
+    </div><!-- /dropdown -->
                                                       
-    <div class="f-dropdown content content-catalog menu-catalog-drop js-dropdown-catalog-dialog" data-drop="js-dropdown-termo">
+   <div class="f-dropdown content content-catalog menu-catalog-drop js-dropdown-catalog-dialog" data-drop="js-dropdown-termo">
             <div class="row">
               <div class="column medium-12 menu-item menu-item_small">
                 <div class="row collapse product">
@@ -360,9 +363,10 @@
   </nav>
   </section><!-- /menu-catalog section-->
 
-  <div class="row collapse">
-
-    <aside class="column medium-2 sidebar filters">
+  <div class="page-content">
+    <div class="page-mask"></div>
+    <div class="row collapse">
+      <aside class="column medium-2 sidebar filters">
       <div class="row collapse active-filters">
         <p class="title">Вы выбрали</p>
           <dl class="type-filters">
@@ -854,78 +858,6 @@
         </dd>
       </dl>
     </aside><!--/ sidebar-->
-    <main class="column medium-10 main-section catalog" role="main">
-      <div class="bcrumbs-container">
-        <ul class="bcrumbs">
-          <li><a href="#"><span>Главная </span></a></li>
-          <li><a href="#"><span>Результаты поиска</span></a></li>
-        </ul>
-      </div><!-- /bcrumbs-->
-
-      <section class="main-container">
-        <h1 class="main-title">Результаты поиска «<span>devit</span>»</h1>
-        <div class="menu-nav menu-nav_content">
-          <div class="menuinfo">
-            <div class="info info_search">
-              <form action="" class="search" role="search">
-                <input class="column medium-9" type="search" placeholder="поиск товара">
-                <button class="column medium-3" type="submit">Искать</button>
-              </form>
-            </div>
-          </div>
-          <div class="search-result-text">Найдено 23 позиции </div>
-        </div>
-              
-        <div class="other-products header-box no-border">
-          <div class="row collapse">
-            <div class="other-products__head">
-              <ul class="sort sort_left">
-                <li><span>Сортировка:</span></li>   
-                <li><a href="#">от дорогих</a></li>
-                <li class="is-active"><a href="#">от дешевых</a></li>
-                <li><a href="#">по популярности</a></li>
-                <li><a href="#">новые поступления</a></li>
-              </ul>
-            </div>
-            <div class="multiple-items multiple-items-4 insale item-crop-wrap">
-              <div class="item-crop-parent">
-                <div class="item-crop slick-slide">
-                  <div class="overflow">
-                    <div class="img">
-                    <div class="sticker"><span class="markdown"></span></div>
-                    <img src="img/img.png">
-                    </div>
-                    <div class="desckription">
-                    <a href="#" class="title"><span>Раковина-52</span></a>
-                    <p class="price">
-                      <span class="old">500 <sup>грн</sup></span>
-                      <span>600 <sup>грн</sup></span>
-                    </p>
-                    <a href="#" class="btn gradient">
-                      <span class="icon buy"></span>Купить
-                    </a>
-                    <a href="№" class="link"><span class="dashedtext">Добавить к сравнению</span></a>
-                    <p class="deskript">Ванная комната — это место, где мы готовимся к предстоящим дневным событиям утром и настраиваем себя на сон грядущий вечером</p>
-                    </div>
-                  </div>
-                </a>
-                <div class="new-in-about">
-                  <a href=""><span>Раковина-52</span></a>
-                  <p class="price">600 <sup>грн</sup></p>
-                </div>
-              </div>
-            </div>
-        </div><!-- /dropdown -->
-
-        
-
-    </nav>  <!-- ???? -->
-
-  </section> <!-- ??? -->
-
-  <div class="page-content">
-    <div class="page-mask"></div>
-    <div class="row collapse">
     <main class="column medium-10 main-section catalog" role="main">
       <div class="bcrumbs-container">
         <ul class="bcrumbs">
