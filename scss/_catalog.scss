@@ -445,6 +445,8 @@
 					span{
 						border-bottom-color:$blue;
 					}
+				}
+			}
 
 			.inner {
 				display: flex;
@@ -579,10 +581,11 @@
 	}
 	@include r($mob-sm) {
 		display: block;
+	}
 }
 
 .bottom-previews {
 	.slick-slider {
 		height: auto !important;
-	}
+	} 
 }

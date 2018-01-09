@@ -137,7 +137,6 @@
 		z-index: 6;
 		background-position: top right;
 		background-repeat: no-repeat;
-<<<<<<< HEAD
 		@include r($mob) {
 			display: inline-block;
 			top: -15px;
@@ -150,22 +149,6 @@
 			     -o-background-size: 50px;
 			        background-size: 50px;
 		}
-=======
-					}
-	.stock-stick{
-		height: rem-calc(121);
-		background-image: url(../img/slider/stock.png);
-		background-size: 60px;
-		top:-5px;
-		right: 0;
-		width: rem-calc(60);
-		height: rem-calc(60);
-	}
-	.recommended{
-		background-image: url(../img/slider/recommended.png);
-		width: rem-calc(120);
-		height: rem-calc(120);
->>>>>>> master
 	}
 }
 .promo__stick{
