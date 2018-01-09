@@ -40,6 +40,9 @@
 		margin-top: 26px !important
 	}
 }
+.sidebar.sidebar_main-page {
+	padding-top: 280px;
+} 
 .product-side{
 	margin-bottom: 30px !important;
 	width:190px;
@@ -314,35 +317,44 @@
 					line-height: 19px
 				}
 			}
-			&.column_blog-article{
+
+			&.column_blog-article {
 				width: 48.47%;
-				padding: 0;
-				@include r($mob){
-					@include clearfix();
-					float: none;
-					width: 100%;
-					max-width: 300px;
-					margin: 0 auto 15px;
-					padding: 0;
+				padding: 20px;
+				position: relative;
+				
+				a{
+					padding: 0 !important;
 				}
 				.img{
-					width: 33%;
+					width: 100%;
 					position: relative;
-					float: left;
+					//float: left;
 					margin: 0;
+					padding: 0;
+					display: inline-block;
+					vertical-align: middle;
+					img {
+						width: 100%;
+					}
 				}
 				.text{
-					margin-left: 33%;
 					margin-top: 0;
-					padding-left: 20px;
-					@include r($mob){
-						.content{
-							display: none;
-						}
+					//padding-left: 20px;
+					display: inline-block;
+					vertical-align: middle;
+					width: 100%;
+
+					.content {
+						display: none;
 					}
+				}
+				.subtitle {
+					font-size: 14px;
 				}
 			}
 		}
+
 		&.vertical{
 			//padding-top:25px !important;
 			margin-top: 45px !important;
@@ -433,8 +445,48 @@
 					span{
 						border-bottom-color:$blue;
 					}
+
+			.inner {
+				display: flex;
+				align-items: stretch;
+				justify-content: space-between;
+				.column {
+					float: none;
+				}
+				a {
+					height: 100%;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+				}
+
+				.subtitle {
+					margin-bottom: 15px;
 				}
 			}
+
+
+
+			&.desk-visible {
+ 				border-top: none;
+ 				border-bottom: none;
+ 				border-right: 1px solid #ddd;
+ 				border-left: 1px solid #ddd;
+ 			}
+			// .column{
+			// 	width: 48.47%;
+			// }
+			// .img{
+			// 	width: 33%;
+			// 	position: relative;
+			// 	float: left;
+			// 	margin: 0;
+			// }
+			// .text{
+			// 	margin-left: 33%;
+			// 	margin-top: 0;
+			// 	padding-left: 20px;
+			// }
 		}
 	}
 }
@@ -527,5 +579,10 @@
 	}
 	@include r($mob-sm) {
 		display: block;
+}
+
+.bottom-previews {
+	.slick-slider {
+		height: auto !important;
 	}
 }

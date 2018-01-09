@@ -295,7 +295,6 @@
             </div>
 
 
-
             <div class="callback info__items">
 
             <a href="#callback"><span>Заказать обратный звонок</span></a>
@@ -452,7 +451,7 @@
             </div>
           </a>
         </div><!-- /menu-cart -->
-      
+
         <div class="f-dropdown content content-catalog menu-catalog-drop js-dropdown-catalog-dialog" data-drop="js-dropdown-santech">
             <div class="row">
               <div class="column medium-9 menu-item">
@@ -535,6 +534,7 @@
 
   <div class="page-content">
     <div class="page-mask"></div>
+
     <div class="row collapse">
       <aside class="column medium-2 sidebar">
 
@@ -1964,6 +1964,7 @@
         <p class="copyright">© Агромат, 2007–2014. Керамическая плитка и сантехника. При копировании материалов ссылка на сайт обязательна. Мобильная версия сайта</p>
       </div>
     </footer>
+
   </div>
 
     <div id="basket" class="reveal-modal basket" data-reveal>
@@ -2075,17 +2076,31 @@
       </div>
     </div>
 
-    <div id="enlarged-photo" class="reveal-modal is-fixed enlarged-photo" data-reveal>
+    <div id="enlarged-photo" class="reveal-modal enlarged-photo" data-reveal>
       <div class="photo-header">
-        <p class="title">Керамическая плитка двойного назначения Devit Giran 16190128P</p>
-        <a class="close-reveal-modal  ">&#215;</a>
+        <h4 class="title">Керамическая плитка двойного назначения Devit Giran 16190128P</h4>
+        <div class="close-reveal-modal"></div>
       </div>
       <div class="photo">
-        <ul data-orbit id="slider2" data-options="slide_number: true;slide_number_text: из;">
-          <li data-ordbit-slide="slider-1"><img src="img/slider/img-1.jpg" alt="slide 1"></li>
-          <li data-ordbit-slide="slider-2"><img src="img/slider/img-2.jpg" alt="slide 2"></li>
-          <li data-ordbit-slide="slider-3"><img src="img/slider/img-3.jpg" alt="slide 3"></li>
-        </ul>
+        <div class="orbit-container img-slider">
+          <div class="img-slider__info">
+            Изображение <span class="js-slide-index"></span> из <span class="js-slides-counter"></span>
+          </div>
+          <div class="orbit-slides-container js-img-slider">
+            <div>
+              <img src="./img/slider/slide2.jpg" alt="img">
+            </div>
+            <div>
+              <img src="./img/slider/slide3.jpg" alt="img">
+            </div>
+            <div>
+              <img src="https://placebear.com/400/600" alt="img">
+            </div>
+            <div>
+              <img src="./img/slider/slide3.jpg" alt="img">
+            </div>
+          </div>
+        </div>
       </div>
       <div class="photo-footer">
         <div class="row collapse">
@@ -2100,6 +2115,7 @@
         </div>
       </div>
     </div>
+
     <div class="reveal-modal modal modal_w520 is-fixed js-modal-callback" data-reveal>
       <div class="modal__header">
         <div class="modal__title">Заказ обратного звонка</div>
@@ -2149,10 +2165,12 @@
       <a class="close-reveal-modal  ">&#215;</a>
     </div>
     <script src="js/lib/jquery.min.js"></script>
+   <!--  <script src="https://plitka.kiev.ua/frontend/js/livesearch.js"></script> -->
     <script src="js/lib/foundation.min.js"></script>
     <script src="js/lib/foundation.dropdown.js"></script>
     <script src="js/lib/slick.min.js"></script>
     <script src="js/lib/jquery.maskedinput.min.js"></script>
+    <!-- <script src="js/header-search.js"></script> -->
     <script src="js/app.js"></script>
   </body>
 </html>

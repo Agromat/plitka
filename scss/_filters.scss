@@ -514,6 +514,7 @@
 						// 	height: 100%;
 						// 	position: absolute;
 						// }
+
 						.sticker {
 							.new, .markdown, .sale{
 							left: -2px;
@@ -523,7 +524,7 @@
 						.orbit-container{
 							display: table-cell;
 							vertical-align: middle;
-							 overflow: visible; 
+							overflow: visible; 
 							 .orbit-slides-container{
 							 	overflow: hidden;
 							 }
@@ -531,6 +532,7 @@
 							 	// left: -19px;
 							 	left: -22px;
 							 	span{
+
 							 		float: left;
 									background-position: -270px -90px;
 								}
@@ -539,6 +541,7 @@
 								// right: -19px;
 								right: -20px;
 								span{
+
 									float: right;
 									background-position: -299px -90px;
 								}

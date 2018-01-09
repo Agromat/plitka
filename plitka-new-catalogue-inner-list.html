@@ -43,9 +43,7 @@
 <header class="menu-nav js-top-nav">
 
 
-
 	<!-- !! create mobile nav -->
-
 
 
 	<!-- BEGIN MOBILE MENU -->
@@ -538,805 +536,1119 @@
 
 <div class="page-content">
 
-	<!-- BEGIN FILTER-WRAP -->
+  <div class="page-mask"></div>
+
+  <div class="row collapse">
+    <aside class="column medium-2 sidebar filters hidden-sm">
+      <div class="row collapse active-filters">
+        <p class="title">Вы выбрали</p>
+        <dl class="type-filters">
+          <dt>Способ открывания</dt>
+          <dd>
+            <a href="#" class="del">
+              <span class="icon del"></span>
+              <span class="text">Дверцы распашные</span>
+            </a>
+          </dd>
+        </dl>          
+        <dl class="type-filters">
+          <dt>Тип</dt>
+          <dd>
+            <a href="#" class="del">
+              <span class="icon del"></span>
+              <span class="text">Тумба, полупенал</span>
+            </a>
+          </dd>
+        </dl>
+        <div class="footer-filters">
+          <a class="del-all"><span>Убрать все</span></a>
+        </div>
+      </div>
+      
+      <dl class="row collapse accordion accordion_filters filters-content" data-accordion>
+        <dd class="accordion-navigation active">
+          <a href="#panel1" class="title"><h6>Бренд</h6></a>
+          <div id="panel1" class="content form-group checkbox active">
+            <span>
+              <input type="checkbox" id="fllters1" tabindex="1"></input>
+              <label for="fllters1">Bisazza<span>(240)</span></label>
+            </span>
+            <span>
+              <input type="checkbox" id="fllters2" tabindex="1"></input>
+              <label for="fllters2">Sicis<span>(33)</span></label>
+            </span>
+            <span>
+              <input type="checkbox" id="fllters3" tabindex="1"></input>
+              <label for="fllters3">AEG<span>(21)</span></label>
+            </span>
+            <span>
+              <input type="checkbox" id="fllters4" tabindex="1"></input>
+              <label for="fllters4">AlcaPlast<span>(122)</span></label>
+            </span>
+            <span>
+              <input type="checkbox" id="fllters5" tabindex="1"></input>
+              <label for="fllters5">IFO<span>(157)</span></label>
+            </span>
+            <span>
+              <input type="checkbox" id="fllters6" tabindex="1"></input>
+              <label for="fllters6">Jacob Delafon<span>(11)</span></label>
+            </span>
+            <a href="#" class="show-all"><span>Показать все</span></a>
+          </div>
+        </dd>
+
+        <dd class="accordion-navigation active">
+          <a href="#panel2" class="title"><h6>Коллекция</h6></a>
+          <div id="panel2" class="content form-group checkbox active">
+            <span>
+              <input type="checkbox" id="fllters7" tabindex="1"></input>
+              <label for="fllters7">Bisazza<span>(240)</span></label>
+            </span>
+            <span>
+              <input type="checkbox" id="fllters8" tabindex="1"></input>
+              <label for="fllters8">Sicis<span>(33)</span></label>
+            </span>
+            <span>
+              <input type="checkbox" id="fllters9" tabindex="1"></input>
+              <label for="fllters9">AEG<span>(21)</span></label>
+            </span>
+            <span>
+              <input type="checkbox" id="fllters10" tabindex="1"></input>
+              <label for="fllters10">AlcaPlast<span>(122)</span></label>
+            </span>
+            <span>
+              <input type="checkbox" id="fllters11" tabindex="1"></input>
+              <label for="fllters11">IFO<span>(157)</span></label>
+            </span>
+            <span>
+              <input type="checkbox" id="fllters12" tabindex="1"></input>
+              <label for="fllters12">Jacob Delafon<span>(11)</span></label>
+            </span>
+            <a href="#" class="show-all"><span>Показать все</span></a>
+          </div>
+        </dd>
+
+        <dd class="accordion-navigation active">
+          <a href="#panel3" class="title"><h6>Цена, <sub>грн</sub></h6></a>
+          <div id="panel3" class="content form-group range active">
+            <div class="row collapse">
+      
+            <div class="row collapse">
+              <div class="small-5 columns">
+                <input id="before" type="text" placeholder="от">
+              </div>
+              <div class="small-2 columns">
+                <span class="postfix"></span>
+              </div>
+              <div class="small-5 columns">
+                <input id="after" type="text" placeholder="до">
+              </div>
+            </div>
+
+            <div class="range-slider">
+              <input type="text" class="js-range-slider" value="" />
+            </div>
+
+          </div>
+        </dd>
+
+        <dd class="accordion-navigation active">
+          <a href="#panel4" class="title"><h6>цвет</h6></a>
+          <div id="panel4" class="content form-group checkbox active">
+            <span>
+              <input type="checkbox" id="fllters12" tabindex="1"></input>
+              <label for="fllters12">Bisazza<span>(240)</span></label>
+            </span>
+            <span>
+              <input type="checkbox" id="fllters13" tabindex="1"></input>
+              <label for="fllters13">Sicis<span>(33)</span></label>
+            </span>
+            <span>
+              <input type="checkbox" id="fllters13" tabindex="1"></input>
+              <label for="fllters13">AEG<span>(21)</span></label>
+            </span>
+            <span>
+              <input type="checkbox" id="fllters14" tabindex="1"></input>
+              <label for="fllters14">AlcaPlast<span>(122)</span></label>
+            </span>
+            <span>
+              <input type="checkbox" id="fllters15" tabindex="1"></input>
+              <label for="fllters15">IFO<span>(157)</span></label>
+            </span>
+            <span>
+              <input type="checkbox" id="fllters16" tabindex="1"></input>
+              <label for="fllters16">Jacob Delafon<span>(11)</span></label>
+            </span>
+            <a href="#" class="show-all"><span>Показать все</span></a>
+          </div>
+        </dd>
+
+        <dd class="accordion-navigation active">
+          <a href="#panel5" class="title"><h6>материал</h6></a>
+          <div id="panel5" class="content form-group checkbox active">
+            <span>
+              <input type="checkbox" id="fllters17" tabindex="1"></input>
+              <label for="fllters17">Bisazza<span>(240)</span></label>
+            </span>
+            <span>
+              <input type="checkbox" id="fllters18" tabindex="1"></input>
+              <label for="fllters18">Sicis<span>(33)</span></label>
+            </span>
+            <span>
+              <input type="checkbox" id="fllters19" tabindex="1"></input>
+              <label for="fllters19">AEG<span>(21)</span></label>
+            </span>
+            <span>
+              <input type="checkbox" id="fllters12" tabindex="1"></input>
+              <label for="fllters12">AlcaPlast<span>(122)</span></label>
+            </span>
+            <span>
+              <input type="checkbox" id="fllters21" tabindex="1"></input>
+              <label for="fllters21">IFO<span>(157)</span></label>
+            </span>
+            <span>
+              <input type="checkbox" id="fllters22" tabindex="1"></input>
+              <label for="fllters22">Jacob Delafon<span>(11)</span></label>
+            </span>
+            <a href="#" class="show-all"><span>Показать все</span></a>
+          </div>
+        </dd>
+
+        <dd class="accordion-navigation active">
+          <a href="#panel6" class="title"><h6>поверхность</h6></a>
+          <div id="panel6" class="content form-group checkbox active">
+            <span>
+              <input type="checkbox" id="fllters23" tabindex="1"></input>
+              <label for="fllters23">Bisazza<span>(240)</span></label>
+            </span>
+            <span>
+              <input type="checkbox" id="fllters23" tabindex="1"></input>
+              <label for="fllters23">Sicis<span>(33)</span></label>
+            </span>
+            <span>
+              <input type="checkbox" id="fllters24" tabindex="1"></input>
+              <label for="fllters24">AEG<span>(21)</span></label>
+            </span>
+            <span>
+              <input type="checkbox" id="fllters25" tabindex="1"></input>
+              <label for="fllters25">AlcaPlast<span>(122)</span></label>
+            </span>
+            <span>
+              <input type="checkbox" id="fllters26" tabindex="1"></input>
+              <label for="fllters26">IFO<span>(157)</span></label>
+            </span>
+            <span>
+              <input type="checkbox" id="fllters27" tabindex="1"></input>
+              <label for="fllters27">Jacob Delafon<span>(11)</span></label>
+            </span>
+            <a href="#" class="show-all"><span>Показать все</span></a>
+          </div>
+        </dd>
+
+        <dd class="accordion-navigation active">
+          <a href="#panel7" class="title"><h6>стиль</h6></a>
+          <div id="panel7" class="content form-group checkbox active">
+            <span>
+              <input type="checkbox" id="fllters28" tabindex="1"></input>
+              <label for="fllters28">Bisazza<span>(240)</span></label>
+            </span>
+            <span>
+              <input type="checkbox" id="fllters29" tabindex="1"></input>
+              <label for="fllters29">Sicis<span>(33)</span></label>
+            </span>
+            <span>
+              <input type="checkbox" id="fllters30" tabindex="1"></input>
+              <label for="fllters30">AEG<span>(21)</span></label>
+            </span>
+            <span>
+              <input type="checkbox" id="fllters31" tabindex="1"></input>
+              <label for="fllters31">AlcaPlast<span>(122)</span></label>
+            </span>
+            <span>
+              <input type="checkbox" id="fllters32" tabindex="1"></input>
+              <label for="fllters32">IFO<span>(157)</span></label>
+            </span>
+            <span>
+              <input type="checkbox" id="fllters33" tabindex="1"></input>
+              <label for="fllters33">Jacob Delafon<span>(11)</span></label>
+            </span>
+            <a href="#" class="show-all"><span>Показать все</span></a>
+          </div>
+        </dd>
+
+        <dd class="accordion-navigation active">
+          <a href="#panel8" class="title"><h6>форма</h6></a>
+          <div id="panel8" class="content form-group checkbox active">
+            <span>
+              <input type="checkbox" id="fllters34" tabindex="1"></input>
+              <label for="fllters34">Bisazza<span>(240)</span></label>
+            </span>
+            <span>
+              <input type="checkbox" id="fllters35" tabindex="1"></input>
+              <label for="fllters35">Sicis<span>(33)</span></label>
+            </span>
+            <span>
+              <input type="checkbox" id="fllters36" tabindex="1"></input>
+              <label for="fllters36">AEG<span>(21)</span></label>
+            </span>
+            <span>
+              <input type="checkbox" id="fllters37" tabindex="1"></input>
+              <label for="fllters37">AlcaPlast<span>(122)</span></label>
+            </span>
+            <span>
+              <input type="checkbox" id="fllters38" tabindex="1"></input>
+              <label for="fllters38">IFO<span>(157)</span></label>
+            </span>
+            <span>
+              <input type="checkbox" id="fllters39" tabindex="1"></input>
+              <label for="fllters39">Jacob Delafon<span>(11)</span></label>
+            </span>
+            <a href="#" class="show-all"><span>Показать все</span></a>
+          </div>
+        </dd>
+
+        <dd class="accordion-navigation active">
+          <a href="#panel9" class="title"><h6>применение</h6></a>
+          <div id="panel9" class="content form-group checkbox active">
+            <span>
+              <input type="checkbox" id="fllters40" tabindex="1"></input>
+              <label for="fllters40">Bisazza<span>(240)</span></label>
+            </span>
+            <span>
+              <input type="checkbox" id="fllters41" tabindex="1"></input>
+              <label for="fllters41">Sicis<span>(33)</span></label>
+            </span>
+            <span>
+              <input type="checkbox" id="fllters42" tabindex="1"></input>
+              <label for="fllters42">AEG<span>(21)</span></label>
+            </span>
+            <span>
+              <input type="checkbox" id="fllters43" tabindex="1"></input>
+              <label for="fllters43">AlcaPlast<span>(122)</span></label>
+            </span>
+            <span>
+              <input type="checkbox" id="fllters44" tabindex="1"></input>
+              <label for="fllters44">IFO<span>(157)</span></label>
+            </span>
+            <span>
+              <input type="checkbox" id="fllters45" tabindex="1"></input>
+              <label for="fllters45">Jacob Delafon<span>(11)</span></label>
+            </span>
+            <a href="#" class="show-all"><span>Показать все</span></a>
+          </div>
+        </dd>
+      </dl>
+    </aside><!--/ sidebar-->
+
+    <main class="column medium-10 main-section" role="main">
+      
+      <div class="bcrumbs-container">
+        <ul class="bcrumbs">
+          <li><a href="#"><span>Главная </span></a></li>
+          <li><a href="#"><span>Сантехника</span></a></li>
+        </ul>
+      </div><!-- /bcrumbs-->
+
+      <section class="main-container filters">
+        <h1 class="main-title">Сантехника и сантехнические изделия</h1>
+        <!-- <h2 class="main-deskrip" role="definition">Выбрано 24 модели: смесители для раковины, Grohe, никелированные</h2> -->
+
+    	<!-- BEGIN FILTER-WRAP -->
+
+    	<div class="filters-container js-filters-container">
+
+    	  <div class="filters-title">
+
+          <button class="filters-btn js-filters-btn" id="modal-filtersPop">Фильтры <i class="close-x-btn"></i></button> 
+
+    	    <h2 class="main-deskrip" role="definition">Выбрано 24 модели: смесители для раковины, Grohe, никелированные</h2>
+    	  </div>
+
+    	  <!-- BEGIN FILTER-BLOCK -->
+
+    	  <div class="filters-mob js-filters-mob">
+
+    	    <div class="filters-mob__inner">
+
+    	      <div class="row collapse active-filters">
+
+    	        <p class="title">Вы выбрали</p>
+
+    	        <div class="type-filters">
+
+    	          <div class="type-filters__title">Способ открывания</div>
+
+    	          <div class="type-filters__content">
+
+    	            <a href="#" class="del">
+
+    	              <span class="icon del"></span>
+
+    	              <span class="text">Дверцы распашные</span>
+
+    	            </a>
+
+    	          </div>
+
+    	        </div>          
+
+    	        <div class="type-filters">
+
+    	          <div class="type-filters__title">Тип</div>
+
+    	          <div class="type-filters__content">
+
+    	            <a href="#" class="del">
+
+    	              <span class="icon del"></span>
+
+    	              <span class="text">Тумба, полупенал</span>
+
+    	            </a>
+
+    	          </div>
+
+    	        </div>
+
+    	        <div class="footer-filters">
+
+    	          <a class="del-all"><span>Убрать все</span></a>
+
+    	        </div>
 
-	<div class="filters-container js-filters-container">
+    	      </div>
 
-	  <div class="filters-title">
+    	      <div class="row collapse filters-content js-scroll-filter">
 
-	    <button class="filters-btn js-filters-btn" id="modal-filtersPop">Фильтры <i class="close-x-btn"></i></button> 
+    	        <dd class="accordion-navigation accordion-navigation_range active">
 
-	    <h2 class="main-deskrip" role="definition">Выбрано 24 модели: смесители для раковины, Grohe, никелированные</h2>
+    	          <a href="#panel3" class="title"><h6>Цена, <sub>грн</sub></h6></a>
 
-	  </div>
+    	          <div id="panel3" class="content form-group range active">
 
-	  <!-- BEGIN FILTER-BLOCK -->
+    	            <div class="row collapse">
 
-	  <div class="filters-mob js-filters-mob">
+    	      
 
-	    <div class="filters-mob__inner">
+    	              <div class="row collapse">
 
-	      <div class="row collapse active-filters">
+    	                <!-- !! input has new wrapper and was changed postfix -->
 
-	        <p class="title">Вы выбрали</p>
+    	                <div class="filter-input-wrap">
 
-	        <div class="type-filters">
+    	                  <input id="mobBefore" type="text" placeholder="от">
 
-	          <div class="type-filters__title">Способ открывания</div>
+    	                </div>
 
-	          <div class="type-filters__content">
+    	                <div class="filter-postfix-wrap">
 
-	            <a href="#" class="del">
+    	                  <div class="postfix">
 
-	              <span class="icon del"></span>
+    	                  </div>
 
-	              <span class="text">Дверцы распашные</span>
+    	                </div>
 
-	            </a>
+    	                <div class="filter-input-wrap">
 
-	          </div>
+    	                  <input id="mobAfter" type="text" placeholder="до">
 
-	        </div>          
+    	                </div>
 
-	        <div class="type-filters">
+    	              </div>
 
-	          <div class="type-filters__title">Тип</div>
 
-	          <div class="type-filters__content">
 
-	            <a href="#" class="del">
+    	              <div class="range-slider">
 
-	              <span class="icon del"></span>
+    	                <input type="text" class="js-range-slider-mob" value="" />
 
-	              <span class="text">Тумба, полупенал</span>
+    	              </div>
 
-	            </a>
 
-	          </div>
 
-	        </div>
+    	            </div>
 
-	        <div class="footer-filters">
+    	          </div>
 
-	          <a class="del-all"><span>Убрать все</span></a>
+    	        </dd>
 
-	        </div>
 
-	      </div>
 
-	      <div class="row collapse filters-content js-scroll-filter">
 
-	        <dd class="accordion-navigation accordion-navigation_range active">
 
-	          <a href="#panel3" class="title"><h6>Цена, <sub>грн</sub></h6></a>
+    	        <div class="filters-items ">
 
-	          <div id="panel3" class="content form-group range active">
+    	          <dd class="accordion-navigation active">
 
-	            <div class="row collapse">
+    	            <a href="#panel4" class="title"><h6>бренд</h6></a>
 
-	      
+    	            <div id="panel4" class="content form-group checkbox active">
 
-	              <div class="row collapse">
+    	              <span>
 
-	                <!-- !! input has new wrapper and was changed postfix -->
+    	                <input type="checkbox" id="mob_fllters1" tabindex="1"></input>
 
-	                <div class="filter-input-wrap">
+    	                <label for="mob_fllters1">Bisazza<span>(240)</span></label>
 
-	                  <input id="mobBefore" type="text" placeholder="от">
+    	              </span>
 
-	                </div>
+    	              <span>
 
-	                <div class="filter-postfix-wrap">
+    	                <input type="checkbox" id="mob_fllters2" tabindex="1"></input>
 
-	                  <div class="postfix">
+    	                <label for="mob_fllters2">Sicis<span>(33)</span></label>
 
-	                  </div>
+    	              </span>
 
-	                </div>
+    	              <span>
 
-	                <div class="filter-input-wrap">
+    	                <input type="checkbox" id="mob_fllters3" tabindex="1"></input>
 
-	                  <input id="mobAfter" type="text" placeholder="до">
+    	                <label for="mob_fllters3">AEG<span>(21)</span></label>
 
-	                </div>
+    	              </span>
 
-	              </div>
+    	              <span>
 
+    	                <input type="checkbox" id="mob_fllters4" tabindex="1"></input>
 
+    	                <label for="mob_fllters4">AlcaPlast<span>(122)</span></label>
 
-	              <div class="range-slider">
+    	              </span>
 
-	                <input type="text" class="js-range-slider-mob" value="" />
+    	              <span>
 
-	              </div>
+    	                <input type="checkbox" id="mob_fllters5" tabindex="1"></input>
 
+    	                <label for="mob_fllters5">IFO<span>(157)</span></label>
 
+    	              </span>
 
-	            </div>
+    	              <span>
 
-	          </div>
+    	                <input type="checkbox" id="mob_fllters6" tabindex="1"></input>
 
-	        </dd>
+    	                <label for="mob_fllters6">Jacob Delafon<span>(11)</span></label>
 
+    	              </span>
 
+    	              <div class="is-hidden-box js-hidden-all">
 
+    	                <span>
 
+    	                  <input type="checkbox" id="mob_fllters7" tabindex="1"></input>
 
-	        <div class="filters-items ">
+    	                  <label for="mob_fllters7">Sicis<span>(33)</span></label>
 
-	          <dd class="accordion-navigation active">
+    	                </span>
 
-	            <a href="#panel4" class="title"><h6>бренд</h6></a>
+    	                <span>
 
-	            <div id="panel4" class="content form-group checkbox active">
+    	                  <input type="checkbox" id="mob_fllters8" tabindex="1"></input>
 
-	              <span>
+    	                  <label for="mob_fllters8">AEG<span>(21)</span></label>
 
-	                <input type="checkbox" id="mob_fllters1" tabindex="1"></input>
+    	                </span>
 
-	                <label for="mob_fllters1">Bisazza<span>(240)</span></label>
+    	                <span>
 
-	              </span>
+    	                  <input type="checkbox" id="mob_fllters9" tabindex="1"></input>
 
-	              <span>
+    	                  <label for="mob_fllters9">AlcaPlast<span>(122)</span></label>
 
-	                <input type="checkbox" id="mob_fllters2" tabindex="1"></input>
+    	                </span>
 
-	                <label for="mob_fllters2">Sicis<span>(33)</span></label>
+    	                <span>
 
-	              </span>
+    	                  <input type="checkbox" id="mob_fllters10" tabindex="1"></input>
 
-	              <span>
+    	                  <label for="mob_fllters10">IFO<span>(157)</span></label>
 
-	                <input type="checkbox" id="mob_fllters3" tabindex="1"></input>
+    	                </span>
 
-	                <label for="mob_fllters3">AEG<span>(21)</span></label>
+    	                <span>
 
-	              </span>
+    	                  <input type="checkbox" id="mob_fllters11" tabindex="1"></input>
 
-	              <span>
+    	                  <label for="mob_fllters11">Jacob Delafon<span>(11)</span></label>
 
-	                <input type="checkbox" id="mob_fllters4" tabindex="1"></input>
+    	                </span>
 
-	                <label for="mob_fllters4">AlcaPlast<span>(122)</span></label>
+    	              </div>
 
-	              </span>
+    	              <a href="#" class="show-all js-show-all" data-text="Скрыть всё"><span>Показать все</span></a>
 
-	              <span>
+    	            </div>
 
-	                <input type="checkbox" id="mob_fllters5" tabindex="1"></input>
+    	          </dd>
 
-	                <label for="mob_fllters5">IFO<span>(157)</span></label>
+    	          <dd class="accordion-navigation active">
 
-	              </span>
+    	            <a href="#panel4" class="title"><h6>коллекция</h6></a>
 
-	              <span>
+    	            <div id="panel4" class="content form-group checkbox active">
 
-	                <input type="checkbox" id="mob_fllters6" tabindex="1"></input>
+    	              <span>
 
-	                <label for="mob_fllters6">Jacob Delafon<span>(11)</span></label>
+    	                <input type="checkbox" id="mob_fllters12" tabindex="1"></input>
 
-	              </span>
+    	                <label for="mob_fllters12">Bisazza<span>(240)</span></label>
 
-	              <div class="is-hidden-box js-hidden-all">
+    	              </span>
 
-	                <span>
+    	              <span>
 
-	                  <input type="checkbox" id="mob_fllters7" tabindex="1"></input>
+    	                <input type="checkbox" id="mob_fllters13" tabindex="1"></input>
 
-	                  <label for="mob_fllters7">Sicis<span>(33)</span></label>
+    	                <label for="mob_fllters13">Sicis<span>(33)</span></label>
 
-	                </span>
+    	              </span>
 
-	                <span>
+    	              <span>
 
-	                  <input type="checkbox" id="mob_fllters8" tabindex="1"></input>
+    	                <input type="checkbox" id="mob_fllters14" tabindex="1"></input>
 
-	                  <label for="mob_fllters8">AEG<span>(21)</span></label>
+    	                <label for="mob_fllters14">AEG<span>(21)</span></label>
 
-	                </span>
+    	              </span>
 
-	                <span>
+    	              <span>
 
-	                  <input type="checkbox" id="mob_fllters9" tabindex="1"></input>
+    	                <input type="checkbox" id="mob_fllters15" tabindex="1"></input>
 
-	                  <label for="mob_fllters9">AlcaPlast<span>(122)</span></label>
+    	                <label for="mob_fllters15">AlcaPlast<span>(122)</span></label>
 
-	                </span>
+    	              </span>
 
-	                <span>
+    	              <span>
 
-	                  <input type="checkbox" id="mob_fllters10" tabindex="1"></input>
+    	                <input type="checkbox" id="mob_fllters16" tabindex="1"></input>
 
-	                  <label for="mob_fllters10">IFO<span>(157)</span></label>
+    	                <label for="mob_fllters16">IFO<span>(157)</span></label>
 
-	                </span>
+    	              </span>
 
-	                <span>
+    	              <span>
 
-	                  <input type="checkbox" id="mob_fllters11" tabindex="1"></input>
+    	                <input type="checkbox" id="mob_fllters17" tabindex="1"></input>
 
-	                  <label for="mob_fllters11">Jacob Delafon<span>(11)</span></label>
+    	                <label for="mob_fllters17">Jacob Delafon<span>(11)</span></label>
 
-	                </span>
+    	              </span>
 
-	              </div>
+    	              <div class="is-hidden-box js-hidden-all">
 
-	              <a href="#" class="show-all js-show-all" data-text="Скрыть всё"><span>Показать все</span></a>
+    	                <span>
 
-	            </div>
+    	                  <input type="checkbox" id="mob_fllters18" tabindex="1"></input>
 
-	          </dd>
+    	                  <label for="mob_fllters18">Bisazza<span>(240)</span></label>
 
-	          <dd class="accordion-navigation active">
+    	                </span>
 
-	            <a href="#panel4" class="title"><h6>коллекция</h6></a>
+    	                <span>
 
-	            <div id="panel4" class="content form-group checkbox active">
+    	                  <input type="checkbox" id="mob_fllter19" tabindex="1"></input>
 
-	              <span>
+    	                  <label for="mob_fllter19">Sicis<span>(33)</span></label>
 
-	                <input type="checkbox" id="mob_fllters12" tabindex="1"></input>
+    	                </span>
 
-	                <label for="mob_fllters12">Bisazza<span>(240)</span></label>
+    	                <span>
 
-	              </span>
+    	                  <input type="checkbox" id="mob_fllters20" tabindex="1"></input>
 
-	              <span>
+    	                  <label for="mob_fllters20">AEG<span>(21)</span></label>
 
-	                <input type="checkbox" id="mob_fllters13" tabindex="1"></input>
+    	                </span>
 
-	                <label for="mob_fllters13">Sicis<span>(33)</span></label>
+    	                <span>
 
-	              </span>
+    	                  <input type="checkbox" id="mob_fllters21" tabindex="1"></input>
 
-	              <span>
+    	                  <label for="mob_fllters21">AlcaPlast<span>(122)</span></label>
 
-	                <input type="checkbox" id="mob_fllters14" tabindex="1"></input>
+    	                </span>
 
-	                <label for="mob_fllters14">AEG<span>(21)</span></label>
+    	                <span>
 
-	              </span>
+    	                  <input type="checkbox" id="mob_fllters22" tabindex="1"></input>
 
-	              <span>
+    	                  <label for="mob_fllters22">IFO<span>(157)</span></label>
 
-	                <input type="checkbox" id="mob_fllters15" tabindex="1"></input>
+    	                </span>
 
-	                <label for="mob_fllters15">AlcaPlast<span>(122)</span></label>
+    	                <span>
 
-	              </span>
+    	                  <input type="checkbox" id="mob_fllters23" tabindex="1"></input>
 
-	              <span>
+    	                  <label for="mob_fllters23">Jacob Delafon<span>(11)</span></label>
 
-	                <input type="checkbox" id="mob_fllters16" tabindex="1"></input>
+    	                </span>
 
-	                <label for="mob_fllters16">IFO<span>(157)</span></label>
+    	              </div>
 
-	              </span>
+    	              <a href="#" class="show-all js-show-all" data-text="Скрыть всё"><span>Показать все</span></a>
 
-	              <span>
+    	            </div>
 
-	                <input type="checkbox" id="mob_fllters17" tabindex="1"></input>
+    	          </dd>
 
-	                <label for="mob_fllters17">Jacob Delafon<span>(11)</span></label>
+    	          <dd class="accordion-navigation active">
 
-	              </span>
+    	            <a href="#panel4" class="title"><h6>цвет</h6></a>
 
-	              <div class="is-hidden-box js-hidden-all">
+    	            <div id="panel4" class="content form-group checkbox active">
 
-	                <span>
+    	              <span>
 
-	                  <input type="checkbox" id="mob_fllters18" tabindex="1"></input>
+    	                <input type="checkbox" id="mob_fllters24" tabindex="1"></input>
 
-	                  <label for="mob_fllters18">Bisazza<span>(240)</span></label>
+    	                <label for="mob_fllters24">Bisazza<span>(240)</span></label>
 
-	                </span>
+    	              </span>
 
-	                <span>
+    	              <span>
 
-	                  <input type="checkbox" id="mob_fllter19" tabindex="1"></input>
+    	                <input type="checkbox" id="mob_fllters25" tabindex="1"></input>
 
-	                  <label for="mob_fllter19">Sicis<span>(33)</span></label>
+    	                <label for="mob_fllters25">Sicis<span>(33)</span></label>
 
-	                </span>
+    	              </span>
 
-	                <span>
+    	              <span>
 
-	                  <input type="checkbox" id="mob_fllters20" tabindex="1"></input>
+    	                <input type="checkbox" id="mob_fllters26" tabindex="1"></input>
 
-	                  <label for="mob_fllters20">AEG<span>(21)</span></label>
+    	                <label for="mob_fllters26">AEG<span>(21)</span></label>
 
-	                </span>
+    	              </span>
 
-	                <span>
+    	              <span>
 
-	                  <input type="checkbox" id="mob_fllters21" tabindex="1"></input>
+    	                <input type="checkbox" id="mob_fllters27" tabindex="1"></input>
 
-	                  <label for="mob_fllters21">AlcaPlast<span>(122)</span></label>
+    	                <label for="mob_fllters27">AlcaPlast<span>(122)</span></label>
 
-	                </span>
+    	              </span>
 
-	                <span>
+    	              <span>
 
-	                  <input type="checkbox" id="mob_fllters22" tabindex="1"></input>
+    	                <input type="checkbox" id="mob_fllters28" tabindex="1"></input>
 
-	                  <label for="mob_fllters22">IFO<span>(157)</span></label>
+    	                <label for="mob_fllters28">IFO<span>(157)</span></label>
 
-	                </span>
+    	              </span>
 
-	                <span>
+    	              <span>
 
-	                  <input type="checkbox" id="mob_fllters23" tabindex="1"></input>
+    	                <input type="checkbox" id="mob_fllters29" tabindex="1"></input>
 
-	                  <label for="mob_fllters23">Jacob Delafon<span>(11)</span></label>
+    	                <label for="mob_fllters29">Jacob Delafon<span>(11)</span></label>
 
-	                </span>
+    	              </span>
 
-	              </div>
+    	              <div class="is-hidden-box js-hidden-all">
 
-	              <a href="#" class="show-all js-show-all" data-text="Скрыть всё"><span>Показать все</span></a>
+    	                <span>
 
-	            </div>
+    	                  <input type="checkbox" id="mob_fllters30" tabindex="1"></input>
 
-	          </dd>
+    	                  <label for="mob_fllters30">Bisazza<span>(240)</span></label>
 
-	          <dd class="accordion-navigation active">
+    	                </span>
 
-	            <a href="#panel4" class="title"><h6>цвет</h6></a>
+    	                <span>
 
-	            <div id="panel4" class="content form-group checkbox active">
+    	                  <input type="checkbox" id="mob_fllters31" tabindex="1"></input>
 
-	              <span>
+    	                  <label for="mob_fllters31">Sicis<span>(33)</span></label>
 
-	                <input type="checkbox" id="mob_fllters24" tabindex="1"></input>
+    	                </span>
 
-	                <label for="mob_fllters24">Bisazza<span>(240)</span></label>
+    	                <span>
 
-	              </span>
+    	                  <input type="checkbox" id="mob_fllters32" tabindex="1"></input>
 
-	              <span>
+    	                  <label for="mob_fllters32">AEG<span>(21)</span></label>
 
-	                <input type="checkbox" id="mob_fllters25" tabindex="1"></input>
+    	                </span>
 
-	                <label for="mob_fllters25">Sicis<span>(33)</span></label>
+    	                <span>
 
-	              </span>
+    	                  <input type="checkbox" id="mob_fllters33" tabindex="1"></input>
 
-	              <span>
+    	                  <label for="mob_fllters33">AlcaPlast<span>(122)</span></label>
 
-	                <input type="checkbox" id="mob_fllters26" tabindex="1"></input>
+    	                </span>
 
-	                <label for="mob_fllters26">AEG<span>(21)</span></label>
+    	                <span>
 
-	              </span>
+    	                  <input type="checkbox" id="mob_fllters34" tabindex="1"></input>
 
-	              <span>
+    	                  <label for="mob_fllters34">IFO<span>(157)</span></label>
 
-	                <input type="checkbox" id="mob_fllters27" tabindex="1"></input>
+    	                </span>
 
-	                <label for="mob_fllters27">AlcaPlast<span>(122)</span></label>
+    	                <span>
 
-	              </span>
+    	                  <input type="checkbox" id="mob_fllters35" tabindex="1"></input>
 
-	              <span>
+    	                  <label for="mob_fllters35">Jacob Delafon<span>(11)</span></label>
 
-	                <input type="checkbox" id="mob_fllters28" tabindex="1"></input>
+    	                </span>
 
-	                <label for="mob_fllters28">IFO<span>(157)</span></label>
+    	              </div>
 
-	              </span>
+    	              <a href="#" class="show-all js-show-all" data-text="Скрыть всё"><span>Показать все</span></a>
 
-	              <span>
+    	            </div>
 
-	                <input type="checkbox" id="mob_fllters29" tabindex="1"></input>
+    	          </dd>
 
-	                <label for="mob_fllters29">Jacob Delafon<span>(11)</span></label>
+    	          <dd class="accordion-navigation active">
 
-	              </span>
+    	            <a href="#panel4" class="title"><h6>бренд</h6></a>
 
-	              <div class="is-hidden-box js-hidden-all">
+    	            <div id="panel4" class="content form-group checkbox active">
 
-	                <span>
+    	              <span>
 
-	                  <input type="checkbox" id="mob_fllters30" tabindex="1"></input>
+    	                <input type="checkbox" id="mob_fllters1" tabindex="1"></input>
 
-	                  <label for="mob_fllters30">Bisazza<span>(240)</span></label>
+    	                <label for="mob_fllters1">Bisazza<span>(240)</span></label>
 
-	                </span>
+    	              </span>
 
-	                <span>
+    	              <span>
 
-	                  <input type="checkbox" id="mob_fllters31" tabindex="1"></input>
+    	                <input type="checkbox" id="mob_fllters2" tabindex="1"></input>
 
-	                  <label for="mob_fllters31">Sicis<span>(33)</span></label>
+    	                <label for="mob_fllters2">Sicis<span>(33)</span></label>
 
-	                </span>
+    	              </span>
 
-	                <span>
+    	              <span>
 
-	                  <input type="checkbox" id="mob_fllters32" tabindex="1"></input>
+    	                <input type="checkbox" id="mob_fllters3" tabindex="1"></input>
 
-	                  <label for="mob_fllters32">AEG<span>(21)</span></label>
+    	                <label for="mob_fllters3">AEG<span>(21)</span></label>
 
-	                </span>
+    	              </span>
 
-	                <span>
+    	              <span>
 
-	                  <input type="checkbox" id="mob_fllters33" tabindex="1"></input>
+    	                <input type="checkbox" id="mob_fllters4" tabindex="1"></input>
 
-	                  <label for="mob_fllters33">AlcaPlast<span>(122)</span></label>
+    	                <label for="mob_fllters4">AlcaPlast<span>(122)</span></label>
 
-	                </span>
+    	              </span>
 
-	                <span>
+    	              <span>
 
-	                  <input type="checkbox" id="mob_fllters34" tabindex="1"></input>
+    	                <input type="checkbox" id="mob_fllters5" tabindex="1"></input>
 
-	                  <label for="mob_fllters34">IFO<span>(157)</span></label>
+    	                <label for="mob_fllters5">IFO<span>(157)</span></label>
 
-	                </span>
+    	              </span>
 
-	                <span>
+    	              <span>
 
-	                  <input type="checkbox" id="mob_fllters35" tabindex="1"></input>
+    	                <input type="checkbox" id="mob_fllters6" tabindex="1"></input>
 
-	                  <label for="mob_fllters35">Jacob Delafon<span>(11)</span></label>
+    	                <label for="mob_fllters6">Jacob Delafon<span>(11)</span></label>
 
-	                </span>
+    	              </span>
 
-	              </div>
+    	              <div class="is-hidden-box js-hidden-all">
 
-	              <a href="#" class="show-all js-show-all" data-text="Скрыть всё"><span>Показать все</span></a>
+    	                <span>
 
-	            </div>
+    	                  <input type="checkbox" id="mob_fllters7" tabindex="1"></input>
 
-	          </dd>
+    	                  <label for="mob_fllters7">Sicis<span>(33)</span></label>
 
-	          <dd class="accordion-navigation active">
+    	                </span>
 
-	            <a href="#panel4" class="title"><h6>бренд</h6></a>
+    	                <span>
 
-	            <div id="panel4" class="content form-group checkbox active">
+    	                  <input type="checkbox" id="mob_fllters8" tabindex="1"></input>
 
-	              <span>
+    	                  <label for="mob_fllters8">AEG<span>(21)</span></label>
 
-	                <input type="checkbox" id="mob_fllters1" tabindex="1"></input>
+    	                </span>
 
-	                <label for="mob_fllters1">Bisazza<span>(240)</span></label>
+    	                <span>
 
-	              </span>
+    	                  <input type="checkbox" id="mob_fllters9" tabindex="1"></input>
 
-	              <span>
+    	                  <label for="mob_fllters9">AlcaPlast<span>(122)</span></label>
 
-	                <input type="checkbox" id="mob_fllters2" tabindex="1"></input>
+    	                </span>
 
-	                <label for="mob_fllters2">Sicis<span>(33)</span></label>
+    	                <span>
 
-	              </span>
+    	                  <input type="checkbox" id="mob_fllters10" tabindex="1"></input>
 
-	              <span>
+    	                  <label for="mob_fllters10">IFO<span>(157)</span></label>
 
-	                <input type="checkbox" id="mob_fllters3" tabindex="1"></input>
+    	                </span>
 
-	                <label for="mob_fllters3">AEG<span>(21)</span></label>
+    	                <span>
 
-	              </span>
+    	                  <input type="checkbox" id="mob_fllters11" tabindex="1"></input>
 
-	              <span>
+    	                  <label for="mob_fllters11">Jacob Delafon<span>(11)</span></label>
 
-	                <input type="checkbox" id="mob_fllters4" tabindex="1"></input>
+    	                </span>
 
-	                <label for="mob_fllters4">AlcaPlast<span>(122)</span></label>
+    	              </div>
 
-	              </span>
+    	              <a href="#" class="show-all js-show-all" data-text="Скрыть всё"><span>Показать все</span></a>
 
-	              <span>
+    	            </div>
 
-	                <input type="checkbox" id="mob_fllters5" tabindex="1"></input>
+    	          </dd>
 
-	                <label for="mob_fllters5">IFO<span>(157)</span></label>
+    	          <dd class="accordion-navigation active">
 
-	              </span>
+    	            <a href="#panel4" class="title"><h6>коллекция</h6></a>
 
-	              <span>
+    	            <div id="panel4" class="content form-group checkbox active">
 
-	                <input type="checkbox" id="mob_fllters6" tabindex="1"></input>
+    	              <span>
 
-	                <label for="mob_fllters6">Jacob Delafon<span>(11)</span></label>
+    	                <input type="checkbox" id="mob_fllters12" tabindex="1"></input>
 
-	              </span>
+    	                <label for="mob_fllters12">Bisazza<span>(240)</span></label>
 
-	              <div class="is-hidden-box js-hidden-all">
+    	              </span>
 
-	                <span>
+    	              <span>
 
-	                  <input type="checkbox" id="mob_fllters7" tabindex="1"></input>
+    	                <input type="checkbox" id="mob_fllters13" tabindex="1"></input>
 
-	                  <label for="mob_fllters7">Sicis<span>(33)</span></label>
+    	                <label for="mob_fllters13">Sicis<span>(33)</span></label>
 
-	                </span>
+    	              </span>
 
-	                <span>
+    	              <span>
 
-	                  <input type="checkbox" id="mob_fllters8" tabindex="1"></input>
+    	                <input type="checkbox" id="mob_fllters14" tabindex="1"></input>
 
-	                  <label for="mob_fllters8">AEG<span>(21)</span></label>
+    	                <label for="mob_fllters14">AEG<span>(21)</span></label>
 
-	                </span>
+    	              </span>
 
-	                <span>
+    	              <span>
 
-	                  <input type="checkbox" id="mob_fllters9" tabindex="1"></input>
+    	                <input type="checkbox" id="mob_fllters15" tabindex="1"></input>
 
-	                  <label for="mob_fllters9">AlcaPlast<span>(122)</span></label>
+    	                <label for="mob_fllters15">AlcaPlast<span>(122)</span></label>
 
-	                </span>
+    	              </span>
 
-	                <span>
+    	              <span>
 
-	                  <input type="checkbox" id="mob_fllters10" tabindex="1"></input>
+    	                <input type="checkbox" id="mob_fllters16" tabindex="1"></input>
 
-	                  <label for="mob_fllters10">IFO<span>(157)</span></label>
+    	                <label for="mob_fllters16">IFO<span>(157)</span></label>
 
-	                </span>
+    	              </span>
 
-	                <span>
+    	              <span>
 
-	                  <input type="checkbox" id="mob_fllters11" tabindex="1"></input>
+    	                <input type="checkbox" id="mob_fllters17" tabindex="1"></input>
 
-	                  <label for="mob_fllters11">Jacob Delafon<span>(11)</span></label>
+    	                <label for="mob_fllters17">Jacob Delafon<span>(11)</span></label>
 
-	                </span>
+    	              </span>
 
-	              </div>
+    	              <div class="is-hidden-box js-hidden-all">
 
-	              <a href="#" class="show-all js-show-all" data-text="Скрыть всё"><span>Показать все</span></a>
+    	                <span>
 
-	            </div>
+    	                  <input type="checkbox" id="mob_fllters18" tabindex="1"></input>
 
-	          </dd>
+    	                  <label for="mob_fllters18">Bisazza<span>(240)</span></label>
 
-	          <dd class="accordion-navigation active">
+    	                </span>
 
-	            <a href="#panel4" class="title"><h6>коллекция</h6></a>
+    	                <span>
 
-	            <div id="panel4" class="content form-group checkbox active">
+    	                  <input type="checkbox" id="mob_fllter19" tabindex="1"></input>
 
-	              <span>
+    	                  <label for="mob_fllter19">Sicis<span>(33)</span></label>
 
-	                <input type="checkbox" id="mob_fllters12" tabindex="1"></input>
+    	                </span>
 
-	                <label for="mob_fllters12">Bisazza<span>(240)</span></label>
+    	                <span>
 
-	              </span>
+    	                  <input type="checkbox" id="mob_fllters20" tabindex="1"></input>
 
-	              <span>
+    	                  <label for="mob_fllters20">AEG<span>(21)</span></label>
 
-	                <input type="checkbox" id="mob_fllters13" tabindex="1"></input>
+    	                </span>
 
-	                <label for="mob_fllters13">Sicis<span>(33)</span></label>
+    	                <span>
 
-	              </span>
+    	                  <input type="checkbox" id="mob_fllters21" tabindex="1"></input>
 
-	              <span>
+    	                  <label for="mob_fllters21">AlcaPlast<span>(122)</span></label>
 
-	                <input type="checkbox" id="mob_fllters14" tabindex="1"></input>
+    	                </span>
 
-	                <label for="mob_fllters14">AEG<span>(21)</span></label>
+    	                <span>
 
-	              </span>
+    	                  <input type="checkbox" id="mob_fllters22" tabindex="1"></input>
 
-	              <span>
+    	                  <label for="mob_fllters22">IFO<span>(157)</span></label>
 
-	                <input type="checkbox" id="mob_fllters15" tabindex="1"></input>
+    	                </span>
 
-	                <label for="mob_fllters15">AlcaPlast<span>(122)</span></label>
+    	                <span>
 
-	              </span>
+    	                  <input type="checkbox" id="mob_fllters23" tabindex="1"></input>
 
-	              <span>
+    	                  <label for="mob_fllters23">Jacob Delafon<span>(11)</span></label>
 
-	                <input type="checkbox" id="mob_fllters16" tabindex="1"></input>
+    	                </span>
 
-	                <label for="mob_fllters16">IFO<span>(157)</span></label>
+    	              </div>
 
-	              </span>
+    	              <a href="#" class="show-all js-show-all" data-text="Скрыть всё"><span>Показать все</span></a>
 
-	              <span>
+    	            </div>
 
-	                <input type="checkbox" id="mob_fllters17" tabindex="1"></input>
+    	          </dd>
 
-	                <label for="mob_fllters17">Jacob Delafon<span>(11)</span></label>
+    	          <dd class="accordion-navigation active">
 
-	              </span>
+    	            <a href="#panel4" class="title"><h6>цвет</h6></a>
 
-	              <div class="is-hidden-box js-hidden-all">
+    	            <div id="panel4" class="content form-group checkbox active">
 
-	                <span>
+    	              <span>
 
-	                  <input type="checkbox" id="mob_fllters18" tabindex="1"></input>
+    	                <input type="checkbox" id="mob_fllters24" tabindex="1"></input>
 
-	                  <label for="mob_fllters18">Bisazza<span>(240)</span></label>
+    	                <label for="mob_fllters24">Bisazza<span>(240)</span></label>
 
-	                </span>
+    	              </span>
 
-	                <span>
+    	              <span>
 
-	                  <input type="checkbox" id="mob_fllter19" tabindex="1"></input>
+    	                <input type="checkbox" id="mob_fllters25" tabindex="1"></input>
 
-	                  <label for="mob_fllter19">Sicis<span>(33)</span></label>
+    	                <label for="mob_fllters25">Sicis<span>(33)</span></label>
 
-	                </span>
+    	              </span>
 
-	                <span>
+    	              <span>
 
-	                  <input type="checkbox" id="mob_fllters20" tabindex="1"></input>
+    	                <input type="checkbox" id="mob_fllters26" tabindex="1"></input>
 
-	                  <label for="mob_fllters20">AEG<span>(21)</span></label>
+    	                <label for="mob_fllters26">AEG<span>(21)</span></label>
 
-	                </span>
+    	              </span>
 
-	                <span>
+    	              <span>
 
-	                  <input type="checkbox" id="mob_fllters21" tabindex="1"></input>
+    	                <input type="checkbox" id="mob_fllters27" tabindex="1"></input>
 
-	                  <label for="mob_fllters21">AlcaPlast<span>(122)</span></label>
+    	                <label for="mob_fllters27">AlcaPlast<span>(122)</span></label>
 
-	                </span>
+    	              </span>
 
-	                <span>
+    	              <span>
 
-	                  <input type="checkbox" id="mob_fllters22" tabindex="1"></input>
+    	                <input type="checkbox" id="mob_fllters28" tabindex="1"></input>
 
-	                  <label for="mob_fllters22">IFO<span>(157)</span></label>
+    	                <label for="mob_fllters28">IFO<span>(157)</span></label>
 
-	                </span>
+    	              </span>
 
-	                <span>
+    	              <span>
 
-	                  <input type="checkbox" id="mob_fllters23" tabindex="1"></input>
+    	                <input type="checkbox" id="mob_fllters29" tabindex="1"></input>
 
-	                  <label for="mob_fllters23">Jacob Delafon<span>(11)</span></label>
+    	                <label for="mob_fllters29">Jacob Delafon<span>(11)</span></label>
 
-	                </span>
+    	              </span>
 
-	              </div>
+    	              <div class="is-hidden-box js-hidden-all">
 
-	              <a href="#" class="show-all js-show-all" data-text="Скрыть всё"><span>Показать все</span></a>
+    	                <span>
 
-	            </div>
+    	                  <input type="checkbox" id="mob_fllters30" tabindex="1"></input>
 
-	          </dd>
+    	                  <label for="mob_fllters30">Bisazza<span>(240)</span></label>
 
-	          <dd class="accordion-navigation active">
+    	                </span>
 
-	            <a href="#panel4" class="title"><h6>цвет</h6></a>
+    	                <span>
 
-	            <div id="panel4" class="content form-group checkbox active">
+    	                  <input type="checkbox" id="mob_fllters31" tabindex="1"></input>
 
-	              <span>
+    	                  <label for="mob_fllters31">Sicis<span>(33)</span></label>
 
-	                <input type="checkbox" id="mob_fllters24" tabindex="1"></input>
+    	                </span>
 
-	                <label for="mob_fllters24">Bisazza<span>(240)</span></label>
+    	                <span>
 
-	              </span>
+    	                  <input type="checkbox" id="mob_fllters32" tabindex="1"></input>
 
-	              <span>
+    	                  <label for="mob_fllters32">AEG<span>(21)</span></label>
 
-	                <input type="checkbox" id="mob_fllters25" tabindex="1"></input>
+    	                </span>
 
-	                <label for="mob_fllters25">Sicis<span>(33)</span></label>
+    	                <span>
 
-	              </span>
+    	                  <input type="checkbox" id="mob_fllters33" tabindex="1"></input>
 
-	              <span>
+    	                  <label for="mob_fllters33">AlcaPlast<span>(122)</span></label>
 
-	                <input type="checkbox" id="mob_fllters26" tabindex="1"></input>
+    	                </span>
 
-	                <label for="mob_fllters26">AEG<span>(21)</span></label>
+    	                <span>
 
-	              </span>
+    	                  <input type="checkbox" id="mob_fllters34" tabindex="1"></input>
 
-	              <span>
+    	                  <label for="mob_fllters34">IFO<span>(157)</span></label>
 
-	                <input type="checkbox" id="mob_fllters27" tabindex="1"></input>
+    	                </span>
 
-	                <label for="mob_fllters27">AlcaPlast<span>(122)</span></label>
+    	                <span>
 
-	              </span>
+    	                  <input type="checkbox" id="mob_fllters35" tabindex="1"></input>
 
-	              <span>
+    	                  <label for="mob_fllters35">Jacob Delafon<span>(11)</span></label>
 
-	                <input type="checkbox" id="mob_fllters28" tabindex="1"></input>
+    	                </span>
 
-	                <label for="mob_fllters28">IFO<span>(157)</span></label>
+    	              </div>
 
-	              </span>
+    	              <a href="#" class="show-all js-show-all" data-text="Скрыть всё"><span>Показать все</span></a>
 
-	              <span>
+    	            </div>
 
-	                <input type="checkbox" id="mob_fllters29" tabindex="1"></input>
+    	          </dd>
 
-	                <label for="mob_fllters29">Jacob Delafon<span>(11)</span></label>
+    	        </div>
 
-	              </span>
+    	      </div>
 
-	              <div class="is-hidden-box js-hidden-all">
+    	    </div>
 
-	                <span>
+    	  </div>
 
-	                  <input type="checkbox" id="mob_fllters30" tabindex="1"></input>
+    	  <!-- END FILTER-BLOCK -->
 
-	                  <label for="mob_fllters30">Bisazza<span>(240)</span></label>
+    	</div>
 
-	                </span>
+    	<!-- END FILTER-WRAP -->
 
-	                <span>
-
-	                  <input type="checkbox" id="mob_fllters31" tabindex="1"></input>
-
-	                  <label for="mob_fllters31">Sicis<span>(33)</span></label>
-
-	                </span>
-
-	                <span>
-
-	                  <input type="checkbox" id="mob_fllters32" tabindex="1"></input>
-
-	                  <label for="mob_fllters32">AEG<span>(21)</span></label>
-
-	                </span>
-
-	                <span>
-
-	                  <input type="checkbox" id="mob_fllters33" tabindex="1"></input>
-
-	                  <label for="mob_fllters33">AlcaPlast<span>(122)</span></label>
-
-	                </span>
-
-	                <span>
-
-	                  <input type="checkbox" id="mob_fllters34" tabindex="1"></input>
-
-	                  <label for="mob_fllters34">IFO<span>(157)</span></label>
-
-	                </span>
-
-	                <span>
-
-	                  <input type="checkbox" id="mob_fllters35" tabindex="1"></input>
-
-	                  <label for="mob_fllters35">Jacob Delafon<span>(11)</span></label>
-
-	                </span>
-
-	              </div>
-
-	              <a href="#" class="show-all js-show-all" data-text="Скрыть всё"><span>Показать все</span></a>
-
-	            </div>
-
-	          </dd>
-
-	        </div>
-
-	      </div>
-
-	    </div>
-
-	  </div>
-
-	  <!-- END FILTER-BLOCK -->
-
-	</div>
-
-	<!-- END FILTER-WRAP -->
-
-
-	<div class="page-mask"></div>
-    <div class="row collapse">
+      <div class="row collapse">
         <div class="column medium-9">
 
           <div class="row collapse sorting">
@@ -3124,6 +3436,7 @@
 
 
 
+
     <div id="basket" class="reveal-modal basket" data-reveal>
       <div class="basket-header">
         <p class="modal-title">Товар добавлен в корзину</p>
@@ -3235,6 +3548,7 @@
 
 
     <script src="js/lib/jquery.min.js"></script>
+    <!-- <script src="https://plitka.kiev.ua/frontend/js/livesearch.js"></script> -->
     <script src="js/lib/foundation.min.js"></script>
     <script src="js/lib/foundation.dropdown.js"></script>
     <script src="js/lib/slick.min.js"></script>
@@ -3242,6 +3556,7 @@
     <script src="js/lib/jquery.maskedinput.min.js"></script>
     <script src="js/lib/perfect-scrollbar.jquery.js"></script>
     <script src="js/lib/jquery.dotdotdot.min.js"></script>
+    <!-- <script src="js/header-search.js"></script> -->
     <script src="js/app.js"></script>
   </body>
 </html>

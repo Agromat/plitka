@@ -1908,6 +1908,11 @@ footer{
 		}
 	}
 }
+
+.reveal-modal, .enlarged-photo{
+	visibility: visible
+}
+
 .modal {
 	font-size: 14px;
 	line-height: 1.2;
@@ -2581,7 +2586,7 @@ footer{
 	}
 	.photo{
 		overflow: hidden;
-		padding: 43px 40px 12px;
+		padding: 15px 40px 12px;
 		position: relative;
 		border-bottom: 1px solid #dddddd;
 		@include r($tablet) {
@@ -2888,6 +2893,16 @@ footer{
 		}
 	}
 }
+
+.item-crop img{
+	display: block;
+	width: 100%;
+	height: auto;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	transition: opacity 0.2s;
+}
+
 .radio-box {
 	position: relative;
 	display: block;

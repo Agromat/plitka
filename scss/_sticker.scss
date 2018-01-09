@@ -1,9 +1,10 @@
 @charset "UTF-8";
 .sticker{
 	position: absolute;
-	top:0;
+	top:-10px;
 	left:0;
 	width: 100%;
+	height: auto;
 	&.sticker_mob {
 		display: none;
 		@include r($mob) {
@@ -118,17 +119,25 @@
 			float: right;
 		}
 	}
+	// &_corner_top_left{
+	// 	top: 0;
+	// 	left: rem-calc(-10);
+	// }
+	// &_corner_top_right{
+	// 	top: 0;
+	// 	right: rem-calc(-10);
+	// }
+	// &_corner_right_mid{
+	// 	top: 30%;
+	// 	transform: translateY(-50%);
+	// 	right: rem-calc(-10);
+	// }
 	.stock-stick,.recommended{
-		display: block;
-		position: relative;
+		position: absolute;
 		z-index: 6;
-		top: 0;
-		right: rem-calc(-3);
-		float: right;
-		width: 100%;
-		height: rem-calc(119);
 		background-position: top right;
 		background-repeat: no-repeat;
+<<<<<<< HEAD
 		@include r($mob) {
 			display: inline-block;
 			top: -15px;
@@ -141,6 +150,22 @@
 			     -o-background-size: 50px;
 			        background-size: 50px;
 		}
+=======
+					}
+	.stock-stick{
+		height: rem-calc(121);
+		background-image: url(../img/slider/stock.png);
+		background-size: 60px;
+		top:-5px;
+		right: 0;
+		width: rem-calc(60);
+		height: rem-calc(60);
+	}
+	.recommended{
+		background-image: url(../img/slider/recommended.png);
+		width: rem-calc(120);
+		height: rem-calc(120);
+>>>>>>> master
 	}
 }
 .promo__stick{
