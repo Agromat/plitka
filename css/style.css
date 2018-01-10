@@ -10791,7 +10791,7 @@ footer .row.link-footer .column:last-child {
 }
 @media only screen and (max-width: 1024px) {
   .post__media, .promo__media {
-    width: 105px;
+    width: 180px;
     margin-right: 20px;
   }
 }
