@@ -1866,7 +1866,7 @@ footer{
 	}
 	&.modal_callback {
 		@include r($mob) {
-			max-width: 320px;
+			// max-width: 320px;
 			width: 100%;
 			border: none;
 			border-radius: 0;
@@ -2167,6 +2167,12 @@ footer{
 			color: #4a5b70;
 			margin: 0;
 		}
+
+		.close-reveal-modal, .modal__close{
+			top: -25px;
+			right: -40px;
+			content: url("../img/close-btn.png");
+		}
 	}
 	.basket-footer{
 		border-radius: 15px;
@@ -2229,210 +2235,212 @@ footer{
 			right: 0;
 		}
 	}
-}
-
-.basket-view{
-	position: relative;
-	padding: 29px 34px 0;
-	&:after {
-		content: "";
-		width: 100%;
-		height: 1px;
-		border-bottom: 1px solid #ddd;
-		padding: 0 34px;
-		padding-bottom: 29px;
-		clear: both;
-	}
-	@include r($tablet) {
-		padding: 20px 34px 0;
+	.basket-view{
+		position: relative;
+		padding: 29px 34px 0;
 		&:after {
-			padding-bottom: 20px;
+			content: "";
+			width: 100%;
+			height: 1px;
+			border-bottom: 1px solid #ddd;
+			padding: 0 34px;
+			padding-bottom: 29px;
+			clear: both;
 		}
-	}
-	@include r ($mob) {
-		padding: 20px 10px 0;
-	}
-	.del{
-		width: 24px;
-		
-		padding: 0px 0px 0px;
-		.btn-del{
-			padding: 0;
-			border: 0;
-			outline: none;
-			background: url(../img/del-btn.png);
-			background-size: 16px;
-			width: 16px;
-			height: 16px;
-		}
-	}
-	.img{
-		padding: 0;
-		width: 150px;
-		height: 130px;
 		@include r($tablet) {
-			width: 75px;
-			height: 65px;
-		}
-		.sticker {
-			left: 95px;
-			top:-5px;
-			@include r($tablet) {
-				top: -20px;
+			padding: 20px 34px 0;
+			&:after {
+				padding-bottom: 20px;
 			}
 		}
-	}
-	.name-product{
-		width: 330px;
-		padding-left: 28px;
-		//padding-top: 6px;
-		@include r($tablet) {
-			max-width: 268px;
+		@include r ($mob) {
+			padding: 20px 10px 0;
 		}
-		@include r($mob) {
-			max-width: 190px;
+		.del{
+			width: 24px;
+			
+			padding: 0px 0px 0px;
+			.btn-del{
+				padding: 0;
+				border: 0;
+				outline: none;
+				background: url(../img/del-btn.png);
+				background-size: 16px;
+				width: 16px;
+				height: 16px;
+			}
 		}
-		&.column{
-			padding-left: 28px;
+		.img{
+			padding: 0;
+			width: 150px;
+			height: 130px;
 			@include r($tablet) {
-				padding-left: 20px;
+				width: 75px;
+				height: 65px;
+			}
+			.sticker {
+				left: 95px;
+				top:-5px;
+				@include r($tablet) {
+					top: -20px;
+				}
+			}
+		}
+		.name-product{
+			width: 330px;
+			padding-left: 28px;
+			//padding-top: 6px;
+			@include r($tablet) {
+				max-width: 268px;
 			}
 			@include r($mob) {
-				padding-left: 15px;
+				max-width: 190px;
+			}
+			&.column{
+				padding-left: 28px;
+				@include r($tablet) {
+					padding-left: 20px;
+				}
+				@include r($mob) {
+					padding-left: 15px;
+				}
+			}
+			.prod-desk{
+				font-size: 14px;
+				font-weight: 400;
+				color: $ddgray;
+				margin-bottom: 15px;
+				margin-top: 0;
+				line-height: 16px;
 			}
 		}
-		.prod-desk{
-			font-size: 14px;
-			font-weight: 400;
-			color: $ddgray;
-			margin-bottom: 15px;
-			margin-top: 0;
-			line-height: 16px;
+		.sum,
+		.amount{
+			width:143px;
+			padding-top: 6px;
+			@include r($tablet) {
+				width: 114px;
+				padding: 6px 0 0;
+			}
+			.area{
+				color: #22bee8;
+				font-size: 12px;
+				margin: 3px 0 8px;
+				span{
+					font-weight: 700;
+					sup{
+						top: -2px;
+					}
+				}
+			}
 		}
-	}
-	.sum,
-	.amount{
-		width:143px;
-		padding-top: 6px;
-		@include r($tablet) {
-			width: 114px;
-			padding: 6px 0 0;
-		}
-		.area{
-			color: #22bee8;
-			font-size: 12px;
-			margin: 3px 0 8px;
-			span{
-				font-weight: 700;
-				sup{
-					top: -2px;
+		.sum {
+			text-align: right;
+			width: 183px;
+			padding-right: 17px;
+			.price {
+				@include r($tablet) {
+					padding-top: 23px;
 				}
 			}
 		}
 	}
-	.sum {
-		text-align: right;
-		width: 183px;
-		padding-right: 17px;
-		.price {
-			@include r($tablet) {
-				padding-top: 23px;
-			}
-		}
-	}
-}
-.basket-actions{
-	@include r($tablet) {
-		padding: 0 34px;
-	}
-	@include r($mob) {
-		padding: 0 10px;
-	}
-	.total{
-		text-align: right;
-		margin: 0 40px;
-		// border-top: 1px solid #dddddd;
-		padding: 10px 17px 20px 0;
+	.basket-actions{
 		@include r($tablet) {
-			margin: 0;
-			padding: 10px 0 20px;
+			padding: 0 34px;
 		}
 		@include r($mob) {
-			// border-top: none;
+			padding: 0 10px;
 		}
-		&.striked {
-			padding-bottom: 10px;
+		.total{
+			text-align: right;
+			margin: 0 40px;
+			// border-top: 1px solid #dddddd;
+			padding: 10px 17px 20px 0;
+			@include r($tablet) {
+				margin: 0;
+				padding: 10px 0 20px;
+			}
+			@include r($mob) {
+				// border-top: none;
+			}
+			&.striked {
+				padding-bottom: 10px;
+				.price{
+					position: relative;
+					display: inline-block;
+					color: #878787;
+					&:after {
+						position: absolute;
+						content: "";
+						left: -3px;
+						top: 50%;
+						right: 0; 
+						border-top: 2px solid;
+						border-color: #000;
+						-webkit-transform:rotate(-5deg);
+						-moz-transform:rotate(-5deg);
+						-ms-transform:rotate(-5deg);
+						-o-transform:rotate(-5deg);
+						transform:rotate(-5deg);
+					}
+				}
+			}
 			.price{
-				position: relative;
-				display: inline-block;
-				color: #878787;
-				&:after {
-					position: absolute;
-					content: "";
-					left: -3px;
-					top: 50%;
-					right: 0; 
-					border-top: 2px solid;
-					border-color: #000;
-					-webkit-transform:rotate(-5deg);
-					-moz-transform:rotate(-5deg);
-					-ms-transform:rotate(-5deg);
-					-o-transform:rotate(-5deg);
-					transform:rotate(-5deg);
+				line-height: 1;
+				@include r($tablet) {
+					display: inline-block;
+					font-size: 31px;
+				}
+			}
+			.sm-desk {
+				@include r($tablet) {
+					display: inline-block;
+					margin-right: 40px;
 				}
 			}
 		}
-		.price{
-			line-height: 1;
-			@include r($tablet) {
-				display: inline-block;
-				font-size: 31px;
+		.total-discount{
+			margin: 0 40px;
+			border: 3px solid #ed1c24;
+			padding: 14px 17px;
+			background-color: #fcf2e9;
+			.sm-desk{
+				float: left;
+				font-size: 18px;
+				font-weight: 700;
+				color: #ed1c24;
+				line-height: 25px;
+				margin: 0;
+				}
+			.price{
+				float: right;
+				font-size: 25px;
+				font-weight: 700;
+				color: #ed1c24;
+				margin: 0;
+				line-height: 1;
 			}
 		}
-		.sm-desk {
-			@include r($tablet) {
-				display: inline-block;
-				margin-right: 40px;
-			}
-		}
-	}
-	.total-discount{
-		margin: 0 40px;
-		border: 3px solid #ed1c24;
-		padding: 14px 17px;
-		background-color: #fcf2e9;
-		.sm-desk{
-			float: left;
-			font-size: 18px;
-			font-weight: 700;
-			color: #ed1c24;
-			line-height: 25px;
-			margin: 0;
-			}
-		.price{
-			float: right;
-			font-size: 25px;
-			font-weight: 700;
-			color: #ed1c24;
-			margin: 0;
-			line-height: 1;
-		}
-	}
 
-	.btn-group{
-		margin: 0 40px;
-		padding-bottom: 35px;
-		@include r($tablet) {
-			margin: 0;
-		}
-		.btn{
-			position: relative;
-			&.close-reveal-modal.left.default{
-				content: none;
+		.btn-group{
+			margin: 0 40px;
+			padding-bottom: 35px;
+			@include r($tablet) {
+				margin: 0;
+			}
+			.btn{
+				position: relative;
+				&.close-reveal-modal.left.default{
+					content: none;
+				}
 			}
 		}
 	}
 }
+
+
+
 
 .reveal-modal{
 	.close-reveal-modal {
@@ -2500,9 +2508,9 @@ footer{
 		}
 		.name-product {
 			.price {
-				position: absolute;
-				left: -76px;
-				top: 135px;
+				// position: absolute;
+				// left: -76px;
+				// top: 135px;
 			}
 		}
 		.sum {
