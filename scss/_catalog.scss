@@ -322,6 +322,11 @@
 				width: 48.47%;
 				padding: 20px;
 				position: relative;
+				@include r($mob){
+					width: 100%;
+					max-width: 400px;
+					margin: 0 auto 15px;
+				}
 				
 				a{
 					padding: 0 !important;
@@ -362,6 +367,29 @@
 			@include r($mob){
 				display: block;
 				width: 100%;
+			}
+
+			.inner {
+				display: flex;
+				align-items: stretch;
+				justify-content: space-between;
+				@include r($mob){
+					flex-direction: column;
+				}
+
+				.column {
+					float: none;
+				}
+				a {
+					height: 100%;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+				}
+
+				.subtitle {
+					margin-bottom: 15px;
+				}
 			}
 			// .column{
 			// 	width: 48.47%;
@@ -448,24 +476,7 @@
 				}
 			}
 
-			.inner {
-				display: flex;
-				align-items: stretch;
-				justify-content: space-between;
-				.column {
-					float: none;
-				}
-				a {
-					height: 100%;
-					display: flex;
-					flex-direction: column;
-					justify-content: space-between;
-				}
-
-				.subtitle {
-					margin-bottom: 15px;
-				}
-			}
+			
 
 
 
