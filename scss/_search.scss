@@ -16,13 +16,18 @@
 		position: absolute;
 		height: 100%;
 		z-index: 2;
-		right: 7.775rem;
+		right: 130px;
 		text-align: right;
 		padding: 0.65rem 0.65rem 0;
 		background-color: #fff;
 		border: 0.0625rem solid #abadb3;
 		border-left: 0;
+		border-right: 0;
 		font-size: 0.8125rem;
+		height: 37px;
+		@include r($tablet) {
+	        display: none;
+	    }
 	}
 
 	#search-categories-block {
@@ -35,6 +40,9 @@
 		background: #fff;
 		border: 1px solid #abadb3;
 		border-top: 0;
+		@include r($desktop-m){
+            right: 10px;
+        }
 		ul {
 			list-style: none;
 			margin: 0.55rem 1.1rem;

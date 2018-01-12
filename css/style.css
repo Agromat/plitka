@@ -10980,13 +10980,20 @@ footer .row.link-footer .column:last-child {
   position: absolute;
   height: 100%;
   z-index: 2;
-  right: 7.775rem;
+  right: 130px;
   text-align: right;
   padding: 0.65rem 0.65rem 0;
   background-color: #fff;
   border: 0.0625rem solid #abadb3;
   border-left: 0;
+  border-right: 0;
   font-size: 0.8125rem;
+  height: 37px;
+}
+@media only screen and (max-width: 1024px) {
+  .search #search-categories-input {
+    display: none;
+  }
 }
 .search #search-categories-block {
   display: none;
@@ -10998,6 +11005,11 @@ footer .row.link-footer .column:last-child {
   background: #fff;
   border: 1px solid #abadb3;
   border-top: 0;
+}
+@media only screen and (max-width: 1219px) {
+  .search #search-categories-block {
+    right: 10px;
+  }
 }
 .search #search-categories-block ul {
   list-style: none;
@@ -12238,7 +12250,7 @@ body.is-overflow {
     top: 7px;
     right: 0;
     padding: 0;
-    width: 340px;
+    width: auto;
   }
 }
 @media only screen and (max-width: 767px) {
