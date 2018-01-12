@@ -220,3 +220,12 @@
 		border-bottom: 1px dotted #a1a1a1;
 	}
 }
+
+.cbh-ph-circle-red,
+.cbh-ph-circle1-red,
+.cbh-ph-circle2-red,
+.cbh-ph-circle-fill-red {
+	@include r($mob) {
+			display: none !important;
+		}
+}
