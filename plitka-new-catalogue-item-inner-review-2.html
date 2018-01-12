@@ -613,7 +613,7 @@
 <div class="page-content">
   <div class="page-mask"></div>
   <div class="row collapse">
-    <aside class="column medium-2 sidebar">
+    <aside class="column medium-2 sidebar hidden-sm">
 
       <div class="row collapse menu-tree">
         
@@ -1845,95 +1845,299 @@
     </div>
 
     <footer>
-      <div class="row collapse link-footer">
-        <div class="column medium-2">
+
+      <!-- !! add className: footer with modificator - footer-desktop for desktop version footer -->
+
+      <div class="footer footer_desktop">
+
+        <div class="row collapse link-footer">
+
+          <div class="column medium-2">
+
           <p class="title">О компании</p>
+
           <ul class="list">
+
             <li><a href="#" class="link"><span>История</span></a></li>
+
             <li><a href="#" class="link"><span>Отчетность компании</span></a></li>
+
             <li><a href="#" class="link"><span>Вакансии</span></a></li>
+
             <li><a href="#" class="link"><span>Видео</span></a></li>
+
           </ul>
-        </div>
-        <div class="column medium-2">
+
+          </div>
+
+          <div class="column medium-2">
+
           <p class="title">Каталог товаров</p>
+
           <ul class="list">
+
             <li><a href="#" class="link"><span>Плитка</span></a></li>
+
             <li><a href="#" class="link"><span>Сантехника</span></a></li>
+
             <li><a href="#" class="link"><span>Напольное покрытие</span></a></li>
+
             <li><a href="#" class="link"><span>Обои</span></a></li>
+
             <li><a href="#" class="link"><span>Отопление</span></a></li>
+
             <li><a href="#" class="link"><span>Освещение</span></a></li>
+
             <li><a href="#" class="link"><span>Бассейны</span></a></li>
+
             <li><a href="#" class="link"><span>Инструменты</span></a></li>
+
             <li><a href="#" class="link"><span>Аксессуары</span></a></li>
+
           </ul>
-        </div>
-        <div class="column medium-2">
+
+          </div>
+
+          <div class="column medium-2">
+
           <p class="title">Торговые марки</p>
+
           <ul class="list">
+
             <li><a href="#" class="link"><span>Сантехника</span></a></li>
+
             <li><a href="#" class="link"><span>Плитка</span></a></li>
+
             <li><a href="#" class="link"><span>Освещение и мебель</span></a></li>
+
             <li><a href="#" class="link"><span>Строительная химия</span></a></li>
+
             <li><a href="#" class="link"><span>Кухни</span></a></li>
+
             <li><a href="#" class="link"><span>Паркет</span></a></li>
+
           </ul>
-        </div>
-        <div class="column medium-2">
+
+          </div>
+
+          <div class="column medium-2">
+
           <p class="title">Интернет-магазин</p>
+
           <ul class="list">
+
             <li><a href="#" class="link"><span>Доставка и оплата</span></a></li>
+
             <li><a href="#" class="link"><span>Контакты</span></a></li>
+
             <li><a href="#" class="link"><span>Гарантия</span></a></li>
+
             <li><a href="#" class="link"><span>Обратная связь</span></a></li>
+
             <li><a href="#" class="link"><span>Личный кабинет</span></a></li>
+
           </ul>
-        </div>
-        <div class="column medium-4 contact">
+
+          </div>
+
+          <div class="column medium-4 contact">
+
           <p class="title">Наши контакты</p>
+
           <ul class="contact">
-            <li>
-              <p>Телефон:</p>
-              <p><b>8 (044) 392-29-41</b></p>
-            </li>
-            <li>
-              <p>Адрес магазина:</p>
-              <p>Киев, просп. Победы, 89а <br><a href=""><span>карта проезда</span></a></p>
-            </li>
-            <li>
-              <p>Email: </p>
-              <p><a href="mailto:shop@agromat.ua"><span>shop@agromat.ua</span></a></p>
-            </li>
-            <li>
-              <p>Время работы: </p>
-              <p>
-                <span class="wrk">
-                  <span class="day">пн-пт</span>
-                  09<sup>00</sup>..21<sup>00</sup>
-                </span>
 
-                <span class="wek">
-                  <span class="end">сб-вс</span>
-                  10<sup>00</sup>-18<sup>00</sup>
-                </span>
-              </p>
+            <li>
+
+            <p>Телефон:</p>
+
+            <p><b>8 (044) 392-29-41</b></p>
+
             </li>
+
+            <li>
+
+            <p>Адрес магазина:</p>
+
+            <p>Киев, просп. Победы, 89а <br><a href=""><span>карта проезда</span></a></p>
+
+            </li>
+
+            <li>
+
+            <p>Email: </p>
+
+            <p><a href="mailto:shop@agromat.ua"><span>shop@agromat.ua</span></a></p>
+
+            </li>
+
+            <li>
+
+            <p>Время работы: </p>
+
+            <!-- !! change tag "p"->"div" with className: work-schedule -->
+
+            <!-- !! change change inner structure this block -->
+
+            <div class="work-schedule">
+
+              <span class="wrk">
+
+                <span class="day">пн-пт</span>
+
+                09<sup>00</sup>-21<sup>00
+
+              </sup>
+
+              </span>
+
+
+
+              <span class="wrk wrk_wek">
+
+                <span class="day day_end">сб-вс</span>
+
+                10<sup>00</sup>-18<sup>00</sup>
+
+              </span>
+
+            </div>
+
+            </li>
+
           </ul>
+
+          </div>
+
         </div>
+
+
+
+        <div class="row collapse">
+
+          <div class="column medium-6">
+
+          <img src="img/fb.png" alt="alt img">
+
+          </div>
+
+          <div class="column medium-6">
+
+          <img src="img/fb.png" alt="alt img">
+
+          </div>
+
+        </div>
+
+
+
+        <div class="row collapse">
+
+          <p class="copyright">© Агромат, 2007–2014. Керамическая плитка и сантехника. При копировании материалов ссылка на сайт обязательна. Мобильная версия сайта</p>
+
+        </div>
+
       </div>
 
-      <div class="row collapse">
-        <div class="column medium-6">
-          <img src="img/fb.png" alt="alt img">
-        </div>
-        <div class="column medium-6">
-          <img src="img/fb.png" alt="alt img">
-        </div>
+
+
+      <!-- !! new block footer with modificator footer_mobile for tab & mobile -->
+
+      <div class="footer footer_mobile">
+
+          <div class="footer-top">
+
+            <div class="row collapse">
+
+              <div class="work-schedule">
+
+                <span class="wrk">
+
+                  <span class="day">пн-пт</span>
+
+                  09<sup>00</sup>-21<sup>00
+
+                </sup>
+
+                </span>
+
+
+
+                <span class="wrk wrk_wek">
+
+                  <span class="day day_end">сб-вс</span>
+
+                  10<sup>00</sup>-18<sup>00</sup>
+
+                </span>
+
+              </div>
+
+                
+
+              <div class="footer-nav">
+
+                <ul class="footer-nav__list">
+
+                  <li class="footer-nav__item">
+
+                    <a href="" class="footer-nav__link">О магазине</a>
+
+                  </li>
+
+                  <li class="footer-nav__item">
+
+                    <a href="" class="footer-nav__link">Доставка и оплата</a>
+
+                  </li>
+
+                  <li class="footer-nav__item">
+
+                    <a href="" class="footer-nav__link">Контакты</a>
+
+                  </li>
+
+                  <li class="footer-nav__item">
+
+                    <a href="" class="footer-nav__link">Гарантия</a>
+
+                  </li>
+
+                  <li class="footer-nav__item">
+
+                    <a href="" class="footer-nav__link">Обратная связь</a>
+
+                  </li>
+
+                </ul>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="footer-bottom">
+
+           <div class="row collapse">
+
+              <div class="footer-copy">
+
+                <p class="copyright">© Plitka.kiev.ua, 2007–2016. <span class="copyright_text">Керамическая плитка и сантехника.</span></p>
+
+              </div>
+
+              <div class="footer-link-site">
+
+                <a href="">Полная версия сайта</a>
+
+              </div>
+
+            </div>
+
+          </div>
+
       </div>
-      <div class="row collapse">
-        <p class="copyright">© Агромат, 2007–2014. Керамическая плитка и сантехника. При копировании материалов ссылка на сайт обязательна. Мобильная версия сайта</p>
-      </div>
+
   </footer>
 </div>
 

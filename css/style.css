@@ -1585,6 +1585,15 @@ nav {
   border-bottom: 1px dotted #a1a1a1;
 }
 
+@media only screen and (max-width: 767px) {
+  .cbh-ph-circle-red,
+  .cbh-ph-circle1-red,
+  .cbh-ph-circle2-red,
+  .cbh-ph-circle-fill-red {
+    display: none !important;
+  }
+}
+
 /*
 *	BUTTONS
 */
@@ -2596,11 +2605,6 @@ nav {
 }
 .about .price-info:after {
   clear: both;
-}
-@media only screen and (max-width: 1219px) {
-  .about .price-info .buy-block {
-    float: none;
-  }
 }
 
 .price-info {
@@ -8417,15 +8421,6 @@ footer .row.link-footer .column:last-child {
   }
 }
 
-@media only screen and (max-width: 767px) {
-  .cbh-ph-circle-red,
-  .cbh-ph-circle1-red,
-  .cbh-ph-circle2-red,
-  .cbh-ph-circle-fill-red {
-    display: none !important;
-  }
-}
-
 .sidebar .filters-content {
   margin-top: 20px;
 }
@@ -10776,6 +10771,15 @@ footer .row.link-footer .column:last-child {
 }
 .btn.credit-calc .link {
   border-bottom: 1px dotted #a1a1a1;
+}
+
+@media only screen and (max-width: 767px) {
+  .cbh-ph-circle-red,
+  .cbh-ph-circle1-red,
+  .cbh-ph-circle2-red,
+  .cbh-ph-circle-fill-red {
+    display: none !important;
+  }
 }
 
 .post, .promo {

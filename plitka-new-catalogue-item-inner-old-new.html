@@ -972,46 +972,57 @@
         <div class="row row_slider collapse">
           <!-- !! was added the class modificator: slider_no_border_tab -->
           <div class="column medium-5 slider slider_no_border_tab">
-          <div class="stickers_set">
-            <div class="sticker">
-              <span itemprop="condition" content="new" class="new"></span>
-            </div>
-            <!-- !! was added new modificator: sticker_right -->
-            <div class="sticker sticker_mob">
-              <span class="stock-stick"></span>
-              <span class="recommended"></span>
-            </div>
-            <a href="#">
-              <div class="sticker sticker2nd"><span class="sale"></span></div>
-            </a>  
-          </div>        
-            <ul data-orbit id="slider1">
-              <li data-orbit-slide="slide-1">
-                <img src="img/slider/img-1.jpg" itemprop="image" alt="slide 1" />
-              </li>
-              <li data-orbit-slide="slide-2" class="active">
-                <img src="img/slider/img-2.jpg" itemprop="image" alt="slide 2" />
-              </li>
-              <li data-orbit-slide="slide-3">
-                <img src="img/slider/img-3.jpg" itemprop="image" alt="slide 3" />
-              </li>
-            </ul>
+            <div class="stickers_set">
+              <div class="sticker">
+                <span itemprop="condition" content="new" class="new"></span>
+              </div>
+              <!-- !! was added new modificator: sticker_right -->
+              <div class="sticker sticker_mob">
+                <span class="stock-stick"></span>
+                <span class="recommended"></span>
+              </div>
+              <a href="#">
+                <div class="sticker sticker2nd"><span class="sale"></span></div>
+              </a>  
+            </div>        
+            <div class="carousel-main-wrap js-carousel-wrap">
+              <div class="sticker" itemscope itemprop="offers" itemtype="http://schema.org/Offer">
+                <span itemprop="condition" content="new" class="new"></span>
+                <span itemprop="availability" content="in_stock" class="stock-stick"></span>
+                <span class="recommended"></span>
+              </div>
 
-            <div class="thumbnail">
-                <a data-orbit-link="slide-1" class="small button">
-                  <img src="img/slider/img-sm-1.jpg" alt="slide 1" />
-                </a>
-                <a data-orbit-link="slide-2" class="small button">
-                   <img src="img/slider/img-sm-2.jpg" alt="slide 2" />
-                </a>
-                <a data-orbit-link="slide-3" class="small button">
-                  <img src="img/slider/img-sm-3.jpg" alt="slide 3" />
-                </a>
-      
-                <!-- <div class="orbit-slides-container navigation">
-                  <button class="orbit-prev icon"></button>
-                  <button class="orbit-next icon"></button>
-                </div> -->
+              <div id="slider1" class="carousel-main js-carousel-main"> 
+                <div class="js-popup-trigger" data-popup="js-popup-item" data-slide-index='1'>
+                  <img src="img/slider/img-1.jpg" alt="" />
+                </div>
+                <div class="active js-popup-trigger" data-popup="js-popup-item" data-slide-index='2'>
+                  <img src="img/slider/img-2.jpg" alt="" />
+                </div>
+                <div class="js-popup-trigger" data-popup="js-popup-item" data-slide-index='3'>
+                  <img src="img/slider/img-3.jpg" alt="" />
+                </div>
+              
+                <div class="js-popup-trigger" data-popup="js-popup-item" data-slide-index='4'>
+                  <img src="img/slider/img-1.jpg" alt="" />
+                </div>
+              </div>
+              <button class="zoom js-popup-trigger" data-popup="js-popup-item" type="button"></button>
+            </div>
+
+            <div class="thumbnail-nav js-carousel-nav">
+              <div class="small button">
+                <img src="img/slider/img-sm-1.jpg" alt="" />
+              </div>
+              <div class="small button">
+                 <img src="img/slider/img-sm-2.jpg" alt="" />
+              </div>
+              <div class="small button">
+                <img src="img/slider/img-sm-3.jpg" alt="" />
+              </div>
+              <div class="small button">
+                <img src="img/slider/img-sm-1.jpg" alt="" />
+              </div>
             </div>
 
             <div class="scheme">

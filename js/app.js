@@ -80,7 +80,7 @@
               dots: false,
               arrows: true,
               adaptiveHeight: true,
-              initialSlide: currentSlideIndex - 1
+              // initialSlide: currentSlideIndex - 1
           });
 
            $(".js-img-slider").resize();
@@ -507,12 +507,13 @@
     }
 
     $("#modal-basket").click(function(){
-      $('.js-multiple-items-4').slickNext();
+      // $('.js-multiple-items-4').slickNext();
+      $('.js-multiple-items-4').slick('slickNext');
     });
 
 
   $(document).on('open.fndtn.reveal.basket', '[data-reveal]', function () {
-      $('.js-multiple-items-4').slickNext();
+      $('.js-multiple-items-4').slick('slickNext');
   });
     
 
