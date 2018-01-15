@@ -1753,12 +1753,14 @@ nav {
 
 .slider {
   padding-top: 0.625rem;
-  padding: 10px !important;
-  border: 1px solid #c7c7c7;
 }
 .slider.slider_no_border {
   padding: 0;
   border: none;
+}
+.slider.slider_border {
+  padding: 10px !important;
+  border: 1px solid #c7c7c7;
 }
 @media only screen and (max-width: 1024px) {
   .slider.slider_no_border_tab .orbit-container {

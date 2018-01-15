@@ -1,7 +1,5 @@
 .slider{
 	padding-top: rem-calc(10);
-	padding: 10px !important;
-	border:1px solid #c7c7c7;
 	&.slider_no_border {
 		padding: 0;
 		border: none;
@@ -10,6 +8,10 @@
 		// 	padding: 0;
 		// 	border:0;
 		// }
+	}
+	&.slider_border {
+		padding: 10px !important;
+		border:1px solid #c7c7c7;
 	}
 	&.slider_no_border_tab{
 		@include r($tablet){
