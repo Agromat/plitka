@@ -1,11 +1,15 @@
 .slider{
 	padding-top: rem-calc(10);
+	padding: 10px !important;
+	border:1px solid #c7c7c7;
 	&.slider_no_border {
+		padding: 0;
+		border: none;
 		//margin-bottom: 50px;
-		.orbit-container{
-			padding: 0;
-			border:0;
-		}
+		// .orbit-container{
+		// 	padding: 0;
+		// 	border:0;
+		// }
 	}
 	&.slider_no_border_tab{
 		@include r($tablet){
@@ -20,8 +24,8 @@
 		}
 	}
 	.orbit-container{
-		padding: 10px;
-		border:1px solid #c7c7c7;
+		//padding: 10px;
+		//border:1px solid #c7c7c7;
 		.zoom{
 			position: absolute;
 			right: 10px;
@@ -196,7 +200,7 @@
 			}
 			@include r($mob) {
 				margin-bottom: 20px;
-				padding-top: 0 !important;
+				margin-top: 0 !important;
 			}
 		}
 	}

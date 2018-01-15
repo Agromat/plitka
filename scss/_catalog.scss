@@ -7,14 +7,14 @@
 			margin-top: 0;
 		}
 		.slider {
-			padding-top: 25px;
+			margin-top: 25px;
 			// height: 295px;
 			// overflow: hidden;
 			img{
 				width: 100%;
 			}
 			@include r($desktop-m){
-				padding-top: 10px;
+				margin-top: 10px;
 				// height: auto;
 				// max-height: 295px;
 			}
