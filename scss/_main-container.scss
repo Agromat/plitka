@@ -2561,9 +2561,9 @@ footer{
 	}
 	@include r($mob) {
 		max-width: 320px;
-		max-height: 560px;
+		//max-height: 560px;
 		min-height: auto;
-		height: 100%;
+		//height: 100%;
 		padding-bottom: 100px;
 		border: none;
 		box-shadow: none;
@@ -2623,10 +2623,10 @@ footer{
 			}
 			img{
 				@include r($tablet) {
-					height: 450px;
+					//height: 450px;
 				}
 				@include r($mob) {
-					height: 235px;
+					//height: 235px;
 				}
 				@media only screen and(max-height: 450px) {
 					max-height: 125px !important;

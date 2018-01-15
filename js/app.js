@@ -80,7 +80,7 @@
               dots: false,
               arrows: true,
               adaptiveHeight: true,
-              // initialSlide: currentSlideIndex - 1
+              initialSlide: currentSlideIndex - 1
           });
 
            $(".js-img-slider").resize();
@@ -353,7 +353,7 @@
       // по клику на кнопку зума открываем модальое окно с слайдером
       $(".zoom").click(function () {
           $('#enlarged-photo').foundation('reveal', 'open');
-          resizeModal();
+          // resizeModal();
       });
 
   // open any modal window
@@ -723,27 +723,27 @@
     return false;
   });
 
-  $(document).on('opened.fndtn.reveal', '[data-reveal]', function () {
-      resizeModal();
-  });
-  $(window).resize(function() {
-      resizeModal();
-  });
+  //$(document).on('opened.fndtn.reveal', '[data-reveal]', function () {
+      // resizeModal();
+  //});
+  //$(window).resize(function() {
+      // resizeModal();
+  //});
 
-function resizeModal(){
-  var modal = $('.reveal-modal'),
-      htmlWidth =  $('html').width(),
-      htmlHeight =  $('html').height(),
-      modalDopBlockHeight = modal.find('.photo-header').height() + modal.find('.photo-footer').height(),
-      modalDopBlockWidth = modal.find('.photo-header').width() + modal.find('.photo-footer').width();
+// function resizeModal(){
+//   var modal = $('.reveal-modal'),
+//       htmlWidth =  $('html').width(),
+//       htmlHeight =  $('html').height(),
+//       modalDopBlockHeight = modal.find('.photo-header').height() + modal.find('.photo-footer').height(),
+//       modalDopBlockWidth = modal.find('.photo-header').width() + modal.find('.photo-footer').width();
 
-      var heightImg = htmlHeight - modalDopBlockHeight -150
-          heightModal = htmlHeight - 150;
+//       var heightImg = htmlHeight - modalDopBlockHeight -150
+//           heightModal = htmlHeight - 150;
 
-      modal.find('.orbit-slides-container').css('height',htmlHeight+"px");
-      modal.find('.orbit-container').css('height',heightImg+"px");
-      modal.find('.orbit-slides-container img').css('max-height',heightImg+"px");
-}
+//       modal.find('.orbit-slides-container').css('height',htmlHeight+"px");
+//       modal.find('.orbit-container').css('height',heightImg+"px");
+//       modal.find('.orbit-slides-container img').css('max-height',heightImg+"px");
+// }
 
 
 ///////////////////////////

@@ -7449,9 +7449,7 @@ footer .row.link-footer .column:last-child {
 @media only screen and (max-width: 767px) {
   .enlarged-photo {
     max-width: 320px;
-    max-height: 560px;
     min-height: auto;
-    height: 100%;
     padding-bottom: 100px;
     border: none;
     box-shadow: none;
@@ -7523,16 +7521,6 @@ footer .row.link-footer .column:last-child {
 }
 .enlarged-photo .photo .orbit-container ul li img {
   margin: 0 auto;
-}
-@media only screen and (max-width: 1024px) {
-  .enlarged-photo .photo .orbit-container img {
-    height: 450px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .enlarged-photo .photo .orbit-container img {
-    height: 235px;
-  }
 }
 @media only screen and (max-height: 450px) {
   .enlarged-photo .photo .orbit-container img {
