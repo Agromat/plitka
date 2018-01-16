@@ -4649,10 +4649,8 @@ ul.pagination li a span {
 .multiple-items.multiple-items_blocks .item-crop {
   display: inline-block;
   vertical-align: top;
-  max-width: 150px;
-  margin: 0 19px 30px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
   .multiple-items.multiple-items_blocks .item-crop {
     max-width: 120px;
     margin: 0 10px 30px;
