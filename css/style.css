@@ -4052,6 +4052,11 @@ ul.pagination li a span {
   width: 100%;
   vertical-align: middle;
 }
+@media only screen and (max-width: 767px) {
+  .itemslider .slick-slide {
+    height: 90px;
+  }
+}
 
 .carousel-main-wrap {
   position: relative;
@@ -8856,7 +8861,7 @@ footer .row.link-footer .column:last-child {
   width: 100%;
   border: 5px solid #f4f4f4;
   height: 200px;
-  display: table;
+  display: block;
 }
 @media only screen and (max-width: 767px) {
   .main-container.filters .filters-content .items .item-filtered .img-block {
@@ -8872,37 +8877,39 @@ footer .row.link-footer .column:last-child {
   top: -7px;
 }
 .main-container.filters .filters-content .items .item-filtered .img-block .orbit-container {
-  display: table-cell;
   vertical-align: middle;
   overflow: visible;
 }
 .main-container.filters .filters-content .items .item-filtered .img-block .orbit-container .orbit-slides-container {
   overflow: hidden;
 }
-.main-container.filters .filters-content .items .item-filtered .img-block .orbit-container .orbit-prev {
-  left: -22px;
+.main-container.filters .filters-content .items .item-filtered .img-block .orbit-container .slick-prev {
+  left: -19px;
 }
-.main-container.filters .filters-content .items .item-filtered .img-block .orbit-container .orbit-prev span {
+.main-container.filters .filters-content .items .item-filtered .img-block .orbit-container .slick-prev:before {
   float: left;
   background-position: -270px -90px;
 }
-.main-container.filters .filters-content .items .item-filtered .img-block .orbit-container .orbit-next {
-  right: -20px;
+.main-container.filters .filters-content .items .item-filtered .img-block .orbit-container .slick-next {
+  right: -19px;
 }
-.main-container.filters .filters-content .items .item-filtered .img-block .orbit-container .orbit-next span {
+.main-container.filters .filters-content .items .item-filtered .img-block .orbit-container .slick-next:before {
   float: right;
   background-position: -299px -90px;
 }
-.main-container.filters .filters-content .items .item-filtered .img-block .orbit-container .orbit-prev, .main-container.filters .filters-content .items .item-filtered .img-block .orbit-container .orbit-next {
+.main-container.filters .filters-content .items .item-filtered .img-block .orbit-container .slick-prev, .main-container.filters .filters-content .items .item-filtered .img-block .orbit-container .slick-next {
   top: 70px;
   margin: 0;
   width: 40px;
   height: 58px;
   padding: 10px 5px;
-  display: none;
+  visibility: hidden;
+  opacity: 0;
   background: none;
+  border: none;
+  box-shadow: none;
 }
-.main-container.filters .filters-content .items .item-filtered .img-block .orbit-container .orbit-prev span, .main-container.filters .filters-content .items .item-filtered .img-block .orbit-container .orbit-next span {
+.main-container.filters .filters-content .items .item-filtered .img-block .orbit-container .slick-prev:before, .main-container.filters .filters-content .items .item-filtered .img-block .orbit-container .slick-next:before {
   content: '';
   background-image: url(../img/icons.png);
   width: 17px;
@@ -8916,6 +8923,11 @@ footer .row.link-footer .column:last-child {
 .main-container.filters .filters-content .items .item-filtered .img-block img {
   display: block;
   margin: 0 auto;
+}
+@media only screen and (max-width: 767px) {
+  .main-container.filters .filters-content .items .item-filtered .img-block img {
+    max-height: 90px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .main-container.filters .filters-content .items .item-filtered .info-block {
@@ -9118,8 +9130,9 @@ footer .row.link-footer .column:last-child {
 .main-container.filters .filters-content .items .item-filtered.desk-visible .hidden:before {
   display: block;
 }
-.main-container.filters .filters-content .items .item-filtered.desk-visible .orbit-container .orbit-prev, .main-container.filters .filters-content .items .item-filtered.desk-visible .orbit-container .orbit-next {
-  display: block;
+.main-container.filters .filters-content .items .item-filtered.desk-visible .orbit-container .slick-prev, .main-container.filters .filters-content .items .item-filtered.desk-visible .orbit-container .slick-next {
+  visibility: visible;
+  opacity: 1;
 }
 .main-container.filters .filters-content .items .item-filtered.desk-visible .comment .readmore {
   height: auto;

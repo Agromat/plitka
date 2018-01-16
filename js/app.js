@@ -470,13 +470,13 @@
         });
     }
     
-    // if ($('.js-multiple-items-3').exists()) {
-    //   $('.js-multiple-items-3').slick({
-    //     infinite: true,
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1
-    //   });
-    // }
+    if ($('.js-multiple-items-3').exists()) {
+      $('.js-multiple-items-3').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+    }
 
 
     if ($('.js-multiple-items-2').exists()) {
