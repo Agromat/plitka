@@ -11068,15 +11068,18 @@ footer .row.link-footer .column:last-child {
 }
 @media only screen and (max-width: 1024px) {
   .search__drop {
-    width: calc(100% - 41px);
+    width: calc(340px - 42px);
     top: 41px;
-    left: 0;
+    left: auto;
+    right: 42px;
   }
 }
 @media only screen and (max-width: 767px) {
   .search__drop {
     width: calc(100% - 82px);
     top: 30px;
+    left: 0;
+    right: auto;
   }
 }
 
@@ -12267,7 +12270,7 @@ body.is-overflow {
     top: 7px;
     right: 0;
     padding: 0;
-    width: auto;
+    width: 115px;
   }
 }
 @media only screen and (max-width: 767px) {

@@ -84,13 +84,16 @@
 		left: 10px;
 	}
 	@include r($tablet) {
-		width: calc(100% - 41px);
+		width: calc(340px - 42px);
 		top: 41px;
-		left: 0;
+		left: auto;
+		right: 42px;
 	}
 	@include r($mob) {
 		width: calc(100% - 82px);
 		top: 30px;
+		left: 0;
+		right: auto;
 	}
 }
 .search__head {
