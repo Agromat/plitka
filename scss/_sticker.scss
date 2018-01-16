@@ -1,7 +1,6 @@
 @charset "UTF-8";
 .sticker{
 	position: absolute;
-	top:-10px;
 	left:0;
 	width: 100%;
 	height: auto;
@@ -133,8 +132,14 @@
 	// 	right: rem-calc(-10);
 	// }
 	.stock-stick,.recommended{
-		position: absolute;
+		display: block;
+		position: relative;
 		z-index: 6;
+		top: 0;
+		right: rem-calc(-3);
+		float: right;
+		width: 100%;
+		height: rem-calc(119);
 		background-position: top right;
 		background-repeat: no-repeat;
 		@include r($mob) {

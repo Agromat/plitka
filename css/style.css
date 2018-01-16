@@ -2907,7 +2907,6 @@ nav {
 
 .sticker {
   position: absolute;
-  top: -10px;
   left: 0;
   width: 100%;
   height: auto;
@@ -3031,8 +3030,14 @@ nav {
   }
 }
 .sticker .stock-stick, .sticker .recommended {
-  position: absolute;
+  display: block;
+  position: relative;
   z-index: 6;
+  top: 0;
+  right: -0.1875rem;
+  float: right;
+  width: 100%;
+  height: 7.4375rem;
   background-position: top right;
   background-repeat: no-repeat;
 }
