@@ -1919,6 +1919,10 @@ footer{
 	.close-reveal-modal {
 		right: -35px;
 		top: -35px;
+		@include r($mob) {
+			top: 22px;
+			right: 10px;
+		}
 	}
 	p {
 		font-size: 14px;
@@ -1988,10 +1992,39 @@ footer{
 			padding-left: 10px;
 			width: 43%;
 			z-index: 1;
+			@include r($mob) {
+				width: 100%;
+				&:before {
+					display: none !important;
+				}
+				.radio-box {
+					display: inline-block;
+					width: 32%;
+					margin-bottom: 10px;
+					span {
+						height: 60px;
+					}
+				}
+				
+			}
+		}
+		@include r($mob) {
+			.column_group {
+				padding: 10px !important;
+			}
 		}
 		> .medium-7 {
 			padding-right: 10px;
 			width: 57%;
+			@include r($mob) {
+				width: 100%;
+				&:before {
+					display: none !important;
+				}
+				.price {
+					font-size: 18px;
+				}
+			}
 		}
 	}
 	
@@ -2119,6 +2152,9 @@ footer{
 	top: -25px;
 	right: -40px;
 	content: url("../img/close-btn.png");
+	@include r($mob) {
+		content: url("../img/close-btn-gray.png");
+	}
 }
 
 .basket {
@@ -2230,11 +2266,11 @@ footer{
 			}
 		}
 	}
-	.close-reveal-modal {
-		@include r($tablet) {
-			right: 0;
-		}
-	}
+	// .close-reveal-modal {
+	// 	@include r($tablet) {
+	// 		right: 0;
+	// 	}
+	// }
 	.basket-view{
 		position: relative;
 		padding: 29px 34px 0;
@@ -2444,34 +2480,41 @@ footer{
 
 .reveal-modal{
 	.close-reveal-modal {
-		&.close-reveal-modal_mob {
-			@include r($mob) {
-				position: absolute;
-				// top: 20px;
-				// left: -20px;
-				&:before, &:after {
-					content: "";
-					position: absolute;
-					top: 10px;
-					right: -3px;
-					height: 1px;
-					width: 30px;
-					background-color: $ddgray;
-				}
-				&:before {
-					transform: rotate(45deg);
-				}
-				&:after {
-					transform: rotate(-45deg);
-				}
-				@include r($mob) {
-					content: none;
-						top: 18px;
-						right: 10px;
-					color: transparent;
-				}
-			}
+		right: -35px;
+		top: -35px;
+		@include r($mob) {
+			top: 22px;
+			right: 10px;
 		}
+
+		// &.close-reveal-modal_mob {
+		// 	@include r($mob) {
+		// 		position: absolute;
+		// 		// top: 20px;
+		// 		// left: -20px;
+		// 		&:before, &:after {
+		// 			content: "";
+		// 			position: absolute;
+		// 			top: 10px;
+		// 			right: -3px;
+		// 			height: 1px;
+		// 			width: 30px;
+		// 			background-color: $ddgray;
+		// 		}
+		// 		&:before {
+		// 			transform: rotate(45deg);
+		// 		}
+		// 		&:after {
+		// 			transform: rotate(-45deg);
+		// 		}
+		// 		@include r($mob) {
+		// 			content: none;
+		// 				top: 18px;
+		// 				right: 10px;
+		// 			color: transparent;
+		// 		}
+		// 	}
+		// }
 	}
 }
 
@@ -2542,6 +2585,7 @@ footer{
 			width: 100%;
 			padding: 14px 18px 15px;
 			height: auto;
+			right: 0;
 		}
 		.btn.gradient {
 			position: absolute;
