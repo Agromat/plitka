@@ -7353,6 +7353,11 @@ footer .row.link-footer .column:last-child {
   padding: 14px 17px;
   background-color: #fcf2e9;
 }
+@media only screen and (max-width: 1024px) {
+  .basket .basket-actions .total-discount {
+    margin: 0;
+  }
+}
 .basket .basket-actions .total-discount .sm-desk {
   float: left;
   font-size: 18px;
@@ -7383,6 +7388,13 @@ footer .row.link-footer .column:last-child {
 }
 .basket .basket-actions .btn-group .btn.close-reveal-modal.left.default {
   content: none;
+  top: 0.5rem;
+  right: 0.6875rem;
+}
+@media only screen and (max-width: 767px) {
+  .basket .basket-actions .btn-group .btn.close-reveal-modal.left.default {
+    right: auto;
+  }
 }
 
 .reveal-modal .close-reveal-modal {

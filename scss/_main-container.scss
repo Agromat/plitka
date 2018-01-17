@@ -2441,6 +2441,9 @@ footer{
 			border: 3px solid #ed1c24;
 			padding: 14px 17px;
 			background-color: #fcf2e9;
+			@include r($tablet) {
+				margin: 0;
+			}
 			.sm-desk{
 				float: left;
 				font-size: 18px;
@@ -2469,6 +2472,11 @@ footer{
 				position: relative;
 				&.close-reveal-modal.left.default{
 					content: none;
+					top: 0.5rem;
+    				right: 0.6875rem;
+    				@include r($mob) {
+						right: auto;
+					}
 				}
 			}
 		}

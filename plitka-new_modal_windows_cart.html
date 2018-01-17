@@ -1387,14 +1387,24 @@
       </div>
       <div class="row collapse basket-actions">
         <div class="row collapse total">
-          <p class="sm-desk">Итого, грн</p>
-          <p class="price">3 200</p>
+            <p class="sm-desk">Итого, грн</p>
+            <p class="price" id="cartPopupTotalPrice">4 200,80</p>
         </div>
-        <div class="row collapse btn-group">
-          <a href="#" class="close-reveal-modal left btn default">Продолжить покупки</a>
-          <a href="order.html" class="btn gradient right">Оформить заказ</a>
+                <div style="" id="cart-discount-part">
+        <div class="row collapse total-discount">
+            <p class="sm-desk">За этот заказ вы получаете бонус, грн</p>
+            <p class="price" id="cartPopupDiscountValue">0,00</p>
         </div>
-      </div>
+        <div class="row collapse total">
+            <p class="sm-desk">Итого со скидкой, грн</p>
+            <p class="price" id="cartPopupTotalDiscountPrice">4 200,80</p>
+        </div>
+        </div>
+                <div class="row collapse btn-group">
+            <a href="https://plitka.kiev.ua/about#" class="close-reveal-modal left btn default">Продолжить покупки</a>
+            <a href="https://plitka.kiev.ua/cart/order" class="btn gradient right" id="cartPopupOrderButton">Оформить заказ</a>
+        </div>
+    </div>
       <div class="row collapse basket-footer">
         <p class="title">Аксессуары, которые подойдут этому товару</p>
         <div class="multiple-items js-multiple-items-4">
