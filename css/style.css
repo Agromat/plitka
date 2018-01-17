@@ -10900,6 +10900,11 @@ footer .row.link-footer .column:last-child {
   background: none;
   overflow: visible;
 }
+@media only screen and (max-width: 767px) {
+  .promo__main .price-block {
+    font-size: 14px;
+  }
+}
 .promo__media a {
   display: block;
 }

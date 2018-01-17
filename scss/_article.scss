@@ -67,6 +67,14 @@
 		background: none;
 		overflow: visible;
 	}
+	&__main {
+		.price-block {
+			@include r($mob) {
+				font-size: 14px;
+			}
+		}
+	}
+
 	&__media{
 		// width: 260px;
 		a{
