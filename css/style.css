@@ -2907,7 +2907,7 @@ nav {
 
 .sticker {
   position: absolute;
-  top: 0;
+  top: -10px;
   left: 0;
   width: 100%;
   height: auto;
@@ -8260,7 +8260,7 @@ footer .row.link-footer .column:last-child {
 .prod__text {
   overflow: hidden;
   max-width: 130px;
-  margin-bottom: 10px;
+  height: 100px;
 }
 .prod__title {
   display: inline-block;

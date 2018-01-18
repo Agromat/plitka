@@ -3288,7 +3288,8 @@ footer{
 	&__text {
 		overflow: hidden;
 		max-width: 130px;
-		margin-bottom: 10px;
+		//margin-bottom: 10px;
+		height: 100px;
 	}
 	&__title {
 		display: inline-block;
