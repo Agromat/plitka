@@ -1070,6 +1070,14 @@ ul.pagination{
 	}
 }
 
+.item-filtered {
+	@include r($mob) {
+		.stock-stick {
+			display: none;
+		} 
+	}
+}
+
 .item-filtered,
 .multiple-items-4,
 .multiple-items{
