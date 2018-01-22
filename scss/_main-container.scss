@@ -903,6 +903,11 @@ ul.pagination{
 		max-width: 150px;
 		margin: 0 auto;
 	}
+	.order-btn {
+		.right {
+			font-size: 11px;
+		}
+	}
 }
 
 .display-buy-btn{
@@ -1209,7 +1214,7 @@ ul.pagination{
 				padding: 10px 10px 15px 10px;
 			}
 			&.desk-visible{
-				.btn, .link, .deskript{
+				.btn, .link, .deskript, .right{
 					display: block !important;
 				}
 				border: 1px solid $border;
@@ -1342,6 +1347,14 @@ ul.pagination{
 						background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 1%, rgba(255, 255, 255, 0.5) 100%);
 						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#80ffffff',GradientType=0 );
 					}*/
+				}
+				.right {
+					display: none;
+				}
+
+				.text {
+					font-size: 12px;
+					line-height: 1.4;
 				}
 			}
 
@@ -2942,6 +2955,16 @@ footer{
 		}
 		@include r($mob) {
 			width: auto;
+		}
+		.img {
+			height: 130px;
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			img {
+				width: auto;
+				max-height: 130px;
+			}
 		}
 	}
 	.item-crop {
