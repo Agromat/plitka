@@ -2067,6 +2067,11 @@ nav {
   border-radius: 8px;
   padding: 1.375rem 1.25rem 1.375rem 1.25rem;
 }
+@media only screen and (max-width: 767px) {
+  .about .buy-block .price {
+    padding: 10px;
+  }
+}
 .about .buy-block .price.orderItem, .about .buy-block .price .archiveItem {
   background: #f9f8ee;
 }
@@ -2244,6 +2249,11 @@ nav {
 }
 .about .buy-block .price .order-btn .btn {
   width: 180px;
+}
+@media only screen and (max-width: 767px) {
+  .about .buy-block .price .order-btn .btn {
+    width: 100%;
+  }
 }
 .about .buy-block .credit {
   padding: 1rem 0 1.25rem 1.25rem;
@@ -2605,6 +2615,15 @@ nav {
 }
 .about .price-info:after {
   clear: both;
+}
+
+@media only screen and (max-width: 1219px) {
+  .about.side .column.medium-4 {
+    width: 100%;
+  }
+  .about.side .column.medium-4 .delivery {
+    width: 100%;
+  }
 }
 
 .price-info {
@@ -4676,6 +4695,8 @@ ul.pagination li a span {
 .multiple-items.multiple-items_blocks .item-crop {
   display: inline-block;
   vertical-align: top;
+  max-width: 150px;
+  margin: 0 19px 30px;
 }
 @media only screen and (max-width: 1024px) {
   .multiple-items.multiple-items_blocks .item-crop {

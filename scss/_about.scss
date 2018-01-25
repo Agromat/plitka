@@ -36,6 +36,9 @@
 			-moz-border-radius: 8px;
 			border-radius: 8px;
 			padding: rem-calc(22) rem-calc(20) rem-calc(22) rem-calc(20);
+			@include r($mob) {
+				padding: 10px;
+			}
 			&.orderItem, .archiveItem{
 				background: $beige;
 				.data {
@@ -213,6 +216,9 @@
 			.order-btn{
 				.btn{
 					width: 180px;
+					@include r($mob) {
+						width: 100%;
+					}
 				}
 			}
 		}
@@ -528,9 +534,21 @@
 		@include clearfix();
 		.buy-block{
 			@include r($desktop-m) {
-				// float: none;
+				//float: none;
 			}
 		}
+	}
+}
+
+.about.side {
+	.column.medium-4 {
+			@include r($desktop-m) {
+				width: 100%;
+				.delivery {
+					width: 100%;
+				}
+		}
+
 	}
 }
 

@@ -1132,8 +1132,8 @@ ul.pagination{
 			display: inline-block;
 			vertical-align: top;
 			// width: 45%;
-			//max-width: 150px;
-			//margin: 0 19px 30px;
+			max-width: 150px;
+			margin: 0 19px 30px;
 			@include r($tablet) {
 				max-width: 120px;
 				margin: 0 10px 30px;
