@@ -1078,7 +1078,7 @@ ul.pagination{
 .item-filtered {
 	@include r($mob) {
 		.stock-stick {
-			display: none;
+			right: -12px;
 		} 
 	}
 }

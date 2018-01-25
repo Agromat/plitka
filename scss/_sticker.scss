@@ -5,6 +5,10 @@
 	left:0;
 	width: 100%;
 	height: auto;
+	@include r($mob) {
+		top: -5px;
+	}
+
 	&.sticker_mob {
 		display: none;
 		@include r($mob) {
@@ -39,21 +43,31 @@
 			-moz-transform: skew(20deg);
 		  	-o-transform: skew(20deg);
 		}
-		// @include r($mob) {
-		// 	left: 3px;
-		// 	width: rem-calc(48);
-		// 	height: rem-calc(15);
-		// 	font-size: rem-calc(7);
-		// }
+		@include r($mob) {
+			left: 3px;
+			width: rem-calc(67);
+			height: rem-calc(21);
+			line-height: rem-calc(21);
+			font-size: rem-calc(10);
+		}
 	}
 	&.sticker2nd {
-		top:35px;
+		top:25px;
+		@include r($mob) {
+			top: 20px;
+		}
 	}
 	&.sticker3rd {
-		top:70px;
+		top:60px;
+		@include r($mob) {
+			top: 45px;
+		}
 	}
 	&.sticker4th {
-		top:105px;
+		top:95px;
+		@include r($mob) {
+			top: 70px;
+		}
 	}
 	&.small {
 	.new, .markdown, .sale{
@@ -184,9 +198,9 @@
 .stickers_set {
 	position: absolute;
 	width: 100%;
-	@include r($tablet){
-		top: -6px;
-	}
+	// @include r($tablet){
+	// 	top: -6px;
+	// }
 }
 
 .stick-label {

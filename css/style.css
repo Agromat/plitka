@@ -2931,6 +2931,11 @@ nav {
   width: 100%;
   height: auto;
 }
+@media only screen and (max-width: 767px) {
+  .sticker {
+    top: -5px;
+  }
+}
 .sticker.sticker_mob {
   display: none;
 }
@@ -2968,14 +2973,38 @@ nav {
   -moz-transform: skew(20deg);
   -o-transform: skew(20deg);
 }
+@media only screen and (max-width: 767px) {
+  .sticker .new, .sticker .markdown, .sticker .sale {
+    left: 3px;
+    width: 4.1875rem;
+    height: 1.3125rem;
+    line-height: 1.3125rem;
+    font-size: 0.625rem;
+  }
+}
 .sticker.sticker2nd {
-  top: 35px;
+  top: 25px;
+}
+@media only screen and (max-width: 767px) {
+  .sticker.sticker2nd {
+    top: 20px;
+  }
 }
 .sticker.sticker3rd {
-  top: 70px;
+  top: 60px;
+}
+@media only screen and (max-width: 767px) {
+  .sticker.sticker3rd {
+    top: 45px;
+  }
 }
 .sticker.sticker4th {
-  top: 105px;
+  top: 95px;
+}
+@media only screen and (max-width: 767px) {
+  .sticker.sticker4th {
+    top: 70px;
+  }
 }
 .sticker.small .new, .sticker.small .markdown, .sticker.small .sale {
   width: 4.375rem;
@@ -3104,11 +3133,6 @@ nav {
 .stickers_set {
   position: absolute;
   width: 100%;
-}
-@media only screen and (max-width: 1024px) {
-  .stickers_set {
-    top: -6px;
-  }
 }
 
 .stick-label {
@@ -4637,7 +4661,7 @@ ul.pagination li a span {
 
 @media only screen and (max-width: 767px) {
   .item-filtered .stock-stick {
-    display: none;
+    right: -12px;
   }
 }
 
