@@ -147,7 +147,7 @@ body{
                 transform: none;
                 left: 0;
             }
-            .phone {
+            .connection {
                 margin-top: 0;
             }
             .callback {
@@ -360,6 +360,7 @@ body{
         vertical-align: top;
         width: 33%;
         margin-bottom: 10px;
+       
         &.search{
             width: 100%;
         }
@@ -368,7 +369,7 @@ body{
             &.callback{
                 width: 58%;
             }
-            &.phone{
+            &.connection{
                 width: 50%;
             }
             &.schedule{
@@ -377,7 +378,7 @@ body{
         }
         @include r($tablet) {
             padding: 0;
-            &.callback, &.phone{
+            &.callback, &.connection{
                 width: 100%;
                 float: left;
             }
@@ -386,6 +387,14 @@ body{
             }
             &.search{
                 width: auto;
+            }
+        }
+        @include r($mob) {
+            float: none;
+            font-size: 0;
+            text-align: center;
+            &.callback, &.connection{
+                width: 50%;
             }
         }
     }
@@ -397,20 +406,63 @@ body{
             color:$ddgray;
         }
     }
-    .phone{
+
+    &__mob-btn {
+        @include r($mob) {
+            width: 50%;
+            display: inline-block;
+            border: 1px solid #abadb3;
+            min-height: 44px;
+            padding: 0 5px;
+            float: none;
+
+            a {
+                height: 40px;
+                color: $ddgray;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                span {
+                    border-bottom: none;
+                }
+            }
+            a:hover {
+                span {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+    .connection{
         float: left;
         @include r($tablet) {
             margin: 7px 5px 5px 10px;
         }
         @include r($mob) {
-            display: none;
+            margin: 0;
+            margin-bottom: 10px;
         }
+       
         .tel{
             color: $ddgray;
             font-size: rem-calc(18);
             font-weight: 700;
             margin-bottom: rem-calc(7);
             line-height: rem-calc(16);
+             @include r($mob) {
+                display: none;
+            }
+        }
+        .city {
+            font-size: 13px;
+            margin-top: 5px;
+            @include r($tablet) {
+                max-width: 180px;
+            }
+            @include r($mob) {
+                max-width: 100%;
+                margin: 0;
+            }
         }
         p{
             color: $llgray;
@@ -431,6 +483,7 @@ body{
         @include r($desktop-m){
             float: none;
             // display: block;
+            margin-top: rem-calc(1);
             margin-bottom: rem-calc(20);
             padding-left: 10px;
         }
@@ -438,7 +491,8 @@ body{
             padding-left: 10px;
         }
         @include r($mob) {
-            display: none;
+            margin: 0;
+            margin-bottom: 10px;
         }
     } 
     .schedule {

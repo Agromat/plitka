@@ -11978,7 +11978,7 @@ body.is-overflow {
     left: 0;
   }
 }
-.menuinfo_order-nav .menuinfo__bl.info .phone {
+.menuinfo_order-nav .menuinfo__bl.info .connection {
   margin-top: 0;
 }
 .menuinfo_order-nav .menuinfo__bl.info .callback {
@@ -12238,7 +12238,7 @@ body.is-overflow {
   .info__items.callback {
     width: 58%;
   }
-  .info__items.phone {
+  .info__items.connection {
     width: 50%;
   }
   .info__items.schedule {
@@ -12249,7 +12249,7 @@ body.is-overflow {
   .info__items {
     padding: 0;
   }
-  .info__items.callback, .info__items.phone {
+  .info__items.callback, .info__items.connection {
     width: 100%;
     float: left;
   }
@@ -12260,6 +12260,16 @@ body.is-overflow {
     width: auto;
   }
 }
+@media only screen and (max-width: 767px) {
+  .info__items {
+    float: none;
+    font-size: 0;
+    text-align: center;
+  }
+  .info__items.callback, .info__items.connection {
+    width: 50%;
+  }
+}
 .info a {
   color: #0053a0;
   display: block;
@@ -12268,27 +12278,71 @@ body.is-overflow {
 .info a:hover {
   color: #333;
 }
-.info .phone {
+@media only screen and (max-width: 767px) {
+  .info__mob-btn {
+    width: 50%;
+    display: inline-block;
+    border: 1px solid #abadb3;
+    min-height: 44px;
+    padding: 0 5px;
+    float: none;
+  }
+  .info__mob-btn a {
+    height: 40px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .info__mob-btn a span {
+    border-bottom: none;
+  }
+  .info__mob-btn a:hover span {
+    border-bottom: none;
+  }
+}
+.info .connection {
   float: left;
 }
 @media only screen and (max-width: 1024px) {
-  .info .phone {
+  .info .connection {
     margin: 7px 5px 5px 10px;
   }
 }
 @media only screen and (max-width: 767px) {
-  .info .phone {
-    display: none;
+  .info .connection {
+    margin: 0;
+    margin-bottom: 10px;
   }
 }
-.info .phone .tel {
+.info .connection .tel {
   color: #333;
   font-size: 1.125rem;
   font-weight: 700;
   margin-bottom: 0.4375rem;
   line-height: 1rem;
 }
-.info .phone p {
+@media only screen and (max-width: 767px) {
+  .info .connection .tel {
+    display: none;
+  }
+}
+.info .connection .city {
+  font-size: 13px;
+  margin-top: 5px;
+}
+@media only screen and (max-width: 1024px) {
+  .info .connection .city {
+    max-width: 180px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .info .connection .city {
+    max-width: 100%;
+    margin: 0;
+  }
+}
+.info .connection p {
   color: #999;
   margin-top: 0;
   margin-bottom: 0;
@@ -12296,7 +12350,7 @@ body.is-overflow {
   line-height: 1rem;
 }
 @media only screen and (max-width: 1024px) {
-  .info .phone p {
+  .info .connection p {
     display: none;
   }
 }
@@ -12309,6 +12363,7 @@ body.is-overflow {
 @media only screen and (max-width: 1219px) {
   .info .callback {
     float: none;
+    margin-top: 0.0625rem;
     margin-bottom: 1.25rem;
     padding-left: 10px;
   }
@@ -12320,7 +12375,8 @@ body.is-overflow {
 }
 @media only screen and (max-width: 767px) {
   .info .callback {
-    display: none;
+    margin: 0;
+    margin-bottom: 10px;
   }
 }
 .info .schedule {
