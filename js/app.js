@@ -360,6 +360,25 @@
   );
 
 
+  $('.product-box__slider .slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-nav'
+  });
+  
+  $('.product-box__slider .slider-nav').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: false,
+    centerMode: true,
+    focusOnSelect: true,
+    centerPadding: 1
+  });
+
+
   $(".js-dropdown-catalog").hover(
     function() {
       var menu = $("div[data-drop='"+$(this).attr("data-drop")+"']");
@@ -420,4 +439,3 @@
 /////////////////////////
 // end new menu code   //
 /////////////////////////
-
