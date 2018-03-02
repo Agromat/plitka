@@ -4285,9 +4285,6 @@ footer .row.link-footer .column:last-child {
   height: auto;
   margin-bottom: 10px;
 }
-.product-item-collection-in .product-item__img img {
-  max-height: 110px;
-}
 .product-item-collection-in .product-item__img .slick-prev {
   left: -12px;
 }
@@ -4304,7 +4301,7 @@ footer .row.link-footer .column:last-child {
 }
 .product-item-collection-in .product-item__img .slick-prev, .product-item-collection-in .product-item__img .slick-next {
   z-index: 1000;
-  top: 40px;
+  top: calc(50% - 29px);
   margin: 0;
   width: 40px;
   height: 58px;
