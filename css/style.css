@@ -4267,7 +4267,7 @@ footer .row.link-footer .column:last-child {
 
 .product-item-collection-in {
   display: flex;
-  justify-content: space-between;
+  justify-content: baseline;
   flex-wrap: wrap;
 }
 .product-item-collection-in .product-item {
