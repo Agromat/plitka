@@ -4274,6 +4274,9 @@ footer .row.link-footer .column:last-child {
   margin: 0 10px 20px 10px;
   width: 30%;
 }
+.product-item-collection-in .product-item__main {
+  display: inline-block;
+}
 .product-item-collection-in .product-item:hover .slick-prev, .product-item-collection-in .product-item:hover .slick-next {
   visibility: visible;
   opacity: 1;

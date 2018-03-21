@@ -157,6 +157,9 @@
 	.product-item {
 		margin: 0 10px 20px 10px;
 		width: 30%;
+		&__main {
+			display: inline-block;
+		}
 
 		&:hover {
 			.slick-prev,.slick-next {
