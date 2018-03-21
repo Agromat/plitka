@@ -4288,6 +4288,10 @@ footer .row.link-footer .column:last-child {
   height: auto;
   margin-bottom: 10px;
 }
+.product-item-collection-in .product-item__img .no-image {
+  object-fit: cover;
+  height: 110px;
+}
 .product-item-collection-in .product-item__img .slick-prev {
   left: -12px;
 }

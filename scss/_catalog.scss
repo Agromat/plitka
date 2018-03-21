@@ -179,6 +179,11 @@
 			//max-height: 110px;
 		}
 
+		.no-image {
+			object-fit: cover;
+			height: 110px;
+		}
+
 		.slick-prev {
 		 	left: -12px;
 		 	&:before{
