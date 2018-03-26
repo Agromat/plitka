@@ -4275,7 +4275,7 @@ footer .row.link-footer .column:last-child {
   width: 30%;
 }
 .product-item-collection-in .product-item__main {
-  display: inline-block;
+  display: block;
 }
 .product-item-collection-in .product-item:hover .slick-prev, .product-item-collection-in .product-item:hover .slick-next {
   visibility: visible;
