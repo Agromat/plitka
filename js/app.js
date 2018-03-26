@@ -89,7 +89,7 @@
 
         }, 230);
 
-        setTimeout(function(){
+        //setTimeout(function(){
 
           var sliderItemFour = $(".js-multiple-items-4");
 
@@ -104,7 +104,9 @@
             slider.not('.slick-initialized').slick(option);
           };
 
-          }, 100);
+          sliderItemFour.resize();
+
+          //}, 100);
     });
 
     $('[data-reveal]').on('closed', function () {
