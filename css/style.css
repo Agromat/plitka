@@ -9885,10 +9885,13 @@ footer .row.link-footer .column:last-child {
   font-size: 18px;
   background-color: #eef6f9;
 }
+.filtersPop.open .show-all {
+  margin-bottom: 5px;
+}
 .filtersPop.open .filters-items .accordion-navigation {
   width: 100%;
   padding-right: 0;
-  margin-bottom: 20px !important;
+  margin-bottom: 0 !important;
 }
 .filtersPop.open .accordion .accordion-navigation > a:hover,
 .filtersPop.open .accordion dd > a:hover {
