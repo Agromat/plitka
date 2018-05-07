@@ -221,6 +221,9 @@
 	}
 }
 
+
+//уменьшаем размер кнопки и ее положение на мобильных устройствах
+
 .cbh-ph-circle-red,
 .cbh-ph-circle1-red,
 .cbh-ph-circle2-red,
@@ -229,3 +232,21 @@
 			display: none !important;
 		}
 }
+
+.cbh-phone {
+	@include r($mob) {
+		width: 65px !important;
+		height: 65px !important;
+		left: auto !important;
+		top: auto !important;
+		right: 20px !important;
+		bottom: 20px !important;
+		.cbh-ph-img-circle-red {
+			top: 0 !important;
+			left: 0 !important;
+		}
+	}
+	
+}
+
+//уменьшаем размер кнопки и ее положение на мобильных устройствах

@@ -1594,6 +1594,21 @@ nav {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .cbh-phone {
+    width: 65px !important;
+    height: 65px !important;
+    left: auto !important;
+    top: auto !important;
+    right: 20px !important;
+    bottom: 20px !important;
+  }
+  .cbh-phone .cbh-ph-img-circle-red {
+    top: 0 !important;
+    left: 0 !important;
+  }
+}
+
 /*
 *	BUTTONS
 */
@@ -11058,6 +11073,21 @@ footer .row.link-footer .column:last-child {
   .cbh-ph-circle2-red,
   .cbh-ph-circle-fill-red {
     display: none !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .cbh-phone {
+    width: 65px !important;
+    height: 65px !important;
+    left: auto !important;
+    top: auto !important;
+    right: 20px !important;
+    bottom: 20px !important;
+  }
+  .cbh-phone .cbh-ph-img-circle-red {
+    top: 0 !important;
+    left: 0 !important;
   }
 }
 
