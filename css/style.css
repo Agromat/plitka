@@ -3929,7 +3929,7 @@ ul.pagination li a span {
   -webkit-tap-highlight-color: transparent;
 }
 .slick-slider.multiple-items {
-  height: 260px;
+  height: auto;
 }
 
 .slick-list.draggable {
@@ -4693,6 +4693,13 @@ ul.pagination li a span {
   line-height: 1;
   word-spacing: -1px;
 }
+@media only screen and (max-width: 767px) {
+  .item-filtered.insale .price > span,
+  .multiple-items-4.insale .price > span,
+  .multiple-items.insale .price > span {
+    font-size: 15px;
+  }
+}
 .item-filtered.insale .price .old,
 .multiple-items-4.insale .price .old,
 .multiple-items.insale .price .old {
@@ -4754,6 +4761,11 @@ ul.pagination li a span {
   color: #0053a0;
   text-decoration: underline;
 }
+@media only screen and (max-width: 767px) {
+  .multiple-items.multiple-items_blocks .item-crop .title {
+    font-size: 10px;
+  }
+}
 .multiple-items.multiple-items_blocks .item-crop .title span {
   border: none;
 }
@@ -4762,8 +4774,18 @@ ul.pagination li a span {
   font-size: 21px;
   line-height: 1.2;
 }
+@media only screen and (max-width: 767px) {
+  .multiple-items.multiple-items_blocks .item-crop .price {
+    font-size: 15px;
+  }
+}
 .multiple-items.multiple-items_blocks .item-crop .price sup {
   font-size: 14px;
+}
+@media only screen and (max-width: 767px) {
+  .multiple-items.multiple-items_blocks .item-crop .price sup {
+    font-size: 10px;
+  }
 }
 .multiple-items.multiple-items_blocks .item-crop .price_visible-xs {
   display: none;
@@ -4799,6 +4821,10 @@ ul.pagination li a span {
   padding: 0;
 }
 
+.multiple-items-4 .item-crop,
+.multiple-items .item-crop {
+  overflow: hidden;
+}
 .multiple-items-4 .slick-slide,
 .multiple-items .slick-slide {
   padding: 10px 20px 15px 20px;
@@ -4855,6 +4881,12 @@ ul.pagination li a span {
   line-height: 16px;
   display: block;
 }
+@media only screen and (max-width: 767px) {
+  .multiple-items-4 .slick-slide .desckription .title,
+  .multiple-items .slick-slide .desckription .title {
+    font-size: 10px;
+  }
+}
 .multiple-items-4 .slick-slide .desckription .title span,
 .multiple-items .slick-slide .desckription .title span {
   border-bottom: 1px solid #0053a0;
@@ -4881,10 +4913,22 @@ ul.pagination li a span {
   font-weight: 700;
   color: #333;
 }
+@media only screen and (max-width: 767px) {
+  .multiple-items-4 .slick-slide .desckription .price,
+  .multiple-items .slick-slide .desckription .price {
+    font-size: 15px;
+  }
+}
 .multiple-items-4 .slick-slide .desckription .price sup,
 .multiple-items .slick-slide .desckription .price sup {
   top: -8px;
-  font-size: 13px;
+  font-size: 15px;
+}
+@media only screen and (max-width: 767px) {
+  .multiple-items-4 .slick-slide .desckription .price sup,
+  .multiple-items .slick-slide .desckription .price sup {
+    font-size: 10px;
+  }
 }
 .multiple-items-4 .slick-slide .desckription .btn,
 .multiple-items .slick-slide .desckription .btn {

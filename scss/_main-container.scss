@@ -1094,6 +1094,9 @@ ul.pagination{
 				font-size: 21px;
 				line-height: 1;
 				word-spacing: -1px;
+				@include r($mob) {
+					font-size: 15px;
+				}
 			}
 			.old{
 				line-height: 1;
@@ -1148,6 +1151,9 @@ ul.pagination{
 				font-weight: 700;
 				color: $blue;
 				text-decoration: underline;
+				@include r($mob) {
+					font-size: 10px;
+				}
 				span {
 					border: none;
 				}
@@ -1156,8 +1162,14 @@ ul.pagination{
 				margin-bottom: 0;
 				font-size: 21px;
 				line-height: 1.2;
+				@include r($mob) {
+					font-size: 15px;
+				}
 				sup {
 					font-size: 14px;
+					@include r($mob) {
+						font-size: 10px;
+					}
 				}
 				&_visible-xs {
 					display: none;
@@ -1205,6 +1217,9 @@ ul.pagination{
 
 .multiple-items-4,
 .multiple-items{
+		.item-crop {
+			overflow: hidden;
+		}
 		.slick-slide{
 			padding: 10px 20px 15px 20px;
 			border: 1px solid transparent;
@@ -1245,6 +1260,9 @@ ul.pagination{
 					margin-bottom: 10px;
 					line-height: 16px;
 					display: block;
+					@include r($mob) {
+						font-size: 10px;
+					}
 					span{
 						border-bottom: 1px solid $blue;
 					}
@@ -1266,9 +1284,15 @@ ul.pagination{
 					line-height: 16px;
 					font-weight: 700;
 					color: $ddgray;
+					@include r($mob) {
+						font-size: 15px;
+					}
 					sup{
 						top: -8px;
-						font-size: 13px;
+						font-size: 15px;
+						@include r($mob) {
+							font-size: 10px;
+						}
 					}
 				}
 				.btn{

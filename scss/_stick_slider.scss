@@ -14,7 +14,8 @@
     touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
 	&.multiple-items{ 
-		height: 260px;
+		//height: 260px;
+		height: auto;
 	}
 }
 
