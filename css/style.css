@@ -6951,6 +6951,14 @@ footer .row.link-footer .column:last-child {
   transform: translateY(-50%);
 }
 @media only screen and (max-width: 767px) {
+  .reveal-modal.is-fixed, .modal.is-fixed {
+    position: absolute;
+    top: 0 !important;
+    transform: none;
+    overflow: auto;
+  }
+}
+@media only screen and (max-width: 767px) {
   .reveal-modal.modal_callback, .modal.modal_callback {
     width: 100%;
     border: none;
