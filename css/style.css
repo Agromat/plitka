@@ -5668,7 +5668,6 @@ footer .row.link-footer .column:last-child {
 
 .product-item-collection-in {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 .product-item-collection-in .product-item {
@@ -5759,6 +5758,7 @@ footer .row.link-footer .column:last-child {
   position: relative;
   padding-bottom: 35px;
   min-height: 115px;
+  display: block;
 }
 .product-item_notice .withdrawn-from-sale {
   position: absolute;

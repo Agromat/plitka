@@ -194,7 +194,7 @@
 
 .product-item-collection-in {
 	display: flex;
-	justify-content: space-between;
+	//justify-content: space-between;
 	flex-wrap: wrap;
 
 	.product-item {
@@ -293,6 +293,7 @@
 		position: relative; 
 		padding-bottom: 35px;
 		min-height: 115px;
+		display: block;
 	}
 	.withdrawn-from-sale{
 		position: absolute;
