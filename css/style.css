@@ -3214,7 +3214,7 @@ nav {
   margin-left: 92px;
 }
 @media only screen and (max-width: 767px) {
-  .sticker-in {
+  .sticker-in_l {
     margin-left: 70px;
   }
 }
@@ -13158,7 +13158,7 @@ body.is-overflow {
 
 .tab {
   position: relative;
-  z-index: 1;
+  z-index: 11;
 }
 .tab__list {
   margin: 0;

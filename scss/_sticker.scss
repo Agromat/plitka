@@ -254,8 +254,8 @@
 	}
 	&_l {
 		margin-left: 92px;
-	}
-	@include r($mob) {
-		margin-left: 70px;
+		@include r($mob) {
+			margin-left: 70px;
+		}
 	}
 }
