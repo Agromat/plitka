@@ -881,3 +881,9 @@ $('.product-box__slider .slider-for').slick({
 
   ]
   });
+
+
+  if ($(window).width() < 768) {
+   $(".reveal-modal").removeClass("is-fixed")
+}
+
