@@ -13334,7 +13334,7 @@ body.is-overflow {
   }
 }
 .aside-menu .tab:first-child {
-  z-index: 2;
+  z-index: 12;
 }
 .aside-menu .tab:last-child {
   margin-top: 10px;
