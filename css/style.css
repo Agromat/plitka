@@ -7685,10 +7685,6 @@ footer .row.link-footer .column:last-child {
   .reveal-modal.basket .price {
     display: inline-block;
   }
-  .reveal-modal.basket .sum {
-    width: 70px;
-    padding-top: 0;
-  }
   .reveal-modal.basket .sm-desk {
     display: none;
   }
