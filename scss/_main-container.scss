@@ -1908,12 +1908,6 @@ footer{
 		position: fixed;
 		top: 50% !important;
 		transform: translateY(-50%);
-		@include r($mob) {
-			position: absolute;
-			top: 0 !important;
-			transform: none;
-			overflow: auto;
-		}
 	}
 	&.modal_callback {
 		@include r($mob) {
