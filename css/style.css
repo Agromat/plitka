@@ -7461,6 +7461,7 @@ footer .row.link-footer .column:last-child {
 @media only screen and (max-width: 1024px) {
   .basket .basket-view .img .sticker {
     top: -20px;
+    left: 20px;
   }
 }
 .basket .basket-view .name-product {
