@@ -4861,10 +4861,6 @@ ul.pagination li a span {
   padding: 0;
 }
 
-.multiple-items-4 .item-crop,
-.multiple-items .item-crop {
-  overflow: hidden;
-}
 .multiple-items-4 .slick-slide,
 .multiple-items .slick-slide {
   padding: 10px 20px 15px 20px;
