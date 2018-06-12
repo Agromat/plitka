@@ -2095,7 +2095,7 @@ nav {
   font-size: 12px;
   font-weight: 700;
 }
-.about .buy-block .price.orderItem .cost, .about .buy-block .price .archiveItem .cost {
+.about .buy-block .price.orderItem .cost, .about .buy-block .price.orderItem .phone, .about .buy-block .price .archiveItem .cost, .about .buy-block .price .archiveItem .phone {
   font-size: 17px;
   font-family: 'Open Sans Semibold', sans-serif;
   line-height: 1.2;
@@ -2103,7 +2103,7 @@ nav {
   margin-bottom: 10px;
   margin-top: 10px;
 }
-.about .buy-block .price.orderItem .cost a, .about .buy-block .price .archiveItem .cost a {
+.about .buy-block .price.orderItem .cost a, .about .buy-block .price.orderItem .phone a, .about .buy-block .price .archiveItem .cost a, .about .buy-block .price .archiveItem .phone a {
   border-bottom: 1px dotted #0053a0;
   font-size: 13px;
   font-weight: normal;
@@ -2133,7 +2133,7 @@ nav {
 .about .buy-block .price .data span.not-available {
   color: #ed1c24;
 }
-.about .buy-block .price .cost {
+.about .buy-block .price .cost, .about .buy-block .price .phone {
   color: #333;
   font-size: 3.1875rem;
   font-weight: 700;
@@ -2141,7 +2141,7 @@ nav {
   margin-top: 0.1875rem;
   margin-bottom: 0.3125rem;
 }
-.about .buy-block .price .cost sup {
+.about .buy-block .price .cost sup, .about .buy-block .price .phone sup {
   font-size: 1.875rem;
   top: -1.25rem;
 }

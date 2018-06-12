@@ -46,7 +46,7 @@
 					font-size: 12px;
 					font-weight: 700;
 				}
-				.cost {
+				.cost, .phone {
 					font-size: 17px;
 					font-family: 'Open Sans Semibold', sans-serif;
 					line-height: 1.2;
@@ -84,7 +84,7 @@
 					}
 				}
 			}
-			.cost{
+			.cost, .phone{
 				color: $ddgray;
 				font-size: rem-calc(51);
 				font-weight: 700;
