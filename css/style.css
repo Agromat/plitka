@@ -4147,16 +4147,14 @@ ul.pagination li a span {
 .itemslider .slick-list {
   padding: 0;
 }
+.itemslider .slick-slide > * {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
 .itemslider .slick-slide {
   height: 190px;
   font-size: 0;
-}
-.itemslider .slick-slide:before {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  width: 0;
-  height: 100%;
 }
 .itemslider .slick-slide a {
   display: inline-block;

@@ -205,16 +205,21 @@
 	.slick-list {
 		padding: 0;
 	}
+	.slick-slide > * {
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
 	.slick-slide {
 		height: 190px;
 		font-size: 0;
-		&:before{
-			content: "";
-			display: inline-block;
-			vertical-align: middle;
-			width: 0;
-			height: 100%;
-		}
+		// &:before{
+		// 	content: "";
+		// 	display: inline-block;
+		// 	vertical-align: middle;
+		// 	width: 0;
+		// 	height: 100%;
+		// }
 		a {
 			display: inline-block;
 			width: 100%;
