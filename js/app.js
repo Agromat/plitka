@@ -29,7 +29,7 @@
 
   $(document).ready(function(){
 
-    jQuery.fn.exists = function(){return this.length>0;}
+    jQuery.fn.exists = function(){return this.length>0;};
 
     ///////////////////////////
     // begin new slider code //
@@ -160,28 +160,93 @@
       return window.matchMedia("(min-width: 768px)").matches;
     }
 
+
+    
     // open/close mobile menu
-    class Navigation {
-      constructor(el) {
+    // class Navigation {
+    //   constructor(el) {
+    //     this.el = $(el);
+    //     this.btn = this.el.find('.js-nav-btn');
+    //     this.nav = this.el.find('.js-mob-nav');
+
+    //     $(window).resize(() => {
+    //       this._hideNavOnResize();
+    //     });
+    //   }
+
+    //   _showNav() {
+    //     this.btn.click((e) => {
+    //       e.preventDefault();
+
+    //       this.btn.toggleClass('is-active');
+    //       this.el.toggleClass('is-active');
+    //       this.nav.toggleClass('is-visible');
+    //       var scrollWidth = detectScrollWidth();
+
+    //       if ( this.nav.hasClass('is-visible') ) {
+    //         $('body')
+    //           .addClass('is-overflow')
+    //           .css('padding-right', scrollWidth + 'px');
+    //       } else {
+    //         $('body')
+    //           .removeClass('is-overflow')
+    //           .removeAttr('style');
+    //       }
+    //     });
+    //   }
+
+    //   _hideNavOnResize() {
+    //     if ( $(window).width() > 1280 && this.nav.hasClass('is-visible') ) {
+    //       this._hideNav();
+    //     }
+    //   }
+
+    //   _hideNav() {
+    //     this.btn.removeClass('is-active');
+    //     this.el.removeClass('is-active');
+    //     this.nav.removeClass('is-visible');
+    //     $('body')
+    //       .removeClass('is-overflow')
+    //       .removeAttr('style');
+    //   }
+
+    //   init() {
+    //     this._showNav();
+    //     // this._hideNavOnClick();
+    //   }
+    // }
+
+    // new Navigation('.js-top-nav').init();
+
+    var navClass = {
+      el: null,
+      btn: null,
+      nav: null,
+      
+      constructor: function(el) {
+
         this.el = $(el);
         this.btn = this.el.find('.js-nav-btn');
         this.nav = this.el.find('.js-mob-nav');
 
-        $(window).resize(() => {
-          this._hideNavOnResize();
-        });
-      }
+        var selfObj = this;
 
-      _showNav() {
-        this.btn.click((e) => {
+        $(window).resize(function() {
+          selfObj._hideNavOnResize();
+        });
+      },
+
+      _showNav: function() {
+        var selfObj = this;
+        this.btn.click(function(e) {
           e.preventDefault();
 
-          this.btn.toggleClass('is-active');
-          this.el.toggleClass('is-active');
-          this.nav.toggleClass('is-visible');
+          selfObj.btn.toggleClass('is-active');
+          selfObj.el.toggleClass('is-active');
+          selfObj.nav.toggleClass('is-visible');
           var scrollWidth = detectScrollWidth();
 
-          if ( this.nav.hasClass('is-visible') ) {
+          if ( selfObj.nav.hasClass('is-visible') ) {
             $('body')
               .addClass('is-overflow')
               .css('padding-right', scrollWidth + 'px');
@@ -191,30 +256,31 @@
               .removeAttr('style');
           }
         });
-      }
+      },
 
-      _hideNavOnResize() {
+      _hideNavOnResize: function() {
         if ( $(window).width() > 1280 && this.nav.hasClass('is-visible') ) {
           this._hideNav();
         }
-      }
+      },
 
-      _hideNav() {
+      _hideNav: function() {
         this.btn.removeClass('is-active');
         this.el.removeClass('is-active');
         this.nav.removeClass('is-visible');
         $('body')
           .removeClass('is-overflow')
           .removeAttr('style');
-      }
+      },
 
-      init() {
+      init: function() {
         this._showNav();
         // this._hideNavOnClick();
       }
-    }
+    };
 
-    new Navigation('.js-top-nav').init();
+    navClass.constructor('.js-top-nav');
+    navClass.init();
 
     // detect scrollWidth
     function detectScrollWidth() {
@@ -231,7 +297,7 @@
     }
 
     // detect touch
-    let isTouchDevice = () => { 'ontouchstart' in window };
+    let isTouchDevice = function() { 'ontouchstart' in window };
     if ( !isTouchDevice() ) { $('body').addClass('no-touch') };
 
 
@@ -759,7 +825,7 @@
     },
     function () {
         $(".page-mask").removeClass("bg-dark");
-    },
+    }
   );
 
 
@@ -823,7 +889,7 @@
             $(".menu-catalog__head").removeClass("js-menu-catalog-head");
           } 
 
-      };
+      }
 
   });
 
@@ -884,5 +950,5 @@ $('.product-box__slider .slider-for').slick({
 
 
 if ($(window).width() < 768) {
-   $(".reveal-modal").removeClass("is-fixed")
+   $(".reveal-modal").removeClass("is-fixed");
 }
