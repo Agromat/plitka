@@ -3232,6 +3232,11 @@ nav {
 }
 .sticker-in_l {
   margin-left: 92px;
+  display: block;
+}
+.sticker-in_l a {
+  display: inline-block;
+  vertical-align: top;
 }
 @media only screen and (max-width: 767px) {
   .sticker-in_l {
