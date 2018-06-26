@@ -2991,6 +2991,13 @@ footer{
 				max-height: 130px;
 			}
 		}
+		.order-btn {
+			&:after {
+				content: " ";
+    			display: table;
+    			clear: both;
+			}
+		}
 	}
 	.item-crop {
 		min-width: 200px;
