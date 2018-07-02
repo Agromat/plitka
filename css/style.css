@@ -13638,6 +13638,7 @@ body.is-overflow {
 }
 @media only screen and (max-width: 767px) {
   .footer-nav__item {
+    width: auto;
     display: block;
     max-width: none;
     margin: 0;

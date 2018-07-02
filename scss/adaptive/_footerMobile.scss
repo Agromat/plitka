@@ -173,6 +173,7 @@ footer{
 		width: 80px;
 		margin-bottom: 10px;
 		@include r($mob){
+			width: auto;
 			display: block;
 			max-width: none;
 			margin: 0;
