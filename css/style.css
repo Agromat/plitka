@@ -12864,6 +12864,38 @@ body.is-overflow {
   }
 }
 
+.phone_prefix {
+  color: #7a828b;
+  left: 5px;
+  letter-spacing: 2px;
+  position: relative;
+  text-decoration: none;
+  top: 31px;
+  z-index: 2;
+  background: #fff;
+  font-size: 16px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  text-align: start;
+}
+
+.phone_prefix_callback_popup {
+  top: 29px;
+}
+
+.callback_popup {
+  top: 29px;
+}
+
+.phone_prefixed_input {
+  padding-left: 35px !important;
+}
+
 .mob-menu {
   display: none;
   margin-bottom: 2px;
@@ -13477,6 +13509,9 @@ body.is-overflow {
 }
 .work-schedule .wrk:last-child {
   margin-bottom: 0;
+}
+.work-schedule .wek sup {
+  top: -4px;
 }
 .work-schedule .day {
   display: inline-block;
