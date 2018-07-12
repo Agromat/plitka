@@ -13,13 +13,20 @@
 	}
 }
 .form{
-
+	&.form_side-padding {
+		// @include clearfix;
+		padding-right: 340px;
+	}
 	.title{
 		font-size: 18px;
 		font-weight: 700;
 		color: $dgray;
 		margin-top: 0;
 		margin-bottom: 19px;
+		@include r($mob) {
+			margin-bottom: 10px;
+			font-size: 16px;
+		}
 	}
 	.form-order{
 		border-top: 1px solid #dddddd;
@@ -36,37 +43,281 @@
 			&.is-width {
 				max-width: 100%;
 			}
+			&.unbold {
+				font-weight: 400;
+			}
 		}
 		.form-group{
 			margin-bottom: 12px;
 			font-size: 14px;
 			color: $dgray;
 			@include clearfix;
+			label {
+				@include r($mob) {
+					display: block;
+					float: none;
+					width: 100%;
+					margin-bottom: 5px;
+				}
+			}
+			input {
+				&::placeholder {
+					color: $ddgray;
+				}
+			}
 			.imput{
 				margin-left: 190px;
+				@include r($mob) {
+					margin-left: 0;
+				}
 			}
 			&.checkbox:not(#foo){
 				margin-left: 190px;
 				margin-bottom: 40px;
+				@include r($mob) {
+					margin-left: 0;
+					margin-bottom: 20px;
+				}
 			}
 			&.radio:not(#foo){
 				margin-left: 0px;
 				margin-bottom: 40px;
+				@include r($mob) {
+					margin-bottom: 20px;
+				}
 			}
 			&.textarea{
 				margin-bottom: 40px;
+				@include r($desktop-m) {
+					margin-bottom: 50px;
+				}
+				label {
+					@include r($desktop-m) {
+						margin-bottom: 10px;
+					}
+				}
 				.textarea{
+					max-width: 625px;
+					width: 100%;
 					margin-left:160px;
+					@include r($desktop-m) {
+						margin-left: 0;
+					}
+					textarea {
+						width: 100%;
+						@include r($mob) {
+							height: 70px;
+						}
+					}
+				}
+			}
+			&.submit {
+				@include r($mob) {
+					margin-bottom: 45px;
+					.btn {
+						float: none;
+						margin-right: 0;
+						width: 100%;
+					}
 				}
 			}
 			&.dropdown{
 				margin-bottom: 12px;
 				.dropdown-content{
 					margin-left: 190px;
+					@include r($mob) {
+						margin-left: 0;
+					}
 				}
 			}
 		}
 	}
 }
+.form-header {
+	@include clearfix();
+	margin-bottom: 30px;
+	text-align: right;
+	@include r($mob) {
+		text-align: left;
+	}
+	&_mb {
+		margin-bottom: 0;
+	}
+	.column {
+		padding: 0;
+		display: inline-block;
+		width: auto;
+		@include r($mob) {
+			display: block;
+			text-align: left;
+		}
+		&:first-child {
+			@include r($mob) {
+				float: none;
+			}
+		}
+		&:last-child {
+			float: none;
+		}
+		.button-group_right {
+			@include r($mob) {
+				float: none;
+			}
+		}
+	}
+}
+.short-label {
+	max-width: 190px;
+	margin-top: -3px;
+	padding-top: 0;
+	@include r($mob) {
+		max-width: none;
+		margin-top: 0;
+		margin-bottom: 10px;
+	}
+}
+.order-desk {
+	float: left;
+	padding-right: 340px;
+	@include r($tablet) {
+		float: none;
+		padding-right: 0;
+	}
+}
+.hidden-text {
+	display: none;
+	@include r($mob) {
+		display: block;
+		margin-bottom: 15px;
+		font-size: 13px;
+	}
+}
+.order-preview {
+	float: right;
+	width: 310px;
+	margin-left: -310px;
+	@include r($tablet) {
+		float: none;
+		width: 100%;
+		margin-left: 0;
+	}
+}
+.aside-basket {
+	@include r($tablet) {
+		display: none;
+	}
+}
+.basket {
+	&.basket_preview {
+		display: none;
+		@include r($tablet) {
+			display: block;
+			max-width: none;
+			.column.name-product {
+				max-width: none;
+				width: 75%;
+				color: $llgray;
+				@include r($mob) {
+					position: absolute;
+					top: 10px;
+					left: 10px;
+				}
+			}
+		}
+		margin: 0 -25px;
+		@include r($mob) {
+			margin: 0 -10px;
+		}
+		.basket-header {
+			-webkit-border-radius: 0;
+			        border-radius: 0;
+		    @include r($tablet) {
+		    	padding: 10px 25px;
+		    }
+		}
+		.basket-view, .basket-actions {
+			padding: 0 25px;
+			background: #eef6f9;
+		}
+		.basket-view {
+			padding-top: 15px;
+			&:after {
+				@include r($tablet) {
+					padding-bottom: 15px;
+				}
+			}
+			@include r($mob) {
+				padding-top: 71px;
+			}
+		}
+		.img {
+			@include r($mob) {
+				width: 50px;
+				height: 44px;
+			}
+		}
+		.number {
+			width: 30px;
+			span {
+				font-size: 13px;
+				color: $llgray;
+			}
+		}
+		.prod-desk {
+			display: block;
+			color: $blue !important;
+			text-decoration: underline;
+			white-space: nowrap;
+			overflow: hidden;
+			-ms-text-overflow: ellipsis;
+			    text-overflow: ellipsis;
+			@include r($mob) {
+				margin-bottom: 10px;
+			}
+		}
+		.main-deskrip {
+			margin-bottom: 10px;
+		}
+		.sum {
+			width: auto;
+			padding-top: 0;
+			.price {
+				padding-top: 0;
+			}
+		}
+		.total {
+			@include r($tablet) {
+		    	padding-bottom: 15px;
+		    }
+		    @include r($mob) {
+		    	text-align: left;
+		    }
+			.sm-desk {
+				@include r($mob) {
+					display: block;
+				}
+				span {
+					display: inline-block;
+				}
+			}
+		}
+		.btn-group {
+			@include r($tablet) {
+		    	padding-bottom: 30px;
+		    }
+		}
+	}
+}
+.btn-link {
+	font-size: 14px;
+	text-decoration: underline;
+	&_right {
+		float: right;
+		@include r($mob) {
+			float: none;
+		}
+	}
+}
+
 
 @import "form-group";

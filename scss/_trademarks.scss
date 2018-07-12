@@ -4,6 +4,9 @@
 	padding: 12px 5px 2px 12px;
 	background: #eef6f9;
 	font-size: 0;
+	@include r($tablet) {
+		padding: 12px 0px 2px 4px;
+	}
 	> a,span {
 		display: inline-block;
 		margin: 0 5px 10px 0;
@@ -41,22 +44,51 @@
 		bottom: 10px;
 		font-size: 16px;
 		width: 190px;
+		@include r($tablet) {
+			right: 5px;
+		}
 		button {
 			width: 100% !important;
 		}
 	}
 }
 .trademarks-wrap {
-	margin: 0 -0.9375rem;
+	margin: 0 -0.9375rem -40px;
+	font-size: 0;
+	@include r($tablet) {
+		margin: 0 -10px -40px;
+	}
+	@include r($mob) {
+		margin: 0 -5px -30px;
+	}
 	.column {
 		&:last-child { 
 		float: left; 
 		}
 	}
 }
+.trademark-holder {
+	display: inline-block;
+	vertical-align: top;
+	width: 25%;
+	padding: 0 15px;
+	@include r($tablet) {
+		padding: 0 10px;
+	}
+	@include r($mob) {
+		width: 33%;
+		padding: 0 5px;
+	}
+	@include r($mob-sm) {
+		width: 50%;
+	}
+}
 .trademark {
 	position: relative;
 	margin-bottom: 40px;
+	@include r($mob) {
+		margin-bottom: 30px;
+	}
 }
 .trademark__img {
 	display: block;
@@ -69,6 +101,9 @@
 	-webkit-transition: box-shadow .2s linear;
 	-moz-transition: box-shadow .2s linear;
 	transition: box-shadow .2s linear;
+	@include r($mob) {
+		height: 100px;
+	}
 	img {
 		display: inline-block;
 		vertical-align: middle;
@@ -110,6 +145,12 @@
 		box-shadow: inset 0 -3px 0 rgba(8, 34, 60, 0.1);
 		font-size: 16px;
 		font-weight: bold;
+		@include r($mob){
+			width: 50%;
+			height: 35px;
+			line-height: 35px; 
+			font-size: 13px;
+		}
 		&:hover {
 			background: #fafafa;
 		}
@@ -130,6 +171,11 @@
 			padding: 0 20px;
 			height: 45px;
 			color: #4a5b70;
+			@include r($mob){
+				height: 35px;
+				padding: 0;
+				text-align: center;
+			}
 		}
 	}
 }

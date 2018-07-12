@@ -1,0 +1,54 @@
+.range-slider {
+    .irs-line, .irs-bar {
+        height: 8px;
+    }
+    .irs-line-right {
+        right: 7px;
+        background-position: 100% -32px;
+    }
+    .irs-line-left {
+        left: 7px;
+        background-position: 0 -32px;
+    }
+    .irs-bar {
+        background: #0391ff;
+    }
+    .irs-slider {
+        top: 21px;
+        width: 16px;
+        height: 16px;
+        border: 1px solid #abadb3;
+        border-radius: 50%;
+        box-shadow: inset 0 -2px 3px rgba(4, 4, 5, 0.2);
+        background: $white;
+        &:before, &:after {
+            content: "";
+            position: absolute;
+            top: 3px;
+
+            width: 1px;
+            height: 7px;
+            background: #ddd;
+        }
+        &:before {
+            left: 5px;
+        }
+        &:after {
+            left: 8px;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .irs-grid-pol {
+        top: -7px;
+        background: #ddd;
+        &.small {
+            display: none;
+        }
+    }
+    .irs-grid-text {
+        color: #999;
+        font-size: 13px;
+    }
+}

@@ -161,6 +161,75 @@ $rem-base : 16;
   font-size: 16px !important;
   font-weight: bold;
 }
+
+
+/* 
+*  BEGIN ADAPTIVE MIXINS AND VARIABLES
+ */
+
+// BLOCK MIXINS
+@mixin r($width) {
+  @media only screen and (max-width: $width+ "px") {
+    @content;
+  }
+}
+
+@mixin rland($widthMax, $widthMin) {
+  @media only screen 
+  and (max-width: $widthMax+ "px")
+  and (min-width: $widthMin+ "px")
+  and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin rmin($width) {
+  @media only screen and (min-width: $width+ "px") {
+    @content;
+   }
+}
+
+// height
+@mixin rh($height) {
+  @media only screen and (max-height: $height + "px") {
+    @content;
+   }
+}
+
+@mixin rhmin($height) {
+  @media only screen and (min-height: $height + "px") {
+    @content;
+   }
+}
+
+@mixin hcenter() {
+  position: absolute;
+  // top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin hover() { 
+  body.no-touch & {
+    &:hover{
+      @content;
+    }
+  }
+}
+
+//BLOCK VARIABLES
+$desktop: 1220;
+$desktop-m: 1219;
+$tablet: 1024;
+$tablet-p: 800;
+$mob: 767;
+$mob-sm: 550;
+$mob320: 320;
+
+/* 
+*  END ADAPTIVE MIXINS AND VARIABLES
+ */
+
 /*
 *	FONT LOAD
 */
@@ -186,7 +255,7 @@ $rem-base : 16;
 */
 @import "icon";
 /*
-*	BUTTONS
+*	BUTTONS 
 */
 @import "btn";
 /*
@@ -201,3 +270,12 @@ $rem-base : 16;
 @import "typography";
 @import "article";
 @import "search";
+@import "range-slider";
+
+@import "lib/ion.RangeSlider";
+@import "lib/perfect-scrollbar";
+
+@import "adaptive/layout";
+@import "adaptive/mobMenu";
+@import "adaptive/tab";
+@import "adaptive/footerMobile";

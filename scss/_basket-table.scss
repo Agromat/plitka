@@ -71,6 +71,9 @@
 
 }
 .basket-footer{
+	@include r($mob) {
+		display: none;
+	}
 	padding: 20px;
 	.content{
 		p{

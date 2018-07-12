@@ -1,0 +1,288 @@
+.tab-menu{
+    display: none;
+    @include r($mob){
+        display: block;
+    }
+}
+.tab_grey {
+    .tab__link {
+        border: 1px solid $black;
+        background-color: $controls;
+        color: $black;
+        &.is-active {
+            background-color: $llgray;
+            color: $white;
+            .icon-arr-down {
+                background-position: -193px -5px;
+            }
+        }
+    }
+    .tabdrop {
+        border: 1px solid $black;
+    }
+    .tabdrop__option {
+        border-bottom: 1px solid $black;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}
+
+.tab{
+    position: relative;
+    z-index: 11;
+    &__list{
+        margin: 0;
+        font-size: 0;
+        list-style-type: none;
+    }
+    &__option{
+        position: relative;
+        // border-bottom: 1px solid $border;
+        list-style-type: none;
+        margin-top: -1px;
+        &.has-navdrop {
+           .nav__link {
+              padding: rem-calc(8) rem-calc(18);
+           }
+        }
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+    &__link{
+        position: relative;
+        display: block;
+        padding: rem-calc(12) rem-calc(18) rem-calc(12) rem-calc(20);
+        border: 1px solid $border;
+        font-size: rem-calc(14);
+        color: $blue;
+        line-height: rem-calc(16);
+        font-weight: 700;
+        text-decoration: none;
+        background-color: $pblue;
+        z-index: 1;
+        &.is-active {
+            background-color: $blue;
+            border: 1px solid $blue;
+            color: $white;
+            .icon-arr-down {
+                background-position: -193px -5px;
+            }
+        }
+        &:hover{
+            span{
+                border-bottom: none;
+            }
+        }
+    }
+    .icon-arr-down {
+        position: absolute;
+        top: 50%;
+        right: rem-calc(15);
+        margin-top: -3px;
+        width: 11px;
+        height: 8px;
+        background-image: url("../img/addicons.png");
+        background-position: -125px -5px;
+        &.icon-arr-down_black {
+            background-position: -146px -5px; 
+        }
+    } 
+}
+
+.tabdrop{
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    border: 1px solid #e5e5e5;
+    margin: 0;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: none;
+    border-radius: 0;
+    background: #FFF;
+    font-size: 18px;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+    &.is-active {
+      display: block;
+      opacity: 1;
+      visibility: visible;
+    }
+    &__option{
+        position: relative;
+        border-bottom: 1px solid #e5e5e5;
+        list-style-type: none;
+        &:last-child {
+          border-bottom: none;
+        }
+    }
+    &__link{
+        position: relative;
+        display: block;
+        padding: rem-calc(12) rem-calc(18) rem-calc(11) rem-calc(25);
+        color: $ddgray;
+        font-weight: 400;
+        line-height: rem-calc(17);
+        font-size: rem-calc(13);
+        text-decoration: underline;
+        &:hover,
+        &:focus{
+            color: $ddgray;
+            span{
+                border-bottom: none;
+            }
+        }
+        &.is-active {
+            .icon-arr-down {
+                transform: rotate(180deg);
+            }
+        }
+    }
+    &__link-all {
+        padding: 10px 15px;
+        border-bottom: 1px solid $black;
+        font-size: 13px;
+        text-decoration: none;
+    }
+}
+// mobile tabs product characteristics
+.tabs-mob {
+    display: none;
+    margin-bottom: 40px;
+    @include r($mob) {
+        display: block;
+    }
+    &__title {
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 1;
+        font-weight: 700;
+        color: $ddgray;
+    }
+    &__descr {
+        display: table;
+        width: 100%;
+        max-width: 360px;
+    }
+    &__row {
+        display: table-row;
+        margin-bottom: 10px;
+    }
+    &__cell {
+        display: table-cell;
+        padding-bottom: 10px;
+        font-size: 14px;
+        line-height: 19px;
+        color: $ddgray;
+        &:first-child {
+            width: 60%;
+        }
+        &:last-child {
+            width: 40%;
+            font-weight: 700;
+        }
+        a {
+            text-decoration: underline;
+            color: $blue;
+        }
+    }
+}
+
+.aside-menu {
+    display: none;
+    margin-bottom: 27px;
+    @include r($tablet) {
+        display: block;
+    }
+    @include r($mob) {
+        margin-bottom: 20px;
+    }
+    &_mob-hidden {
+        @include r($mob) {
+            display: none;
+        }
+    }
+    .tab {
+        &:first-child {
+            z-index: 12;
+        }
+        &:last-child {
+            margin-top: 10px;
+            @include r($tablet) {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.tab-group {
+    display: none;
+    margin: 0 -5px 30px;
+    @include r($mob) {
+        display: block;
+    }
+}
+.tab_column {
+    display: inline-block;
+    width: 50%;
+    padding: 0 5px;
+    .tab__link {
+        padding: 12px 25px 12px 10px;
+        font-size: 13px;
+        text-transform: uppercase;
+    }
+    .tabdrop__link {
+        padding: 10px 15px;
+    }
+}
+.tabdrop-list {
+    display: table;
+    width: 100%;
+    font-size: 0;
+    margin: 0;
+    .tabdrop__row:last-child {
+        .tabdrop__option_cell:last-child {
+            border-bottom: none;
+        }
+    }
+}
+.tabdrop__row {
+    display: table-row;
+    &:last-child {
+        .tabdrop__option_cell {
+            border-bottom: none;
+        }
+    }
+    .tabdrop__option_cell {
+        &:last-child {
+            border-bottom: 1px solid $black;
+        }
+    }
+}
+.tabdrop__option_cell {
+    display: table-cell;
+    border-right: 1px solid $black;
+    width: 20%;
+    height: 30px;
+    &:last-child {
+        border-bottom: 1px solid $black;
+        border-right: none;
+    }
+    text-align: center;
+    .tabdrop__link {
+        padding: 5px 6px;
+    }
+}
+
+.tabdrop {
+    &:first-child {
+        background: red;
+        .tabdrop__option_cell {
+            width: 100%;
+        }
+    }
+}
