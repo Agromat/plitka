@@ -1610,12 +1610,12 @@
 .orbit-container .orbit-slides-container img {
   display: block;
   max-width: 100%;
-} 
+}
 .orbit-container .orbit-slides-container > * {
   position: absolute;
   top: 0;
   width: 100%;
-  /*margin-left: 103%;*/
+  margin-left: 103%;
 }
 .orbit-container .orbit-slides-container > *:first-child {
   margin-left: 0%;

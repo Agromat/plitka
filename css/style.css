@@ -13628,6 +13628,12 @@ body.is-overflow {
   flex-wrap: wrap;
   justify-content: flex-end;
 }
+@media only screen and (max-width: 767px) {
+  .footer-nav__list {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
 .footer-nav__item {
   display: inline-block;
   vertical-align: top;
@@ -13636,6 +13642,14 @@ body.is-overflow {
   width: 80px;
   margin-bottom: 10px;
 }
+@media only screen and (max-width: 1024px) {
+  .footer-nav__item {
+    width: unset;
+  }
+  .footer-nav__item_large {
+    max-width: 110px;
+  }
+}
 @media only screen and (max-width: 767px) {
   .footer-nav__item {
     width: auto;
@@ -13643,6 +13657,7 @@ body.is-overflow {
     max-width: none;
     margin: 0;
     margin-bottom: 10px;
+    text-align: right;
   }
   .footer-nav__item:last-child {
     margin-right: 0;
