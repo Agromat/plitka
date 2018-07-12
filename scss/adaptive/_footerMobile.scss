@@ -179,7 +179,7 @@ footer{
         @include r($tablet) {
           width: unset;
           &_large {
-            max-width: 110px;
+            max-width: unset;
           }
         }
 		@include r($mob){
