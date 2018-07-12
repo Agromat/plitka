@@ -3202,6 +3202,7 @@ footer{
 .product-box {
 	position: relative;
 	margin-top: 20px;
+
 	background: #eef6f9; 
 	@include r($mob) {
 		margin-top: 0;
@@ -3220,6 +3221,7 @@ footer{
 			@include r($mob-sm) {
 				margin: 0 4px;
 			}
+
 		}
 	}
 	&__slide {
@@ -3227,6 +3229,7 @@ footer{
 			width: 100%;
 			max-width: 100%;
 		}
+
 	}
 	&__slider {
 		position: relative;
@@ -3234,6 +3237,7 @@ footer{
 		@include r($mob) {
 			margin-bottom: 10px;
 		}
+
 		.slick-list {
 			padding: 0 0 18px 0;
 		}
@@ -3250,9 +3254,11 @@ footer{
 		 		float: left;
 				background-position: -295px -150px;
 			}
+
 			@include r($mob-sm) {
 				left: -5px;
 			}
+
 		 }
 		.slick-next {
 			right: 5px;
@@ -3260,10 +3266,12 @@ footer{
 				float: right;
 				background-position: -308px -150px;
 			}
+
 			@include r($mob-sm) {
 				right: -5px;
 			}
 		}
+
 		.slick-prev,.slick-next{
 			top: 12px;
 			margin: 0;

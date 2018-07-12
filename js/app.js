@@ -828,7 +828,6 @@
     }
   );
 
-
   $(".js-dropdown-catalog").hover(
     function() {
       var menu = $("div[data-drop='"+$(this).attr("data-drop")+"']");
@@ -909,6 +908,11 @@
 /////////////////////////
 
 
+
+//////////////////////////////////
+// begin slider page-collection //
+//////////////////////////////////
+
 $('.product-box__slider .slider-for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -924,6 +928,7 @@ $('.product-box__slider .slider-for').slick({
     dots: false,
     centerMode: true,
     focusOnSelect: true,
+
     centerPadding: 1,
     responsive: [
     {
@@ -951,3 +956,4 @@ $('.product-box__slider .slider-for').slick({
 if ($(window).width() < 768) {
    $(".reveal-modal").removeClass("is-fixed");
 }
+
