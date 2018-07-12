@@ -7467,6 +7467,9 @@ footer .row.link-footer .column:last-child {
   width: 150px;
   height: 130px;
 }
+.basket .basket-view .img img {
+  object-fit: contain;
+}
 @media only screen and (max-width: 1024px) {
   .basket .basket-view .img {
     width: 75px;
@@ -7552,6 +7555,15 @@ footer .row.link-footer .column:last-child {
 @media only screen and (max-width: 1024px) {
   .basket .basket-view .sum .price {
     padding-top: 23px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .basket .basket-view.basket-view_sale .img {
+    padding-top: 20px;
+  }
+  .basket .basket-view.basket-view_sale .img .sticker {
+    top: 0;
+    left: 8px;
   }
 }
 @media only screen and (max-width: 1024px) {

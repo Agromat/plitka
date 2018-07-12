@@ -2355,6 +2355,9 @@ footer{
 			padding: 0;
 			width: 150px;
 			height: 130px;
+            img {
+              object-fit: contain;
+            }
 			@include r($tablet) {
 				width: 75px;
 				height: 65px;
@@ -2426,6 +2429,17 @@ footer{
 				}
 			}
 		}
+      &.basket-view_sale {
+        @include r($mob) {
+          .img {
+            padding-top: 20px;
+            .sticker {
+              top: 0;
+              left: 8px;
+            }
+          }
+        }
+      }
 	}
 	.basket-actions{
 		@include r($tablet) {
