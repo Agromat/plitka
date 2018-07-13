@@ -624,21 +624,49 @@
 
   <div class="page-content">
     <div class="page-mask"></div>
-    <div class="row collapse">
-    <main class="column medium-10 main-section catalog" role="main">
-      <div class="bcrumbs-container">
-        <ul class="bcrumbs">
-          <li><a href="#"><span>Главная </span></a></li>
-          <li><a href="#"><span>Плитка</span></a></li> 
-          <li><span>Almera Ceramica</span></li>
-        </ul>
-      </div><!-- /bcrumbs-->
+      <div class="row collapse">
+          <main class="column medium-10 main-section" role="main">
+              <!-- !! was deleted class medium-10 and added modificators: main-section_wider, is-small  -->
+              <div class="bcrumbs-container">
+                  <ul class="bcrumbs">
+                      <li><a href="#"><span>Главная </span></a></li>
+                      <li><a href="#"><span>Производители </span></a></li>
+                      <li><a href="#"><span>Плитка</span></a></li>
+                      <li><span>Almera Ceramica</span></li>
+                  </ul>
+              </div><!-- /bcrumbs-->
 
-      <section class="main-container">
+              <!-- !! created new block - return to the main page -->
+              <div class="return-link"><a href=""><i class="icon-arrow-left"></i>Назад на главную</a></div>
+
+              <!-- !! add mobile tabs for catalog items -->
+              <!-- BEGIN MOBILE ASIDE-MENU -->
+              <section class="aside-menu">
+                  <div class="row collapse">
+                      <div class="tab">
+                          <ul class="tab__list">
+                              <li class="tab__option js-nav-option has-navdrop">
+                                  <a href="#" class="tab__link js-nav-link"><span>Плитка</span><i class="icon-arr-down"></i></a>
+                                  <ul class="tabdrop js-navdrop">
+                                      <li class="tabdrop__option"><a href="#" class="tabdrop__link"><span>Мозаика</span></a></li>
+                                      <li class="tabdrop__option"><a href="#" class="tabdrop__link"><span>Сантехника</span></a></li>
+                                      <li class="tabdrop__option"><a href="#" class="tabdrop__link"><span>Смесители</span></a></li>
+                                      <li class="tabdrop__option"><a href="#" class="tabdrop__link"><span>Мебель</span></a></li>
+                                      <li class="tabdrop__option"><a href="#" class="tabdrop__link"><span>Стройхимия</span></a></li>
+                                      <li class="tabdrop__option"><a href="#" class="tabdrop__link"><span>Обогреватели</span></a></li>
+                                  </ul>
+                              </li>
+                          </ul><!-- /list items menu -->
+                      </div>
+                  </div>
+              </section>
+              <!-- END MOBILE ASIDE-MENU -->
+
+              <section class="main-container">
         <h1 class="main-title">Керамическая плитка <strong>Almera Ceramica</strong> Urbis</h1>
         
         <div class="row collapse">
-           <div class="column medium-12"class="main-container">
+            <!-- !! deleted 2 class: column, mediun-12 -->
              <div class="product-box" itemscope itemtype="http://schema.org/Thing" >
 
                 <div class="product-box__slider">
@@ -693,7 +721,6 @@
                 <div class="product-box__main">
                  <div class="product-box__title" itemprop="name">Blanco Brillo</div>
                   <div class="withdrawn-from-sale">Коллекция снята с продажи</div>
-                  <h2>Ну ооочеееень длииииннннныыыый заааагоооолоооввок</h2>
                  <div class="product-box__text js-description" itemprop="description">
 
                    <p>Кажется, будто бескрайний океан захлестывает волной бурных эмоций, свежести и прохлады, когда начинаешь изучать необыкновенно светлую и позитивную коллекцию керамической плитки для ванной комнаты Ocean от Aparici. Кафель форматом 316х444 мм из класса средней стоимости невозможно отличить от мозаики, словно из множества маленьких бело-голубых кубиков льда  собраны целые полотна, отзеркаливающие от своей фактурной поверхности лучи света, излучающие положительные эмоции, радость и умиротворение. Благодаря нежным оттенками, позаимствованным у чистого летнего небосвода, серия Ocean порадовала глубиной, мягкостью и невесомостью. Нежно – голубой кафель оттеняет светлые элементы, а волнообразные узоры на фризе акцентируют внимание на том, что в этом помещении место водным процедурам и чистоте телесной и душевной.</p>
@@ -702,7 +729,6 @@
                 </div>
              </div>
            </div>
-        </div>
         <div class="row collapse">
           <div class="column medium-12 products-row">
             <h2 class="small-title">Товары в интернет магазине из коллекции Urbis</h2>
@@ -714,51 +740,71 @@
               </div>
               <div class="prod__text">
                 <div class="prod__title" itemprop="name">AMY</div>
-                <div class="prod__meta">60 x 30</div>
+                  <div class="prod__meta">60 x 30</div>
+                  <div class="prod__price">
+                      <a href="#" data-reveal-id="basket" id="btnbasket" class="btn gradient"><span class="icon buy"></span></a>
+                      <p class="price price_right">1600,<sup>34 грн.</sup></p>
               </div>
             </div>
-            <div class="prod" itemscope itemtype="http://schema.org/Thing" >
-              <div class="prod__img">
-                <a href="#" itemprop="image">
-                  <img src="img/prod2.jpg" alt="img">
-                </a>
-              </div>
-              <div class="prod__text">
-                <div class="prod__title" itemprop="name"><a href="#">AMY</a></div>
-                <div class="prod__meta">60 x 30</div>
-              </div>
             </div>
-            <div class="prod" itemscope itemtype="http://schema.org/Thing" >
-              <div class="prod__img">
-                <a href="#" itemprop="image">
-                  <img src="img/prod3.jpg" alt="img">
-                </a>
-              </div>
-              <div class="prod__text">
-                <div class="prod__title" itemprop="name"><a href="#">AMY</a></div>
-                <div class="prod__meta">60 x 30</div>
-              </div>
+              <div class="prod" itemscope itemtype="http://schema.org/Thing" >
+                  <div class="prod__img">
+                      <a href="#" itemprop="image">
+                          <img src="img/prod2.jpg" alt="img">
+                      </a>
             </div>
-            <div class="prod" itemscope itemtype="http://schema.org/Thing" >
-              <div class="prod__img">
-                <a href="#" itemprop="image">
-                  <img src="img/prod1.jpg" alt="img">
-                </a>
+                  <div class="prod__text">
+                      <div class="prod__title" itemprop="name"><a href="#">AMY</a></div>
+                      <div class="prod__meta">60 x 30</div>
+                      <div class="prod__price">
+                          <a href="#" data-reveal-id="basket" id="btnbasket" class="btn gradient"><span class="icon buy"></span></a>
+                          <p class="price price_right">1600,<sup>34 грн.</sup></p>
+                      </div>
+                  </div>
               </div>
-              <div class="prod__text">
-                <div class="prod__title" itemprop="name"><a href="#">AMY</a></div>
-                <div class="prod__meta">60 x 30</div>
-              </div>
+              <div class="prod" itemscope itemtype="http://schema.org/Thing" >
+                  <div class="prod__img">
+                      <a href="#" itemprop="image">
+                          <img src="img/prod3.jpg" alt="img">
+                      </a>
+                  </div>
+                  <div class="prod__text">
+                      <div class="prod__title" itemprop="name"><a href="#">AMY</a></div>
+                      <div class="prod__meta">60 x 30</div>
+                      <div class="prod__price">
+                          <a href="#" data-reveal-id="basket" id="btnbasket" class="btn gradient"><span class="icon buy"></span></a>
+                          <p class="price price_right">1600,<sup>34 грн.</sup></p>
             </div>
-            <div class="prod" itemscope itemtype="http://schema.org/Thing" >
-              <div class="prod__img">
-                <a href="#" itemprop="image">
-                  <img src="img/prod2.jpg" alt="img">
-                </a>
+                  </div>
               </div>
-              <div class="prod__text">
-                <div class="prod__title" itemprop="name"><a href="#">AMY</a></div>
-                <div class="prod__meta">60 x 30</div>
+              <div class="prod" itemscope itemtype="http://schema.org/Thing" >
+                  <div class="prod__img">
+                      <a href="#" itemprop="image">
+                          <img src="img/prod1.jpg" alt="img">
+                      </a>
+                  </div>
+                  <div class="prod__text">
+                      <div class="prod__title" itemprop="name"><a href="#">AMY</a></div>
+                      <div class="prod__meta">60 x 30</div>
+                      <div class="prod__price">
+                          <a href="#" data-reveal-id="basket" id="btnbasket" class="btn gradient"><span class="icon buy"></span></a>
+                          <p class="price price_right">1600,<sup>34 грн.</sup></p>
+                      </div>
+                  </div>
+              </div>
+              <div class="prod" itemscope itemtype="http://schema.org/Thing" >
+                  <div class="prod__img">
+                      <a href="#" itemprop="image">
+                          <img src="img/prod2.jpg" alt="img">
+                      </a>
+                  </div>
+                  <div class="prod__text">
+                      <div class="prod__title" itemprop="name"><a href="#">AMY</a></div>
+                      <div class="prod__meta">60 x 30</div>
+                      <div class="prod__price">
+                          <a href="#" data-reveal-id="basket" id="btnbasket" class="btn gradient"><span class="icon buy"></span></a>
+                          <p class="price price_right">1600,<sup>34 грн.</sup></p>
+                      </div>
               </div>
             </div>
             <div class="prod" itemscope itemtype="http://schema.org/Thing" >
@@ -770,17 +816,25 @@
               <div class="prod__text">
                 <div class="prod__title" itemprop="name"><a href="#">C.CANDY фриз</a></div>
                 <div class="prod__meta">60 x 30</div>
+                  <div class="prod__price">
+                      <a href="#" data-reveal-id="basket" id="btnbasket" class="btn gradient"><span class="icon buy"></span></a>
+                      <p class="price price_right">1600,<sup>34 грн.</sup></p>
+                  </div>
               </div>
             </div>
-            <div class="prod" itemscope itemtype="http://schema.org/Thing" >
-              <div class="prod__img">
-                <a href="#" itemprop="image">
-                  <img src="img/prod1.jpg" alt="img">
-                </a>
-              </div>
-              <div class="prod__text">
-                <div class="prod__title" itemprop="name"><a href="#">AMY</a></div>
-                <div class="prod__meta">60 x 30</div>
+              <div class="prod" itemscope itemtype="http://schema.org/Thing" >
+                  <div class="prod__img">
+                      <a href="#" itemprop="image">
+                          <img src="img/prod1.jpg" alt="img">
+                      </a>
+                  </div>
+                  <div class="prod__text">
+                      <div class="prod__title" itemprop="name"><a href="#">AMY</a></div>
+                      <div class="prod__meta">60 x 30</div>
+                      <div class="prod__price">
+                          <a href="#" data-reveal-id="basket" id="btnbasket" class="btn gradient"><span class="icon buy"></span></a>
+                          <p class="price price_right">1600,<sup>34 грн.</sup></p>
+                      </div>
               </div>
             </div>
             <div class="prod" itemscope itemtype="http://schema.org/Thing" >
@@ -792,6 +846,10 @@
               <div class="prod__text">
                 <div class="prod__title" itemprop="name"><a href="#">COLUMNA CANDY декор</a></div>
                 <div class="prod__meta">60 x 30</div>
+                  <div class="prod__price">
+                      <a href="#" data-reveal-id="basket" id="btnbasket" class="btn gradient"><span class="icon buy"></span></a>
+                      <p class="price price_right">1600,<sup>34 грн.</sup></p>
+                  </div>
               </div>
             </div>
             <div class="prod" itemscope itemtype="http://schema.org/Thing" >
@@ -803,363 +861,7 @@
               <div class="prod__text">
                 <div class="prod__title" itemprop="name"><a href="#">FRESCO CANDY декор4</a></div>
                 <div class="prod__meta">60 x 30</div>
-              </div>
-            </div>
-          </div>
-          <div class="column medium-12 products-row">
-            <div class="prod" itemscope itemtype="http://schema.org/Thing" >
-              <div class="prod__img">
-                <a href="#" itemprop="image">
-                  <img src="img/prod1.jpg" alt="img">
-                </a>
-              </div>
-              <div class="prod__text">
-                <div class="prod__title" itemprop="name"><a href="#">AMY</a></div>
-                <div class="prod__meta">60 x 30</div>
-              </div>
-            </div>
-            <div class="prod" itemscope itemtype="http://schema.org/Thing" >
-              <div class="prod__img">
-                <a href="#" itemprop="image">
-                  <img src="img/prod2.jpg" alt="img">
-                </a>
-              </div>
-              <div class="prod__text">
-                <div class="prod__title" itemprop="name"><a href="#">AMY</a></div>
-                <div class="prod__meta">60 x 30</div>
-              </div>
-            </div>
-            <div class="prod" itemscope itemtype="http://schema.org/Thing" >
-              <div class="prod__img">
-                <a href="#" itemprop="image">
-                  <img src="img/prod3.jpg" alt="img">
-                </a>
-              </div>
-              <div class="prod__text">
-                <div class="prod__title" itemprop="name"><a href="#">AMY</a></div>
-                <div class="prod__meta">60 x 30</div>
-              </div>
-            </div>
-            <div class="prod" itemscope itemtype="http://schema.org/Thing" >
-              <div class="prod__img">
-                <a href="#" itemprop="image">
-                  <img src="img/prod1.jpg" alt="img">
-                </a>
-              </div>
-              <div class="prod__text">
-                <div class="prod__title" itemprop="name"><a href="#">AMY</a></div>
-                <div class="prod__meta">60 x 30</div>
-              </div>
-            </div>
-            <div class="prod" itemscope itemtype="http://schema.org/Thing" >
-              <div class="prod__img">
-                <a href="#" itemprop="image">
-                  <img src="img/prod2.jpg" alt="img">
-                </a>
-              </div>
-              <div class="prod__text">
-                <div class="prod__title" itemprop="name"><a href="#">AMY</a></div>
-                <div class="prod__meta">60 x 30</div>
-              </div>
-            </div>
-          </div>
-          <div class="column medium-12 products-row">
-            <div class="prod" itemscope itemtype="http://schema.org/Thing" >
-              <div class="prod__img">
-                <a href="#" itemprop="image">
-                  <img src="img/prod1.jpg" alt="img">
-                </a>
-              </div>
-              <div class="prod__text">
-                <div class="prod__title" itemprop="name"><a href="#">AMY</a></div>
-                <div class="prod__meta">60 x 30</div>
-              </div>
-            </div>
-            <div class="prod" itemscope itemtype="http://schema.org/Thing" >
-              <div class="prod__img">
-                <a href="#" itemprop="image">
-                  <img src="img/prod2.jpg" alt="img">
-                </a>
-              </div>
-              <div class="prod__text">
-                <div class="prod__title" itemprop="name"><a href="#">AMY</a></div>
-                <div class="prod__meta">60 x 30</div>
-              </div>
-            </div>
-            <div class="prod" itemscope itemtype="http://schema.org/Thing" >
-              <div class="prod__img">
-                <a href="#" itemprop="image">
-                  <img src="img/prod3.jpg" alt="img">
-                </a>
-              </div>
-              <div class="prod__text">
-                <div class="prod__title" itemprop="name"><a href="#">AMY</a></div>
-                <div class="prod__meta">60 x 30</div>
-              </div>
-            </div>
-            <div class="prod" itemscope itemtype="http://schema.org/Thing" >
-              <div class="prod__img">
-                <a href="#" itemprop="image">
-                  <img src="img/prod1.jpg" alt="img">
-                </a>
-              </div>
-              <div class="prod__text">
-                <div class="prod__title" itemprop="name"><a href="#">AMY</a></div>
-                <div class="prod__meta">60 x 30</div>
-              </div>
-            </div>
-            <div class="prod" itemscope itemtype="http://schema.org/Thing" >
-              <div class="prod__img">
-                <a href="#" itemprop="image">
-                  <img src="img/prod2.jpg" alt="img">
-                </a>
-              </div>
-              <div class="prod__text">
-                <div class="prod__title" itemprop="name"><a href="#">AMY</a></div>
-                <div class="prod__meta">60 x 30</div>
-              </div>
-            </div>
-          </div>
-        </div>
 
-
-<div class="page-content">
-	<div class="page-mask"></div>
-
-	<div class="row collapse">
-	    <main class="column medium-10 main-section" role="main">
-	      <!-- !! was deleted class medium-10 and added modificators: main-section_wider, is-small  -->
-	        <div class="bcrumbs-container">
-	          <ul class="bcrumbs">
-	            <li><a href="#"><span>Главная </span></a></li>
-	            <li><a href="#"><span>Производители </span></a></li>
-	            <li><a href="#"><span>Плитка</span></a></li> 
-	            <li><span>Almera Ceramica</span></li>
-	          </ul>
-	        </div><!-- /bcrumbs-->
-
-	        <!-- !! created new block - return to the main page -->
-	        <div class="return-link"><a href=""><i class="icon-arrow-left"></i>Назад на главную</a></div>
-
-	        <!-- !! add mobile tabs for catalog items -->
-	        <!-- BEGIN MOBILE ASIDE-MENU -->
-	        <section class="aside-menu">
-	          <div class="row collapse">
-	            <div class="tab">
-	              <ul class="tab__list">
-	                <li class="tab__option js-nav-option has-navdrop">
-	                  <a href="#" class="tab__link js-nav-link"><span>Плитка</span><i class="icon-arr-down"></i></a>
-	                  <ul class="tabdrop js-navdrop">
-	                    <li class="tabdrop__option"><a href="#" class="tabdrop__link"><span>Мозаика</span></a></li>
-	                    <li class="tabdrop__option"><a href="#" class="tabdrop__link"><span>Сантехника</span></a></li>
-	                    <li class="tabdrop__option"><a href="#" class="tabdrop__link"><span>Смесители</span></a></li>
-	                    <li class="tabdrop__option"><a href="#" class="tabdrop__link"><span>Мебель</span></a></li>
-	                    <li class="tabdrop__option"><a href="#" class="tabdrop__link"><span>Стройхимия</span></a></li>
-	                    <li class="tabdrop__option"><a href="#" class="tabdrop__link"><span>Обогреватели</span></a></li>
-	                  </ul>
-	                </li> 
-	              </ul><!-- /list items menu -->
-	            </div> 
-	          </div>
-	        </section> 
-	        <!-- END MOBILE ASIDE-MENU -->
-
-	        <section class="main-container">
-	          <h1 class="main-title">Керамическая плитка <strong>Almera Ceramica</strong> Urbis</h1>
-	          
-	          <div class="row collapse">
-	            <!-- !! deleted 2 class: column, mediun-12 -->
-	              <div class="product-box" itemscope itemtype="http://schema.org/Thing" >
-	                  <div class="product-box__slider">
-                      <div class=" slider-for product-box__slider-for">
-                        <div class="product-box__slide">
-                          <img src="img/slide.jpg">
-                        </div>
-                        <div class="product-box__slide">
-                          <img src="img/slide.jpg">
-                        </div>
-                        <div class="product-box__slide">
-                          <img src="img/article-img.jpg">
-                        </div>
-                        <div class="product-box__slide">
-                          <img src="img/slide.jpg">
-                        </div>
-                        <div class="product-box__slide">
-                          <img src="img/article-img.jpg">
-                        </div>
-                        <div class="product-box__slide">
-                          <img src="img/slide.jpg">
-                        </div>
-                        <div class="product-box__slide">
-                          <img src="img/article-img.jpg">
-                        </div>
-                      </div>
-                      <div class="slider-nav product-box__slider-nav">
-                        <div class="product-box__slide">
-                          <img src="img/slide-smaller.jpg">
-                        </div>
-                        <div class="product-box__slide">
-                          <img src="img/img2.png">
-                        </div>
-                        <div class="product-box__slide">
-                          <img src="img/slide-smaller.jpg">
-                        </div>
-                        <div class="product-box__slide">
-                          <img src="img/slide-smaller.jpg">
-                        </div>
-                        <div class="product-box__slide">
-                          <img src="img/slide-smaller.jpg">
-                        </div>
-                        <div class="product-box__slide">
-                          <img src="img/slide-smaller.jpg">
-                        </div>
-                        <div class="product-box__slide">
-                          <img src="img/slide-smaller.jpg">
-                        </div>
-                      </div>
-                    </div>
-	                  <div class="product-box__main">
-	                   <div class="product-box__title" itemprop="name">Blanco Brillo</div>
-	                    <div class="withdrawn-from-sale">Коллекция снята с продажи</div>
-	                   <div class="product-box__text js-description" itemprop="description">
-	                     <p>Кажется, будто бескрайний океан захлестывает волной бурных эмоций, свежести и прохлады, когда начинаешь изучать необыкновенно светлую и позитивную коллекцию керамической плитки для ванной комнаты Ocean от Aparici. Кафель форматом 316х444 мм из класса средней стоимости невозможно отличить от мозаики, словно из множества маленьких бело-голубых кубиков льда  собраны целые полотна, отзеркаливающие от своей фактурной поверхности лучи света, излучающие положительные эмоции, радость и умиротворение. Благодаря нежным оттенками, позаимствованным у чистого летнего небосвода, серия Ocean порадовала глубиной, мягкостью и невесомостью. Нежно – голубой кафель оттеняет светлые элементы, а волнообразные узоры на фризе акцентируют внимание на том, что в этом помещении место водным процедурам и чистоте телесной и душевной.</p>
-	                   </div>
-	                   <a href="#" class="link-dotted js-toggle-description">Подробнее о товаре</a>
-	                  </div>
-	              </div>
-	          </div>
-	          <div class="row collapse">
-	            <div class="column medium-12 products-row">
-	              <h2 class="small-title">Товары в интернет магазине из коллекции Urbis</h2>
-	              <div class="prod" itemscope itemtype="http://schema.org/Thing" >
-	                <div class="prod__img">
-	                  <a href="#" itemprop="image">
-	                    <img src="img/prod1.jpg" alt="img">
-	                  </a>
-	                </div>
-	                <div class="prod__text">
-	                  <div class="prod__title" itemprop="name">AMY</div>
-	                  <div class="prod__meta">60 x 30</div>
-	                  <div class="prod__price">
-	                    <a href="#" data-reveal-id="basket" id="btnbasket" class="btn gradient"><span class="icon buy"></span></a>
-	                    <p class="price price_right">1600,<sup>34 грн.</sup></p>
-	                  </div>
-	                </div>
-	              </div>
-	              <div class="prod" itemscope itemtype="http://schema.org/Thing" >
-	                <div class="prod__img">
-	                  <a href="#" itemprop="image">
-	                    <img src="img/prod2.jpg" alt="img">
-	                  </a>
-	                </div>
-	                <div class="prod__text">
-	                  <div class="prod__title" itemprop="name"><a href="#">AMY</a></div>
-	                  <div class="prod__meta">60 x 30</div>
-	                  <div class="prod__price">
-	                    <a href="#" data-reveal-id="basket" id="btnbasket" class="btn gradient"><span class="icon buy"></span></a>
-	                    <p class="price price_right">1600,<sup>34 грн.</sup></p>
-	                  </div>
-	                </div>
-	              </div>
-	              <div class="prod" itemscope itemtype="http://schema.org/Thing" >
-	                <div class="prod__img">
-	                  <a href="#" itemprop="image">
-	                    <img src="img/prod3.jpg" alt="img">
-	                  </a>
-	                </div>
-	                <div class="prod__text">
-	                  <div class="prod__title" itemprop="name"><a href="#">AMY</a></div>
-	                  <div class="prod__meta">60 x 30</div>
-	                  <div class="prod__price">
-	                    <a href="#" data-reveal-id="basket" id="btnbasket" class="btn gradient"><span class="icon buy"></span></a>
-	                    <p class="price price_right">1600,<sup>34 грн.</sup></p>
-	                  </div>
-	                </div>
-	              </div>
-	              <div class="prod" itemscope itemtype="http://schema.org/Thing" >
-	                <div class="prod__img">
-	                  <a href="#" itemprop="image">
-	                    <img src="img/prod1.jpg" alt="img">
-	                  </a>
-	                </div>
-	                <div class="prod__text">
-	                  <div class="prod__title" itemprop="name"><a href="#">AMY</a></div>
-	                  <div class="prod__meta">60 x 30</div>
-	                  <div class="prod__price">
-	                    <a href="#" data-reveal-id="basket" id="btnbasket" class="btn gradient"><span class="icon buy"></span></a>
-	                    <p class="price price_right">1600,<sup>34 грн.</sup></p>
-	                  </div>
-	                </div>
-	              </div>
-	              <div class="prod" itemscope itemtype="http://schema.org/Thing" >
-	                <div class="prod__img">
-	                  <a href="#" itemprop="image">
-	                    <img src="img/prod2.jpg" alt="img">
-	                  </a>
-	                </div>
-	                <div class="prod__text">
-	                  <div class="prod__title" itemprop="name"><a href="#">AMY</a></div>
-	                  <div class="prod__meta">60 x 30</div>
-	                  <div class="prod__price">
-	                    <a href="#" data-reveal-id="basket" id="btnbasket" class="btn gradient"><span class="icon buy"></span></a>
-	                    <p class="price price_right">1600,<sup>34 грн.</sup></p>
-	                  </div>
-	                </div>
-	              </div>
-	              <div class="prod" itemscope itemtype="http://schema.org/Thing" >
-	                <div class="prod__img">
-	                  <a href="#" itemprop="image">
-	                    <img src="img/prod3.jpg" alt="img">
-	                  </a>
-	                </div>
-	                <div class="prod__text">
-	                  <div class="prod__title" itemprop="name"><a href="#">C.CANDY фриз</a></div>
-	                  <div class="prod__meta">60 x 30</div>
-	                  <div class="prod__price">
-	                    <a href="#" data-reveal-id="basket" id="btnbasket" class="btn gradient"><span class="icon buy"></span></a>
-	                    <p class="price price_right">1600,<sup>34 грн.</sup></p>
-	                  </div>
-	                </div>
-	              </div>
-	              <div class="prod" itemscope itemtype="http://schema.org/Thing" >
-	                <div class="prod__img">
-	                  <a href="#" itemprop="image">
-	                    <img src="img/prod1.jpg" alt="img">
-	                  </a>
-	                </div>
-	                <div class="prod__text">
-	                  <div class="prod__title" itemprop="name"><a href="#">AMY</a></div>
-	                  <div class="prod__meta">60 x 30</div>
-	                  <div class="prod__price">
-	                    <a href="#" data-reveal-id="basket" id="btnbasket" class="btn gradient"><span class="icon buy"></span></a>
-	                    <p class="price price_right">1600,<sup>34 грн.</sup></p>
-	                  </div>
-	                </div>
-	              </div>
-	              <div class="prod" itemscope itemtype="http://schema.org/Thing" >
-	                <div class="prod__img">
-	                  <a href="#" itemprop="image">
-	                    <img src="img/prod2.jpg" alt="img">
-	                  </a>
-	                </div>
-	                <div class="prod__text">
-	                  <div class="prod__title" itemprop="name"><a href="#">COLUMNA CANDY декор</a></div>
-	                  <div class="prod__meta">60 x 30</div>
-	                  <div class="prod__price">
-	                    <a href="#" data-reveal-id="basket" id="btnbasket" class="btn gradient"><span class="icon buy"></span></a>
-	                    <p class="price price_right">1600,<sup>34 грн.</sup></p>
-	                  </div>
-	                </div>
-	              </div>
-	              <div class="prod" itemscope itemtype="http://schema.org/Thing" >
-	                <div class="prod__img">
-	                  <a href="#" itemprop="image">
-	                    <img src="img/prod3.jpg" alt="img">
-	                  </a>
-	                </div>
-	                <div class="prod__text">
-	                  <div class="prod__title" itemprop="name"><a href="#">FRESCO CANDY декор4</a></div>
-	                  <div class="prod__meta">60 x 30</div>
 	                  <div class="prod__price">
 	                    <a href="#" data-reveal-id="basket" id="btnbasket" class="btn gradient"><span class="icon buy"></span></a>
 	                    <p class="price price_right">1600,<sup>34 грн.</sup></p>
