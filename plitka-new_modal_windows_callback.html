@@ -1844,9 +1844,10 @@
           <div class="column medium-6">
             <label class="field">
               <span class="field__title">Номер вашего телефона</span>
-              <span class="field__body">
-                <input class="input js-input-tel" type="tel" placeholder="+38(___)-___-__-__" required>
-              </span>
+                <span class="field__body">
+                    <ins class="phone_prefix phone_prefix_callback_popup">+38</ins>
+                    <input id="callbackPhone" class="input _js-input-tel phone_digits phone_prefixed_input  " type="tel" maxlength="10" required>
+                </span>
             </label>
             <label class="field">
               <span class="field__title">Ваше имя <span>(опционально)</span></span>

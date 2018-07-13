@@ -909,10 +909,6 @@
 
 
 
-//////////////////////////////////
-// begin slider page-collection //
-//////////////////////////////////
-
 $('.product-box__slider .slider-for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
