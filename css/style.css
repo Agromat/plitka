@@ -2951,6 +2951,9 @@ nav {
     top: -5px;
   }
 }
+.sticker.sticker_bottom {
+  top: 25px;
+}
 .sticker.sticker_mob {
   display: none;
 }

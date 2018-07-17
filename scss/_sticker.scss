@@ -8,7 +8,9 @@
 	@include r($mob) {
 		top: -5px;
 	}
-
+    &.sticker_bottom {
+      top: 25px;
+    }
 	&.sticker_mob {
 		display: none;
 		@include r($mob) {
