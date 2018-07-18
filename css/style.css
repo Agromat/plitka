@@ -1554,6 +1554,16 @@ nav {
   font-size: 18px;
   font-weight: bold;
 }
+.btn.btn_grey {
+  background: #babdc2;
+  box-shadow: inset 0px -3px 0px 0px #A9AEB4;
+}
+.btn.btn_grey:before {
+  background: #A9AEB4;
+}
+.btn.btn_grey:active {
+  box-shadow: inset 0px 3px 0px 0px #A9AEB4;
+}
 
 .btn.credit-calc {
   text-decoration: none;
@@ -6289,6 +6299,13 @@ footer .row.link-footer .column:last-child {
     margin-bottom: 20px;
   }
 }
+.form .form-order .form-group.checkbox_row:not(#foo) {
+  margin-left: 0;
+}
+.form .form-order .form-group.checkbox_row:not(#foo) input {
+  position: absolute;
+  pointer-events: none;
+}
 .form .form-order .form-group.radio:not(#foo) {
   margin-left: 0px;
   margin-bottom: 40px;
@@ -6580,6 +6597,65 @@ footer .row.link-footer .column:last-child {
   }
 }
 
+.modal-form__cols {
+  display: flex;
+}
+.modal-form__col {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 45px;
+}
+.modal-form__col_left {
+  max-width: 55px;
+  margin-right: 24px;
+}
+.modal-form__title {
+  font-weight: 700;
+  line-height: 38px;
+  margin-bottom: 10px;
+}
+.modal-form__title_mb {
+  margin-bottom: 85px;
+}
+.modal-form .checkbox span {
+  height: 38px;
+  display: flex !important;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.modal-form .checkbox span input {
+  position: absolute;
+  pointer-events: none;
+}
+.modal-form__input-wrap {
+  margin-bottom: 10px;
+  max-width: 125px;
+}
+.modal-form__link {
+  color: #0053a0;
+  line-height: 36px;
+  text-decoration: underline;
+}
+.modal-form__buttons .btn {
+  width: 100%;
+  margin-bottom: 20px !important;
+}
+.modal-form__buttons .btn:last-child {
+  margin-bottom: 0 !important;
+}
+.modal-form__result {
+  margin-bottom: 45px;
+}
+.modal-form__hint {
+  color: #999999;
+  margin-bottom: 0 !important;
+}
+.modal-form__price {
+  font-size: 31px !important;
+  font-weight: 700;
+  color: #333;
+}
+
 .form-group {
   font-size: 14px;
   color: #646464;
@@ -6624,7 +6700,7 @@ footer .row.link-footer .column:last-child {
 .form-group.checkbox:not(#foo):after {
   clear: both;
 }
-.form-group.checkbox:not(#foo) input[type='checkbox'] {
+.form-group.checkbox:not(#foo) input[type='checkbox'], .form-group.checkbox:not(#foo) input[type='radio'] {
   outline: none;
   opacity: 0;
   float: left;
@@ -6648,7 +6724,7 @@ footer .row.link-footer .column:last-child {
   display: block;
   line-height: normal;
 }
-.form-group.checkbox:not(#foo) input[type='checkbox'] + label {
+.form-group.checkbox:not(#foo) input[type='checkbox'] + label, .form-group.checkbox:not(#foo) input[type='radio'] + label {
   margin: 0;
   clear: none;
   padding: 0 4px 0 24px;
@@ -6662,7 +6738,7 @@ footer .row.link-footer .column:last-child {
   -ms-user-select: none;
   user-select: none;
 }
-.form-group.checkbox:not(#foo) input[type='checkbox']:checked + label {
+.form-group.checkbox:not(#foo) input[type='checkbox']:checked + label, .form-group.checkbox:not(#foo) input[type='radio']:checked + label {
   background: url(../img/check.png) left 3px no-repeat;
 }
 .form-group.radio:not(#foo) {
@@ -7080,6 +7156,10 @@ footer .row.link-footer .column:last-child {
 
 .modal_w330 {
   max-width: 330px;
+}
+
+.modal_w300 {
+  max-width: 300px;
 }
 
 .modal__header {
@@ -11144,6 +11224,16 @@ footer .row.link-footer .column:last-child {
   line-height: 1;
   font-size: 18px;
   font-weight: bold;
+}
+.btn.btn_grey {
+  background: #babdc2;
+  box-shadow: inset 0px -3px 0px 0px #A9AEB4;
+}
+.btn.btn_grey:before {
+  background: #A9AEB4;
+}
+.btn.btn_grey:active {
+  box-shadow: inset 0px 3px 0px 0px #A9AEB4;
 }
 
 .btn.credit-calc {

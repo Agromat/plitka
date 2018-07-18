@@ -79,6 +79,13 @@
 					margin-bottom: 20px;
 				}
 			}
+            &.checkbox_row:not(#foo) {
+              margin-left: 0;
+              input {
+                position: absolute;
+                pointer-events: none;
+              }
+            }
 			&.radio:not(#foo){
 				margin-left: 0px;
 				margin-bottom: 40px;
@@ -317,6 +324,68 @@
 			float: none;
 		}
 	}
+}
+.modal-form{
+  &__cols {
+    display: flex;
+  }
+  &__col {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 45px;
+    &_left {
+      max-width: 55px;
+      margin-right: 24px;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    line-height: 38px;
+    margin-bottom: 10px;
+    &_mb {
+      margin-bottom: 85px;
+    }
+  }
+  .checkbox span {
+    height: 38px;
+    display: flex!important;
+    align-items: center;
+    margin-bottom: 10px;
+    input {
+      position: absolute;
+      pointer-events: none;
+    }
+  }
+  &__input-wrap {
+    margin-bottom: 10px;
+    max-width: 125px;
+  }
+  &__link {
+    color: #0053a0;
+    line-height: 36px;
+    text-decoration: underline;
+  }
+  &__buttons {
+    .btn {
+      width: 100%;
+      margin-bottom: 20px!important;
+      &:last-child {
+        margin-bottom: 0!important;
+      }
+    }
+  }
+  &__result {
+    margin-bottom: 45px;
+  }
+  &__hint {
+    color: #999999;
+    margin-bottom: 0!important;
+  }
+  &__price {
+    font-size: 31px!important;
+    font-weight: 700;
+    color: #333;
+  }
 }
 
 
