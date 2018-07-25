@@ -957,3 +957,16 @@ if ($(window).width() < 768) {
    $(".reveal-modal").removeClass("is-fixed");
 }
 
+
+if($('.compare-list')){
+    let height = 0;
+    $('.compare-list-item').each(function (i, el) {
+        let section = $(el).find('.compare-list-item__header');
+        let sectionHeight = section.height();
+        if (sectionHeight > height) {
+            height = sectionHeight;
+        }
+    });
+    $('.compare-list-item__header').css('height', `${height}px`);
+}
+

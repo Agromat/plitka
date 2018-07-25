@@ -13924,7 +13924,8 @@ body.is-overflow {
   margin-bottom: 0;
   line-height: 1;
 }
-.compare-category__option {
+
+.compare-option {
   background-color: transparent;
   border: none;
   color: #999999;
@@ -13934,11 +13935,75 @@ body.is-overflow {
   text-align: left;
   padding: 0;
 }
-.compare-category__option-icon {
+.compare-option__icon {
   margin-right: 5px;
   vertical-align: bottom;
 }
-.compare-category__option:hover {
+.compare-option:hover {
   font-weight: 700;
   text-decoration: underline;
+}
+
+.compare-list__content {
+  display: flex;
+}
+.compare-list__differences, .compare-list__characteristics {
+  font-size: 0.93745rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+.compare-list__differences:after, .compare-list__characteristics:after {
+  position: absolute;
+  content: '';
+  display: block;
+  right: -15px;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  border: 1px solid #0053a0;
+  border-left: none;
+  border-bottom: none;
+}
+.compare-list__differences {
+  position: relative;
+}
+.compare-list__differences:after {
+  transform: translateY(-50%) rotate(45deg);
+}
+.compare-list__characteristics {
+  color: #333333;
+  font-weight: 700;
+  position: relative;
+  text-align: right;
+}
+.compare-list__characteristics:after {
+  transform: translateY(-50%) rotate(135deg);
+  border-color: #000000;
+}
+
+.compare-list-item {
+  border-right: 1px solid #DDDDDD;
+  width: 200px;
+}
+.compare-list-item__header {
+  padding: 0 20px;
+}
+.compare-list-item__header .compare-option {
+  display: block;
+  font-size: 0.75rem;
+}
+.compare-list-item__header .compare-option:first-child {
+  margin: 6px 0 20px 0;
+}
+.compare-list-item__specification {
+  padding: 13px 15px 13px 25px;
+}
+.compare-list-item__specification.is-hovered {
+  background-color: #efefef;
+}
+.compare-list-item_characteristics .compare-list-item__header {
+  padding: 0 40px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
