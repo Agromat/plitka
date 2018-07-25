@@ -13718,3 +13718,227 @@ body.is-overflow {
     color: #000;
   }
 }
+
+.compare-icon {
+  font-size: 0;
+  text-decoration: none;
+  display: inline-block;
+  border: none !important;
+}
+.compare-icon__item {
+  background-color: #f4f4f4;
+  width: 6px;
+  display: inline-block;
+  border-radius: 3px;
+  border: none !important;
+}
+.compare-icon__item_big {
+  height: 25px;
+  margin-right: 2px;
+}
+.compare-icon__item_small {
+  height: 16px;
+}
+.compare-icon_green .compare-icon__item {
+  background-color: #AFC900;
+}
+.compare-icon_small .compare-icon__item {
+  width: 4px;
+}
+.compare-icon_small .compare-icon__item_big {
+  height: 13px;
+}
+.compare-icon_small .compare-icon__item_small {
+  height: 8px;
+}
+
+.dashedtext .compare-icon {
+  margin-right: 9px;
+}
+
+.icon.compare:before {
+  background-position: center;
+  background-image: url("../img/compare-green.png");
+}
+
+.is-compare {
+  color: #bad000;
+  font-weight: 700;
+}
+
+.menu-other__compare {
+  width: 150px;
+  text-align: right;
+}
+
+.menu-other li.menu-other__compare a > span {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-other li.menu-other__compare a .compare-icon {
+  vertical-align: bottom;
+}
+
+.menu-other li.menu-other__compare > a:hover span {
+  border-bottom: none;
+}
+
+.menu-other__compare-quantity {
+  position: absolute;
+  top: -10px;
+  left: -14px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fa5e00;
+  font-size: 10px;
+  color: #fff;
+}
+
+.menu-other__compare-quantity > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.page-content_compare {
+  padding-top: 50px;
+}
+
+.main-section-compare .main-title {
+  font-size: 1.3125rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 2.1875rem;
+}
+
+.compare-category {
+  margin-bottom: 58px;
+}
+.compare-category:last-child {
+  margin-bottom: 0;
+}
+.compare-category__title {
+  color: #0053a0;
+  font-size: 1.3125rem;
+  text-decoration: underline;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.compare-category__hint {
+  color: #999999;
+  font-size: 0.8125rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+.compare-category__content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+@media only screen and (max-width: 619px) {
+  .compare-category__content {
+    justify-content: center;
+  }
+}
+.compare-category__item {
+  width: 200px;
+  padding: 45px 25px 0 25px;
+  position: relative;
+  border-right: 1px solid #DDDDDD;
+  border-left: 1px solid #DDDDDD;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.compare-category__item:first-child {
+  border-left: 1px solid #DDDDDD;
+}
+.compare-category__item_options {
+  padding: 51px 0 0 30px;
+  border: none;
+}
+@media only screen and (max-width: 1024px) {
+  .compare-category__item {
+    border-left: 1px solid #DDDDDD;
+  }
+  .compare-category__item_options {
+    border: none;
+  }
+}
+.compare-category__item-close {
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 7px;
+  background-color: transparent;
+  border: none;
+}
+.compare-category__item-close:before, .compare-category__item-close:after {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 25px;
+  background-color: #E1E1E1;
+  transform: rotate(45deg);
+  top: -3px;
+  left: 9px;
+}
+.compare-category__item-close:after {
+  transform: rotate(-45deg);
+}
+.compare-category__item-close:hover:before, .compare-category__item-close:hover:after {
+  background-color: #4C4C4C;
+}
+.compare-category__item .img {
+  position: relative;
+}
+.compare-category__item .img:hover:after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border: 4px solid #eaff00;
+}
+.compare-category__item .title {
+  color: #0053a0;
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 1.14;
+  text-decoration: underline;
+}
+.compare-category__item .title:hover {
+  color: #333333;
+}
+.compare-category__item .title:hover span {
+  border-bottom: none;
+}
+.compare-category__item .price {
+  margin-bottom: 0;
+  line-height: 1;
+}
+.compare-category__option {
+  background-color: transparent;
+  border: none;
+  color: #999999;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.14;
+  text-align: left;
+  padding: 0;
+}
+.compare-category__option-icon {
+  margin-right: 5px;
+  vertical-align: bottom;
+}
+.compare-category__option:hover {
+  font-weight: 700;
+  text-decoration: underline;
+}
