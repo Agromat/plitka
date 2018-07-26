@@ -958,15 +958,111 @@ if ($(window).width() < 768) {
 }
 
 
-if($('.compare-list')){
-    let height = 0;
-    $('.compare-list-item').each(function (i, el) {
-        let section = $(el).find('.compare-list-item__header');
-        let sectionHeight = section.height();
-        if (sectionHeight > height) {
-            height = sectionHeight;
+$('.js-compare-remove').on('click', function () {
+   $(this).closest('.compare-item').remove();
+});
+
+if($('.js-compare-list')){
+    function layout() {
+        let cols = $('.js-compare-list').find('.js-col');
+        let cellsLength = $('.js-compare-list').find('.js-col-characteristics .js-cell').length;
+        for (let n = 0; n < cellsLength; n++) {
+            let height = 0;
+            let cells = [];
+            cols.each(function (i, el) {
+                let cell = $(el).find('.js-cell')[n];
+                cells.push(cell);
+                let cellHeight = $(cell).outerHeight();
+                cellHeight > height ? height = cellHeight : false;
+                function cellHover() {
+                    $(cell).on('mouseover', function () {
+                        if (!$(this).hasClass('is-hovered')) {
+                            $(cells).each(function (i, el) {
+                                $(el).addClass('is-hovered');
+                            })
+                        }
+                    });
+                    $(cell).on('mouseout', function () {
+                        if ($(this).hasClass('is-hovered')) {
+                            $(cells).each(function (i, el) {
+                                $(el).removeClass('is-hovered');
+                            })
+                        }
+                    })
+
+                }
+                cellHover();
+            });
+            $(cells).each(function (i, el) {
+                // $(el).css('height', height);
+                $(el).css('min-height', height);
+            });
         }
+    }
+    function characteristics() {
+        let btn = $('.js-compare-characteristics');
+        btn.on('click', function () {
+            btn.toggleClass('is-closed');
+            $('.js-cells').slideToggle();
+        })
+    }
+    let slider = $('.js-compare-slider').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        infinite: false,
+        appendArrows: $('.js-arrows'),
+        responsive: [
+            {
+                breakpoint: 1220,
+                settings: {
+                    slidesToShow: 4,
+                }
+            },
+            {
+                breakpoint: 980,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
     });
-    $('.compare-list-item__header').css('height', `${height}px`);
+    $('.js-compare-remove-from-list').on('click', function () {
+        slider.slick('slickRemove', ($(this).closest('.slick-slide').index()));
+    });
+    layout();
+    characteristics();
+    function debounce(func, wait, immediate) {
+        let timeout;
+        return function() {
+            let context = this, args = arguments;
+            let later = function() {
+                timeout = null;
+                if (!immediate) func.apply(context, args);
+            };
+            let callNow = immediate && !timeout;
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+            if (callNow) func.apply(context, args);
+        };
+    }
+
+    let reinitLayout = debounce(function() {
+        layout();
+        console.log('work');
+    }, 250);
+
+    $(window).on('resize', reinitLayout);
 }
 

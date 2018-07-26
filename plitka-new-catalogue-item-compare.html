@@ -630,13 +630,14 @@
             <section class="main-container">
                 <div class="compare-list">
                     <div class="compare-list__top">
-                        <h1 class="main-title">Сравнение товаров </h1>
+                        <h1 class="main-title compare-list__title">Сравнение товаров </h1>
+                        <div class="compare-list__arrows js-arrows"></div>
                     </div>
 
-                    <div class="compare-list__content">
-                        <div class="compare-list-item compare-list-item_characteristics">
-                            <div class="compare-list-item__header">
-                                <div class="compare-list-item__options">
+                    <div class="compare-list__content js-compare-list">
+                        <div class="js-col js-col-characteristics compare-item compare-item_list compare-item_characteristics">
+                            <div class="js-cell js-cell-header compare-item__header">
+                                <div class="compare-item__options">
                                     <button class="compare-option">
                                         <img class="compare-option__icon" src="img/add-goods.png" alt="Добавить товар">
                                         <span class="compare-option__title">Добавить товар</span>
@@ -648,57 +649,294 @@
                                 </div>
                                 <div class="compare-list__settings">
                                     <a href="#" class="compare-list__differences">Только Отличия</a>
-                                    <a href="#" class="compare-list__characteristics">Характеристики</a>
+                                    <button class="compare-list__characteristics js-compare-characteristics">Характеристики</button>
                                 </div>
                             </div>
-                            <div class="compare-list-item__specification">Бренд</div>
-                            <div class="compare-list-item__specification">Коллекция</div>
-                            <div class="compare-list-item__specification">Материал</div>
-                            <div class="compare-list-item__specification">Форма</div>
-                            <div class="compare-list-item__specification is-hovered">Размеры</div>
-                            <div class="compare-list-item__specification">Глубина</div>
-                            <div class="compare-list-item__specification">Установка</div>
-                            <div class="compare-list-item__specification">Комплектация</div>
-                            <div class="compare-list-item__specification">Слив воды</div>
-                            <div class="compare-list-item__specification">Объем</div>
-                            <div class="compare-list-item__specification">Вес</div>
-                            <div class="compare-list-item__specification">Стиль</div>
-                            <div class="compare-list-item__specification">Цвет</div>
-                            <div class="compare-list-item__specification">Поверхность</div>
+                            <div class="js-cells">
+                                <div class="js-cell compare-item__specification">Бренд</div>
+                                <div class="js-cell compare-item__specification">Коллекция</div>
+                                <div class="js-cell compare-item__specification">Материал</div>
+                                <div class="js-cell compare-item__specification">Форма</div>
+                                <div class="js-cell compare-item__specification">Размеры</div>
+                                <div class="js-cell compare-item__specification">Глубина</div>
+                                <div class="js-cell compare-item__specification">Установка</div>
+                                <div class="js-cell compare-item__specification">Комплектация</div>
+                                <div class="js-cell compare-item__specification">Слив воды</div>
+                                <div class="js-cell compare-item__specification">Объем</div>
+                                <div class="js-cell compare-item__specification">Вес</div>
+                                <div class="js-cell compare-item__specification">Стиль</div>
+                                <div class="js-cell compare-item__specification">Цвет</div>
+                                <div class="js-cell compare-item__specification">Поверхность</div>
+                            </div>
 
                         </div>
-                        <div class="compare-list-item">
-                            <div class="compare-list-item__header">
-                                <button class="compare-category__item-close"></button>
-                                <div class="overflow">
-                                    <div class="img">
-                                        <img src="img/img.png">
-                                    </div>
-                                    <div class="desckription">
-                                        <a href="#" class="title"><span>Ванна из искусственного камня BALTECO Soul HALO 170x72</span></a>
-                                        <p class="price">
-                                            <span>81 655  <sup>грн</sup></span>
-                                        </p>
+                        <div class="compare-list__slider js-compare-slider">
+                            <div class="js-col compare-item compare-item_list">
+                                <div class="js-cell js-cell-header compare-item__header">
+                                    <button class="compare-item__close js-compare-remove-from-list"></button>
+                                    <div class="overflow">
+                                        <div class="img">
+                                            <img src="img/img.png">
+                                        </div>
+                                        <div class="desckription">
+                                            <a href="#" class="title"><span>Ванна из искусственного камня BALTECO Soul HALO 170x72</span></a>
+                                            <p class="price">
+                                                <span>81 655  <sup>грн</sup></span>
+                                            </p>
 
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="js-cells">
+                                    <div class="js-cell compare-item__specification">BALTECO</div>
+                                    <div class="js-cell compare-item__specification">Soul</div>
+                                    <div class="js-cell compare-item__specification">искусственный камень</div>
+                                    <div class="js-cell compare-item__specification">овальная</div>
+                                    <div class="js-cell compare-item__specification">180×82×630</div>
+                                    <div class="js-cell compare-item__specification">50</div>
+                                    <div class="js-cell compare-item__specification">отдельностоящая</div>
+                                    <div class="js-cell compare-item__specification">ванна</div>
+                                    <div class="js-cell compare-item__specification">в канализацию по центру</div>
+                                    <div class="js-cell compare-item__specification">290</div>
+                                    <div class="js-cell compare-item__specification">111</div>
+                                    <div class="js-cell compare-item__specification">минимализм</div>
+                                    <div class="js-cell compare-item__specification">белый</div>
+                                    <div class="js-cell compare-item__specification">гладкая </div>
+                                </div>
                             </div>
-                            <div class="compare-list-item__specification">BALTECO</div>
-                            <div class="compare-list-item__specification">Soul</div>
-                            <div class="compare-list-item__specification">искусственный камень</div>
-                            <div class="compare-list-item__specification">овальная</div>
-                            <div class="compare-list-item__specification">180×82×630</div>
-                            <div class="compare-list-item__specification">50</div>
-                            <div class="compare-list-item__specification">отдельностоящая</div>
-                            <div class="compare-list-item__specification">ванна</div>
-                            <div class="compare-list-item__specification">в канализацию</div>
-                            <div class="compare-list-item__specification">по центру</div>
-                            <div class="compare-list-item__specification">290</div>
-                            <div class="compare-list-item__specification">111</div>
-                            <div class="compare-list-item__specification">минимализм</div>
-                            <div class="compare-list-item__specification">белый</div>
-                            <div class="compare-list-item__specification">гладкая</div>
+                            <div class="js-col compare-item compare-item_list">
+                                <div class="js-cell js-cell-header compare-item__header">
+                                    <button class="compare-item__close js-compare-remove-from-list"></button>
+                                    <div class="overflow">
+                                        <div class="img">
+                                            <img src="img/img.png">
+                                        </div>
+                                        <div class="desckription">
+                                            <a href="#" class="title"><span>Стальная ванна Bette BetteForm 3970-000 Antinoise, 1700х700х420</span></a>
+                                            <p class="price">
+                                                <span>7 600 <sup>грн</sup></span>
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="js-cells">
+                                    <div class="js-cell compare-item__specification">BETTE</div>
+                                    <div class="js-cell compare-item__specification">-</div>
+                                    <div class="js-cell compare-item__specification">сталь</div>
+                                    <div class="js-cell compare-item__specification">прямоуголльная</div>
+                                    <div class="js-cell compare-item__specification">170×70×420</div>
+                                    <div class="js-cell compare-item__specification">-</div>
+                                    <div class="js-cell compare-item__specification">встраиваемая</div>
+                                    <div class="js-cell compare-item__specification">в подиум</div>
+                                    <div class="js-cell compare-item__specification">ванна</div>
+                                    <div class="js-cell compare-item__specification">по короткой стороне</div>
+                                    <div class="js-cell compare-item__specification">ванны</div>
+                                    <div class="js-cell compare-item__specification">-</div>
+                                    <div class="js-cell compare-item__specification">40</div>
+                                    <div class="js-cell compare-item__specification">минимализм</div>
+                                </div>
+                            </div>
+                            <div class="js-col compare-item compare-item_list">
+                                <div class="js-cell js-cell-header compare-item__header">
+                                    <button class="compare-item__close js-compare-remove-from-list"></button>
+                                    <div class="overflow">
+                                        <div class="img">
+                                            <img src="img/img.png">
+                                        </div>
+                                        <div class="desckription">
+                                            <a href="#" class="title"><span>Акриловая ванна Cersanit Zen 01001 170x85</span></a>
+                                            <p class="price">
+                                                <span>2 600<sup>грн</sup></span>
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="js-cells">
+                                    <div class="js-cell compare-item__specification">Cersanit</div>
+                                    <div class="js-cell compare-item__specification">-</div>
+                                    <div class="js-cell compare-item__specification">акрил</div>
+                                    <div class="js-cell compare-item__specification">овальная</div>
+                                    <div class="js-cell compare-item__specification">180×82×630</div>
+                                    <div class="js-cell compare-item__specification">50</div>
+                                    <div class="js-cell compare-item__specification">пристенная</div>
+                                    <div class="js-cell compare-item__specification">ножки</div>
+                                    <div class="js-cell compare-item__specification"> по короткой стороне ванны</div>
+                                    <div class="js-cell compare-item__specification"> -</div>
+                                    <div class="js-cell compare-item__specification"> 20</div>
+                                    <div class="js-cell compare-item__specification"> минимализм</div>
+                                    <div class="js-cell compare-item__specification"> белый</div>
+                                    <div class="js-cell compare-item__specification"> гладкая </div>
+                                </div>
+                            </div>
+                            <div class="js-col compare-item compare-item_list">
+                                <div class="js-cell js-cell-header compare-item__header">
+                                    <button class="compare-item__close js-compare-remove-from-list"></button>
+                                    <div class="overflow">
+                                        <div class="img">
+                                            <img src="img/img.png">
+                                        </div>
+                                        <div class="desckription">
+                                            <a href="#" class="title"><span>Ванна Treesse QUADRA 180x80 см</span></a>
+                                            <p class="price">
+                                                <span>7 600<sup>грн</sup></span>
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="js-cells">
+                                    <div class="js-cell compare-item__specification">Treesse</div>
+                                    <div class="js-cell compare-item__specification">-</div>
+                                    <div class="js-cell compare-item__specification">искусственный камень</div>
+                                    <div class="js-cell compare-item__specification">прямоугольная</div>
+                                    <div class="js-cell compare-item__specification">180×80×0</div>
+                                    <div class="js-cell compare-item__specification">50</div>
+                                    <div class="js-cell compare-item__specification">-</div>
+                                    <div class="js-cell compare-item__specification">панель, слив</div>
+                                    <div class="js-cell compare-item__specification">слева</div>
+                                    <div class="js-cell compare-item__specification">-</div>
+                                    <div class="js-cell compare-item__specification">35</div>
+                                    <div class="js-cell compare-item__specification">классицизм</div>
+                                    <div class="js-cell compare-item__specification">белый</div>
+                                    <div class="js-cell compare-item__specification">гладкая</div>
+                                </div>
+                            </div>
+                            <div class="js-col compare-item compare-item_list">
+                                <div class="js-cell js-cell-header compare-item__header">
+                                    <button class="compare-item__close js-compare-remove-from-list"></button>
+                                    <div class="overflow">
+                                        <div class="img">
+                                            <img src="img/img.png">
+                                        </div>
+                                        <div class="desckription">
+                                            <a href="#" class="title"><span>Ванна из искусственного камня BALTECO Soul HALO 170x72</span></a>
+                                            <p class="price">
+                                                <span>81 655<sup>грн</sup></span>
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="js-cells">
+                                    <div class="js-cell compare-item__specification">BALTECO</div>
+                                    <div class="js-cell compare-item__specification">Soul</div>
+                                    <div class="js-cell compare-item__specification">искусственный камень</div>
+                                    <div class="js-cell compare-item__specification">овальная</div>
+                                    <div class="js-cell compare-item__specification">180×82×630</div>
+                                    <div class="js-cell compare-item__specification">50</div>
+                                    <div class="js-cell compare-item__specification">отдельностоящая</div>
+                                    <div class="js-cell compare-item__specification">ванна</div>
+                                    <div class="js-cell compare-item__specification">в канализацию по центру</div>
+                                    <div class="js-cell compare-item__specification">290</div>
+                                    <div class="js-cell compare-item__specification">111</div>
+                                    <div class="js-cell compare-item__specification">минимализм</div>
+                                    <div class="js-cell compare-item__specification">белый</div>
+                                    <div class="js-cell compare-item__specification">гладкая</div>
+                                </div>
+                            </div>
+                            <div class="js-col compare-item compare-item_list">
+                                <div class="js-cell js-cell-header compare-item__header">
+                                    <button class="compare-item__close js-compare-remove-from-list"></button>
+                                    <div class="overflow">
+                                        <div class="img">
+                                            <img src="img/img.png">
+                                        </div>
+                                        <div class="desckription">
+                                            <a href="#" class="title"><span>Ванна из искусственного камня BALTECO Soul HALO 170x72</span></a>
+                                            <p class="price">
+                                                <span>81 655<sup>грн</sup></span>
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="js-cells">
+                                    <div class="js-cell compare-item__specification">BALTECO</div>
+                                    <div class="js-cell compare-item__specification">Soul</div>
+                                    <div class="js-cell compare-item__specification">искусственный камень</div>
+                                    <div class="js-cell compare-item__specification">овальная</div>
+                                    <div class="js-cell compare-item__specification">180×82×630</div>
+                                    <div class="js-cell compare-item__specification">50</div>
+                                    <div class="js-cell compare-item__specification">отдельностоящая</div>
+                                    <div class="js-cell compare-item__specification">ванна</div>
+                                    <div class="js-cell compare-item__specification">в канализацию по центру</div>
+                                    <div class="js-cell compare-item__specification">290</div>
+                                    <div class="js-cell compare-item__specification">111</div>
+                                    <div class="js-cell compare-item__specification">минимализм</div>
+                                    <div class="js-cell compare-item__specification">белый</div>
+                                    <div class="js-cell compare-item__specification">гладкая</div>
+                                </div>
+                            </div>
+                            <div class="js-col compare-item compare-item_list">
+                                <div class="js-cell js-cell-header compare-item__header">
+                                    <button class="compare-item__close js-compare-remove-from-list"></button>
+                                    <div class="overflow">
+                                        <div class="img">
+                                            <img src="img/img.png">
+                                        </div>
+                                        <div class="desckription">
+                                            <a href="#" class="title"><span>Ванна из искусственного камня BALTECO Soul HALO 170x72</span></a>
+                                            <p class="price">
+                                                <span>81 655<sup>грн</sup></span>
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="js-cells">
+                                    <div class="js-cell compare-item__specification">BALTECO</div>
+                                    <div class="js-cell compare-item__specification">Soul</div>
+                                    <div class="js-cell compare-item__specification">искусственный камень</div>
+                                    <div class="js-cell compare-item__specification">овальная</div>
+                                    <div class="js-cell compare-item__specification">180×82×630</div>
+                                    <div class="js-cell compare-item__specification">50</div>
+                                    <div class="js-cell compare-item__specification">отдельностоящая</div>
+                                    <div class="js-cell compare-item__specification">ванна</div>
+                                    <div class="js-cell compare-item__specification">в канализацию по центру</div>
+                                    <div class="js-cell compare-item__specification">290</div>
+                                    <div class="js-cell compare-item__specification">111</div>
+                                    <div class="js-cell compare-item__specification">минимализм</div>
+                                    <div class="js-cell compare-item__specification">белый</div>
+                                    <div class="js-cell compare-item__specification">гладкая</div>
+                                </div>
+                            </div>
+                            <div class="js-col compare-item compare-item_list">
+                                <div class="js-cell js-cell-header compare-item__header">
+                                    <button class="compare-item__close js-compare-remove-from-list"></button>
+                                    <div class="overflow">
+                                        <div class="img">
+                                            <img src="img/img.png">
+                                        </div>
+                                        <div class="desckription">
+                                            <a href="#" class="title"><span>Ванна из искусственного камня BALTECO Soul HALO 170x72</span></a>
+                                            <p class="price">
+                                                <span>81 655<sup>грн</sup></span>
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="js-cells">
+                                    <div class="js-cell compare-item__specification">BALTECO</div>
+                                    <div class="js-cell compare-item__specification">Soul</div>
+                                    <div class="js-cell compare-item__specification">искусственный камень</div>
+                                    <div class="js-cell compare-item__specification">овальная</div>
+                                    <div class="js-cell compare-item__specification">180×82×630</div>
+                                    <div class="js-cell compare-item__specification">50</div>
+                                    <div class="js-cell compare-item__specification">отдельностоящая</div>
+                                    <div class="js-cell compare-item__specification">ванна</div>
+                                    <div class="js-cell compare-item__specification">в канализацию по центру</div>
+                                    <div class="js-cell compare-item__specification">290</div>
+                                    <div class="js-cell compare-item__specification">111</div>
+                                    <div class="js-cell compare-item__specification">минимализм</div>
+                                    <div class="js-cell compare-item__specification">белый</div>
+                                    <div class="js-cell compare-item__specification">гладкая</div>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </section>

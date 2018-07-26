@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'r'.
-        on line 115 of C:/Repositories/Agromat/scss/compare.scss, in `r'
-        from line 115 of C:/Repositories/Agromat/scss/compare.scss
+        on line 177 of C:/Repositories/Agromat/scss/compare.scss, in `r'
+        from line 177 of C:/Repositories/Agromat/scss/compare.scss
 
-110:   }
-111:   &__content {
-112:     display: flex;
-113:     flex-wrap: wrap;
-114:     margin-bottom: 18px;
-115:     @include r(619) {
-116:       justify-content: center;
-117:     }
-118:   }
-119:   &__item {
-120:     width: 200px;
+172:     display: inline-block;
+173:     margin-bottom: 15px;
+174:     &:first-child{
+175:       border-left: 1px solid #DDDDDD;
+176:     }
+177:     @include r(1024) {
+178:       border-left: 1px solid #DDDDDD;
+179:       &_options {
+180:         border: none;
+181:       }
+182:     }
 
 Backtrace:
-C:/Repositories/Agromat/scss/compare.scss:115:in `r'
-C:/Repositories/Agromat/scss/compare.scss:115
+C:/Repositories/Agromat/scss/compare.scss:177:in `r'
+C:/Repositories/Agromat/scss/compare.scss:177
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
@@ -79,4 +79,4 @@ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'r'.\A         on line 115 of C:/Repositories/Agromat/scss/compare.scss, in `r'\A         from line 115 of C:/Repositories/Agromat/scss/compare.scss\A \A 110:   }\A 111:   &__content {\A 112:     display: flex;\A 113:     flex-wrap: wrap;\A 114:     margin-bottom: 18px;\A 115:     @include r(619) {\A 116:       justify-content: center;\A 117:     }\A 118:   }\A 119:   &__item {\A 120:     width: 200px;"; }
+  content: "Error: Undefined mixin 'r'.\A         on line 177 of C:/Repositories/Agromat/scss/compare.scss, in `r'\A         from line 177 of C:/Repositories/Agromat/scss/compare.scss\A \A 172:     display: inline-block;\A 173:     margin-bottom: 15px;\A 174:     &:first-child{\A 175:       border-left: 1px solid #DDDDDD;\A 176:     }\A 177:     @include r(1024) {\A 178:       border-left: 1px solid #DDDDDD;\A 179:       &_options {\A 180:         border: none;\A 181:       }\A 182:     }"; }
