@@ -1025,15 +1025,9 @@ if($('.js-compare-list')){
                 }
             },
             {
-                breakpoint: 768,
+                breakpoint: 767,
                 settings: {
                     slidesToShow: 2,
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
                 }
             }
         ]

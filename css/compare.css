@@ -1,23 +1,23 @@
 /*
-Error: Undefined mixin 'r'.
-        on line 207 of C:/Repositories/Agromat/scss/compare.scss, in `r'
-        from line 207 of C:/Repositories/Agromat/scss/compare.scss
+Error: Undefined mixin 'rmin'.
+        on line 102 of C:/Repositories/Agromat/scss/compare.scss, in `rmin'
+        from line 102 of C:/Repositories/Agromat/scss/compare.scss
 
-202:     display: inline-block;
-203:     margin-bottom: 15px;
-204:     &:first-child{
-205:       border-left: 1px solid #DDDDDD;
-206:     }
-207:     @include r(1024) {
-208:       border-left: 1px solid #DDDDDD;
-209:       &_options {
-210:         border: none;
-211:       }
-212:     }
+97:   }
+98:   a:hover{
+99:     span {
+100:       border-bottom: none;
+101:     }
+102:     @include rmin(1024) {
+103:       .menu-compare-message {
+104:         display: block;
+105:       }
+106:     }
+107:   }
 
 Backtrace:
-C:/Repositories/Agromat/scss/compare.scss:207:in `r'
-C:/Repositories/Agromat/scss/compare.scss:207
+C:/Repositories/Agromat/scss/compare.scss:102:in `rmin'
+C:/Repositories/Agromat/scss/compare.scss:102
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
@@ -79,4 +79,4 @@ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'r'.\A         on line 207 of C:/Repositories/Agromat/scss/compare.scss, in `r'\A         from line 207 of C:/Repositories/Agromat/scss/compare.scss\A \A 202:     display: inline-block;\A 203:     margin-bottom: 15px;\A 204:     &:first-child{\A 205:       border-left: 1px solid #DDDDDD;\A 206:     }\A 207:     @include r(1024) {\A 208:       border-left: 1px solid #DDDDDD;\A 209:       &_options {\A 210:         border: none;\A 211:       }\A 212:     }"; }
+  content: "Error: Undefined mixin 'rmin'.\A         on line 102 of C:/Repositories/Agromat/scss/compare.scss, in `rmin'\A         from line 102 of C:/Repositories/Agromat/scss/compare.scss\A \A 97:   }\A 98:   a:hover{\A 99:     span {\A 100:       border-bottom: none;\A 101:     }\A 102:     @include rmin(1024) {\A 103:       .menu-compare-message {\A 104:         display: block;\A 105:       }\A 106:     }\A 107:   }"; }
