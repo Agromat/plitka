@@ -1066,3 +1066,15 @@ if($('.js-compare-list')){
     $(window).on('resize', reinitLayout);
 }
 
+$('.compare-button').on('click', function () {
+   let active = $(this).hasClass('is-active');
+   let commonText = $(this).data('common-text');
+   let activeText = $(this).data('active-text');
+   if (!active) {
+       $(this).addClass('is-active')
+           .find('.js-compare-button-text').text(activeText);
+   } else {
+       $(this).removeClass('is-active')
+           .find('.js-compare-button-text').text(commonText);
+   }
+});
