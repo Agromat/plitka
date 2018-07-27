@@ -13755,6 +13755,18 @@ body.is-overflow {
   height: 8px;
 }
 
+.main-container.filters .filters-content .items .item-filtered .compare-block .compare-button.is-active .link, .multiple-items .slick-slide .desckription .link.compare-button.is-active span {
+  color: #bad000;
+}
+
+.main-container.filters .filters-content .items .item-filtered .compare-block .compare-button.is-active:hover .link {
+  color: #0053a0;
+}
+
+.multiple-items .slick-slide .desckription .link.compare-button.is-active:hover span {
+  color: #333;
+}
+
 .compare-button .compare-icon {
   margin-right: 9px;
 }
