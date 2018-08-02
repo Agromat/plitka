@@ -1610,8 +1610,9 @@ nav {
 }
 
 .btn-anchor {
-  font-size: 14px;
+  font-size: 20px;
   text-decoration: underline;
+  display: block;
 }
 
 /*
@@ -11196,8 +11197,9 @@ footer .row.link-footer .column:last-child {
 }
 
 .btn-anchor {
-  font-size: 14px;
+  font-size: 20px;
   text-decoration: underline;
+  display: block;
 }
 
 .post, .promo {
