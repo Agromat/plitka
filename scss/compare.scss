@@ -70,24 +70,82 @@
   color: #bad000;
   font-weight: 700;
 }
-.menu-other__compare{
-  width: 150px;
-  text-align: right;
-}
+// .menu-other {
+//   &__compare{
+//     width: 150px;
+//     text-align: right;
+//   }
+//   &__compare-quantity {
+//       position: absolute;
+//       top: -2px;
+//       left: -16px;
+//       width: 18px;
+//       height: 18px;
+//       border-radius: 50%;
+//       background: #fa5e00;
+//       font-size: 10px;
+//       color: #fff;
+//       & > span {
+//         position: absolute;
+//         top: 50%;
+//         left: 50%;
+//         transform: translate(-50%, -50%);
+//     }
+//   }
+// }
 .nav__option_compare .nav__link > span {
   position: relative;
   display: inline-block;
 }
-.nav__option_compare .compare-icon {
-  vertical-align: bottom;
+// .nav__option_compare .compare-icon {
+//   vertical-align: bottom;
+// }
+
+.nav__option {
+  &_compare {
+    .compare-icon {
+      vertical-align: bottom;
+    }
+    a {
+      &:hover {
+        span {
+          border-bottom: none;
+        }
+      }
+    }
+  }
 }
+
+
 .menu-compare {
-  padding: 0.875rem 1.0625rem 1.25rem 1.0625rem;
+  //padding: 0.875rem rem-calc(17) 1.25rem rem-calc(17);
+  padding: 7px rem-calc(17) 0 rem-calc(17);
   width: 150px;
-  border-left: 1px solid #6C7A93;
+  //border-left: 1px solid #6C7A93;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: flex-end;
+  position: relative;
+  @include r($tablet) {
+    width: 75px;
+  }
+  @include r($mob) {
+    width: auto;
+    padding: 0;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: 0;
+    bottom: 0;
+    width: 1px;
+    background: #6C7A93;
+    @include r($tablet) {
+      top: 14px;
+      bottom: 14px;
+    }
+  }
   a > span {
     position: relative;
     display: inline-block;
@@ -105,6 +163,9 @@
       }
     }
   }
+  &__status {
+    color: #abadb3;
+  }
   &__quantity {
     position: absolute;
     top: -10px;
@@ -120,6 +181,10 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+    }
+     @include r($mob) {
+      top: -2px;
+      left: -16px;
     }
   }
 }
@@ -397,9 +462,9 @@
       .compare-option {
         font-size: 0.75rem;
 
-        &:first-child {
-          margin: 6px 0 20px 0;
-        }
+        // &:first-child {
+        //   margin: 6px 0 20px 0;
+        // }
       }
       @include r(1023) {
         padding: 0 15px;
@@ -583,6 +648,11 @@
   text-align: left;
   padding: 0;
   display: flex;
+  align-items: center;
+  outline: none;
+  &:first-child {
+    margin: 6px 0 20px 0;
+  }
   &__icon {
     margin-right: 5px;
     vertical-align: bottom;
@@ -672,6 +742,7 @@
     font-weight: 700;
     position: relative;
     text-align: right;
+    
     &:after {
       transform: translateY(-50%) rotate(135deg);
       border-color: #000000;

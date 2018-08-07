@@ -13787,11 +13787,6 @@ body.is-overflow {
   font-weight: 700;
 }
 
-.menu-other__compare {
-  width: 150px;
-  text-align: right;
-}
-
 .nav__option_compare .nav__link > span {
   position: relative;
   display: inline-block;
@@ -13800,14 +13795,43 @@ body.is-overflow {
 .nav__option_compare .compare-icon {
   vertical-align: bottom;
 }
+.nav__option_compare a:hover span {
+  border-bottom: none;
+}
 
 .menu-compare {
-  padding: 0.875rem 1.0625rem 1.25rem 1.0625rem;
+  padding: 7px 1.0625rem 0 1.0625rem;
   width: 150px;
-  border-left: 1px solid #6C7A93;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: flex-end;
+  position: relative;
+}
+@media only screen and (max-width: 1024px) {
+  .menu-compare {
+    width: 75px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .menu-compare {
+    width: auto;
+    padding: 0;
+  }
+}
+.menu-compare:before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 0;
+  bottom: 0;
+  width: 1px;
+  background: #6C7A93;
+}
+@media only screen and (max-width: 1024px) {
+  .menu-compare:before {
+    top: 14px;
+    bottom: 14px;
+  }
 }
 .menu-compare a > span {
   position: relative;
@@ -13823,6 +13847,9 @@ body.is-overflow {
   .menu-compare a:hover .menu-compare-message {
     display: block;
   }
+}
+.menu-compare__status {
+  color: #abadb3;
 }
 .menu-compare__quantity {
   position: absolute;
@@ -13840,6 +13867,12 @@ body.is-overflow {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+@media only screen and (max-width: 767px) {
+  .menu-compare__quantity {
+    top: -2px;
+    left: -16px;
+  }
 }
 
 .menu-compare-message {
@@ -14105,9 +14138,6 @@ body.is-overflow {
 .compare-item_list .compare-item__header .compare-option {
   font-size: 0.75rem;
 }
-.compare-item_list .compare-item__header .compare-option:first-child {
-  margin: 6px 0 20px 0;
-}
 @media only screen and (max-width: 1023px) {
   .compare-item_list .compare-item__header {
     padding: 0 15px;
@@ -14285,6 +14315,11 @@ body.is-overflow {
   text-align: left;
   padding: 0;
   display: flex;
+  align-items: center;
+  outline: none;
+}
+.compare-option:first-child {
+  margin: 6px 0 20px 0;
 }
 .compare-option__icon {
   margin-right: 5px;
