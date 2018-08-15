@@ -1609,6 +1609,12 @@ nav {
   }
 }
 
+.btn-anchor {
+  font-size: 20px;
+  text-decoration: underline;
+  display: block;
+}
+
 /*
 *	BUTTONS
 */
@@ -11188,6 +11194,12 @@ footer .row.link-footer .column:last-child {
     top: 0 !important;
     left: 0 !important;
   }
+}
+
+.btn-anchor {
+  font-size: 20px;
+  text-decoration: underline;
+  display: block;
 }
 
 .post, .promo {
