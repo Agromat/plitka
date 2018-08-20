@@ -9352,6 +9352,12 @@ footer .row.link-footer .column:last-child {
     float: none !important;
   }
 }
+@media only screen and (max-width: 550px) {
+  .main-container.filters .filters-content .items .item-filtered .price-block {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 .main-container.filters .filters-content .items .item-filtered .price-block .price {
   font-weight: 700;
   font-size: 21px;
@@ -9394,7 +9400,12 @@ footer .row.link-footer .column:last-child {
 }
 @media only screen and (max-width: 767px) {
   .main-container.filters .filters-content .items .item-filtered .compare-block {
-    display: none;
+    padding-top: 0;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .main-container.filters .filters-content .items .item-filtered .compare-block {
+    order: 2;
   }
 }
 .main-container.filters .filters-content .items .item-filtered .favorites .icon::before,
@@ -9406,6 +9417,12 @@ footer .row.link-footer .column:last-child {
   font-size: 13px;
   color: #333;
   font-weight: 400;
+}
+@media only screen and (max-width: 550px) {
+  .main-container.filters .filters-content .items .item-filtered .favorites .link,
+  .main-container.filters .filters-content .items .item-filtered .compare-block .link {
+    font-size: 12px;
+  }
 }
 .main-container.filters .filters-content .items .item-filtered .favorites a:hover,
 .main-container.filters .filters-content .items .item-filtered .compare-block a:hover {
@@ -9719,6 +9736,32 @@ footer .row.link-footer .column:last-child {
   height: auto;
   display: block;
   margin: 0;
+}
+.main-container.filters .filters-content .items.grid .item-filtered .info-block_list .compare-block_list {
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  .main-container.filters .filters-content .items.grid .item-filtered .info-block_list .compare-block_list {
+    display: block;
+    padding-bottom: 12px;
+    float: none;
+    width: auto;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .main-container.filters .filters-content .items.grid .item-filtered .info-block_list .compare-block_list {
+    order: 2;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .main-container.filters .filters-content .items.grid .item-filtered .info-block_list .comment {
+    order: 0;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .main-container.filters .filters-content .items.grid .item-filtered .info-block_list .price-block {
+    float: none !important;
+  }
 }
 
 .is-hidden-box {
