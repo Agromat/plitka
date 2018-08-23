@@ -8666,7 +8666,7 @@ footer .row.link-footer .column:last-child {
 .prod__text {
   overflow: hidden;
   max-width: 130px;
-  height: 100px;
+  height: auto;
 }
 .prod__title {
   display: inline-block;
@@ -8725,6 +8725,12 @@ footer .row.link-footer .column:last-child {
   margin-bottom: 5px;
   font-size: 12px;
   color: #868686;
+}
+.prod .compare-block .link {
+  font-size: 10px;
+}
+.prod .compare-block .compare-icon {
+  margin-right: 3px;
 }
 
 .collect {

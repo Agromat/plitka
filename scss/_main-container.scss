@@ -3481,7 +3481,8 @@ footer{
 		overflow: hidden;
 		max-width: 130px;
 		//margin-bottom: 10px;
-		height: 100px;
+		//height: 100px;
+		height: auto;
 	}
 	&__title {
 		display: inline-block;
@@ -3546,6 +3547,14 @@ footer{
 		font-size: 12px;
 		color: #868686; 
 	}
+  .compare-block {
+    .link {
+      font-size: 10px;
+    }
+    .compare-icon {
+      margin-right: 3px;
+    }
+  }
 }
 
 .collect {
