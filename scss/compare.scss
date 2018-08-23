@@ -149,6 +149,16 @@
   a  {
     height: 29px;
     display: flex;
+    position: relative;
+    &:after {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      top: calc(100% - 4px);
+      left: 0;
+    }
     >span {
       margin-top: auto;
       position: relative;

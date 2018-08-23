@@ -1480,6 +1480,15 @@ nav {
 .btn.gradient:active::before {
   content: none;
 }
+.btn.gradient.grey {
+  -webkit-box-shadow: inset 0px -3px 0px 0px #C6C9CC;
+  -moz-box-shadow: inset 0px -3px 0px 0px #C6C9CC;
+  box-shadow: inset 0px -3px 0px 0px #C6C9CC;
+  background: #E0E0E0;
+}
+.btn.gradient.grey::before {
+  background: #C6C9CC;
+}
 .btn:hover, .btn:focus {
   color: #f4f4f4;
   outline: none;
@@ -7061,6 +7070,21 @@ footer .row.link-footer .column:last-child {
   margin: 0 0 20px;
   line-height: 1.2;
 }
+.modal p.mb-lg {
+  margin-bottom: 70px;
+}
+
+.modal-btns {
+  display: flex;
+}
+.modal-btns .btn {
+  min-width: calc(50% - 9px);
+  font-size: 14px !important;
+  min-height: 44px;
+}
+.modal-btns .btn:not(:last-child) {
+  margin-right: 18px;
+}
 
 .modal_w680 {
   max-width: 680px;
@@ -7076,6 +7100,25 @@ footer .row.link-footer .column:last-child {
 
 .modal_w330 {
   max-width: 330px;
+}
+
+.modal_w290 {
+  max-width: 290px;
+  border: 5px solid #bdce00;
+  border-radius: 15px;
+}
+.modal_w290 .row {
+  padding: 0;
+}
+@media only screen and (max-width: 767px) {
+  .modal_w290 .close-reveal-modal {
+    top: -35px !important;
+    right: -35px !important;
+    content: url(../img/close-btn.png);
+  }
+}
+.modal_w290 .modal__body {
+  padding: 91px 12px 19px;
 }
 
 .modal__header {
@@ -11110,6 +11153,15 @@ footer .row.link-footer .column:last-child {
 .btn.gradient:active::before {
   content: none;
 }
+.btn.gradient.grey {
+  -webkit-box-shadow: inset 0px -3px 0px 0px #C6C9CC;
+  -moz-box-shadow: inset 0px -3px 0px 0px #C6C9CC;
+  box-shadow: inset 0px -3px 0px 0px #C6C9CC;
+  background: #E0E0E0;
+}
+.btn.gradient.grey::before {
+  background: #C6C9CC;
+}
 .btn:hover, .btn:focus {
   color: #f4f4f4;
   outline: none;
@@ -13885,6 +13937,16 @@ body.is-overflow {
 .menu-compare a {
   height: 29px;
   display: flex;
+  position: relative;
+}
+.menu-compare a:after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: calc(100% - 4px);
+  left: 0;
 }
 .menu-compare a > span {
   margin-top: auto;

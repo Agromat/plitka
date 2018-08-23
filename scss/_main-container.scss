@@ -1980,10 +1980,23 @@ footer{
 		font-size: 14px;
 		margin: 0 0 20px;
 		line-height: 1.2;
+      &.mb-lg {
+        margin-bottom: 70px;
+      }
 	}
 	
 }
-
+.modal-btns {
+  display: flex;
+  .btn{
+    min-width: calc(50% - 9px);
+    font-size: 14px!important;
+    min-height: 44px;
+    &:not(:last-child){
+      margin-right: 18px;
+    }
+  }
+}
 .modal_w680 {
 	max-width: 680px;
 }
@@ -1995,6 +2008,24 @@ footer{
 }
 .modal_w330 {
 	max-width: 330px;
+}
+.modal_w290 {
+  max-width: 290px;
+  border: 5px solid #bdce00;
+  border-radius: 15px;
+  .row {
+    padding: 0;
+  }
+  .close-reveal-modal{
+    @include r(767) {
+      top: -35px!important;
+      right: -35px!important;
+      content: url(../img/close-btn.png);
+    }
+  }
+  .modal__body{
+    padding: 91px 12px 19px;
+  }
 }
 .modal__header {
 	padding: 22px 30px;
@@ -2079,6 +2110,7 @@ footer{
 			}
 		}
 	}
+
 	
 }
 .field {
