@@ -7102,22 +7102,27 @@ footer .row.link-footer .column:last-child {
   max-width: 330px;
 }
 
-.modal_w290 {
-  max-width: 290px;
-  border: 5px solid #bdce00;
-  border-radius: 15px;
+.modal_w280 {
+  max-width: 286px;
+  border-radius: 8px;
+  border: 3px solid #bdd200;
 }
-.modal_w290 .row {
+@media only screen and (max-width: 640px) {
+  .modal_w280 {
+    top: 188px;
+  }
+}
+.modal_w280 .row {
   padding: 0;
 }
 @media only screen and (max-width: 767px) {
-  .modal_w290 .close-reveal-modal {
+  .modal_w280 .close-reveal-modal {
     top: -35px !important;
-    right: -35px !important;
+    right: 0 !important;
     content: url(../img/close-btn.png);
   }
 }
-.modal_w290 .modal__body {
+.modal_w280 .modal__body {
   padding: 91px 12px 19px;
 }
 
