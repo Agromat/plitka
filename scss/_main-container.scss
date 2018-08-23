@@ -1235,6 +1235,13 @@ ul.pagination{
 				border: 1px solid $border;
 				background:$white;
 				box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+              .compare-block{
+                .link{
+                  font-size: 11px;
+                  display: inline-block!important;
+                  margin-bottom: 0;
+                }
+              }
 			}
 			.img{
 				position: relative;

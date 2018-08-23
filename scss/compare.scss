@@ -146,9 +146,14 @@
       bottom: 14px;
     }
   }
-  a > span {
-    position: relative;
-    display: inline-block;
+  a  {
+    height: 29px;
+    display: flex;
+    >span {
+      margin-top: auto;
+      position: relative;
+      display: inline-block;
+    }
   }
   .compare-icon {
     vertical-align: bottom;
@@ -772,3 +777,4 @@
   }
 
 }
+

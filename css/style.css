@@ -4890,6 +4890,12 @@ ul.pagination li a span {
 .multiple-items .slick-slide.desk-visible .right {
   display: block !important;
 }
+.multiple-items-4 .slick-slide.desk-visible .compare-block .link,
+.multiple-items .slick-slide.desk-visible .compare-block .link {
+  font-size: 11px;
+  display: inline-block !important;
+  margin-bottom: 0;
+}
 .multiple-items-4 .slick-slide .img,
 .multiple-items .slick-slide .img {
   position: relative;
@@ -13876,7 +13882,12 @@ body.is-overflow {
     bottom: 14px;
   }
 }
+.menu-compare a {
+  height: 29px;
+  display: flex;
+}
 .menu-compare a > span {
+  margin-top: auto;
   position: relative;
   display: inline-block;
 }
