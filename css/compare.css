@@ -6,10 +6,10 @@ Error: Undefined mixin 'r'.
 124:   //border-left: 1px solid #6C7A93;
 125:   display: flex;
 126:   align-items: center;
-127:   justify-content: flex-end;
+127:   justify-content: center;
 128:   position: relative;
 129:   @include r($tablet) {
-130:     width: 75px;
+130:     width: 100px;
 131:   }
 132:   @include r($mob) {
 133:     width: auto;
@@ -68,4 +68,4 @@ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'r'.\A         on line 129 of C:/Repositories/Agromat/scss/compare.scss, in `r'\A         from line 129 of C:/Repositories/Agromat/scss/compare.scss\A \A 124:   //border-left: 1px solid #6C7A93;\A 125:   display: flex;\A 126:   align-items: center;\A 127:   justify-content: flex-end;\A 128:   position: relative;\A 129:   @include r($tablet) {\A 130:     width: 75px;\A 131:   }\A 132:   @include r($mob) {\A 133:     width: auto;\A 134:     padding: 0;"; }
+  content: "Error: Undefined mixin 'r'.\A         on line 129 of C:/Repositories/Agromat/scss/compare.scss, in `r'\A         from line 129 of C:/Repositories/Agromat/scss/compare.scss\A \A 124:   //border-left: 1px solid #6C7A93;\A 125:   display: flex;\A 126:   align-items: center;\A 127:   justify-content: center;\A 128:   position: relative;\A 129:   @include r($tablet) {\A 130:     width: 100px;\A 131:   }\A 132:   @include r($mob) {\A 133:     width: auto;\A 134:     padding: 0;"; }

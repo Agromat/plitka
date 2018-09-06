@@ -120,14 +120,14 @@
 .menu-compare {
   //padding: 0.875rem rem-calc(17) 1.25rem rem-calc(17);
   padding: 7px rem-calc(17) 0 rem-calc(17);
-  width: 150px;
+  width: 107px;
   //border-left: 1px solid #6C7A93;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   position: relative;
   @include r($tablet) {
-    width: 75px;
+    width: 100px;
   }
   @include r($mob) {
     width: auto;
@@ -150,6 +150,7 @@
     height: 29px;
     display: flex;
     position: relative;
+    margin-left: 10px;
     &:after {
       position: absolute;
       content: '';
