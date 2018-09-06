@@ -1061,14 +1061,35 @@ if($('.js-compare-list')){
 }
 
 $('.compare-button').on('click', function () {
-   let active = $(this).hasClass('is-active');
-   let commonText = $(this).data('common-text');
-   let activeText = $(this).data('active-text');
-   if (!active) {
-       $(this).addClass('is-active')
-           .find('.js-compare-button-text').text(activeText);
-   } else {
-       $(this).removeClass('is-active')
-           .find('.js-compare-button-text').text(commonText);
-   }
+    let active = $(this).hasClass('is-active');
+    let commonText = $(this).data('common-text');
+    let activeText = $(this).data('active-text');
+    if (!active) {
+        $(this).addClass('is-active')
+            .find('.js-compare-button-text').text(activeText);
+    } else {
+        $(this).removeClass('is-active')
+            .find('.js-compare-button-text').text(commonText);
+    }
+});
+
+function scrollToAnchor(event, element) {
+    //отменяем стандартную обработку нажатия по ссылке
+    event.preventDefault();
+
+    //забираем идентификатор бока с атрибута href
+    var id  = element.attr('href'),
+
+    //узнаем высоту от начала страницы до блока на который ссылается якорь
+        top = $(id).offset().top;
+
+    if($(window).scrollTop() > 205) {
+        $('body,html').animate({scrollTop: (top - $(".js-menu-main").height())}, 1000);
+      } else {
+        $('body,html').animate({scrollTop: (top - $(".js-menu-main").height()*2)}, 1000);
+      }
+} 
+
+$(".js-scroll-to").on("click", function (event) {
+  scrollToAnchor(event, $(this));
 });

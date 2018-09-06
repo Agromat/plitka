@@ -190,6 +190,45 @@
 			color: $ddgray;
 		}
 	}
+  &__img{
+    float: left;
+    margin-right: 20px;
+    width: 120px;
+    height: auto;
+    @include r(767){
+      width: 52px;
+      margin-right: 10px;
+    }
+    img{
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__main{
+    overflow: hidden;
+  }
+  &__title{
+    text-decoration: underline;
+    font-size: 18px;
+    line-height: 1.3;
+    font-weight: bold;
+    color: #0053a0;
+    @include r(767){
+      font-size: 14px;
+      margin-top: -3px;
+      margin-bottom: 5px;
+    }
+  }
+  &__meta{
+    font-size: 14px;
+    border: 0 !important;
+    color: #a4a4a4;
+    @include r(767){
+      font-size: 12px;
+      line-height: 1;
+    }
+  }
 }
 
 .product-item-collection-in {
