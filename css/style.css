@@ -9977,6 +9977,14 @@ footer .row.link-footer .column:last-child {
     order: 2;
   }
 }
+.main-container.filters .filters-content .items.grid .item-filtered .info-block_list .compare-block_list-lg {
+  display: block;
+}
+@media only screen and (max-width: 767px) {
+  .main-container.filters .filters-content .items.grid .item-filtered .info-block_list .compare-block_list-lg {
+    display: none;
+  }
+}
 @media only screen and (max-width: 767px) {
   .main-container.filters .filters-content .items.grid .item-filtered .info-block_list .comment {
     order: 0;

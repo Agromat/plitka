@@ -830,6 +830,7 @@
 							@include r($mob) {
 								display: none;
 							}
+
 						}
 						.margin-left{
 							width: 498px;
@@ -967,6 +968,12 @@
                               }
                               @include r($mob-sm){
                                 order: 2;
+                              }
+                            }
+                            &_list-lg{
+                              display: block;
+                              @include r($mob){
+                                display: none;
                               }
                             }
                           }
