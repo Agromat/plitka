@@ -12842,60 +12842,84 @@ body.is-overflow {
   float: right;
   margin-top: -0.25rem;
   padding-left: 30px;
+  color: #333333;
+  font-size: 13px;
+  font-weight: 400;
+  position: relative;
+}
+.info .schedule__info {
+  position: absolute;
+  top: 30px;
+  right: 80px;
+  width: 202px;
+  padding: 16px 30px 26px 28px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dddddd;
+  background-color: #ffffff;
+  z-index: 4;
+  display: none;
+}
+.info .schedule__info:before {
+  position: absolute;
+  content: '';
+  display: block;
+  right: 18px;
+  top: -8px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #dddddd;
+  border-color: #dddddd #ffffff #ffffff #dddddd;
+  background-color: #ffffff;
+  transform: rotate(45deg);
 }
 .info .schedule p {
-  color: #333;
-  margin-top: 0;
-  margin-bottom: 0.8125rem;
-  font-size: 0.8125rem;
+  margin: 0;
+  display: block;
+  float: none;
+  width: auto;
+  font-size: 13px;
 }
-.info .schedule p:first-child {
-  margin-bottom: 0.125rem;
+.info .schedule p:not(:last-child) {
+  margin-bottom: 10px;
+}
+.info .schedule p.schedule__title {
+  margin-bottom: 0;
+}
+.info .schedule p.schedule__subtitle {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 14px;
 }
 .info .schedule p sup {
-  top: -2px;
+  top: -4px;
+  font-size: 59%;
 }
-.info .schedule p span.wek {
+.info .schedule__title {
+  text-decoration: underline;
+  cursor: pointer;
+}
+@media only screen and (min-width: 1024px) {
+  .info .schedule__title:hover + .schedule__info {
+    display: block;
+  }
+}
+.info .schedule__decorated {
   color: #ed1c24;
-  margin-left: 16px;
 }
-.info .schedule div {
-  margin-bottom: 0.25rem;
-  display: block;
-  zoom: 1;
+.info .schedule__right {
+  margin-left: 54px;
 }
-.info .schedule div:before, .info .schedule div:after {
-  content: "";
-  display: block;
-  height: 0;
-  overflow: hidden;
+.info .schedule__item:not(:last-child) {
+  margin-bottom: 30px;
 }
-.info .schedule div:after {
-  clear: both;
+.info .schedule__item_bot .schedule__right {
+  margin-left: 17px;
 }
-.info .schedule div span {
-  display: block;
-  float: left;
-  -webkit-border-radius: 1px;
-  -moz-border-radius: 1px;
-  border-radius: 1px;
-  width: 0.75rem;
-  height: 0.9375rem;
-  border: 0.0625rem solid #333;
-  margin-left: 0.1875rem;
-  -webkit-border-radius: 2px;
-  -moz-border-raius: 2px;
-  border-radius: 2px;
-  padding: 1px;
-  font-size: 11px;
-  line-height: 11px;
+.info .schedule__item_bot p:not(:last-child) {
+  margin-bottom: 0;
 }
-.info .schedule div span:first-child {
-  margin-left: 0;
-}
-.info .schedule div span.wek {
-  border: 0.0625rem solid #ed1c24;
-  color: #ed1c24;
+.info .schedule__item_bot p:not(:last-child).schedule__subtitle {
+  margin-bottom: 4px;
 }
 .info .search {
   height: 38px;
@@ -13697,6 +13721,50 @@ body.is-overflow {
   .work-schedule .day {
     border: none;
   }
+}
+
+footer ul.contact li .work-schedule, .footer_mobile .work-schedule {
+  margin-left: 10px;
+  width: calc(100% - 130px);
+  color: #333333;
+  font-size: 13px;
+  font-weight: 400;
+}
+footer ul.contact li .work-schedule p, .footer_mobile .work-schedule p {
+  margin: 0;
+  display: block;
+  float: none;
+  width: auto;
+  font-size: 13px;
+}
+footer ul.contact li .work-schedule p.work-schedule__title, .footer_mobile .work-schedule p.work-schedule__title {
+  font-size: 14px;
+  line-height: 1.4;
+}
+footer ul.contact li .work-schedule p sup, .footer_mobile .work-schedule p sup {
+  top: -4px;
+  font-size: 59%;
+}
+footer ul.contact li .work-schedule__right, .footer_mobile .work-schedule__right {
+  margin-left: 54px;
+}
+footer ul.contact li .work-schedule__item:not(:last-child), .footer_mobile .work-schedule__item:not(:last-child) {
+  margin-bottom: 17px;
+}
+footer ul.contact li .work-schedule__item_bot .work-schedule__right, .footer_mobile .work-schedule__item_bot .work-schedule__right {
+  margin-left: 17px;
+}
+footer ul.contact li .work-schedule__decorated, .footer_mobile .work-schedule__decorated {
+  color: #ed1c24;
+}
+
+.footer_mobile .work-schedule {
+  margin-left: 0;
+  width: 136px;
+  text-align: left;
+}
+.footer_mobile .work-schedule__item:not(:last-child) {
+  margin-bottom: 13px;
 }
 
 .work-schedule_row {
