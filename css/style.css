@@ -7691,14 +7691,13 @@ footer .row.link-footer .column:last-child {
 }
 @media only screen and (max-width: 1024px) {
   .basket .basket-actions .total .price {
-    display: inline-block;
+    display: block;
     font-size: 31px;
   }
 }
 @media only screen and (max-width: 1024px) {
   .basket .basket-actions .total .sm-desk {
-    display: inline-block;
-    margin-right: 40px;
+    display: block;
   }
 }
 .basket .basket-actions .total-discount {

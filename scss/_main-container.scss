@@ -2488,14 +2488,14 @@ footer{
 			.price{
 				line-height: 1;
 				@include r($tablet) {
-					display: inline-block;
+					display: block;
 					font-size: 31px;
 				}
 			}
 			.sm-desk {
 				@include r($tablet) {
-					display: inline-block;
-					margin-right: 40px;
+					display: block;
+					//margin-right: 40px;
 				}
 			}
 		}
