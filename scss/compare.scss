@@ -1,3 +1,17 @@
+@mixin r($width) {
+  @media only screen and (max-width: $width+ "px") {
+    @content;
+  }
+}
+@mixin rmin($width) {
+  @media only screen and (min-width: $width+ "px") {
+    @content;
+  }
+}
+$blue: #0053a0;
+//BLOCK VARIABLES
+$tablet: 1024;
+$mob: 767;
 .compare-icon {
   font-size: 0;
   text-decoration: none;
