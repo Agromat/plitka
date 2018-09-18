@@ -10307,6 +10307,41 @@ footer .row.link-footer .column:last-child {
   margin-bottom: 5px;
   line-height: 1.3;
 }
+@media only screen and (min-width: 1024px) {
+  .contacts__hint-content {
+    position: absolute;
+    top: calc(100% + 15px);
+    left: 0;
+    width: 100%;
+    padding: 16px 30px 26px 28px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+    z-index: 4;
+    display: none;
+  }
+  .contacts__hint-content:before {
+    position: absolute;
+    content: '';
+    display: block;
+    left: 18px;
+    top: -8px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #dddddd;
+    border-color: #dddddd #ffffff #ffffff #dddddd;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+  }
+}
+.contacts__hint-wrap {
+  position: relative;
+}
+@media only screen and (min-width: 1024px) {
+  .contacts__hint-wrap:hover .contacts__hint-content {
+    display: block;
+  }
+}
 
 .contacts__title {
   margin-bottom: 20px;
