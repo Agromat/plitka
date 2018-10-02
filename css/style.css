@@ -6905,6 +6905,51 @@ footer .row.link-footer .column:last-child {
   line-height: 18px;
   color: #646464;
 }
+.form-group__title {
+  display: inline-block;
+}
+.form-group__title_mb {
+  margin-bottom: 28px;
+}
+.form-group__logos {
+  display: block;
+  max-width: 270px;
+}
+.form-group__logos img {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.form-group__logos img:not(:last-child) {
+  margin-right: 25px;
+}
+@media only screen and (max-width: 800px) {
+  .form-group__logos img:not(:last-child) {
+    margin-right: 18px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .form-group__logos img:not(:last-child) {
+    margin-right: 25px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .form-group__logos img:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+.form-group__description {
+  display: block;
+  color: #646464;
+  font-size: 14px;
+  line-height: 1.35;
+}
+.form-group_checkboxes input:checked + label .form-group__title, .form-group_checkboxes input:checked + label .form-group__description {
+  color: #000;
+}
+.form-group .form-group__checkbox.is-disabled {
+  opacity: .54;
+  pointer-events: none;
+}
 
 .form-group_mb {
   margin-bottom: 30px !important;
