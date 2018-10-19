@@ -1989,6 +1989,9 @@ footer{
 .modal_w330 {
 	max-width: 330px;
 }
+.modal_w300 {
+  max-width: 300px;
+}
 .modal__header {
 	padding: 22px 30px;
 	border-radius: 10px 10px 0 0;
@@ -2485,14 +2488,14 @@ footer{
 			.price{
 				line-height: 1;
 				@include r($tablet) {
-					display: inline-block;
+					display: block;
 					font-size: 31px;
 				}
 			}
 			.sm-desk {
 				@include r($tablet) {
-					display: inline-block;
-					margin-right: 40px;
+					display: block;
+					//margin-right: 40px;
 				}
 			}
 		}
