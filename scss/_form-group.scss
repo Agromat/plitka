@@ -248,6 +248,54 @@
 			color: $dgray;
 		}
 	}
+  &__title{
+    display: inline-block;
+    &_mb{
+      margin-bottom: 28px;
+    }
+  }
+  &__logos{
+    display: block;
+    max-width: 270px;
+    img{
+      display: inline-block;
+      margin-bottom: 15px;
+      &:not(:last-child){
+        margin-right: 25px;
+        @include r(800) {
+          margin-right: 18px;
+        }
+        @include r(768) {
+          margin-right: 25px;
+        }
+        @include r(767) {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+  &__description{
+    display: block;
+    color: #646464;
+    font-size: 14px;
+    line-height: 1.35;
+  }
+  &_checkboxes {
+    input:checked{
+      & + label {
+        .form-group__title, .form-group__description{
+          color: #000;
+        }
+      }
+    }
+
+  }
+  .form-group__checkbox{
+    &.is-disabled {
+      opacity: .54;
+      pointer-events: none;
+    }
+  }
 }
 .form-group_mb {
 	margin-bottom: 30px !important;

@@ -957,3 +957,25 @@ if ($(window).width() < 768) {
    $(".reveal-modal").removeClass("is-fixed");
 }
 
+
+
+function scrollToAnchor(event, element) {
+    //отменяем стандартную обработку нажатия по ссылке
+    event.preventDefault();
+
+    //забираем идентификатор бока с атрибута href
+    var id  = element.attr('href'),
+
+    //узнаем высоту от начала страницы до блока на который ссылается якорь
+        top = $(id).offset().top;
+
+    if($(window).scrollTop() > 205) {
+        $('body,html').animate({scrollTop: (top - $(".js-menu-main").height())}, 1000);
+      } else {
+        $('body,html').animate({scrollTop: (top - $(".js-menu-main").height()*2)}, 1000);
+      }
+} 
+
+$(".js-scroll-to").on("click", function (event) {
+  scrollToAnchor(event, $(this));
+});
