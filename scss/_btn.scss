@@ -188,17 +188,16 @@
 		font-size: 18px;
 		font-weight: bold;
 	}
-}
-
-.btn.btn_grey {
-  background: #babdc2;
-  box-shadow: inset 0px -3px 0px 0px #A9AEB4;
-}
-.btn.btn_grey:before {
-  background: #A9AEB4;
-}
-.btn.btn_grey:active {
-  box-shadow: inset 0px 3px 0px 0px #A9AEB4;
+    &.btn_grey {
+      background: #babdc2;
+      box-shadow: inset 0px -3px 0px 0px #A9AEB4;
+      &:before {
+        background: #A9AEB4;
+      }
+      &:active {
+        box-shadow: inset 0px 3px 0px 0px #A9AEB4;
+      }
+    }
 }
 
 

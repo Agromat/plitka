@@ -1989,7 +1989,7 @@ footer{
 .modal_w330 {
 	max-width: 330px;
 }
-.modal_w300{
+.modal_w300 {
   max-width: 300px;
 }
 .modal__header {
@@ -2495,6 +2495,7 @@ footer{
 			.sm-desk {
 				@include r($tablet) {
 					display: block;
+					//margin-right: 40px;
 				}
 			}
 		}
