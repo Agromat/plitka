@@ -1989,6 +1989,9 @@ footer{
 .modal_w330 {
 	max-width: 330px;
 }
+.modal_w300{
+  max-width: 300px;
+}
 .modal__header {
 	padding: 22px 30px;
 	border-radius: 10px 10px 0 0;
@@ -2485,14 +2488,13 @@ footer{
 			.price{
 				line-height: 1;
 				@include r($tablet) {
-					display: inline-block;
+					display: block;
 					font-size: 31px;
 				}
 			}
 			.sm-desk {
 				@include r($tablet) {
-					display: inline-block;
-					margin-right: 40px;
+					display: block;
 				}
 			}
 		}
@@ -2666,6 +2668,67 @@ footer{
 		}
 	}
 }
+.modal-form__cols {
+  display: flex;
+}
+.modal-form__col {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 45px;
+}
+.modal-form__col_left {
+  max-width: 55px;
+  margin-right: 24px;
+}
+.modal-form__title {
+  font-weight: 700;
+  line-height: 38px;
+  margin-bottom: 10px;
+}
+.modal-form__title_mb {
+  margin-bottom: 85px;
+}
+.modal-form .checkbox span {
+  height: 38px;
+  display: flex !important;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.modal-form .checkbox span input {
+  position: absolute;
+  pointer-events: none;
+  margin-left: 1px;
+  z-index: -10;
+}
+.modal-form__input-wrap {
+  margin-bottom: 10px;
+  max-width: 125px;
+}
+.modal-form__link {
+  color: #0053a0;
+  line-height: 36px;
+  text-decoration: underline;
+}
+.modal-form__buttons .btn {
+  width: 100%;
+  margin-bottom: 20px !important;
+}
+.modal-form__buttons .btn:last-child {
+  margin-bottom: 0 !important;
+}
+.modal-form__result {
+  margin-bottom: 45px;
+}
+.modal-form__hint {
+  color: #999999;
+  margin-bottom: 0 !important;
+}
+.modal-form__price {
+  font-size: 31px !important;
+  font-weight: 700;
+  color: #333;
+}
+
 
 .enlarged-photo{
 	@include r($tablet) {
