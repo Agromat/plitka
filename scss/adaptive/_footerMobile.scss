@@ -60,6 +60,57 @@
 			border: none;
 		}
 	}
+
+}
+footer ul.contact li .work-schedule, .footer_mobile .work-schedule{
+  margin-left: 10px;
+  width: calc(100% - 130px);
+  color: #333333;
+  font-size: 13px;
+  font-weight: 400;
+  p{
+    margin: 0;
+    display: block;
+    float: none;
+    width: auto;
+    font-size: 13px;
+    &.work-schedule__title{
+      font-size: 14px;
+      line-height: 1.4;
+    }
+    sup{
+      top: -4px;
+      font-size: 59%;
+    }
+  }
+  &__right{
+    margin-left: 54px;
+  }
+  &__item{
+    &:not(:last-child){
+      margin-bottom: 17px;
+    }
+    &_bot{
+      .work-schedule__right{
+        margin-left: 17px;
+      }
+    }
+  }
+
+  &__decorated{
+    color: #ed1c24;
+  }
+
+}
+.footer_mobile .work-schedule{
+  margin-left: 0;
+  width: 136px;
+  text-align: left;
+  &__item{
+    &:not(:last-child){
+      margin-bottom: 13px;
+    }
+  }
 }
 .work-schedule_row {
 	width: 250px;
