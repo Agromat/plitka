@@ -8,8 +8,11 @@
 	@include r($mob) {
 		top: -5px;
 	}
+  &.sticker_bottom {
+    top: 20px;
+  }
 
-	&.sticker_mob {
+  &.sticker_mob {
 		display: none;
 		@include r($mob) {
 			display: block;
