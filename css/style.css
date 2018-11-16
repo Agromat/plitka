@@ -13219,11 +13219,14 @@ body.is-overflow {
 .info .schedule__right {
   margin-left: 54px;
 }
+.info .schedule__item p {
+  display: flex;
+}
+.info .schedule__item p .schedule__right {
+  margin-left: auto;
+}
 .info .schedule__item:not(:last-child) {
   margin-bottom: 30px;
-}
-.info .schedule__item_bot .schedule__right {
-  margin-left: 17px;
 }
 .info .schedule__item_bot p:not(:last-child) {
   margin-bottom: 0;
