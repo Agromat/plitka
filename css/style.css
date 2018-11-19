@@ -13219,11 +13219,14 @@ body.is-overflow {
 .info .schedule__right {
   margin-left: 54px;
 }
+.info .schedule__item p {
+  display: flex;
+}
+.info .schedule__item p .schedule__right {
+  margin-left: auto;
+}
 .info .schedule__item:not(:last-child) {
   margin-bottom: 30px;
-}
-.info .schedule__item_bot .schedule__right {
-  margin-left: 17px;
 }
 .info .schedule__item_bot p:not(:last-child) {
   margin-bottom: 0;
@@ -14035,17 +14038,23 @@ body.is-overflow {
 
 footer ul.contact li .work-schedule, .footer_mobile .work-schedule {
   margin-left: 10px;
-  width: calc(100% - 130px);
+  max-width: calc(100% - 130px);
+  width: 220px;
   color: #333333;
   font-size: 13px;
   font-weight: 400;
 }
 footer ul.contact li .work-schedule p, .footer_mobile .work-schedule p {
   margin: 0;
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   float: none;
   width: auto;
   font-size: 13px;
+}
+footer ul.contact li .work-schedule p.work-schedule__decorated, .footer_mobile .work-schedule p.work-schedule__decorated {
+  color: #ed1c24;
+  flex-wrap: nowrap;
 }
 footer ul.contact li .work-schedule p.work-schedule__title, .footer_mobile .work-schedule p.work-schedule__title {
   font-size: 14px;
@@ -14056,16 +14065,11 @@ footer ul.contact li .work-schedule p sup, .footer_mobile .work-schedule p sup {
   font-size: 59%;
 }
 footer ul.contact li .work-schedule__right, .footer_mobile .work-schedule__right {
-  margin-left: 54px;
+  margin-left: auto;
+  text-align: right;
 }
 footer ul.contact li .work-schedule__item:not(:last-child), .footer_mobile .work-schedule__item:not(:last-child) {
   margin-bottom: 17px;
-}
-footer ul.contact li .work-schedule__item_bot .work-schedule__right, .footer_mobile .work-schedule__item_bot .work-schedule__right {
-  margin-left: 17px;
-}
-footer ul.contact li .work-schedule__decorated, .footer_mobile .work-schedule__decorated {
-  color: #ed1c24;
 }
 
 .footer_mobile .work-schedule {

@@ -569,13 +569,16 @@ body{
           margin-left: 54px;
         }
         &__item{
+          p{
+            display: flex;
+            .schedule__right{
+              margin-left: auto;
+            }
+          }
           &:not(:last-child){
             margin-bottom: 30px;
           }
           &_bot{
-            .schedule__right{
-              margin-left: 17px;
-            }
             p{
               &:not(:last-child){
                 margin-bottom: 0;
