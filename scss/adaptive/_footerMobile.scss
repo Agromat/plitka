@@ -64,16 +64,22 @@
 }
 footer ul.contact li .work-schedule, .footer_mobile .work-schedule{
   margin-left: 10px;
-  width: calc(100% - 130px);
+  max-width: calc(100% - 130px);
+  width: 220px;
   color: #333333;
   font-size: 13px;
   font-weight: 400;
   p{
     margin: 0;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
     float: none;
     width: auto;
     font-size: 13px;
+    &.work-schedule__decorated{
+      color: #ed1c24;
+      flex-wrap: nowrap;
+    }
     &.work-schedule__title{
       font-size: 14px;
       line-height: 1.4;
@@ -84,7 +90,9 @@ footer ul.contact li .work-schedule, .footer_mobile .work-schedule{
     }
   }
   &__right{
-    margin-left: 54px;
+    //margin-left: 54px;
+    margin-left: auto;
+    text-align: right;
   }
   &__item{
     &:not(:last-child){
@@ -92,14 +100,12 @@ footer ul.contact li .work-schedule, .footer_mobile .work-schedule{
     }
     &_bot{
       .work-schedule__right{
-        margin-left: 17px;
+        //margin-left: 17px;
       }
     }
   }
 
-  &__decorated{
-    color: #ed1c24;
-  }
+
 
 }
 .footer_mobile .work-schedule{
