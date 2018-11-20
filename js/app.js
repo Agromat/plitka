@@ -1021,18 +1021,27 @@ testTooltip();
 $(window).resize(function () {
     testTooltip();
 });
-tooltipTrigger.on('click', function () {
-    if (tooltip.hasClass('is-active')) tooltip.removeClass('is-active');
+tooltip.on('mouseover', function () {
     const wrap = $(this).closest(tooltip);
-    wrap.toggleClass('is-active');
+    if (!wrap.hasClass('is-active')) {
+        wrap.addClass('is-active');
+        console.log('show');
+    }
 });
 tooltipClose.on('click', function () {
     const wrap = $(this).closest(tooltip);
     wrap.removeClass('is-active');
 });
-$(document).on('click', function (e) {
-    if (!tooltip.is(e.target)
-        && tooltip.has(e.target).length === 0 && tooltip.hasClass('is-active')) {
-        tooltip.removeClass('is-active');
+tooltip.on('mouseout', function () {
+    const wrap = $(this).closest(tooltip);
+    if (wrap.hasClass('is-active')) {
+        wrap.removeClass('is-active');
+        console.log('hide');
     }
 });
+// $(document).on('click', function (e) {
+//     if (!tooltip.is(e.target)
+//         && tooltip.has(e.target).length === 0 && tooltip.hasClass('is-active')) {
+//         tooltip.removeClass('is-active');
+//     }
+// });

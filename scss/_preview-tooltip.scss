@@ -2,7 +2,7 @@
   position: absolute;
   &.is-right {
     .preview-tooltip__content {
-      left: 45px;
+      left: 38px;
       &:after {
         left: -1px;
         transform: translate(-50%, 0) rotate(-135deg);
@@ -35,6 +35,26 @@
       }
     }
   }
+  &_red{
+    .preview-tooltip__trigger{
+      background-color: $red;
+      &-inner{
+        &:before, &:after {
+          background-color: #000000;
+        }
+      }
+    }
+  }
+  &_black{
+    .preview-tooltip__trigger{
+      background-color: #000000;
+      &-inner{
+        &:before, &:after {
+          background-color: #ffffff;
+        }
+      }
+    }
+  }
   &__trigger{
     width: 20px;
     height: 20px;
@@ -43,23 +63,36 @@
     position: relative;
     border: none;
     -webkit-appearance: none;
-    &:before, &:after {
+    &:before {
       position: absolute;
       content: '';
       display: block;
-      background-color: #000000;
-      top: 50%;
+      width: 60px;
+      height: 60px;
       left: 50%;
+      top: 50%;
       transform: translate(-50%, -50%);
     }
-    &:before {
-      width: 14px;
-      height: 2px;
+    &-inner{
+      &:before, &:after {
+        position: absolute;
+        content: '';
+        display: block;
+        background-color: #000000;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      &:before {
+        width: 14px;
+        height: 2px;
+      }
+      &:after {
+        height: 14px;
+        width: 2px;
+      }
     }
-    &:after {
-      height: 14px;
-      width: 2px;
-    }
+
   }
   &__content{
     //transform: translate(-222px, -62px);
