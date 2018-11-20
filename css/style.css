@@ -14295,6 +14295,10 @@ footer ul.contact li .work-schedule__item:not(:last-child), .footer_mobile .work
 .preview-tooltip.is-bot .preview-tooltip__content:after {
   top: 3px;
 }
+.preview-tooltip.is-active .preview-tooltip__content {
+  opacity: 1;
+  pointer-events: all;
+}
 @media only screen and (max-width: 766px) {
   .preview-tooltip.is-active {
     position: unset;
@@ -14306,11 +14310,8 @@ footer ul.contact li .work-schedule__item:not(:last-child), .footer_mobile .work
     top: 0;
     left: 0;
     width: 100%;
+    display: flex;
   }
-}
-.preview-tooltip.is-active .preview-tooltip__content {
-  opacity: 1;
-  pointer-events: all;
 }
 .preview-tooltip__trigger {
   width: 20px;
@@ -14355,8 +14356,9 @@ footer ul.contact li .work-schedule__item:not(:last-child), .footer_mobile .work
 @media only screen and (max-width: 766px) {
   .preview-tooltip__content {
     padding: 63px 12px 47px;
-    display: flex;
     justify-content: space-between;
+    opacity: 1;
+    display: none;
   }
 }
 .preview-tooltip__content:after {
