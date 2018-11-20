@@ -8685,6 +8685,7 @@ footer .row.link-footer .column:last-child {
   position: relative;
   margin-top: 20px;
   background: #eef6f9;
+  overflow-x: hidden;
 }
 @media only screen and (max-width: 767px) {
   .product-box {
@@ -8709,6 +8710,13 @@ footer .row.link-footer .column:last-child {
   .product-box__slider-nav .product-box__slide {
     margin: 0 4px;
   }
+}
+.product-box__slider-for {
+  z-index: 101;
+  overflow: visible;
+}
+.product-box__slider-for .slick-list {
+  overflow: visible;
 }
 .product-box__slide img {
   width: 100%;
@@ -14269,4 +14277,191 @@ footer ul.contact li .work-schedule__item:not(:last-child), .footer_mobile .work
     font-size: 13px;
     color: #000;
   }
+}
+
+.preview-tooltip {
+  position: absolute;
+}
+.preview-tooltip.is-right .preview-tooltip__content {
+  left: 45px;
+}
+.preview-tooltip.is-right .preview-tooltip__content:after {
+  left: -1px;
+  transform: translate(-50%, 0) rotate(-135deg);
+}
+.preview-tooltip.is-bot .preview-tooltip__content {
+  top: -3px;
+}
+.preview-tooltip.is-bot .preview-tooltip__content:after {
+  top: 3px;
+}
+@media only screen and (max-width: 766px) {
+  .preview-tooltip.is-active {
+    position: unset;
+  }
+  .preview-tooltip.is-active .preview-tooltip__trigger {
+    display: none;
+  }
+  .preview-tooltip.is-active .preview-tooltip__content {
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+.preview-tooltip.is-active .preview-tooltip__content {
+  opacity: 1;
+  pointer-events: all;
+}
+.preview-tooltip__trigger {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #bdce00;
+  position: relative;
+  border: none;
+  -webkit-appearance: none;
+}
+.preview-tooltip__trigger:before, .preview-tooltip__trigger:after {
+  position: absolute;
+  content: '';
+  display: block;
+  background-color: #000000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.preview-tooltip__trigger:before {
+  width: 14px;
+  height: 2px;
+}
+.preview-tooltip__trigger:after {
+  height: 14px;
+  width: 2px;
+}
+.preview-tooltip__content {
+  width: 192px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  border: 1px solid #bdce00;
+  background-color: #ffffff;
+  position: absolute;
+  top: -63px;
+  left: -208px;
+  padding: 20px 20px 25px;
+  opacity: 0;
+  transition: opacity .3s ease;
+  z-index: 1;
+  pointer-events: none;
+}
+@media only screen and (max-width: 766px) {
+  .preview-tooltip__content {
+    padding: 63px 12px 47px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.preview-tooltip__content:after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 18px;
+  height: 18px;
+  transform: translate(-50%, 0) rotate(45deg);
+  top: 63px;
+  left: calc(100% + 1px);
+  background-color: #fff;
+  border-right: 1px solid #bdce00;
+  border-top: 1px solid #bdce00;
+  pointer-events: none;
+}
+@media only screen and (max-width: 766px) {
+  .preview-tooltip__content:after {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .preview-tooltip__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+.preview-tooltip__img {
+  width: 156px;
+  height: 156px;
+  border: 3px solid #ebebeb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 1;
+}
+@media only screen and (max-width: 766px) {
+  .preview-tooltip__img {
+    margin-right: 13px;
+    margin-bottom: 0;
+    width: 142px;
+    height: 142px;
+    flex-shrink: 0;
+  }
+}
+.preview-tooltip__img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.preview-tooltip__title {
+  color: #0053a0;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: underline;
+  margin-bottom: 5px;
+  display: block;
+}
+.preview-tooltip__price {
+  font-size: 20px;
+  color: #333333;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+.preview-tooltip__price sup {
+  font-size: 60%;
+  top: -7px;
+}
+.preview-tooltip__btn {
+  line-height: 0;
+}
+.preview-tooltip__btn .btn {
+  width: 100%;
+}
+.preview-tooltip__close {
+  position: absolute;
+  top: 16px;
+  right: 10px;
+  width: 21px;
+  height: 21px;
+  border: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  display: none;
+}
+@media only screen and (max-width: 766px) {
+  .preview-tooltip__close {
+    display: block;
+  }
+}
+.preview-tooltip__close:after, .preview-tooltip__close:before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 1px;
+  height: 25px;
+  left: 50%;
+  top: 50%;
+  background-color: #4a5b70;
+}
+.preview-tooltip__close:before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.preview-tooltip__close:after {
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
