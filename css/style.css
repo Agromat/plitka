@@ -8510,8 +8510,9 @@ footer .row.link-footer .column:last-child {
 
 .item-crop img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
+  max-height: 200px;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   transition: opacity 0.2s;
@@ -12161,7 +12162,7 @@ footer .row.link-footer .column:last-child {
 
 /* Ion.RangeSlider
 // css version 2.0.3
-// ┬й 2013-2014 Denis Ineshin | IonDen.com
+// © 2013-2014 Denis Ineshin | IonDen.com
 // ===================================================================================================================*/
 /* =====================================================================================================================
 // RangeSlider */
@@ -12337,7 +12338,7 @@ footer .row.link-footer .column:last-child {
 
 /* Ion.RangeSlider, Flat UI Skin
 // css version 2.0.3
-// ┬й Denis Ineshin, 2014    https://github.com/IonDen
+// © Denis Ineshin, 2014    https://github.com/IonDen
 // ===================================================================================================================*/
 /* =====================================================================================================================
 // Skin details */
