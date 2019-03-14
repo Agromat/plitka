@@ -367,6 +367,7 @@ $mob: 767;
 
   .img {
     position: relative;
+    display: block;
     &:hover{
       &:after{
         position: absolute;
@@ -578,7 +579,7 @@ $mob: 767;
   &__title {
     color: #0053a0;
     font-size: 1.3125rem;
-    text-decoration: underline;
+    text-decoration: none;
     line-height: 1.2;
     margin-bottom: 1rem;
     display: block;
@@ -731,6 +732,7 @@ $mob: 767;
     .slick-arrow {
       position: unset;
       margin: 0;
+      z-index: 1;
     }
   }
   &__differences, &__characteristics{

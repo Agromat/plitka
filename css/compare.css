@@ -308,6 +308,7 @@
 }
 .compare-item .img {
   position: relative;
+  display: block;
 }
 .compare-item .img:hover:after {
   position: absolute;
@@ -526,7 +527,7 @@
 .compare-category__title {
   color: #0053a0;
   font-size: 1.3125rem;
-  text-decoration: underline;
+  text-decoration: none;
   line-height: 1.2;
   margin-bottom: 1rem;
   display: block;
@@ -671,6 +672,7 @@
 .compare-list__arrows .slick-arrow {
   position: unset;
   margin: 0;
+  z-index: 1;
 }
 .compare-list__differences, .compare-list__characteristics {
   font-size: 0.93745rem;
