@@ -1032,8 +1032,9 @@ if($('.js-compare-list')){
             }
         ]
     });
-    $('.js-compare-remove-from-list').on('click', function () {
-        slider.slick('slickRemove', ($(this).closest('.slick-slide').index()));
+    $(document).on('click', '.js-compare-remove-from-list', function (e) {
+      e.preventDefault();
+      slider.slick('slickRemove', ($(this).closest('.slick-slide').index()));
     });
     layout();
     characteristics();
@@ -1054,7 +1055,6 @@ if($('.js-compare-list')){
 
     let reinitLayout = debounce(function() {
         layout();
-        console.log('work');
     }, 250);
 
     $(window).on('resize', reinitLayout);
