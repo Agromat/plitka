@@ -966,6 +966,14 @@ if($('.js-compare-list')){
     function layout() {
         let cols = $('.js-compare-list').find('.js-col');
         let cellsLength = $('.js-compare-list').find('.js-col-characteristics .js-cell').length;
+
+        let titleH = 0;
+        for (let i = 1; i < cols.length; i++) {
+            let height = $(cols[i]).find('.title').outerHeight();
+            height > titleH ? titleH = height : false;
+        }
+        $(cols).find('.title').css('min-height', titleH);
+
         for (let n = 0; n < cellsLength; n++) {
             let height = 0;
             let cells = [];
@@ -994,7 +1002,6 @@ if($('.js-compare-list')){
                 cellHover();
             });
             $(cells).each(function (i, el) {
-                // $(el).css('height', height);
                 $(el).css('min-height', height);
             });
         }

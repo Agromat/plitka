@@ -329,6 +329,7 @@
   line-height: 1.14;
   text-decoration: underline;
   word-break: break-word;
+  display: block;
 }
 .compare-item .title:hover {
   color: #333333;
