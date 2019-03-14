@@ -525,6 +525,15 @@ $mob: 767;
       &.is-hovered{
         background-color: #efefef;
       }
+      &_green{
+        color: #009900;
+      }
+      &_red{
+        color: #ed1c24;
+      }
+      &_orange{
+        color: #ee9900;
+      }
     }
     &.compare-item_characteristics {
       margin-top: 30px;

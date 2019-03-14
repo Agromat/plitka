@@ -14480,6 +14480,15 @@ body.is-overflow {
 .compare-item_list .compare-item__specification.is-hovered {
   background-color: #efefef;
 }
+.compare-item_list .compare-item__specification_green {
+  color: #009900;
+}
+.compare-item_list .compare-item__specification_red {
+  color: #ed1c24;
+}
+.compare-item_list .compare-item__specification_orange {
+  color: #ee9900;
+}
 .compare-item_list.compare-item_characteristics {
   margin-top: 30px;
 }
