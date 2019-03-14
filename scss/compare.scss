@@ -389,6 +389,7 @@ $mob: 767;
     font-weight: 400;
     line-height: 1.14;
     text-decoration: underline;
+    word-break: break-word;
     &:hover{
       color: #333333;
       span {
@@ -591,9 +592,6 @@ $mob: 767;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 18px;
-    @include r(619) {
-      justify-content: center;
-    }
   }
   &__item {
     width: 200px;

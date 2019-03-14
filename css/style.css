@@ -11949,7 +11949,7 @@ footer .row.link-footer .column:last-child {
 
 /* Ion.RangeSlider
 // css version 2.0.3
-// ┬й 2013-2014 Denis Ineshin | IonDen.com
+// © 2013-2014 Denis Ineshin | IonDen.com
 // ===================================================================================================================*/
 /* =====================================================================================================================
 // RangeSlider */
@@ -12125,7 +12125,7 @@ footer .row.link-footer .column:last-child {
 
 /* Ion.RangeSlider, Flat UI Skin
 // css version 2.0.3
-// ┬й Denis Ineshin, 2014    https://github.com/IonDen
+// © Denis Ineshin, 2014    https://github.com/IonDen
 // ===================================================================================================================*/
 /* =====================================================================================================================
 // Skin details */
@@ -14339,6 +14339,7 @@ body.is-overflow {
   font-weight: 400;
   line-height: 1.14;
   text-decoration: underline;
+  word-break: break-word;
 }
 .compare-item .title:hover {
   color: #333333;
@@ -14550,11 +14551,6 @@ body.is-overflow {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 18px;
-}
-@media only screen and (max-width: 619px) {
-  .compare-category__content {
-    justify-content: center;
-  }
 }
 .compare-category__item {
   width: 200px;

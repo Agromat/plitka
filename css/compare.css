@@ -328,6 +328,7 @@
   font-weight: 400;
   line-height: 1.14;
   text-decoration: underline;
+  word-break: break-word;
 }
 .compare-item .title:hover {
   color: #333333;
@@ -539,11 +540,6 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 18px;
-}
-@media only screen and (max-width: 619px) {
-  .compare-category__content {
-    justify-content: center;
-  }
 }
 .compare-category__item {
   width: 200px;
