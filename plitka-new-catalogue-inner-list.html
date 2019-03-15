@@ -3399,6 +3399,34 @@
 
               <!-- BEGIN FILTER-ITEMS -->
               <dl class="filters-items accordion accordion_filters" data-accordion>
+                <dd>
+                    <div class="used-filters">
+                        <dl class="title">Вы выбрали</dl>
+
+                        <dl class="type-filters maxwidth bottom-margin-0">
+                            <dt>Фриз</dt>
+                            <dd>
+                                <a href="javascript:deleteFilter('274', '1')" class="del graybg">
+                                    <span class="icon del"></span>
+                                    <span class="text">Да</span>
+                                </a>
+                            </dd>
+                        </dl>
+                        <dl class="type-filters maxwidth bottom-margin-0">
+                            <dt>Декор</dt>
+                            <dd>
+                                <a href="javascript:deleteFilter('275', '1')" class="del graybg">
+                                    <span class="icon del"></span>
+                                    <span class="text">Да</span>
+                                </a>
+                            </dd>
+                        </dl>
+
+                        <dl>
+                            <a class="del-all graybg" href="javascript:deleteAllFilters()"><span>Убрать все</span></a>
+                        </dl>
+                    </div>
+                </dd>
                 <dd class="accordion-navigation active">
                   <a href="#mobPanel2" class="title"><h6>бренд</h6></a>
                   <div id="mobPanel2" class="content form-group checkbox active">
@@ -3535,10 +3563,10 @@
                 </dd>
               </dl>
               <!-- END FILTER-ITEMS -->
-              <div class="clear-filters">
-                <a class="left">Очистить фильтры</a>
-                <button class="btn default right">Применить</button>
-              </div>
+              <!--<div class="clear-filters">-->
+                <!--<a class="left">Очистить фильтры</a>-->
+                <!--<button class="btn default right">Применить</button>-->
+              <!--</div>-->
             </div>
           </div>
         </div>
