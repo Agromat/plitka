@@ -392,6 +392,7 @@ $mob: 767;
     text-decoration: underline;
     word-break: break-word;
     display: block;
+    margin-bottom: 10px;
     &:hover{
       color: #333333;
       span {
@@ -402,6 +403,27 @@ $mob: 767;
   .price{
     margin-bottom: 0;
     line-height: 1.2;
+    font-size: 16px;
+    sup{
+      font-size: 12px;
+    }
+    .btn.gradient {
+      width: 30px;
+      height: 27px;
+      line-height: normal;
+      padding: 0;
+      vertical-align: text-bottom;
+      .icon {
+        border: 0;
+        width: 30px;
+        height: 27px;
+        &:before {
+          width: 30px;
+          height: 27px;
+          background-position: 1px -187px;
+        }
+      }
+    }
   }
   &__close {
     width: 21px;
@@ -554,12 +576,13 @@ $mob: 767;
       }
     }
   }
+
   @include r(1023) {
     .price {
-      font-size: 1.3125rem;
+      font-size: 1rem;
       margin-top: 10px;
       sup {
-        font-size: 1rem;
+        font-size: .8rem;
       }
     }
     .title {
@@ -570,12 +593,33 @@ $mob: 767;
     .price {
       font-size: .875rem;
       margin-top: 10px;
+      .btn.gradient {
+        width: 20px;
+        height: 20px;
+        .icon {
+          width: 20px;
+          height: 18px;
+          &:before {
+            width: 20px;
+            height: 23px;
+            background-position: -5px -191px;
+          }
+        }
+      }
       sup {
         font-size: .6rem;
       }
     }
     .title {
       font-size: .75rem;
+    }
+  }
+  @include r(375) {
+    .price {
+      font-size: .6rem;
+      sup {
+        font-size: .45rem;
+      }
     }
   }
 }

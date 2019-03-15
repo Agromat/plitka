@@ -14342,6 +14342,7 @@ body.is-overflow {
   text-decoration: underline;
   word-break: break-word;
   display: block;
+  margin-bottom: 10px;
 }
 .compare-item .title:hover {
   color: #333333;
@@ -14352,6 +14353,27 @@ body.is-overflow {
 .compare-item .price {
   margin-bottom: 0;
   line-height: 1.2;
+  font-size: 16px;
+}
+.compare-item .price sup {
+  font-size: 12px;
+}
+.compare-item .price .btn.gradient {
+  width: 30px;
+  height: 27px;
+  line-height: normal;
+  padding: 0;
+  vertical-align: text-bottom;
+}
+.compare-item .price .btn.gradient .icon {
+  border: 0;
+  width: 30px;
+  height: 27px;
+}
+.compare-item .price .btn.gradient .icon:before {
+  width: 30px;
+  height: 27px;
+  background-position: 1px -187px;
 }
 .compare-item__close {
   width: 21px;
@@ -14515,11 +14537,11 @@ body.is-overflow {
 }
 @media only screen and (max-width: 1023px) {
   .compare-item .price {
-    font-size: 1.3125rem;
+    font-size: 1rem;
     margin-top: 10px;
   }
   .compare-item .price sup {
-    font-size: 1rem;
+    font-size: .8rem;
   }
   .compare-item .title {
     font-size: .875rem;
@@ -14530,11 +14552,32 @@ body.is-overflow {
     font-size: .875rem;
     margin-top: 10px;
   }
+  .compare-item .price .btn.gradient {
+    width: 20px;
+    height: 20px;
+  }
+  .compare-item .price .btn.gradient .icon {
+    width: 20px;
+    height: 18px;
+  }
+  .compare-item .price .btn.gradient .icon:before {
+    width: 20px;
+    height: 23px;
+    background-position: -5px -191px;
+  }
   .compare-item .price sup {
     font-size: .6rem;
   }
   .compare-item .title {
     font-size: .75rem;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .compare-item .price {
+    font-size: .6rem;
+  }
+  .compare-item .price sup {
+    font-size: .45rem;
   }
 }
 
