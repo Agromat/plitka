@@ -404,6 +404,9 @@ $mob: 767;
     margin-bottom: 0;
     line-height: 1.2;
     font-size: 16px;
+    min-height: 30px;
+    display: flex;
+    align-items: flex-end;
     sup{
       font-size: 12px;
     }
@@ -513,7 +516,7 @@ $mob: 767;
     //width: 200px;
     position: relative;
     .compare-item__header{
-      padding: 0 20px;
+      padding: 0 20px 5px;
       .compare-option {
         font-size: 0.75rem;
 
@@ -593,6 +596,7 @@ $mob: 767;
     .price {
       font-size: .875rem;
       margin-top: 10px;
+      min-height: 20px;
       .btn.gradient {
         width: 20px;
         height: 20px;

@@ -14354,6 +14354,9 @@ body.is-overflow {
   margin-bottom: 0;
   line-height: 1.2;
   font-size: 16px;
+  min-height: 30px;
+  display: flex;
+  align-items: flex-end;
 }
 .compare-item .price sup {
   font-size: 12px;
@@ -14464,7 +14467,7 @@ body.is-overflow {
   position: relative;
 }
 .compare-item_list .compare-item__header {
-  padding: 0 20px;
+  padding: 0 20px 5px;
 }
 .compare-item_list .compare-item__header .compare-option {
   font-size: 0.75rem;
@@ -14551,6 +14554,7 @@ body.is-overflow {
   .compare-item .price {
     font-size: .875rem;
     margin-top: 10px;
+    min-height: 20px;
   }
   .compare-item .price .btn.gradient {
     width: 20px;
