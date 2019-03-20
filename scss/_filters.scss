@@ -1196,6 +1196,28 @@
 	}
 }
 
+.filters-mob .used-filters {
+  background: #f4f4f4;
+  margin: 20px 0;
+  padding: 0 10px;
+}
+
+.filters-mob .used-filters .title {
+  margin-bottom: 0;
+}
+
+.filters-mob .maxwidth {
+  width: 100%;
+}
+
+.filters-mob .graybg {
+  background: #f4f4f4;
+}
+
+.filters-mob .bottom-margin-0 {
+  margin-bottom: 0;
+}
+
 .filter-input-wrap, .filter-postfix-wrap {
 	display: inline-block;
 	max-width: 60px;
