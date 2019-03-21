@@ -1,5 +1,6 @@
 .preview-tooltip{
   position: absolute;
+  transform: translate(-50%);
   &.is-right {
     .preview-tooltip__content {
       left: 38px;
@@ -67,8 +68,8 @@
       position: absolute;
       content: '';
       display: block;
-      width: 60px;
-      height: 60px;
+      width: 20px;
+      height: 20px;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
