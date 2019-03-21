@@ -14304,7 +14304,6 @@ footer ul.contact li .work-schedule__item:not(:last-child), .footer_mobile .work
 
 .preview-tooltip {
   position: absolute;
-  transform: translate(-50%);
 }
 .preview-tooltip.is-right .preview-tooltip__content {
   left: 38px;
@@ -14326,6 +14325,7 @@ footer ul.contact li .work-schedule__item:not(:last-child), .footer_mobile .work
 @media only screen and (max-width: 766px) {
   .preview-tooltip.is-active {
     position: unset;
+    transform: none;
   }
   .preview-tooltip.is-active .preview-tooltip__trigger {
     display: none;

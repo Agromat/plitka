@@ -1,6 +1,6 @@
 .preview-tooltip{
   position: absolute;
-  transform: translate(-50%);
+  
   &.is-right {
     .preview-tooltip__content {
       left: 38px;
@@ -25,7 +25,8 @@
     }
     @include r(766) {
       position: unset;
-      .preview-tooltip__trigger{
+      transform: none;
+      .preview-tooltip__trigger {
         display: none;
       }
       .preview-tooltip__content {
