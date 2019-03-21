@@ -3053,6 +3053,9 @@ footer{
 		vertical-align: top;
 		width: 20%;
 		margin-bottom: 20px;
+		&_lg-6 {
+			width: 16.66666%
+		}
 		@include r($tablet) {
 			width: 25%;
 		}

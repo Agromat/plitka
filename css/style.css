@@ -8462,6 +8462,9 @@ footer .row.link-footer .column:last-child {
   width: 20%;
   margin-bottom: 20px;
 }
+.item-crop-wrap .item-crop-parent_lg-6 {
+  width: 16.66666%;
+}
 @media only screen and (max-width: 1024px) {
   .item-crop-wrap .item-crop-parent {
     width: 25%;
@@ -11423,6 +11426,11 @@ footer .row.link-footer .column:last-child {
   color: #ed1c24;
 }
 
+.note-sm {
+  font-size: 13px;
+  color: #999;
+}
+
 .btn-group {
   margin: 0;
 }
@@ -12670,6 +12678,9 @@ body.is-overflow {
   .row .not-collapse .row {
     margin: 0;
   }
+}
+.row.pl-20 {
+  padding-left: 20px;
 }
 
 .sidebar {
