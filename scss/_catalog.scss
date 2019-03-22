@@ -2,7 +2,9 @@
 	//width: 950px;
 	padding: 0 !important;
 	.main-container{
-		padding-left: 10px;
+    padding-left: 10px;
+    position: relative;
+    z-index: 1;
 		.main-title{
 			margin-top: 0;
 		}

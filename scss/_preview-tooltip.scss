@@ -3,10 +3,15 @@
   
   &.is-right {
     .preview-tooltip__content {
-      left: 38px;
+      left: 33px;
       &:after {
         left: -1px;
         transform: translate(-50%, 0) rotate(-135deg);
+      }
+    }
+    .preview-tooltip__trigger {
+      &:before {
+        left: 100%;
       }
     }
   }
@@ -69,9 +74,9 @@
       position: absolute;
       content: '';
       display: block;
-      width: 20px;
+      width: 30px;
       height: 20px;
-      left: 50%;
+      left: 0%;
       top: 50%;
       transform: translate(-50%, -50%);
     }
@@ -104,7 +109,7 @@
     background-color: #ffffff;
     position: absolute;
     top: -63px;
-    left: -208px;
+    left: -205px;
     padding: 20px 20px 25px;
     opacity: 0;
     transition: opacity .3s ease;
@@ -185,6 +190,12 @@
     line-height: 0;
     .btn{
       width: 100%;
+    }
+    .link {
+      font-size: 14px;
+      padding-top: .75rem;
+      display: table;
+      text-decoration: underline;
     }
   }
   &__close {
