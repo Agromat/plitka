@@ -52,8 +52,17 @@ body{
             }
         }
     }
-    &.pl-20 {
+    &.gutters {
         padding-left: 20px;
+        padding-right: 30px;
+        @include r($tablet) {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        @include r($mob) {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
     }
 }
 

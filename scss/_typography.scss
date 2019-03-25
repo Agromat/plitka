@@ -376,4 +376,36 @@ p {
 .note-sm {
 	font-size: 13px;
 	color: #999;
+	margin-bottom: 2px;
+	@include r($tablet) {
+		margin-bottom: 13px;
+	}
+	@include r($mob) {
+		margin-bottom: 0px;
+	}
+}
+
+.title {
+	font-size: 36px;
+	color: #333333;
+	font-weight: 400;
+	letter-spacing: 0.9px;
+	@include r($mob) {
+		font-size: 24px;
+		letter-spacing: 0.6px;
+	}
+	&_collored {
+		color: #30c2e9
+	}
+	&_lg {
+		font-size: 48px;
+		@include r($tablet) {
+			font-size: 36px;
+			line-height: 1.27777778;
+		}
+		@include r($mob) {
+			font-size: 18px;
+		}
+	}
+
 }

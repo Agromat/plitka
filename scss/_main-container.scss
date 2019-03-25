@@ -889,10 +889,24 @@ ul.pagination{
 }
 
 .other-products{
+	position: relative;
 	&.no-border {
 		&.header-box {
 			@include r($mob) {
 				padding-top: 0;
+			}
+		}
+	}
+	&_border {
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			width: 80%;
+			height: 1px;
+			background-color: #dddddd;
+			@include r($tablet) {
+				display: none;
 			}
 		}
 	}
@@ -1262,6 +1276,9 @@ ul.pagination{
 					display: block;
 					@include r($mob) {
 						font-size: 10px;
+					}
+					&_normal {
+						font-weight: 400;
 					}
 					span{
 						border-bottom: 1px solid $blue;
@@ -3274,6 +3291,9 @@ footer{
   overflow-x: hidden;
 	@include r($mob) {
 		margin-top: 0;
+	}
+	&_light {
+		background-color: #fff;
 	}
 	&__slider-nav {
 		padding: 0 30px;

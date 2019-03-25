@@ -963,6 +963,39 @@ $('.product-box__slider .slider-nav').slick({
     ]
 });
 
+//////////////////////////////////
+// begin slider solutions //
+//////////////////////////////////
+
+$('.solution__slider .slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-nav',
+    rows: 0
+});
+
+$('.solution__slider .slider-nav').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: false,
+    centerMode: true,
+    focusOnSelect: true,
+
+    centerPadding: 1,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 4
+            }
+        }
+
+    ]
+});
+
 if ($(window).width() < 768) {
     $(".reveal-modal").removeClass("is-fixed");
 }
