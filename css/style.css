@@ -14766,7 +14766,7 @@ footer ul.contact li .work-schedule__item:not(:last-child), .footer_mobile .work
 .solution__other-products .multiple-items .slick-slide {
   padding-top: 20px;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 767px) {
   .solution__text {
     max-width: 620px;
   }

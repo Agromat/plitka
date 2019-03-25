@@ -135,7 +135,7 @@
         }
     }
     &__text {
-        @include r($tablet) {
+        @include r($mob) {
             max-width: 620px;
         }
         p {
