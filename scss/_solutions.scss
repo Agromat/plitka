@@ -185,6 +185,13 @@
         }
 
     }
+    &__slider-for {
+        overflow: visible;
+        z-index: 101;
+        .slick-list {
+            overflow: visible;
+        }
+    }
     &__slider-nav {
         padding: 10px 55px;
         max-height: 88px;
