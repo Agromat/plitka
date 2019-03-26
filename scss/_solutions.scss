@@ -95,6 +95,9 @@
         @include r($mob) {
             padding: 27px 10px 5px;
         }
+        @include r($mob-sm) {
+            padding-top: 7px;
+        }
     }
     &__title {
         margin-bottom: 28px;
@@ -173,7 +176,6 @@
         &_small {
             margin: 0 20px;
             display: block;
-            height: 88px;
             @include r($tablet) {
                 height: 77px;
             }
@@ -194,14 +196,9 @@
     }
     &__slider-nav {
         padding: 10px 55px;
-        max-height: 88px;
         overflow: hidden;
-        @include r($tablet) {
-            max-height: 77px;
-        }
         @include r($mob) {
-            max-height: 81px;
-            padding: 49px 10px 20px;
+            padding: 49px 10px 0px;
         }
         .slick-slide {
             margin: 0 5px;
@@ -298,7 +295,7 @@
     }
     &__item {
         background-color: #eef6f9;
-        padding: 14px 18px;
+        padding: 14px 18px 14px 19px;
         @include r($tablet) {
             padding: 9px 10px 3px 11px;
         }
@@ -307,7 +304,7 @@
         }
     }
     &__img {
-        padding-bottom: 48%;
+        padding-bottom: 48.106061%;
         background-size: cover;
         position: relative;
         z-index: 0;
