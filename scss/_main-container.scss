@@ -796,7 +796,7 @@ ul.pagination{
 
 .other-products{
 	border-top: 1px solid $border;
-	margin-top: 50px;
+	margin-top: 500px;
 	padding-top: 25px;
 	position: relative;
 	z-index: 1;
@@ -1962,7 +1962,7 @@ footer{
 }
 
 .reveal-modal, .enlarged-photo{
-	visibility: visible
+	visibility: visible;
 }
 
 .modal {
@@ -2028,7 +2028,8 @@ footer{
   }
   .modal__body{
     padding: 91px 12px 19px;
-  }
+	}
+}
 .modal_w300 {
   max-width: 300px;
 }
@@ -2245,7 +2246,6 @@ footer{
 		content: url("../img/close-btn-gray.png");
 	}
 }
-
 .basket {
 	max-width: 910px;
 	@include r($tablet) {
@@ -3823,5 +3823,5 @@ footer{
       }
     }
   }
-  }
+  
 }
