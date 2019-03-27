@@ -234,7 +234,6 @@
 .product-item-collection-in {
   display: flex;
   //justify-content: space-between;
-
   flex-wrap: wrap;
   .product-item_notice {
     .product-item__main {
@@ -376,6 +375,7 @@
 
     }
   }
+  
 
   .product-item__main {
     overflow: hidden;
@@ -401,8 +401,7 @@
       line-height: 1;
     }
   }
-
-
+}
 
 
 
@@ -502,7 +501,7 @@
       height: auto !important;
     }
   }
-}
+
 .blog-article {
   margin-top: 40px !important;
   width: 190px;
