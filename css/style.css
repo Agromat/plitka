@@ -11469,32 +11469,32 @@ footer .row.link-footer .column:last-child {
   }
 }
 
-.title {
+.solution .title, .solutions .title {
   font-size: 36px;
   color: #333333;
   font-weight: 400;
   letter-spacing: 0.9px;
 }
 @media only screen and (max-width: 767px) {
-  .title {
+  .solution .title, .solutions .title {
     font-size: 24px;
     letter-spacing: 0.6px;
   }
 }
-.title_collored {
+.solution .title_collored, .solutions .title_collored {
   color: #30c2e9;
 }
-.title_lg {
+.solution .title_lg, .solutions .title_lg {
   font-size: 48px;
 }
 @media only screen and (max-width: 1024px) {
-  .title_lg {
+  .solution .title_lg, .solutions .title_lg {
     font-size: 36px;
     line-height: 1.27777778;
   }
 }
 @media only screen and (max-width: 767px) {
-  .title_lg {
+  .solution .title_lg, .solutions .title_lg {
     font-size: 18px;
   }
 }
