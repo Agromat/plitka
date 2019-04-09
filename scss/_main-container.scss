@@ -3307,8 +3307,8 @@ footer{
 .product-box {
 	position: relative;
 	margin-top: 20px;
-	background: #eef6f9;
-  overflow-x: hidden;
+
+	background: #eef6f9; 
 	@include r($mob) {
 		margin-top: 0;
 	}
@@ -3329,13 +3329,6 @@ footer{
 
 		}
 	}
-  &__slider-for{
-    z-index: 101;
-    overflow: visible;
-    .slick-list{
-      overflow: visible;
-    }
-  }
 	&__slide {
 		img {
 			width: 100%;
