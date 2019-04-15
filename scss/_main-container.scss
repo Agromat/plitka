@@ -1277,9 +1277,6 @@ ul.pagination{
 					@include r($mob) {
 						font-size: 10px;
 					}
-					&_normal {
-						font-weight: 400;
-					}
 					span{
 						border-bottom: 1px solid $blue;
 					}

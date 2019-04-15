@@ -84,6 +84,10 @@
     }
 }
 .solution {
+    .main-container {
+        position: relative;
+        z-index: 1;
+    }
     &__bcrumbs {
        padding: 1.5rem 0;
     }

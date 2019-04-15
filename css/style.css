@@ -4984,10 +4984,6 @@ ul.pagination li a span {
     font-size: 10px;
   }
 }
-.multiple-items-4 .slick-slide .desckription .title_normal,
-.multiple-items .slick-slide .desckription .title_normal {
-  font-weight: 400;
-}
 .multiple-items-4 .slick-slide .desckription .title span,
 .multiple-items .slick-slide .desckription .title span {
   border-bottom: 1px solid #0053a0;
@@ -14719,6 +14715,10 @@ footer ul.contact li .work-schedule__item:not(:last-child), .footer_mobile .work
   margin-left: 20px;
 }
 
+.solution .main-container {
+  position: relative;
+  z-index: 1;
+}
 .solution__bcrumbs {
   padding: 1.5rem 0;
 }
