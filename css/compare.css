@@ -79,7 +79,7 @@
 }
 
 .menu-compare {
-  padding: 7px rem-calc(17) 0 rem-calc(17);
+  padding: 11px rem-calc(17) 0 rem-calc(17);
   width: 107px;
   display: flex;
   align-items: center;
@@ -113,10 +113,11 @@
   }
 }
 .menu-compare a {
-  height: 29px;
   display: flex;
-  position: relative;
-  margin-left: 10px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
 }
 .menu-compare a:after {
   position: absolute;
@@ -127,19 +128,17 @@
   top: calc(100% - 4px);
   left: 0;
 }
-.menu-compare a > span {
-  margin-top: auto;
+.menu-compare > span {
   position: relative;
-  display: inline-block;
 }
 .menu-compare .compare-icon {
   vertical-align: bottom;
 }
-.menu-compare a:hover span {
+.menu-compare:hover span {
   border-bottom: none;
 }
 @media only screen and (min-width: 1024px) {
-  .menu-compare a:hover .menu-compare-message {
+  .menu-compare:hover .menu-compare-message {
     display: block;
   }
 }

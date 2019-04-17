@@ -133,7 +133,8 @@ $mob: 767;
 
 .menu-compare {
   //padding: 0.875rem rem-calc(17) 1.25rem rem-calc(17);
-  padding: 7px rem-calc(17) 0 rem-calc(17);
+  //padding: 7px rem-calc(17) 0 rem-calc(17);
+  padding: 11px rem-calc(17) 0 rem-calc(17);
   width: 107px;
   //border-left: 1px solid #6C7A93;
   display: flex;
@@ -161,10 +162,16 @@ $mob: 767;
     }
   }
   a  {
-    height: 29px;
+    //height: 29px;
     display: flex;
-    position: relative;
-    margin-left: 10px;
+    //position: relative;
+    //margin-left: 10px;
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+
     &:after {
       position: absolute;
       content: '';
@@ -174,16 +181,17 @@ $mob: 767;
       top: calc(100% - 4px);
       left: 0;
     }
-    >span {
-      margin-top: auto;
-      position: relative;
-      display: inline-block;
-    }
+
+  }
+  > span {
+    //margin-top: auto;
+    position: relative;
+    //display: inline-block;
   }
   .compare-icon {
     vertical-align: bottom;
   }
-  a:hover{
+  &:hover{
     span {
       border-bottom: none;
     }
