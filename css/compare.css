@@ -128,11 +128,16 @@
   top: calc(100% - 4px);
   left: 0;
 }
-.menu-compare > span {
+.menu-compare__list {
   position: relative;
 }
 .menu-compare .compare-icon {
   vertical-align: bottom;
+}
+@media only screen and (max-width: 767px) {
+  .menu-compare .compare-icon {
+    position: static;
+  }
 }
 .menu-compare:hover span {
   border-bottom: none;
@@ -166,6 +171,7 @@
   .menu-compare__quantity {
     top: -2px;
     left: -16px;
+    position: absolute;
   }
 }
 
