@@ -112,15 +112,13 @@
     bottom: 14px;
   }
 }
-.menu-compare .button {
-  z-index: 1;
-}
 .menu-compare a {
   display: flex;
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
+  z-index: 1;
 }
 .menu-compare a:after {
   position: absolute;
