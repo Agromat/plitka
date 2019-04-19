@@ -112,6 +112,9 @@
     bottom: 14px;
   }
 }
+.menu-compare button {
+  z-index: 1;
+}
 .menu-compare a {
   display: flex;
   position: absolute;
@@ -250,6 +253,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  cursor: pointer;
 }
 .menu-compare-message__item-inner span {
   color: #999999 !important;

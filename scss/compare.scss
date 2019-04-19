@@ -161,6 +161,9 @@ $mob: 767;
       bottom: 14px;
     }
   }
+  button {
+    z-index: 1;
+  }
   a  {
     //height: 29px;
     display: flex;
@@ -304,6 +307,7 @@ $mob: 767;
       display: flex;
       justify-content: space-between;
       width: 100%;
+      cursor: pointer;
       span {
         color: #999999!important;
         text-align: left;
