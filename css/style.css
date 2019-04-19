@@ -14530,7 +14530,7 @@ footer ul.contact li .work-schedule__item:not(:last-child), .footer_mobile .work
     bottom: 14px;
   }
 }
-.menu-compare button {
+.menu-compare .button {
   z-index: 1;
 }
 .menu-compare a {
