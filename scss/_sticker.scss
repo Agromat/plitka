@@ -37,11 +37,13 @@
 		border-top-right-radius:rem-calc(9);
 		border-bottom-left-radius:rem-calc(9);
 		border-bottom-right-radius:rem-calc(11);
+		transform: skew(-20deg);
 		-webkit-transform: skew(-20deg);
 		-moz-transform: skew(-20deg);
 		  -o-transform: skew(-20deg);
 		 z-index: 6;
 		&::before{
+			transform: skew(20deg);
 			-webkit-transform: skew(20deg);
 			-moz-transform: skew(20deg);
 		  	-o-transform: skew(20deg);

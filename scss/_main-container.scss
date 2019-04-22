@@ -888,10 +888,24 @@ ul.pagination{
 }
 
 .other-products{
+	position: relative;
 	&.no-border {
 		&.header-box {
 			@include r($mob) {
 				padding-top: 0;
+			}
+		}
+	}
+	&_border {
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			width: 80%;
+			height: 1px;
+			background-color: #dddddd;
+			@include r($tablet) {
+				display: none;
 			}
 		}
 	}
@@ -3093,6 +3107,9 @@ footer{
 		vertical-align: top;
 		width: 20%;
 		margin-bottom: 20px;
+		&_lg-6 {
+			width: 16.66666%
+		}
 		@include r($tablet) {
 			width: 25%;
 		}
@@ -3311,6 +3328,9 @@ footer{
 	background: #eef6f9; 
 	@include r($mob) {
 		margin-top: 0;
+	}
+	&_light {
+		background-color: #fff;
 	}
 	&__slider-nav {
 		padding: 0 30px;
