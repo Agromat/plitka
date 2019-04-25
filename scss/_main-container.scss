@@ -3552,6 +3552,7 @@ footer{
 	display: inline-block;
 	vertical-align: bottom;
 	margin: 0 20px 35px 0;
+	margin-bottom: 20px;
 	position: relative;
 	@include r($mob) {
 		width: calc(50% - 10px);
@@ -3562,9 +3563,12 @@ footer{
 	}
 	&__text {
 		overflow: hidden;
-		max-width: 130px;
+		//max-width: 130px;
 		//margin-bottom: 10px;
-		height: 120px;
+		//height: 120px;
+		max-width: 152px;
+		//margin-bottom: 10px;
+		height: 152px;
 	}
 	&__title {
 		display: inline-block;
@@ -3575,7 +3579,8 @@ footer{
 		-webkit-transition: color .2s linear;
 		-moz-transition: color .2s linear;
 		transition: color .2s linear;
-		max-height: 3.4em;
+		//max-height: 3.4em;
+		max-height: 4.4em;
 		overflow:hidden;
 		&:hover {
 			color: #000;
@@ -3588,6 +3593,7 @@ footer{
 	&__price {
 		padding-top: 10px;
 		border-top: 1px solid $border;
+		margin-bottom: 10px;
 	}
 
 	.btn{
@@ -3596,6 +3602,7 @@ footer{
 			height: 27px;
 			line-height: normal;
 			padding: 0;
+			margin-right: 8px;
 			.icon{
 				border: 0;
 				//float: left;
