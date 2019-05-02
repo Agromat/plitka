@@ -119,7 +119,13 @@
 			line-height: 40px;
 			font-weight: 700;
 		}
-	}
+  }
+  .compare-block {
+    margin-top: 5px;
+    .compare-button {
+      font-size: 13px;
+    }
+  }
 }
 .row.product-item-wrap {
 	// margin-top: 40px;

@@ -5690,6 +5690,12 @@ footer .row.link-footer .column:last-child {
   line-height: 40px;
   font-weight: 700;
 }
+.product-side .compare-block {
+  margin-top: 5px;
+}
+.product-side .compare-block .compare-button {
+  font-size: 13px;
+}
 
 .row.product-item-wrap {
   margin-bottom: 30px;
