@@ -1133,3 +1133,60 @@ function scrollToAnchor(event, element) {
 $(".js-scroll-to").on("click", function (event) {
   scrollToAnchor(event, $(this));
 });
+
+const tooltipTrigger = $('.js-preview-tooltip-trigger');
+const tooltip = $('.js-preview-tooltip');
+const tooltipClose = $('.js-preview-tooltip-close');
+
+function testTooltip() {
+    tooltip.each(function (i, el) {
+        const wrap = $(el),
+            top = wrap.css('top'),
+            left = wrap.css('left'),
+            slide = wrap.closest('.slick-slide'),
+            w = slide.width(),
+            h = slide.height();
+        if (left.substr(0, left.length - 2) - 210 <= 0 && !wrap.hasClass('is-right')){
+            wrap.addClass('is-right');
+        } else {
+            if (wrap.hasClass('is-right')) {
+                wrap.addClass('is-right');
+            }
+        }
+        if (top.substr(0, top.length - 2) - 65 <= 0 && !wrap.hasClass('is-bot')){
+            wrap.addClass('is-bot');
+        } else {
+            if (wrap.hasClass('is-bot')) {
+                wrap.addClass('is-bot');
+            }
+        }
+    });
+}
+testTooltip();
+$(window).resize(function () {
+    testTooltip();
+});
+tooltip.on('mouseover', function () {
+    const wrap = $(this).closest(tooltip);
+    if (!wrap.hasClass('is-active')) {
+        wrap.addClass('is-active');
+        console.log('show');
+    }
+});
+tooltipClose.on('click', function () {
+    const wrap = $(this).closest(tooltip);
+    wrap.removeClass('is-active');
+});
+tooltip.on('mouseout', function () {
+    const wrap = $(this).closest(tooltip);
+    if (wrap.hasClass('is-active')) {
+        wrap.removeClass('is-active');
+        console.log('hide');
+    }
+});
+// $(document).on('click', function (e) {
+//     if (!tooltip.is(e.target)
+//         && tooltip.has(e.target).length === 0 && tooltip.hasClass('is-active')) {
+//         tooltip.removeClass('is-active');
+//     }
+// });
