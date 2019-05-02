@@ -15531,6 +15531,8 @@ footer ul.contact li .work-schedule__item:not(:last-child), .footer_mobile .work
 }
 .preview-tooltip .compare-button {
   font-size: 13px;
+  margin-top: 10px;
+  display: inline-block;
 }
 
 .solutions__bcrumbs {
