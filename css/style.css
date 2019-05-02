@@ -15529,6 +15529,9 @@ footer ul.contact li .work-schedule__item:not(:last-child), .footer_mobile .work
 .preview-tooltip__close:after {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
+.preview-tooltip .compare-button {
+  font-size: 13px;
+}
 
 .solutions__bcrumbs {
   padding: 1.5rem 0 1.8rem;
