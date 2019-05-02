@@ -15534,6 +15534,11 @@ footer ul.contact li .work-schedule__item:not(:last-child), .footer_mobile .work
   margin-top: 10px;
   display: inline-block;
 }
+@media only screen and (max-width: 550px) {
+  .preview-tooltip .compare-button {
+    text-align: center;
+  }
+}
 
 .solutions__bcrumbs {
   padding: 1.5rem 0 1.8rem;
