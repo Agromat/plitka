@@ -1966,6 +1966,31 @@ footer{
 			}
 		}
 	}
+	&.modal_cart-changes {
+		.modal__header {
+			padding: 22px 20px;
+			@include r($mob) {
+				padding: 22px 30px;
+			}
+		}
+		.modal__title {
+			font-size: 17px;
+		}
+		.modal__body {
+			text-align: center;
+			.row {
+				padding: 0;
+			}
+			p {
+				font-weight: 600;
+				font-size: 15px;
+			}
+			.btn-wrap {
+				margin-top: 30px;
+			}
+		}
+
+	}
 }
 
 .reveal-modal, .enlarged-photo{

@@ -7311,6 +7311,30 @@ footer .row.link-footer .column:last-child {
     width: 100%;
   }
 }
+.reveal-modal.modal_cart-changes .modal__header, .modal.modal_cart-changes .modal__header {
+  padding: 22px 20px;
+}
+@media only screen and (max-width: 767px) {
+  .reveal-modal.modal_cart-changes .modal__header, .modal.modal_cart-changes .modal__header {
+    padding: 22px 30px;
+  }
+}
+.reveal-modal.modal_cart-changes .modal__title, .modal.modal_cart-changes .modal__title {
+  font-size: 17px;
+}
+.reveal-modal.modal_cart-changes .modal__body, .modal.modal_cart-changes .modal__body {
+  text-align: center;
+}
+.reveal-modal.modal_cart-changes .modal__body .row, .modal.modal_cart-changes .modal__body .row {
+  padding: 0;
+}
+.reveal-modal.modal_cart-changes .modal__body p, .modal.modal_cart-changes .modal__body p {
+  font-weight: 600;
+  font-size: 15px;
+}
+.reveal-modal.modal_cart-changes .modal__body .btn-wrap, .modal.modal_cart-changes .modal__body .btn-wrap {
+  margin-top: 30px;
+}
 
 .reveal-modal, .enlarged-photo {
   visibility: visible;
