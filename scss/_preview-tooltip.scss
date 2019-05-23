@@ -228,4 +228,12 @@
       transform: translate(-50%, -50%)rotate(-45deg);
     }
   }
+  .compare-button {
+    font-size: 13px;
+    margin-top: 10px;
+    display: inline-block;
+    @include r($mob-sm) {
+      text-align: center;
+    }
+  }
 }

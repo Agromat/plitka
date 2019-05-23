@@ -3,8 +3,6 @@
   "version": "0.0.1",
   "private": "true",
   "dependencies": {
-    "foundation": "zurb/bower-foundation",
-    "tooltip.js": "https://unpkg.com/tooltip.js"
-  },
-  "devDependencies": {}
+    "foundation": "zurb/bower-foundation"
+  }
 }

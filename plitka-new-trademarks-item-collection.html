@@ -622,11 +622,14 @@
 </section>
 
 
-  <div class="page-content">
-    <div class="page-mask"></div>
-    <div class="row collapse">
-    <main class="column medium-10 main-section catalog" role="main">
-      <div class="bcrumbs-container">
+
+<div class="page-content">
+	<div class="page-mask"></div>
+
+	<div class="row collapse">
+	    <main class="column medium-10 main-section" role="main">
+	      <!-- !! was deleted class medium-10 and added modificators: main-section_wider, is-small  -->
+	        <div class="bcrumbs-container">
 	          <ul class="bcrumbs">
 	            <li><a href="#"><span>Главная </span></a></li>
 	            <li><a href="#"><span>Производители </span></a></li>
@@ -670,66 +673,6 @@
 	                  <div class="product-box__slider">
                       <div class=" slider-for product-box__slider-for">
                         <div class="product-box__slide">
-                            <div class="preview-tooltip js-preview-tooltip" style="top: 27%; left: 17%">
-                                <button class="preview-tooltip__trigger js-preview-tooltip-trigger">
-                                    <span class="preview-tooltip__trigger-inner"></span>
-                                </button>
-                                <div class="preview-tooltip__content">
-                                    <button class="preview-tooltip__close js-preview-tooltip-close"></button>
-                                    <div class="preview-tooltip__img">
-                                        <img src="img/tooltip-img.png" alt=""/>
-                                    </div>
-                                    <div class="preview-tooltip__inner">
-                                        <a href="#" class="preview-tooltip__title">Bette BetteForm 3600-000 Antinoise, 1600х700х420</a>
-                                        <div class="preview-tooltip__price">
-                                            8 600 <sup>грн.</sup>
-                                        </div>
-                                        <div class="preview-tooltip__btn">
-                                            <a href="#" class="link">Похожие товары</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="preview-tooltip preview-tooltip_black js-preview-tooltip" style="top: 34%; left: 90%">
-                                <button class="preview-tooltip__trigger js-preview-tooltip-trigger">
-                                    <span class="preview-tooltip__trigger-inner"></span>
-                                </button>
-                                <div class="preview-tooltip__content">
-                                    <button class="preview-tooltip__close js-preview-tooltip-close"></button>
-                                    <div class="preview-tooltip__img">
-                                        <img src="img/tooltip-img.png" alt=""/>
-                                    </div>
-                                    <div class="preview-tooltip__inner">
-                                        <a href="#" class="preview-tooltip__title">Bette BetteForm 3600-000 Antinoise, 1600х700х420</a>
-                                        <div class="preview-tooltip__price">
-                                            8 600 <sup>грн.</sup>
-                                        </div>
-                                        <div class="preview-tooltip__btn">
-                                            <a href="#" class="btn btn_small gradient">Купить</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="preview-tooltip preview-tooltip_red js-preview-tooltip" style="top: 20%; left: 18%">
-                                <button class="preview-tooltip__trigger js-preview-tooltip-trigger">
-                                    <span class="preview-tooltip__trigger-inner"></span>
-                                </button>
-                                <div class="preview-tooltip__content">
-                                    <button class="preview-tooltip__close js-preview-tooltip-close"></button>
-                                    <div class="preview-tooltip__img">
-                                        <img src="img/tooltip-img.png" alt=""/>
-                                    </div>
-                                    <div class="preview-tooltip__inner">
-                                        <a href="#" class="preview-tooltip__title">Bette BetteForm 3600-000 Antinoise, 1600х700х420</a>
-                                        <div class="preview-tooltip__price">
-                                            8 600 <sup>грн.</sup>
-                                        </div>
-                                        <div class="preview-tooltip__btn">
-                                            <a href="#" class="btn btn_small gradient">Купить</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                           <img src="img/slide.jpg">
                         </div>
                         <div class="product-box__slide">
@@ -801,6 +744,15 @@
 	                    <a href="#" data-reveal-id="basket" id="btnbasket" class="btn gradient"><span class="icon buy"></span></a>
 	                    <p class="price price_right">1600,<sup>34 грн.</sup></p>
 	                  </div>
+                        <div class="compare-block link">
+                            <a class="dashedtext compare-button js-compare-button" data-common-text="Добавить к сравнению" data-active-text="Сравнить">
+                            <span class="compare-icon compare-icon_grey compare-icon_small">
+                                <span class="compare-icon__item compare-icon__item_big"></span>
+                                <span class="compare-icon__item compare-icon__item_small"></span>
+                            </span>
+                                <span class="link js-compare-button-text">Добавить к сравнению</span>
+                            </a>
+                        </div>
 	                </div>
 	              </div>
 	              <div class="prod" itemscope itemtype="http://schema.org/Thing" >
@@ -816,6 +768,15 @@
 	                    <a href="#" data-reveal-id="basket" id="btnbasket" class="btn gradient"><span class="icon buy"></span></a>
 	                    <p class="price price_right">1600,<sup>34 грн.</sup></p>
 	                  </div>
+                        <div class="compare-block">
+                            <a class="dashedtext compare-button js-compare-button" data-common-text="Добавить к сравнению" data-active-text="Сравнить">
+                            <span class="compare-icon compare-icon_grey compare-icon_small">
+                                <span class="compare-icon__item compare-icon__item_big"></span>
+                                <span class="compare-icon__item compare-icon__item_small"></span>
+                            </span>
+                                <span class="link js-compare-button-text">Добавить к сравнению</span>
+                            </a>
+                        </div>
 	                </div>
 	              </div>
 	              <div class="prod" itemscope itemtype="http://schema.org/Thing" >
@@ -831,6 +792,15 @@
 	                    <a href="#" data-reveal-id="basket" id="btnbasket" class="btn gradient"><span class="icon buy"></span></a>
 	                    <p class="price price_right">1600,<sup>34 грн.</sup></p>
 	                  </div>
+                        <div class="compare-block">
+                            <a class="dashedtext compare-button js-compare-button" data-common-text="Добавить к сравнению" data-active-text="Сравнить">
+                            <span class="compare-icon compare-icon_grey compare-icon_small">
+                                <span class="compare-icon__item compare-icon__item_big"></span>
+                                <span class="compare-icon__item compare-icon__item_small"></span>
+                            </span>
+                                <span class="link js-compare-button-text">Добавить к сравнению</span>
+                            </a>
+                        </div>
 	                </div>
 	              </div>
 	              <div class="prod" itemscope itemtype="http://schema.org/Thing" >
@@ -846,6 +816,15 @@
 	                    <a href="#" data-reveal-id="basket" id="btnbasket" class="btn gradient"><span class="icon buy"></span></a>
 	                    <p class="price price_right">1600,<sup>34 грн.</sup></p>
 	                  </div>
+                        <div class="compare-block">
+                            <a class="dashedtext compare-button js-compare-button" data-common-text="Добавить к сравнению" data-active-text="Сравнить">
+                            <span class="compare-icon compare-icon_grey compare-icon_small">
+                                <span class="compare-icon__item compare-icon__item_big"></span>
+                                <span class="compare-icon__item compare-icon__item_small"></span>
+                            </span>
+                                <span class="link js-compare-button-text">Добавить к сравнению</span>
+                            </a>
+                        </div>
 	                </div>
 	              </div>
 	              <div class="prod" itemscope itemtype="http://schema.org/Thing" >
@@ -861,6 +840,15 @@
 	                    <a href="#" data-reveal-id="basket" id="btnbasket" class="btn gradient"><span class="icon buy"></span></a>
 	                    <p class="price price_right">1600,<sup>34 грн.</sup></p>
 	                  </div>
+                        <div class="compare-block">
+                            <a class="dashedtext compare-button js-compare-button" data-common-text="Добавить к сравнению" data-active-text="Сравнить">
+                            <span class="compare-icon compare-icon_grey compare-icon_small">
+                                <span class="compare-icon__item compare-icon__item_big"></span>
+                                <span class="compare-icon__item compare-icon__item_small"></span>
+                            </span>
+                                <span class="link js-compare-button-text">Добавить к сравнению</span>
+                            </a>
+                        </div>
 	                </div>
 	              </div>
 	              <div class="prod" itemscope itemtype="http://schema.org/Thing" >
@@ -876,6 +864,15 @@
 	                    <a href="#" data-reveal-id="basket" id="btnbasket" class="btn gradient"><span class="icon buy"></span></a>
 	                    <p class="price price_right">1600,<sup>34 грн.</sup></p>
 	                  </div>
+                        <div class="compare-block">
+                            <a class="dashedtext compare-button js-compare-button" data-common-text="Добавить к сравнению" data-active-text="Сравнить">
+                            <span class="compare-icon compare-icon_grey compare-icon_small">
+                                <span class="compare-icon__item compare-icon__item_big"></span>
+                                <span class="compare-icon__item compare-icon__item_small"></span>
+                            </span>
+                                <span class="link js-compare-button-text">Добавить к сравнению</span>
+                            </a>
+                        </div>
 	                </div>
 	              </div>
 	              <div class="prod" itemscope itemtype="http://schema.org/Thing" >
@@ -891,6 +888,15 @@
 	                    <a href="#" data-reveal-id="basket" id="btnbasket" class="btn gradient"><span class="icon buy"></span></a>
 	                    <p class="price price_right">1600,<sup>34 грн.</sup></p>
 	                  </div>
+                        <div class="compare-block">
+                            <a class="dashedtext compare-button js-compare-button" data-common-text="Добавить к сравнению" data-active-text="Сравнить">
+                            <span class="compare-icon compare-icon_grey compare-icon_small">
+                                <span class="compare-icon__item compare-icon__item_big"></span>
+                                <span class="compare-icon__item compare-icon__item_small"></span>
+                            </span>
+                                <span class="link js-compare-button-text">Добавить к сравнению</span>
+                            </a>
+                        </div>
 	                </div>
 	              </div>
 	              <div class="prod" itemscope itemtype="http://schema.org/Thing" >
@@ -906,6 +912,15 @@
 	                    <a href="#" data-reveal-id="basket" id="btnbasket" class="btn gradient"><span class="icon buy"></span></a>
 	                    <p class="price price_right">1600,<sup>34 грн.</sup></p>
 	                  </div>
+                        <div class="compare-block">
+                            <a class="dashedtext compare-button js-compare-button" data-common-text="Добавить к сравнению" data-active-text="Сравнить">
+                            <span class="compare-icon compare-icon_grey compare-icon_small">
+                                <span class="compare-icon__item compare-icon__item_big"></span>
+                                <span class="compare-icon__item compare-icon__item_small"></span>
+                            </span>
+                                <span class="link js-compare-button-text">Добавить к сравнению</span>
+                            </a>
+                        </div>
 	                </div>
 	              </div>
 	              <div class="prod" itemscope itemtype="http://schema.org/Thing" >
@@ -921,6 +936,15 @@
 	                    <a href="#" data-reveal-id="basket" id="btnbasket" class="btn gradient"><span class="icon buy"></span></a>
 	                    <p class="price price_right">1600,<sup>34 грн.</sup></p>
 	                  </div>
+                        <div class="compare-block">
+                            <a class="dashedtext compare-button js-compare-button" data-common-text="Добавить к сравнению" data-active-text="Сравнить">
+                            <span class="compare-icon compare-icon_grey compare-icon_small">
+                                <span class="compare-icon__item compare-icon__item_big"></span>
+                                <span class="compare-icon__item compare-icon__item_small"></span>
+                            </span>
+                                <span class="link js-compare-button-text">Добавить к сравнению</span>
+                            </a>
+                        </div>
 	                </div>
 	              </div>
 	            </div>
@@ -1557,7 +1581,6 @@
 	    </div>
 
 	</footer>
-
 </div>
 
   <script src="js/lib/jquery.min.js"></script>

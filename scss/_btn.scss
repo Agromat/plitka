@@ -127,7 +127,17 @@
 				content: none;
 			}
 		}
+      &.grey{
+        -webkit-box-shadow: inset 0px -3px 0px 0px #C6C9CC;
+        -moz-box-shadow: inset 0px -3px 0px 0px #C6C9CC;
+        box-shadow: inset 0px -3px 0px 0px #C6C9CC;
+        background: #E0E0E0;
+        &::before{
+          background: #C6C9CC;
+        }
+      }
 	}
+  
 	&:hover,
 	&:focus{
 		color: $lgray;
@@ -266,3 +276,4 @@
 	text-decoration: underline;
 	display: block;
 }
+

@@ -796,7 +796,6 @@ ul.pagination{
 
 .other-products{
 	border-top: 1px solid $border;
-	margin-top: 50px;
 	padding-top: 25px;
 	position: relative;
 	z-index: 1;
@@ -1249,6 +1248,13 @@ ul.pagination{
 				border: 1px solid $border;
 				background:$white;
 				box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+              .compare-block{
+                .link{
+                  font-size: 11px;
+                  display: inline-block!important;
+                  margin-bottom: 0;
+                }
+              }
 			}
 			.img{
 				position: relative;
@@ -1994,7 +2000,7 @@ footer{
 }
 
 .reveal-modal, .enlarged-photo{
-	visibility: visible
+	visibility: visible;
 }
 
 .modal {
@@ -2012,10 +2018,23 @@ footer{
 		font-size: 14px;
 		margin: 0 0 20px;
 		line-height: 1.2;
+      &.mb-lg {
+        margin-bottom: 70px;
+      }
 	}
 	
 }
-
+.modal-btns {
+  display: flex;
+  .btn{
+    min-width: calc(50% - 9px);
+    font-size: 14px!important;
+    min-height: 44px;
+    &:not(:last-child){
+      margin-right: 18px;
+    }
+  }
+}
 .modal_w680 {
 	max-width: 680px;
 }
@@ -2027,6 +2046,27 @@ footer{
 }
 .modal_w330 {
 	max-width: 330px;
+}
+.modal_w280 {
+  max-width: 286px;
+  border-radius: 8px;
+  border: 3px solid #bdd200;
+  @include r(640) {
+    top: 188px;
+  }
+  .row {
+    padding: 0;
+  }
+  .close-reveal-modal{
+    @include r(767) {
+      top: -35px!important;
+      right: 0!important;
+      content: url(../img/close-btn.png);
+    }
+  }
+  .modal__body{
+    padding: 91px 12px 19px;
+	}
 }
 .modal_w300 {
   max-width: 300px;
@@ -2114,6 +2154,7 @@ footer{
 			}
 		}
 	}
+
 	
 }
 .field {
@@ -2243,7 +2284,6 @@ footer{
 		content: url("../img/close-btn-gray.png");
 	}
 }
-
 .basket {
 	max-width: 910px;
 	@include r($tablet) {
@@ -3309,8 +3349,8 @@ footer{
 .product-box {
 	position: relative;
 	margin-top: 20px;
-	background: #eef6f9;
-  overflow-x: hidden;
+
+	background: #eef6f9; 
 	@include r($mob) {
 		margin-top: 0;
 	}
@@ -3334,13 +3374,6 @@ footer{
 
 		}
 	}
-  &__slider-for{
-    z-index: 101;
-    overflow: visible;
-    .slick-list{
-      overflow: visible;
-    }
-  }
 	&__slide {
 		img {
 			width: 100%;
@@ -3544,6 +3577,7 @@ footer{
 	display: inline-block;
 	vertical-align: bottom;
 	margin: 0 20px 35px 0;
+	margin-bottom: 20px;
 	position: relative;
 	@include r($mob) {
 		width: calc(50% - 10px);
@@ -3556,7 +3590,9 @@ footer{
 		overflow: hidden;
 		max-width: 130px;
 		//margin-bottom: 10px;
-		height: 120px;
+		//height: 120px;
+		//margin-bottom: 10px;
+		height: 152px;
 	}
 	&__title {
 		display: inline-block;
@@ -3567,7 +3603,8 @@ footer{
 		-webkit-transition: color .2s linear;
 		-moz-transition: color .2s linear;
 		transition: color .2s linear;
-		max-height: 3.4em;
+		//max-height: 3.4em;
+		max-height: 4.4em;
 		overflow:hidden;
 		&:hover {
 			color: #000;
@@ -3580,6 +3617,7 @@ footer{
 	&__price {
 		padding-top: 10px;
 		border-top: 1px solid $border;
+		margin-bottom: 10px;
 	}
 
 	.btn{
@@ -3588,6 +3626,7 @@ footer{
 			height: 27px;
 			line-height: normal;
 			padding: 0;
+			margin-right: 8px;
 			.icon{
 				border: 0;
 				//float: left;
@@ -3621,6 +3660,14 @@ footer{
 		font-size: 12px;
 		color: #868686; 
 	}
+  .compare-block {
+    .link {
+      font-size: 10px;
+    }
+    .compare-icon {
+      margin-right: 3px;
+    }
+  }
 }
 
 .collect {
@@ -3739,7 +3786,6 @@ footer{
     display: block;
     padding: 20px 20px 23px 20px;
   }
-
   .column {
     background: #eef6f9;
     .text{
@@ -3827,4 +3873,5 @@ footer{
       }
     }
   }
+  
 }

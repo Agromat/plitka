@@ -594,6 +594,10 @@
 								float: none !important;
 							}
 						}
+                      @include r($mob-sm) {
+                        display: flex;
+                        flex-wrap: wrap;
+                      }
 							.price{
 								font-weight: 700;
 								font-size: 21px;
@@ -631,9 +635,13 @@
 					.compare-block{
 						padding: 12px 0;
 						@include r($mob) {
-							display: none;
+                          padding-top: 0;
 						}
+                        @include r($mob-sm) {
+                          order: 2;
+                        }
 					}
+
 					.favorites,
 					.compare-block{
 						.icon::before{
@@ -643,6 +651,9 @@
 							font-size: 13px;
 							color: $ddgray;
 							font-weight: 400;
+                          @include r($mob-sm) {
+                            font-size: 12px;
+                          }
 						}
 						a:hover{
 							color:$blue;
@@ -819,6 +830,7 @@
 							@include r($mob) {
 								display: none;
 							}
+
 						}
 						.margin-left{
 							width: 498px;
@@ -942,6 +954,41 @@
 							display: block;
 							margin: 0;
 						}
+                      .info-block{
+                        &_list{
+                          .compare-block{
+                            &_list{
+                              display: none;
+                              @include r($mob){
+                                display: block;
+                                padding-bottom: 12px;
+                                float: none;
+                                width: auto;
+
+                              }
+                              @include r($mob-sm){
+                                order: 2;
+                              }
+                            }
+                            &_list-lg{
+                              display: block;
+                              @include r($mob){
+                                display: none;
+                              }
+                            }
+                          }
+                          .comment{
+                            @include r($mob){
+                              order: 0;
+                            }
+                          }
+                          .price-block{
+                            @include r($mob-sm){
+                              float: none!important;
+                            }
+                          }
+                        }
+                      }
 					}
 				}
 			}
