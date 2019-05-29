@@ -3374,6 +3374,13 @@ footer{
 
 		}
 	}
+	&__slider-for {
+		z-index: 101;
+		overflow: visible;
+		.slick-list {
+			overflow: visible;
+		}
+	}
 	&__slide {
 		img {
 			width: 100%;

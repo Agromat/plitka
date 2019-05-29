@@ -8821,6 +8821,13 @@ footer .row.link-footer .column:last-child {
     margin: 0 4px;
   }
 }
+.product-box__slider-for {
+  z-index: 101;
+  overflow: visible;
+}
+.product-box__slider-for .slick-list {
+  overflow: visible;
+}
 .product-box__slide img {
   width: 100%;
   max-width: 100%;
@@ -12387,7 +12394,7 @@ footer .row.link-footer .column:last-child {
 
 /* Ion.RangeSlider
 // css version 2.0.3
-// © 2013-2014 Denis Ineshin | IonDen.com
+// ┬й 2013-2014 Denis Ineshin | IonDen.com
 // ===================================================================================================================*/
 /* =====================================================================================================================
 // RangeSlider */
@@ -12563,7 +12570,7 @@ footer .row.link-footer .column:last-child {
 
 /* Ion.RangeSlider, Flat UI Skin
 // css version 2.0.3
-// © Denis Ineshin, 2014    https://github.com/IonDen
+// ┬й Denis Ineshin, 2014    https://github.com/IonDen
 // ===================================================================================================================*/
 /* =====================================================================================================================
 // Skin details */
@@ -14581,6 +14588,11 @@ footer ul.contact li .work-schedule__item:not(:last-child), .footer_mobile .work
 
 .multiple-items .slick-slide .desckription .link.compare-button.is-active:hover span {
   color: #333;
+}
+
+.compare-block .msg {
+  color: #8b2020;
+  font-size: small;
 }
 
 .compare-button .compare-icon {

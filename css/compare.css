@@ -46,6 +46,11 @@
   color: #333;
 }
 
+.compare-block .msg {
+  color: #8b2020;
+  font-size: small;
+}
+
 .compare-button .compare-icon {
   margin-right: 9px;
 }
