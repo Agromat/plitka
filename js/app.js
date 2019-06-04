@@ -1166,22 +1166,32 @@ testTooltip();
 $(window).resize(function () {
     testTooltip();
 });
-tooltip.on('mouseover', function () {
+tooltip.on('mouseover, click', function (e) {
     const wrap = $(this).closest(tooltip);
-    if (!wrap.hasClass('is-active')) {
-        wrap.addClass('is-active');
-        console.log('show');
+
+    if (!e.target.classList.contains('js-preview-tooltip-close') && e.type === "click" && $(window).width() < 767 && !wrap.hasClass('is-active')) {
+      wrap.addClass('is-active');
     }
+
+    if (e.type === "mouseover" && $(window).width() >= 767 && !wrap.hasClass('is-active')) {
+      wrap.addClass('is-active');
+    }
+
+    // if (!wrap.hasClass('is-active')) {
+    //   wrap.addClass('is-active');
+    //   console.log('show');
+    // }
 });
+
 tooltipClose.on('click', function () {
     const wrap = $(this).closest(tooltip);
     wrap.removeClass('is-active');
 });
+
 tooltip.on('mouseout', function () {
     const wrap = $(this).closest(tooltip);
-    if (wrap.hasClass('is-active')) {
+    if (wrap.hasClass('is-active') && $(window).width() >= 767) {
         wrap.removeClass('is-active');
-        console.log('hide');
     }
 });
 // $(document).on('click', function (e) {
