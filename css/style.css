@@ -9271,6 +9271,9 @@ footer .row.link-footer .column:last-child {
   display: block;
   padding: 20px 20px 23px 20px;
 }
+.blog-article .blog-article-slider {
+  margin-top: 45px;
+}
 .blog-article .column {
   background: #eef6f9;
 }
@@ -12394,7 +12397,7 @@ footer .row.link-footer .column:last-child {
 
 /* Ion.RangeSlider
 // css version 2.0.3
-// © 2013-2014 Denis Ineshin | IonDen.com
+// ┬й 2013-2014 Denis Ineshin | IonDen.com
 // ===================================================================================================================*/
 /* =====================================================================================================================
 // RangeSlider */
@@ -12570,7 +12573,7 @@ footer .row.link-footer .column:last-child {
 
 /* Ion.RangeSlider, Flat UI Skin
 // css version 2.0.3
-// © Denis Ineshin, 2014    https://github.com/IonDen
+// ┬й Denis Ineshin, 2014    https://github.com/IonDen
 // ===================================================================================================================*/
 /* =====================================================================================================================
 // Skin details */

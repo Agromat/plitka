@@ -561,6 +561,30 @@
         });
     }
 
+    if ($('.js-blog-article-slider').exists()) {
+      $('.js-blog-article-slider').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        draggable: true,
+        vertical: true
+      });
+
+      let maxHeight = -1;
+      $('.js-blog-article-slider .slick-slide').each(function() {
+        if ($(this).height() > maxHeight) {
+          maxHeight = $(this).height();
+        }
+      });
+      $('.js-blog-article-slider .slick-slide').each(function() {
+        if ($(this).height() < maxHeight) {
+          //$(this).find('.column').css('padding', Math.ceil((maxHeight-$(this).height())/2) + 'px 0');
+          $(this).css('margin', Math.ceil((maxHeight-$(this).height())/2) + 'px 0');
+        }
+      });
+    }
+
+
     // destroy slick for mobile 
     if( $(window).width() < 768 ){
       $('.js-multiple-items-1').slick('unslick');
