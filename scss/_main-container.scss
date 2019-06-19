@@ -3795,6 +3795,28 @@ footer{
   }
   .blog-article-slider { 
   	margin-top: 45px;
+  	.slick-slide {
+  		.img {
+  			div {
+  				height: 90px;
+  				position: relative;
+  			}
+  		}
+  		img {
+  			max-height: 100%;
+  			max-width: 100%;
+  			position: absolute;
+  			top: 50%;
+  			left: 50%;
+  			transform: translate(-50%,-50%);
+  		}
+  		.subtitle {
+  			min-height: 38px;
+  		}
+  		.content {
+  			min-height: 76px;
+  		}
+  	}
   }
   .column {
     background: #eef6f9;

@@ -9274,6 +9274,24 @@ footer .row.link-footer .column:last-child {
 .blog-article .blog-article-slider {
   margin-top: 45px;
 }
+.blog-article .blog-article-slider .slick-slide .img div {
+  height: 90px;
+  position: relative;
+}
+.blog-article .blog-article-slider .slick-slide img {
+  max-height: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.blog-article .blog-article-slider .slick-slide .subtitle {
+  min-height: 38px;
+}
+.blog-article .blog-article-slider .slick-slide .content {
+  min-height: 76px;
+}
 .blog-article .column {
   background: #eef6f9;
 }
