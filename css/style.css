@@ -9284,8 +9284,10 @@ footer .row.link-footer .column:last-child {
   padding-bottom: 0;
 }
 .blog-article .blog-article-slider .slick-arrow {
-  width: 130px;
+  width: 100%;
+  width: calc(100% - 2px);
   border-radius: 4px;
+  right: 1px;
 }
 .blog-article .blog-article-slider .slick-arrow:before {
   transform: rotate(180deg);
@@ -9302,7 +9304,6 @@ footer .row.link-footer .column:last-child {
 .blog-article .blog-article-slider .slick-next {
   bottom: -35px;
   top: unset;
-  right: 35px;
 }
 .blog-article .blog-article-slider .slick-slide .img div {
   height: 90px;

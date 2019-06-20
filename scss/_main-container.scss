@@ -3801,8 +3801,10 @@ footer{
 		padding-bottom: 0;
 	}
 	.slick-arrow {
-		width: 130px;
+		width: 100%;
+		width: calc(100% - 2px);
 		border-radius: 4px;
+		right: 1px
 	}
 	.slick-arrow:before {
 		transform: rotate(180deg);
@@ -3819,7 +3821,6 @@ footer{
 	.slick-next {
 		bottom: -35px;
 		top: unset;
-		right: 35px;
 	}  
   	.slick-slide {
   		.img {
