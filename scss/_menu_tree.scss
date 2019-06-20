@@ -5,6 +5,12 @@
 	}
 	> .row{
 		margin-top: rem-calc(30) !important;
+		&.blog-article {
+			.title {
+				color: #4a5b70;
+    			font-size: 21px;
+			}
+		}
 		.title{
 			font-size: rem-calc(15);
 			font-weight: 700;

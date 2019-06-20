@@ -3794,7 +3794,33 @@ footer{
     padding: 20px 20px 23px 20px;
   }
   .blog-article-slider { 
-  	margin-top: 45px;
+	margin-top: 45px;
+	margin-bottom: 60px;
+	.slick-list {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.slick-arrow {
+		width: 130px;
+		border-radius: 4px;
+	}
+	.slick-arrow:before {
+		transform: rotate(180deg);
+		margin-top: 1px;
+		background-image: url(../img/down-chevron.png);
+		background-position: center;
+		background-size: cover;
+		height: 100%;
+		width: 30px;
+	}
+	.slick-next::before {
+		transform: rotate(0deg);
+	}
+	.slick-next {
+		bottom: -35px;
+		top: unset;
+		right: 35px;
+	}  
   	.slick-slide {
   		.img {
   			div {

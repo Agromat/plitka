@@ -971,6 +971,10 @@ nav {
 .sidebar > .row {
   margin-top: 1.875rem !important;
 }
+.sidebar > .row.blog-article .title {
+  color: #4a5b70;
+  font-size: 21px;
+}
 .sidebar > .row .title {
   font-size: 0.9375rem;
   font-weight: 700;
@@ -9273,6 +9277,32 @@ footer .row.link-footer .column:last-child {
 }
 .blog-article .blog-article-slider {
   margin-top: 45px;
+  margin-bottom: 60px;
+}
+.blog-article .blog-article-slider .slick-list {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.blog-article .blog-article-slider .slick-arrow {
+  width: 130px;
+  border-radius: 4px;
+}
+.blog-article .blog-article-slider .slick-arrow:before {
+  transform: rotate(180deg);
+  margin-top: 1px;
+  background-image: url(../img/down-chevron.png);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 30px;
+}
+.blog-article .blog-article-slider .slick-next::before {
+  transform: rotate(0deg);
+}
+.blog-article .blog-article-slider .slick-next {
+  bottom: -35px;
+  top: unset;
+  right: 35px;
 }
 .blog-article .blog-article-slider .slick-slide .img div {
   height: 90px;
@@ -12415,7 +12445,7 @@ footer .row.link-footer .column:last-child {
 
 /* Ion.RangeSlider
 // css version 2.0.3
-// ┬й 2013-2014 Denis Ineshin | IonDen.com
+// © 2013-2014 Denis Ineshin | IonDen.com
 // ===================================================================================================================*/
 /* =====================================================================================================================
 // RangeSlider */
@@ -12591,7 +12621,7 @@ footer .row.link-footer .column:last-child {
 
 /* Ion.RangeSlider, Flat UI Skin
 // css version 2.0.3
-// ┬й Denis Ineshin, 2014    https://github.com/IonDen
+// © Denis Ineshin, 2014    https://github.com/IonDen
 // ===================================================================================================================*/
 /* =====================================================================================================================
 // Skin details */
