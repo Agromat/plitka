@@ -5600,6 +5600,7 @@ footer .row.link-footer .column:last-child {
   margin-bottom: 30px !important;
   width: 190px;
   border: 1px solid #ddd;
+  background-color: red;
 }
 .product-side:hover .title {
   color: #0053a0 !important;
