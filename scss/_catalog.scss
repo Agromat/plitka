@@ -50,12 +50,6 @@
 	width:190px;
   border:1px solid $border;
   
-  background-color: red;
-  a.text .title {
-    color: green;
-  }
-  
-
 	&:hover {
 		.title {
 			color: $blue !important;
