@@ -9288,7 +9288,6 @@ footer .row.link-footer .column:last-child {
   width: calc(100% - 2px);
   border-radius: 4px;
   right: 1px;
-  background-color: red;
 }
 .blog-article .blog-article-slider .slick-arrow:before {
   transform: rotate(180deg);
