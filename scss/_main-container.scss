@@ -3804,7 +3804,8 @@ footer{
 		width: 100%;
 		width: calc(100% - 2px);
 		border-radius: 4px;
-		right: 1px
+		right: 1px;
+		background-color: red;
 	}
 	.slick-arrow:before {
 		transform: rotate(180deg);
