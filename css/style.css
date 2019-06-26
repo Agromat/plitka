@@ -4324,6 +4324,17 @@ ul.pagination li a span {
   font-weight: 400;
   padding: 5px 0px;
 }
+.img-slider__item {
+  position: relative;
+}
+.img-slider__item .img-slider__info {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translate(-50%);
+  color: #fa5e00;
+  font-size: 19px;
+}
 .img-slider img {
   margin: 0 auto;
   max-width: 100%;

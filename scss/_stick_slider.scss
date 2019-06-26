@@ -324,6 +324,17 @@
 			padding: 5px 0px;
 		}
 	}
+	&__item {
+		position: relative;
+		.img-slider__info {
+			position: absolute;
+			bottom: 15px;
+			left: 50%;
+			transform: translate(-50%);
+			color: #fa5e00;
+			font-size: 19px;
+		}
+	}
 	img{
 		margin: 0 auto;
 		// width: 100%;
