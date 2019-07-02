@@ -971,6 +971,10 @@ nav {
 .sidebar > .row {
   margin-top: 1.875rem !important;
 }
+.sidebar > .row.blog-article .title {
+  color: #4a5b70;
+  font-size: 21px;
+}
 .sidebar > .row .title {
   font-size: 0.9375rem;
   font-weight: 700;
@@ -9281,6 +9285,54 @@ footer .row.link-footer .column:last-child {
 .blog-article a {
   display: block;
   padding: 20px 20px 23px 20px;
+}
+.blog-article .blog-article-slider {
+  margin-top: 45px;
+  margin-bottom: 60px;
+}
+.blog-article .blog-article-slider .slick-list {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.blog-article .blog-article-slider .slick-arrow {
+  width: 100%;
+  width: calc(100% - 2px);
+  border-radius: 4px;
+  right: 1px;
+}
+.blog-article .blog-article-slider .slick-arrow:before {
+  transform: rotate(180deg);
+  margin-top: 1px;
+  background-image: url(../img/down-chevron.png);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 30px;
+}
+.blog-article .blog-article-slider .slick-next::before {
+  transform: rotate(0deg);
+}
+.blog-article .blog-article-slider .slick-next {
+  bottom: -35px;
+  top: unset;
+}
+.blog-article .blog-article-slider .slick-slide .img div {
+  height: 90px;
+  position: relative;
+}
+.blog-article .blog-article-slider .slick-slide img {
+  max-height: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.blog-article .blog-article-slider .slick-slide .subtitle {
+  min-height: 38px;
+}
+.blog-article .blog-article-slider .slick-slide .content {
+  min-height: 76px;
 }
 .blog-article .column {
   background: #eef6f9;

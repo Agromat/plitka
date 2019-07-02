@@ -3793,6 +3793,59 @@ footer{
     display: block;
     padding: 20px 20px 23px 20px;
   }
+  .blog-article-slider { 
+	margin-top: 45px;
+	margin-bottom: 60px;
+	.slick-list {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.slick-arrow {
+		width: 100%;
+		width: calc(100% - 2px);
+		border-radius: 4px;
+		right: 1px;
+		// background-color: red;
+	}
+	.slick-arrow:before {
+		transform: rotate(180deg);
+		margin-top: 1px;
+		background-image: url(../img/down-chevron.png);
+		background-position: center;
+		background-size: cover;
+		height: 100%;
+		width: 30px;
+	}
+	.slick-next::before {
+		transform: rotate(0deg);
+	}
+	.slick-next {
+		bottom: -35px;
+		top: unset;
+	}  
+  	.slick-slide {
+  		.img {
+  			div {
+  				height: 90px;
+  				position: relative;
+  			}
+  		}
+  		img {
+  			max-height: 100%;
+  			max-width: 100%;
+  			position: absolute;
+  			top: 50%;
+  			left: 50%;
+  			transform: translate(-50%,-50%);
+  		}
+  		.subtitle {
+  			min-height: 38px;
+  		}
+  		.content {
+  			min-height: 76px;
+  		}
+  	}
+  }
   .column {
     background: #eef6f9;
     .text{
