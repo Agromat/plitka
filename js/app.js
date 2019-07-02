@@ -562,9 +562,10 @@
     }
 
     if ($('.js-blog-article-slider').exists()) {
+      let countSlides = $('.blog-article-slider .column.medium-12').length
       $('.js-blog-article-slider').slick({
         infinite: true,
-        slidesToShow: 4,
+        slidesToShow: (countSlides <= 4)? countSlides : 4,
         slidesToScroll: 1,
         draggable: true,
         vertical: true
