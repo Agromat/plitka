@@ -58,6 +58,12 @@
 			margin-top: 30px;
 		}
 	}
+	p {
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
 	p:last-child {
 		@include r($tablet) {
 			margin-bottom: 0;
