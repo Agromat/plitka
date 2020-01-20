@@ -86,55 +86,55 @@ body{
 }
 
 
-.menuinfo{
-    background:$lgray;
-    font-size: 0;
-     @include r($mob) {
-        background: $white;
-    }
-    > .row {
-        position: relative;
-        padding: rem-calc(24) 0 rem-calc(15);
-        @include r($tablet) {
-            padding: rem-calc(24) rem-calc(25) rem-calc(50);
-        }
-        @include r($mob) {
-            padding: rem-calc(10);
-        }
-    }
-    &__bl{
-        display: inline-block;
-        vertical-align: top;
-        padding: 0;
-        &.logo{
-            width: 25%;
-        }
-        &.info{
-            width: 42%;
-            @include r($tablet) {
-                max-width: 350px;
-                width: 100%;
-                @include hcenter();
-            }
-            @include r($mob) {
-                position: relative;
-                display: block;
-                left: 0;
-                width: 100%;
-                margin: 0;
-                max-width: none;
-                transform: translateX(0);
-            }
-        }
-        &.common-bl{
-            width: 33%;
-            @include r($tablet) {
-                width: auto;
-                padding-left: 30px;
-            }
-        }
-    }
-}
+// .menuinfo{
+//     background:$lgray;
+//     font-size: 0;
+//      @include r($mob) {
+//         background: $white;
+//     }
+//     > .row {
+//         position: relative;
+//         padding: rem-calc(24) 0 rem-calc(15);
+//         @include r($tablet) {
+//             padding: rem-calc(24) rem-calc(25) rem-calc(50);
+//         }
+//         @include r($mob) {
+//             padding: rem-calc(10);
+//         }
+//     }
+//     &__bl{
+//         display: inline-block;
+//         vertical-align: top;
+//         padding: 0;
+//         &.logo{
+//             width: 25%;
+//         }
+//         &.info{
+//             width: 42%;
+//             @include r($tablet) {
+//                 max-width: 350px;
+//                 width: 100%;
+//                 @include hcenter();
+//             }
+//             @include r($mob) {
+//                 position: relative;
+//                 display: block;
+//                 left: 0;
+//                 width: 100%;
+//                 margin: 0;
+//                 max-width: none;
+//                 transform: translateX(0);
+//             }
+//         }
+//         &.common-bl{
+//             width: 33%;
+//             @include r($tablet) {
+//                 width: auto;
+//                 padding-left: 30px;
+//             }
+//         }
+//     }
+// }
 .menuinfo_order-nav {
     @include r($mob) {
         display: none;
