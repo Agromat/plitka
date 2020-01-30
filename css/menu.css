@@ -8,7 +8,10 @@
 }
 
 body {
-  min-width: 1220px;
+  min-width: 0;
+}
+body.is-overflow {
+  overflow: hidden;
 }
 
 html,
@@ -1416,6 +1419,30 @@ ul.inline li {
   list-style: none;
   float: left;
   position: relative;
+}
+
+.common-bl {
+  zoom: 1;
+  float: right;
+}
+.common-bl:before, .common-bl:after {
+  content: "";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.common-bl:after {
+  clear: both;
+}
+@media only screen and (max-width: 1219px) {
+  .common-bl {
+    padding: 0 10px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .common-bl {
+    padding: 0;
+  }
 }
 
 .mob-menu {
