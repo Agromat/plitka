@@ -8068,6 +8068,8 @@ footer .row.link-footer .column:last-child {
 .product-box {
   position: relative;
   margin-top: 20px;
+  max-width: 100%;
+  overflow: hidden;
   background: #eef6f9;
 }
 @media only screen and (max-width: 767px) {
@@ -8098,8 +8100,8 @@ footer .row.link-footer .column:last-child {
   }
 }
 .product-box__slider-for {
-  z-index: 101;
   overflow: visible;
+  z-index: 99;
 }
 .product-box__slider-for .slick-list {
   overflow: visible;
