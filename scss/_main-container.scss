@@ -3350,6 +3350,9 @@ footer{
 	position: relative;
 	margin-top: 20px;
 
+	max-width: 100%;
+	overflow: hidden;
+
 	background: #eef6f9; 
 	@include r($mob) {
 		margin-top: 0;
@@ -3375,8 +3378,9 @@ footer{
 		}
 	}
 	&__slider-for {
-		z-index: 101;
+		// z-index: 101;
 		overflow: visible;
+		z-index: 99;
 		.slick-list {
 			overflow: visible;
 		}
