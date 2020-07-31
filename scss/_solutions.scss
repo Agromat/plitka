@@ -254,6 +254,23 @@
     }
 }
 
+.slick-current {
+    .solution {
+        &__slide_small {
+            border: 2px solid #bdce00;
+        }
+    }
+}
+
+
+#solutions-preloader {
+    position: absolute;
+    z-index: 99999999;
+    display: none;
+    left: 50%;
+    top: 20%;
+}
+
 .items-preview {
     margin-top: 25px;
     @include r($mob) {
