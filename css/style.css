@@ -14006,6 +14006,7 @@ footer ul.contact li .work-schedule__item:not(:last-child), .footer_mobile .work
   }
 }
 .solution__slider {
+  position: relative;
   width: 100%;
 }
 .solution__slider .slick-list {
@@ -14029,6 +14030,14 @@ footer ul.contact li .work-schedule__item:not(:last-child), .footer_mobile .work
   .solution__slide_small {
     height: 77px;
   }
+}
+@media only screen and (max-width: 550px) {
+  .solution__slide_small {
+    height: 55px;
+  }
+}
+.solution__slide_small img {
+  height: 100%;
 }
 .solution__slide-image {
   background-size: cover;
@@ -14112,7 +14121,8 @@ footer ul.contact li .work-schedule__item:not(:last-child), .footer_mobile .work
   z-index: 99999999;
   display: none;
   left: 50%;
-  top: 20%;
+  top: calc(50% - 74px);
+  transform: translate(-50%, -50%);
 }
 
 .items-preview {
