@@ -160,6 +160,7 @@
         
     } 
     &__slider {
+        position: relative;
         width: 100%;
         .slick-list {
             padding-bottom: 30px;
@@ -182,6 +183,12 @@
             display: block;
             @include r($tablet) {
                 height: 77px;
+            }
+            @include r($mob-sm) {
+                height: 55px;
+            }
+            img {
+                height: 100%;
             }
         }
         &-image {
@@ -252,6 +259,24 @@
 			border: 1px solid black;			
 		}
     }
+}
+
+.slick-current {
+    .solution {
+        &__slide_small {
+            border: 2px solid #bdce00;
+        }
+    }
+}
+
+
+#solutions-preloader {
+    position: absolute;
+    z-index: 99999999;
+    display: none;
+    left: 50%;
+    top: calc(50% - 74px);
+    transform: translate(-50%,-50%);
 }
 
 .items-preview {
