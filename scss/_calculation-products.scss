@@ -1,0 +1,62 @@
+.calculation-products-table {
+	@include r($mob) {
+		overflow: auto
+	}
+	.preview-tooltip {
+		position: relative;
+		@include r($mob) {
+			position: static;
+		}
+	}
+	table {
+		@include r($mob) {
+			width: 700px;
+		}
+		@include r($mob-sm) {
+			width: 600px;
+		}
+	}
+	td, th {
+		border: 1px solid #888888;
+	}
+	td {
+		text-align: right;
+		&:first-child {
+			text-align: center;
+		}
+		&:nth-child(2) {
+			text-align: left;
+		}
+	}
+	tr {
+		&:last-child {
+			td {
+				&:last-child {
+					border: none;
+					text-align: right;
+				}
+			}
+		}
+	}
+}
+
+.calculation-products-form {
+	.form-group {
+		margin-bottom: 20px;
+		&.submit {
+			.btn {
+				float: none;
+			}
+		}
+		.phone_prefix {
+			position: absolute;
+			top: 7px;
+		}
+	}
+	.error {
+		color: #ff3100;
+	}
+	.imput {
+		position: relative;
+	}
+}

@@ -14289,3 +14289,60 @@ footer ul.contact li .work-schedule__item:not(:last-child), .footer_mobile .work
     margin-bottom: 4px;
   }
 }
+
+@media only screen and (max-width: 767px) {
+  .calculation-products-table {
+    overflow: auto;
+  }
+}
+.calculation-products-table .preview-tooltip {
+  position: relative;
+}
+@media only screen and (max-width: 767px) {
+  .calculation-products-table .preview-tooltip {
+    position: static;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .calculation-products-table table {
+    width: 700px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .calculation-products-table table {
+    width: 600px;
+  }
+}
+.calculation-products-table td, .calculation-products-table th {
+  border: 1px solid #888888;
+}
+.calculation-products-table td {
+  text-align: right;
+}
+.calculation-products-table td:first-child {
+  text-align: center;
+}
+.calculation-products-table td:nth-child(2) {
+  text-align: left;
+}
+.calculation-products-table tr:last-child td:last-child {
+  border: none;
+  text-align: right;
+}
+
+.calculation-products-form .form-group {
+  margin-bottom: 20px;
+}
+.calculation-products-form .form-group.submit .btn {
+  float: none;
+}
+.calculation-products-form .form-group .phone_prefix {
+  position: absolute;
+  top: 7px;
+}
+.calculation-products-form .error {
+  color: #ff3100;
+}
+.calculation-products-form .imput {
+  position: relative;
+}
