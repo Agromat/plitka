@@ -10,6 +10,15 @@
 			@include r($mob) {
 				position: static;
 			}
+			&.is-active {
+				.preview-tooltip__content {
+					@include r($mob) {
+						left: -15px;
+						right: -15px;
+						width: auto;
+					}
+				}
+			}
 		}
 		table {
 			@include r($mob) {

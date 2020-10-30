@@ -14310,6 +14310,13 @@ footer ul.contact li .work-schedule__item:not(:last-child), .footer_mobile .work
   }
 }
 @media only screen and (max-width: 767px) {
+  .calculation-products-table__body .preview-tooltip.is-active .preview-tooltip__content {
+    left: -15px;
+    right: -15px;
+    width: auto;
+  }
+}
+@media only screen and (max-width: 767px) {
   .calculation-products-table__body table {
     width: 700px;
   }
