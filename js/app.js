@@ -1304,6 +1304,7 @@ function initTooltip() {
         var wrap = $(this).closest(tooltip);
 
         if (!e.target.classList.contains('js-preview-tooltip-close') && e.type === "click" && $(window).width() < 767 && !wrap.hasClass('is-active')) {
+            tooltip.removeClass('is-active');
             wrap.addClass('is-active');
         }
     });
