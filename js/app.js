@@ -1306,6 +1306,7 @@ function initTooltip() {
         if (!e.target.classList.contains('js-preview-tooltip-close') && e.type === "click" && $(window).width() < 767 && !wrap.hasClass('is-active')) {
             tooltip.removeClass('is-active');
             wrap.addClass('is-active');
+            scrollTo(event, wrap);
         }
     });
     tooltipClose.on('click', function () {
@@ -1353,3 +1354,10 @@ testTooltip();
 $(window).resize(function () {
     testTooltip();
 });
+
+
+function scrollTo(event, element) {
+  if(element.hasClass("js-can-scroll")) {
+    $('body,html').animate({scrollTop: element.offset().top}, 1000);
+  }
+}
