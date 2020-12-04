@@ -1355,9 +1355,19 @@ $(window).resize(function () {
     testTooltip();
 });
 
-
 function scrollTo(event, element) {
   if(element.hasClass("js-can-scroll")) {
     $('body,html').animate({scrollTop: element.offset().top}, 1000);
   }
 }
+
+$('.seo-text-btn').on('click', function () {
+    var text = $(this).text();
+    if (text == "Смотреть больше") {
+        $(this).text("Смотреть меньше");
+        $('.seo-text-box').css({'overflow': 'auto', 'height': 'auto'});
+    } else {
+        $(this).text("Смотреть больше");
+        $('.seo-text-box').css({'overflow': 'hidden', 'height': '5px'});
+    }
+});

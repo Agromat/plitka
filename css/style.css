@@ -14361,3 +14361,22 @@ footer ul.contact li .work-schedule__item:not(:last-child), .footer_mobile .work
 .calculation-products-form .imput {
   position: relative;
 }
+
+.seo-text {
+  margin-bottom: 10px;
+}
+
+.seo-text-box {
+  height: 5px;
+  overflow: hidden;
+}
+
+.seo-text-box.row.about-block {
+  border-top: 0;
+  margin-top: 5px !important;
+  padding-top: 5px;
+}
+
+.seo-text-box.row.about-block a {
+  border: 0;
+}
