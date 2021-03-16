@@ -179,3 +179,17 @@
 		font-size: 12px;
 	}
 }
+
+.article {
+	a[name] {
+		display: inline-block;
+		position: absolute;
+		height: 1px;
+		width: 1px;
+		margin-top: -145px;
+
+		@include r($mob) {
+			margin-top: 0;
+		}
+	}
+}
