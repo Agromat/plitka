@@ -11474,6 +11474,11 @@ footer .row.link-footer .column:last-child {
   width: 1px;
   margin-top: -145px;
 }
+@media only screen and (max-width: 767px) {
+  .article a[name] {
+    margin-top: 0;
+  }
+}
 
 .range-slider .irs-line, .range-slider .irs-bar {
   height: 8px;

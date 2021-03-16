@@ -187,5 +187,9 @@
 		height: 1px;
 		width: 1px;
 		margin-top: -145px;
+
+		@include r($mob) {
+			margin-top: 0;
+		}
 	}
 }
