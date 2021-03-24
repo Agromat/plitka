@@ -819,12 +819,12 @@
 
 //for article-anchor
 const checkAnchorLink = (e) => {
-  const anchor = e.target().attr('href');
+  const anchor = $(e.target).attr('href');
   const name = anchor.substr(1);
   const $anchorTextBlock = $(`a[name$='${name}']`);
 
   if(anchor.indexOf('#') === 0) {
-    if($(".js-menu-main").hasClass("is-fixed")) {
+    if($('.js-menu-main').hasClass('is-fixed')) {
       if($anchorTextBlock.hasClass('fixed-anchor')) return;
       $anchorTextBlock.addClass('fixed-anchor');
     } else {
