@@ -11479,6 +11479,14 @@ footer .row.link-footer .column:last-child {
     margin-top: 0;
   }
 }
+.article a.fixed-anchor[name] {
+  margin-top: -73px;
+}
+@media only screen and (max-width: 767px) {
+  .article a.fixed-anchor[name] {
+    margin-top: 0;
+  }
+}
 
 .range-slider .irs-line, .range-slider .irs-bar {
   height: 8px;
