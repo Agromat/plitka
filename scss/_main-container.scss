@@ -1281,10 +1281,16 @@ ul.pagination{
 					line-height: 16px;
 					display: block;
 					@include r($mob) {
+						height: 50px;
 						font-size: 10px;
+						display: -webkit-box;
+						-webkit-line-clamp: 3;
+						-webkit-box-orient: vertical;
+						overflow-y: hidden;
+						padding-bottom: 2px;
 					}
 					span{
-						border-bottom: 1px solid $blue;
+						border-bottom: 1px solid $blue;	
 					}
 					&:hover{
 						color: $ddgray;
@@ -1886,7 +1892,7 @@ footer{
 			line-height: 17px;
 			margin-bottom: 10px;
 			&:last-child{
-				margin-bottomL:0;
+				margin-bottom:0;
 			}
 		}
 	}
@@ -3185,6 +3191,10 @@ footer{
 	-webkit-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
 	transition: opacity 0.2s;
+	@include r($mob) {
+		height: 98px;
+		object-fit: contain;
+	}
 }
 
 .radio-box {

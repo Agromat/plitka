@@ -4287,7 +4287,13 @@ ul.pagination li a span {
 @media only screen and (max-width: 767px) {
   .multiple-items-4 .slick-slide .desckription .title,
   .multiple-items .slick-slide .desckription .title {
+    height: 50px;
     font-size: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow-y: hidden;
+    padding-bottom: 2px;
   }
 }
 .multiple-items-4 .slick-slide .desckription .title span,
@@ -4860,7 +4866,7 @@ footer .row.link-footer .column:last-child {
   margin-bottom: 10px;
 }
 .row.about-block ul li:last-child {
-  margin-bottomL: 0;
+  margin-bottom: 0;
 }
 .row.about-block a {
   font-size: 14px;
@@ -7915,6 +7921,12 @@ footer .row.link-footer .column:last-child {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   transition: opacity 0.2s;
+}
+@media only screen and (max-width: 767px) {
+  .item-crop img {
+    height: 98px;
+    object-fit: contain;
+  }
 }
 
 .radio-box {
