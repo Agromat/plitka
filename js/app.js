@@ -823,11 +823,13 @@ const checkAnchorLink = (e) => {
   const name = anchor.substr(1);
   const $anchorTextBlock = $(`a[name='${name}']`);
 
-  if($('.js-menu-main').hasClass('is-fixed')) {
-    if($anchorTextBlock.hasClass('fixed-anchor')) return;
-    $anchorTextBlock.addClass('fixed-anchor');
-  } else {
-    $anchorTextBlock.removeClass('fixed-anchor');
+  if($anchorTextBlock) {
+    if($('.js-menu-main').hasClass('is-fixed')) {
+      if($anchorTextBlock.hasClass('fixed-anchor')) return;
+      $anchorTextBlock.addClass('fixed-anchor');
+    } else {
+      $anchorTextBlock.removeClass('fixed-anchor');
+    }
   }
 };
 
