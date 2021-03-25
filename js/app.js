@@ -821,19 +821,17 @@
 const checkAnchorLink = (e) => {
   const anchor = $(e.target).attr('href');
   const name = anchor.substr(1);
-  const $anchorTextBlock = $(`a[name$='${name}']`);
+  const $anchorTextBlock = $(`a[name='${name}']`);
 
-  if(anchor.indexOf('#') === 0) {
-    if($('.js-menu-main').hasClass('is-fixed')) {
-      if($anchorTextBlock.hasClass('fixed-anchor')) return;
-      $anchorTextBlock.addClass('fixed-anchor');
-    } else {
-      $anchorTextBlock.removeClass('fixed-anchor');
-    }
+  if($('.js-menu-main').hasClass('is-fixed')) {
+    if($anchorTextBlock.hasClass('fixed-anchor')) return;
+    $anchorTextBlock.addClass('fixed-anchor');
+  } else {
+    $anchorTextBlock.removeClass('fixed-anchor');
   }
 };
 
-$('a').on('click', checkAnchorLink);
+$('a[href^="#"]').on('click', checkAnchorLink);
 
 
 $('.product-box__slider .slider-for').slick({
