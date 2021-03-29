@@ -445,10 +445,12 @@
 						position: relative;
 						@include clearfix();
 						overflow: hidden;
-						position: relative;
 						padding: 20px 0 20px 0;
 						@include r($mob) {
-							max-width: none;
+							display: flex;
+							flex-wrap: wrap;
+							align-items: stretch;
+							max-width: 100%;
 							padding: 0;
 						}
 						&:before {
@@ -467,7 +469,7 @@
 						}
 					}
 					.title-block{
-						min-height: 55px;
+						min-height: 60px;
 						display: block;
 						width: 100%;
 						margin-bottom: 15px;
@@ -501,11 +503,17 @@
 						height: 200px;
 						display: block;
 						@include r($mob) {
-							float: left;
 							max-width: none;
-							width: 120px;
-							height: 100px;
+							width: 35%;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							min-height: 200px;
 							margin-right: 15px;
+						}
+						@include r($mob-413) {
+							width: 60%;
+							margin: 0 auto;
 						}
 						// @include rland($mob, $mob-sm) {
 						// 	max-width: 220px;
@@ -570,16 +578,26 @@
 							display: block;
 							margin: 0 auto;
 							@include r($mob) {
-								max-height: 90px;
+								// max-height: 90px;
+								height: 100%;
+								object-fit: contain;
+							}
+							@include r($mob-413) {
+								object-fit: cover;
 							}
 						}
 					}
 					.info-block {
 						@include r($mob) {
+							width: 60%;
 							display: flex;
-							width: calc(100% - 140px);
 							flex-direction: column;
-							flex-wrap: wrap;
+							justify-content: space-between;
+							align-content: stretch;
+							min-height: 100%
+						}
+						@include r($mob-413) {
+							width: 100%;
 						}
 					}
 					.price-block{
@@ -587,43 +605,46 @@
 						padding: 15px 0;
 						border-bottom: 1px solid $border;
 						@include r($mob) {
-							order: 2;
 							padding: 0;
 							border-bottom: none;
+							order: 2;
+							flex-grow: 1;
+							display: flex;
+    					align-items: flex-end;
 							.right {
 								float: none !important;
 							}
 						}
-                      @include r($mob-sm) {
-                        display: flex;
-                        flex-wrap: wrap;
-                      }
-							.price{
-								font-weight: 700;
-								font-size: 21px;
-								color: $ddgray;
-								margin: 0;
-								@include r($mob) {
-									margin-bottom: 5px;
-									margin-right: 20px;
-								}
-								sup{
-									font-size: 13px;
-									top: -6px;
-								}
+						@include r($mob-sm) {
+							display: flex;
+							flex-wrap: wrap;
+						}
+						.price{
+							font-weight: 700;
+							font-size: 21px;
+							color: $ddgray;
+							margin: 0;
+							@include r($mob) {
+								margin-bottom: 5px;
+								margin-right: 20px;
 							}
-							.btn.gradient{
-								margin-top: 0;
-								width: 100px;
-								height: 35px;
-								line-height: 12px;
-								display: inline-block;
-								font-size: 14px;
-								font-weight: 700;
-								padding: 10px 0;
-								color: #fff;
-								text-align: center;
+							sup{
+								font-size: 13px;
+								top: -6px;
 							}
+						}
+						.btn.gradient{
+							margin-top: 0;
+							width: 100px;
+							height: 35px;
+							line-height: 12px;
+							display: inline-block;
+							font-size: 14px;
+							font-weight: 700;
+							padding: 10px 0;
+							color: #fff;
+							text-align: center;
+						}
 					}
 					.favorites{
 						display: none;
@@ -635,11 +656,9 @@
 					.compare-block{
 						padding: 12px 0;
 						@include r($mob) {
-                          padding-top: 0;
+              padding-top: 0;
+							order: 2;
 						}
-                        @include r($mob-sm) {
-                          order: 2;
-                        }
 					}
 
 					.favorites,
@@ -667,7 +686,14 @@
 						margin: 10px 0 20px;
 						@include r($mob) {
 							order: 1;
-							margin: 0 0 10px;
+							display: -webkit-box;
+							-webkit-line-clamp: 5;
+							-webkit-box-orient: vertical;
+							overflow-y: hidden;
+							margin-bottom: 20px;
+						}
+						@include r($mob-413) {
+							margin: 15px 0 20px;
 						}
 						.all,.readmore{
 							font-size: 13px;
@@ -695,6 +721,7 @@
 							opacity: 0;
 							display: block;
 							@include r($mob) {
+								order: 1;
 								display: block;
 								opacity: 1;
 								height: auto;
@@ -813,8 +840,15 @@
 							max-width: none;
 							padding: 19px 0 20px 5px;
 							@include r($mob) {
-								max-width: none;
+								display: flex;
+								flex-wrap: wrap;
+								align-items: stretch;
+								max-width: 100%;
 								padding: 70px 0 20px;
+							}
+
+							@include r($mob-413) {
+								flex-direction: column;
 							}
 							&:before, &:after {
 								top: 0;
@@ -853,11 +887,17 @@
 							float: left;
 							max-height: 200px;
 							@include r($mob) {
-								float: left;
 								max-width: none;
-								width: 120px;
-								height: 100px;
+								width: 35%;
+								display: flex;
+								justify-content: center;
+								align-items: center;
+								min-height: 200px;
 								margin-right: 15px;
+							}
+							@include r($mob-413) {
+								width: 60%;
+								margin: 0 auto;
 							}
 						}
 						.title-block{
@@ -868,9 +908,10 @@
 								position: absolute;
 								height: 36px;
 								overflow: hidden;
-								margin-left: -135px;
+								// margin-left: -135px;
 								margin-bottom: 0;
 								top: 20px;
+								left: 0;
 							}
 						}
 						.left{
@@ -878,7 +919,8 @@
 							&.price-block {
 								@include r($mob) {
 									width: auto;
-									display: inline-block;
+									// display: inline-block;
+									justify-self: flex-end;
 								}
 							}
 						}
@@ -954,41 +996,74 @@
 							display: block;
 							margin: 0;
 						}
-                      .info-block{
-                        &_list{
-                          .compare-block{
-                            &_list{
-                              display: none;
-                              @include r($mob){
-                                display: block;
-                                padding-bottom: 12px;
-                                float: none;
-                                width: auto;
+						.info-block{
+							&_list{
+								@include r($mob){
+									width: 60%;
 
-                              }
-                              @include r($mob-sm){
-                                order: 2;
-                              }
-                            }
-                            &_list-lg{
-                              display: block;
-                              @include r($mob){
-                                display: none;
-                              }
-                            }
-                          }
-                          .comment{
-                            @include r($mob){
-                              order: 0;
-                            }
-                          }
-                          .price-block{
-                            @include r($mob-sm){
-                              float: none!important;
-                            }
-                          }
-                        }
-                      }
+									.column.mdeium-12.border-bottom {
+										display: none;
+									}
+									.column.mdeium-12 {
+										flex-grow: 1;
+										display: flex;
+										align-items: flex-end;
+									}
+								}
+
+								@include r(425) {
+									.price {
+										margin-right: 10px;
+									}
+								}
+								@include r($mob-413) {
+									width: 100%;
+									.price {
+										margin-right: 20px;
+									}
+								}
+								.compare-block{
+									&_list{
+										display: none;
+										@include r($mob){
+											display: block;
+											padding-bottom: 12px;
+											float: none;
+											width: auto;
+
+										}
+										@include r($mob-sm){
+											order: 2;
+										}
+									}
+									&_list-lg{
+										display: block;
+										@include r($mob){
+											display: none;
+										}
+									}
+								}
+								.comment{
+									@include r($mob){
+										order: 0;
+										.all {
+											display: -webkit-box;
+											-webkit-line-clamp: 5;
+											-webkit-box-orient: vertical;
+											overflow-y: hidden;
+										}
+									}
+								}
+								.price-block{
+									@include r($mob){
+										flex-grow: 0;
+									}
+									@include r($mob-sm){
+										float: none!important;
+									}
+								}
+							}
+						}
 					}
 				}
 			}

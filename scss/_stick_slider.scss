@@ -226,7 +226,8 @@
 			vertical-align: middle;
 		}
 		@include r($mob) {
-			height: 90px;
+			// height: 90px;
+			height: 180px;
 		}
 	}
 }
