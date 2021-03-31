@@ -1,5 +1,6 @@
   // Foundation JavaScript
   // Documentation can be found at: http://foundation.zurb.com/docs
+  
   $(document).foundation({
     dropdown: {
       // specify the class used for active dropdowns
@@ -624,10 +625,18 @@
             text = comment.text();
             txlength = text.length;
 
-            if(txlength > 58){
-              cuttext = text.substring(0,58);
-              comment.text(cuttext);
-              comment.parents('.comment').append('<span class="readmore">'+text+'</span>');
+            if(window.innerWidth >= 767) {
+              if(txlength > 58){
+                cuttext = text.substring(0,58);
+                comment.text(cuttext);
+                comment.parents('.comment').append('<span class="readmore">'+text+'</span>');
+              }
+            } else {
+              if(txlength > 40){
+                cuttext = text.substring(0,40);
+                comment.text(cuttext);
+                comment.parents('.comment').append('<span class="readmore">'+text+'</span>');
+              }
             }
       });
       }
