@@ -819,11 +819,11 @@
 
 //for article-anchor
 const checkAnchorLink = (e) => {
-  const anchor = $(e.target).attr('href');
+  const anchor = $(e.currentTarget).attr('href');
   const name = anchor.substr(1);
   const $anchorTextBlock = $(`a[name='${name}']`);
 
-  if($anchorTextBlock) {
+  if($anchorTextBlock.length !== 0) {
     if($('.js-menu-main').hasClass('is-fixed')) {
       if($anchorTextBlock.hasClass('fixed-anchor')) return;
       $anchorTextBlock.addClass('fixed-anchor');
@@ -833,7 +833,7 @@ const checkAnchorLink = (e) => {
   }
 };
 
-$('a[href^="#"]').on('click', checkAnchorLink);
+$('.article a[href^="#"]').on('click', checkAnchorLink);
 
 
 $('.product-box__slider .slider-for').slick({
