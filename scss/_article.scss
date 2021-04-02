@@ -192,4 +192,12 @@
 			margin-top: 0;
 		}
 	}
+
+	a.fixed-anchor[name] {
+		margin-top: -73px;
+
+		@include r($mob) {
+			margin-top: 0;
+		}
+	}
 }
