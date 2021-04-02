@@ -53,7 +53,7 @@
     &__link{
         position: relative;
         display: block;
-        padding: rem-calc(12) rem-calc(18) rem-calc(12) rem-calc(20);
+        padding: rem-calc(12) rem-calc(24) rem-calc(12) rem-calc(20);
         border: 1px solid $border;
         font-size: rem-calc(14);
         color: $blue;
@@ -94,7 +94,8 @@
 .tabdrop{
     display: none;
     position: absolute;
-    top: 40px;
+    transform: translateY(100%);
+    bottom: 0px;
     left: 0;
     right: 0;
     z-index: 1;
