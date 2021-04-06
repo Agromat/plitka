@@ -1414,6 +1414,9 @@ a:hover span {
     padding: 10px;
   }
 }
+.about .buy-block .price .price-rate {
+  font-size: 14px;
+}
 .about .buy-block .price.orderItem, .about .buy-block .price .archiveItem {
   background: #f9f8ee;
 }
@@ -1462,21 +1465,29 @@ a:hover span {
 }
 .about .buy-block .price .cost, .about .buy-block .price .phone {
   color: #333;
-  font-size: 3.1875rem;
+  font-size: 2.625rem;
   font-weight: 700;
   line-height: 4.0625rem;
   margin-top: 0.1875rem;
   margin-bottom: 0.3125rem;
+}
+@media only screen and (max-width: 320px) {
+  .about .buy-block .price .cost, .about .buy-block .price .phone {
+    font-size: 2.25rem;
+  }
 }
 .about .buy-block .price .cost sup, .about .buy-block .price .phone sup {
   font-size: 1.875rem;
   top: -1.25rem;
 }
 .about .buy-block .price.insale .cost {
-  font-size: 2.875rem;
+  font-size: 2.625rem;
   margin: 0;
   margin-top: 0;
   margin-bottom: 0.5rem;
+}
+.about .buy-block .price.insale .cost .price-rate {
+  font-size: 14px;
 }
 .about .buy-block .price.insale .cost sup {
   font-size: 1.375rem;
@@ -1488,6 +1499,7 @@ a:hover span {
   margin-top: 0.75rem;
   margin-bottom: -0.5625rem;
   margin-left: 0.3125rem;
+  padding-left: 45px;
 }
 .about .buy-block .price.insale .cost.old span {
   line-height: 1;
@@ -9267,6 +9279,8 @@ footer .row.link-footer .column:last-child {
   zoom: 1;
   padding: 15px 0;
   border-bottom: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
 }
 .main-container.filters .filters-content .items .item-filtered .price-block:before, .main-container.filters .filters-content .items .item-filtered .price-block:after {
   content: "";
@@ -9283,7 +9297,7 @@ footer .row.link-footer .column:last-child {
     border-bottom: none;
     order: 2;
     flex-grow: 1;
-    display: flex;
+    flex-direction: row;
     align-items: flex-end;
   }
   .main-container.filters .filters-content .items .item-filtered .price-block .right {
@@ -9296,9 +9310,26 @@ footer .row.link-footer .column:last-child {
     flex-wrap: wrap;
   }
 }
+.main-container.filters .filters-content .items .item-filtered .price-block .right {
+  align-self: center;
+  margin-top: 6px;
+}
+@media only screen and (max-width: 767px) {
+  .main-container.filters .filters-content .items .item-filtered .price-block .right {
+    align-self: inherit;
+  }
+}
+.main-container.filters .filters-content .items .item-filtered .price-block .left {
+  display: flex;
+  height: 46px;
+}
+.main-container.filters .filters-content .items .item-filtered .price-block .left p {
+  align-self: flex-end;
+}
 .main-container.filters .filters-content .items .item-filtered .price-block .price {
   font-weight: 700;
   font-size: 21px;
+  line-height: 1;
   color: #333;
   margin: 0;
 }
@@ -9306,6 +9337,18 @@ footer .row.link-footer .column:last-child {
   .main-container.filters .filters-content .items .item-filtered .price-block .price {
     margin-bottom: 5px;
     margin-right: 20px;
+  }
+}
+.main-container.filters .filters-content .items .item-filtered .price-block .price-rate {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-right: 6px;
+  align-self: flex-end;
+}
+@media only screen and (max-width: 767px) {
+  .main-container.filters .filters-content .items .item-filtered .price-block .price-rate {
+    font-size: 12px;
+    line-height: 2;
   }
 }
 .main-container.filters .filters-content .items .item-filtered .price-block .price sup {
@@ -9374,7 +9417,7 @@ footer .row.link-footer .column:last-child {
   .main-container.filters .filters-content .items .item-filtered .comment {
     order: 1;
     display: -webkit-box;
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow-y: hidden;
     margin-bottom: 20px;

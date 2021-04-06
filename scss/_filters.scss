@@ -607,12 +607,14 @@
 						@include clearfix();
 						padding: 15px 0;
 						border-bottom: 1px solid $border;
+						display: flex;
+						flex-direction: column;
 						@include r($mob) {
 							padding: 0;
 							border-bottom: none;
 							order: 2;
 							flex-grow: 1;
-							display: flex;
+							flex-direction: row;
     					align-items: flex-end;
 							.right {
 								float: none !important;
@@ -622,14 +624,39 @@
 							display: flex;
 							flex-wrap: wrap;
 						}
+						.right {
+							align-self: center;
+							margin-top: 6px;
+							@include r($mob) {
+								align-self: inherit;
+							}
+						}
+						.left {
+							display: flex;
+							height: 46px;
+							p {
+								align-self: flex-end;
+							}
+						}
 						.price{
 							font-weight: 700;
 							font-size: 21px;
+							line-height: 1;
 							color: $ddgray;
 							margin: 0;
 							@include r($mob) {
 								margin-bottom: 5px;
 								margin-right: 20px;
+							}
+							&-rate {
+								font-size: 14px;
+								line-height: 1.5;
+								margin-right: 6px;
+								align-self: flex-end;
+								@include r($mob) {
+									font-size: 12px;
+									line-height: 2;
+								}
 							}
 							sup{
 								font-size: 13px;
@@ -690,7 +717,7 @@
 						@include r($mob) {
 							order: 1;
 							display: -webkit-box;
-							-webkit-line-clamp: 5;
+							-webkit-line-clamp: 4;
 							-webkit-box-orient: vertical;
 							overflow-y: hidden;
 							margin-bottom: 20px;
@@ -900,21 +927,6 @@
 								display: block;
 							}
 						}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 						.img-block{
 							width: 215px;
 							float: left;
@@ -925,8 +937,6 @@
 								display: flex;
 								justify-content: center;
 								align-items: center;
-
-
 								min-height: 215px;
 								margin-right: 15px;
 							}
