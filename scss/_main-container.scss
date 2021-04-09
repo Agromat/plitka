@@ -1245,6 +1245,11 @@ ul.pagination{
 				.btn, .link, .deskript, .right{
 					display: block !important;
 				}
+
+
+				// position: relative;
+				
+				
 				border: 1px solid $border;
 				background:$white;
 				box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
@@ -3948,4 +3953,18 @@ footer{
     }
   }
   
+}
+
+
+.page-content_additional {
+
+	.other-products { 
+		min-height: 350px;
+	}
+
+	.multiple-items:not(.slick-initialized){
+		display:none;
+		max-width:100%;
+		overflow:auto;
+	}
 }
