@@ -445,13 +445,43 @@
 						position: relative;
 						@include clearfix();
 						overflow: hidden;
-						padding: 20px 0 20px 0;
+						padding: 20px 0;
 						@include r($mob) {
 							display: flex;
-							flex-wrap: wrap;
-							align-items: stretch;
+							flex-direction: column;
 							max-width: 100%;
-							padding: 0;
+							.img-block {
+								max-width: 300px;
+							}
+							.info-block {
+								order: 1;
+							}
+							.comment {
+								order: 0;
+								&__mobile {
+									display: block;
+									font-size: 13px;
+									font-weight: 400;
+									color: #333;
+									line-height: 1.3;
+								}
+								.readmore {
+									display: none;
+								}
+							}
+							.info-block,
+							.compare-block,
+							.comment {
+								max-width: 400px;
+								padding-top: 10px;
+							}
+							.img-block,
+							.info-block,
+							.compare-block,
+							.comment {
+								width: 100%;
+								margin: 0 auto;
+							}
 						}
 						&:before {
 							content: "";
@@ -714,17 +744,20 @@
 					}
 					.comment{
 						margin: 10px 0 20px;
-						@include r($mob) {
-							order: 1;
-							display: -webkit-box;
-							-webkit-line-clamp: 4;
-							-webkit-box-orient: vertical;
-							overflow-y: hidden;
-							margin-bottom: 20px;
+						&__mobile {
+							display: none;
 						}
-						@include r($mob-450) {
-							margin: 15px 0 20px;
-						}
+						// @include r($mob) {
+						// 	order: 1;
+						// 	display: -webkit-box;
+						// 	-webkit-line-clamp: 4;
+						// 	-webkit-box-orient: vertical;
+						// 	overflow-y: hidden;
+						// 	margin-bottom: 20px;
+						// }
+						// @include r($mob-450) {
+						// 	margin: 15px 0 20px;
+						// }
 						.all,.readmore{
 							font-size: 13px;
 							font-weight: 400;
