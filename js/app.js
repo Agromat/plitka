@@ -818,6 +818,25 @@
 /////////////////////////
 
 
+//for article-anchor
+const checkAnchorLink = (e) => {
+  const anchor = $(e.currentTarget).attr('href');
+  const name = anchor.substr(1);
+  const $anchorTextBlock = $(`a[name='${name}']`);
+
+  if($anchorTextBlock.length !== 0) {
+    if($('.js-menu-main').hasClass('is-fixed')) {
+      if($anchorTextBlock.hasClass('fixed-anchor')) return;
+      $anchorTextBlock.addClass('fixed-anchor');
+    } else {
+      $anchorTextBlock.removeClass('fixed-anchor');
+    }
+  }
+};
+
+$('.article a[href^="#"]').on('click', checkAnchorLink);
+
+
 $('.product-box__slider .slider-for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,

@@ -11664,6 +11664,14 @@ footer .row.link-footer .column:last-child {
     margin-top: 0;
   }
 }
+.article a.fixed-anchor[name] {
+  margin-top: -73px;
+}
+@media only screen and (max-width: 767px) {
+  .article a.fixed-anchor[name] {
+    margin-top: 0;
+  }
+}
 
 .range-slider .irs-line, .range-slider .irs-bar {
   height: 8px;
@@ -12439,7 +12447,7 @@ body.is-overflow {
 .tab__link {
   position: relative;
   display: block;
-  padding: 0.75rem 1.125rem 0.75rem 1.25rem;
+  padding: 0.75rem 1.5rem 0.75rem 1.25rem;
   border: 1px solid #ddd;
   font-size: 0.875rem;
   color: #0053a0;
@@ -12477,7 +12485,8 @@ body.is-overflow {
 .tabdrop {
   display: none;
   position: absolute;
-  top: 40px;
+  transform: translateY(100%);
+  bottom: 0px;
   left: 0;
   right: 0;
   z-index: 1;
