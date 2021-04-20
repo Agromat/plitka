@@ -238,7 +238,7 @@
 			@include r($mob) {
 				display: block;
 				width: 265px;
-				margin: 0 auto 20px;
+				// margin: 0 auto 20px;
 				padding: rem-calc(16) 0;
 			}
 			.links-credit{
@@ -463,8 +463,8 @@
 	.delivery{
 		float: right;
 		max-width: 510px;
-		width: 100%;
 		margin-bottom: 20px;
+		// width: 100%;
 		// margin-top: rem-calc(15);
 		border: 1px solid $border;
 		-webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
@@ -552,13 +552,12 @@
 
 .about.side {
 	.column.medium-4 {
-			@include r($desktop-m) {
+		@include r($desktop-m) {
+			width: 100%;
+			.delivery {
 				width: 100%;
-				.delivery {
-					width: 100%;
-				}
+			}
 		}
-
 	}
 }
 

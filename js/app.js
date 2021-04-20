@@ -1391,3 +1391,17 @@ $('.seo-text-btn').on('click', function () {
         $('.seo-text-box').css({'overflow': 'hidden', 'height': '5px'});
     }
 });
+
+function initCharacteristicsHeight() {
+  const characteristicsItems = document.querySelectorAll('#js-characteristics-height tr');
+
+  const supreme = [...characteristicsItems].filter(item => item.offsetHeight === 54 || item.offsetHeight === 72 || item.offsetHeight === 90).map(item => item.offsetHeight);
+  const maxHeight = Math.max.apply(null, supreme);
+
+  characteristicsItems.forEach(item => {
+    item.style.height = `${maxHeight}px`;
+  });
+
+}
+
+initCharacteristicsHeight();

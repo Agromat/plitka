@@ -14,7 +14,7 @@
     touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
 	&.multiple-items{ 
-		min-height: 350px;
+		// min-height: 350px;
 		@include r($mob) {
 			min-height: 250px;
 		}

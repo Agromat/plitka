@@ -818,6 +818,7 @@ ul.pagination{
 		margin-top: 0;
 	}
 	&.all-products{
+		// height: auto;
 		@include r($mob){
 			display: none;
 		}
@@ -3960,6 +3961,13 @@ footer{
 
 	.other-products { 
 		min-height: 350px;
+
+		&.all-products {
+			min-height: auto;
+		}
+		&.bottom-previews {
+			min-height: 300px;
+		}
 	}
 
 	.multiple-items:not(.slick-initialized){

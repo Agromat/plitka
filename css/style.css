@@ -1625,7 +1625,6 @@ a:hover span {
   .about .buy-block .credit {
     display: block;
     width: 265px;
-    margin: 0 auto 20px;
     padding: 1rem 0;
   }
 }
@@ -1886,7 +1885,6 @@ a:hover span {
 .delivery {
   float: right;
   max-width: 510px;
-  width: 100%;
   margin-bottom: 20px;
   border: 1px solid #ddd;
   -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
@@ -3325,9 +3323,6 @@ ul.pagination li a span {
   -ms-touch-action: pan-y;
   touch-action: pan-y;
   -webkit-tap-highlight-color: transparent;
-}
-.slick-slider.multiple-items {
-  min-height: 350px;
 }
 @media only screen and (max-width: 767px) {
   .slick-slider.multiple-items {
@@ -8742,6 +8737,12 @@ footer .row.link-footer .column:last-child {
 .page-content_additional .other-products {
   min-height: 350px;
 }
+.page-content_additional .other-products.all-products {
+  min-height: auto;
+}
+.page-content_additional .other-products.bottom-previews {
+  min-height: 300px;
+}
 .page-content_additional .multiple-items:not(.slick-initialized) {
   display: none;
   max-width: 100%;
@@ -9197,7 +9198,7 @@ footer .row.link-footer .column:last-child {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 .main-container.filters .filters-content .items .item-filtered .title-block {
-  min-height: 60px;
+  min-height: 54px;
   display: block;
   width: 100%;
   margin-bottom: 15px;
