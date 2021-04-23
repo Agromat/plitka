@@ -192,11 +192,6 @@
 .main-section {
 	.main-container {
 		.row_slider{
-			height: 285px;
-			overflow: hidden;
-			@include r($tablet-p) {
-				height: 200px;
-			}
 			@include r($mob320) {
 				margin: 0 -10px;
 			}

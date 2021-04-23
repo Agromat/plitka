@@ -1304,15 +1304,6 @@ a:hover span {
   border-bottom: 1px solid #333;
 }
 
-.main-section .main-container .row_slider {
-  height: 285px;
-  overflow: hidden;
-}
-@media only screen and (max-width: 800px) {
-  .main-section .main-container .row_slider {
-    height: 200px;
-  }
-}
 @media only screen and (max-width: 320px) {
   .main-section .main-container .row_slider {
     margin: 0 -10px;
@@ -3325,14 +3316,6 @@ ul.pagination li a span {
   -ms-touch-action: pan-y;
   touch-action: pan-y;
   -webkit-tap-highlight-color: transparent;
-}
-.slick-slider.multiple-items {
-  min-height: 350px;
-}
-@media only screen and (max-width: 767px) {
-  .slick-slider.multiple-items {
-    min-height: 250px;
-  }
 }
 
 .slick-list.draggable {
@@ -8740,7 +8723,13 @@ footer .row.link-footer .column:last-child {
 }
 
 .page-content_additional .other-products {
-  min-height: 350px;
+  min-height: 250px;
+}
+.page-content_additional .other-products.all-products {
+  min-height: 90px;
+}
+.page-content_additional .orbit-container {
+  max-height: 260px;
 }
 .page-content_additional .multiple-items:not(.slick-initialized) {
   display: none;
@@ -9197,7 +9186,7 @@ footer .row.link-footer .column:last-child {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 .main-container.filters .filters-content .items .item-filtered .title-block {
-  min-height: 60px;
+  min-height: 55px;
   display: block;
   width: 100%;
   margin-bottom: 15px;

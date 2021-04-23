@@ -3959,7 +3959,14 @@ footer{
 .page-content_additional {
 
 	.other-products { 
-		min-height: 350px;
+		min-height: 250px;
+		&.all-products{
+			min-height: 90px;
+		}
+	}
+
+	.orbit-container {
+		max-height: 260px;
 	}
 
 	.multiple-items:not(.slick-initialized){
