@@ -14,8 +14,6 @@
     touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
 	&.multiple-items{ 
-		//height: 260px;
-		height: auto;
 	}
 }
 
@@ -226,7 +224,8 @@
 			vertical-align: middle;
 		}
 		@include r($mob) {
-			height: 90px;
+			// height: 90px;
+			height: 180px;
 		}
 	}
 }
